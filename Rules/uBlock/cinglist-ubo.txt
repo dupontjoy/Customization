@@ -1,0 +1,108 @@
+[Adblock Plus 2.0]
+! Title:        cinglist-ubo
+! Description:  自用过滤规则。
+! Author:       Cing
+! License:      Creative Commons BY-NC-SA
+! Version:      2022
+! Expires:      1h
+!-------------------------------------------------------------------------------------!
+
+! 防止斗鱼直播切回标签页会重新加载
+douyu.com##+js(aeld,visibilitychange)
+
+! Bili
+bilibili.com##.user-sailing
+bilibili.com##.van-popover__reference.share
+
+
+! NGA
+bbs.nga.cn##.hld__docker
+
+! 百度
+pan.baidu.com##.dialog-gray.guide-share-dir-tip.dialog-dialog1.dialog
+pan.baidu.com##.module-canvas
+pan.baidu.com##.JS-nativeupload-tip.awGoro.global-clearfix
+pan.baidu.com##.wp-disk-header__right-item.web-header-ad-item
+pan.baidu.com##.company-cert.wp-disk-header__right-item
+pan.baidu.com##.wp-side-options-btn
+pan.baidu.com##.btn-img-tips
+pan.baidu.com##.vip-center-tip
+tieba.baidu.com##.tbui_slideshow_container.plat_recom_carousel
+
+! 卡饭
+bbs.kafan.cn###autopbn
+bbs.kafan.cn###scrolltop
+bbs.kafan.cn##.bm_h
+bbs.kafan.cn##.ptn.xg2
+bbs.kafan.cn##.a_pt
+bbs.kafan.cn##.a_pb
+
+! cnbeta资讯
+cnbeta.com###cb_share
+cnbeta.com##.mask-box
+cnbeta.com##.mask-layer
+cnbeta.com###CbADsArticle > .adsbygoogle
+cnbeta.com##DIV[style="display:block !important;padding:10px;margin:0 auto;text-align:center;max-width:980px;overflow:hidden"]
+cnbeta.com##DIV[style="display:block !important;position:fixed;bottom:0;margin-top:10px;width:100%;background:#c44;color:#fff;font-size:15px;z-index:99999"]
+
+
+! CNN
+cnn.com##.user-msg
+
+
+! 经济学人
+economist.com##.newsletter-form--inline.newsletter-form
+economist.com##.timekeeper-bubble
+economist.com##.exit-pop
+economist.com##.ribbon__header
+economist.com##.ribbon__body
+economist.com###AdBillboard
+
+! HBR
+hbr.org##.backdrop-darker > .row
+
+! 京东
+jd.com##.side__ad.side__ad-left
+jd.com##.side__ad.side__ad-right
+jd.com##.activity-top
+
+! statista
+statista.com###statisticSlideIn
+statista.com###caRequestPopup
+statista.com##.modal-dialog--caRequest.modal-dialog
+
+! 天涯
+tianya.cn###js-bc-shang
+tianya.cn##.scroll-btn
+
+! 360
+yunpan.360.cn##.redpacket
+
+! 2animx.com
+2animx.com###index_left
+2animx.com###index_right
+2animx.com##div[class*="footer"]
+
+! 18H
+maa1807.com, 18h.mm-cg.com##.UT_thread
+maa1807.com, 18h.mm-cg.com##UL
+||maa1807.com/adcg/*.gif$image
+||18h.mm-cg.com/adcg/*.gif$image
+maa1807.com, 18h.mm-cg.com##div[class*="ad_box"]
+jable.tv##.right-sidebar.col
+
+! hentai.tv
+hentai.tv###wpd-bubble-count
+
+! weibo.com
+weibo.com##.yawf-dialog-outer
+
+! youtube.com
+youtube.com##.ytp-videowall-still-info-content
+youtube.com##.ytp-endscreen-content
+youtube.com##.ytp-button ytp-endscreen-previous
+youtube.com##.html5-endscreen ytp-player-content videowall-endscreen ytp-endscreen-paginate ytp-show-tiles
+youtube.com##.ytp-upnext ytp-player-content ytp-upnext-autoplay-paused ytp-suggestion-set
+youtube.com##.ytp-youtube-button ytp-button yt-uix-sessionlink
+youtube.com##.ytp-endscreen-next.ytp-button
+youtube.com##.ytp-endscreen-previous.ytp-button

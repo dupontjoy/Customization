@@ -1,0 +1,203 @@
+{
+  "AppConfigs": {
+    "TypeConfigs": {
+      "WindowsExplorer": {
+        "EnableMouseMiddleClick": false
+      },
+      "FileDialog": {},
+      "FolderDialog": {},
+      "Desktop": {},
+      "DirectoryOpus": {},
+      "TotalCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "XYplorer": {},
+      "Bandizip": {},
+      "AutoCAD": {},
+      "xplorer2": {},
+      "FreeCommander": {}
+    },
+    "PathConfigs": {}
+  },
+  "Menus": {
+    "Favorites": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": []
+    }
+  },
+  "DiskSearch": {
+    "FolderPriority": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Folder": "D:\\Program Files",
+            "Priority": 1
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Folder": "E:\\Program Files",
+            "Priority": 1
+          }
+        }
+      ],
+      "Updates": []
+    },
+    "FileNamePriority": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": []
+    },
+    "SearchFilter": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": []
+    },
+    "DisabledNtfsVolumes": [],
+    "CustomFolders": [
+      {
+        "Path": "X:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "Y:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "Z:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "E:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "F:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "G:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "H:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      }
+    ]
+  },
+  "Commands": {
+    "Items": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "创建文件 \"{query}\"",
+            "Path": "%ComSpec%",
+            "Parameter": "/c type nul >> \"{query}\"",
+            "WorkingDirectory": "",
+            "Id": "65d3dbde-196b-4c6c-873f-62f81e710424",
+            "Keyword": "+",
+            "$customType": "CustomCommand"
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "Everything全盘搜索\"{query}\"",
+            "Path": "..\\TotalCMD64\\Tools\\Everything.exe",
+            "Parameter": "-search {query}",
+            "WorkingDirectory": "",
+            "Id": "b72b0569-07aa-4a29-a96e-46beb8f7df73",
+            "Keyword": "ev",
+            "$customType": "CustomCommand"
+          }
+        }
+      ],
+      "Updates": []
+    }
+  },
+  "WebSearch": {
+    "Items": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": []
+    }
+  },
+  "Actions": {
+    "Items": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "在TC中定位到该文件",
+            "Path": "..\\TotalCMD64\\TotalCMD64.exe",
+            "Parameter": "/O /T /A /S /L=\"{action_path}\"",
+            "Keyword": "",
+            "Hotkey": 1037,
+            "$customType": "CustomCommand"
+          }
+        }
+      ],
+      "Updates": []
+    }
+  },
+  "Settings": {
+    "OpenFolder.Path": "..\\TotalCMD64\\TotalCMD64.exe",
+    "OpenFolder.Param": "/O \"%1\"",
+    "Listary5.SettingsImported": true,
+    "Listary5.ProLicense.Name": "Adven Dai",
+    "Listary5.ProLicense.Email": "daiqiang7297@163.com",
+    "Listary5.ProLicense.Key": "FP7832JRZS7TVFCHJXN8Z7S7MBZZSRBJDEX6PY3PL239QU53M2R9JHNK2XW4LY6D32CJ3BJDHK2L5APH3LFVFASHVLHFEXEHFX79M6NDNUJCMR8LRCLAN7MPSD6CAGTMCAHYH22CGT8T542RFPAGVY23W349QJV4C4G8XT2893SSUZV9E3CCPRGVY3A7FE3B"
+  },
+  "Extensions": {
+    "Extensions": {
+      "1a63ea9d-bf25-431f-96e3-17b80027efab": {}
+    }
+  }
+}

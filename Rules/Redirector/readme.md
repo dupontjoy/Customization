@@ -1,0 +1,1 @@
+适用于Redirector: https://addons.mozilla.org/zh-CN/firefox/addon/redirector/
