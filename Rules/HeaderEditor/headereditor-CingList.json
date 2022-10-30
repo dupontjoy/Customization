@@ -122,18 +122,6 @@
 		},
 		{
 			"enable": true,
-			"name": "recaptcha重定向",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "https://www.google.com/recaptcha/api.js(.*)$",
-			"exclude": "",
-			"group": "CingList-Redirect",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "https://recaptcha.net/recaptcha/api.js"
-		},
-		{
-			"enable": true,
 			"name": "jsdelivr cdn >> fastly（或gcore)",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -737,18 +725,5 @@
 			}
 		}
 	],
-	"receiveBody": [
-		{
-			"enable": true,
-			"name": "去youku内嵌视频广告",
-			"ruleType": "modifyReceiveBody",
-			"matchType": "regexp",
-			"pattern": "^https://[\\w\\.]+ott\\.cibntv\\.net/.+\\.m3u8\\?",
-			"exclude": "",
-			"group": "CingList-Response",
-			"isFunction": true,
-			"encoding": "UTF-8",
-			"code": "return val.replace(/\\n#EXT-X-DISCONTINUITY[^]+?https:.+?\\/ad\\/X.+/g, '');"
-		}
-	]
+	"receiveBody": []
 }

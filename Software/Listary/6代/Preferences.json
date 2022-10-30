@@ -6,7 +6,9 @@
       },
       "FileDialog": {},
       "FolderDialog": {},
-      "Desktop": {},
+      "Desktop": {
+        "EnableMouseMiddleClick": false
+      },
       "DirectoryOpus": {},
       "TotalCommander": {
         "EnableMouseMiddleClick": false
@@ -31,24 +33,7 @@
     "FolderPriority": {
       "Deletions": [],
       "Moves": [],
-      "Insertions": [
-        {
-          "Index": -1,
-          "Info": null,
-          "Item": {
-            "Folder": "D:\\Program Files",
-            "Priority": 1
-          }
-        },
-        {
-          "Index": -1,
-          "Info": null,
-          "Item": {
-            "Folder": "E:\\Program Files",
-            "Priority": 1
-          }
-        }
-      ],
+      "Insertions": [],
       "Updates": []
     },
     "FileNamePriority": {
@@ -136,7 +121,7 @@
             "Path": "%ComSpec%",
             "Parameter": "/c type nul >> \"{query}\"",
             "WorkingDirectory": "",
-            "Id": "65d3dbde-196b-4c6c-873f-62f81e710424",
+            "Id": "86e77358-7c4d-4285-b781-c0a7b08f46bd",
             "Keyword": "+",
             "$customType": "CustomCommand"
           }
@@ -149,7 +134,7 @@
             "Path": "..\\TotalCMD64\\Tools\\Everything.exe",
             "Parameter": "-search {query}",
             "WorkingDirectory": "",
-            "Id": "b72b0569-07aa-4a29-a96e-46beb8f7df73",
+            "Id": "5600e421-e3ae-425a-832a-2dcde1ae4b02",
             "Keyword": "ev",
             "$customType": "CustomCommand"
           }
@@ -187,9 +172,13 @@
       "Updates": []
     }
   },
+  "AutoUpdate": {
+    "BetaUpdates": true
+  },
   "Settings": {
     "OpenFolder.Path": "..\\TotalCMD64\\TotalCMD64.exe",
     "OpenFolder.Param": "/O \"%1\"",
+    "Tutorial.ShowMain": false,
     "Listary5.SettingsImported": true,
     "Listary5.ProLicense.Name": "Adven Dai",
     "Listary5.ProLicense.Email": "daiqiang7297@163.com",

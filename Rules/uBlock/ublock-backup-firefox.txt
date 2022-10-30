@@ -1,14 +1,14 @@
 {
-  "timeStamp": 1663563405093,
-  "version": "1.44.3b5",
+  "timeStamp": 1664159412824,
+  "version": "1.44.5b3",
   "userSettings": {
     "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
     "contextMenuEnabled": false,
-    "externalLists": "https://github.com/dupontjoy/customization/raw/master/Rules/uBlock/cinglist-ubo.txt\nhttps://github.com/xinggsf/Adblock-Plus-Rule/raw/master/mv.txt\nhttps://github.com/xinggsf/Adblock-Plus-Rule/raw/master/rule.txt\nhttps://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
+    "externalLists": "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt\nhttps://github.com/xinggsf/Adblock-Plus-Rule/raw/master/mv.txt\nhttps://github.com/xinggsf/Adblock-Plus-Rule/raw/master/rule.txt\nhttps://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
     "firewallPaneMinimized": false,
     "importedLists": [
-      "https://github.com/dupontjoy/customization/raw/master/Rules/uBlock/cinglist-ubo.txt",
+      "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt",
       "https://github.com/xinggsf/Adblock-Plus-Rule/raw/master/mv.txt",
       "https://github.com/xinggsf/Adblock-Plus-Rule/raw/master/rule.txt",
       "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
@@ -31,7 +31,7 @@
     "CHN-0",
     "https://github.com/xinggsf/Adblock-Plus-Rule/raw/master/rule.txt",
     "https://github.com/xinggsf/Adblock-Plus-Rule/raw/master/mv.txt",
-    "https://github.com/dupontjoy/customization/raw/master/Rules/uBlock/cinglist-ubo.txt",
+    "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt",
     "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
   ],
   "hiddenSettings": {
@@ -46,12 +46,9 @@
     "about-scheme",
     "chrome-extension-scheme",
     "chrome-scheme",
-    "gsp.aliexpress.com",
     "moz-extension-scheme",
     "opera-scheme",
-    "vivaldi-scheme",
-    "web.scm.tmall.com",
-    "www.aliexpress.com"
+    "vivaldi-scheme"
   ],
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
