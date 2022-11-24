@@ -2,54 +2,6 @@
 	"request": [
 		{
 			"enable": true,
-			"name": "通用论坛简版>>完整版4",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/(.*)/archive/index.php/t-(.*)$",
-			"exclude": "",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "http://$1/showthread.php?t=$2",
-			"group": "CingList-Redirect"
-		},
-		{
-			"enable": true,
-			"name": "通用论坛简版>>完整版3",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/(.+)/archiver/\\?tid-(\\d+).html",
-			"exclude": "",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "http://$1/thread-$2-1-1.html",
-			"group": "CingList-Redirect"
-		},
-		{
-			"enable": true,
-			"name": "通用论坛简版>>完整版2",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/(.*)/archiver/tid-(.*)-page-.*.html",
-			"exclude": "",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "http://$1/thread-$2-1.html",
-			"group": "CingList-Redirect"
-		},
-		{
-			"enable": true,
-			"name": "通用论坛简版>>完整版1",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/(.+)/archiver/tid-(\\d+).html",
-			"exclude": "",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "http://$1/viewthread.php?tid=$2",
-			"group": "CingList-Redirect"
-		},
-		{
-			"enable": true,
 			"name": "般若文海article >> books",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -93,7 +45,7 @@
 			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
-			"to": "https://fdn.geekzu.org/g-fonts/$1",
+			"to": "https://gapis.geekzu.org/g-fonts/$1",
 			"group": "CingList-Redirect"
 		},
 		{
