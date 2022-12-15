@@ -10,11 +10,6 @@
 ! 防止斗鱼直播切回标签页会重新加载
 douyu.com##+js(aeld,visibilitychange)
 
-! Bili
-bilibili.com##.user-sailing
-bilibili.com##.van-popover__reference.share
-bilibili.com##.reply-notice
-bilibili.com##.inside-wrp
 
 ! 无追搜索
 wuzhuiso.com##.extension-tip.res-list

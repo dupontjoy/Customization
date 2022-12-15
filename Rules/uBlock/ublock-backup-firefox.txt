@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1669171643520,
-  "version": "1.45.3b7",
+  "timeStamp": 1670167555571,
+  "version": "1.45.3b8",
   "userSettings": {
     "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
@@ -33,8 +33,6 @@
     "adguard-mobile",
     "easylist",
     "urlhaus-1",
-    "fanboy-cookiemonster",
-    "fanboy-social",
     "ublock-annoyances",
     "CHN-0",
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
@@ -58,7 +56,8 @@
     "chrome-scheme",
     "moz-extension-scheme",
     "opera-scheme",
-    "vivaldi-scheme"
+    "vivaldi-scheme",
+    "weibo.com"
   ],
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",

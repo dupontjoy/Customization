@@ -3,9 +3,9 @@
   "version": {
     "major": "4",
     "minor": "0",
-    "micro": "101"
+    "micro": "107"
   },
-  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0",
   "config": {
     "filter_follow_check": true,
     "filter_follow_check.frequency": 259200000,
@@ -87,7 +87,7 @@
     "clean_nav_hot_search": false,
     "clean_nav_aria": true,
     "clean_nav_notice_new": false,
-    "clean_nav_new": false,
+    "clean_nav_new": true,
     "clean_left_level": false,
     "clean_left_home": false,
     "clean_left_fav": false,
@@ -204,13 +204,13 @@
     "feed_button_order": false,
     "feed_button_order_comment": false,
     "feed_font_size": false,
-    "feed_long_expand": false,
+    "feed_long_expand": true,
     "feed_long_expand.count": 200,
     "feed_long_expand.br": 30,
     "feed_content_line_break": false,
     "feed_link_use_url": false,
     "feed_unicode_emoji": false,
-    "show_vote_result": false,
+    "show_vote_result": true,
     "feed_no_custom_source": false,
     "view_edit_info": false,
     "view_article_inline": false,
@@ -221,7 +221,7 @@
     "feed_download_image.name": "index",
     "image_preview_all": false,
     "feed_no_animated_image": false,
-    "feed_built_in_video_player": false,
+    "feed_built_in_video_player": true,
     "feed_disable_tag_dialog": false,
     "feed_low_reading_warn": false,
     "feed_only_mode": false,
@@ -229,7 +229,7 @@
     "script_update_whatsnew": true,
     "script_enable_debug": false,
     "script_debug_regex": false,
-    "script_update_whatsnew.last": 101,
+    "script_update_whatsnew.last": 107,
     "script_update_whatsnew.lastWeibo": 7,
     "clean_right_hot_topic_top": false,
     "filter_content_text_show.items": [],
@@ -339,6 +339,9 @@
     "feed_only_mode.width": 600,
     "feed_only_mode.key": 119,
     "feed_only_mode.button": false,
-    "clean_nav_eCom": true
+    "clean_nav_eCom": true,
+    "clean_right_service": true,
+    "feed_user_screen_name": true,
+    "confusable_han_normalize": false
   }
 }
