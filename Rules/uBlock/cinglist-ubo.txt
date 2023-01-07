@@ -3,12 +3,15 @@
 ! Description:  自用过滤规则。
 ! Author:       Cing
 ! License:      Creative Commons BY-NC-SA
-! Version:      2022
+! Version:      2023
 ! Expires:      1h
 !-------------------------------------------------------------------------------------!
 
 ! 防止斗鱼直播切回标签页会重新加载
 douyu.com##+js(aeld,visibilitychange)
+
+! B站
+bilibili.com##.reply-notice
 
 
 ! 无追搜索

@@ -177,7 +177,7 @@
   },
   "Settings": {
     "OpenFolder.Path": "..\\TotalCMD64\\TotalCMD64.exe",
-    "OpenFolder.Param": "/O \"%1\"",
+    "OpenFolder.Param": "/O /T \"%1\"",
     "Tutorial.ShowMain": false,
     "Listary5.SettingsImported": true,
     "Listary5.ProLicense.Name": "Adven Dai",

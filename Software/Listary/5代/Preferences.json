@@ -153,7 +153,7 @@
    "general": {
       "check_updates": false,
       "default_file_manager": {
-         "param": "/O \"%1\"",
+         "param": "/O /T \"%1\"",
          "path": "..\\TotalCMD64\\TotalCMD64.exe"
       },
       "language_file": "zh-CN.ini",
