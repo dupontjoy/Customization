@@ -1,4 +1,4 @@
-//2022.03.09
+//2023.01.13
 
 
 /*
@@ -27,6 +27,7 @@ user_pref("browser.search.suggest.enabled", false);//禁用搜索建议
 user_pref("privacy.donottrackheader.enabled", true);//请勿跟踪(一律发送)
 user_pref("datareporting.healthreport.uploadEnabled", false);//允许 Firefox 向 Mozilla 发送技术信息及交互数据（否）
 user_pref("browser.preferences.moreFromMozilla", false);//更多Mozilla产品
+user_pref("media.autoplay.default", 0);//自动播放默认值：允许音频和视频
 
 
 //字体语言编码
@@ -58,7 +59,6 @@ user_pref("dom.block_download_insecure", false);//阻止下载功能（不安全
 user_pref("security.ssl.enable_ocsp_must_staple", false);//关闭OCSP强制校验, 以确保在网络状况不佳的情况下连接到受SSL保护的站点
 user_pref("security.enterprise_roots.enabled", true);//连接：有潜在的安全问题
 
-
 //缓存
 user_pref("browser.cache.disk.enable", false);//禁用硬盘缓存
 user_pref("browser.cache.offline.enable", false);//禁用脱机缓存
@@ -74,7 +74,21 @@ user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 user_pref("browser.bookmarks.max_backups", 3);//最大备份数目
 
 //實驗性功能
-user_pref("fission.autostart", true);//Fission（网站隔离）
+user_pref("browser.startup.homepage.abouthome_cache.enabled", true);//about:home 启动缓存 
+user_pref("network.cookie.sameSite.laxByDefault", true);//Cookie: SameSite=Lax［默认］
+user_pref("network.cookie.sameSite.noneRequiresSecure", true);//Cookie: SameSite=None［需设置 Secure 属性］
+user_pref("layout.css.grid-template-masonry-value.enabled", true);//CSS：瀑布流布局
+user_pref("image.jxl.enabled", true);//媒体：JPEG XL
+user_pref("dom.webgpu.enabled", true);//Web API：WebGPU
+
+
+//自定义CSS（chrome文件夹）
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);//69以后自动加载 userChrome.ss 和 userContent.css
+
+//downloadplus设置
+user_pref("userChromeJS.downloadPlus.enableFlashgotIntergention", true);//启用 Flashgot 集成
+user_pref("userChromeJS.downloadPlus.enableRename", true);//下载对话框启用改名功能
+
 
 //单项, 未分类
 user_pref("browser.startup.homepage_override.mstone", "ignore");//启动时不弹出"What's New"页面
@@ -86,11 +100,13 @@ user_pref("browser.safebrowsing.malware.enabled", false);//关闭欺诈内容和
 user_pref("browser.safebrowsing.phishing.enabled", false);//关闭欺诈内容和危险软件防护（谷歌网站黑名单）
 user_pref("browser.urlbar.trimURLs", false);//地址栏显示 http://
 user_pref("ui.scrollToClick", 1); //点击滚动条将能够直接让你调转到页面上你想要查看的那点
-user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);//69以后自动加载 userChrome.ss 和 userContent.css
 user_pref("dom.webcomponents.shadowdom.enabled", true);//脚本"本地 YouTube 下载器"建议开启
 user_pref("extensions.pocket.enabled", false);//自带pocket(禁用,功能太简略,无法离线查看列表)
 user_pref("browser.sessionstore.interval", 3600000);//(单位: ms)限制recovery.js文件的写入操作: 默认15s, 改为1小时
 user_pref("browser.menu.showViewImageInfo", true);//显示查看图像信息菜单
+user_pref("security.insecure_field_warning.contextual.enabled", false);//隐藏输入框不安全提示（配合css）
+user_pref("media.videocontrols.picture-in-picture.improved-video-controls.enabled", true);//画中画显示进度条
+user_pref("layout.css.moz-box-flexbox-emulation.enabled", true);//css3新添加的盒子模型属性
 
 
 /******************************************************************************************

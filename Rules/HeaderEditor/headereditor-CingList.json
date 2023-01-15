@@ -83,30 +83,6 @@
 			"action": "redirect",
 			"to": "https://fastly.jsdelivr.net/$1",
 			"group": "CingList-Redirect"
-		},
-		{
-			"enable": true,
-			"name": "zhelper v4 >> zlib download",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "https://download.v4.zhelper.net/download/(.*)$",
-			"exclude": "",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "https://zlib.download/download/$1",
-			"group": "CingList-Redirect"
-		},
-		{
-			"enable": true,
-			"name": "B站稍后再看 >> 普通链接",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "https://www.bilibili.com/medialist/play/watchlater/(.*)$",
-			"exclude": "",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "https://www.bilibili.com/video/$1",
-			"group": "CingList-Redirect"
 		}
 	],
 	"sendHeader": [

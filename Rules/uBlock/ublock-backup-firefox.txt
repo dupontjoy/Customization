@@ -1,16 +1,14 @@
 {
-  "timeStamp": 1670167555571,
-  "version": "1.45.3b8",
+  "timeStamp": 1673438295936,
+  "version": "1.46.1b5",
   "userSettings": {
-    "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
     "cnameUncloakEnabled": false,
     "contextMenuEnabled": false,
-    "externalLists": "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Anti_AD_Easylist.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt\nhttps://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt",
+    "externalLists": "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt\nhttps://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt",
     "firewallPaneMinimized": false,
     "hyperlinkAuditingDisabled": false,
     "importedLists": [
-      "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Anti_AD_Easylist.txt",
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt",
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt",
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
@@ -19,6 +17,7 @@
     ],
     "popupPanelSections": 63,
     "prefetchingDisabled": false,
+    "suspendUntilListsAreLoaded": false,
     "webrtcIPAddressHidden": true
   },
   "selectedFilterLists": [
@@ -38,7 +37,6 @@
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt",
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt",
-    "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Anti_AD_Easylist.txt",
     "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt",
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt"
   ],
