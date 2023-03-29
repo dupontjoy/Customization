@@ -1,13 +1,13 @@
 {
-  "timeStamp": 1673438295936,
-  "version": "1.46.1b5",
+  "timeStamp": 1679405536947,
+  "version": "1.47.5rc5",
   "userSettings": {
+    "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
     "cnameUncloakEnabled": false,
     "contextMenuEnabled": false,
     "externalLists": "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt\nhttps://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt",
     "firewallPaneMinimized": false,
-    "hyperlinkAuditingDisabled": false,
     "importedLists": [
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt",
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt",
@@ -16,8 +16,6 @@
       "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt"
     ],
     "popupPanelSections": 63,
-    "prefetchingDisabled": false,
-    "suspendUntilListsAreLoaded": false,
     "webrtcIPAddressHidden": true
   },
   "selectedFilterLists": [
@@ -29,9 +27,10 @@
     "ublock-abuse",
     "ublock-unbreak",
     "adguard-generic",
-    "adguard-mobile",
     "easylist",
+    "adguard-spyware-url",
     "urlhaus-1",
+    "curben-phishing",
     "ublock-annoyances",
     "CHN-0",
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
@@ -55,10 +54,10 @@
     "moz-extension-scheme",
     "opera-scheme",
     "vivaldi-scheme",
-    "weibo.com"
+    "watchhentai.net"
   ],
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
-  "hostnameSwitchesString": "no-large-media: behind-the-scene false",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
   "userFilters": ""
 }
