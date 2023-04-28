@@ -1941,7 +1941,7 @@
     "autoUpdate": {
       "enabled": true,
       "options": {
-        "lastUpdateCheck": 1682289784096,
+        "lastUpdateCheck": 1682379488481,
         "lastInstalledVersion": "2.7.0",
         "localPortOverride": "",
         "minimumDuration": 86400000,
@@ -1949,253 +1949,253 @@
           "components": {
             "copyFeedsLink": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/copy-link.js",
-              "lastUpdateCheck": 1681521511131,
+              "lastUpdateCheck": 1682379487594,
               "installTime": 1673491582898,
               "alwaysUpdate": false
             },
             "disableFeedsDetails": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/disable-details.js",
-              "lastUpdateCheck": 1681646917604,
+              "lastUpdateCheck": 1682379487509,
               "installTime": 1673491587538,
               "alwaysUpdate": false
             },
             "feedsFilter": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/filter.js",
-              "lastUpdateCheck": 1681646918294,
+              "lastUpdateCheck": 1682379487571,
               "installTime": 1673491591771,
               "alwaysUpdate": false
             },
             "foldComments": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/fold-comments.js",
-              "lastUpdateCheck": 1681646917008,
+              "lastUpdateCheck": 1682379487079,
               "installTime": 1673491600384,
               "alwaysUpdate": false
             },
             "fullFeedsTitle": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/full-title.js",
-              "lastUpdateCheck": 1681521511406,
+              "lastUpdateCheck": 1682379486201,
               "installTime": 1673491603198,
               "alwaysUpdate": false
             },
             "hideFeedsCommentPreview": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/hide-comment-preview.js",
-              "lastUpdateCheck": 1681646918357,
+              "lastUpdateCheck": 1682379487617,
               "installTime": 1673491605544,
               "alwaysUpdate": false
             },
             "unfoldFeeds": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/unfold.js",
-              "lastUpdateCheck": 1681646917274,
+              "lastUpdateCheck": 1682379487399,
               "installTime": 1673491607725,
               "alwaysUpdate": false
             },
             "liveHomeMute": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/live/home-mute.js",
-              "lastUpdateCheck": 1681646917317,
+              "lastUpdateCheck": 1682379487535,
               "installTime": 1673491613487,
               "alwaysUpdate": false
             },
             "removeLiveWatermark": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/live/remove-watermark.js",
-              "lastUpdateCheck": 1681646916100,
+              "lastUpdateCheck": 1682379487125,
               "installTime": 1673491618934,
               "alwaysUpdate": false
             },
             "alwaysShowDuration": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/always-show-duration.js",
-              "lastUpdateCheck": 1681646916640,
+              "lastUpdateCheck": 1682379487433,
               "installTime": 1673491649989,
               "alwaysUpdate": false
             },
             "autoHideSidebar": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/auto-hide-sidebar.js",
-              "lastUpdateCheck": 1681646917233,
+              "lastUpdateCheck": 1682379485046,
               "installTime": 1673491651900,
               "alwaysUpdate": false
             },
             "customNavbar": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/custom-navbar.js",
-              "lastUpdateCheck": 1681646917818,
+              "lastUpdateCheck": 1682379485433,
               "installTime": 1673491666268,
               "alwaysUpdate": false
             },
             "hideBangumiReviews": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/hide/bangumi/reviews.js",
-              "lastUpdateCheck": 1681646916455,
+              "lastUpdateCheck": 1682379484970,
               "installTime": 1673491667992,
               "alwaysUpdate": false
             },
             "hideBangumiSponsors": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/hide/bangumi/sponsors.js",
-              "lastUpdateCheck": 1681646916182,
+              "lastUpdateCheck": 1682379485119,
               "installTime": 1673491668785,
               "alwaysUpdate": false
             },
             "hideBanner": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/hide/banner.js",
-              "lastUpdateCheck": 1681646917562,
+              "lastUpdateCheck": 1682379485307,
               "installTime": 1673491669425,
               "alwaysUpdate": false
             },
             "hideRecommendedLive": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/hide/video/recommended-live.js",
-              "lastUpdateCheck": 1681646916367,
+              "lastUpdateCheck": 1682379486072,
               "installTime": 1673491670165,
               "alwaysUpdate": false
             },
             "hideVideoTopMask": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/hide/video/top-mask.js",
-              "lastUpdateCheck": 1681646916274,
+              "lastUpdateCheck": 1682379485092,
               "installTime": 1673491671129,
               "alwaysUpdate": false
             },
             "freshHome": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/home-redesign/fresh.js",
-              "lastUpdateCheck": 1681646918602,
+              "lastUpdateCheck": 1682379485739,
               "installTime": 1673491675846,
               "alwaysUpdate": false
             },
             "playerShadow": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/player-shadow.js",
-              "lastUpdateCheck": 1681646917482,
+              "lastUpdateCheck": 1682379485329,
               "installTime": 1673491678135,
               "alwaysUpdate": false
             },
             "simplifyComments": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/simplify/comments.js",
-              "lastUpdateCheck": 1681646916594,
+              "lastUpdateCheck": 1682379485070,
               "installTime": 1673491693853,
               "alwaysUpdate": false
             },
             "simplifyLiveroom": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/simplify/live.js",
-              "lastUpdateCheck": 1681646917679,
+              "lastUpdateCheck": 1682379484945,
               "installTime": 1673491700994,
               "alwaysUpdate": false
             },
             "copyCommentsLink": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/utils/comments/copy-link.js",
-              "lastUpdateCheck": 1681646917522,
+              "lastUpdateCheck": 1682379485584,
               "installTime": 1673491715604,
               "alwaysUpdate": false
             },
             "columnUnlock": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/utils/column-unlock.js",
-              "lastUpdateCheck": 1681646917877,
+              "lastUpdateCheck": 1682379485255,
               "installTime": 1673491715958,
               "alwaysUpdate": false
             },
             "imageResolution": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/utils/image-resolution.js",
-              "lastUpdateCheck": 1681646916799,
+              "lastUpdateCheck": 1682379485457,
               "installTime": 1673491720086,
               "alwaysUpdate": false
             },
             "watchlaterRedirect": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/utils/watchlater-redirect.js",
-              "lastUpdateCheck": 1681646916527,
+              "lastUpdateCheck": 1682379487186,
               "installTime": 1673491724698,
               "alwaysUpdate": false
             },
             "removePromotions": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/utils/remove-promotions.js",
-              "lastUpdateCheck": 1681646916725,
+              "lastUpdateCheck": 1682379485520,
               "installTime": 1673491725558,
               "alwaysUpdate": false
             },
             "downloadVideo": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/download.js",
-              "lastUpdateCheck": 1681646918463,
+              "lastUpdateCheck": 1682379485387,
               "installTime": 1673491733187,
               "alwaysUpdate": false
             },
             "fullVideoDescription": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/full-description.js",
-              "lastUpdateCheck": 1681646918058,
+              "lastUpdateCheck": 1682379485356,
               "installTime": 1673491734885,
               "alwaysUpdate": false
             },
             "playerControlBackground": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/control-background.js",
-              "lastUpdateCheck": 1681646917965,
+              "lastUpdateCheck": 1682379485282,
               "installTime": 1673491739285,
               "alwaysUpdate": false
             },
             "extendVideoSpeed": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/extend-speed.js",
-              "lastUpdateCheck": 1681646916952,
+              "lastUpdateCheck": 1682379486285,
               "installTime": 1673491749550,
               "alwaysUpdate": false
             },
             "removePlayerPopup": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/remove-popup.js",
-              "lastUpdateCheck": 1681646916850,
+              "lastUpdateCheck": 1682379487484,
               "installTime": 1673491759556,
               "alwaysUpdate": false
             },
             "rememberVideoSpeed": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/remember-speed.js",
-              "lastUpdateCheck": 1681646916909,
+              "lastUpdateCheck": 1682379486428,
               "installTime": 1673491760722,
               "alwaysUpdate": false
             },
             "preserveDanmakuInput": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/preserve-danmaku-input.js",
-              "lastUpdateCheck": 1681646918005,
+              "lastUpdateCheck": 1682379486116,
               "installTime": 1673491760813,
               "alwaysUpdate": false
             },
             "seekByFrames": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/seek-by-frames.js",
-              "lastUpdateCheck": 1681646917180,
+              "lastUpdateCheck": 1682379486967,
               "installTime": 1673491761362,
               "alwaysUpdate": false
             },
             "showUploadTime": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/show-upload-time.js",
-              "lastUpdateCheck": 1681646917082,
+              "lastUpdateCheck": 1682379487269,
               "installTime": 1673491763718,
               "alwaysUpdate": false
             },
             "skipChargeList": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/skip-charge-list.js",
-              "lastUpdateCheck": 1681646917923,
+              "lastUpdateCheck": 1682379486031,
               "installTime": 1673491765866,
               "alwaysUpdate": false
             },
             "seoRedirect": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/seo-redirect.js",
-              "lastUpdateCheck": 1681646918222,
+              "lastUpdateCheck": 1682379486929,
               "installTime": 1673491767448,
               "alwaysUpdate": false
             },
             "disableCommentsSearchLink": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/utils/comments/disable-search-link.js",
-              "lastUpdateCheck": 1681646918168,
+              "lastUpdateCheck": 1682379487227,
               "installTime": 1675916938909,
               "alwaysUpdate": false
             },
             "danmakuAirborne": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/danmaku/airborne.js",
-              "lastUpdateCheck": 1681646918405,
+              "lastUpdateCheck": 1682379487639,
               "installTime": 1675916964826,
               "alwaysUpdate": false
             },
             "disableScrollVolume": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/disable-scroll-volume.js",
-              "lastUpdateCheck": 1681646918114,
+              "lastUpdateCheck": 1682379487460,
               "installTime": 1675916987581,
               "alwaysUpdate": false
             },
             "extendFeedsLive": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/extend-live.js",
-              "lastUpdateCheck": 1681646917364,
+              "lastUpdateCheck": 1682379486149,
               "installTime": 1676853853675,
               "alwaysUpdate": false
             },
             "originalLiveroom": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/live/original.js",
-              "lastUpdateCheck": 1681646917431,
+              "lastUpdateCheck": 1682379486178,
               "installTime": 1676853906520,
               "alwaysUpdate": false
             }
@@ -2203,19 +2203,19 @@
           "plugins": {
             "downloadVideo.outputs.idm": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/video/download/idm-output.js",
-              "lastUpdateCheck": 1681646921138,
+              "lastUpdateCheck": 1682379488053,
               "installTime": 1673491774202,
               "alwaysUpdate": false
             },
             "speed.keymap": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/video/player/speed.js",
-              "lastUpdateCheck": 1681646921235,
+              "lastUpdateCheck": 1682379488479,
               "installTime": 1673491780529,
               "alwaysUpdate": false
             },
             "downloadVideo.outputs.motrix": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/video/download/motrix-output.js",
-              "lastUpdateCheck": 1681646921152,
+              "lastUpdateCheck": 1682379488138,
               "installTime": 1675917029702,
               "alwaysUpdate": false
             }

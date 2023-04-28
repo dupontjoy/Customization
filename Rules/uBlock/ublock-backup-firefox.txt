@@ -1,21 +1,22 @@
 {
-  "timeStamp": 1679405536947,
-  "version": "1.47.5rc5",
+  "timeStamp": 1682644467181,
+  "version": "1.49.3b1",
   "userSettings": {
-    "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
     "cnameUncloakEnabled": false,
     "contextMenuEnabled": false,
-    "externalLists": "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt\nhttps://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt",
+    "externalLists": "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt\nhttps://gitee.com/dupontjoy/customization/raw/main/Rules/uBlock/cinglist-ubo.txt",
     "firewallPaneMinimized": false,
+    "hyperlinkAuditingDisabled": false,
     "importedLists": [
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt",
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt",
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt",
-      "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt"
+      "https://gitee.com/dupontjoy/customization/raw/main/Rules/uBlock/cinglist-ubo.txt"
     ],
     "popupPanelSections": 63,
+    "prefetchingDisabled": false,
     "webrtcIPAddressHidden": true
   },
   "selectedFilterLists": [
@@ -36,8 +37,8 @@
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt",
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt",
-    "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/cinglist-ubo.txt",
-    "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt"
+    "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/I_dont_care_about_cookies.txt",
+    "https://gitee.com/dupontjoy/customization/raw/main/Rules/uBlock/cinglist-ubo.txt"
   ],
   "hiddenSettings": {
     "autoUpdatePeriod": 60,
@@ -53,11 +54,10 @@
     "chrome-scheme",
     "moz-extension-scheme",
     "opera-scheme",
-    "vivaldi-scheme",
-    "watchhentai.net"
+    "vivaldi-scheme"
   ],
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
-  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false",
   "userFilters": ""
 }
