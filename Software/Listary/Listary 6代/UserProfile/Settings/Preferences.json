@@ -1,0 +1,370 @@
+{
+  "AppConfigs": {
+    "TypeConfigs": {
+      "WindowsExplorer": {
+        "EnableMouseMiddleClick": false
+      },
+      "FileDialog": {
+        "EnableMouseMiddleClick": false
+      },
+      "FolderDialog": {},
+      "Desktop": {
+        "EnableMouseMiddleClick": false
+      },
+      "TotalCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "DirectoryOpus": {},
+      "FreeCommander": {},
+      "XYplorer": {},
+      "xplorer2": {},
+      "Bandizip": {},
+      "AutoCAD": {},
+      "Explzh": {},
+      "Files": {},
+      "OneCommander": {},
+      "WinRAR.ExtractDialog": {},
+      "WPS.FileDialog": {}
+    },
+    "PathConfigs": {}
+  },
+  "Menus": {
+    "Favorites": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": []
+    }
+  },
+  "DiskSearch": {
+    "FolderPriority": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": []
+    },
+    "FileNamePriority": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": []
+    },
+    "SearchFilter": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": []
+    },
+    "CustomFolders": [
+      {
+        "Path": "X:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "Y:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "Z:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "E:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "F:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "G:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "H:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "X:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "Y:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "Z:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "E:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "F:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "G:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      },
+      {
+        "Path": "H:\\",
+        "UpdateType": 1,
+        "UpdateIntervalType": 0,
+        "UpdateInterval": 10,
+        "UpdateDayOfWeek": 0,
+        "UpdateTimeOfDay": null
+      }
+    ]
+  },
+  "FileSearchWindow": {
+    "Columns": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": [
+        {
+          "Id": "FileName",
+          "UpdatedProperties": {
+            "Width": 200
+          }
+        },
+        {
+          "Id": "Path",
+          "UpdatedProperties": {
+            "Width": 400
+          }
+        },
+        {
+          "Id": "DateModified",
+          "UpdatedProperties": {
+            "Width": 200
+          }
+        }
+      ]
+    },
+    "WindowWidth": 1000,
+    "WindowHeight": 720,
+    "PreviewWidth": 300,
+    "SideBarWidth": 225
+  },
+  "Commands": {
+    "Items": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "Everything全盘搜索\"{query}\"",
+            "Path": "..\\TotalCMD64\\Tools\\Everything.exe",
+            "Parameter": "-search {query}",
+            "WorkingDirectory": "",
+            "Id": "b4fefa2c-ab20-412c-8a8d-1ebe47ef919c",
+            "Keyword": "ev",
+            "$customType": "CustomCommand"
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "使用mpv播放",
+            "Path": "cmd.exe",
+            "Parameter": "/c \"mpv {query}\"",
+            "WorkingDirectory": "..\\MPV\\",
+            "Id": "48891949-7f00-48c1-b1e5-d75258324d66",
+            "Keyword": "mpv",
+            "$customType": "CustomCommand"
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "使用GoldenDict搜索",
+            "Path": "..\\..\\..\\GoldenDict\\GoldenDict.exe",
+            "Parameter": "{query}",
+            "WorkingDirectory": "",
+            "Id": "14342955-4918-4aea-996f-dbd73b63cbce",
+            "Keyword": "gd",
+            "$customType": "CustomCommand"
+          }
+        }
+      ],
+      "Updates": []
+    }
+  },
+  "WebSearch": {
+    "Items": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "db",
+            "Url": "https://www.douban.com/search?q={query}",
+            "Title": "Search douban for '{query}'",
+            "Icon": {
+              "Path": "{user}\\cbbfc6c4-540b-4f8d-a2fa-f12887a020ca.png",
+              "TypeName": "Path"
+            }
+          }
+        }
+      ],
+      "Updates": [
+        {
+          "Id": "c78295a6-2cf8-4569-bf42-33f1e5c030d7",
+          "UpdatedProperties": {
+            "Keyword": "wk"
+          }
+        },
+        {
+          "Id": "dd896809-2af4-405b-834f-45816615e3e3",
+          "UpdatedProperties": {
+            "Keyword": "bi"
+          }
+        },
+        {
+          "Id": "5ac62036-62aa-49d3-866b-d041bc7b1b76",
+          "UpdatedProperties": {
+            "Keyword": "gm"
+          }
+        },
+        {
+          "Id": "4ed886fb-1df0-4fd0-abc1-810fc180e647",
+          "UpdatedProperties": {
+            "Keyword": "tw"
+          }
+        },
+        {
+          "Id": "5014b42a-884d-40d3-835d-69079dd9fc51",
+          "UpdatedProperties": {
+            "Keyword": "yt"
+          }
+        },
+        {
+          "Id": "610a486d-0028-4739-8eb6-50f5247c918f",
+          "UpdatedProperties": {
+            "Keyword": "am"
+          }
+        },
+        {
+          "Id": "2db0261a-1114-4c8d-8cc8-62a89aeb1a35",
+          "UpdatedProperties": {
+            "Keyword": "eb"
+          }
+        },
+        {
+          "Id": "1744aa0c-751a-495f-aac5-6910e7406229",
+          "UpdatedProperties": {
+            "Keyword": "fb"
+          }
+        }
+      ]
+    }
+  },
+  "Actions": {
+    "Items": {
+      "Deletions": [
+        "afc47971-acaa-4731-bd26-0cd85109bee0"
+      ],
+      "Moves": [],
+      "Insertions": [
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "在TC中定位到该文件",
+            "Path": "..\\TotalCMD64\\TotalCMD64.exe",
+            "Parameter": "/O /T /A /S /L=\"{action_path}\"",
+            "Keyword": "",
+            "Hotkey": 1037,
+            "$customType": "CustomCommand"
+          }
+        }
+      ],
+      "Updates": [
+        {
+          "Id": "284ecbe8-1ef2-49c9-bd93-f7025519402b",
+          "UpdatedProperties": {
+            "Hotkey": 600
+          }
+        }
+      ]
+    }
+  },
+  "AutoUpdate": {},
+  "Settings": {
+    "General.EnableAnalytics": false,
+    "Hotkey.DisableDoubleCtrlForFullScreenApps": false,
+    "OpenFolder.Path": "..\\TotalCMD64\\TotalCMD64.exe",
+    "OpenFolder.Param": "/O /T /P=R \"%1\"",
+    "Tutorial.ShowMainV3": false,
+    "Listary5.SettingsImported": true,
+    "Listary5.ProLicense.Name": "Adven Dai",
+    "Listary5.ProLicense.Email": "daiqiang7297@163.com",
+    "Listary5.ProLicense.Key": "FP7832JRZS7TVFCHJXN8Z7S7MBZZSRBJDEX6PY3PL239QU53M2R9JHNK2XW4LY6D32CJ3BJDHK2L5APH3LFVFASHVLHFEXEHFX79M6NDNUJCMR8LRCLAN7MPSD6CAGTMCAHYH22CGT8T542RFPAGVY23W349QJV4C4G8XT2893SSUZV9E3CCPRGVY3A7FE3B"
+  },
+  "Extensions": {
+    "Extensions": {
+      "1a63ea9d-bf25-431f-96e3-17b80027efab": {}
+    }
+  }
+}

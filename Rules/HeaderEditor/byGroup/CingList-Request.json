@@ -4,7 +4,7 @@
 		{
 			"name": "网站语言默认英文",
 			"ruleType": "modifySendHeader",
-			"pattern": "^https?:\\/\\/.*\\.(bing|pornhub|google)\\.com.*",
+			"pattern": "^https?:\\/\\/.*(bing|pornhub|google).*",
 			"exclude": "",
 			"action": {
 				"name": "accept-language",
@@ -13,49 +13,8 @@
 			"matchType": "regexp",
 			"isFunction": false,
 			"enable": true,
-			"group": "CingList-Request"
-		},
-		{
-			"enable": true,
-			"name": "economist免订阅",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*economist\\.com.*",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": "https://www.google.com/"
-			},
-			"group": "CingList-Request"
-		},
-		{
-			"enable": true,
-			"name": "wsj免订阅",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*\\.wsj\\.(net|com).*",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": "https://www.facebook.com/"
-			},
-			"group": "CingList-Request"
-		},
-		{
-			"enable": true,
-			"name": "ft免订阅",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*\\.ft\\.com.*",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": "https://www.google.com/"
-			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"encoding": "UTF-8"
 		},
 		{
 			"enable": true,
@@ -90,14 +49,15 @@
 			"name": "微信图片盗链",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*\\.(qpic|qlogo)\\.cn.*",
+			"pattern": "^https?:\\/\\/(mmbiz|a|gchat).*\\.(qpic|qlogo)\\.cn.*",
 			"exclude": "",
 			"isFunction": false,
 			"action": {
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"encoding": "UTF-8"
 		},
 		{
 			"enable": true,
@@ -125,7 +85,8 @@
 				"name": "referer",
 				"value": "https://www.baidu.com"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"encoding": "UTF-8"
 		},
 		{
 			"enable": true,
@@ -143,20 +104,6 @@
 		},
 		{
 			"enable": true,
-			"name": "tianya图片盗链",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*\\.(laibafile|tianya|tianyablog)\\.(cn|com).*",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": "http://www.tianya.cn/"
-			},
-			"group": "CingList-Request"
-		},
-		{
-			"enable": true,
 			"name": "网易图片盗链",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
@@ -165,7 +112,7 @@
 			"isFunction": false,
 			"action": {
 				"name": "referer",
-				"value": "http://www.163.com/"
+				"value": "https://www.163.com/"
 			},
 			"group": "CingList-Request"
 		},
@@ -201,7 +148,7 @@
 			"enable": true,
 			"name": "pixiv图片盗链",
 			"ruleType": "modifySendHeader",
-			"matchType": "domain",
+			"matchType": "regexp",
 			"pattern": "i.pximg.net",
 			"exclude": "",
 			"isFunction": false,
@@ -209,7 +156,8 @@
 				"name": "referer",
 				"value": "https://www.pixiv.net/"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"encoding": "UTF-8"
 		},
 		{
 			"enable": true,
@@ -353,34 +301,6 @@
 		},
 		{
 			"enable": true,
-			"name": "cnbeta图片盗链",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*\\.cnbetacdn\\.com.*",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": "https://www.cnbeta.com/"
-			},
-			"group": "CingList-Request"
-		},
-		{
-			"enable": true,
-			"name": "imgur图片盗链",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*\\.imgur\\.com.*",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": ""
-			},
-			"group": "CingList-Request"
-		},
-		{
-			"enable": true,
 			"name": "quora图片盗链",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
@@ -432,20 +352,6 @@
 			"action": {
 				"name": "referer",
 				"value": ""
-			},
-			"group": "CingList-Request"
-		},
-		{
-			"enable": true,
-			"name": "statista免订阅",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*\\.(statista|statcdn)\\.com.*",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": "https://www.google.com"
 			},
 			"group": "CingList-Request"
 		},
@@ -521,20 +427,6 @@
 		},
 		{
 			"enable": true,
-			"name": "elysii图片盗链",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/elysii\\.net.*",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": ""
-			},
-			"group": "CingList-Request"
-		},
-		{
-			"enable": true,
 			"name": "sunzhongwei图片盗链",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
@@ -549,31 +441,18 @@
 		},
 		{
 			"enable": true,
-			"name": "windows10.pro图片盗链",
+			"name": "IT之家图片盗链",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "windows10.pro",
-			"exclude": "",
-			"group": "CingList-Request",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": ""
-			}
-		},
-		{
-			"enable": true,
-			"name": "IT之家盗链",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/img\\.ithome\\.com\\/.*",
+			"pattern": "^https?:\\/\\/img\\.ithome.*",
 			"exclude": "",
 			"isFunction": false,
 			"action": {
 				"name": "referer",
 				"value": "https://www.ithome.com/"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"encoding": "UTF-8"
 		},
 		{
 			"enable": true,
@@ -588,6 +467,51 @@
 				"name": "referer",
 				"value": "https://www.thepaper.cn/"
 			}
+		},
+		{
+			"name": "同花顺K线图",
+			"ruleType": "modifySendHeader",
+			"pattern": "d.10jqka.com.cn",
+			"exclude": "",
+			"action": {
+				"name": "referer",
+				"value": "https://stockpage.10jqka.com.cn/"
+			},
+			"matchType": "regexp",
+			"isFunction": false,
+			"enable": true,
+			"group": "CingList-Request",
+			"encoding": "UTF-8"
+		},
+		{
+			"enable": true,
+			"name": "网站UA设置为Edge",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*(jianshu|bili|hdslb|youtube|google|wsj).*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Edge/1000"
+			},
+			"group": "CingList-Request",
+			"encoding": "UTF-8"
+		},
+		{
+			"enable": false,
+			"name": "网站免订阅",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*(economist|wsj).*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "https://www.google.com/"
+			},
+			"group": "CingList-Request",
+			"encoding": "UTF-8"
 		}
 	],
 	"receiveHeader": [],

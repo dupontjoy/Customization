@@ -1,0 +1,3 @@
+个人喜欢将该词典便携式使用，
+在GoldenDict主目录下建portable目录用于放置索引数据，
+将词典文件放置于\GoldenDict\content下即可。

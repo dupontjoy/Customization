@@ -1,0 +1,20 @@
+{
+    "Appearance.TrayIcon": {
+        "subConf": {
+            "color": "ffffffff"
+        },
+        "value": "src"
+    },
+    "Pin.ConfirmOnCloseByDoubleClick": false,
+    "Pin.ConfirmOnCloseByKey": false,
+    "Pin.LockType": 6,
+    "Pin.MouseWheelScaleMode": 1,
+    "Pin.Text.defalutTextSelectable": true,
+    "Screenshot.ConfirmOnCloseByKey": false,
+    "System.Update.AutoCheckUpdate": {
+        "subConf": {
+            "checkBeta": false
+        },
+        "value": false
+    }
+}

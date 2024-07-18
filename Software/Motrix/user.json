@@ -1,0 +1,43 @@
+{
+	"all-proxy-backup": "",
+	"auto-check-update": true,
+	"auto-hide-window": false,
+	"auto-sync-tracker": true,
+	"enable-upnp": true,
+	"engine-max-connection-per-server": 64,
+	"favorite-directories": [],
+	"hide-app-menu": true,
+	"history-directories": [
+		"E:\\Download"
+	],
+	"keep-seeding": false,
+	"keep-window-state": false,
+	"last-check-update-time": 0,
+	"last-sync-tracker-time": 1683375768010,
+	"locale": "zh-CN",
+	"log-level": "warn",
+	"new-task-show-downloading": true,
+	"no-confirm-before-delete-task": false,
+	"open-at-login": false,
+	"protocols": {
+		"magnet": true,
+		"thunder": true
+	},
+	"resume-all-when-app-launched": true,
+	"run-mode": 1,
+	"show-progress-bar": true,
+	"task-notification": true,
+	"theme": "auto",
+	"tracker-source": [
+		"https://cdn.jsdelivr.net/gh/ngosang/trackerslist/trackers_best_ip.txt",
+		"https://cdn.jsdelivr.net/gh/ngosang/trackerslist/trackers_best.txt",
+		"https://cf.trackerslist.com/best.txt"
+	],
+	"tray-theme": "auto",
+	"tray-speedometer": false,
+	"update-channel": "latest",
+	"use-proxy": false,
+	"window-state": {},
+	"log-path": "C:\\Users\\Cing\\AppData\\Roaming\\Motrix\\Motrix\\logs",
+	"session-path": "C:\\Users\\Cing\\AppData\\Roaming\\Motrix\\download.session"
+}

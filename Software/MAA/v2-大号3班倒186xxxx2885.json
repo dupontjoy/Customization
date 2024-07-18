@@ -1,0 +1,585 @@
+{
+  "author": "yituliu",
+  "description": "大号186xxxx2885",
+  "id": 1720061941429527,
+  "title": "243",
+  "buildingType": 243,
+  "planTimes": "3班",
+  "plans": [
+    {
+      "name": "08:00-18:59",
+      "description": "11小时",
+      "Fiammetta": {
+        "enable": true,
+        "target": "巫恋",
+        "order": "pre"
+      },
+      "drones": {
+        "room": "trading",
+        "index": 1,
+        "enable": true,
+        "order": "pre"
+      },
+      "rooms": {
+        "trading": [
+          {
+            "skip": false,
+            "product": "LMD",
+            "operators": [
+              "巫恋",
+              "柏喙",
+              "龙舌兰"
+            ],
+            "sort": true,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "product": "LMD",
+            "operators": [
+              "但书",
+              "银灰",
+              "孑"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "manufacture": [
+          {
+            "skip": false,
+            "product": "Battle Record",
+            "operators": [
+              "断罪者",
+              "Castle-3",
+              "霜叶"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "product": "Battle Record",
+            "operators": [
+              "稀音",
+              "刻俄柏",
+              "红云"
+            ],
+            "sort": true,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "product": "Pure Gold",
+            "operators": [
+              "砾",
+              "槐琥",
+              "水月"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "product": "Pure Gold",
+            "operators": [
+              "清流",
+              "温蒂",
+              "森蚺"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "power": [
+          {
+            "skip": false,
+            "operators": [
+              "澄闪"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "operators": [
+              "格雷伊"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "operators": [
+              "承曦格雷伊"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "dormitory": [
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          },
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          },
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          },
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          }
+        ],
+        "control": [
+          {
+            "skip": false,
+            "operators": [
+              "明椒",
+              "灵知",
+              "玛恩纳",
+              "杜宾",
+              "凯尔希"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "meeting": [
+          {
+            "skip": false,
+            "operators": [
+              "红",
+              "晓歌"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "hire": [
+          {
+            "skip": false,
+            "operators": [
+              "艾雅法拉"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "processing": [
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          }
+        ]
+      },
+      "period": [
+        [
+          "08:00",
+          "18:59"
+        ]
+      ]
+    },
+    {
+      "name": "19:00-21:59",
+      "description": "3小时",
+      "Fiammetta": {
+        "enable": false,
+        "target": "龙舌兰",
+        "order": "pre"
+      },
+      "drones": {
+        "room": "manufacture",
+        "index": 4,
+        "enable": true,
+        "order": "pre"
+      },
+      "rooms": {
+        "trading": [
+          {
+            "skip": false,
+            "product": "LMD",
+            "operators": [
+              "巫恋",
+              "柏喙",
+              "铎铃"
+            ],
+            "sort": true,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "product": "LMD",
+            "operators": [
+              "能天使",
+              "拉普兰德",
+              "德克萨斯"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "manufacture": [
+          {
+            "skip": false,
+            "product": "Battle Record",
+            "operators": [
+              "断罪者",
+              "Castle-3",
+              "霜叶"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "product": "Battle Record",
+            "operators": [
+              "白雪",
+              "食铁兽",
+              "红豆"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "product": "Pure Gold",
+            "operators": [
+              "砾",
+              "槐琥",
+              "水月"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "product": "Pure Gold",
+            "operators": [
+              "苍苔",
+              "夜烟",
+              "斑点"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "power": [
+          {
+            "skip": false,
+            "operators": [
+              "海霓"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "operators": [
+              "阿消"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "operators": [
+              "布丁"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "dormitory": [
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          },
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          },
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          },
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          }
+        ],
+        "control": [
+          {
+            "skip": false,
+            "operators": [
+              "明椒",
+              "阿",
+              "老鲤",
+              "凯尔希",
+              "重岳"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "meeting": [
+          {
+            "skip": false,
+            "operators": [
+              "红",
+              "晓歌"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "hire": [
+          {
+            "skip": false,
+            "operators": [
+              "地灵"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "processing": [
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          }
+        ]
+      },
+      "period": [
+        [
+          "19:00",
+          "21:59"
+        ]
+      ]
+    },
+    {
+      "name": "22:00-07:59",
+      "description": "10小时",
+      "Fiammetta": {
+        "enable": true,
+        "target": "柏喙",
+        "order": "pre"
+      },
+      "drones": {
+        "room": "manufacture",
+        "index": 3,
+        "enable": true,
+        "order": "post"
+      },
+      "rooms": {
+        "trading": [
+          {
+            "skip": false,
+            "product": "LMD",
+            "operators": [
+              "巫恋",
+              "柏喙",
+              "龙舌兰"
+            ],
+            "sort": true,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "product": "LMD",
+            "operators": [
+              "但书",
+              "银灰",
+              "孑"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "manufacture": [
+          {
+            "skip": false,
+            "product": "Battle Record",
+            "operators": [
+              "白雪",
+              "食铁兽",
+              "红豆"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "product": "Battle Record",
+            "operators": [
+              "稀音",
+              "刻俄柏",
+              "红云"
+            ],
+            "sort": true,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "product": "Pure Gold",
+            "operators": [
+              "温蒂",
+              "森蚺",
+              "清流"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "product": "Pure Gold",
+            "operators": [
+              "苍苔",
+              "夜烟",
+              "斑点"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "power": [
+          {
+            "skip": false,
+            "operators": [
+              "澄闪"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "operators": [
+              "格雷伊"
+            ],
+            "sort": false,
+            "autofill": false
+          },
+          {
+            "skip": false,
+            "operators": [
+              "承曦格雷伊"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "dormitory": [
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          },
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          },
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          },
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          }
+        ],
+        "control": [
+          {
+            "skip": false,
+            "operators": [
+              "诗怀雅",
+              "灵知",
+              "凯尔希",
+              "玛恩纳",
+              "杜宾"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "meeting": [
+          {
+            "skip": false,
+            "operators": [
+              "远山",
+              "宴"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "hire": [
+          {
+            "skip": false,
+            "operators": [
+              "艾雅法拉"
+            ],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "processing": [
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": true
+          }
+        ]
+      },
+      "period": [
+        [
+          "22:00",
+          "23:59"
+        ],
+        [
+          "00:00",
+          "07:59"
+        ]
+      ]
+    }
+  ],
+  "scheduleType": {
+    "planTimes": 3,
+    "trading": 2,
+    "manufacture": 4,
+    "power": 3,
+    "dormitory": 4
+  }
+}

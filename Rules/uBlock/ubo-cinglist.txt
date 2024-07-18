@@ -1,0 +1,120 @@
+[Adblock Plus 2.0]
+! Title:        cinglist
+! Description:  自用过滤规则。
+! Author:       Cing
+! License:      Creative Commons BY-NC-SA
+! Version:      2024
+! Expires:      1h
+!-------------------------------------------------------------------------------------!
+
+! Bili
+bilibili.com##.reply-notice
+bilibili.com##.browser-tip > .title
+
+
+! 防止斗鱼直播切回标签页会重新加载
+douyu.com##+js(aeld,visibilitychange)
+
+! Youtube
+ ! 反制“人为延迟 5 秒加载”
+youtube.com##+js (nano-stb, resolve (1), *, 0.001)
+
+! 1688
+ ! js加载死循环造成的卡死
+||g.alicdn.com/zgc/aem-od-assets-logger/*/index.js$script,domain=1688.com
+
+! 无追搜索
+wuzhuiso.com##.extension-tip.res-list
+wuzhuiso.com##.download-browser
+
+
+! NGA
+bbs.nga.cn##.hld__docker
+
+! 百度
+pan.baidu.com##.dialog-gray.guide-share-dir-tip.dialog-dialog1.dialog
+pan.baidu.com##.module-canvas
+pan.baidu.com##.JS-nativeupload-tip.awGoro.global-clearfix
+pan.baidu.com##.wp-disk-header__right-item.web-header-ad-item
+pan.baidu.com##.company-cert.wp-disk-header__right-item
+pan.baidu.com##.wp-side-options-btn
+pan.baidu.com##.btn-img-tips
+pan.baidu.com##.vip-center-tip
+baike.baidu.com###J-declare
+tieba.baidu.com##.tbui_slideshow_list
+tieba.baidu.com##.tbui_slideshow_container.plat_recom_carousel
+tieba.baidu.com##.hover_btn
+pan.baidu.com###web-header-text-s-46 > span
+pan.baidu.com##span.wp-s-header__right-item
+pan.baidu.com##.wp-header-user__tooltip-display.wp-s-header-user__tooltip
+pan.baidu.com##.wp-s-header-user__body > [href^="https://pan.baidu.com/buy/center"]
+
+
+! 卡饭
+bbs.kafan.cn###autopbn
+bbs.kafan.cn###scrolltop
+bbs.kafan.cn##.bm_h
+bbs.kafan.cn##.ptn.xg2
+bbs.kafan.cn##.a_pt
+bbs.kafan.cn##.a_pb
+
+! CNN
+cnn.com##.user-msg
+
+
+! 经济学人
+economist.com##.newsletter-form--inline.newsletter-form
+economist.com##.timekeeper-bubble
+economist.com##.exit-pop
+economist.com##.ribbon__header
+economist.com##.ribbon__body
+economist.com###AdBillboard
+
+! HBR
+hbr.org##.backdrop-darker > .row
+
+! 京东
+jd.com##.side__ad.side__ad-left
+jd.com##.side__ad.side__ad-right
+jd.com##.activity-top
+
+! statista
+statista.com###statisticSlideIn
+statista.com###caRequestPopup
+statista.com##.modal-dialog--caRequest.modal-dialog
+
+! 2animx.com
+2animx.com###index_left
+2animx.com###index_right
+2animx.com##div[class*="footer"]
+
+! hentai.tv
+hentai.tv###wpd-bubble-count
+
+! weibo.com
+weibo.com##.yawf-dialog-outer
+
+! 電影天堂
+filmparadise.cn##.hongbao
+
+! cupfox.app
+cupfox.app##.model-content.jsx-2320072050
+cupfox.app##.model.jsx-2320072050
+cupfox.app##.a5-img.jsx-1787497032
+cupfox.app##.border-shadow.card.jsx-3496373115
+
+! xiaoluys.me
+xiaoluys.me##.popupShow.none.popup-tips.popup
+
+! feikuai.tv
+feikuai.tv##.popupShow.none.popup-tips.popup
+
+! zlibrary
+zlibrary-cn.se##.support-us-headline
+
+! torkitty.net
+torkitty.net##.modal-body
+torkitty.net##.modal.in.nordvpn-popup--v12.nordvpn-popup.fade
+
+! https://hentaihub.xxx
+hentaihub.xxx##.vrav_a_pc
