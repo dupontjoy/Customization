@@ -1,3 +1,4 @@
-个人喜欢将该词典便携式使用，
-在GoldenDict主目录下建portable目录用于放置索引数据，
-将词典文件放置于\GoldenDict\content下即可。
+将该词典便携式使用，
+在GoldenDict主目录下建portable和content目录，
+\GoldenDict\portable用于放置配置文件和索引数据，
+\GoldenDict\content用于放置词典文件。

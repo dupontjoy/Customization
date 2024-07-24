@@ -18,7 +18,7 @@ set Player=..\MuMuPlayer\shell\MuMuPlayer.exe
 
 ::终止一些进程
 taskkill /f /t /im maa*
-::taskkill /f /t /im mumu*
+taskkill /f /t /im mumu*
 
 
 ::adb断连
