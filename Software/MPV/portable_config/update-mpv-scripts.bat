@@ -24,10 +24,6 @@ echo. downloading autoload.conf
 %Download% -o "%cd%\script-opts\autoload.conf" https://github.com/dyphire/mpv-config/raw/master/script-opts/autoload.conf
 
 
-echo. downloading fix-avsync.lua
-%Download% -o "%cd%\scripts\fix-avsync.lua" https://github.com/dyphire/mpv-config/raw/master/scripts/fix-avsync.lua
-
-
 echo. downloading quality-menu.lua
 %Download% -o "%cd%\scripts\quality-menu.lua" https://github.com/dyphire/mpv-config/raw/master/scripts/quality-menu.lua
 echo. downloading quality-menu.conf
