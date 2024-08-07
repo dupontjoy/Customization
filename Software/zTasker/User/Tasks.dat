@@ -7,11 +7,11 @@
 <HKStopped>1</HKStopped>
 <HasEndDateTime>0</HasEndDateTime>
 <SchType>2</SchType>
-<StartDateTime>2024-08-01 07:57:00</StartDateTime>
+<StartDateTime>2024-08-06 07:57:00</StartDateTime>
 <EndDateTime>2024-03-03 02:27:36</EndDateTime>
-<NextRunDateTime>2024-08-03 07:57:00</NextRunDateTime>
-<NextRunTime>2024-08-03 07:57:00</NextRunTime>
-<LastRunTime>2024-08-02 07:57:00</LastRunTime>
+<NextRunDateTime>2024-08-08 07:57:00</NextRunDateTime>
+<NextRunTime>2024-08-08 07:57:00</NextRunTime>
+<LastRunTime>2024-08-07 07:57:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -27,8 +27,6 @@
 <EveryMonthDay>1</EveryMonthDay>
 <EverySec>30</EverySec>
 <EveryWeek/>
-<EveryYearDay>1</EveryYearDay>
-<EveryYearMonth>1</EveryYearMonth>
 <FileParam/>
 <FilePath/>
 <IsExitRest>0</IsExitRest>
@@ -55,6 +53,8 @@
 <VolDec>10</VolDec>
 <VolSet>10</VolSet>
 <Webpage/>
+<YearDay>1</YearDay>
+<YearMonth>1</YearMonth>
 <btnAudioCapAdv>0</btnAudioCapAdv>
 <btnScrRecAdv>0</btnScrRecAdv>
 <btnTaskType>0</btnTaskType>
@@ -82,24 +82,19 @@
 <chkClearDirFilterInclude>0</chkClearDirFilterInclude>
 <chkClearDirMin>0</chkClearDirMin>
 <chkClearDirSub>0</chkClearDirSub>
-<chkCpuOnce>0</chkCpuOnce>
 <chkDayLimitTime>0</chkDayLimitTime>
 <chkDelayRemind>0</chkDelayRemind>
-<chkDiskSpdOnce>0</chkDiskSpdOnce>
 <chkEndDateNone>1</chkEndDateNone>
 <chkEndDateSel>0</chkEndDateSel>
 <chkExecDlg>0</chkExecDlg>
 <chkExecDlgHK>0</chkExecDlgHK>
 <chkExitRest>0</chkExitRest>
 <chkGoogle>0</chkGoogle>
-<chkGpuOnce>0</chkGpuOnce>
 <chkHotkey>0</chkHotkey>
 <chkHotkeyAlt>0</chkHotkeyAlt>
 <chkHotkeyCtrl>0</chkHotkeyCtrl>
 <chkHotkeyShift>0</chkHotkeyShift>
 <chkHotkeyWin>0</chkHotkeyWin>
-<chkIdleOnce>0</chkIdleOnce>
-<chkInetStatOnce>0</chkInetStatOnce>
 <chkMemOnce>0</chkMemOnce>
 <chkMonDirAdd>0</chkMonDirAdd>
 <chkMonDirDel>0</chkMonDirDel>
@@ -110,14 +105,9 @@
 <chkMonDirRen>0</chkMonDirRen>
 <chkMonDirSub>0</chkMonDirSub>
 <chkMonthLunar>0</chkMonthLunar>
-<chkNetSpdOnce>0</chkNetSpdOnce>
 <chkPassExitRest>0</chkPassExitRest>
-<chkPingOnce>0</chkPingOnce>
 <chkPlayPlayTime>0</chkPlayPlayTime>
 <chkPlayVolLimit>0</chkPlayVolLimit>
-<chkPortOnce>0</chkPortOnce>
-<chkPowerOnce>0</chkPowerOnce>
-<chkProcChkOnce>0</chkProcChkOnce>
 <chkProcPartMatch>0</chkProcPartMatch>
 <chkProcWildMatch>0</chkProcWildMatch>
 <chkRemindAutoClose>0</chkRemindAutoClose>
@@ -149,7 +139,6 @@
 <chkWallRandom>0</chkWallRandom>
 <chkWallSubDir>0</chkWallSubDir>
 <chkWndChkActive>0</chkWndChkActive>
-<chkWndChkOnce>0</chkWndChkOnce>
 <chkWndChkVisible>0</chkWndChkVisible>
 <chkYearLunar>0</chkYearLunar>
 <chkZeroFull>1</chkZeroFull>
@@ -225,9 +214,7 @@
 <cmbZeroFullSex>0</cmbZeroFullSex>
 <combMonth>1</combMonth>
 <combMonth_text>1</combMonth_text>
-<combYearDay>1</combYearDay>
 <combYearDay_text>1</combYearDay_text>
-<combYearMonth>1</combYearMonth>
 <combYearMonth_text>1</combYearMonth_text>
 <edtAppDir/>
 <edtAppParam/>
@@ -259,8 +246,6 @@
 <edtCpuSec>0</edtCpuSec>
 <edtDayLimitMax>24</edtDayLimitMax>
 <edtDayLimitMin>0</edtDayLimitMin>
-<edtDelDirPath/>
-<edtDelFilePath/>
 <edtDelayBoot>0</edtDelayBoot>
 <edtDelayCount>10</edtDelayCount>
 <edtDelayMin>5</edtDelayMin>
@@ -406,11 +391,11 @@
 <HKStopped>1</HKStopped>
 <HasEndDateTime>0</HasEndDateTime>
 <SchType>2</SchType>
-<StartDateTime>2024-08-01 08:57:00</StartDateTime>
+<StartDateTime>2024-08-06 08:57:00</StartDateTime>
 <EndDateTime>2024-04-02 04:55:12</EndDateTime>
-<NextRunDateTime>2024-08-03 08:57:00</NextRunDateTime>
-<NextRunTime>2024-08-03 08:57:00</NextRunTime>
-<LastRunTime>2024-08-02 08:57:00</LastRunTime>
+<NextRunDateTime>2024-08-08 08:57:00</NextRunDateTime>
+<NextRunTime>2024-08-08 08:57:00</NextRunTime>
+<LastRunTime>2024-08-07 08:57:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -920,11 +905,11 @@
 <HKStopped>1</HKStopped>
 <HasEndDateTime>0</HasEndDateTime>
 <SchType>2</SchType>
-<StartDateTime>2024-07-31 17:57:00</StartDateTime>
+<StartDateTime>2024-08-05 17:57:00</StartDateTime>
 <EndDateTime>2024-03-12 09:50:24</EndDateTime>
-<NextRunDateTime>2024-08-02 17:57:00</NextRunDateTime>
-<NextRunTime>2024-08-02 17:57:00</NextRunTime>
-<LastRunTime>2024-08-01 17:57:00</LastRunTime>
+<NextRunDateTime>2024-08-07 17:57:00</NextRunDateTime>
+<NextRunTime>2024-08-07 17:57:00</NextRunTime>
+<LastRunTime>2024-08-06 17:57:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -1434,11 +1419,11 @@
 <HKStopped>1</HKStopped>
 <HasEndDateTime>0</HasEndDateTime>
 <SchType>2</SchType>
-<StartDateTime>2024-07-31 18:57:00</StartDateTime>
+<StartDateTime>2024-08-05 18:57:00</StartDateTime>
 <EndDateTime>2024-03-28 19:40:48</EndDateTime>
-<NextRunDateTime>2024-08-02 18:57:00</NextRunDateTime>
-<NextRunTime>2024-08-02 18:57:00</NextRunTime>
-<LastRunTime>2024-08-01 18:57:00</LastRunTime>
+<NextRunDateTime>2024-08-07 18:57:00</NextRunDateTime>
+<NextRunTime>2024-08-07 18:57:00</NextRunTime>
+<LastRunTime>2024-08-06 18:57:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -1948,11 +1933,11 @@
 <HKStopped>1</HKStopped>
 <HasEndDateTime>0</HasEndDateTime>
 <SchType>2</SchType>
-<StartDateTime>2024-07-31 21:27:00</StartDateTime>
+<StartDateTime>2024-08-05 21:27:00</StartDateTime>
 <EndDateTime>2024-05-12 02:27:36</EndDateTime>
-<NextRunDateTime>2024-08-02 21:27:00</NextRunDateTime>
-<NextRunTime>2024-08-02 21:27:00</NextRunTime>
-<LastRunTime>2024-08-01 21:27:00</LastRunTime>
+<NextRunDateTime>2024-08-07 21:27:00</NextRunDateTime>
+<NextRunTime>2024-08-07 21:27:00</NextRunTime>
+<LastRunTime>2024-08-06 21:27:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -2467,11 +2452,11 @@
 <HKStopped>1</HKStopped>
 <HasEndDateTime>0</HasEndDateTime>
 <SchType>2</SchType>
-<StartDateTime>2024-07-31 22:27:00</StartDateTime>
+<StartDateTime>2024-08-05 22:27:00</StartDateTime>
 <EndDateTime>2024-05-12 02:27:36</EndDateTime>
-<NextRunDateTime>2024-08-02 22:27:00</NextRunDateTime>
-<NextRunTime>2024-08-02 22:27:00</NextRunTime>
-<LastRunTime>2024-07-31 22:27:00</LastRunTime>
+<NextRunDateTime>2024-08-07 22:27:00</NextRunDateTime>
+<NextRunTime>2024-08-07 22:27:00</NextRunTime>
+<LastRunTime>2024-08-06 22:27:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -2986,11 +2971,11 @@
 <HKStopped>1</HKStopped>
 <HasEndDateTime>0</HasEndDateTime>
 <SchType>2</SchType>
-<StartDateTime>2024-07-31 20:00:00</StartDateTime>
+<StartDateTime>2024-08-04 20:00:00</StartDateTime>
 <EndDateTime>2024-07-18 22:11:12</EndDateTime>
-<NextRunDateTime>2024-08-03 20:00:00</NextRunDateTime>
-<NextRunTime>2024-08-03 20:00:00</NextRunTime>
-<LastRunTime>2024-08-01 20:00:00</LastRunTime>
+<NextRunDateTime>2024-08-07 20:00:00</NextRunDateTime>
+<NextRunTime>2024-08-07 20:00:00</NextRunTime>
+<LastRunTime>2024-08-05 20:00:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam>/AUTOSC</AppParam>

@@ -1,12 +1,15 @@
-::2024.04.27
+::2024.08.04
 
 @echo off
 
 ::界面颜色大小，Cols为宽，Lines为高
 COLOR 0a
 
-:Profiles
-rem 設置備份路徑以及臨時文件夾
+:update_MaaResource
+
+
+:settings
+rem 設置路徑
 @echo 定时启动maa时，先终止运行中的maa，断开adb连接
 
 pushd %~dp0
@@ -16,6 +19,7 @@ set MAA=MAA.exe
 set Player=..\MuMuPlayer\shell\MuMuPlayer.exe
 
 
+:start
 ::终止一些进程
 taskkill /f /t /im maa*
 taskkill /f /t /im mumu*

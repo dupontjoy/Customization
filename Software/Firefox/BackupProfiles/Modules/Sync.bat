@@ -63,6 +63,7 @@ xcopy "%BackupDir%\..\..\Software\Listary 6\UserProfile\Settings" "%OutputDir%\C
 
 :MAA
 xcopy "%BackupDir%\..\..\..\MAA\Run_MAA.bat" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
+xcopy "%BackupDir%\..\..\..\MAA\Update_MaaResource.ps1" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
 xcopy "%BackupDir%\..\..\..\MAA\config\gui.json" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
 
 :mail-filter
