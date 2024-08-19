@@ -209,6 +209,9 @@
          "guid": "{dd896809-2af4-405b-834f-45816615e3e3}",
          "keyword": "bi"
       }, {
+         "guid": "{b36cf1bb-5527-42d8-bf91-d034bcbf057b}",
+         "title": "Search \u767E\u5EA6 for '{query}'"
+      }, {
          "guid": "{5ac62036-62aa-49d3-866b-d041bc7b1b76}",
          "keyword": "gm"
       }, {
@@ -236,7 +239,7 @@
             "type": "png_data"
          },
          "keyword": "db",
-         "title": "Search douban for '{query}'",
+         "title": "Search \u8C46\u74E3 for '{query}'",
          "url": "https://www.douban.com/search?q={query}"
       }, {
          "enabled": true,
@@ -245,8 +248,17 @@
             "type": "png_data"
          },
          "keyword": "sg",
-         "title": "Search sogou for 'qurery'",
+         "title": "Search \u641C\u72D7 for 'qurery'",
          "url": "https://www.sogou.com/web?query={query}"
+      }, {
+         "enabled": true,
+         "icon": {
+            "png_data": "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",
+            "type": "png_data"
+         },
+         "keyword": "dt",
+         "title": "Search \u5927\u540CAI for 'qurery'",
+         "url": "https://datong.info/ui/search.html?search_lang=en,zh&target_lang=zh&q={query}"
       } ]
    },
    "launch_apps": {
