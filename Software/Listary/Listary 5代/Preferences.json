@@ -508,28 +508,6 @@
 
    },
    "search": {
-      "custom_index": [ {
-         "path": "X:\\",
-         "update_minutes": 10
-      }, {
-         "path": "Y:\\",
-         "update_minutes": 10
-      }, {
-         "path": "Z:\\",
-         "update_minutes": 10
-      }, {
-         "path": "E:\\",
-         "update_minutes": 10
-      }, {
-         "path": "F:\\",
-         "update_minutes": 10
-      }, {
-         "path": "G:\\",
-         "update_minutes": 10
-      }, {
-         "path": "H:\\",
-         "update_minutes": 10
-      } ],
       "exclude": [ {
          "type": "folder",
          "value": "C:\\Users\\Cing\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\"

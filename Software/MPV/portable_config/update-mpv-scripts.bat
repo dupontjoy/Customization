@@ -1,4 +1,4 @@
-::2024.04.07
+::2024.08.20
 
 @echo off
 
@@ -6,6 +6,9 @@ title update mpv scripts
 color 0a
 
 pushd %~dp0
+
+::É¾³ýmpv»º´æ
+rd /s /q "%cd%\cache"
 
 :: Set download command
 set Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs
