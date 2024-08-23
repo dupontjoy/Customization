@@ -2,7 +2,7 @@
   "Configurations": {
     "小号153定时换班": {
       "HotKeys": "{\"ShowGui\":{\"Key\":56,\"Modifiers\":7}}",
-      "MainFunction.Stage1": "AS-7",
+      "MainFunction.Stage1": "SL-8",
       "Guide.StepIndex": "4",
       "TaskQueue.WakeUp.IsChecked": "True",
       "TaskQueue.Recruiting.IsChecked": "True",
@@ -241,7 +241,7 @@
       "GUI.UseTray": "True",
       "MainFunction.PostActions": "12",
       "Performance.AllowDeprecatedGpu": "false",
-      "Mall.LastCreditVisitFriendsTime": "2024/08/21 00:00:00",
+      "Mall.LastCreditVisitFriendsTime": "2024/08/23 00:00:00",
       "Mall.CreditVisitOnceADay": "False",
       "Mall.CreditVisitFriendsEnabled": "True",
       "GUI.OperNameLanguage": "OperNameLanguageMAA"

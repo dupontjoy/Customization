@@ -1,4 +1,4 @@
-//2024.07.16
+//2024.08.23
 
 
 /*
@@ -82,6 +82,10 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);//69以�
 user_pref("browser.translations.automaticallyPopup", false);
 user_pref("browser.translations.panelShown", false);
 
+//画中画
+user_pref("media.videocontrols.picture-in-picture.improved-video-controls.enabled", true);//画中画显示进度条
+user_pref("media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled", true);//切换标签時自動开启画中画
+
 //實验性
 user_pref("javascript.options.experimental.shadow_realms", true);//贴吧fx内存问题的回复，试一试
 user_pref("javascript.options.experimental.weakrefs.expose_cleanupSome", true);
@@ -102,7 +106,7 @@ user_pref("extensions.pocket.enabled", false);//自带pocket(禁用,功能太简
 user_pref("browser.sessionstore.interval", 3600000);//(单位: ms)限制recovery.js文件的写入操作: 默认15s, 改为1小時
 user_pref("browser.menu.showViewImageInfo", true);//显示查看图像信息菜单
 user_pref("security.insecure_field_warning.contextual.enabled", false);//隐藏输入框不安全提示（配合css）
-user_pref("media.videocontrols.picture-in-picture.improved-video-controls.enabled", true);//画中画显示进度条
+
 
 
 

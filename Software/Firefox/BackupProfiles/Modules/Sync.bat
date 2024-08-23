@@ -40,8 +40,8 @@ xcopy "%BackupDir%\user.js" "%OutputDir%\Customization\Software\Firefox\"  /s /y
 xcopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Firefox\BackupProfiles"  /s /y /i
 
 :GlaryUtilites
-xcopy "%BackupDir%\..\..\Software\GlaryUtilities\Data\settings\Glarysoft.reg" "%OutputDir%\Customization\Software\GlaryUtilities\settings\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\GlaryUtilities\Data\settings\GlarysoftW32.reg" "%OutputDir%\Customization\Software\GlaryUtilities\settings\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\GlaryUtilities\Data\settings\Glarysoft.reg" "%OutputDir%\Customization\Software\GlaryUtilities\Data\settings\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\GlaryUtilities\Data\settings\GlarysoftW32.reg" "%OutputDir%\Customization\Software\GlaryUtilities\Data\settings\"  /s /y /i
 
 
 :GoldenDict
@@ -49,6 +49,9 @@ xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customizati
 
 :IDM
 xcopy "%BackupDir%\..\..\..\IDM\!)—°œÓ≈‰÷√.reg" "%OutputDir%\Customization\Software\IDM\"  /s /y /i
+
+:koodo-reader
+xcopy "%appdataDir%\Koodo-Reader\uploads" "%OutputDir%\Customization\Software\Koodo-Reader\"  /s /y /i
 
 
 :listary5
