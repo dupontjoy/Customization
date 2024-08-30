@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DefaultAssociations>
+  <Association Identifier=".3gp" ProgId="io.mpv.3gpp" ApplicationName="mpv" />
+  <Association Identifier=".3gp2" ProgId="io.mpv.3gp2" ApplicationName="mpv" />
+  <Association Identifier=".3gpp" ProgId="io.mpv.3gpp" ApplicationName="mpv" />
+  <Association Identifier=".aac" ProgId="AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs" ApplicationName="Groove 音乐" />
+  <Association Identifier=".adt" ProgId="AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs" ApplicationName="Groove 音乐" />
+  <Association Identifier=".adts" ProgId="AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs" ApplicationName="Groove 音乐" />
+  <Association Identifier=".asf" ProgId="io.mpv.asf" ApplicationName="mpv" />
+  <Association Identifier=".avi" ProgId="io.mpv.avi" ApplicationName="mpv" />
+  <Association Identifier=".azw3" ProgId="Applications\Koodo Reader.exe" ApplicationName="Koodo Reader" />
+  <Association Identifier=".bmp" ProgId="AppX43hnxtbyyps62jhe9sqpdzxn1790zetc" ApplicationName="照片" />
+  <Association Identifier=".dib" ProgId="AppX43hnxtbyyps62jhe9sqpdzxn1790zetc" ApplicationName="照片" />
+  <Association Identifier=".epub" ProgId="Applications\Koodo Reader.exe" ApplicationName="Koodo Reader" />
+  <Association Identifier=".erf" ProgId="AppX43hnxtbyyps62jhe9sqpdzxn1790zetc" ApplicationName="照片" />
+  <Association Identifier=".flac" ProgId="AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs" ApplicationName="Groove 音乐" />
+  <Association Identifier=".gif" ProgId="XnViewMP.gif" ApplicationName="XnView MP" />
+  <Association Identifier=".htm" ProgId="FirefoxHTML-A3DDEBDF70B20541" ApplicationName="Firefox Portable" />
+  <Association Identifier=".html" ProgId="FirefoxHTML-A3DDEBDF70B20541" ApplicationName="Firefox Portable" />
+  <Association Identifier=".inf" ProgId="inffile" ApplicationName="记事本" />
+  <Association Identifier=".ini" ProgId="inifile" ApplicationName="记事本" />
+  <Association Identifier=".jfif" ProgId="AppX43hnxtbyyps62jhe9sqpdzxn1790zetc" ApplicationName="照片" />
+  <Association Identifier=".jpe" ProgId="XnViewMP.jpe" ApplicationName="XnView MP" />
+  <Association Identifier=".jpeg" ProgId="XnViewMP.jpeg" ApplicationName="XnView MP" />
+  <Association Identifier=".jpg" ProgId="XnViewMP.jpg" ApplicationName="XnView MP" />
+  <Association Identifier=".jxr" ProgId="AppX43hnxtbyyps62jhe9sqpdzxn1790zetc" ApplicationName="照片" />
+  <Association Identifier=".log" ProgId="txtfile" ApplicationName="记事本" />
+  <Association Identifier=".m1v" ProgId="io.mpv.mpeg" ApplicationName="mpv" />
+  <Association Identifier=".m2t" ProgId="io.mpv.m2ts" ApplicationName="mpv" />
+  <Association Identifier=".m2ts" ProgId="io.mpv.m2ts" ApplicationName="mpv" />
+  <Association Identifier=".m3u" ProgId="AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs" ApplicationName="Groove 音乐" />
+  <Association Identifier=".m4a" ProgId="AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs" ApplicationName="Groove 音乐" />
+  <Association Identifier=".m4v" ProgId="io.mpv.mpeg4" ApplicationName="mpv" />
+  <Association Identifier=".md" ProgId="Applications\Notepad2.exe" ApplicationName="Notepad2 Text Editor" />
+  <Association Identifier=".mht" ProgId="MSEdgeHTM" ApplicationName="Microsoft Edge" />
+  <Association Identifier=".mhtml" ProgId="MSEdgeHTM" ApplicationName="Microsoft Edge" />
+  <Association Identifier=".mk3d" ProgId="io.mpv.mk3d" ApplicationName="mpv" />
+  <Association Identifier=".mka" ProgId="AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs" ApplicationName="Groove 音乐" />
+  <Association Identifier=".mkv" ProgId="io.mpv.mkv" ApplicationName="mpv" />
+  <Association Identifier=".mobi" ProgId="Applications\Koodo Reader.exe" ApplicationName="Koodo Reader" />
+  <Association Identifier=".mod" ProgId="AppX6eg8h5sxqq90pv53845wmnbewywdqq5h" ApplicationName="电影和电视" />
+  <Association Identifier=".mov" ProgId="io.mpv.qt" ApplicationName="mpv" />
+  <Association Identifier=".MP2" ProgId="WMP11.AssocFile.MP3" ApplicationName="Windows Media Player" />
+  <Association Identifier=".mp2v" ProgId="io.mpv.mpeg" ApplicationName="mpv" />
+  <Association Identifier=".mp3" ProgId="AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs" ApplicationName="Groove 音乐" />
+  <Association Identifier=".mp4" ProgId="io.mpv.mpeg4" ApplicationName="mpv" />
+  <Association Identifier=".mp4v" ProgId="io.mpv.mpeg4" ApplicationName="mpv" />
+  <Association Identifier=".mpa" ProgId="io.mpv.mpa" ApplicationName="mpv" />
+  <Association Identifier=".MPE" ProgId="io.mpv.mpeg" ApplicationName="mpv" />
+  <Association Identifier=".mpeg" ProgId="io.mpv.mpeg" ApplicationName="mpv" />
+  <Association Identifier=".mpg" ProgId="io.mpv.mpeg" ApplicationName="mpv" />
+  <Association Identifier=".mpv2" ProgId="io.mpv.mpeg" ApplicationName="mpv" />
+  <Association Identifier=".mts" ProgId="io.mpv.m2ts" ApplicationName="mpv" />
+  <Association Identifier=".pdf" ProgId="Applications\PDFXEdit.exe" ApplicationName="PDF-XChange Editor" />
+  <Association Identifier=".png" ProgId="XnViewMP.png" ApplicationName="XnView MP" />
+  <Association Identifier=".ps1" ProgId="Microsoft.PowerShellScript.1" ApplicationName="记事本" />
+  <Association Identifier=".psd1" ProgId="Microsoft.PowerShellData.1" ApplicationName="记事本" />
+  <Association Identifier=".psm1" ProgId="Microsoft.PowerShellModule.1" ApplicationName="记事本" />
+  <Association Identifier=".raw" ProgId="AppX43hnxtbyyps62jhe9sqpdzxn1790zetc" ApplicationName="照片" />
+  <Association Identifier=".rle" ProgId="XnViewMP.rle" ApplicationName="XnView MP" />
+  <Association Identifier=".rwl" ProgId="AppX43hnxtbyyps62jhe9sqpdzxn1790zetc" ApplicationName="照片" />
+  <Association Identifier=".scp" ProgId="txtfile" ApplicationName="记事本" />
+  <Association Identifier=".srw" ProgId="AppX43hnxtbyyps62jhe9sqpdzxn1790zetc" ApplicationName="照片" />
+  <Association Identifier=".svg" ProgId="MSEdgeHTM" ApplicationName="Microsoft Edge" />
+  <Association Identifier=".tif" ProgId="XnViewMP.tif" ApplicationName="XnView MP" />
+  <Association Identifier=".tiff" ProgId="XnViewMP.tiff" ApplicationName="XnView MP" />
+  <Association Identifier=".TS" ProgId="io.mpv.m2ts" ApplicationName="mpv" />
+  <Association Identifier=".TTS" ProgId="io.mpv.m2ts" ApplicationName="mpv" />
+  <Association Identifier=".txt" ProgId="txtfile" ApplicationName="记事本" />
+  <Association Identifier=".url" ProgId="IE.AssocFile.URL" ApplicationName="Internet 浏览器" />
+  <Association Identifier=".wav" ProgId="AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs" ApplicationName="Groove 音乐" />
+  <Association Identifier=".wdp" ProgId="AppX43hnxtbyyps62jhe9sqpdzxn1790zetc" ApplicationName="照片" />
+  <Association Identifier=".website" ProgId="IE.AssocFile.WEBSITE" ApplicationName="Internet Explorer" />
+  <Association Identifier=".wm" ProgId="io.mpv.wm" ApplicationName="mpv" />
+  <Association Identifier=".wma" ProgId="AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs" ApplicationName="Groove 音乐" />
+  <Association Identifier=".wmv" ProgId="io.mpv.wmv" ApplicationName="mpv" />
+  <Association Identifier=".WPL" ProgId="AppXqj98qxeaynz6dv4459ayz6bnqxbyaqcs" ApplicationName="Groove 音乐" />
+  <Association Identifier=".wtx" ProgId="txtfile" ApplicationName="记事本" />
+  <Association Identifier=".xml" ProgId="MSEdgeHTM" ApplicationName="Microsoft Edge" />
+  <Association Identifier="bingmaps" ProgId="AppXp9gkwccvk6fa6yyfq3tmsk8ws2nprk1p" ApplicationName="地图" />
+  <Association Identifier="http" ProgId="FirefoxURL-A3DDEBDF70B20541" ApplicationName="Firefox Portable" />
+  <Association Identifier="https" ProgId="FirefoxURL-A3DDEBDF70B20541" ApplicationName="Firefox Portable" />
+  <Association Identifier="microsoft-edge" ProgId="MSEdgeHTM" ApplicationName="Microsoft Edge" />
+  <Association Identifier="microsoft-edge-holographic" ProgId="MSEdgeHTM" ApplicationName="Microsoft Edge" />
+  <Association Identifier="ms-xbl-3d8b930f" ProgId="MSEdgeHTM" ApplicationName="Microsoft Edge" />
+  <Association Identifier="mswindowsmusic" ProgId="AppXtggqqtcfspt6ks3fjzyfppwc05yxwtwy" ApplicationName="Groove 音乐" />
+  <Association Identifier="mswindowsvideo" ProgId="AppX6w6n4f8xch1s3vzwf3af6bfe88qhxbza" ApplicationName="电影和电视" />
+  <Association Identifier="read" ProgId="MSEdgeHTM" ApplicationName="Microsoft Edge" />
+</DefaultAssociations>

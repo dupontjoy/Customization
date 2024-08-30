@@ -8,6 +8,7 @@ color 0a
 pushd %~dp0
 
 ::É¾³ýmpv»º´æ
+echo. delete cache
 rd /s /q "%cd%\cache"
 
 :: Set download command
