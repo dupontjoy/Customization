@@ -84,7 +84,7 @@ user_pref("browser.translations.panelShown", false);
 
 //画中画
 user_pref("media.videocontrols.picture-in-picture.improved-video-controls.enabled", true);//画中画显示进度条
-user_pref("media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled", true);//切换标签時自動开启画中画
+
 
 //實验性
 user_pref("javascript.options.experimental.shadow_realms", true);//贴吧fx内存问题的回复，试一试

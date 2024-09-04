@@ -127,8 +127,6 @@ xcopy "%BackupDir%\..\..\..\XnViewMP\xnview.ini" "%OutputDir%\Customization\Soft
 :xyr
 xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Clean]Cing's Settings.ini" "%OutputDir%\Customization\Software\xyr系统优化\"  /s /y /i
 xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Optimization]Cing's Settings.ini" "%OutputDir%\Customization\Software\xyr系统优化\"  /s /y /i
-xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\Hashtf.ini" "%OutputDir%\Customization\Software\xyr系统优化\"  /s /y /i
-xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\OEMDefaultAssociations.xml" "%OutputDir%\Customization\Software\xyr系统优化\"  /s /y /i
 
 :ztasker
 ::備份ztasker設置

@@ -1,7 +1,7 @@
 {
   "author": "yituliu",
   "description": "小号153xxxx8730",
-  "id": 1722827537264757,
+  "id": 1725283505420382,
   "title": "243",
   "buildingType": 243,
   "planTimes": "3班",
@@ -15,8 +15,8 @@
         "order": "pre"
       },
       "drones": {
-        "room": "trading",
-        "index": 1,
+        "room": "manufacture",
+        "index": 3,
         "enable": true,
         "order": "post"
       },
@@ -391,8 +391,8 @@
         "order": "pre"
       },
       "drones": {
-        "room": "manufacture",
-        "index": 3,
+        "room": "trading",
+        "index": 1,
         "enable": true,
         "order": "post"
       },
