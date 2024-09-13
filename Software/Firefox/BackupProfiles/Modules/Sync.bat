@@ -1,4 +1,4 @@
-::2024.07.03
+::2024.09.10
 
 Title 备份文件到托管网站
 ::界面颜色大小，Cols为宽，Lines为高
@@ -15,6 +15,9 @@ set appdataDir=C:\Users\Cing\AppData\Roaming
 set softDir=E:\Cing@Soft
 set OutputDir=E:\My Documents\Nutstore\NutStoreSync
 
+
+:AnyTXT
+xcopy "%BackupDir%\..\..\..\AnyTXT Searcher\config.db" "%OutputDir%\Customization\Software\AnyTXT\"  /s /y /i
 
 :cangjie5
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\cangjie5.dict.yaml" "%OutputDir%\RimeIME-Portable\config\"  /s /y /i
@@ -91,9 +94,11 @@ rd /s /q "%OutputDir%\Customization\Software\MPV\portable_config\cache"
 :N_m3u8DL-RE
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\N_m3u8DL-RE.exe" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\Run_N_m3u8DL-RE.bat" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_ad_keyword.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_ad_keyword_strong.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_common.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_dir.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_live_record.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_video_download.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\README.md" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 
 :Pixpin

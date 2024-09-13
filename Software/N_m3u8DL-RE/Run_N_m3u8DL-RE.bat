@@ -1,4 +1,4 @@
-::2023.12.09
+::2024.09.13
 ::推荐保存为ASNI编码
 
 @echo off & setlocal enabledelayedexpansion
@@ -14,19 +14,30 @@ pushd %~dp0
 
 ::---------------菜单部分---------------
 :menu
-echo 请选择功能，默认使用1、下载视频。
-echo.&choice /C 12 /T 1 /D 1 /M "1、下载视频 2、直播录制"
-IF "%ERRORLEVEL%"=="1" (goto video_download)
-IF "%ERRORLEVEL%"=="2" (goto live_record)
+echo 请选择功能，默认使用1、下载视频(强力去广告)。
+echo.&choice /C 123 /T 3 /D 1 /M "1、下载视频(强力去广告) 2、下载视频（普通去广告）3、直播录制"
+IF "%ERRORLEVEL%"=="1" (goto video_download_no_ad_strong)
+IF "%ERRORLEVEL%"=="2" (goto video_download_no_ad)
+IF "%ERRORLEVEL%"=="3" (goto live_record)
 
 
 ::功能选项
-:video_download
+:video_download_no_ad_strong
 cls
 echo.&echo 下载视频...
 echo.
 call :common_input
-call :setting_video_download
+call :setting_video_download_no_ad_strong
+call :video_downloading
+call :when_done
+goto :eof
+
+:video_download_no_ad
+cls
+echo.&echo 下载视频...
+echo.
+call :common_input
+call :setting_video_download_no_ad
 call :video_downloading
 call :when_done
 goto :eof
@@ -88,15 +99,21 @@ goto :eof
 
 
 ::---------------设置部分---------------
-:setting_video_download
+:setting_video_download_no_ad_strong
 ::设置video下载命令
 ::将%filename%加引号，防止文件名带有某些符号导致路径识別失败
-set video_download=N_m3u8DL-RE "%link%" --save-name "%filename%" @config_video_download.conf @config_dir.conf
+set video_download=N_m3u8DL-RE "%link%" --save-name "%filename%" @config_common.conf @config_ad_keyword_strong.conf @config_dir.conf
+goto :eof
+
+:setting_video_download_no_ad
+::设置video下载命令
+::将%filename%加引号，防止文件名带有某些符号导致路径识別失败
+set video_download=N_m3u8DL-RE "%link%" --save-name "%filename%" @config_common.conf @config_ad_keyword.conf @config_dir.conf
 goto :eof
 
 :setting_live_record
 ::设置直播录制命令
-set live_record=N_m3u8DL-RE "%link%" --save-name "%filename%" %live_record_limit% @config_live_record.conf @config_dir.conf
+set live_record=N_m3u8DL-RE "%link%" --save-name "%filename%" %live_record_limit% @config_common.conf @config_live_record.conf @config_dir.conf
 goto :eof
 
 

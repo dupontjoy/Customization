@@ -1,4 +1,4 @@
-//2024.08.23
+//2024.09.11
 
 
 /*
@@ -32,17 +32,13 @@ user_pref("browser.preferences.moreFromMozilla", false);//更多Mozilla产品
 user_pref("media.autoplay.default", 0);//自动播放默认值：阻止音频和视频
 
 
-//字体语言编码
-user_pref("font.name.serif.zh-CN", "Arial");//衬线字体
-user_pref("font.name.sans-serif.zh-CN", "Arial");//无衬线字体
-user_pref("font.name.monospace.zh-CN", "Arial");//等宽字体
-
 //*==========标签相关==========*//
 user_pref("browser.tabs.loadBookmarksInTabs", true);//新标签打开书签
 user_pref("browser.tabs.warnOnClose", false);//关闭多个标签时不提示
 user_pref("browser.tabs.warnOnCloseOtherTabs", false);//关闭其它标签时不提示
 user_pref("browser.tabs.closeWindowWithLastTab", false);//关闭最后一个标签时不关闭Firefox
 user_pref("browser.link.open_newwindow.restriction", 0);//单窗口模式(弹出窗口用标签打开)
+
 
 //*==========下载相关==========*//
 user_pref("browser.download.useDownloadDir", false);//下载时每次讯问我要存到何处
