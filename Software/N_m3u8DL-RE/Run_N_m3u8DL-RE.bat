@@ -102,18 +102,18 @@ goto :eof
 :setting_video_download_no_ad_strong
 ::设置video下载命令
 ::将%filename%加引号，防止文件名带有某些符号导致路径识別失败
-set video_download=N_m3u8DL-RE "%link%" --save-name "%filename%" @config_common.conf @config_ad_keyword_strong.conf @config_dir.conf
+set video_download=N_m3u8DL-RE "%link%" --save-name "%filename%" @config_common.conf @config_ad_keyword_strong.conf
 goto :eof
 
 :setting_video_download_no_ad
 ::设置video下载命令
 ::将%filename%加引号，防止文件名带有某些符号导致路径识別失败
-set video_download=N_m3u8DL-RE "%link%" --save-name "%filename%" @config_common.conf @config_ad_keyword.conf @config_dir.conf
+set video_download=N_m3u8DL-RE "%link%" --save-name "%filename%" @config_common.conf @config_ad_keyword.conf
 goto :eof
 
 :setting_live_record
 ::设置直播录制命令
-set live_record=N_m3u8DL-RE "%link%" --save-name "%filename%" %live_record_limit% @config_common.conf @config_live_record.conf @config_dir.conf
+set live_record=N_m3u8DL-RE "%link%" --save-name "%filename%" %live_record_limit% @config_common.conf @config_live_record.conf
 goto :eof
 
 

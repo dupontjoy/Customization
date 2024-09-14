@@ -97,7 +97,6 @@ xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\Run_N_m3u8DL-RE.bat" "%OutputDir%\
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_ad_keyword.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_ad_keyword_strong.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_common.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_dir.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_live_record.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\README.md" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 
