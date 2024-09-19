@@ -15,10 +15,6 @@ bilibili.com##.browser-tip > .title
 ! 防止斗鱼直播切回标签页会重新加载
 douyu.com##+js(aeld,visibilitychange)
 
-! Youtube
- ! 反制“人为延迟 5 秒加载”
-youtube.com##+js (nano-stb, resolve (1), *, 0.001)
-
 ! 1688
  ! js加载死循环造成的卡死
 ||g.alicdn.com/zgc/aem-od-assets-logger/*/index.js$script,domain=1688.com

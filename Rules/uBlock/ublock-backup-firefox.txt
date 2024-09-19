@@ -1,13 +1,12 @@
 {
-  "timeStamp": 1721265778069,
-  "version": "1.58.0",
+  "timeStamp": 1726750044020,
+  "version": "1.59.0",
   "userSettings": {
     "alwaysDetachLogger": false,
     "cnameUncloakEnabled": false,
     "contextMenuEnabled": false,
     "externalLists": "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt\nhttps://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt\nhttps://github.com/hoshsadiq/adblock-nocoin-list/raw/master/nocoin.txt\nhttps://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt",
     "firewallPaneMinimized": false,
-    "hyperlinkAuditingDisabled": false,
     "importedLists": [
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt",
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
@@ -17,7 +16,6 @@
       "https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt"
     ],
     "popupPanelSections": 63,
-    "prefetchingDisabled": false,
     "webrtcIPAddressHidden": true
   },
   "selectedFilterLists": [
@@ -29,7 +27,13 @@
     "ublock-unbreak",
     "easylist",
     "adguard-generic",
+    "adguard-mobile",
     "easyprivacy",
+    "block-lan",
+    "fanboy-cookiemonster",
+    "ublock-cookies-easylist",
+    "adguard-cookies",
+    "ublock-cookies-adguard",
     "easylist-chat",
     "easylist-newsletters",
     "easylist-notifications",
@@ -40,12 +44,10 @@
     "adguard-widgets",
     "ublock-annoyances",
     "CHN-0",
-    "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
-    "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt",
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt",
+    "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt",
     "https://github.com/hoshsadiq/adblock-nocoin-list/raw/master/nocoin.txt",
-    "https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt",
-    "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt"
+    "https://github.com/uBlockOrigin/uAssets/raw/master/filters/resource-abuse.txt"
   ],
   "hiddenSettings": {
     "autoUpdatePeriod": 60,

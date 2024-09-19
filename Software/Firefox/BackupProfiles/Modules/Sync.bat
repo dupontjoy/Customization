@@ -129,8 +129,9 @@ xcopy "%BackupDir%\..\..\..\TrafficMonitor\global_cfg.ini" "%OutputDir%\Customiz
 xcopy "%BackupDir%\..\..\..\XnViewMP\xnview.ini" "%OutputDir%\Customization\Software\XnViewMP\"  /s /y /i
 
 :xyr
-xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Clean]Cing's Settings.ini" "%OutputDir%\Customization\Software\xyr系统优化\"  /s /y /i
-xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Optimization]Cing's Settings.ini" "%OutputDir%\Customization\Software\xyr系统优化\"  /s /y /i
+xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Clean]Settings@Cing.ini" "%OutputDir%\Customization\Software\xyr系统优化\"  /s /y /i
+xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Optimization]Only Update-off@Cing.ini" "%OutputDir%\Customization\Software\xyr系统优化\"  /s /y /i
+xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Optimization]Settings@Cing.ini" "%OutputDir%\Customization\Software\xyr系统优化\"  /s /y /i
 
 :ztasker
 ::備份ztasker設置
