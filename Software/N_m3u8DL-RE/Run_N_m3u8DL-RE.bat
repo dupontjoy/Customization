@@ -14,8 +14,21 @@ pushd %~dp0
 
 ::---------------菜单部分---------------
 :menu
-echo 请选择功能，默认使用1、下载视频(强力去广告)。
-echo.&choice /C 123 /T 3 /D 1 /M "1、下载视频(强力去广告) 2、下载视频（普通去广告）3、直播录制"
+cls
+ECHO.                   
+ECHO. *****************************
+ECHO.
+ECHO  1、下载视频（强力去广告，可能误杀）
+ECHO.
+ECHO  2、下载视频（普通去广告）
+ECHO.  
+ECHO  3、直播录制
+ECHO.
+ECHO. *****************************
+ECHO.
+CHOICE /C 123 /N >NUL 2>NUL
+cls
+
 IF "%ERRORLEVEL%"=="1" (goto video_download_no_ad_strong)
 IF "%ERRORLEVEL%"=="2" (goto video_download_no_ad)
 IF "%ERRORLEVEL%"=="3" (goto live_record)
@@ -24,7 +37,7 @@ IF "%ERRORLEVEL%"=="3" (goto live_record)
 ::功能选项
 :video_download_no_ad_strong
 cls
-echo.&echo 下载视频...
+echo.&echo 下载视频（强力去广告，可能误杀）
 echo.
 call :common_input
 call :setting_video_download_no_ad_strong
@@ -34,7 +47,7 @@ goto :eof
 
 :video_download_no_ad
 cls
-echo.&echo 下载视频...
+echo.&echo 下载视频（普通去广告）
 echo.
 call :common_input
 call :setting_video_download_no_ad
@@ -44,7 +57,7 @@ goto :eof
 
 :live_record
 cls
-echo.&echo 直播录制...
+echo.&echo 直播录制
 echo.
 call :common_input & call :record_limit_input
 call :setting_live_record
