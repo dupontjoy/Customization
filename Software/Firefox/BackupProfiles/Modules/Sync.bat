@@ -24,6 +24,7 @@ xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\cangjie5.dict.yaml" "%Out
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\cangjie5.custom.yaml" "%OutputDir%\RimeIME-Portable\config\" /s /y /i
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\weasel.custom.yaml" "%OutputDir%\RimeIME-Portable\config\" /s /y /i
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\skins-backup.yaml" "%OutputDir%\RimeIME-Portable\config\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\rime.lua" "%OutputDir%\RimeIME-Portable\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\README.md" "%OutputDir%\RimeIME-Portable\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\update-cangjie5-dict.bat" "%OutputDir%\RimeIME-Portable\config\"  /s /y /i
 

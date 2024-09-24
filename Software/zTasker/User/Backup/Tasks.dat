@@ -9,9 +9,9 @@
 <SchType>2</SchType>
 <StartDateTime>2024-08-25 07:57:00</StartDateTime>
 <EndDateTime>2024-08-28 04:55:12</EndDateTime>
-<NextRunDateTime>2024-09-22 07:57:00</NextRunDateTime>
-<NextRunTime>2024-09-22 07:57:00</NextRunTime>
-<LastRunTime>2024-09-21 07:57:00</LastRunTime>
+<NextRunDateTime>2024-09-24 07:57:00</NextRunDateTime>
+<NextRunTime>2024-09-24 07:57:00</NextRunTime>
+<LastRunTime>2024-09-23 07:57:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -191,9 +191,9 @@
 <SchType>2</SchType>
 <StartDateTime>2024-08-25 08:57:00</StartDateTime>
 <EndDateTime>2024-08-28 09:50:24</EndDateTime>
-<NextRunDateTime>2024-09-22 08:57:00</NextRunDateTime>
-<NextRunTime>2024-09-22 08:57:00</NextRunTime>
-<LastRunTime>2024-09-21 08:57:00</LastRunTime>
+<NextRunDateTime>2024-09-24 08:57:00</NextRunDateTime>
+<NextRunTime>2024-09-24 08:57:00</NextRunTime>
+<LastRunTime>2024-09-23 08:57:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -384,9 +384,9 @@
 <SchType>2</SchType>
 <StartDateTime>2024-08-25 17:57:00</StartDateTime>
 <EndDateTime>2024-08-28 19:40:48</EndDateTime>
-<NextRunDateTime>2024-09-22 17:57:00</NextRunDateTime>
-<NextRunTime>2024-09-22 17:57:00</NextRunTime>
-<LastRunTime>2024-09-21 17:57:00</LastRunTime>
+<NextRunDateTime>2024-09-23 17:57:00</NextRunDateTime>
+<NextRunTime>2024-09-23 17:57:00</NextRunTime>
+<LastRunTime>2024-09-22 17:57:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -577,9 +577,9 @@
 <SchType>2</SchType>
 <StartDateTime>2024-08-25 18:57:00</StartDateTime>
 <EndDateTime>2024-08-29 15:21:36</EndDateTime>
-<NextRunDateTime>2024-09-22 18:57:00</NextRunDateTime>
-<NextRunTime>2024-09-22 18:57:00</NextRunTime>
-<LastRunTime>2024-09-21 18:57:00</LastRunTime>
+<NextRunDateTime>2024-09-23 18:57:00</NextRunDateTime>
+<NextRunTime>2024-09-23 18:57:00</NextRunTime>
+<LastRunTime>2024-09-22 18:57:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -770,9 +770,9 @@
 <SchType>2</SchType>
 <StartDateTime>2024-08-24 21:27:00</StartDateTime>
 <EndDateTime>2024-08-28 04:55:12</EndDateTime>
-<NextRunDateTime>2024-09-21 21:27:00</NextRunDateTime>
-<NextRunTime>2024-09-21 21:27:00</NextRunTime>
-<LastRunTime>2024-09-20 21:27:00</LastRunTime>
+<NextRunDateTime>2024-09-23 21:27:00</NextRunDateTime>
+<NextRunTime>2024-09-23 21:27:00</NextRunTime>
+<LastRunTime>2024-09-22 21:27:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -961,9 +961,9 @@
 <SchType>2</SchType>
 <StartDateTime>2024-08-24 22:27:00</StartDateTime>
 <EndDateTime>2024-08-28 04:55:12</EndDateTime>
-<NextRunDateTime>2024-09-21 22:27:00</NextRunDateTime>
-<NextRunTime>2024-09-21 22:27:00</NextRunTime>
-<LastRunTime>2024-09-20 22:27:00</LastRunTime>
+<NextRunDateTime>2024-09-23 22:27:00</NextRunDateTime>
+<NextRunTime>2024-09-23 22:27:00</NextRunTime>
+<LastRunTime>2024-09-22 22:27:00</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -1531,9 +1531,9 @@
 <SchType>10</SchType>
 <StartDateTime>2024-08-24 10:23:01</StartDateTime>
 <EndDateTime>2024-07-16 20:46:02</EndDateTime>
-<NextRunDateTime>2124-08-28 07:45:17</NextRunDateTime>
+<NextRunDateTime>2124-08-29 07:20:43</NextRunDateTime>
 <NextRunTime>下次启动后</NextRunTime>
-<LastRunTime>2024-09-21 07:45:17</LastRunTime>
+<LastRunTime>2024-09-22 07:20:43</LastRunTime>
 <Fav>0</Fav>
 <Param>
 <AppParam/>
@@ -1658,6 +1658,834 @@
 <tabBtnTask>0</tabBtnTask>
 <timeDadyLimitMax>2024-6-28 10:23:1</timeDadyLimitMax>
 <timeDadyLimitMin>2024-6-28 10:23:1</timeDadyLimitMin>
+</Param>
+</TaskItem>
+<TaskItem>
+<ID>780</ID>
+<TaskType>ttMonitorOn</TaskType>
+<Stopped>0</Stopped>
+<HKStopped>1</HKStopped>
+<HasEndDateTime>0</HasEndDateTime>
+<SchType>2</SchType>
+<StartDateTime>2024-09-23 07:57:00</StartDateTime>
+<EndDateTime>2024-09-23 08:10:53</EndDateTime>
+<NextRunDateTime>2024-09-24 07:57:00</NextRunDateTime>
+<NextRunTime>2024-09-24 07:57:00</NextRunTime>
+<LastRunTime/>
+<Fav>0</Fav>
+<Param>
+<AppParam/>
+<AppPath/>
+<BackClr>-12500671</BackClr>
+<CountDownHour>1</CountDownHour>
+<CountDownMin>0</CountDownMin>
+<CountDownSec>0</CountDownSec>
+<DayLimit/>
+<DialPass/>
+<DialUser/>
+<EveryDay>1</EveryDay>
+<EveryHour>1</EveryHour>
+<EveryMin>30</EveryMin>
+<EveryMonthDay>0</EveryMonthDay>
+<EverySec>30</EverySec>
+<EveryWeek/>
+<FileParam/>
+<FilePath/>
+<IsExitRest>0</IsExitRest>
+<IsPassExitRest>0</IsPassExitRest>
+<Name/>
+<PassExitRest/>
+<PlayTime>10</PlayTime>
+<ProcName/>
+<RemindTitle/>
+<RestAlpha>0</RestAlpha>
+<RestClr>-1</RestClr>
+<RestMin>10</RestMin>
+<RmdClr>-1</RmdClr>
+<SearchEngineNames/>
+<SearchEngines/>
+<SnapDir/>
+<SnapFormat>jpg</SnapFormat>
+<SnapSaveDay>10</SnapSaveDay>
+<SnapSaveMode>optSaveAll</SnapSaveMode>
+<SnapSaveNum>100</SnapSaveNum>
+<SoundPath/>
+<SvcStart/>
+<SvcStop/>
+<TitleShow>激活显示器</TitleShow>
+<TypeShow>显示</TypeShow>
+<VolAdd>10</VolAdd>
+<VolDec>10</VolDec>
+<VolSet>10</VolSet>
+<Webpage/>
+<YearDay/>
+<YearMonth/>
+<YearWeekDay/>
+<YearWeekNum/>
+<chkAutoClose>0</chkAutoClose>
+<chkAutoCloseHK>0</chkAutoCloseHK>
+<chkBackDateSub>0</chkBackDateSub>
+<chkBackZipMulti>0</chkBackZipMulti>
+<chkBackZipPass>0</chkBackZipPass>
+<chkDayLimit1>0</chkDayLimit1>
+<chkDayLimit2>0</chkDayLimit2>
+<chkDayLimit3>0</chkDayLimit3>
+<chkDayLimit4>0</chkDayLimit4>
+<chkDayLimit5>0</chkDayLimit5>
+<chkDayLimit6>0</chkDayLimit6>
+<chkDayLimit7>0</chkDayLimit7>
+<chkDayLimitTime>0</chkDayLimitTime>
+<chkEndDateNone>1</chkEndDateNone>
+<chkEndDateSel>0</chkEndDateSel>
+<chkExecDlg>0</chkExecDlg>
+<chkExecDlgHK>0</chkExecDlgHK>
+<chkExecExitFocus>0</chkExecExitFocus>
+<chkExecExitFullScr>0</chkExecExitFullScr>
+<chkExecPost>0</chkExecPost>
+<chkExecPre>0</chkExecPre>
+<chkHotkey>0</chkHotkey>
+<chkHotkeyAlt>0</chkHotkeyAlt>
+<chkHotkeyCtrl>0</chkHotkeyCtrl>
+<chkHotkeyLeft>0</chkHotkeyLeft>
+<chkHotkeyMiddle>0</chkHotkeyMiddle>
+<chkHotkeyRight>0</chkHotkeyRight>
+<chkHotkeyShift>0</chkHotkeyShift>
+<chkHotkeyWheel>0</chkHotkeyWheel>
+<chkHotkeyWin>0</chkHotkeyWin>
+<chkRunMiss>0</chkRunMiss>
+<chkSKPartMatch>0</chkSKPartMatch>
+<chkSKProcExists>0</chkSKProcExists>
+<chkSKWinExists>0</chkSKWinExists>
+<chkSelfDelete>0</chkSelfDelete>
+<chkTimer>1</chkTimer>
+<chkWakeRunMiss>0</chkWakeRunMiss>
+<cmbAutoCloseAction>0</cmbAutoCloseAction>
+<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
+<cmbBackType>copy</cmbBackType>
+<cmbDayLimit/>
+<cmbExecPost>0</cmbExecPost>
+<cmbExecPostTasks_text/>
+<cmbExecPost_text>启用计划</cmbExecPost_text>
+<cmbExecPre>0</cmbExecPre>
+<cmbExecPreTasks_text/>
+<cmbExecPre_text>启用计划</cmbExecPre_text>
+<cmbHKMouse>0</cmbHKMouse>
+<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
+<cmbHotkey>0</cmbHotkey>
+<edtBackSaveDir/>
+<edtBackZipCount>10</edtBackZipCount>
+<edtBackZipName/>
+<edtBackZipPass/>
+<edtDelayBoot>0</edtDelayBoot>
+<edtExecSec>30</edtExecSec>
+<edtExecSecHK>5</edtExecSecHK>
+<edtSKProcName/>
+<edtSKWinTitle/>
+<edtTaskName/>
+<edtWakeDelayBoot>0</edtWakeDelayBoot>
+<httpReq/>
+<optHKKey>1</optHKKey>
+<optHKMouse>0</optHKMouse>
+<optPlaySnd>0</optPlaySnd>
+<optRmdSnd>0</optRmdSnd>
+<optRptSnd>0</optRptSnd>
+<sldZipLevel>3</sldZipLevel>
+<tabBtnExec>1</tabBtnExec>
+<tabBtnHK>0</tabBtnHK>
+<tabBtnSch>0</tabBtnSch>
+<tabBtnTask>0</tabBtnTask>
+<timeDadyLimitMax>2024-9-23 8:10:53</timeDadyLimitMax>
+<timeDadyLimitMin>2024-9-23 8:10:53</timeDadyLimitMin>
+</Param>
+</TaskItem>
+<TaskItem>
+<ID>986</ID>
+<TaskType>ttMonitorOn</TaskType>
+<Stopped>0</Stopped>
+<HKStopped>1</HKStopped>
+<HasEndDateTime>0</HasEndDateTime>
+<SchType>2</SchType>
+<StartDateTime>2024-09-23 08:57:00</StartDateTime>
+<EndDateTime>2024-09-23 08:10:53</EndDateTime>
+<NextRunDateTime>2024-09-24 08:57:00</NextRunDateTime>
+<NextRunTime>2024-09-24 08:57:00</NextRunTime>
+<LastRunTime>2024-09-23 08:57:00</LastRunTime>
+<Fav>0</Fav>
+<Param>
+<AppParam/>
+<AppPath/>
+<BackClr>-12500671</BackClr>
+<CountDownHour>1</CountDownHour>
+<CountDownMin>0</CountDownMin>
+<CountDownSec>0</CountDownSec>
+<DayLimit>1,2,3,4,5,6,7</DayLimit>
+<DialPass/>
+<DialUser/>
+<EveryDay>1</EveryDay>
+<EveryHour>1</EveryHour>
+<EveryMin>30</EveryMin>
+<EveryMonthDay>0</EveryMonthDay>
+<EverySec>30</EverySec>
+<EveryWeek/>
+<FileParam/>
+<FilePath/>
+<IsExitRest>0</IsExitRest>
+<IsPassExitRest>0</IsPassExitRest>
+<Name/>
+<PassExitRest/>
+<PlayTime>10</PlayTime>
+<ProcName/>
+<RemindTitle/>
+<RestAlpha>0</RestAlpha>
+<RestClr>-1</RestClr>
+<RestMin>10</RestMin>
+<RmdClr>-1</RmdClr>
+<SearchEngineNames/>
+<SearchEngines/>
+<SnapDir/>
+<SnapFormat>jpg</SnapFormat>
+<SnapSaveDay>10</SnapSaveDay>
+<SnapSaveMode>optSaveAll</SnapSaveMode>
+<SnapSaveNum>100</SnapSaveNum>
+<SoundPath/>
+<SvcStart/>
+<SvcStop/>
+<TitleShow>激活显示器</TitleShow>
+<TypeShow>显示</TypeShow>
+<VolAdd>10</VolAdd>
+<VolDec>10</VolDec>
+<VolSet>10</VolSet>
+<Webpage/>
+<YearDay/>
+<YearMonth/>
+<YearWeekDay/>
+<YearWeekNum/>
+<chkAutoClose>0</chkAutoClose>
+<chkAutoCloseHK>0</chkAutoCloseHK>
+<chkBackDateSub>0</chkBackDateSub>
+<chkBackZipMulti>0</chkBackZipMulti>
+<chkBackZipPass>0</chkBackZipPass>
+<chkDayLimit1>0</chkDayLimit1>
+<chkDayLimit2>0</chkDayLimit2>
+<chkDayLimit3>0</chkDayLimit3>
+<chkDayLimit4>0</chkDayLimit4>
+<chkDayLimit5>0</chkDayLimit5>
+<chkDayLimit6>0</chkDayLimit6>
+<chkDayLimit7>0</chkDayLimit7>
+<chkDayLimitTime>0</chkDayLimitTime>
+<chkEndDateNone>1</chkEndDateNone>
+<chkEndDateSel>0</chkEndDateSel>
+<chkExecDlg>0</chkExecDlg>
+<chkExecDlgHK>0</chkExecDlgHK>
+<chkExecExitFocus>0</chkExecExitFocus>
+<chkExecExitFullScr>0</chkExecExitFullScr>
+<chkExecPost>0</chkExecPost>
+<chkExecPre>0</chkExecPre>
+<chkHotkey>0</chkHotkey>
+<chkHotkeyAlt>0</chkHotkeyAlt>
+<chkHotkeyCtrl>0</chkHotkeyCtrl>
+<chkHotkeyLeft>0</chkHotkeyLeft>
+<chkHotkeyMiddle>0</chkHotkeyMiddle>
+<chkHotkeyRight>0</chkHotkeyRight>
+<chkHotkeyShift>0</chkHotkeyShift>
+<chkHotkeyWheel>0</chkHotkeyWheel>
+<chkHotkeyWin>0</chkHotkeyWin>
+<chkRunMiss>0</chkRunMiss>
+<chkSKPartMatch>0</chkSKPartMatch>
+<chkSKProcExists>0</chkSKProcExists>
+<chkSKWinExists>0</chkSKWinExists>
+<chkSelfDelete>0</chkSelfDelete>
+<chkTimer>1</chkTimer>
+<chkWakeRunMiss>0</chkWakeRunMiss>
+<cmbAutoCloseAction>0</cmbAutoCloseAction>
+<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
+<cmbBackType>copy</cmbBackType>
+<cmbDayLimit>周一,周二,周三,周...</cmbDayLimit>
+<cmbExecPost>0</cmbExecPost>
+<cmbExecPostTasks_text/>
+<cmbExecPost_text>启用计划</cmbExecPost_text>
+<cmbExecPre>0</cmbExecPre>
+<cmbExecPreTasks_text/>
+<cmbExecPre_text>启用计划</cmbExecPre_text>
+<cmbHKMouse>0</cmbHKMouse>
+<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
+<cmbHotkey>0</cmbHotkey>
+<edtBackSaveDir/>
+<edtBackZipCount>10</edtBackZipCount>
+<edtBackZipName/>
+<edtBackZipPass/>
+<edtDelayBoot>0</edtDelayBoot>
+<edtExecSec>30</edtExecSec>
+<edtExecSecHK>5</edtExecSecHK>
+<edtSKProcName/>
+<edtSKWinTitle/>
+<edtTaskName/>
+<edtWakeDelayBoot>0</edtWakeDelayBoot>
+<httpReq/>
+<optHKKey>1</optHKKey>
+<optHKMouse>0</optHKMouse>
+<optPlaySnd>0</optPlaySnd>
+<optRmdSnd>0</optRmdSnd>
+<optRptSnd>0</optRptSnd>
+<sldZipLevel>3</sldZipLevel>
+<tabBtnExec>0</tabBtnExec>
+<tabBtnHK>0</tabBtnHK>
+<tabBtnSch>1</tabBtnSch>
+<tabBtnTask>0</tabBtnTask>
+<timeDadyLimitMax>2024-9-23 8:10:53</timeDadyLimitMax>
+<timeDadyLimitMin>2024-9-23 8:10:53</timeDadyLimitMin>
+</Param>
+</TaskItem>
+<TaskItem>
+<ID>261</ID>
+<TaskType>ttMonitorOn</TaskType>
+<Stopped>0</Stopped>
+<HKStopped>1</HKStopped>
+<HasEndDateTime>0</HasEndDateTime>
+<SchType>2</SchType>
+<StartDateTime>2024-09-23 17:57:00</StartDateTime>
+<EndDateTime>2024-09-23 08:10:53</EndDateTime>
+<NextRunDateTime>2024-09-23 17:57:00</NextRunDateTime>
+<NextRunTime>2024-09-23 17:57:00</NextRunTime>
+<LastRunTime/>
+<Fav>0</Fav>
+<Param>
+<AppParam/>
+<AppPath/>
+<BackClr>-12500671</BackClr>
+<CountDownHour>1</CountDownHour>
+<CountDownMin>0</CountDownMin>
+<CountDownSec>0</CountDownSec>
+<DayLimit>1,2,3,4,5,6,7</DayLimit>
+<DialPass/>
+<DialUser/>
+<EveryDay>1</EveryDay>
+<EveryHour>1</EveryHour>
+<EveryMin>30</EveryMin>
+<EveryMonthDay>0</EveryMonthDay>
+<EverySec>30</EverySec>
+<EveryWeek/>
+<FileParam/>
+<FilePath/>
+<IsExitRest>0</IsExitRest>
+<IsPassExitRest>0</IsPassExitRest>
+<Name/>
+<PassExitRest/>
+<PlayTime>10</PlayTime>
+<ProcName/>
+<RemindTitle/>
+<RestAlpha>0</RestAlpha>
+<RestClr>-1</RestClr>
+<RestMin>10</RestMin>
+<RmdClr>-1</RmdClr>
+<SearchEngineNames/>
+<SearchEngines/>
+<SnapDir/>
+<SnapFormat>jpg</SnapFormat>
+<SnapSaveDay>10</SnapSaveDay>
+<SnapSaveMode>optSaveAll</SnapSaveMode>
+<SnapSaveNum>100</SnapSaveNum>
+<SoundPath/>
+<SvcStart/>
+<SvcStop/>
+<TitleShow>激活显示器</TitleShow>
+<TypeShow>显示</TypeShow>
+<VolAdd>10</VolAdd>
+<VolDec>10</VolDec>
+<VolSet>10</VolSet>
+<Webpage/>
+<YearDay/>
+<YearMonth/>
+<YearWeekDay/>
+<YearWeekNum/>
+<chkAutoClose>0</chkAutoClose>
+<chkAutoCloseHK>0</chkAutoCloseHK>
+<chkBackDateSub>0</chkBackDateSub>
+<chkBackZipMulti>0</chkBackZipMulti>
+<chkBackZipPass>0</chkBackZipPass>
+<chkDayLimit1>0</chkDayLimit1>
+<chkDayLimit2>0</chkDayLimit2>
+<chkDayLimit3>0</chkDayLimit3>
+<chkDayLimit4>0</chkDayLimit4>
+<chkDayLimit5>0</chkDayLimit5>
+<chkDayLimit6>0</chkDayLimit6>
+<chkDayLimit7>0</chkDayLimit7>
+<chkDayLimitTime>0</chkDayLimitTime>
+<chkEndDateNone>1</chkEndDateNone>
+<chkEndDateSel>0</chkEndDateSel>
+<chkExecDlg>0</chkExecDlg>
+<chkExecDlgHK>0</chkExecDlgHK>
+<chkExecExitFocus>0</chkExecExitFocus>
+<chkExecExitFullScr>0</chkExecExitFullScr>
+<chkExecPost>0</chkExecPost>
+<chkExecPre>0</chkExecPre>
+<chkHotkey>0</chkHotkey>
+<chkHotkeyAlt>0</chkHotkeyAlt>
+<chkHotkeyCtrl>0</chkHotkeyCtrl>
+<chkHotkeyLeft>0</chkHotkeyLeft>
+<chkHotkeyMiddle>0</chkHotkeyMiddle>
+<chkHotkeyRight>0</chkHotkeyRight>
+<chkHotkeyShift>0</chkHotkeyShift>
+<chkHotkeyWheel>0</chkHotkeyWheel>
+<chkHotkeyWin>0</chkHotkeyWin>
+<chkRunMiss>0</chkRunMiss>
+<chkSKPartMatch>0</chkSKPartMatch>
+<chkSKProcExists>0</chkSKProcExists>
+<chkSKWinExists>0</chkSKWinExists>
+<chkSelfDelete>0</chkSelfDelete>
+<chkTimer>1</chkTimer>
+<chkWakeRunMiss>0</chkWakeRunMiss>
+<cmbAutoCloseAction>0</cmbAutoCloseAction>
+<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
+<cmbBackType>copy</cmbBackType>
+<cmbDayLimit>周一,周二,周三,周...</cmbDayLimit>
+<cmbExecPost>0</cmbExecPost>
+<cmbExecPostTasks_text/>
+<cmbExecPost_text>启用计划</cmbExecPost_text>
+<cmbExecPre>0</cmbExecPre>
+<cmbExecPreTasks_text/>
+<cmbExecPre_text>启用计划</cmbExecPre_text>
+<cmbHKMouse>0</cmbHKMouse>
+<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
+<cmbHotkey>0</cmbHotkey>
+<edtBackSaveDir/>
+<edtBackZipCount>10</edtBackZipCount>
+<edtBackZipName/>
+<edtBackZipPass/>
+<edtDelayBoot>0</edtDelayBoot>
+<edtExecSec>30</edtExecSec>
+<edtExecSecHK>5</edtExecSecHK>
+<edtSKProcName/>
+<edtSKWinTitle/>
+<edtTaskName/>
+<edtWakeDelayBoot>0</edtWakeDelayBoot>
+<httpReq/>
+<optHKKey>1</optHKKey>
+<optHKMouse>0</optHKMouse>
+<optPlaySnd>0</optPlaySnd>
+<optRmdSnd>0</optRmdSnd>
+<optRptSnd>0</optRptSnd>
+<sldZipLevel>3</sldZipLevel>
+<tabBtnExec>0</tabBtnExec>
+<tabBtnHK>0</tabBtnHK>
+<tabBtnSch>1</tabBtnSch>
+<tabBtnTask>0</tabBtnTask>
+<timeDadyLimitMax>2024-9-23 8:10:53</timeDadyLimitMax>
+<timeDadyLimitMin>2024-9-23 8:10:53</timeDadyLimitMin>
+</Param>
+</TaskItem>
+<TaskItem>
+<ID>908</ID>
+<TaskType>ttMonitorOn</TaskType>
+<Stopped>0</Stopped>
+<HKStopped>1</HKStopped>
+<HasEndDateTime>0</HasEndDateTime>
+<SchType>2</SchType>
+<StartDateTime>2024-09-23 18:57:00</StartDateTime>
+<EndDateTime>2024-09-23 08:10:53</EndDateTime>
+<NextRunDateTime>2024-09-23 18:57:00</NextRunDateTime>
+<NextRunTime>2024-09-23 18:57:00</NextRunTime>
+<LastRunTime/>
+<Fav>0</Fav>
+<Param>
+<AppParam/>
+<AppPath/>
+<BackClr>-12500671</BackClr>
+<CountDownHour>1</CountDownHour>
+<CountDownMin>0</CountDownMin>
+<CountDownSec>0</CountDownSec>
+<DayLimit>1,2,3,4,5,6,7</DayLimit>
+<DialPass/>
+<DialUser/>
+<EveryDay>1</EveryDay>
+<EveryHour>1</EveryHour>
+<EveryMin>30</EveryMin>
+<EveryMonthDay>0</EveryMonthDay>
+<EverySec>30</EverySec>
+<EveryWeek/>
+<FileParam/>
+<FilePath/>
+<IsExitRest>0</IsExitRest>
+<IsPassExitRest>0</IsPassExitRest>
+<Name/>
+<PassExitRest/>
+<PlayTime>10</PlayTime>
+<ProcName/>
+<RemindTitle/>
+<RestAlpha>0</RestAlpha>
+<RestClr>-1</RestClr>
+<RestMin>10</RestMin>
+<RmdClr>-1</RmdClr>
+<SearchEngineNames/>
+<SearchEngines/>
+<SnapDir/>
+<SnapFormat>jpg</SnapFormat>
+<SnapSaveDay>10</SnapSaveDay>
+<SnapSaveMode>optSaveAll</SnapSaveMode>
+<SnapSaveNum>100</SnapSaveNum>
+<SoundPath/>
+<SvcStart/>
+<SvcStop/>
+<TitleShow>激活显示器</TitleShow>
+<TypeShow>显示</TypeShow>
+<VolAdd>10</VolAdd>
+<VolDec>10</VolDec>
+<VolSet>10</VolSet>
+<Webpage/>
+<YearDay/>
+<YearMonth/>
+<YearWeekDay/>
+<YearWeekNum/>
+<chkAutoClose>0</chkAutoClose>
+<chkAutoCloseHK>0</chkAutoCloseHK>
+<chkBackDateSub>0</chkBackDateSub>
+<chkBackZipMulti>0</chkBackZipMulti>
+<chkBackZipPass>0</chkBackZipPass>
+<chkDayLimit1>0</chkDayLimit1>
+<chkDayLimit2>0</chkDayLimit2>
+<chkDayLimit3>0</chkDayLimit3>
+<chkDayLimit4>0</chkDayLimit4>
+<chkDayLimit5>0</chkDayLimit5>
+<chkDayLimit6>0</chkDayLimit6>
+<chkDayLimit7>0</chkDayLimit7>
+<chkDayLimitTime>0</chkDayLimitTime>
+<chkEndDateNone>1</chkEndDateNone>
+<chkEndDateSel>0</chkEndDateSel>
+<chkExecDlg>0</chkExecDlg>
+<chkExecDlgHK>0</chkExecDlgHK>
+<chkExecExitFocus>0</chkExecExitFocus>
+<chkExecExitFullScr>0</chkExecExitFullScr>
+<chkExecPost>0</chkExecPost>
+<chkExecPre>0</chkExecPre>
+<chkHotkey>0</chkHotkey>
+<chkHotkeyAlt>0</chkHotkeyAlt>
+<chkHotkeyCtrl>0</chkHotkeyCtrl>
+<chkHotkeyLeft>0</chkHotkeyLeft>
+<chkHotkeyMiddle>0</chkHotkeyMiddle>
+<chkHotkeyRight>0</chkHotkeyRight>
+<chkHotkeyShift>0</chkHotkeyShift>
+<chkHotkeyWheel>0</chkHotkeyWheel>
+<chkHotkeyWin>0</chkHotkeyWin>
+<chkRunMiss>0</chkRunMiss>
+<chkSKPartMatch>0</chkSKPartMatch>
+<chkSKProcExists>0</chkSKProcExists>
+<chkSKWinExists>0</chkSKWinExists>
+<chkSelfDelete>0</chkSelfDelete>
+<chkTimer>1</chkTimer>
+<chkWakeRunMiss>0</chkWakeRunMiss>
+<cmbAutoCloseAction>0</cmbAutoCloseAction>
+<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
+<cmbBackType>copy</cmbBackType>
+<cmbDayLimit>周一,周二,周三,周...</cmbDayLimit>
+<cmbExecPost>0</cmbExecPost>
+<cmbExecPostTasks_text/>
+<cmbExecPost_text>启用计划</cmbExecPost_text>
+<cmbExecPre>0</cmbExecPre>
+<cmbExecPreTasks_text/>
+<cmbExecPre_text>启用计划</cmbExecPre_text>
+<cmbHKMouse>0</cmbHKMouse>
+<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
+<cmbHotkey>0</cmbHotkey>
+<edtBackSaveDir/>
+<edtBackZipCount>10</edtBackZipCount>
+<edtBackZipName/>
+<edtBackZipPass/>
+<edtDelayBoot>0</edtDelayBoot>
+<edtExecSec>30</edtExecSec>
+<edtExecSecHK>5</edtExecSecHK>
+<edtSKProcName/>
+<edtSKWinTitle/>
+<edtTaskName/>
+<edtWakeDelayBoot>0</edtWakeDelayBoot>
+<httpReq/>
+<optHKKey>1</optHKKey>
+<optHKMouse>0</optHKMouse>
+<optPlaySnd>0</optPlaySnd>
+<optRmdSnd>0</optRmdSnd>
+<optRptSnd>0</optRptSnd>
+<sldZipLevel>3</sldZipLevel>
+<tabBtnExec>0</tabBtnExec>
+<tabBtnHK>0</tabBtnHK>
+<tabBtnSch>1</tabBtnSch>
+<tabBtnTask>0</tabBtnTask>
+<timeDadyLimitMax>2024-9-23 8:10:53</timeDadyLimitMax>
+<timeDadyLimitMin>2024-9-23 8:10:53</timeDadyLimitMin>
+</Param>
+</TaskItem>
+<TaskItem>
+<ID>107</ID>
+<TaskType>ttMonitorOn</TaskType>
+<Stopped>0</Stopped>
+<HKStopped>1</HKStopped>
+<HasEndDateTime>0</HasEndDateTime>
+<SchType>2</SchType>
+<StartDateTime>2024-09-23 21:27:00</StartDateTime>
+<EndDateTime>2024-09-23 08:10:53</EndDateTime>
+<NextRunDateTime>2024-09-23 21:27:00</NextRunDateTime>
+<NextRunTime>2024-09-23 21:27:00</NextRunTime>
+<LastRunTime/>
+<Fav>0</Fav>
+<Param>
+<AppParam/>
+<AppPath/>
+<BackClr>-12500671</BackClr>
+<CountDownHour>1</CountDownHour>
+<CountDownMin>0</CountDownMin>
+<CountDownSec>0</CountDownSec>
+<DayLimit>1,2,3,4,5,6,7</DayLimit>
+<DialPass/>
+<DialUser/>
+<EveryDay>1</EveryDay>
+<EveryHour>1</EveryHour>
+<EveryMin>30</EveryMin>
+<EveryMonthDay>0</EveryMonthDay>
+<EverySec>30</EverySec>
+<EveryWeek/>
+<FileParam/>
+<FilePath/>
+<IsExitRest>0</IsExitRest>
+<IsPassExitRest>0</IsPassExitRest>
+<Name/>
+<PassExitRest/>
+<PlayTime>10</PlayTime>
+<ProcName/>
+<RemindTitle/>
+<RestAlpha>0</RestAlpha>
+<RestClr>-1</RestClr>
+<RestMin>10</RestMin>
+<RmdClr>-1</RmdClr>
+<SearchEngineNames/>
+<SearchEngines/>
+<SnapDir/>
+<SnapFormat>jpg</SnapFormat>
+<SnapSaveDay>10</SnapSaveDay>
+<SnapSaveMode>optSaveAll</SnapSaveMode>
+<SnapSaveNum>100</SnapSaveNum>
+<SoundPath/>
+<SvcStart/>
+<SvcStop/>
+<TitleShow>激活显示器</TitleShow>
+<TypeShow>显示</TypeShow>
+<VolAdd>10</VolAdd>
+<VolDec>10</VolDec>
+<VolSet>10</VolSet>
+<Webpage/>
+<YearDay/>
+<YearMonth/>
+<YearWeekDay/>
+<YearWeekNum/>
+<chkAutoClose>0</chkAutoClose>
+<chkAutoCloseHK>0</chkAutoCloseHK>
+<chkBackDateSub>0</chkBackDateSub>
+<chkBackZipMulti>0</chkBackZipMulti>
+<chkBackZipPass>0</chkBackZipPass>
+<chkDayLimit1>0</chkDayLimit1>
+<chkDayLimit2>0</chkDayLimit2>
+<chkDayLimit3>0</chkDayLimit3>
+<chkDayLimit4>0</chkDayLimit4>
+<chkDayLimit5>0</chkDayLimit5>
+<chkDayLimit6>0</chkDayLimit6>
+<chkDayLimit7>0</chkDayLimit7>
+<chkDayLimitTime>0</chkDayLimitTime>
+<chkEndDateNone>1</chkEndDateNone>
+<chkEndDateSel>0</chkEndDateSel>
+<chkExecDlg>0</chkExecDlg>
+<chkExecDlgHK>0</chkExecDlgHK>
+<chkExecExitFocus>0</chkExecExitFocus>
+<chkExecExitFullScr>0</chkExecExitFullScr>
+<chkExecPost>0</chkExecPost>
+<chkExecPre>0</chkExecPre>
+<chkHotkey>0</chkHotkey>
+<chkHotkeyAlt>0</chkHotkeyAlt>
+<chkHotkeyCtrl>0</chkHotkeyCtrl>
+<chkHotkeyLeft>0</chkHotkeyLeft>
+<chkHotkeyMiddle>0</chkHotkeyMiddle>
+<chkHotkeyRight>0</chkHotkeyRight>
+<chkHotkeyShift>0</chkHotkeyShift>
+<chkHotkeyWheel>0</chkHotkeyWheel>
+<chkHotkeyWin>0</chkHotkeyWin>
+<chkRunMiss>0</chkRunMiss>
+<chkSKPartMatch>0</chkSKPartMatch>
+<chkSKProcExists>0</chkSKProcExists>
+<chkSKWinExists>0</chkSKWinExists>
+<chkSelfDelete>0</chkSelfDelete>
+<chkTimer>1</chkTimer>
+<chkWakeRunMiss>0</chkWakeRunMiss>
+<cmbAutoCloseAction>0</cmbAutoCloseAction>
+<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
+<cmbBackType>copy</cmbBackType>
+<cmbDayLimit>周一,周二,周三,周...</cmbDayLimit>
+<cmbExecPost>0</cmbExecPost>
+<cmbExecPostTasks_text/>
+<cmbExecPost_text>启用计划</cmbExecPost_text>
+<cmbExecPre>0</cmbExecPre>
+<cmbExecPreTasks_text/>
+<cmbExecPre_text>启用计划</cmbExecPre_text>
+<cmbHKMouse>0</cmbHKMouse>
+<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
+<cmbHotkey>0</cmbHotkey>
+<edtBackSaveDir/>
+<edtBackZipCount>10</edtBackZipCount>
+<edtBackZipName/>
+<edtBackZipPass/>
+<edtDelayBoot>0</edtDelayBoot>
+<edtExecSec>30</edtExecSec>
+<edtExecSecHK>5</edtExecSecHK>
+<edtSKProcName/>
+<edtSKWinTitle/>
+<edtTaskName/>
+<edtWakeDelayBoot>0</edtWakeDelayBoot>
+<httpReq/>
+<optHKKey>1</optHKKey>
+<optHKMouse>0</optHKMouse>
+<optPlaySnd>0</optPlaySnd>
+<optRmdSnd>0</optRmdSnd>
+<optRptSnd>0</optRptSnd>
+<sldZipLevel>3</sldZipLevel>
+<tabBtnExec>0</tabBtnExec>
+<tabBtnHK>0</tabBtnHK>
+<tabBtnSch>1</tabBtnSch>
+<tabBtnTask>0</tabBtnTask>
+<timeDadyLimitMax>2024-9-23 8:10:53</timeDadyLimitMax>
+<timeDadyLimitMin>2024-9-23 8:10:53</timeDadyLimitMin>
+</Param>
+</TaskItem>
+<TaskItem>
+<ID>565</ID>
+<TaskType>ttMonitorOn</TaskType>
+<Stopped>0</Stopped>
+<HKStopped>1</HKStopped>
+<HasEndDateTime>0</HasEndDateTime>
+<SchType>2</SchType>
+<StartDateTime>2024-09-23 22:27:00</StartDateTime>
+<EndDateTime>2024-09-23 08:10:53</EndDateTime>
+<NextRunDateTime>2024-09-23 22:27:00</NextRunDateTime>
+<NextRunTime>2024-09-23 22:27:00</NextRunTime>
+<LastRunTime/>
+<Fav>0</Fav>
+<Param>
+<AppParam/>
+<AppPath/>
+<BackClr>-12500671</BackClr>
+<CountDownHour>1</CountDownHour>
+<CountDownMin>0</CountDownMin>
+<CountDownSec>0</CountDownSec>
+<DayLimit>1,2,3,4,5,6,7</DayLimit>
+<DialPass/>
+<DialUser/>
+<EveryDay>1</EveryDay>
+<EveryHour>1</EveryHour>
+<EveryMin>30</EveryMin>
+<EveryMonthDay>0</EveryMonthDay>
+<EverySec>30</EverySec>
+<EveryWeek/>
+<FileParam/>
+<FilePath/>
+<IsExitRest>0</IsExitRest>
+<IsPassExitRest>0</IsPassExitRest>
+<Name/>
+<PassExitRest/>
+<PlayTime>10</PlayTime>
+<ProcName/>
+<RemindTitle/>
+<RestAlpha>0</RestAlpha>
+<RestClr>-1</RestClr>
+<RestMin>10</RestMin>
+<RmdClr>-1</RmdClr>
+<SearchEngineNames/>
+<SearchEngines/>
+<SnapDir/>
+<SnapFormat>jpg</SnapFormat>
+<SnapSaveDay>10</SnapSaveDay>
+<SnapSaveMode>optSaveAll</SnapSaveMode>
+<SnapSaveNum>100</SnapSaveNum>
+<SoundPath/>
+<SvcStart/>
+<SvcStop/>
+<TitleShow>激活显示器</TitleShow>
+<TypeShow>显示</TypeShow>
+<VolAdd>10</VolAdd>
+<VolDec>10</VolDec>
+<VolSet>10</VolSet>
+<Webpage/>
+<YearDay/>
+<YearMonth/>
+<YearWeekDay/>
+<YearWeekNum/>
+<chkAutoClose>0</chkAutoClose>
+<chkAutoCloseHK>0</chkAutoCloseHK>
+<chkBackDateSub>0</chkBackDateSub>
+<chkBackZipMulti>0</chkBackZipMulti>
+<chkBackZipPass>0</chkBackZipPass>
+<chkDayLimit1>0</chkDayLimit1>
+<chkDayLimit2>0</chkDayLimit2>
+<chkDayLimit3>0</chkDayLimit3>
+<chkDayLimit4>0</chkDayLimit4>
+<chkDayLimit5>0</chkDayLimit5>
+<chkDayLimit6>0</chkDayLimit6>
+<chkDayLimit7>0</chkDayLimit7>
+<chkDayLimitTime>0</chkDayLimitTime>
+<chkEndDateNone>1</chkEndDateNone>
+<chkEndDateSel>0</chkEndDateSel>
+<chkExecDlg>0</chkExecDlg>
+<chkExecDlgHK>0</chkExecDlgHK>
+<chkExecExitFocus>0</chkExecExitFocus>
+<chkExecExitFullScr>0</chkExecExitFullScr>
+<chkExecPost>0</chkExecPost>
+<chkExecPre>0</chkExecPre>
+<chkHotkey>0</chkHotkey>
+<chkHotkeyAlt>0</chkHotkeyAlt>
+<chkHotkeyCtrl>0</chkHotkeyCtrl>
+<chkHotkeyLeft>0</chkHotkeyLeft>
+<chkHotkeyMiddle>0</chkHotkeyMiddle>
+<chkHotkeyRight>0</chkHotkeyRight>
+<chkHotkeyShift>0</chkHotkeyShift>
+<chkHotkeyWheel>0</chkHotkeyWheel>
+<chkHotkeyWin>0</chkHotkeyWin>
+<chkRunMiss>0</chkRunMiss>
+<chkSKPartMatch>0</chkSKPartMatch>
+<chkSKProcExists>0</chkSKProcExists>
+<chkSKWinExists>0</chkSKWinExists>
+<chkSelfDelete>0</chkSelfDelete>
+<chkTimer>1</chkTimer>
+<chkWakeRunMiss>0</chkWakeRunMiss>
+<cmbAutoCloseAction>0</cmbAutoCloseAction>
+<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
+<cmbBackType>copy</cmbBackType>
+<cmbDayLimit>周一,周二,周三,周...</cmbDayLimit>
+<cmbExecPost>0</cmbExecPost>
+<cmbExecPostTasks_text/>
+<cmbExecPost_text>启用计划</cmbExecPost_text>
+<cmbExecPre>0</cmbExecPre>
+<cmbExecPreTasks_text/>
+<cmbExecPre_text>启用计划</cmbExecPre_text>
+<cmbHKMouse>0</cmbHKMouse>
+<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
+<cmbHotkey>0</cmbHotkey>
+<edtBackSaveDir/>
+<edtBackZipCount>10</edtBackZipCount>
+<edtBackZipName/>
+<edtBackZipPass/>
+<edtDelayBoot>0</edtDelayBoot>
+<edtExecSec>30</edtExecSec>
+<edtExecSecHK>5</edtExecSecHK>
+<edtSKProcName/>
+<edtSKWinTitle/>
+<edtTaskName/>
+<edtWakeDelayBoot>0</edtWakeDelayBoot>
+<httpReq/>
+<optHKKey>1</optHKKey>
+<optHKMouse>0</optHKMouse>
+<optPlaySnd>0</optPlaySnd>
+<optRmdSnd>0</optRmdSnd>
+<optRptSnd>0</optRptSnd>
+<sldZipLevel>3</sldZipLevel>
+<tabBtnExec>0</tabBtnExec>
+<tabBtnHK>0</tabBtnHK>
+<tabBtnSch>1</tabBtnSch>
+<tabBtnTask>0</tabBtnTask>
+<timeDadyLimitMax>2024-9-23 8:10:53</timeDadyLimitMax>
+<timeDadyLimitMin>2024-9-23 8:10:53</timeDadyLimitMin>
 </Param>
 </TaskItem>
 </Tasks>
