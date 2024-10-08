@@ -1,4 +1,4 @@
-::2024.09.13
+::2024.09.29
 ::推荐保存为ASNI编码
 
 @echo off & setlocal enabledelayedexpansion
@@ -18,9 +18,9 @@ cls
 ECHO.                   
 ECHO. *****************************
 ECHO.
-ECHO  1、下载视频（强力去广告，可能误杀）
+ECHO  1、下载视频（普通去广告）
 ECHO.
-ECHO  2、下载视频（普通去广告）
+ECHO  2、下载视频（强力去广告，可能误杀）
 ECHO.  
 ECHO  3、直播录制
 ECHO.
@@ -29,8 +29,8 @@ ECHO.
 CHOICE /C 123 /N >NUL 2>NUL
 cls
 
-IF "%ERRORLEVEL%"=="1" (goto video_download_no_ad_strong)
-IF "%ERRORLEVEL%"=="2" (goto video_download_no_ad)
+IF "%ERRORLEVEL%"=="1" (goto video_download_no_ad)
+IF "%ERRORLEVEL%"=="2" (goto video_download_no_ad_strong)
 IF "%ERRORLEVEL%"=="3" (goto live_record)
 
 

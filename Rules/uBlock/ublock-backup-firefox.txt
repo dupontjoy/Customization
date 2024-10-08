@@ -1,6 +1,6 @@
 {
-  "timeStamp": 1726924575886,
-  "version": "1.59.0",
+  "timeStamp": 1728347656002,
+  "version": "1.60.0",
   "userSettings": {
     "alwaysDetachLogger": false,
     "cnameUncloakEnabled": false,
@@ -22,9 +22,9 @@
   },
   "selectedFilterLists": [
     "user-filters",
+    "ublock-filters",
     "easylist",
     "adguard-generic",
-    "easyprivacy",
     "block-lan",
     "easylist-chat",
     "easylist-newsletters",
@@ -35,6 +35,8 @@
     "adguard-popup-overlays",
     "adguard-widgets",
     "CHN-0",
+    "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
+    "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt",
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt",
     "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt",
     "https://github.com/hoshsadiq/adblock-nocoin-list/raw/master/nocoin.txt",

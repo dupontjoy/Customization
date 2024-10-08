@@ -22,6 +22,7 @@ xcopy "%BackupDir%\..\..\..\AnyTXT Searcher\config.db" "%OutputDir%\Customizatio
 :cangjie5
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\cangjie5.dict.yaml" "%OutputDir%\RimeIME-Portable\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\cangjie5.custom.yaml" "%OutputDir%\RimeIME-Portable\config\" /s /y /i
+xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\terra_pinyin.custom.yaml" "%OutputDir%\RimeIME-Portable\config\" /s /y /i
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\weasel.custom.yaml" "%OutputDir%\RimeIME-Portable\config\" /s /y /i
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\skins-backup.yaml" "%OutputDir%\RimeIME-Portable\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\rime.lua" "%OutputDir%\RimeIME-Portable\config\"  /s /y /i
@@ -70,7 +71,6 @@ xcopy "%BackupDir%\..\..\Software\Listary 6\UserProfile\Settings" "%OutputDir%\C
 
 :MAA
 xcopy "%BackupDir%\..\..\..\MAA\Run_MAA.bat" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
-xcopy "%BackupDir%\..\..\..\MAA\Update_MaaResource.ps1" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
 xcopy "%BackupDir%\..\..\..\MAA\config\gui.json" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
 
 :mail-filter
@@ -109,6 +109,9 @@ xcopy "%BackupDir%\..\..\Software\PixPin\Config\config.json" "%OutputDir%\Custom
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config\prolasso.ini" "%OutputDir%\Customization\Software\ProcessLasso\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config\ProlassoCNSettings.reg" "%OutputDir%\Customization\Software\ProcessLasso\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config\ProlassoEN.reg" "%OutputDir%\Customization\Software\ProcessLasso\config\"  /s /y /i
+
+:Snipaste
+xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%OutputDir%\Customization\Software\Snipaste\"  /s /y /i
 
 :steamcommunity_302
 xcopy "%BackupDir%\..\..\Software\steamcommunity_302\S302.ini" "%OutputDir%\Customization\Software\steamcommunity_302\"  /s /y /i

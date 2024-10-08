@@ -18,13 +18,13 @@ set mm=%time:~3,2%
 set ss=%time:~6,2%
 
 ::輸出文件名
-set Name=Profiles_%ver%_%YY%.%MON%.%DD%(t%hh%%mm%%ss%).7z
+set Name=FxProfiles_%ver%_%YY%.%MON%.%DD%(t%hh%%mm%%ss%).7z
 
 ::小時數小于10点時的修正
 set /a hh=%time:~0,2%*1
 if %hh% LSS 10 set hh=0%hh%
 ::輸出文件名
-set Name=Profiles_%ver%_%YY%.%MON%.%DD%(t%hh%%mm%%ss%).7z
+set Name=FxProfiles_%ver%_%YY%.%MON%.%DD%(t%hh%%mm%%ss%).7z
 
 rem 開始壓縮
 ::-mx9极限压缩
