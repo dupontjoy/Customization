@@ -109,6 +109,7 @@ xcopy "%BackupDir%\..\..\Software\PixPin\Config\config.json" "%OutputDir%\Custom
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config\prolasso.ini" "%OutputDir%\Customization\Software\ProcessLasso\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config\ProlassoCNSettings.reg" "%OutputDir%\Customization\Software\ProcessLasso\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config\ProlassoEN.reg" "%OutputDir%\Customization\Software\ProcessLasso\config\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\_Start-ProcessLasso.bat" "%OutputDir%\Customization\Software\ProcessLasso\"  /s /y /i
 
 :Snipaste
 xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%OutputDir%\Customization\Software\Snipaste\"  /s /y /i
