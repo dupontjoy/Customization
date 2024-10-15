@@ -22,7 +22,7 @@ rd /s /q "%SoftDir%\N_m3u8DL-RE\Logs"
 ::start  "" "%SoftDir%\PixPin\PixPin.exe"
 start  "" "%SoftDir%\Snipaste\Snipaste.exe"
 start  "" "%SoftDir%\Ditto\Ditto.exe"
-start  "" "%SoftDir%\ProcessLassoPro\_Start-ProcessLasso.bat"
+::start  "" "%SoftDir%\ProcessLassoPro\_Start-ProcessLasso.bat"
 
 
 timeout /t 5 /nobreak
