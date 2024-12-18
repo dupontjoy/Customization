@@ -957,7 +957,7 @@ local function add_video(s)
     end
     append_img_params(s, r, ro)
     append_hdr(s, ro)
-    append_property(s, "packet-video-bitrate", {prefix="码率:", suffix=" kbps"})
+    append_property(s, "video-bitrate", {prefix="码率:", suffix=" "})
     append_filters(s, "vf", "滤镜:")
 end
 
@@ -1002,7 +1002,7 @@ local function add_audio(s)
     append(s, merge(r, ro, "format"), {prefix="格式:", nl=cc and "" or o.nl,
                             indent=cc and o.prefix_sep .. o.prefix_sep})
     append(s, merge(r, ro, "samplerate"), {prefix="采样率:", suffix=" Hz"})
-    append_property(s, "packet-audio-bitrate", {prefix="码率:", suffix=" kbps"})
+    append_property(s, "audio-bitrate", {prefix="码率:", suffix=" "})
     append_filters(s, "af", "滤镜:")
 end
 

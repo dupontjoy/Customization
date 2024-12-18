@@ -5,7 +5,7 @@ COLOR 0a
 
 :Profiles
 rem 設置備份路徑以及臨時文件夾
-@echo 定时启动Listary时，清除日志和临時文件
+@echo 定时启动Listary时，清除日志和临時文件，重建索引
 
 cd /d %~dp0
 
@@ -19,6 +19,7 @@ taskkill /f /t /im Listary*
 ::Listary五代
 ::删除日志和临时文件
 del  /s /q "listary_log.log"
+del  /s /q "DiskSearch.db"
 del  /s /q "*.tmp"
 
 ::等待一段时间

@@ -48,7 +48,7 @@ if "!res!"=="" (
 ::---------------设置部分---------------
 :setting_path
 ::设置firefox配置目录
-set firefox_profile=..\..\Profiles\CingProfiles
+set firefox_profile=..\..\Profiles\FxProfiles
 
 ::设置输出目录
 set SaveDir=E:\Download\

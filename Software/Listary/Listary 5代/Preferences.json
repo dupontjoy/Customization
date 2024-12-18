@@ -416,11 +416,15 @@
                "command": "_ToggleHidden",
                "type": "command"
             }, {
+               "command": "_DisableListary",
+               "type": "command"
+            }, {
                "anchor": "separator",
                "type": "separator"
             }, {
                "anchor": "command_DisableListary",
                "command": "_DisableListary",
+               "deleted": true,
                "type": "command"
             }, {
                "anchor": "separator",

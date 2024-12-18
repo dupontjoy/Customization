@@ -34,7 +34,7 @@ rem 開始壓縮
 ::-mfb=N 填fastbytes单词大小，此数字增大会稍微加大压缩但减慢速度
 ::-r递归到所有的子目录
 ::u更新压缩包中的文件
-%zip% -mx9 -mhc -ms -mmt -mfb=273 -r u %TargetFolder%\%Name% "%TempFolder%\Profiles\BackupProfiles" "%TempFolder%\Profiles\CingProfiles" "%TempFolder%\Profiles\Run"
+%zip% -mx9 -mhc -ms -mmt -mfb=273 -r u %TargetFolder%\%Name% "%TempFolder%\Profiles\BackupProfiles" "%TempFolder%\Profiles\FxProfiles" "%TempFolder%\Profiles\Run"
 
 
 ::微云

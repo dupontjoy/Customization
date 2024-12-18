@@ -1,7 +1,7 @@
 {
   "author": "yituliu",
   "description": "小号153xxxx8730",
-  "id": 1727425603465771,
+  "id": 1730938078441675,
   "title": "243",
   "buildingType": 243,
   "planTimes": "3班",
@@ -15,8 +15,8 @@
         "order": "pre"
       },
       "drones": {
-        "room": "manufacture",
-        "index": 3,
+        "room": "trading",
+        "index": 1,
         "enable": true,
         "order": "post"
       },
@@ -50,22 +50,22 @@
             "skip": false,
             "product": "Battle Record",
             "operators": [
-              "断罪者",
-              "Castle-3",
-              "霜叶"
+              "稀音",
+              "刻俄柏",
+              "红云"
             ],
-            "sort": false,
+            "sort": true,
             "autofill": false
           },
           {
             "skip": false,
             "product": "Battle Record",
             "operators": [
-              "稀音",
-              "刻俄柏",
-              "红云"
+              "断罪者",
+              "Castle-3",
+              "霜叶"
             ],
-            "sort": true,
+            "sort": false,
             "autofill": false
           },
           {
@@ -195,8 +195,8 @@
       ]
     },
     {
-      "name": "18:00-21:59",
-      "description": "4小时",
+      "name": "18:00-21:29",
+      "description": "3.5小时",
       "Fiammetta": {
         "enable": false,
         "target": "柏喙",
@@ -238,9 +238,9 @@
             "skip": false,
             "product": "Battle Record",
             "operators": [
-              "断罪者",
-              "Castle-3",
-              "霜叶"
+              "白雪",
+              "食铁兽",
+              "红豆"
             ],
             "sort": false,
             "autofill": false
@@ -249,9 +249,9 @@
             "skip": false,
             "product": "Battle Record",
             "operators": [
-              "白雪",
-              "食铁兽",
-              "红豆"
+              "断罪者",
+              "Castle-3",
+              "霜叶"
             ],
             "sort": false,
             "autofill": false
@@ -272,8 +272,8 @@
             "product": "Pure Gold",
             "operators": [
               "水月",
-              "史都华德",
-              "罗比菈塔"
+              "罗比菈塔",
+              "玛露西尔"
             ],
             "sort": false,
             "autofill": false
@@ -383,16 +383,16 @@
       ]
     },
     {
-      "name": "22:00-07:59",
-      "description": "10小时",
+      "name": "21:30-07:59",
+      "description": "10.5小时",
       "Fiammetta": {
         "enable": true,
         "target": "柏喙",
         "order": "pre"
       },
       "drones": {
-        "room": "trading",
-        "index": 1,
+        "room": "manufacture",
+        "index": 3,
         "enable": true,
         "order": "post"
       },
@@ -426,22 +426,22 @@
             "skip": false,
             "product": "Battle Record",
             "operators": [
-              "白雪",
-              "食铁兽",
-              "红豆"
+              "稀音",
+              "刻俄柏",
+              "红云"
             ],
-            "sort": false,
+            "sort": true,
             "autofill": false
           },
           {
             "skip": false,
             "product": "Battle Record",
             "operators": [
-              "稀音",
-              "刻俄柏",
-              "红云"
+              "白雪",
+              "食铁兽",
+              "红豆"
             ],
-            "sort": true,
+            "sort": false,
             "autofill": false
           },
           {

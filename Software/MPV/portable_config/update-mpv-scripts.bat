@@ -49,7 +49,9 @@ echo. downloading uosc.conf
 %Download% -o "%cd%\script-opts\uosc.conf" https://github.com/dyphire/mpv-config/raw/master/script-opts/uosc.conf
 
 :: É¾³ý¾É°æuoscÎÄ¼þ
-rd /s /q "%cd%\scripts\uosc"
+:: rd /s /q "%cd%\scripts\uosc"
+
+:: ½âÑ¹
 echo. extracting uosc.zip
 tar -xvf .\uosc.zip
 goto :eof

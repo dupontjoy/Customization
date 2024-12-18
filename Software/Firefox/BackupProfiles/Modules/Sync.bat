@@ -1,4 +1,4 @@
-::2024.09.10
+::2024.10.18
 
 Title 备份文件到托管网站
 ::界面颜色大小，Cols为宽，Lines为高
@@ -46,7 +46,6 @@ xcopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Firefo
 
 :GlaryUtilites
 xcopy "%BackupDir%\..\..\Software\GlaryUtilities\Data\settings\Glarysoft.reg" "%OutputDir%\Customization\Software\GlaryUtilities\Data\settings\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\GlaryUtilities\Data\settings\GlarysoftW32.reg" "%OutputDir%\Customization\Software\GlaryUtilities\Data\settings\"  /s /y /i
 
 
 :GoldenDict
@@ -71,6 +70,8 @@ xcopy "%BackupDir%\..\..\Software\Listary 6\UserProfile\Settings" "%OutputDir%\C
 
 :MAA
 xcopy "%BackupDir%\..\..\..\MAA\Run_MAA.bat" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
+xcopy "%BackupDir%\..\..\..\MAA\update_MaaResource.bat" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
+xcopy "%BackupDir%\..\..\..\MAA\update_MaaResource.ps1" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
 xcopy "%BackupDir%\..\..\..\MAA\config\gui.json" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
 
 :mail-filter
@@ -143,17 +144,17 @@ xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Optimization]Settings
 xcopy "%BackupDir%\..\..\Software\zTasker\User\Tasks.dat" "%OutputDir%\Customization\Software\zTasker\User\"  /s /y /i
 
 
-::GitHub放最后
-:GitHub
-::从Cingsync复制到GitHub
+::Gitee放最后
+:Gitee
+::从Cingsync复制到Gitee
 ::先删除旧备份文件夹
-rd /s /q "%OutputDir%\..\..\GitHub\Customization\Rules"
-rd /s /q "%OutputDir%\..\..\GitHub\Customization\Software"
-rd /s /q "%OutputDir%\..\..\GitHub\RimeIME-Portable\config"
-rd /s /q "%OutputDir%\..\..\GitHub\RimeIME-Portable\soft"
+rd /s /q "%OutputDir%\..\..\Gitee\Customization\Rules"
+rd /s /q "%OutputDir%\..\..\Gitee\Customization\Software"
+rd /s /q "%OutputDir%\..\..\Gitee\RimeIME-Portable\config"
+rd /s /q "%OutputDir%\..\..\Gitee\RimeIME-Portable\soft"
 timeout /t 3 /nobreak
-xcopy "%OutputDir%\Customization" "%OutputDir%\..\..\GitHub\Customization\"  /s /y /i
-xcopy "%OutputDir%\RimeIME-Portable" "%OutputDir%\..\..\GitHub\RimeIME-Portable\"  /s /y /i
+xcopy "%OutputDir%\Customization" "%OutputDir%\..\..\Gitee\Customization\"  /s /y /i
+xcopy "%OutputDir%\RimeIME-Portable" "%OutputDir%\..\..\Gitee\RimeIME-Portable\"  /s /y /i
 
 
 :when_done

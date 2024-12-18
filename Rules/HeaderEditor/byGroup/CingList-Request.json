@@ -488,27 +488,12 @@
 			"name": "网站UA设置为Edge",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*(jianshu|bili|hdslb|youtube|google|wsj).*",
+			"pattern": "^https?:\\/\\/.*(jianshu|youtube|google).*",
 			"exclude": "",
 			"isFunction": false,
 			"action": {
 				"name": "user-agent",
 				"value": "Edge/1000"
-			},
-			"group": "CingList-Request",
-			"encoding": "UTF-8"
-		},
-		{
-			"enable": false,
-			"name": "网站免订阅",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*(economist|wsj).*",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": "https://www.google.com/"
 			},
 			"group": "CingList-Request",
 			"encoding": "UTF-8"

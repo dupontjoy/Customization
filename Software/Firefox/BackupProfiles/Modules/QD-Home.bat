@@ -19,7 +19,7 @@ timeout /t 5 /nobreak
 ::延迟启动
 start "" "%SoftDir%\..\..\PyBingWallpaper\BingWallpaper.exe"
 start "" "%SoftDir%\..\..\Tencent\Foxmail\Foxmail.exe"
-start "" "%SoftDir%\..\..\Tencent\WeChat\WeChat.exe"
+start "" "%SoftDir%\..\..\Tencent\Weixin\Weixin.exe"
 
 
 ::完成後退出

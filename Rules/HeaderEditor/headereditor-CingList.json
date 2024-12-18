@@ -13,64 +13,43 @@
 			"group": "CingList-Redirect"
 		},
 		{
-			"enable": false,
-			"name": "Google字体库 >> 极客族",
+			"enable": true,
+			"name": "Google字体库 >> 7ed",
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^https?:\\/\\/fonts\\.googleapis\\.com\\/(.*)$",
 			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
-			"to": "https://fonts.geekzu.org/$1",
-			"group": "CingList-Redirect"
+			"to": "https://use.sevencdn.com/$1",
+			"group": "CingList-Redirect",
+			"encoding": "UTF-8"
 		},
 		{
-			"enable": false,
-			"name": "Google前端库 >> 极客族",
+			"enable": true,
+			"name": "Google前端库 >> 7ed",
 			"ruleType": "redirect",
 			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/ajax\\.googleapis\\.com\\/(.*)$",
+			"pattern": "^https?:\\/\\/ajax\\.googleapis\\.com\\/ajax\\/(.*)$",
 			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
-			"to": "https://gapis.geekzu.org/ajax/$1",
-			"group": "CingList-Redirect"
+			"to": "https://use.sevencdn.com/gajax/$1",
+			"group": "CingList-Redirect",
+			"encoding": "UTF-8"
 		},
 		{
-			"enable": false,
-			"name": "Google字体文件-1 >> 极客族",
+			"enable": true,
+			"name": "Gravatar全球头像 >> 7ed",
 			"ruleType": "redirect",
 			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/fonts\\.gstatic\\.com\\/(.*)$",
+			"pattern": "^https?:\\/\\/.*\\.gravatar\\.com\\/(.*)$",
 			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
-			"to": "https://gapis.geekzu.org/g-fonts/$1",
-			"group": "CingList-Redirect"
-		},
-		{
-			"enable": false,
-			"name": "Google字体文件-2 >> 极客族",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/themes\\.googleusercontent\\.com\\/(.*)$",
-			"exclude": "",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "https://gapis.geekzu.org/g-themes/$1",
-			"group": "CingList-Redirect"
-		},
-		{
-			"enable": false,
-			"name": "Gravatar全球头像 >>极客族",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*\\.gravatar\\.com\\/avatar\\/(.*)$",
-			"exclude": "",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "https://sdn.geekzu.org/avatar/$1",
-			"group": "CingList-Redirect"
+			"to": "https://use.sevencdn.com/$1",
+			"group": "CingList-Redirect",
+			"encoding": "UTF-8"
 		},
 		{
 			"enable": true,
@@ -120,6 +99,45 @@
 			"action": "redirect",
 			"to": "  https://www.ithome.com/0/$1/$2$3",
 			"group": "CingList-Redirect"
+		},
+		{
+			"enable": true,
+			"name": "Google Chart >> 7ed",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/chart\\.googleapis\\.com\\/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://use.sevencdn.com/$1",
+			"group": "CingList-Redirect",
+			"encoding": "UTF-8"
+		},
+		{
+			"enable": true,
+			"name": "QRCode API >> 7ed",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/api\\.qrserver\\.com\\/v1\\/create-qr-code\\/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://use.sevencdn.com/qr/$1",
+			"group": "CingList-Redirect",
+			"encoding": "UTF-8"
+		},
+		{
+			"enable": true,
+			"name": "CDNJS >> 7ed",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/cdnjs\\.cloudflare\\.com\\/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://use.sevencdn.com/$1",
+			"group": "CingList-Redirect",
+			"encoding": "UTF-8"
 		}
 	],
 	"sendHeader": [
@@ -610,27 +628,12 @@
 			"name": "网站UA设置为Edge",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*(jianshu|bili|hdslb|youtube|google|wsj).*",
+			"pattern": "^https?:\\/\\/.*(jianshu|youtube|google).*",
 			"exclude": "",
 			"isFunction": false,
 			"action": {
 				"name": "user-agent",
 				"value": "Edge/1000"
-			},
-			"group": "CingList-Request",
-			"encoding": "UTF-8"
-		},
-		{
-			"enable": false,
-			"name": "网站免订阅",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*(economist|wsj).*",
-			"exclude": "",
-			"isFunction": false,
-			"action": {
-				"name": "referer",
-				"value": "https://www.google.com/"
 			},
 			"group": "CingList-Request",
 			"encoding": "UTF-8"

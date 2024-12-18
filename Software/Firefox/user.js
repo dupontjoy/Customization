@@ -1,4 +1,4 @@
-//2024.09.11
+//2024.11.29
 
 
 /*
@@ -30,6 +30,10 @@ user_pref("dom.private-attribution.submission.enabled", false);//允许网站进
 user_pref("datareporting.healthreport.uploadEnabled", false);//允许 Firefox 向 Mozilla 发送技术信息及交互数据（否）
 user_pref("browser.preferences.moreFromMozilla", false);//更多Mozilla产品
 user_pref("media.autoplay.default", 0);//自动播放默认值：阻止音频和视频
+//字体语言编码
+user_pref("font.name.serif.zh-CN", "Arial");//衬线字体
+user_pref("font.name.sans-serif.zh-CN", "Arial");//无衬线字体
+user_pref("font.name.monospace.zh-CN", "Arial");//等宽字体
 
 
 //*==========标签相关==========*//
@@ -82,12 +86,6 @@ user_pref("browser.translations.panelShown", false);
 user_pref("media.videocontrols.picture-in-picture.improved-video-controls.enabled", true);//画中画显示进度条
 
 
-//實验性
-user_pref("javascript.options.experimental.shadow_realms", true);//贴吧fx内存问题的回复，试一试
-user_pref("javascript.options.experimental.weakrefs.expose_cleanupSome", true);
-user_pref("browser.preferences.experimental", true);//设置中添加实验性标签
-
-
 //单项, 未分类
 user_pref("browser.promo.pin.enabled", false);//弹窗推广-固定标签页
 user_pref("browser.promo.focus.enabled", false);//弹窗推广-歡迎页
@@ -102,8 +100,8 @@ user_pref("extensions.pocket.enabled", false);//自带pocket(禁用,功能太简
 user_pref("browser.sessionstore.interval", 3600000);//(单位: ms)限制recovery.js文件的写入操作: 默认15s, 改为1小時
 user_pref("browser.menu.showViewImageInfo", true);//显示查看图像信息菜单
 user_pref("security.insecure_field_warning.contextual.enabled", false);//隐藏输入框不安全提示（配合css）
-
-
+user_pref("dom.ipc.processPriorityManager.backgroundUsesEcoQoS", false);//关闭win系统的效能模式
+user_pref("intl.icu4x.segmenter.enabled", false);//双击是选取一个短句
 
 
 /******************************************************************************************
@@ -120,7 +118,7 @@ user_pref("userChromeJS.downloadPlus.enableRename", true);//下载对话框启�
 user_pref("browser.startup.page", 1);//启动Firefox时显示主页
 user_pref("browser.startup.homepage", "about:newtab");//首页
 //标签页固定的网站(16个)
-user_pref("browser.newtabpage.pinned", "[{\"url\":\"https://hbr.org/\",\"title\":\"HBR\"},{\"url\":\"http://www.economist.com/\",\"title\":\"Economist\"},{\"url\":\"https://www.wsj.com/\",\"title\":\"wsj\"},{\"url\":\"https://www.reddit.com/\",\"title\":\"红迪\"},{\"url\":\"https://www.youtube.com/\",\"title\":\"Youtube\"},{\"url\":\"https://t.bilibili.com/\",\"title\":\"Bilibili\"},{\"url\":\"https://tophub.today/c/news\",\"title\":\"今日热榜\"},{\"url\":\"https://momoyu.cc/\",\"title\":\"摸摸鱼\"},{\"url\":\"https://www.guancha.cn/\",\"title\":\"观察者网\"},{\"url\":\"http://www.wyzxwk.com/\",\"title\":\"乌有之乡\"},{\"url\":\"https://www.zhihu.com/\",\"title\":\"知乎\"},{\"url\":\"https://bbs.kafan.cn/forum-215-1.html\",\"title\":\"卡饭\"},{\"url\":\"https://www.ithome.com/\",\"title\":\"IT之家\"},{\"url\":\"https://tieba.baidu.com/\",\"title\":\"贴吧\"},{\"url\":\"https://36kr.com/\",\"title\":\"36Kr\"},{\"url\":\"https://bbs.hupu.com/\",\"title\":\"虎扑\"}]");
+user_pref("browser.newtabpage.pinned", "[{\"url\":\"https://t.bilibili.com/\",\"title\":\"Bilibili\"},{\"url\":\"https://tophub.today/c/news\",\"title\":\"今日热榜\"},{\"url\":\"https://momoyu.cc/\",\"title\":\"摸摸鱼\"},{\"url\":\"https://www.guancha.cn/\",\"title\":\"观察者网\"},{\"url\":\"http://www.wyzxwk.com/\",\"title\":\"乌有之乡\"},{\"url\":\"https://www.sciencenet.cn/\",\"title\":\"科学网\"},{\"url\":\"https://www.ithome.com/\",\"title\":\"IT之家\"},{\"url\":\"https://bbs.kafan.cn/forum-215-1.html\",\"title\":\"卡饭\"},{\"url\":\"https://tieba.baidu.com/\",\"title\":\"贴吧\"},{\"url\":\"https://bbs.hupu.com/\",\"title\":\"虎扑\"},{\"url\":\"https://www.jiemian.com/\",\"title\":\"界面\"},{\"url\":\"https://www.zhihu.com/\",\"title\":\"知乎\"},{\"url\":\"https://www.youtube.com/\",\"title\":\"Youtube\"},{\"url\":\"http://www.washingtonpost.com/\",\"title\":\"Wapo\"},{\"url\":\"https://hbr.org/\",\"title\":\"HBR\"},{\"url\":\"https://www.reddit.com/\",\"title\":\"红迪\"}]");
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 2);//常用网站2行展示
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);//不展示只言片语
 user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);//不展示集锦
