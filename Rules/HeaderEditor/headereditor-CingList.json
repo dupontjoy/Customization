@@ -628,7 +628,7 @@
 			"name": "网站UA设置为Edge",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*(jianshu|youtube|google).*",
+			"pattern": "^https?:\\/\\/.*(jianshu|bilibili|hdslb|youtube|google).*",
 			"exclude": "",
 			"isFunction": false,
 			"action": {

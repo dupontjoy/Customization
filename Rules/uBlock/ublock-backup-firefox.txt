@@ -1,19 +1,19 @@
 {
-  "timeStamp": 1730983601046,
-  "version": "1.61.0",
+  "timeStamp": 1734509401138,
+  "version": "1.61.2",
   "userSettings": {
     "alwaysDetachLogger": false,
     "cnameUncloakEnabled": false,
     "contextMenuEnabled": false,
-    "externalLists": "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt\nhttps://gitee.com/dupontjoy/customization/raw/main/Rules/uBlock/ublock-cinglist.txt\nhttps://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt\nhttps://github.com/hoshsadiq/adblock-nocoin-list/raw/master/nocoin.txt",
+    "externalLists": "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt\nhttps://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt\nhttps://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt\nhttps://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt\nhttps://github.com/hoshsadiq/adblock-nocoin-list/raw/master/nocoin.txt",
     "firewallPaneMinimized": false,
     "hyperlinkAuditingDisabled": false,
     "importedLists": [
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt",
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
       "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt",
-      "https://gitee.com/dupontjoy/customization/raw/main/Rules/uBlock/ublock-cinglist.txt",
       "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt",
+      "https://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt",
       "https://github.com/hoshsadiq/adblock-nocoin-list/raw/master/nocoin.txt"
     ],
     "popupPanelSections": 63,
@@ -33,8 +33,8 @@
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_mv.txt",
     "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/antiadblockfilters.txt",
-    "https://gitee.com/dupontjoy/customization/raw/main/Rules/uBlock/ublock-cinglist.txt",
-    "https://github.com/hoshsadiq/adblock-nocoin-list/raw/master/nocoin.txt"
+    "https://github.com/hoshsadiq/adblock-nocoin-list/raw/master/nocoin.txt",
+    "https://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt"
   ],
   "hiddenSettings": {
     "autoUpdatePeriod": 60,

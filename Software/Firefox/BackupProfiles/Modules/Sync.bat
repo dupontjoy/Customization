@@ -144,17 +144,17 @@ xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Optimization]Settings
 xcopy "%BackupDir%\..\..\Software\zTasker\User\Tasks.dat" "%OutputDir%\Customization\Software\zTasker\User\"  /s /y /i
 
 
-::Gitee放最后
-:Gitee
-::从Cingsync复制到Gitee
+::GitHub放最后
+:GitHub
+::从Cingsync复制到GitHub
 ::先删除旧备份文件夹
-rd /s /q "%OutputDir%\..\..\Gitee\Customization\Rules"
-rd /s /q "%OutputDir%\..\..\Gitee\Customization\Software"
-rd /s /q "%OutputDir%\..\..\Gitee\RimeIME-Portable\config"
-rd /s /q "%OutputDir%\..\..\Gitee\RimeIME-Portable\soft"
+rd /s /q "%OutputDir%\..\..\GitHub\Customization\Rules"
+rd /s /q "%OutputDir%\..\..\GitHub\Customization\Software"
+rd /s /q "%OutputDir%\..\..\GitHub\RimeIME-Portable\config"
+rd /s /q "%OutputDir%\..\..\GitHub\RimeIME-Portable\soft"
 timeout /t 3 /nobreak
-xcopy "%OutputDir%\Customization" "%OutputDir%\..\..\Gitee\Customization\"  /s /y /i
-xcopy "%OutputDir%\RimeIME-Portable" "%OutputDir%\..\..\Gitee\RimeIME-Portable\"  /s /y /i
+xcopy "%OutputDir%\Customization" "%OutputDir%\..\..\GitHub\Customization\"  /s /y /i
+xcopy "%OutputDir%\RimeIME-Portable" "%OutputDir%\..\..\GitHub\RimeIME-Portable\"  /s /y /i
 
 
 :when_done
