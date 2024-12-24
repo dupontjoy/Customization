@@ -18,7 +18,7 @@ cls
 ECHO.                   
 ECHO. *****************************
 ECHO.
-ECHO  1、下载视频（普通去广告）
+ECHO  1、下载视频
 ECHO.  
 ECHO  2、直播录制
 ECHO.
@@ -34,7 +34,7 @@ IF "%ERRORLEVEL%"=="2" (goto live_record)
 ::功能选项
 :video_download_no_ad
 cls
-echo.&echo 下载视频（普通去广告）
+echo.&echo 下载视频
 echo.
 call :common_input
 call :setting_video_download_no_ad
