@@ -12,7 +12,7 @@ cd /d %~dp0
 set SoftDir=..\..\..\Software
 
 ::删除firefox配置文件夹误生成的cache文件夹
-rd /s /q "%SoftDir%\..\Profiles\CingProfiles\cache2"
+rd /s /q "%SoftDir%\..\Profiles\FxProfiles\cache2"
 
 ::删除N_m3u8DL-RE下载失败的缓存和日志
 rd /s /q "%SoftDir%\N_m3u8DL-RE\cache"
