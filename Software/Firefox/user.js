@@ -1,4 +1,4 @@
-//2024.11.29
+//2024.12.11
 
 
 /*
@@ -24,10 +24,7 @@ user_pref("privacy.userContext.enabled", true);//启用身份标签页
 user_pref("signon.rememberSignons", false);//不保存密码
 user_pref("browser.shell.checkDefaultBrowser", false);//总是检查是否为默认浏览器(否)
 user_pref("browser.search.suggest.enabled", false);//禁用搜索建议
-user_pref("privacy.globalprivacycontrol.enabled", true);//要求网站不许出售或共享我的数据
-user_pref("privacy.donottrackheader.enabled", true);//请勿跟踪(一律发送)
 user_pref("dom.private-attribution.submission.enabled", false);//允许网站进行隐私保护下的广告监测（否）
-user_pref("datareporting.healthreport.uploadEnabled", false);//允许 Firefox 向 Mozilla 发送技术信息及交互数据（否）
 user_pref("browser.preferences.moreFromMozilla", false);//更多Mozilla产品
 user_pref("media.autoplay.default", 0);//自动播放默认值：阻止音频和视频
 //字体语言编码
@@ -48,14 +45,17 @@ user_pref("browser.link.open_newwindow.restriction", 0);//单窗口模式(弹出
 user_pref("browser.download.useDownloadDir", false);//下载时每次讯问我要存到何处
 user_pref("browser.download.always_ask_before_handling_new_types", true);//Firefox如何处理其他文件：询问要打开还是保存文件
 user_pref("browser.download.manager.scanWhenDone", false);//关闭下载结束后扫描
+user_pref("dom.block_download_in_sandboxed_iframes", false);//阻止下载功能（沙盒框架）[否]
+user_pref("dom.block_download_insecure", false);//阻止下载功能（不安全，潜在风险）[否]
+
+//safebrowsing相关
 user_pref("browser.safebrowsing.downloads.enabled", false);//关闭下载安全检查，解决下载卡在最后一秒的问题
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);//关闭下载安全检查（远程）
 user_pref("browser.safebrowsing.downloads.remote.url", "");//关闭下载安全检查（远程)
 user_pref("browser.safebrowsing.downloads.remote.block_dangerous", false);//关闭下载安全检查（远程）
 user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", false);//关闭下载安全检查（远程）
-user_pref("dom.block_download_in_sandboxed_iframes", false);//阻止下载功能（沙盒框架）[否]
-user_pref("dom.block_download_insecure", false);//阻止下载功能（不安全，潜在风险）[否]
-
+user_pref("browser.safebrowsing.malware.enabled", false);//关闭欺诈内容和危险软件防护（谷歌网站黑名单）
+user_pref("browser.safebrowsing.phishing.enabled", false);//关闭欺诈内容和危险软件防护（谷歌网站黑名单）
 
 //*==========网络相关==========*//
 user_pref("security.enterprise_roots.enabled", true);//未连接：有潜在的安全问题
@@ -85,6 +85,10 @@ user_pref("browser.translations.panelShown", false);
 //画中画
 user_pref("media.videocontrols.picture-in-picture.improved-video-controls.enabled", true);//画中画显示进度条
 
+//全屏播放動画
+user_pref("full-screen-api.warning.timeout", 0); //双击设置为 0，关闭视频进入全屏时的提示
+user_pref("full-screen-api.transition-duration.enter", "0 0"); //双击设置为 0 0，去除全屏模式的过渡动画–进入
+user_pref("full-screen-api.transition-duration.leave", "0 0"); //双击设置为 0 0，去除全屏模式的过渡动画–退出
 
 //单项, 未分类
 user_pref("browser.promo.pin.enabled", false);//弹窗推广-固定标签页
@@ -92,8 +96,6 @@ user_pref("browser.promo.focus.enabled", false);//弹窗推广-歡迎页
 user_pref("browser.startup.homepage_override.mstone", "ignore");//启动时不弹出"What's New"页面
 user_pref("extensions.ui.lastCategory", "addons://list/extension");//默认打开“扩展”项
 user_pref("browser.aboutConfig.showWarning", false);//AboutConfig警告
-user_pref("browser.safebrowsing.malware.enabled", false);//关闭欺诈内容和危险软件防护（谷歌网站黑名单）
-user_pref("browser.safebrowsing.phishing.enabled", false);//关闭欺诈内容和危险软件防护（谷歌网站黑名单）
 user_pref("browser.urlbar.trimURLs", false);//地址栏显示 http://
 user_pref("ui.scrollToClick", 1); //点击滚动条将能够直接让你调转到页面上你想要查看的那点
 user_pref("extensions.pocket.enabled", false);//自带pocket(禁用,功能太简略,无法离线查看列表)
@@ -102,12 +104,12 @@ user_pref("browser.menu.showViewImageInfo", true);//显示查看图像信息菜�
 user_pref("security.insecure_field_warning.contextual.enabled", false);//隐藏输入框不安全提示（配合css）
 user_pref("dom.ipc.processPriorityManager.backgroundUsesEcoQoS", false);//关闭win系统的效能模式
 user_pref("intl.icu4x.segmenter.enabled", false);//双击是选取一个短句
+user_pref("extensions.screenshots.disabled", true);   //禁用自带截图
 
 
 /******************************************************************************************
  *这里是个人设置。
  *******************************************************************************************/
-
 
 //downloadplus脚本设置
 user_pref("userChromeJS.downloadPlus.enableFlashgotIntergention", true);//启用 Flashgot 集成

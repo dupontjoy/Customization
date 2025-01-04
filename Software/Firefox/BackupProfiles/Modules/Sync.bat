@@ -10,8 +10,7 @@ pushd %~dp0
 
 ::設置文件所在位置
 ::从批处理所在文件夹到Profiles文件夹，共跨了2层
-set BackupDir=..\..\CingProfiles
-set appdataDir=C:\Users\Cing\AppData\Roaming
+set BackupDir=..\..\FxProfiles
 set softDir=E:\Cing@Soft
 set OutputDir=E:\My Documents\Nutstore\NutStoreSync
 
@@ -53,9 +52,6 @@ xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customizati
 
 :IDM
 xcopy "%BackupDir%\..\..\..\IDM\!)选项配置.reg" "%OutputDir%\Customization\Software\IDM\"  /s /y /i
-
-:koodo-reader
-xcopy "%appdataDir%\Koodo-Reader\uploads" "%OutputDir%\Customization\Software\Koodo-Reader\"  /s /y /i
 
 
 :listary5
