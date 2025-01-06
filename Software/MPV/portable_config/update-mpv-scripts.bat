@@ -41,7 +41,7 @@ echo. downloading SmartCopyPaste.conf
 echo. downloading stats.lua chs
 %Download% -o "%cd%\scripts\stats.lua" https://github.com/FinnRaze/mpv-stats-zh/raw/master/stats.lua
 echo. downloading stats.conf
-%Download% -o "%cd%\script-opts\stats.conf" https://github.com/hooke007/MPV_lazy/raw/main/portable_config/script-opts/stats.conf
+%Download% -o "%cd%\script-opts\stats.conf" https://github.com/dyphire/mpv-config/raw/refs/heads/master/script-opts/stats.conf
 
 echo. downloading uosc.zip
 %Download% -o "%cd%\uosc.zip" https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip

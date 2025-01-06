@@ -1,4 +1,4 @@
-::2024.10.18
+::2025.01.04
 
 Title 备份文件到托管网站
 ::界面颜色大小，Cols为宽，Lines为高
@@ -42,10 +42,6 @@ rd /s /q "%OutputDir%\Customization\Software\Firefox\BackupProfiles"
 timeout /t 3 /nobreak
 xcopy "%BackupDir%\user.js" "%OutputDir%\Customization\Software\Firefox\"  /s /y /i
 xcopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Firefox\BackupProfiles"  /s /y /i
-
-:GlaryUtilites
-xcopy "%BackupDir%\..\..\Software\GlaryUtilities\Data\settings\Glarysoft.reg" "%OutputDir%\Customization\Software\GlaryUtilities\Data\settings\"  /s /y /i
-
 
 :GoldenDict
 xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customization\Software\GoldenDict\"  /s /y /i
@@ -93,7 +89,6 @@ rd /s /q "%OutputDir%\Customization\Software\MPV\portable_config\cache"
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\N_m3u8DL-RE.exe" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\Run_N_m3u8DL-RE.bat" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_ad_keyword.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_ad_keyword_strong.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_common.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_live_record.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\README.md" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
