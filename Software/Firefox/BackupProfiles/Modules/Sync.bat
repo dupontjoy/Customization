@@ -95,7 +95,7 @@ xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\README.md" "%OutputDir%\Customizat
 
 :Pixpin
 ::Ç‰∑›Pixpin‘O÷√
-xcopy "%BackupDir%\..\..\Software\PixPin\Config\config.json" "%OutputDir%\Customization\Software\PixPin\Config\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\PixPin\Config\PixPinConfig.json" "%OutputDir%\Customization\Software\PixPin\Config\"  /s /y /i
 
 :Processlasso
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config\prolasso.ini" "%OutputDir%\Customization\Software\ProcessLasso\config\"  /s /y /i

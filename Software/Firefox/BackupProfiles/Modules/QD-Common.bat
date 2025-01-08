@@ -19,8 +19,8 @@ rd /s /q "%SoftDir%\N_m3u8DL-RE\cache"
 rd /s /q "%SoftDir%\N_m3u8DL-RE\Logs"
 
 ::∆’Õ®Ü¢Ñ”
-::start  "" "%SoftDir%\PixPin\PixPin.exe"
-start  "" "%SoftDir%\Snipaste\Snipaste.exe"
+start  "" "%SoftDir%\PixPin\PixPin.exe"
+::start  "" "%SoftDir%\Snipaste\Snipaste.exe"
 start  "" "%SoftDir%\Ditto\Ditto.exe"
 ::start  "" "%SoftDir%\ProcessLassoPro\_Start-ProcessLasso.bat"
 

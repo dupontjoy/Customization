@@ -12,14 +12,10 @@ cd /d %~dp0
 set SoftDir=..\..\..\Software
 
 
-::等待一段时间
-timeout /t 5 /nobreak
-
-
 ::延迟启动
 start "" "%SoftDir%\..\..\PyBingWallpaper\BingWallpaper.exe"
-start "" "%SoftDir%\..\..\Tencent\Foxmail\Foxmail.exe"
-start "" "%SoftDir%\..\..\Tencent\Weixin\Weixin.exe"
+::start "" "%SoftDir%\..\..\Tencent\Foxmail\Foxmail.exe"
+::start "" "%SoftDir%\..\..\Tencent\Weixin\Weixin.exe"
 
 
 ::完成後退出
