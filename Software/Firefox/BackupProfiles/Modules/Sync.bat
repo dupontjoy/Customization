@@ -132,6 +132,7 @@ xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Optimization]Settings
 
 :ztasker
 ::備份ztasker設置
+xcopy "%BackupDir%\..\..\Software\zTasker\User\Config.dat" "%OutputDir%\Customization\Software\zTasker\User\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\zTasker\User\Tasks.dat" "%OutputDir%\Customization\Software\zTasker\User\"  /s /y /i
 
 
