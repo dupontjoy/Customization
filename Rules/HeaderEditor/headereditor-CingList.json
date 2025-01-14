@@ -9,8 +9,9 @@
 			"exclude": "",
 			"isFunction": false,
 			"action": "redirect",
-			"to": "http://book.bfnn.org/books$1",
-			"group": "CingList-Redirect"
+			"to": "https://book.bfnn.org/books$1",
+			"group": "CingList-Redirect",
+			"encoding": "UTF-8"
 		},
 		{
 			"enable": true,

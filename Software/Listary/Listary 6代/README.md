@@ -1,5 +1,7 @@
 自定义配置位置：
 
+将DataFolderRedirection.txt文件和UserProfile文件夹复制到Listary.exe 所在目录
+
 https://discussion.listary.com/t/listary-6-0-1-9/4690/2
 
     退出 Listary。
