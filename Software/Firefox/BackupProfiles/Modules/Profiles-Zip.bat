@@ -10,7 +10,7 @@ cls
 cls
 
 ::完整日期和時間
-set YY=%date:~2,2%
+set YY=%date:~0,4%
 set MON=%date:~5,2%
 set DD=%date:~8,2%
 set hh=%time:~0,2%
@@ -37,7 +37,7 @@ rem 開始壓縮
 %zip% -mx9 -mhc -ms -mmt -mfb=273 -r u %TargetFolder%\%Name% "%TempFolder%\Profiles\BackupProfiles" "%TempFolder%\Profiles\FxProfiles" "%TempFolder%\Profiles\Run"
 
 
-::微云
+::移動到同步文件夹
 move %TargetFolder%\%Name% %TargetFolder1%
 
 

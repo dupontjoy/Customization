@@ -1,4 +1,4 @@
-//2024.12.11
+//2025.01.14
 
 
 /*
@@ -27,10 +27,12 @@ user_pref("browser.search.suggest.enabled", false);//禁用搜索建议
 user_pref("dom.private-attribution.submission.enabled", false);//允许网站进行隐私保护下的广告监测（否）
 user_pref("browser.preferences.moreFromMozilla", false);//更多Mozilla产品
 user_pref("media.autoplay.default", 0);//自动播放默认值：阻止音频和视频
+
 //字体语言编码
 user_pref("font.name.serif.zh-CN", "Arial");//衬线字体
 user_pref("font.name.sans-serif.zh-CN", "Arial");//无衬线字体
 user_pref("font.name.monospace.zh-CN", "Arial");//等宽字体
+user_pref("layout.css.unicode-range.enabled", true);//简体(CN/SG)开启unicode-range
 
 
 //*==========标签相关==========*//
