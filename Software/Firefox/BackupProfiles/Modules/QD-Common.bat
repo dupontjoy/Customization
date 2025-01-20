@@ -21,8 +21,7 @@ rd /s /q "%SoftDir%\N_m3u8DL-RE\Logs"
 ::普通啟動
 start  "" "%SoftDir%\PixPin\PixPin.exe"
 ::start  "" "%SoftDir%\Snipaste\Snipaste.exe"
-start  "" "%SoftDir%\EcoPaste\EcoPaste.exe"
-::start  "" "%SoftDir%\Ditto\Ditto.exe"
+start  "" "%SoftDir%\Ditto\Ditto.exe"
 ::start  "" "%SoftDir%\ProcessLassoPro\_Start-ProcessLasso.bat"
 
 
@@ -37,3 +36,7 @@ start  "" "%SoftDir%\Listary Pro\UserData\Run_listary.bat"
 
 ::管理员启动
 mshta vbscript:createobject("shell.application").shellexecute("""%SoftDir%\RimeIME Portable\weasel\WeaselServer.exe""","::",,"runas",1)(window.close)
+
+timeout /t 60 /nobreak
+
+start  "" "%SoftDir%\steamcommunity_302\steamcommunity_302.exe"

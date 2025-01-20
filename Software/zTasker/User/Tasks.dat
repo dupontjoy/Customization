@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 07:57:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-01-17 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-01-17 07:57:00</NextRunTime>
-		<LastRunTime>2025-01-16 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-01-21 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-01-21 07:57:00</NextRunTime>
+		<LastRunTime>2025-01-20 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -216,9 +216,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 08:57:00</StartDateTime>
 		<EndDateTime>2025-01-10 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-01-17 08:57:00</NextRunDateTime>
-		<NextRunTime>2025-01-17 08:57:00</NextRunTime>
-		<LastRunTime>2025-01-16 08:57:00</LastRunTime>
+		<NextRunDateTime>2025-01-21 08:57:00</NextRunDateTime>
+		<NextRunTime>2025-01-21 08:57:00</NextRunTime>
+		<LastRunTime>2025-01-20 08:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -436,9 +436,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 17:57:00</StartDateTime>
 		<EndDateTime>2025-01-12 06:43:12</EndDateTime>
-		<NextRunDateTime>2025-01-17 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-01-17 17:57:00</NextRunTime>
-		<LastRunTime>2025-01-16 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-01-20 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-01-20 17:57:00</NextRunTime>
+		<LastRunTime>2025-01-19 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -656,9 +656,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 18:57:00</StartDateTime>
 		<EndDateTime>2025-01-11 13:26:24</EndDateTime>
-		<NextRunDateTime>2025-01-17 18:57:00</NextRunDateTime>
-		<NextRunTime>2025-01-17 18:57:00</NextRunTime>
-		<LastRunTime>2025-01-16 18:57:00</LastRunTime>
+		<NextRunDateTime>2025-01-20 18:57:00</NextRunDateTime>
+		<NextRunTime>2025-01-20 18:57:00</NextRunTime>
+		<LastRunTime>2025-01-19 18:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -876,9 +876,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-24 21:27:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-01-17 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-01-17 21:27:00</NextRunTime>
-		<LastRunTime>2025-01-16 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-01-20 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-01-20 21:27:00</NextRunTime>
+		<LastRunTime>2025-01-19 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -1094,9 +1094,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-24 22:27:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-01-17 22:27:00</NextRunDateTime>
-		<NextRunTime>2025-01-17 22:27:00</NextRunTime>
-		<LastRunTime>2025-01-16 22:27:00</LastRunTime>
+		<NextRunDateTime>2025-01-20 22:27:00</NextRunDateTime>
+		<NextRunTime>2025-01-20 22:27:00</NextRunTime>
+		<LastRunTime>2025-01-19 22:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -1311,10 +1311,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-01-16 17:04:48</EndDateTime>
-		<NextRunDateTime>2124-12-23 22:13:16</NextRunDateTime>
+		<EndDateTime>2025-01-19 10:09:36</EndDateTime>
+		<NextRunDateTime>2124-12-25 15:15:05</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-01-16 22:13:16</LastRunTime>
+		<LastRunTime>2025-01-18 15:15:05</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -1499,108 +1499,6 @@ env2=value2</edtAppEnv>
 				</Param>
 				<Name>qd-home.vbs</Name>
 				<ID>23</ID>
-			</Tasker>
-			<Delay>
-				<Sec>10000</Sec>
-				<Name>延迟</Name>
-				<ID>20</ID>
-			</Delay>
-			<Tasker>
-				<ID>859</ID>
-				<TaskType>ttMouseClick</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
-				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
-				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>2</Ver>
-				<Param>
-					<AppParam></AppParam>
-					<AppPath></AppPath>
-					<BackClr>-12500671</BackClr>
-					<DialPass></DialPass>
-					<DialUser></DialUser>
-					<FileParam></FileParam>
-					<FilePath></FilePath>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>steam302防火墙窗口-取消</Name>
-					<PassExitRest></PassExitRest>
-					<PlayTime>10</PlayTime>
-					<ProcName></ProcName>
-					<RemindTitle></RemindTitle>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SearchEngineNames></SearchEngineNames>
-					<SearchEngines></SearchEngines>
-					<SnapDir></SnapDir>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<SoundPath></SoundPath>
-					<SvcStart></SvcStart>
-					<SvcStop></SvcStop>
-					<TitleShow>鼠标点击</TitleShow>
-					<TypeShow>输入</TypeShow>
-					<VolAdd>10</VolAdd>
-					<VolDec>10</VolDec>
-					<VolSet>10</VolSet>
-					<Webpage></Webpage>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<chkMouseClickActivateWnd>1</chkMouseClickActivateWnd>
-					<chkMouseClickPart>0</chkMouseClickPart>
-					<chkMouseClickWnd>0</chkMouseClickWnd>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbClass_text></cmbClass_text>
-					<cmbHotkey>0</cmbHotkey>
-					<cmbMouseClick>left</cmbMouseClick>
-					<cmbMouseClickPos>0</cmbMouseClickPos>
-					<cmbMouseClickPos_text>指定位置</cmbMouseClickPos_text>
-					<cmbMouseClickType>0</cmbMouseClickType>
-					<cmbMouseClickType_text>经典(速度快)</cmbMouseClickType_text>
-					<cmbMouseClick_text>左键</cmbMouseClick_text>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
-					<edtMouseClickClass></edtMouseClickClass>
-					<edtMouseClickTitle></edtMouseClickTitle>
-					<edtMouseClickX>931</edtMouseClickX>
-					<edtMouseClickY>599</edtMouseClickY>
-					<edtMouseClicklTimes>1</edtMouseClicklTimes>
-					<edtTaskName></edtTaskName>
-					<edtTaskSubName>steam302防火墙窗口-取消</edtTaskSubName>
-					<httpReq></httpReq>
-					<httpReqHeader></httpReqHeader>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
-					<optPlaySnd>0</optPlaySnd>
-					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>steam302防火墙窗口-取消</Name>
-				<ID>31</ID>
 			</Tasker>
 			<Tasker>
 				<ID>859</ID>
@@ -2145,7 +2043,7 @@ env2=value2</edtAppEnv>
 				<NextRunTime></NextRunTime>
 				<LastRunTime></LastRunTime>
 				<Fav>0</Fav>
-				<Ver>1</Ver>
+				<Ver>2</Ver>
 				<Param>
 					<AppParam></AppParam>
 					<AppPath></AppPath>
@@ -2156,7 +2054,7 @@ env2=value2</edtAppEnv>
 					<FilePath></FilePath>
 					<IsExitRest>0</IsExitRest>
 					<IsPassExitRest>0</IsPassExitRest>
-					<Name>结束进程 (新)</Name>
+					<Name>结束无用进程</Name>
 					<PassExitRest></PassExitRest>
 					<PlayTime>10</PlayTime>
 					<ProcName>MicrosoftEdgeUpdate.exe;crashpad_handler.exe;CrashSender1403.exe</ProcName>
@@ -2182,6 +2080,7 @@ env2=value2</edtAppEnv>
 					<VolSet>10</VolSet>
 					<Webpage></Webpage>
 					<chkBackDateSub>0</chkBackDateSub>
+					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
 					<chkBackFileRecyle>0</chkBackFileRecyle>
 					<chkBackZipMulti>0</chkBackZipMulti>
 					<chkBackZipPass>0</chkBackZipPass>
@@ -2206,10 +2105,12 @@ env2=value2</edtAppEnv>
 					<edtBackZipName></edtBackZipName>
 					<edtBackZipPass></edtBackZipPass>
 					<edtProcSafe>3</edtProcSafe>
-					<edtTaskName></edtTaskName>
-					<edtTaskSubName></edtTaskSubName>
+					<edtTaskName>结束进程 (新)</edtTaskName>
+					<edtTaskSubName>结束无用进程</edtTaskSubName>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
+					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
+					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optKillProcFore>0</optKillProcFore>
 					<optKillProcInput>0</optKillProcInput>
 					<optKillProcName>1</optKillProcName>
@@ -2219,7 +2120,7 @@ env2=value2</edtAppEnv>
 					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
-				<Name>结束进程 (新)</Name>
+				<Name>结束无用进程</Name>
 				<ID>18</ID>
 			</Tasker>
 		</Actions>
@@ -2232,12 +2133,12 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-01-12 10:16:12</EndDateTime>
-		<NextRunDateTime>2025-01-18 07:00:00</NextRunDateTime>
-		<NextRunTime>2025-01-18 07:00:00</NextRunTime>
-		<LastRunTime>2025-01-17 07:00:00</LastRunTime>
+		<EndDateTime>2025-01-17 20:32:24</EndDateTime>
+		<NextRunDateTime>2025-01-21 07:00:00</NextRunDateTime>
+		<NextRunTime>2025-01-21 07:00:00</NextRunTime>
+		<LastRunTime>2025-01-20 07:00:00</LastRunTime>
 		<Fav>0</Fav>
-		<Ver>1</Ver>
+		<Ver>2</Ver>
 		<Param>
 			<CountDownHour>1</CountDownHour>
 			<CountDownMin>0</CountDownMin>
@@ -2310,6 +2211,7 @@ env2=value2</edtAppEnv>
 			<cmbHKMouse>0</cmbHKMouse>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
 			<cmbHotkey>0</cmbHotkey>
+			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
@@ -2324,8 +2226,6 @@ env2=value2</edtAppEnv>
 			<tabBtnHK>0</tabBtnHK>
 			<tabBtnSch>0</tabBtnSch>
 			<tabBtnTask>1</tabBtnTask>
-			<timeDadyLimitMax>2024-12-26 20:34:3</timeDadyLimitMax>
-			<timeDadyLimitMin>2024-12-26 20:34:3</timeDadyLimitMin>
 		</Param>
 		<Actions>
 			<Tasker>
@@ -2423,7 +2323,7 @@ env2=value2</edtAppEnv>
 				<ID>88</ID>
 			</Tasker>
 			<Tasker>
-				<ID>11</ID>
+				<ID>613</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2517,7 +2417,7 @@ env2=value2</edtAppEnv>
 				<ID>11</ID>
 			</Tasker>
 			<Tasker>
-				<ID>63</ID>
+				<ID>613</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2611,7 +2511,7 @@ env2=value2</edtAppEnv>
 				<ID>63</ID>
 			</Tasker>
 			<Tasker>
-				<ID>60</ID>
+				<ID>613</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2704,100 +2604,6 @@ env2=value2</edtAppEnv>
 				<Name>更新maaResource</Name>
 				<ID>60</ID>
 			</Tasker>
-			<Tasker>
-				<ID>4</ID>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
-				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
-				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>1</Ver>
-				<Param>
-					<AppParam></AppParam>
-					<AppPath>D:\Program Files\CingFox\Profiles\FxProfiles\chrome\userChromeJS\update-uc-scripts.bat</AppPath>
-					<BackClr>-12500671</BackClr>
-					<DialPass></DialPass>
-					<DialUser></DialUser>
-					<FileParam></FileParam>
-					<FilePath></FilePath>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>更新uc脚本</Name>
-					<PassExitRest></PassExitRest>
-					<PlayTime>10</PlayTime>
-					<ProcName></ProcName>
-					<RemindTitle></RemindTitle>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SearchEngineNames></SearchEngineNames>
-					<SearchEngines></SearchEngines>
-					<SnapDir></SnapDir>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<SoundPath></SoundPath>
-					<SvcStart></SvcStart>
-					<SvcStop></SvcStop>
-					<TitleShow>执行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<VolAdd>10</VolAdd>
-					<VolDec>10</VolDec>
-					<VolSet>10</VolSet>
-					<Webpage></Webpage>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
-					<chkExecWait>0</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<cmbAppShowCmd>1</cmbAppShowCmd>
-					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbClass_text></cmbClass_text>
-					<cmbHotkey>0</cmbHotkey>
-					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName></edtTaskName>
-					<edtTaskSubName>更新uc脚本</edtTaskSubName>
-					<httpReq></httpReq>
-					<httpReqHeader></httpReqHeader>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>更新uc脚本</Name>
-				<ID>4</ID>
-			</Tasker>
 		</Actions>
 	</TaskItem>
 	<TaskItem>
@@ -2808,12 +2614,12 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-01-12 10:51:32</EndDateTime>
-		<NextRunDateTime>2025-01-20 07:00:00</NextRunDateTime>
-		<NextRunTime>2025-01-20 07:00:00</NextRunTime>
-		<LastRunTime>2025-01-15 07:00:00</LastRunTime>
+		<EndDateTime>2025-01-18 21:43:04</EndDateTime>
+		<NextRunDateTime>2025-01-25 07:00:00</NextRunDateTime>
+		<NextRunTime>2025-01-25 07:00:00</NextRunTime>
+		<LastRunTime>2025-01-20 07:00:00</LastRunTime>
 		<Fav>0</Fav>
-		<Ver>1</Ver>
+		<Ver>2</Ver>
 		<Param>
 			<CountDownHour>1</CountDownHour>
 			<CountDownMin>0</CountDownMin>
@@ -2886,6 +2692,7 @@ env2=value2</edtAppEnv>
 			<cmbHKMouse>0</cmbHKMouse>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
 			<cmbHotkey>0</cmbHotkey>
+			<edtDayLimitTime>20:42—20:42</edtDayLimitTime>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
@@ -2900,12 +2707,10 @@ env2=value2</edtAppEnv>
 			<tabBtnHK>0</tabBtnHK>
 			<tabBtnSch>0</tabBtnSch>
 			<tabBtnTask>1</tabBtnTask>
-			<timeDadyLimitMax>2024-12-26 20:42:53</timeDadyLimitMax>
-			<timeDadyLimitMin>2024-12-26 20:42:53</timeDadyLimitMin>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>70</ID>
+				<ID>935</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2999,101 +2804,7 @@ env2=value2</edtAppEnv>
 				<ID>70</ID>
 			</Tasker>
 			<Tasker>
-				<ID>82</ID>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
-				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
-				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>1</Ver>
-				<Param>
-					<AppParam></AppParam>
-					<AppPath>D:\Program Files\CingFox\Software\MPV\update-mpv.bat</AppPath>
-					<BackClr>-12500671</BackClr>
-					<DialPass></DialPass>
-					<DialUser></DialUser>
-					<FileParam></FileParam>
-					<FilePath></FilePath>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>更新mpv</Name>
-					<PassExitRest></PassExitRest>
-					<PlayTime>10</PlayTime>
-					<ProcName></ProcName>
-					<RemindTitle></RemindTitle>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SearchEngineNames></SearchEngineNames>
-					<SearchEngines></SearchEngines>
-					<SnapDir></SnapDir>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<SoundPath></SoundPath>
-					<SvcStart></SvcStart>
-					<SvcStop></SvcStop>
-					<TitleShow>执行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<VolAdd>10</VolAdd>
-					<VolDec>10</VolDec>
-					<VolSet>10</VolSet>
-					<Webpage></Webpage>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
-					<chkExecWait>0</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<cmbAppShowCmd>1</cmbAppShowCmd>
-					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbClass_text></cmbClass_text>
-					<cmbHotkey>0</cmbHotkey>
-					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName></edtTaskName>
-					<edtTaskSubName>更新mpv</edtTaskSubName>
-					<httpReq></httpReq>
-					<httpReqHeader></httpReqHeader>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>更新mpv</Name>
-				<ID>82</ID>
-			</Tasker>
-			<Tasker>
-				<ID>54</ID>
+				<ID>935</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
