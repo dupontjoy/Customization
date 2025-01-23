@@ -1,4 +1,4 @@
-::2024.09.29
+::2025.01.22
 
 @echo off
 
@@ -19,6 +19,7 @@ rd /s /q "%SoftDir%\N_m3u8DL-RE\cache"
 rd /s /q "%SoftDir%\N_m3u8DL-RE\Logs"
 
 ::∆’Õ®Ü¢Ñ”
+start  "" "%SoftDir%\TrafficMonitor\TrafficMonitor.exe"
 start  "" "%SoftDir%\PixPin\PixPin.exe"
 ::start  "" "%SoftDir%\Snipaste\Snipaste.exe"
 start  "" "%SoftDir%\Ditto\Ditto.exe"

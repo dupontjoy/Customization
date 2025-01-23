@@ -54,18 +54,6 @@
 		},
 		{
 			"enable": true,
-			"name": "蓝奏云失效链接 zous  >> zouv",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https?://(.*)?lanzou[sj]\\.com/(.*)",
-			"exclude": "",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "https://$1lanzouv.com/$2",
-			"group": "CingList-Redirect"
-		},
-		{
-			"enable": true,
 			"name": "CDN JsDeliver >> Gcore JsDeliver",
 			"ruleType": "redirect",
 			"matchType": "regexp",
@@ -629,7 +617,7 @@
 			"name": "网站UA设置为Edge",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/.*(jianshu|bili|hdslb|youtube|google).*",
+			"pattern": "^https?:\\/\\/.*(jianshu|youtube|google).*",
 			"exclude": "",
 			"isFunction": false,
 			"action": {
