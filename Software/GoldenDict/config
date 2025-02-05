@@ -38,8 +38,6 @@
   <romaji>
    <enable>0</enable>
    <enableHepburn>1</enableHepburn>
-   <enableNihonShiki>0</enableNihonShiki>
-   <enableKunreiShiki>0</enableKunreiShiki>
    <enableHiragana>1</enableHiragana>
    <enableKatakana>1</enableKatakana>
   </romaji>
@@ -84,7 +82,7 @@
   <mutedDictionary>9152153f4410f8049b0770420e09c0d5</mutedDictionary>
  </popupMutedDictionaries>
  <preferences>
-  <interfaceLanguage></interfaceLanguage>
+  <interfaceLanguage>zh_CN</interfaceLanguage>
   <interfaceFont>Microsoft YaHei UI</interfaceFont>
   <customFonts monospace="Courier New" sans-serif="Arial" serif="Times New Roman" standard="Times New Roman"/>
   <displayStyle></displayStyle>
@@ -134,8 +132,6 @@
    <port>3128</port>
    <user></user>
    <password></password>
-   <systemProxyUser></systemProxyUser>
-   <systemProxyPassword></systemProxyPassword>
   </proxyserver>
   <ankiConnectServer enabled="0">
    <host>127.0.0.1</host>
@@ -152,6 +148,7 @@
   <maxNetworkCacheSize>50</maxNetworkCacheSize>
   <clearNetworkCacheOnExit>1</clearNetworkCacheOnExit>
   <removeInvalidIndexOnExit>1</removeInvalidIndexOnExit>
+  <enableApplicationLog>0</enableApplicationLog>
   <maxStringsInHistory>20</maxStringsInHistory>
   <storeHistory>1</storeHistory>
   <alwaysExpandOptionalParts>1</alwaysExpandOptionalParts>
@@ -175,11 +172,11 @@
  </preferences>
  <lastMainGroupId>0</lastMainGroupId>
  <lastPopupGroupId>0</lastPopupGroupId>
- <popupWindowState>AAAA/wAAAAD9AAAAAAAAAgoAAAGTAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAQAAAAEAAAAaAGQAaQBjAHQAaQBvAG4AYQByAHkAQgBhAHIDAAAAAP////8AAAAAAAAAAA==</popupWindowState>
+ <popupWindowState>AAAA/wAAAAD9AAAAAAAAAgoAAAGTAAAABAAAAAQAAAAIAAAACPwAAAACAAAAAQAAAAH/////AwAAAAD/////AAAAAAAAAAAAAAACAAAAAQAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAAA/////wAAAAAAAAAA</popupWindowState>
  <popupWindowGeometry>AdnQywADAAAAAAEEAAAAaQAAAzAAAAH7AAABBAAAAGkAAAMwAAAB+wAAAAAAAAAABVYAAAEEAAAAaQAAAzAAAAH7</popupWindowGeometry>
  <pinPopupWindow>0</pinPopupWindow>
  <popupWindowAlwaysOnTop>0</popupWindowAlwaysOnTop>
- <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAABNAAACivwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAANwAAAooAAACGAP///wAAAAEAAADMAAAChvwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAADsAAAE0AAAAYQD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAAAAARIAAADVAAAAYQD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAABdQAAAUwAAABhAP///wAABIQAAAKGAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAIe/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAABNAAACivwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAANwAAAooAAACFAP///wAAAAEAAADMAAACivwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAADcAAAE4AAAAZAD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAAAAARIAAADVAAAAYgD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAABcwAAAU4AAABkAP///wAABIYAAAKKAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAJd/////wAAAAAAAAAA</mainWindowState>
  <mainWindowGeometry>AdnQywADAAAAAAAA////+AAABVUAAALXAAAAxgAAAF8AAANSAAACeAAAAAACAAAABVYAAAAAAAAAFwAABVUAAALX</mainWindowGeometry>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>
@@ -187,8 +184,7 @@
  <timeForNewReleaseCheck></timeForNewReleaseCheck>
  <skippedRelease></skippedRelease>
  <showingDictBarNames>0</showingDictBarNames>
- <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
- <editDictionaryCommandLine></editDictionaryCommandLine>
+ <usingToolbarsIconSize>1</usingToolbarsIconSize>
  <maxHeadwordSize>256</maxHeadwordSize>
  <maxHeadwordsToExpand>0</maxHeadwordsToExpand>
  <headwordsDialog>

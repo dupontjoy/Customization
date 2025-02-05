@@ -16,7 +16,7 @@ set Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs
 
 :: start updating
 call :updating_scripts
-::call :updating_yt-dlp
+call :updating_yt-dlp
 call :end
 goto :eof
 

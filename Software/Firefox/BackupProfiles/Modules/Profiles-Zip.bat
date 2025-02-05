@@ -1,4 +1,4 @@
-::2025.01.04
+::2025.02.05
 
 Title 打包Firefox配置(仅必要文件) by Cing
 color 0a
@@ -11,6 +11,7 @@ cls
 
 ::完整日期和時間
 set YY=%date:~0,4%
+set /a YY_HD=%YY% + 2697
 set MON=%date:~5,2%
 set DD=%date:~8,2%
 set hh=%time:~0,2%
@@ -18,13 +19,13 @@ set mm=%time:~3,2%
 set ss=%time:~6,2%
 
 ::輸出文件名
-set Name=FxProfiles_%ver%_%YY%.%MON%%DD%(t%hh%%mm%).7z
+set Name=FxProfiles_%ver%_%YY_HD%.%MON%%DD%(t%hh%%mm%).7z
 
 ::小時數小于10点時的修正
 set /a hh=%time:~0,2%*1
 if %hh% LSS 10 set hh=0%hh%
 ::輸出文件名
-set Name=FxProfiles_%ver%_%YY%.%MON%%DD%(t%hh%%mm%).7z
+set Name=FxProfiles_%ver%_%YY_HD%.%MON%%DD%(t%hh%%mm%).7z
 
 rem 開始壓縮
 ::-mx9极限压缩
