@@ -64,7 +64,6 @@ user_pref("security.enterprise_roots.enabled", true);//未连接：有潜在的�
 user_pref("security.insecure_field_warning.contextual.enabled", false);//未连接：有潜在的安全问题
 user_pref("security.certerrors.permanentOverride", false);//未连接：有潜在的安全问题
 user_pref("network.stricttransportsecurity.preloadlist", false);//未连接：有潜在的安全问题
-user_pref("media.wmf.hevc.enabled", 1);//Enable HEVC support via the windows media foundation
 
 
 //*==========FX其它类==========*//

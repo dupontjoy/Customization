@@ -112,12 +112,12 @@
   <enableScanPopupModifiers>0</enableScanPopupModifiers>
   <scanPopupModifiers>0</scanPopupModifiers>
   <ignoreOwnClipboardChanges>0</ignoreOwnClipboardChanges>
-  <scanToMainWindow>0</scanToMainWindow>
+  <scanToMainWindow>1</scanToMainWindow>
   <ignoreDiacritics>0</ignoreDiacritics>
   <ignorePunctuation>1</ignorePunctuation>
   <sessionCollapse>1</sessionCollapse>
   <pronounceOnLoadMain>1</pronounceOnLoadMain>
-  <pronounceOnLoadPopup>0</pronounceOnLoadPopup>
+  <pronounceOnLoadPopup>1</pronounceOnLoadPopup>
   <useInternalPlayer>1</useInternalPlayer>
   <internalPlayerBackend>Qt Multimedia</internalPlayerBackend>
   <audioPlaybackProgram></audioPlaybackProgram>
