@@ -17,6 +17,7 @@ pushd %~dp0
 ::从批处理所在位置到ProgramFiles文件夹,共跨了1层
 set MAA=MAA.exe
 set Player=..\MuMuPlayer\shell\MuMuPlayer.exe
+set nircmd=..\CingFox\Software\nircmd\nircmd.exe
 
 
 :start
@@ -43,4 +44,3 @@ timeout /t 3 /nobreak
 
 ::启动模拟器
 ::mshta vbscript:createobject("shell.application").shellexecute("""%Player%""","::",,"runas",1)(window.close)
-

@@ -34,17 +34,17 @@ start  "" "%SoftDir%\Listary Pro\UserData\Run_listary.bat"
 ::Listary6代
 ::start  "" "%SoftDir%\Listary 6\listary.exe"
 
-::将steamcommunity_302.exe添加到防火墙，再启動程序
+::将steamcommunity_302.caddy添加到防火墙，再启動程序
 :: 检查是否存在同名的防火墙规则
-netsh advfirewall firewall show rule name=steamcommunity_302.exe >nul 2>&1
+netsh advfirewall firewall show rule name=steamcommunity_302.caddy >nul 2>&1
 
 if %errorlevel%==0 (
-    echo 防火墙规则 'steamcommunity_302.exe' 已经存在。
+    echo 防火墙规则 'steamcommunity_302.caddy' 已经存在。
 ) else (
     :: 如果不存在，则添加新的防火墙规则
-    netsh advfirewall firewall add rule name="steamcommunity_302.exe" dir=in action=allow program="%SoftDir%\steamcommunity_302\steamcommunity_302.exe" protocol=any
+    netsh advfirewall firewall add rule name="steamcommunity_302.caddy" dir=in action=allow program="%SoftDir%\steamcommunity_302\steamcommunity_302.caddy" protocol=any
     if %errorlevel%==0 (
-        echo 成功添加防火墙规则 'steamcommunity_302.exe'.
+        echo 成功添加防火墙规则 'steamcommunity_302.caddy'.
     ) else (
         echo 添加防火墙规则失败！请检查权限或路径是否正确。
     )

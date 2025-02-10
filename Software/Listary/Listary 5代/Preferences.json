@@ -6,83 +6,83 @@
          "enabled": false,
          "guid": "{112b153c-23ec-463a-bcae-9eeba93802d8}",
          "hotkey": 0,
-         "keyword": "",
+         "keyword": "O",
          "type": "builtin"
       }, {
          "command_string": "_action_open_folder",
          "enabled": true,
          "guid": "{44eca225-98f6-489c-b97a-03163e83ce7e}",
          "hotkey": 3330,
-         "keyword": "",
+         "keyword": "E",
          "type": "builtin"
       }, {
          "command_string": "_action_open_with",
          "enabled": true,
          "guid": "{6d2b6aa4-67e5-4dd6-b7ea-c4b30ae8c9a5}",
          "hotkey": 20225,
-         "keyword": "",
+         "keyword": "O",
          "type": "builtin"
       }, {
          "command_string": "_action_copy_to_current_folder",
          "enabled": true,
          "guid": "{edf97959-2c24-47ed-bd7b-3dc5e76b7752}",
          "hotkey": 0,
-         "keyword": "",
+         "keyword": "C",
          "type": "builtin"
       }, {
          "command_string": "_action_move_to_current_folder",
          "enabled": true,
          "guid": "{170e8be1-80fa-4afb-a6d7-7bcb1a1eba19}",
          "hotkey": 0,
-         "keyword": "",
+         "keyword": "M",
          "type": "builtin"
       }, {
          "command_string": "_action_copy",
          "enabled": true,
          "guid": "{81927428-1534-44c4-88aa-f119f682339d}",
          "hotkey": 17154,
-         "keyword": "",
+         "keyword": "C",
          "type": "builtin"
       }, {
          "command_string": "_action_cut",
          "enabled": true,
          "guid": "{284ecbe8-1ef2-49c9-bd93-f7025519402b}",
          "hotkey": 22530,
-         "keyword": "",
+         "keyword": "X",
          "type": "builtin"
       }, {
          "command_string": "_action_copy_path",
          "enabled": true,
          "guid": "{35c0504f-b1a8-4c82-8e32-aa1e68520972}",
          "hotkey": 17158,
-         "keyword": "",
+         "keyword": "L",
          "type": "builtin"
       }, {
          "command_string": "_action_copy_folder_path",
          "enabled": true,
          "guid": "{4025f3ed-47e1-4212-9276-de3fbb0786e8}",
          "hotkey": 17926,
-         "keyword": "",
+         "keyword": "L",
          "type": "builtin"
       }, {
          "command_string": "_action_send_to",
          "enabled": false,
          "guid": "{b7e56ba3-2042-4ff7-a499-62d861e2aa69}",
          "hotkey": 21249,
-         "keyword": "",
+         "keyword": "S",
          "type": "builtin"
       }, {
          "command_string": "_action_set_keyword",
          "enabled": false,
          "guid": "{6ee550e1-8ef3-4025-a673-88d96a48bbc8}",
          "hotkey": 0,
-         "keyword": "",
+         "keyword": "K",
          "type": "builtin"
       }, {
          "enabled": true,
          "guid": "",
          "hotkey": 3332,
-         "keyword": "",
+         "keyword": "T",
          "param": "/O /T /A /S /L=\"{action_path}\"",
          "path": "..\\TotalCMD64\\TotalCMD64.exe",
          "run_as_admin": false,
@@ -90,37 +90,15 @@
          "title": "\u5728TC\u4E2D\u5B9A\u4F4D\u5230\u8BE5\u6587\u4EF6",
          "type": "custom"
       }, {
-         "enabled": false,
-         "guid": "{06457068-a652-4c0d-9c3c-a4056dde1f67}",
-         "hotkey": 0,
-         "keyword": "",
-         "param": "\"{action_path}\"",
-         "path": "gvim.exe",
+         "enabled": true,
+         "guid": "",
+         "hotkey": 19970,
+         "keyword": "N",
+         "param": "//Nologo \"UserData\\CopyFileName.vbs\" \"{action_path}\"",
+         "path": "cscript.exe",
          "run_as_admin": false,
-         "slient": false,
-         "title": "Edit with Vim",
-         "type": "custom"
-      }, {
-         "enabled": false,
-         "guid": "{e5d9da93-b1dd-4401-8ba1-25f10fca9f93}",
-         "hotkey": 0,
-         "keyword": "",
-         "param": "\"{action_path}\"",
-         "path": "atom.cmd",
-         "run_as_admin": false,
-         "slient": false,
-         "title": "Edit with Atom",
-         "type": "custom"
-      }, {
-         "enabled": false,
-         "guid": "{f56585dd-3f13-4305-8f00-e5599e3f20fe}",
-         "hotkey": 0,
-         "keyword": "",
-         "param": "/K \"cd /d \"{action_path}\" & \"C:\\Program Files (x86)\\Git\\bin\\sh.exe\" --login\"",
-         "path": "cmd.exe",
-         "run_as_admin": false,
-         "slient": false,
-         "title": "Git Bash",
+         "slient": true,
+         "title": "\u590D\u5236\u6587\u4EF6\u540D\u5230\u526A\u8D34\u677F",
          "type": "custom"
       } ]
    },

@@ -108,11 +108,11 @@
   <mainWindowHotkey>Ctrl+F11, F11</mainWindowHotkey>
   <enableClipboardHotkey>1</enableClipboardHotkey>
   <clipboardHotkey>Ctrl+C, C</clipboardHotkey>
-  <startWithScanPopupOn>0</startWithScanPopupOn>
+  <startWithScanPopupOn>1</startWithScanPopupOn>
   <enableScanPopupModifiers>0</enableScanPopupModifiers>
   <scanPopupModifiers>0</scanPopupModifiers>
   <ignoreOwnClipboardChanges>0</ignoreOwnClipboardChanges>
-  <scanToMainWindow>0</scanToMainWindow>
+  <scanToMainWindow>1</scanToMainWindow>
   <ignoreDiacritics>0</ignoreDiacritics>
   <ignorePunctuation>1</ignorePunctuation>
   <sessionCollapse>1</sessionCollapse>
@@ -173,7 +173,7 @@
  <lastMainGroupId>0</lastMainGroupId>
  <lastPopupGroupId>0</lastPopupGroupId>
  <popupWindowState>AAAA/wAAAAD9AAAAAAAAAgoAAAFxAAAABAAAAAQAAAAIAAAACPwAAAACAAAAAQAAAAH/////AwAAAAD/////AAAAAAAAAAAAAAACAAAAAQAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAAA/////wAAAAAAAAAA</popupWindowState>
- <popupWindowGeometry>AdnQywADAAAAAAEOAAABZQAAAzoAAAL3AAABDgAAAWUAAAM6AAAC9wAAAAAAAAAABVYAAAEOAAABZQAAAzoAAAL3</popupWindowGeometry>
+ <popupWindowGeometry>AdnQywADAAAAAAFIAAAAtgAAA3QAAAJIAAABSAAAALYAAAN0AAACSAAAAAAAAAAABVYAAAFIAAAAtgAAA3QAAAJI</popupWindowGeometry>
  <pinPopupWindow>0</pinPopupWindow>
  <popupWindowAlwaysOnTop>0</popupWindowAlwaysOnTop>
  <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAABNAAACivwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAANwAAAooAAACFAP///wAAAAEAAADMAAACivwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAADcAAAE4AAAAZAD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAAAAARIAAADVAAAAYgD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAABcwAAAU4AAABkAP///wAABIYAAAKKAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAJd/////wAAAAAAAAAA</mainWindowState>

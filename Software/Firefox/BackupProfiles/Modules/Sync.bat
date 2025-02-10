@@ -54,6 +54,7 @@ xcopy "%BackupDir%\..\..\..\IDM\!)选项配置.reg" "%OutputDir%\Customization\Softw
 ::備份Listary 5設置
 xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary 5代\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Run_Listary.bat" "%OutputDir%\Customization\Software\Listary\Listary 5代\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary 5代\"  /s /y /i
 
 :listary6
 ::備份Listary 6設置
