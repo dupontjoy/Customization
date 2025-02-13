@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 07:57:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-02-11 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-02-11 07:57:00</NextRunTime>
-		<LastRunTime>2025-02-10 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-02-13 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-02-13 07:57:00</NextRunTime>
+		<LastRunTime>2025-02-12 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -216,9 +216,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 08:57:00</StartDateTime>
 		<EndDateTime>2025-01-10 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-02-11 08:57:00</NextRunDateTime>
-		<NextRunTime>2025-02-11 08:57:00</NextRunTime>
-		<LastRunTime>2025-02-10 08:57:00</LastRunTime>
+		<NextRunDateTime>2025-02-13 08:57:00</NextRunDateTime>
+		<NextRunTime>2025-02-13 08:57:00</NextRunTime>
+		<LastRunTime>2025-02-12 08:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -436,9 +436,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 17:57:00</StartDateTime>
 		<EndDateTime>2025-01-12 06:43:12</EndDateTime>
-		<NextRunDateTime>2025-02-10 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-02-10 17:57:00</NextRunTime>
-		<LastRunTime>2025-02-09 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-02-13 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-02-13 17:57:00</NextRunTime>
+		<LastRunTime>2025-02-12 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -656,9 +656,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 18:57:00</StartDateTime>
 		<EndDateTime>2025-01-11 13:26:24</EndDateTime>
-		<NextRunDateTime>2025-02-10 18:57:00</NextRunDateTime>
-		<NextRunTime>2025-02-10 18:57:00</NextRunTime>
-		<LastRunTime>2025-02-09 18:57:00</LastRunTime>
+		<NextRunDateTime>2025-02-13 18:57:00</NextRunDateTime>
+		<NextRunTime>2025-02-13 18:57:00</NextRunTime>
+		<LastRunTime>2025-02-12 18:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -876,9 +876,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-24 21:27:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-02-10 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-02-10 21:27:00</NextRunTime>
-		<LastRunTime>2025-02-09 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-02-13 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-02-13 21:27:00</NextRunTime>
+		<LastRunTime>2025-02-12 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -1094,9 +1094,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-24 22:27:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-02-10 22:27:00</NextRunDateTime>
-		<NextRunTime>2025-02-10 22:27:00</NextRunTime>
-		<LastRunTime>2025-02-09 22:27:00</LastRunTime>
+		<NextRunDateTime>2025-02-13 22:27:00</NextRunDateTime>
+		<NextRunTime>2025-02-13 22:27:00</NextRunTime>
+		<LastRunTime>2025-02-12 22:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -1311,10 +1311,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-02-08 16:38:24</EndDateTime>
-		<NextRunDateTime>2035-02-08 09:59:17</NextRunDateTime>
+		<EndDateTime>2025-02-11 09:16:48</EndDateTime>
+		<NextRunDateTime>2125-01-19 14:25:12</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-02-09 21:05:58</LastRunTime>
+		<LastRunTime>2025-02-12 14:25:12</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -1413,7 +1413,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>887</ID>
+				<ID>859</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1512,7 +1512,7 @@ env2=value2</edtAppEnv>
 				<ID>66</ID>
 			</Delay>
 			<Tasker>
-				<ID>707</ID>
+				<ID>859</ID>
 				<TaskType>ttWndClose</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1601,12 +1601,12 @@ env2=value2</edtAppEnv>
 				<ID>8</ID>
 			</Tasker>
 			<Delay>
-				<Sec>20000</Sec>
+				<Sec>10000</Sec>
 				<Name>延迟</Name>
 				<ID>10</ID>
 			</Delay>
 			<Tasker>
-				<ID>873</ID>
+				<ID>859</ID>
 				<TaskType>ttMouseClick</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1704,12 +1704,12 @@ env2=value2</edtAppEnv>
 				<ID>51</ID>
 			</Tasker>
 			<Delay>
-				<Sec>20000</Sec>
+				<Sec>25000</Sec>
 				<Name>延迟</Name>
 				<ID>33</ID>
 			</Delay>
 			<Tasker>
-				<ID>551</ID>
+				<ID>859</ID>
 				<TaskType>ttWndClose</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1795,7 +1795,7 @@ env2=value2</edtAppEnv>
 				<ID>71</ID>
 			</Tasker>
 			<Tasker>
-				<ID>664</ID>
+				<ID>859</ID>
 				<TaskType>ttVolumeSet</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1878,7 +1878,7 @@ env2=value2</edtAppEnv>
 				<ID>98</ID>
 			</Tasker>
 			<Tasker>
-				<ID>829</ID>
+				<ID>859</ID>
 				<TaskType>ttServiceStop</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1959,7 +1959,7 @@ env2=value2</edtAppEnv>
 				<ID>46</ID>
 			</Tasker>
 			<Tasker>
-				<ID>878</ID>
+				<ID>859</ID>
 				<TaskType>ttKill</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2062,9 +2062,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-02-08 17:04:48</EndDateTime>
-		<NextRunDateTime>2025-02-11 07:00:00</NextRunDateTime>
-		<NextRunTime>2025-02-11 07:00:00</NextRunTime>
-		<LastRunTime>2025-02-10 07:00:00</LastRunTime>
+		<NextRunDateTime>2025-02-14 07:00:00</NextRunDateTime>
+		<NextRunTime>2025-02-14 07:00:00</NextRunTime>
+		<LastRunTime>2025-02-13 07:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -2258,7 +2258,7 @@ env2=value2</edtAppEnv>
 				<ID>88</ID>
 			</Tasker>
 			<Tasker>
-				<ID>613</ID>
+				<ID>11</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2352,7 +2352,7 @@ env2=value2</edtAppEnv>
 				<ID>11</ID>
 			</Tasker>
 			<Tasker>
-				<ID>613</ID>
+				<ID>63</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2446,7 +2446,7 @@ env2=value2</edtAppEnv>
 				<ID>63</ID>
 			</Tasker>
 			<Tasker>
-				<ID>613</ID>
+				<ID>60</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
