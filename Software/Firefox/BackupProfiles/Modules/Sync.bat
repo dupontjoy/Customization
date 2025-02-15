@@ -15,9 +15,6 @@ set softDir=E:\Cing@Soft
 set OutputDir=E:\My Documents\Nutstore\NutStoreSync
 
 
-:AnyTXT
-xcopy "%BackupDir%\..\..\..\AnyTXT Searcher\config.db" "%OutputDir%\Customization\Software\AnyTXT\"  /s /y /i
-
 :cangjie5
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\cangjie5.dict.yaml" "%OutputDir%\RimeIME-Portable\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\cangjie5.custom.yaml" "%OutputDir%\RimeIME-Portable\config\" /s /y /i
@@ -52,14 +49,17 @@ xcopy "%BackupDir%\..\..\..\IDM\!)选项配置.reg" "%OutputDir%\Customization\Softw
 
 :listary5
 ::備份Listary 5設置
-xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary 5代\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Run_Listary.bat" "%OutputDir%\Customization\Software\Listary\Listary 5代\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary 5代\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary5\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary5\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Run_Listary.bat" "%OutputDir%\Customization\Software\Listary\Listary5\"  /s /y /i
+
 
 :listary6
 ::備份Listary 6設置
-xcopy "%BackupDir%\..\..\Software\Listary 6\DataFolderRedirection.txt" "%OutputDir%\Customization\Software\Listary\Listary 6代\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\Listary 6\UserProfile\Settings" "%OutputDir%\Customization\Software\Listary\Listary 6代\UserProfile\Settings\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\Listary6\DataFolderRedirection.txt" "%OutputDir%\Customization\Software\Listary\Listary6\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Run_Listary6.bat" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\"  /s /y /i
 
 :MAA
 xcopy "%BackupDir%\..\..\..\MAA\Run_MAA.bat" "%OutputDir%\Customization\Software\MAA\"  /s /y /i

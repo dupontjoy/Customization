@@ -6,8 +6,10 @@ Title 批量启动程序
 color 0a
 cls
 
-::設置程序文件夾位置
-cd /d %~dp0
+
+::pushd命令，将当前目录的路径保存下来，并且切换到你指定的新目录路径。
+pushd %~dp0
+
 ::从批处理所在位置到Software文件夹,共跨了3层
 set SoftDir=..\..\..\Software
 
@@ -32,10 +34,12 @@ start "" "%SoftDir%\..\..\Tencent\Weixin\Weixin.exe"
 
 ::启动程序
 ::Listary5代
-start  "" "%SoftDir%\Listary Pro\UserData\Run_listary.bat"
+::start  "" "%SoftDir%\Listary Pro\UserData\Run_listary.bat"
 
 ::Listary6代
-::start  "" "%SoftDir%\Listary 6\listary.exe"
+::删除cache
+rd /s /q "%SoftDir%\Listary6\UserProfile\Cache"
+start  "" "%SoftDir%\Listary6\UserProfile\Settings\Run_Listary6.bat"
 
 ::启動Foxmail
 start "" "%SoftDir%\..\..\Tencent\Foxmail\Foxmail.exe"

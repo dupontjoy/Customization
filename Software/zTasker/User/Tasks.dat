@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 07:57:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-02-13 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-02-13 07:57:00</NextRunTime>
-		<LastRunTime>2025-02-12 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-02-16 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-02-16 07:57:00</NextRunTime>
+		<LastRunTime>2025-02-15 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -216,9 +216,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 08:57:00</StartDateTime>
 		<EndDateTime>2025-01-10 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-02-13 08:57:00</NextRunDateTime>
-		<NextRunTime>2025-02-13 08:57:00</NextRunTime>
-		<LastRunTime>2025-02-12 08:57:00</LastRunTime>
+		<NextRunDateTime>2025-02-16 08:57:00</NextRunDateTime>
+		<NextRunTime>2025-02-16 08:57:00</NextRunTime>
+		<LastRunTime>2025-02-15 08:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -436,9 +436,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 17:57:00</StartDateTime>
 		<EndDateTime>2025-01-12 06:43:12</EndDateTime>
-		<NextRunDateTime>2025-02-13 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-02-13 17:57:00</NextRunTime>
-		<LastRunTime>2025-02-12 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-02-16 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-02-16 17:57:00</NextRunTime>
+		<LastRunTime>2025-02-15 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -656,9 +656,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 18:57:00</StartDateTime>
 		<EndDateTime>2025-01-11 13:26:24</EndDateTime>
-		<NextRunDateTime>2025-02-13 18:57:00</NextRunDateTime>
-		<NextRunTime>2025-02-13 18:57:00</NextRunTime>
-		<LastRunTime>2025-02-12 18:57:00</LastRunTime>
+		<NextRunDateTime>2025-02-16 18:57:00</NextRunDateTime>
+		<NextRunTime>2025-02-16 18:57:00</NextRunTime>
+		<LastRunTime>2025-02-15 18:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -876,9 +876,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-24 21:27:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-02-13 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-02-13 21:27:00</NextRunTime>
-		<LastRunTime>2025-02-12 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-02-16 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-02-16 21:27:00</NextRunTime>
+		<LastRunTime>2025-02-15 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -1094,9 +1094,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-24 22:27:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-02-13 22:27:00</NextRunDateTime>
-		<NextRunTime>2025-02-13 22:27:00</NextRunTime>
-		<LastRunTime>2025-02-12 22:27:00</LastRunTime>
+		<NextRunDateTime>2025-02-16 22:27:00</NextRunDateTime>
+		<NextRunTime>2025-02-16 22:27:00</NextRunTime>
+		<LastRunTime>2025-02-15 22:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -1311,10 +1311,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-02-11 09:16:48</EndDateTime>
-		<NextRunDateTime>2125-01-19 14:25:12</NextRunDateTime>
+		<EndDateTime>2025-02-15 18:33:36</EndDateTime>
+		<NextRunDateTime>2125-01-22 23:07:20</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-02-12 14:25:12</LastRunTime>
+		<LastRunTime>2025-02-15 23:07:20</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -1357,6 +1357,16 @@ env2=value2</edtAppEnv>
 			<chkExecExitPre>0</chkExecExitPre>
 			<chkExecPost>0</chkExecPost>
 			<chkExecPre>0</chkExecPre>
+			<chkHKMouseCorner>0</chkHKMouseCorner>
+			<chkHKMouseCorner1>0</chkHKMouseCorner1>
+			<chkHKMouseCorner2>0</chkHKMouseCorner2>
+			<chkHKMouseCorner3>0</chkHKMouseCorner3>
+			<chkHKMouseCorner4>0</chkHKMouseCorner4>
+			<chkHKMouseEdge>0</chkHKMouseEdge>
+			<chkHKMouseEdge1>0</chkHKMouseEdge1>
+			<chkHKMouseEdge2>0</chkHKMouseEdge2>
+			<chkHKMouseEdge3>0</chkHKMouseEdge3>
+			<chkHKMouseEdge4>0</chkHKMouseEdge4>
 			<chkHotkey>0</chkHotkey>
 			<chkHotkeyAlt>0</chkHotkeyAlt>
 			<chkHotkeyCtrl>0</chkHotkeyCtrl>
@@ -1373,11 +1383,14 @@ env2=value2</edtAppEnv>
 			<chkSKWinFore>0</chkSKWinFore>
 			<chkSKWinMouseIn>0</chkSKWinMouseIn>
 			<chkSKWinSub>0</chkSKWinSub>
+			<chkSchLimitCount>0</chkSchLimitCount>
 			<chkSelfDelete>0</chkSelfDelete>
 			<chkTimer>1</chkTimer>
 			<chkUseStartDT>1</chkUseStartDT>
 			<chkWakeRunMiss>0</chkWakeRunMiss>
 			<cmbAutoCloseAction>0</cmbAutoCloseAction>
+			<cmbAutoCloseActionHK>0</cmbAutoCloseActionHK>
+			<cmbAutoCloseActionHK_text>执行</cmbAutoCloseActionHK_text>
 			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
 			<cmbClass>无</cmbClass>
 			<cmbClass_text>无</cmbClass_text>
@@ -1399,9 +1412,12 @@ env2=value2</edtAppEnv>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
+			<edtHKMouseCorner>50</edtHKMouseCorner>
+			<edtHKMouseEdge>50</edtHKMouseEdge>
 			<edtSKProcName></edtSKProcName>
 			<edtSKWinClass></edtSKWinClass>
 			<edtSKWinTitle></edtSKWinTitle>
+			<edtSchLimitCount>1</edtSchLimitCount>
 			<edtTaskName>开机运行</edtTaskName>
 			<edtWakeDelayBoot>0</edtWakeDelayBoot>
 			<optHKKey>1</optHKKey>
@@ -1507,106 +1523,14 @@ env2=value2</edtAppEnv>
 				<ID>23</ID>
 			</Tasker>
 			<Delay>
-				<Sec>5000</Sec>
-				<Name>延迟</Name>
-				<ID>66</ID>
-			</Delay>
-			<Tasker>
-				<ID>859</ID>
-				<TaskType>ttWndClose</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
-				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
-				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>2</Ver>
-				<Param>
-					<AppParam></AppParam>
-					<AppPath></AppPath>
-					<BackClr>-12500671</BackClr>
-					<DialPass></DialPass>
-					<DialUser></DialUser>
-					<FileParam></FileParam>
-					<FilePath></FilePath>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>关闭升级会员弹窗</Name>
-					<PassExitRest></PassExitRest>
-					<PlayTime>10</PlayTime>
-					<ProcName></ProcName>
-					<RemindTitle></RemindTitle>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SearchEngineNames></SearchEngineNames>
-					<SearchEngines></SearchEngines>
-					<SnapDir></SnapDir>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<SoundPath></SoundPath>
-					<SvcStart></SvcStart>
-					<SvcStop></SvcStop>
-					<TitleShow>关闭窗口</TitleShow>
-					<TypeShow>窗口</TypeShow>
-					<VolAdd>10</VolAdd>
-					<VolDec>10</VolDec>
-					<VolSet>10</VolSet>
-					<Webpage></Webpage>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<chkWinClosePart>1</chkWinClosePart>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbClass_text></cmbClass_text>
-					<cmbHotkey>0</cmbHotkey>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
-					<edtTaskName>关闭升级会员弹窗</edtTaskName>
-					<edtTaskSubName>关闭升级会员弹窗</edtTaskSubName>
-					<edtWndCloseClass>EventBoxWnd</edtWndCloseClass>
-					<edtWndCloseTitle>优效日历-事件提醒</edtWndCloseTitle>
-					<httpReq></httpReq>
-					<httpReqHeader></httpReqHeader>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<optWinCloseMulti>0</optWinCloseMulti>
-					<optWinCloseSingle>1</optWinCloseSingle>
-					<sldZipLevel>3</sldZipLevel>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>关闭升级会员弹窗</Name>
-				<ID>8</ID>
-			</Tasker>
-			<Delay>
-				<Sec>10000</Sec>
+				<Sec>15000</Sec>
+				<Sec2>4980736</Sec2>
+				<Random>0</Random>
 				<Name>延迟</Name>
 				<ID>10</ID>
 			</Delay>
 			<Tasker>
-				<ID>859</ID>
+				<ID>51</ID>
 				<TaskType>ttMouseClick</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1629,7 +1553,7 @@ env2=value2</edtAppEnv>
 					<FilePath></FilePath>
 					<IsExitRest>0</IsExitRest>
 					<IsPassExitRest>0</IsPassExitRest>
-					<Name>开机点击微信登录</Name>
+					<Name>点击微信登录</Name>
 					<PassExitRest></PassExitRest>
 					<PlayTime>10</PlayTime>
 					<ProcName></ProcName>
@@ -1689,7 +1613,7 @@ env2=value2</edtAppEnv>
 					<edtMouseClickY>285</edtMouseClickY>
 					<edtMouseClicklTimes>1</edtMouseClicklTimes>
 					<edtTaskName>开机点击微信登录</edtTaskName>
-					<edtTaskSubName>开机点击微信登录</edtTaskSubName>
+					<edtTaskSubName>点击微信登录</edtTaskSubName>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
@@ -1700,16 +1624,18 @@ env2=value2</edtAppEnv>
 					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
-				<Name>开机点击微信登录</Name>
+				<Name>点击微信登录</Name>
 				<ID>51</ID>
 			</Tasker>
 			<Delay>
 				<Sec>25000</Sec>
+				<Sec2>4980736</Sec2>
+				<Random>0</Random>
 				<Name>延迟</Name>
 				<ID>33</ID>
 			</Delay>
 			<Tasker>
-				<ID>859</ID>
+				<ID>71</ID>
 				<TaskType>ttWndClose</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1721,7 +1647,7 @@ env2=value2</edtAppEnv>
 				<NextRunTime></NextRunTime>
 				<LastRunTime></LastRunTime>
 				<Fav>0</Fav>
-				<Ver>1</Ver>
+				<Ver>2</Ver>
 				<Param>
 					<AppParam></AppParam>
 					<AppPath></AppPath>
@@ -1732,7 +1658,7 @@ env2=value2</edtAppEnv>
 					<FilePath></FilePath>
 					<IsExitRest>0</IsExitRest>
 					<IsPassExitRest>0</IsPassExitRest>
-					<Name>开机登录微信后关闭窗口</Name>
+					<Name>登录微信后关闭窗口</Name>
 					<PassExitRest></PassExitRest>
 					<PlayTime>10</PlayTime>
 					<ProcName></ProcName>
@@ -1758,6 +1684,7 @@ env2=value2</edtAppEnv>
 					<VolSet>10</VolSet>
 					<Webpage></Webpage>
 					<chkBackDateSub>0</chkBackDateSub>
+					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
 					<chkBackFileRecyle>0</chkBackFileRecyle>
 					<chkBackZipMulti>0</chkBackZipMulti>
 					<chkBackZipPass>0</chkBackZipPass>
@@ -1777,12 +1704,14 @@ env2=value2</edtAppEnv>
 					<edtBackZipCount>10</edtBackZipCount>
 					<edtBackZipName></edtBackZipName>
 					<edtBackZipPass></edtBackZipPass>
-					<edtTaskName>开机登录Weixin后关闭窗口</edtTaskName>
-					<edtTaskSubName>开机登录微信后关闭窗口</edtTaskSubName>
+					<edtTaskName>开机登录微信后关闭窗口</edtTaskName>
+					<edtTaskSubName>登录微信后关闭窗口</edtTaskSubName>
 					<edtWndCloseClass>Qt51514QWindowIcon</edtWndCloseClass>
 					<edtWndCloseTitle>微信（测试版）</edtWndCloseTitle>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
+					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
+					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
@@ -1791,11 +1720,109 @@ env2=value2</edtAppEnv>
 					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
-				<Name>开机登录微信后关闭窗口</Name>
+				<Name>登录微信后关闭窗口</Name>
 				<ID>71</ID>
 			</Tasker>
 			<Tasker>
-				<ID>859</ID>
+				<ID>8</ID>
+				<TaskType>ttMouseClick</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
+				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
+				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>2</Ver>
+				<Param>
+					<AppParam></AppParam>
+					<AppPath></AppPath>
+					<BackClr>-12500671</BackClr>
+					<DialPass></DialPass>
+					<DialUser></DialUser>
+					<FileParam></FileParam>
+					<FilePath></FilePath>
+					<IsExitRest>0</IsExitRest>
+					<IsPassExitRest>0</IsPassExitRest>
+					<Name>关闭优效会员弹窗</Name>
+					<PassExitRest></PassExitRest>
+					<PlayTime>10</PlayTime>
+					<ProcName></ProcName>
+					<RemindTitle></RemindTitle>
+					<RestAlpha>0</RestAlpha>
+					<RestClr>-1</RestClr>
+					<RestMin>10</RestMin>
+					<RmdClr>-1</RmdClr>
+					<SearchEngineNames></SearchEngineNames>
+					<SearchEngines></SearchEngines>
+					<SnapDir></SnapDir>
+					<SnapFormat>png</SnapFormat>
+					<SnapSaveDay>10</SnapSaveDay>
+					<SnapSaveMode>optSaveAll</SnapSaveMode>
+					<SnapSaveNum>100</SnapSaveNum>
+					<SoundPath></SoundPath>
+					<SvcStart></SvcStart>
+					<SvcStop></SvcStop>
+					<TitleShow>鼠标点击</TitleShow>
+					<TypeShow>输入</TypeShow>
+					<VolAdd>10</VolAdd>
+					<VolDec>10</VolDec>
+					<VolSet>10</VolSet>
+					<Webpage></Webpage>
+					<chkBackDateSub>0</chkBackDateSub>
+					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
+					<chkBackFileRecyle>0</chkBackFileRecyle>
+					<chkBackZipMulti>0</chkBackZipMulti>
+					<chkBackZipPass>0</chkBackZipPass>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<chkMouseClickActivateWnd>1</chkMouseClickActivateWnd>
+					<chkMouseClickPart>0</chkMouseClickPart>
+					<chkMouseClickWnd>1</chkMouseClickWnd>
+					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
+					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
+					<cmbBackType>zip</cmbBackType>
+					<cmbBackType_text>压缩</cmbBackType_text>
+					<cmbClass_text></cmbClass_text>
+					<cmbHotkey>0</cmbHotkey>
+					<cmbMouseClick>left</cmbMouseClick>
+					<cmbMouseClickPos>0</cmbMouseClickPos>
+					<cmbMouseClickPos_text>指定位置</cmbMouseClickPos_text>
+					<cmbMouseClickType>0</cmbMouseClickType>
+					<cmbMouseClickType_text>经典(速度快)</cmbMouseClickType_text>
+					<cmbMouseClick_text>左键</cmbMouseClick_text>
+					<edtBackSaveDir></edtBackSaveDir>
+					<edtBackZipCount>10</edtBackZipCount>
+					<edtBackZipName></edtBackZipName>
+					<edtBackZipPass></edtBackZipPass>
+					<edtMouseClickClass>EventBoxWnd</edtMouseClickClass>
+					<edtMouseClickTitle>优效日历-事件提醒</edtMouseClickTitle>
+					<edtMouseClickX>384</edtMouseClickX>
+					<edtMouseClickY>17</edtMouseClickY>
+					<edtMouseClicklTimes>1</edtMouseClicklTimes>
+					<edtTaskName>关闭升级会员弹窗</edtTaskName>
+					<edtTaskSubName>关闭优效会员弹窗</edtTaskSubName>
+					<httpReq></httpReq>
+					<httpReqHeader></httpReqHeader>
+					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
+					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
+					<optPlaySnd>0</optPlaySnd>
+					<optRmdSnd>0</optRmdSnd>
+					<optRptSnd>0</optRptSnd>
+					<sldZipLevel>3</sldZipLevel>
+					<tabBtnTask>1</tabBtnTask>
+				</Param>
+				<Name>关闭优效会员弹窗</Name>
+				<ID>8</ID>
+			</Tasker>
+			<Tasker>
+				<ID>98</ID>
 				<TaskType>ttVolumeSet</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1878,7 +1905,7 @@ env2=value2</edtAppEnv>
 				<ID>98</ID>
 			</Tasker>
 			<Tasker>
-				<ID>859</ID>
+				<ID>46</ID>
 				<TaskType>ttServiceStop</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1959,7 +1986,7 @@ env2=value2</edtAppEnv>
 				<ID>46</ID>
 			</Tasker>
 			<Tasker>
-				<ID>859</ID>
+				<ID>18</ID>
 				<TaskType>ttKill</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2062,9 +2089,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-02-08 17:04:48</EndDateTime>
-		<NextRunDateTime>2025-02-14 07:00:00</NextRunDateTime>
-		<NextRunTime>2025-02-14 07:00:00</NextRunTime>
-		<LastRunTime>2025-02-13 07:00:00</LastRunTime>
+		<NextRunDateTime>2025-02-16 07:00:00</NextRunDateTime>
+		<NextRunTime>2025-02-16 07:00:00</NextRunTime>
+		<LastRunTime>2025-02-15 07:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -2164,7 +2191,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>613</ID>
+				<ID>88</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2549,10 +2576,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-02-08 19:26:08</EndDateTime>
-		<NextRunDateTime>2025-02-14 07:00:00</NextRunDateTime>
-		<NextRunTime>2025-02-14 07:00:00</NextRunTime>
-		<LastRunTime>2025-02-09 07:00:00</LastRunTime>
+		<EndDateTime>2025-02-14 14:52:16</EndDateTime>
+		<NextRunDateTime>2025-02-19 07:00:00</NextRunDateTime>
+		<NextRunTime>2025-02-19 07:00:00</NextRunTime>
+		<LastRunTime>2025-02-14 07:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -2647,8 +2674,8 @@ env2=value2</edtAppEnv>
 			<optHKMouse>0</optHKMouse>
 			<tabBtnExec>0</tabBtnExec>
 			<tabBtnHK>0</tabBtnHK>
-			<tabBtnSch>1</tabBtnSch>
-			<tabBtnTask>0</tabBtnTask>
+			<tabBtnSch>0</tabBtnSch>
+			<tabBtnTask>1</tabBtnTask>
 		</Param>
 		<Actions>
 			<Tasker>
@@ -2664,7 +2691,7 @@ env2=value2</edtAppEnv>
 				<NextRunTime></NextRunTime>
 				<LastRunTime></LastRunTime>
 				<Fav>0</Fav>
-				<Ver>1</Ver>
+				<Ver>2</Ver>
 				<Param>
 					<AppParam></AppParam>
 					<AppPath>E:\My Documents\Nutstore\NutStoreSync\Customization\Software\lx-music\update-keep-alive-render_api.bat</AppPath>
@@ -2675,7 +2702,7 @@ env2=value2</edtAppEnv>
 					<FilePath></FilePath>
 					<IsExitRest>0</IsExitRest>
 					<IsPassExitRest>0</IsPassExitRest>
-					<Name>更新lx音源</Name>
+					<Name>更新lx_music音源</Name>
 					<PassExitRest></PassExitRest>
 					<PlayTime>10</PlayTime>
 					<ProcName></ProcName>
@@ -2705,6 +2732,7 @@ env2=value2</edtAppEnv>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
 					<chkBackDateSub>0</chkBackDateSub>
+					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
 					<chkBackFileRecyle>0</chkBackFileRecyle>
 					<chkBackZipMulti>0</chkBackZipMulti>
 					<chkBackZipPass>0</chkBackZipPass>
@@ -2731,18 +2759,20 @@ env2=value2</edtAppEnv>
 					<edtBackZipName></edtBackZipName>
 					<edtBackZipPass></edtBackZipPass>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName></edtTaskName>
-					<edtTaskSubName>更新lx音源</edtTaskSubName>
+					<edtTaskName>更新lx音源</edtTaskName>
+					<edtTaskSubName>更新lx_music音源</edtTaskSubName>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
+					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
+					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
 					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
-				<Name>更新lx音源</Name>
+				<Name>更新lx_music音源</Name>
 				<ID>70</ID>
 			</Tasker>
 			<Tasker>

@@ -155,10 +155,10 @@
          "keyword": "ev",
          "only_show_in_launcher": false,
          "param": "-search {query}",
-         "path": "..\\TotalCMD64\\Tools\\Everything.exe",
+         "path": "Everything.exe",
          "run_as_admin": false,
          "slient": false,
-         "working_dir": ""
+         "working_dir": "..\\TotalCMD64\\Tools\\"
       }, {
          "description": "",
          "display_title": "\u4F7F\u7528mpv\u64AD\u653E",
@@ -177,10 +177,10 @@
          "keyword": "gd",
          "only_show_in_launcher": false,
          "param": "{query}",
-         "path": "..\\..\\..\\GoldenDict\\GoldenDict.exe",
+         "path": "GoldenDict.exe",
          "run_as_admin": false,
          "slient": false,
-         "working_dir": ""
+         "working_dir": "..\\..\\..\\GoldenDict\\"
       } ],
       "folder": [  ],
       "web_search": [ {

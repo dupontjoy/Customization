@@ -1,16 +1,10 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
-      "WindowsExplorer": {
-        "EnableMouseMiddleClick": false
-      },
-      "FileDialog": {
-        "EnableMouseMiddleClick": false
-      },
+      "WindowsExplorer": {},
+      "FileDialog": {},
       "FolderDialog": {},
-      "Desktop": {
-        "EnableMouseMiddleClick": false
-      },
+      "Desktop": {},
       "TotalCommander": {
         "EnableMouseMiddleClick": false
       },
@@ -40,7 +34,16 @@
     "FolderPriority": {
       "Deletions": [],
       "Moves": [],
-      "Insertions": [],
+      "Insertions": [
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Folder": "C:\\Users\\Cing\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\",
+            "Priority": -2
+          }
+        }
+      ],
       "Updates": []
     },
     "FileNamePriority": {
@@ -54,121 +57,7 @@
       "Moves": [],
       "Insertions": [],
       "Updates": []
-    },
-    "CustomFolders": [
-      {
-        "Path": "X:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "Y:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "Z:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "E:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "F:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "G:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "H:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "X:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "Y:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "Z:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "E:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "F:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "G:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      },
-      {
-        "Path": "H:\\",
-        "UpdateType": 1,
-        "UpdateIntervalType": 0,
-        "UpdateInterval": 10,
-        "UpdateDayOfWeek": 0,
-        "UpdateTimeOfDay": null
-      }
-    ]
+    }
   },
   "FileSearchWindow": {
     "Columns": {
@@ -211,10 +100,10 @@
           "Info": null,
           "Item": {
             "Title": "Everything全盘搜索\"{query}\"",
-            "Path": "..\\TotalCMD64\\Tools\\Everything.exe",
+            "Path": "Everything.exe",
             "Parameter": "-search {query}",
-            "WorkingDirectory": "",
-            "Id": "b4fefa2c-ab20-412c-8a8d-1ebe47ef919c",
+            "WorkingDirectory": "..\\TotalCMD64\\Tools\\",
+            "Id": "64703c90-e15f-4712-85be-9c6c1484d0e3",
             "Keyword": "ev",
             "$customType": "CustomCommand"
           }
@@ -227,7 +116,9 @@
             "Path": "cmd.exe",
             "Parameter": "/c \"mpv {query}\"",
             "WorkingDirectory": "..\\MPV\\",
-            "Id": "48891949-7f00-48c1-b1e5-d75258324d66",
+            "RunAsAdmin": true,
+            "Silent": true,
+            "Id": "8c7b728d-5828-4c8b-ae7c-b2e04614814e",
             "Keyword": "mpv",
             "$customType": "CustomCommand"
           }
@@ -237,10 +128,10 @@
           "Info": null,
           "Item": {
             "Title": "使用GoldenDict搜索",
-            "Path": "..\\..\\..\\GoldenDict\\GoldenDict.exe",
+            "Path": "GoldenDict.exe",
             "Parameter": "{query}",
-            "WorkingDirectory": "",
-            "Id": "14342955-4918-4aea-996f-dbd73b63cbce",
+            "WorkingDirectory": "..\\..\\..\\GoldenDict\\",
+            "Id": "fa15a95d-7366-4eeb-ab02-92073f9a396e",
             "Keyword": "gd",
             "$customType": "CustomCommand"
           }
@@ -260,15 +151,73 @@
           "Item": {
             "Keyword": "db",
             "Url": "https://www.douban.com/search?q={query}",
-            "Title": "Search douban for '{query}'",
+            "Title": "Search 豆瓣 for '{query}'",
             "Icon": {
-              "Path": "{user}\\cbbfc6c4-540b-4f8d-a2fa-f12887a020ca.png",
+              "Path": "{user}\\43d21b46-9a6e-4fda-8b61-3999a0baea8b.png",
+              "TypeName": "Path"
+            }
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "sg",
+            "Url": "https://www.sogou.com/web?query={query}",
+            "Title": "Search 搜狗 for 'query'",
+            "Icon": {
+              "Path": "{user}\\107649dc-d39b-4d3e-844a-e190aa484114.png",
+              "TypeName": "Path"
+            }
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "dt",
+            "Url": "https://datong.info/ui/search.html?search_lang=en,zh&target_lang=zh&q={query}",
+            "Title": "Search 大同AI for 'query'",
+            "Icon": {
+              "Path": "{user}\\b02bbef9-1337-4592-bb76-68fb8a9104dc.png",
+              "TypeName": "Path"
+            }
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "ds",
+            "Url": "https://www.dushe9.app/search?k={query}",
+            "Title": "Search 毒舌電影 for 'query'",
+            "Icon": {
+              "Path": "{user}\\b48ff520-dafb-4ff1-8463-f2e6b1225a37.png",
+              "TypeName": "Path"
+            }
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "prts",
+            "Url": "https://prts.wiki/w/{query}",
+            "Title": "Search PRTS for 'query'",
+            "Icon": {
+              "Path": "{user}\\78ec2357-c391-4b1d-ba90-000a20e1e47a.png",
               "TypeName": "Path"
             }
           }
         }
       ],
       "Updates": [
+        {
+          "Id": "ecb51462-cb27-4b89-ae53-333b4550f489",
+          "UpdatedProperties": {
+            "Url": "https://www.google.com/search?q={query}"
+          }
+        },
         {
           "Id": "c78295a6-2cf8-4569-bf42-33f1e5c030d7",
           "UpdatedProperties": {
@@ -278,7 +227,15 @@
         {
           "Id": "dd896809-2af4-405b-834f-45816615e3e3",
           "UpdatedProperties": {
-            "Keyword": "bi"
+            "Keyword": "bi",
+            "Url": "https://www.bing.com/search?q={query}"
+          }
+        },
+        {
+          "Id": "b36cf1bb-5527-42d8-bf91-d034bcbf057b",
+          "UpdatedProperties": {
+            "Url": "https://www.baidu.com/s?wd={query}",
+            "Title": "Search 百度 for '{query}'"
           }
         },
         {
@@ -296,19 +253,34 @@
         {
           "Id": "5014b42a-884d-40d3-835d-69079dd9fc51",
           "UpdatedProperties": {
-            "Keyword": "yt"
+            "Keyword": "ytb",
+            "Url": "https://youtube.com/results?q={query}"
+          }
+        },
+        {
+          "Id": "95147e79-6274-4127-98bb-09d9ffa2a39a",
+          "UpdatedProperties": {
+            "Url": "https://maps.google.com/?q={query}"
           }
         },
         {
           "Id": "610a486d-0028-4739-8eb6-50f5247c918f",
           "UpdatedProperties": {
-            "Keyword": "am"
+            "Keyword": "amz",
+            "Url": "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}"
           }
         },
         {
           "Id": "2db0261a-1114-4c8d-8cc8-62a89aeb1a35",
           "UpdatedProperties": {
-            "Keyword": "eb"
+            "Keyword": "eb",
+            "Url": "https://www.ebay.com/sch/?_nkw={query}"
+          }
+        },
+        {
+          "Id": "455e1dc4-5e38-4b00-85da-d0bf46c68f4f",
+          "UpdatedProperties": {
+            "Url": "https://www.imdb.com/find?s=all&q={query}"
           }
         },
         {
@@ -331,36 +303,44 @@
           "Index": -1,
           "Info": null,
           "Item": {
+            "Title": "复制文件名到剪贴板",
+            "Path": "cscript.exe",
+            "Parameter": "//Nologo \"UserProfile\\Settings\\CopyFileName.vbs\" \"{action_path}\"",
+            "RunAsAdmin": true,
+            "Keyword": "N",
+            "Hotkey": 590,
+            "HotkeyScope": 1,
+            "$customType": "CustomCommand"
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
             "Title": "在TC中定位到该文件",
-            "Path": "..\\TotalCMD64\\TotalCMD64.exe",
+            "Path": "TotalCMD64.exe",
             "Parameter": "/O /T /A /S /L=\"{action_path}\"",
-            "Keyword": "",
+            "WorkingDirectory": "..\\TotalCMD64\\",
+            "Keyword": "T",
             "Hotkey": 1037,
+            "HotkeyScope": 1,
             "$customType": "CustomCommand"
           }
         }
       ],
-      "Updates": [
-        {
-          "Id": "284ecbe8-1ef2-49c9-bd93-f7025519402b",
-          "UpdatedProperties": {
-            "Hotkey": 600
-          }
-        }
-      ]
+      "Updates": []
     }
   },
   "AutoUpdate": {},
   "Settings": {
-    "General.EnableAnalytics": false,
-    "Hotkey.DisableDoubleCtrlForFullScreenApps": false,
     "OpenFolder.Path": "..\\TotalCMD64\\TotalCMD64.exe",
     "OpenFolder.Param": "/O /T /P=R \"%1\"",
     "Tutorial.ShowMainV3": false,
     "Listary5.SettingsImported": true,
     "Listary5.ProLicense.Name": "Adven Dai",
     "Listary5.ProLicense.Email": "daiqiang7297@163.com",
-    "Listary5.ProLicense.Key": "FP7832JRZS7TVFCHJXN8Z7S7MBZZSRBJDEX6PY3PL239QU53M2R9JHNK2XW4LY6D32CJ3BJDHK2L5APH3LFVFASHVLHFEXEHFX79M6NDNUJCMR8LRCLAN7MPSD6CAGTMCAHYH22CGT8T542RFPAGVY23W349QJV4C4G8XT2893SSUZV9E3CCPRGVY3A7FE3B"
+    "Listary5.ProLicense.Key": "FP7832JRZS7TVFCHJXN8Z7S7MBZZSRBJDEX6PY3PL239QU53M2R9JHNK2XW4LY6D32CJ3BJDHK2L5APH3LFVFASHVLHFEXEHFX79M6NDNUJCMR8LRCLAN7MPSD6CAGTMCAHYH22CGT8T542RFPAGVY23W349QJV4C4G8XT2893SSUZV9E3CCPRGVY3A7FE3B",
+    "LastUpdateTimeV1": "2025-02-15T15:05:31.8558174+08:00"
   },
   "Extensions": {
     "Extensions": {
