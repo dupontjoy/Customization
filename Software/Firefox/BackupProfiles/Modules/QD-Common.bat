@@ -37,8 +37,6 @@ start "" "%SoftDir%\..\..\Tencent\Weixin\Weixin.exe"
 ::start  "" "%SoftDir%\Listary Pro\UserData\Run_listary.bat"
 
 ::Listary6´ú
-::É¾³ýcache
-rd /s /q "%SoftDir%\Listary6\UserProfile\Cache"
 start  "" "%SoftDir%\Listary6\UserProfile\Settings\Run_Listary6.bat"
 
 ::Æô„ÓFoxmail

@@ -51,7 +51,7 @@ xcopy "%BackupDir%\..\..\..\IDM\!)—°œÓ≈‰÷√.reg" "%OutputDir%\Customization\Softw
 ::Ç‰∑›Listary 5‘O÷√
 xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary5\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary5\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Run_Listary.bat" "%OutputDir%\Customization\Software\Listary\Listary5\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Run_Listary5.bat" "%OutputDir%\Customization\Software\Listary\Listary5\"  /s /y /i
 
 
 :listary6
