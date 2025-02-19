@@ -12,7 +12,7 @@ cd /d %~dp0
 set SoftDir=..\..\..\Software
 
 ::等ztasker自動点击weixin登陆后，再启動, 防止防火墙弹窗遮挡
-timeout /t 30 /nobreak
+timeout /t 40 /nobreak
 start  "" "%SoftDir%\steamcommunity_302\steamcommunity_302.exe"
 
 ::完成後退出

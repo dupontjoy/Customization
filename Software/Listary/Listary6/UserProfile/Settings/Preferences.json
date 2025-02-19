@@ -1,6 +1,7 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
+      "DirectoryOpus": {},
       "WindowsExplorer": {},
       "FileDialog": {},
       "FolderDialog": {},
@@ -8,7 +9,6 @@
       "TotalCommander": {
         "EnableMouseMiddleClick": false
       },
-      "DirectoryOpus": {},
       "FreeCommander": {},
       "XYplorer": {},
       "xplorer2": {},
