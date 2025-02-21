@@ -1,4 +1,4 @@
-::2025.01.04
+::2025.02.20
 
 Title 备份文件到托管网站
 ::界面颜色大小，Cols为宽，Lines为高
@@ -39,6 +39,9 @@ rd /s /q "%OutputDir%\Customization\Software\Firefox\BackupProfiles"
 timeout /t 3 /nobreak
 xcopy "%BackupDir%\user.js" "%OutputDir%\Customization\Software\Firefox\"  /s /y /i
 xcopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Firefox\BackupProfiles"  /s /y /i
+
+:foobar
+xcopy "%BackupDir%\..\..\..\foobar2000_v2\profile\config.sqlite" "%OutputDir%\Customization\Software\foobar2000_v2\profile\"  /s /y /i
 
 :GoldenDict
 xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customization\Software\GoldenDict\"  /s /y /i
