@@ -1,7 +1,6 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
-      "DirectoryOpus": {},
       "WindowsExplorer": {},
       "FileDialog": {},
       "FolderDialog": {},
@@ -9,6 +8,7 @@
       "TotalCommander": {
         "EnableMouseMiddleClick": false
       },
+      "DirectoryOpus": {},
       "FreeCommander": {},
       "XYplorer": {},
       "xplorer2": {},
@@ -333,6 +333,7 @@
   },
   "AutoUpdate": {},
   "Settings": {
+    "Hotkey.PressShowListaryHotkeyAgainBehavior": "hide",
     "OpenFolder.Path": "..\\TotalCMD64\\TotalCMD64.exe",
     "OpenFolder.Param": "/O /T /P=R \"%1\"",
     "Tutorial.ShowMainV3": false,

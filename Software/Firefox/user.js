@@ -65,7 +65,6 @@ user_pref("security.insecure_field_warning.contextual.enabled", false);//未连�
 user_pref("security.certerrors.permanentOverride", false);//未连接：有潜在的安全问题
 user_pref("network.stricttransportsecurity.preloadlist", false);//未连接：有潜在的安全问题
 
-
 //*==========FX其它类==========*//
 
 //去除附加组中的"推荐扩展"
@@ -107,6 +106,7 @@ user_pref("dom.ipc.processPriorityManager.backgroundUsesEcoQoS", false);//关闭
 user_pref("intl.icu4x.segmenter.enabled", false);//双击是选取一个短句
 user_pref("extensions.screenshots.disabled", true);   //禁用自带截图
 user_pref("layout.css.system-ui.enabled", false);   //解決小红书emoji显示错误问题
+
 
 
 /******************************************************************************************

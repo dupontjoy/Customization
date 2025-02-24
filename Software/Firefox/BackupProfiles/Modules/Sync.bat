@@ -49,6 +49,8 @@ xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customizati
 :IDM
 xcopy "%BackupDir%\..\..\..\IDM\!)—°œÓ≈‰÷√.reg" "%OutputDir%\Customization\Software\IDM\"  /s /y /i
 
+:ImageGlass
+xcopy "%BackupDir%\..\..\Software\ImageGlass\igconfig.json" "%OutputDir%\Customization\Software\ImageGlass\"  /s /y /i
 
 :listary5
 ::Ç‰∑›Listary 5‘O÷√

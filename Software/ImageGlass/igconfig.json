@@ -1,0 +1,499 @@
+﻿{
+  "_Metadata": {
+    "Description": "ImageGlass configuration file",
+    "Version": 9.1
+  },
+  "EnableSlideshow": false,
+  "HideMainWindowInSlideshow": true,
+  "ShowSlideshowCountdown": true,
+  "UseRandomIntervalForSlideshow": false,
+  "EnableLoopSlideshow": true,
+  "EnableFullscreenSlideshow": true,
+  "EnableFrameless": false,
+  "EnableFullScreen": false,
+  "ShowGallery": true,
+  "ShowGalleryScrollbars": false,
+  "ShowGalleryFileName": true,
+  "ShowWelcomeImage": true,
+  "ShowToolbar": true,
+  "ShowAppIcon": true,
+  "EnableLoopBackNavigation": true,
+  "ShowCheckerboard": false,
+  "ShowCheckerboardOnlyImageRegion": false,
+  "EnableMultiInstances": true,
+  "EnableWindowTopMost": false,
+  "ShowDeleteConfirmation": true,
+  "ShowSaveOverrideConfirmation": true,
+  "ShouldPreserveModifiedDate": false,
+  "OpenSaveAsDialogInTheCurrentImageDir": true,
+  "ShowNewVersionIndicator": false,
+  "EnableCenterToolbar": true,
+  "ShouldOpenLastSeenImage": true,
+  "ShouldUseColorProfileForAll": false,
+  "EnableNavigationButtons": true,
+  "EnableRecursiveLoading": false,
+  "ShouldUseExplorerSortOrder": true,
+  "ShouldGroupImagesByDirectory": false,
+  "ShouldLoadHiddenImages": false,
+  "EnableWindowFit": false,
+  "CenterWindowFit": true,
+  "UseEmbeddedThumbnailRawFormats": true,
+  "UseEmbeddedThumbnailOtherFormats": false,
+  "ShowImagePreview": true,
+  "EnableImageTransition": false,
+  "EnableImageAsyncLoading": true,
+  "EnableCopyMultipleFiles": true,
+  "EnableCutMultipleFiles": true,
+  "EnableRealTimeFileUpdate": true,
+  "ShouldAutoOpenNewAddedImage": false,
+  "UseWebview2ForSvg": true,
+  "EnableDebug": false,
+  "HideToolbarInFullscreen": false,
+  "HideGalleryInFullscreen": false,
+  "QuickSetupVersion": 9,
+  "FrmMainPositionX": 84,
+  "FrmMainPositionY": 7,
+  "FrmMainWidth": 1215,
+  "FrmMainHeight": 722,
+  "FrmSettingsPositionX": 127,
+  "FrmSettingsPositionY": 46,
+  "FrmSettingsWidth": 1121,
+  "FrmSettingsHeight": 653,
+  "PanSpeed": 20,
+  "ZoomSpeed": 0,
+  "SlideshowInterval": 5,
+  "SlideshowIntervalTo": 5,
+  "SlideshowImagesToNotifySound": 0,
+  "ThumbnailSize": 50,
+  "GalleryCacheSizeInMb": 400,
+  "GalleryColumns": 3,
+  "ImageBoosterCacheCount": 1,
+  "ImageBoosterCacheMaxDimension": 8000,
+  "ImageBoosterCacheMaxFileSizeInMb": 100,
+  "ZoomLockValue": 38.26389,
+  "ToolbarIconHeight": 24,
+  "ImageEditQuality": 80,
+  "InAppMessageDuration": 2000,
+  "EmbeddedThumbnailMinWidth": 0,
+  "EmbeddedThumbnailMinHeight": 0,
+  "FrmMainState": "Normal",
+  "FrmSettingsState": "Normal",
+  "ImageLoadingOrder": "Name",
+  "ImageLoadingOrderType": "Asc",
+  "ZoomMode": "AutoZoom",
+  "ImageInterpolationScaleDown": "MultiSampleLinear",
+  "ImageInterpolationScaleUp": "NearestNeighbor",
+  "AfterEditingAction": "Nothing",
+  "WindowBackdrop": "Mica",
+  "ColorProfile": "None",
+  "AutoUpdate": "2025-01-24T12:09:58.1374797Z",
+  "LastSeenImagePath": "E:\\Cing@Pic\\美女\\运動会好身材.jpg",
+  "LastOpenedSetting": "appearance",
+  "DarkTheme": "Kobe",
+  "LightTheme": "Kobe-Light",
+  "BackgroundColor": "",
+  "SlideshowBackgroundColor": "#000000FF",
+  "Language": "Chinese Simplified.iglang.json",
+  "ZoomLevels": [],
+  "EditApps": {},
+  "FileFormats": ".3fr;.apng;.ari;.arw;.avif;.b64;.bay;.bmp;.cap;.cr2;.cr3;.crw;.cur;.cut;.dcr;.dcs;.dds;.dib;.dng;.drf;.eip;.emf;.erf;.exif;.exr;.fff;.fits;.flif;.gif;.gifv;.gpr;.hdr;.heic;.heif;.ico;.iiq;.jfif;.jp2;.jpe;.jpeg;.jpg;.jxl;.k25;.kdc;.mdc;.mef;.mjpeg;.mos;.mrw;.nef;.nrw;.obm;.orf;.pbm;.pcx;.pef;.pgm;.png;.ppm;.psb;.psd;.ptx;.pxn;.qoi;.r3d;.raf;.raw;.rw2;.rwl;.rwz;.sr2;.srf;.srw;.svg;.tga;.tif;.tiff;.viff;.webp;.wmf;.wpg;.x3f;.xbm;.xpm;.xv;",
+  "SingleFrameFormats": ".avif;.heic;.heif;.psd;.jxl;",
+  "ImageInfoTags": [
+    "Name",
+    "ListCount",
+    "FrameCount",
+    "Zoom",
+    "Dimension",
+    "FileSize",
+    "ColorSpace",
+    "ExifRating",
+    "DateTimeAuto",
+    "AppName"
+  ],
+  "MenuHotkeys": {},
+  "MouseClickActions": {
+    "LeftDoubleClick": {
+      "ToggleOn": {
+        "Executable": "IG_AutoSetActualSize",
+        "Arguments": []
+      }
+    },
+    "WheelClick": {
+      "ToggleOn": {
+        "Executable": "MnuRefresh",
+        "Arguments": []
+      }
+    },
+    "XButton1Click": {
+      "ToggleOn": {
+        "Executable": "MnuViewPrevious",
+        "Arguments": []
+      }
+    },
+    "XButton2Click": {
+      "ToggleOn": {
+        "Executable": "MnuViewNext",
+        "Arguments": []
+      }
+    }
+  },
+  "MouseWheelActions": {
+    "AltAndScroll": "BrowseImages",
+    "CtrlAndScroll": "PanVertically",
+    "Scroll": "Zoom",
+    "ShiftAndScroll": "PanHorizontally"
+  },
+  "Layout": {},
+  "Tools": [
+    {
+      "ToolId": "Tool_ExifGlass",
+      "ToolName": "ExifGlass - EXIF metadata viewer",
+      "Executable": "exifglass",
+      "Argument": "<file>",
+      "IsIntegrated": true,
+      "Hotkeys": [
+        "X"
+      ]
+    }
+  ],
+  "DisabledMenus": [],
+  "ToolbarButtons": [
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuOpenFile",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Right",
+      "Image": "OpenFile",
+      "OnClick": {
+        "Executable": "MnuOpenFile",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuViewPrevious",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "ViewPreviousImage",
+      "OnClick": {
+        "Executable": "MnuViewPrevious",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuViewNext",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "ViewNextImage",
+      "OnClick": {
+        "Executable": "MnuViewNext",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Separator",
+      "Id": "",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "",
+      "OnClick": {
+        "Executable": "",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuRotateLeft",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "RotateLeft",
+      "OnClick": {
+        "Executable": "MnuRotateLeft",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuRotateRight",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "RotateRight",
+      "OnClick": {
+        "Executable": "MnuRotateRight",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuFlipHorizontal",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "FlipHorz",
+      "OnClick": {
+        "Executable": "MnuFlipHorizontal",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuFlipVertical",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "FlipVert",
+      "OnClick": {
+        "Executable": "MnuFlipVertical",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuCropTool",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "Crop",
+      "OnClick": {
+        "Executable": "MnuCropTool",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Separator",
+      "Id": "",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "",
+      "OnClick": {
+        "Executable": "",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuAutoZoom",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "AutoZoom",
+      "OnClick": {
+        "Executable": "MnuAutoZoom",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuLockZoom",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "LockZoom",
+      "OnClick": {
+        "Executable": "MnuLockZoom",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuScaleToWidth",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "ScaleToWidth",
+      "OnClick": {
+        "Executable": "MnuScaleToWidth",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuScaleToHeight",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "ScaleToHeight",
+      "OnClick": {
+        "Executable": "MnuScaleToHeight",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuScaleToFit",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "ScaleToFit",
+      "OnClick": {
+        "Executable": "MnuScaleToFit",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuScaleToFill",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "ScaleToFill",
+      "OnClick": {
+        "Executable": "MnuScaleToFill",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Separator",
+      "Id": "",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "",
+      "OnClick": {
+        "Executable": "",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuRefresh",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "Refresh",
+      "OnClick": {
+        "Executable": "MnuRefresh",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuToggleGallery",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "ShowGallery",
+      "Alignment": "Left",
+      "Image": "Gallery",
+      "OnClick": {
+        "Executable": "MnuToggleGallery",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuToggleCheckerboard",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "ShowCheckerboard",
+      "Alignment": "Left",
+      "Image": "Checkerboard",
+      "OnClick": {
+        "Executable": "MnuToggleCheckerboard",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuFullScreen",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "EnableFullScreen",
+      "Alignment": "Left",
+      "Image": "FullScreen",
+      "OnClick": {
+        "Executable": "MnuFullScreen",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuSlideshow",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "EnableSlideshow",
+      "Alignment": "Left",
+      "Image": "Slideshow",
+      "OnClick": {
+        "Executable": "MnuSlideshow",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Separator",
+      "Id": "",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "",
+      "OnClick": {
+        "Executable": "",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    },
+    {
+      "Type": "Button",
+      "Id": "Btn_MnuMoveToRecycleBin",
+      "Text": "",
+      "DisplayStyle": "Image",
+      "CheckableConfigBinding": "",
+      "Alignment": "Left",
+      "Image": "Delete",
+      "OnClick": {
+        "Executable": "MnuMoveToRecycleBin",
+        "Arguments": []
+      },
+      "Hotkeys": []
+    }
+  ],
+  "ToolSettings": {}
+}
