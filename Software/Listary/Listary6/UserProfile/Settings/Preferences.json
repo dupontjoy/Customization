@@ -1,6 +1,7 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
+      "DirectoryOpus": {},
       "WindowsExplorer": {},
       "FileDialog": {},
       "FolderDialog": {},
@@ -8,7 +9,6 @@
       "TotalCommander": {
         "EnableMouseMiddleClick": false
       },
-      "DirectoryOpus": {},
       "FreeCommander": {},
       "XYplorer": {},
       "xplorer2": {},
@@ -338,9 +338,10 @@
     "OpenFolder.Param": "/O /T /P=R \"%1\"",
     "Tutorial.ShowMainV3": false,
     "Listary5.SettingsImported": true,
+    "Listary5.SettingsImported": true,
     "Listary5.ProLicense.Name": "Adven Dai",
     "Listary5.ProLicense.Email": "daiqiang7297@163.com",
-    "Listary5.ProLicense.Key": "FP7832JRZS7TVFCHJXN8Z7S7MBZZSRBJDEX6PY3PL239QU53M2R9JHNK2XW4LY6D32CJ3BJDHK2L5APH3LFVFASHVLHFEXEHFX79M6NDNUJCMR8LRCLAN7MPSD6CAGTMCAHYH22CGT8T542RFPAGVY23W349QJV4C4G8XT2893SSUZV9E3CCPRGVY3A7FE3B",
+    "Listary5.ProLicense.Key": "FP7832JRZS7TVFCHJXN8Z7S7MBZZSRBJDEX6PY3PL239QU53M2R9JHNK2XW4LY6D32CJ3BJDHK2L5APH3LFVFASHVLHFEXEHFX79M6NDNUJCMR8LRCLAN7MPSD6CAGTMCAHYH22CGT8T542RFPAGVY23W349QJV4C4G8XT2893SSUZV9E3CCPRGVY3A7FE3B",    
     "LastUpdateTimeV1": "2025-02-15T15:05:31.8558174+08:00"
   },
   "Extensions": {
