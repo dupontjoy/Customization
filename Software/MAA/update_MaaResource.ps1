@@ -4,7 +4,7 @@ try {
     Set-Location $currentDir
 
     # Define the URL and zip file path
-    $zipUrl = "https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip"
+    $zipUrl = "https://gh-proxy.com/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip"
     $zipFilePath = "$currentDir\main.zip"
 
     # Download the zip file

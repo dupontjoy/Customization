@@ -23,30 +23,26 @@ goto :eof
 :updating_scripts
 :: scripts
 echo. downloading autoload.lua
-%Download% -o "%cd%\scripts\autoload.lua" https://github.com/dyphire/mpv-config/raw/master/scripts/autoload.lua
-echo. downloading autoload.conf
-%Download% -o "%cd%\script-opts\autoload.conf" https://github.com/dyphire/mpv-config/raw/master/script-opts/autoload.conf
-
+%Download% -o "%cd%\scripts\autoload.lua" https://fastly.jsdelivr.net/gh/mpv-player/mpv@master/TOOLS/lua/autoload.lua
 
 echo. downloading quality-menu.lua
-%Download% -o "%cd%\scripts\quality-menu.lua" https://github.com/dyphire/mpv-config/raw/master/scripts/quality-menu.lua
+%Download% -o "%cd%\scripts\quality-menu.lua" https://fastly.jsdelivr.net/gh/dyphire/mpv-config@master/scripts/quality-menu.lua
 echo. downloading quality-menu.conf
-%Download% -o "%cd%\script-opts\quality-menu.conf" https://github.com/dyphire/mpv-config/raw/master/script-opts/quality-menu.conf
+%Download% -o "%cd%\script-opts\quality-menu.conf" https://fastly.jsdelivr.net/gh/dyphire/mpv-config@master/script-opts/quality-menu.conf
 
 echo. downloading SmartCopyPaste.lua
-%Download% -o "%cd%\scripts\SmartCopyPaste.lua" https://github.com/Eisa01/mpv-scripts/raw/master/scripts/SmartCopyPaste.lua
+%Download% -o "%cd%\scripts\SmartCopyPaste.lua" https://fastly.jsdelivr.net/gh/Eisa01/mpv-scripts@master/scripts/SmartCopyPaste.lua
 echo. downloading SmartCopyPaste.conf
-%Download% -o "%cd%\script-opts\SmartCopyPaste.conf" https://github.com/Eisa01/mpv-scripts/raw/master/script-opts/SmartCopyPaste.conf
+%Download% -o "%cd%\script-opts\SmartCopyPaste.conf" https://fastly.jsdelivr.net/gh/Eisa01/mpv-scripts@master/script-opts/SmartCopyPaste.conf
 
 echo. downloading stats.lua chs
-%Download% -o "%cd%\scripts\stats.lua" https://github.com/FinnRaze/mpv-stats-zh/raw/master/stats.lua
-echo. downloading stats.conf
-%Download% -o "%cd%\script-opts\stats.conf" https://github.com/dyphire/mpv-config/raw/refs/heads/master/script-opts/stats.conf
+%Download% -o "%cd%\scripts\stats.lua" https://fastly.jsdelivr.net/gh/FinnRaze/mpv-stats-zh@master/stats.lua
+%Download% -o "%cd%\script-opts\stats.conf" https://fastly.jsdelivr.net/gh/dyphire/mpv-config@master/script-opts/stats.conf
 
 echo. downloading uosc.zip
 %Download% -o "%cd%\uosc.zip" https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip
 echo. downloading uosc.conf
-%Download% -o "%cd%\script-opts\uosc.conf" https://github.com/dyphire/mpv-config/raw/master/script-opts/uosc.conf
+%Download% -o "%cd%\script-opts\uosc.conf" https://fastly.jsdelivr.net/gh/dyphire/mpv-config@master/script-opts/uosc.conf
 
 :: É¾³ý¾É°æuoscÎÄ¼þ
 :: rd /s /q "%cd%\scripts\uosc"
