@@ -18,7 +18,7 @@ goto :eof
 :updating
 :: scripts
 echo. downloading render_api.js
-%Download% -o "%cd%\render_api.js" https://raw.niuma666bet.buzz/Huibq/keep-alive/master/render_api.js
+%Download% -o "%cd%\render_api.js" https://fastly.jsdelivr.net/gh/Huibq/keep-alive/render_api.js
 
 
 :end

@@ -69,7 +69,6 @@ xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Run_Listary6.bat
 :MAA
 xcopy "%BackupDir%\..\..\..\MAA\Run_MAA.bat" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
 xcopy "%BackupDir%\..\..\..\MAA\update_MaaResource.bat" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
-xcopy "%BackupDir%\..\..\..\MAA\update_MaaResource.ps1" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
 xcopy "%BackupDir%\..\..\..\MAA\config\gui.json" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
 
 :mail-filter
@@ -84,8 +83,6 @@ xcopy "%BackupDir%\..\..\Software\MPV\installer" "%OutputDir%\Customization\Soft
 xcopy "%BackupDir%\..\..\Software\MPV\portable_config" "%OutputDir%\Customization\Software\MPV\portable_config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\MPV\Run_yt-dlp.bat" "%OutputDir%\Customization\Software\MPV\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\MPV\README.md" "%OutputDir%\Customization\Software\MPV\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\MPV\updater.bat" "%OutputDir%\Customization\Software\MPV\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\MPV\update-mpv.bat" "%OutputDir%\Customization\Software\MPV\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\MPV\yt-dlp.conf" "%OutputDir%\Customization\Software\MPV\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\MPV\settings.xml" "%OutputDir%\Customization\Software\MPV\"  /s /y /i
 ::删除不需要备份的播放进度
