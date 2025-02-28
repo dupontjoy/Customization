@@ -61,7 +61,7 @@ set "link="
 set /p "link=请输入链接: "
 if "!link!"=="" (
     echo 错误：输入不能为空！
-    goto set_link
+    goto :set_link
 )
 
 :set_filename 
@@ -69,7 +69,7 @@ set "filename="
 set /p "filename=请输入文件名（不能包含"\/:*?"<>|"任何之一）: "
 if "!filename!"=="" (
     echo 错误：输入不能为空！
-    goto set_filename
+    goto :set_filename
 )
 
 ::子标签中加上goto :eof命令即可退出子标签，不继续执行它下面的其它命令
