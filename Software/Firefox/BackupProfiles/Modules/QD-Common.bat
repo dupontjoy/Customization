@@ -1,4 +1,4 @@
-::2025.01.22
+::2025.02.27
 
 @echo off
 
@@ -29,7 +29,7 @@ start  "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
 start  "" "%cd%\PixPin\PixPin.exe"
 ::start  "" "%cd%\Snipaste\Snipaste.exe"
 start  "" "%cd%\Ditto\Ditto.exe"
-start "" "%cd%\..\..\Tencent\Weixin\Weixin.exe"
+
 
 ::启动程序
 ::Listary5代
@@ -38,13 +38,32 @@ start "" "%cd%\..\..\Tencent\Weixin\Weixin.exe"
 ::Listary6代
 start  "" "%cd%\Listary6\UserProfile\Settings\Run_Listary6.bat"
 
-::启動Foxmail
+:foxmail
+::启動Foxmail后，关闭Foxmail的主窗口但不终止进程
 start "" "%cd%\..\..\Tencent\Foxmail\Foxmail.exe"
 REM 等待Foxmail完全启动，可根据需要调整等待时间
 timeout /t 5 /nobreak >nul
 :: 使用PowerShell脚本关闭Foxmail的主窗口但不终止进程
 powershell -command "& {$app = Get-Process -Name Foxmail; if ($app) { $app.CloseMainWindow() | Out-Null } else { Write-Host 'Foxmail is not running.' }}"
 
+:weixin
+::启動微信并点击登录
+start "" "%cd%\..\..\Tencent\Weixin\Weixin.exe"
+
+REM 等待微信界面加载（时间可根据实际情况调整）
+timeout /t 5 /nobreak >nul
+
+REM 生成临时VBS脚本模拟键盘操作
+echo Set WshShell = CreateObject("WScript.Shell") > click.vbs
+echo WshShell.AppActivate "微信" >> click.vbs
+echo WScript.Sleep 500 >> click.vbs
+echo WshShell.SendKeys "{ENTER}" >> click.vbs
+
+REM 执行脚本并清理
+cscript //nologo click.vbs
+del click.vbs
+
+:capslock
 ::跳转到Capslock+文件夹
 cd .\Capslock+\
 start  "" "%cd%\Capslock+_v3.3.0.exe"

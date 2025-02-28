@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 07:57:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-02-28 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-02-28 07:57:00</NextRunTime>
-		<LastRunTime>2025-02-27 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-03-01 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-03-01 07:57:00</NextRunTime>
+		<LastRunTime>2025-02-28 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -216,9 +216,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 08:57:00</StartDateTime>
 		<EndDateTime>2025-01-10 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-02-28 08:57:00</NextRunDateTime>
-		<NextRunTime>2025-02-28 08:57:00</NextRunTime>
-		<LastRunTime>2025-02-27 08:57:00</LastRunTime>
+		<NextRunDateTime>2025-03-01 08:57:00</NextRunDateTime>
+		<NextRunTime>2025-03-01 08:57:00</NextRunTime>
+		<LastRunTime>2025-02-28 08:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -436,9 +436,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 17:57:00</StartDateTime>
 		<EndDateTime>2025-01-12 06:43:12</EndDateTime>
-		<NextRunDateTime>2025-02-27 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-02-27 17:57:00</NextRunTime>
-		<LastRunTime>2025-02-26 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-02-28 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-02-28 17:57:00</NextRunTime>
+		<LastRunTime>2025-02-27 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -656,9 +656,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 18:57:00</StartDateTime>
 		<EndDateTime>2025-01-11 13:26:24</EndDateTime>
-		<NextRunDateTime>2025-02-27 18:57:00</NextRunDateTime>
-		<NextRunTime>2025-02-27 18:57:00</NextRunTime>
-		<LastRunTime>2025-02-26 18:57:00</LastRunTime>
+		<NextRunDateTime>2025-02-28 18:57:00</NextRunDateTime>
+		<NextRunTime>2025-02-28 18:57:00</NextRunTime>
+		<LastRunTime>2025-02-27 18:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -876,9 +876,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-24 21:27:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-02-27 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-02-27 21:27:00</NextRunTime>
-		<LastRunTime>2025-02-26 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-02-28 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-02-28 21:27:00</NextRunTime>
+		<LastRunTime>2025-02-27 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -1094,9 +1094,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-24 22:27:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-02-27 22:27:00</NextRunDateTime>
-		<NextRunTime>2025-02-27 22:27:00</NextRunTime>
-		<LastRunTime>2025-02-26 22:27:00</LastRunTime>
+		<NextRunDateTime>2025-02-28 22:27:00</NextRunDateTime>
+		<NextRunTime>2025-02-28 22:27:00</NextRunTime>
+		<LastRunTime>2025-02-27 22:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -1311,10 +1311,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-02-21 13:07:12</EndDateTime>
-		<NextRunDateTime>2125-02-01 16:09:12</NextRunDateTime>
+		<EndDateTime>2025-02-28 02:14:24</EndDateTime>
+		<NextRunDateTime>2035-02-25 18:13:58</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-02-25 16:09:13</LastRunTime>
+		<LastRunTime>2025-02-27 17:00:09</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -1429,7 +1429,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>23</ID>
+				<ID>148</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1523,119 +1523,14 @@ env2=value2</edtAppEnv>
 				<ID>23</ID>
 			</Tasker>
 			<Delay>
-				<Sec>20000</Sec>
-				<Sec2>4980736</Sec2>
-				<Random>0</Random>
-				<Name>延迟</Name>
-				<ID>10</ID>
-			</Delay>
-			<Tasker>
-				<ID>51</ID>
-				<TaskType>ttMouseClick</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
-				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
-				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>2</Ver>
-				<Param>
-					<AppParam></AppParam>
-					<AppPath></AppPath>
-					<BackClr>-12500671</BackClr>
-					<DialPass></DialPass>
-					<DialUser></DialUser>
-					<FileParam></FileParam>
-					<FilePath></FilePath>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>点击微信登录</Name>
-					<PassExitRest></PassExitRest>
-					<PlayTime>10</PlayTime>
-					<ProcName></ProcName>
-					<RemindTitle></RemindTitle>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SearchEngineNames></SearchEngineNames>
-					<SearchEngines></SearchEngines>
-					<SnapDir></SnapDir>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<SoundPath></SoundPath>
-					<SvcStart></SvcStart>
-					<SvcStop></SvcStop>
-					<TitleShow>鼠标点击</TitleShow>
-					<TypeShow>输入</TypeShow>
-					<VolAdd>10</VolAdd>
-					<VolDec>10</VolDec>
-					<VolSet>10</VolSet>
-					<Webpage></Webpage>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<chkMouseClickActivateWnd>1</chkMouseClickActivateWnd>
-					<chkMouseClickPart>0</chkMouseClickPart>
-					<chkMouseClickWnd>1</chkMouseClickWnd>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbClass_text></cmbClass_text>
-					<cmbHotkey>0</cmbHotkey>
-					<cmbMouseClick>left</cmbMouseClick>
-					<cmbMouseClickPos>0</cmbMouseClickPos>
-					<cmbMouseClickPos_text>指定位置</cmbMouseClickPos_text>
-					<cmbMouseClickType>0</cmbMouseClickType>
-					<cmbMouseClickType_text>经典(速度快)</cmbMouseClickType_text>
-					<cmbMouseClick_text>左键</cmbMouseClick_text>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
-					<edtMouseClickClass>Qt51514QWindowIcon</edtMouseClickClass>
-					<edtMouseClickTitle>微信（测试版）</edtMouseClickTitle>
-					<edtMouseClickX>143</edtMouseClickX>
-					<edtMouseClickY>285</edtMouseClickY>
-					<edtMouseClicklTimes>1</edtMouseClicklTimes>
-					<edtTaskName>开机点击微信登录</edtTaskName>
-					<edtTaskSubName>点击微信登录</edtTaskSubName>
-					<httpReq></httpReq>
-					<httpReqHeader></httpReqHeader>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>点击微信登录</Name>
-				<ID>51</ID>
-			</Tasker>
-			<Delay>
-				<Sec>30000</Sec>
+				<Sec>40000</Sec>
 				<Sec2>4980736</Sec2>
 				<Random>0</Random>
 				<Name>延迟</Name>
 				<ID>33</ID>
 			</Delay>
 			<Tasker>
-				<ID>71</ID>
+				<ID>999</ID>
 				<TaskType>ttWndClose</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1724,7 +1619,7 @@ env2=value2</edtAppEnv>
 				<ID>71</ID>
 			</Tasker>
 			<Tasker>
-				<ID>8</ID>
+				<ID>388</ID>
 				<TaskType>ttMouseClick</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1822,7 +1717,7 @@ env2=value2</edtAppEnv>
 				<ID>8</ID>
 			</Tasker>
 			<Tasker>
-				<ID>98</ID>
+				<ID>443</ID>
 				<TaskType>ttVolumeSet</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1905,7 +1800,7 @@ env2=value2</edtAppEnv>
 				<ID>98</ID>
 			</Tasker>
 			<Tasker>
-				<ID>46</ID>
+				<ID>0</ID>
 				<TaskType>ttServiceStop</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1986,7 +1881,7 @@ env2=value2</edtAppEnv>
 				<ID>46</ID>
 			</Tasker>
 			<Tasker>
-				<ID>18</ID>
+				<ID>921</ID>
 				<TaskType>ttKill</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2089,9 +1984,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-02-08 17:04:48</EndDateTime>
-		<NextRunDateTime>2025-02-28 07:00:00</NextRunDateTime>
-		<NextRunTime>2025-02-28 07:00:00</NextRunTime>
-		<LastRunTime>2025-02-27 07:00:00</LastRunTime>
+		<NextRunDateTime>2025-03-01 07:00:00</NextRunDateTime>
+		<NextRunTime>2025-03-01 07:00:00</NextRunTime>
+		<LastRunTime>2025-02-28 07:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -2695,7 +2590,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>731</ID>
+				<ID>70</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2767,7 +2662,8 @@ env2=value2</edtAppEnv>
 					<cmbClass_text></cmbClass_text>
 					<cmbHotkey>0</cmbHotkey>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1
+env2=value2</edtAppEnv>
 					<edtAppVar></edtAppVar>
 					<edtBackSaveDir></edtBackSaveDir>
 					<edtBackZipCount>10</edtBackZipCount>
@@ -2791,7 +2687,7 @@ env2=value2</edtAppEnv>
 				<ID>70</ID>
 			</Tasker>
 			<Tasker>
-				<ID>221</ID>
+				<ID>54</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2885,7 +2781,7 @@ env2=value2</edtAppEnv>
 				<ID>54</ID>
 			</Tasker>
 			<Tasker>
-				<ID>253</ID>
+				<ID>78</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2957,7 +2853,8 @@ env2=value2</edtAppEnv>
 					<cmbClass_text></cmbClass_text>
 					<cmbHotkey>0</cmbHotkey>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1
+env2=value2</edtAppEnv>
 					<edtAppVar></edtAppVar>
 					<edtBackSaveDir></edtBackSaveDir>
 					<edtBackZipCount>10</edtBackZipCount>
@@ -2981,7 +2878,7 @@ env2=value2</edtAppEnv>
 				<ID>78</ID>
 			</Tasker>
 			<Tasker>
-				<ID>20</ID>
+				<ID>46</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3053,7 +2950,8 @@ env2=value2</edtAppEnv>
 					<cmbClass_text></cmbClass_text>
 					<cmbHotkey>0</cmbHotkey>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1
+env2=value2</edtAppEnv>
 					<edtAppVar></edtAppVar>
 					<edtBackSaveDir></edtBackSaveDir>
 					<edtBackZipCount>10</edtBackZipCount>

@@ -10,11 +10,12 @@ cls
 
 pushd %~dp0
 
-:: Set download command
-set Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs
+:: 下载工具配置
+set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
+set "GH_PROXY=https://gh-proxy.com"
 
 echo. downloading MaaResource
-%Download% -O https://gh-proxy.com/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
+%Curl_Download% -O %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
 
 :: x解压，v显示所有过程，f使用档案名字，切记，这个参数是最后一个参数
 tar -xvf .\MaaResource-main.zip

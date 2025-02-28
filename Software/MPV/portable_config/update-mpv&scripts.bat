@@ -2,7 +2,7 @@
 
 @echo off
 
-title update mpv scripts
+title update mpv&scripts
 color 0a
 
 pushd %~dp0
@@ -11,8 +11,9 @@ pushd %~dp0
 echo. delete cache
 rd /s /q "%cd%\cache"
 
-:: Set download command
-set Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs
+:: 下载工具配置
+set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
+set "GH_PROXY=https://gh-proxy.com"
 
 :: start updating
 call :updating_scripts
@@ -33,14 +34,14 @@ mkdir script-opts 2>nul
 
 :: 将需要下载的URL写入临时文件
 (
-echo https://gh-proxy.com/https://raw.githubusercontent.com/mpv-player/mpv/master/TOOLS/lua/autoload.lua
-echo https://gh-proxy.com/https://raw.githubusercontent.com/dyphire/mpv-config/master/scripts/quality-menu.lua
-echo https://gh-proxy.com/https://raw.githubusercontent.com/Eisa01/mpv-scripts/master/scripts/SmartCopyPaste.lua
-echo https://gh-proxy.com/https://raw.githubusercontent.com/FinnRaze/mpv-stats-zh/master/stats.lua
-echo https://gh-proxy.com/https://raw.githubusercontent.com/dyphire/mpv-config/master/script-opts/quality-menu.conf
-echo https://gh-proxy.com/https://raw.githubusercontent.com/Eisa01/mpv-scripts/master/script-opts/SmartCopyPaste.conf
-echo https://gh-proxy.com/https://raw.githubusercontent.com/dyphire/mpv-config/master/script-opts/stats.conf
-echo https://gh-proxy.com/https://raw.githubusercontent.com/dyphire/mpv-config/master/script-opts/uosc.conf
+echo %GH_PROXY%/https://raw.githubusercontent.com/mpv-player/mpv/master/TOOLS/lua/autoload.lua
+echo %GH_PROXY%/https://raw.githubusercontent.com/dyphire/mpv-config/master/scripts/quality-menu.lua
+echo %GH_PROXY%/https://raw.githubusercontent.com/Eisa01/mpv-scripts/master/scripts/SmartCopyPaste.lua
+echo %GH_PROXY%/https://raw.githubusercontent.com/FinnRaze/mpv-stats-zh/master/stats.lua
+echo %GH_PROXY%/https://raw.githubusercontent.com/dyphire/mpv-config/master/script-opts/quality-menu.conf
+echo %GH_PROXY%/https://raw.githubusercontent.com/Eisa01/mpv-scripts/master/script-opts/SmartCopyPaste.conf
+echo %GH_PROXY%/https://raw.githubusercontent.com/dyphire/mpv-config/master/script-opts/stats.conf
+echo %GH_PROXY%/https://raw.githubusercontent.com/dyphire/mpv-config/master/script-opts/uosc.conf
 rem 可以继续添加更多链接...
 ) > urls.tmp
 
@@ -84,7 +85,7 @@ goto :eof
 
 :updating_uosc
 echo. downloading uosc.zip
-%Download% -o "%cd%\uosc.zip" https://gh-proxy.com/https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip
+%Curl_Download% -o "%cd%\uosc.zip" %GH_PROXY%/https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip
 
 :: 删除旧版uosc文件
 :: rd /s /q "%cd%\scripts\uosc"
@@ -97,7 +98,7 @@ goto :eof
 :updating_yt-dlp
 :: Download latest yt-dlp
 echo. downloading yt-dlp.exe
-%Download% -o "%cd%\..\yt-dlp.exe" https://gh-proxy.com/https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
+%Curl_Download% -o "%cd%\..\yt-dlp.exe" %GH_PROXY%/https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
 goto :eof
 
 :updating_mpv
@@ -123,7 +124,7 @@ if %errorlevel% neq 0 (
 
 :: 读取下载链接并添加镜像代理
 set /p mpv_original_url=<mpv_download_url.tmp
-set "mpv_download_url=https://gh-proxy.com/%mpv_original_url%"
+set "mpv_download_url=%GH_PROXY%/%mpv_original_url%"
 
 :: 下载文件
 echo 正在下载: %mpv_download_url%
@@ -166,7 +167,7 @@ if %errorlevel% neq 0 (
 
 :: 读取下载链接并添加镜像代理
 set /p ffmpeg_original_url=<ffmpeg_download_url.tmp
-set "ffmpeg_download_url=https://gh-proxy.com/%ffmpeg_original_url%"
+set "ffmpeg_download_url=%GH_PROXY%/%ffmpeg_original_url%"
 
 :: 下载文件
 echo 正在下载: %ffmpeg_download_url%

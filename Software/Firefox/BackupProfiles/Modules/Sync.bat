@@ -38,6 +38,7 @@ xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%OutputDir%\Customizat
 rd /s /q "%OutputDir%\Customization\Software\Firefox\BackupProfiles"
 timeout /t 3 /nobreak
 xcopy "%BackupDir%\user.js" "%OutputDir%\Customization\Software\Firefox\"  /s /y /i
+xcopy "%BackupDir%\chrome\userChromeJS\update-uc-scripts.bat" "%OutputDir%\Customization\Software\Firefox\"  /s /y /i
 xcopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Firefox\BackupProfiles"  /s /y /i
 
 :foobar
