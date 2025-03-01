@@ -1,4 +1,4 @@
-::2025.02.27
+::2025.02.28
 
 @echo off
 
@@ -42,11 +42,12 @@ mshta vbscript:createobject("shell.application").shellexecute("""%MAA%""","::",,
 mshta vbscript:createobject("shell.application").shellexecute("""%Player%""","::",,"runas",1)(window.close)
 
 :: 等待模拟器启动（根据电脑性能调整等待时间）
-timeout /t 3 /nobreak
+timeout /t 5 /nobreak
 
+:: 检测并最小化标题含"MuMu"的窗口
 :: 创建临时VBS脚本执行最小化操作
 echo Set WshShell = CreateObject("WScript.Shell") > minimize.vbs
-echo WshShell.AppActivate "MuMuPlayer" >> minimize.vbs
+echo WshShell.AppActivate "MuMu" >> minimize.vbs
 echo WshShell.SendKeys "%% " >> minimize.vbs
 echo WshShell.SendKeys "n" >> minimize.vbs
 

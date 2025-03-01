@@ -20,7 +20,7 @@ set TargetFolder="D:"
 
 
 ::ÔOÖÃProfilesÉÏ‚÷µØÖ·
-set TargetFolder1="E:\My Documents\Nutstore\NutStoreSync\Firefox\Profiles\"
+set "TargetFolder1=E:\My Documents\Nutstore\NutStoreSync\Firefox\Profiles"
 
 
 :Profiles

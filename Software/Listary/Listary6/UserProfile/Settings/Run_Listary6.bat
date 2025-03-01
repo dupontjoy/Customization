@@ -7,6 +7,8 @@ COLOR 0a
 rem 設置備份路徑以及臨時文件夾
 @echo 定时启动Listary时，清除日志和临時文件
 
+:: 最小化当前窗口
+powershell -window minimized -command "Start-Process cmd -ArgumentList '/c %~0' -WindowStyle Hidden"
 
 ::必须使用pushd+cd方式获取并保存路径的方式启動，相對路径的動作和命令才能生效
 ::pushd命令，将当前目录的路径保存下来，并且切换到你指定的新目录路径。
