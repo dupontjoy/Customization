@@ -42,7 +42,7 @@ mshta vbscript:createobject("shell.application").shellexecute("""%MAA%""","::",,
 mshta vbscript:createobject("shell.application").shellexecute("""%Player%""","::",,"runas",1)(window.close)
 
 :: 等待模拟器启动（根据电脑性能调整等待时间）
-timeout /t 5 /nobreak
+timeout /t 7 /nobreak
 
 :: 检测并最小化标题含"MuMu"的窗口
 :: 创建临时VBS脚本执行最小化操作

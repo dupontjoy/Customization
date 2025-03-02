@@ -1,4 +1,4 @@
-::2025.02.27
+::2025.03.02
 
 @echo off
 
@@ -21,6 +21,7 @@ rd /s /q "%cd%\N_m3u8DL-RE\Logs"
 
 ::管理员启动
 mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIME Portable\weasel\WeaselServer.exe""","::",,"runas",1)(window.close)
+mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIME Portable\weasel\WeaselDeployer.exe""","::",,"runas",1)(window.close)
 
 ::普通啟動
 start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
@@ -48,7 +49,7 @@ timeout /t 5 /nobreak >nul
 REM 生成临时VBS脚本模拟键盘操作
 echo Set WshShell = CreateObject("WScript.Shell") > click.vbs
 echo WshShell.AppActivate "微信" >> click.vbs
-echo WScript.Sleep 500 >> click.vbs
+echo WScript.Sleep 300 >> click.vbs
 echo WshShell.SendKeys "{ENTER}" >> click.vbs
 
 REM 执行脚本并清理
@@ -56,6 +57,8 @@ cscript //nologo click.vbs
 del click.vbs
 
 :listary
+REM 等点击微信登录几秒后再启動
+timeout /t 5 /nobreak >nul
 ::Listary5代
 ::start  "" "%cd%\Listary Pro\UserData\Run_listary.bat"
 
@@ -63,6 +66,7 @@ del click.vbs
 start  "" "%cd%\Listary6\UserProfile\Settings\Run_Listary6.bat"
 
 :capslock
+::必须使用pushd+cd方式获取并保存路径的方式启動，相對路径的動作和命令才能生效
 ::跳转到Capslock+文件夹
 cd .\Capslock+\
 start  "" "%cd%\Capslock+_v3.3.0.exe"

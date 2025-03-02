@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 07:57:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-03-02 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-03-02 07:57:00</NextRunTime>
-		<LastRunTime>2025-02-28 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-03-03 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-03-03 07:57:00</NextRunTime>
+		<LastRunTime>2025-03-02 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -216,9 +216,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 08:57:00</StartDateTime>
 		<EndDateTime>2025-01-10 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-03-02 08:57:00</NextRunDateTime>
-		<NextRunTime>2025-03-02 08:57:00</NextRunTime>
-		<LastRunTime>2025-03-01 08:57:00</LastRunTime>
+		<NextRunDateTime>2025-03-03 08:57:00</NextRunDateTime>
+		<NextRunTime>2025-03-03 08:57:00</NextRunTime>
+		<LastRunTime>2025-03-02 08:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -436,9 +436,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 17:57:00</StartDateTime>
 		<EndDateTime>2025-01-12 06:43:12</EndDateTime>
-		<NextRunDateTime>2025-03-01 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-03-01 17:57:00</NextRunTime>
-		<LastRunTime>2025-02-28 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-03-03 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-03-03 17:57:00</NextRunTime>
+		<LastRunTime>2025-03-02 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -656,9 +656,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 18:57:00</StartDateTime>
 		<EndDateTime>2025-01-11 13:26:24</EndDateTime>
-		<NextRunDateTime>2025-03-01 18:57:00</NextRunDateTime>
-		<NextRunTime>2025-03-01 18:57:00</NextRunTime>
-		<LastRunTime>2025-02-28 18:57:00</LastRunTime>
+		<NextRunDateTime>2025-03-03 18:57:00</NextRunDateTime>
+		<NextRunTime>2025-03-03 18:57:00</NextRunTime>
+		<LastRunTime>2025-03-02 18:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -876,9 +876,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-24 21:27:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-03-01 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-03-01 21:27:00</NextRunTime>
-		<LastRunTime>2025-02-28 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-03-02 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-03-02 21:27:00</NextRunTime>
+		<LastRunTime>2025-03-01 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -1094,9 +1094,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-24 22:27:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-03-01 22:27:00</NextRunDateTime>
-		<NextRunTime>2025-03-01 22:27:00</NextRunTime>
-		<LastRunTime>2025-02-28 22:27:00</LastRunTime>
+		<NextRunDateTime>2025-03-02 22:27:00</NextRunDateTime>
+		<NextRunTime>2025-03-02 22:27:00</NextRunTime>
+		<LastRunTime>2025-03-01 22:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>1</Ver>
 		<Param>
@@ -1312,9 +1312,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-02-28 02:14:24</EndDateTime>
-		<NextRunDateTime>2125-02-05 11:31:06</NextRunDateTime>
+		<NextRunDateTime>2035-02-27 14:34:16</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-03-01 11:31:06</LastRunTime>
+		<LastRunTime>2025-03-01 14:33:03</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -1429,7 +1429,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>23</ID>
+				<ID>385</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1523,14 +1523,14 @@ env2=value2</edtAppEnv>
 				<ID>23</ID>
 			</Tasker>
 			<Delay>
-				<Sec>50000</Sec>
+				<Sec>45000</Sec>
 				<Sec2>4980736</Sec2>
 				<Random>0</Random>
 				<Name>延迟</Name>
 				<ID>33</ID>
 			</Delay>
 			<Tasker>
-				<ID>71</ID>
+				<ID>941</ID>
 				<TaskType>ttWndClose</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1619,7 +1619,7 @@ env2=value2</edtAppEnv>
 				<ID>71</ID>
 			</Tasker>
 			<Tasker>
-				<ID>8</ID>
+				<ID>9</ID>
 				<TaskType>ttMouseClick</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1717,7 +1717,7 @@ env2=value2</edtAppEnv>
 				<ID>8</ID>
 			</Tasker>
 			<Tasker>
-				<ID>98</ID>
+				<ID>196</ID>
 				<TaskType>ttVolumeSet</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1800,7 +1800,7 @@ env2=value2</edtAppEnv>
 				<ID>98</ID>
 			</Tasker>
 			<Tasker>
-				<ID>46</ID>
+				<ID>469</ID>
 				<TaskType>ttServiceStop</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1881,7 +1881,7 @@ env2=value2</edtAppEnv>
 				<ID>46</ID>
 			</Tasker>
 			<Tasker>
-				<ID>18</ID>
+				<ID>332</ID>
 				<TaskType>ttKill</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1984,9 +1984,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-02-08 17:04:48</EndDateTime>
-		<NextRunDateTime>2025-03-02 07:00:00</NextRunDateTime>
-		<NextRunTime>2025-03-02 07:00:00</NextRunTime>
-		<LastRunTime>2025-02-28 07:00:00</LastRunTime>
+		<NextRunDateTime>2025-03-03 07:00:00</NextRunDateTime>
+		<NextRunTime>2025-03-03 07:00:00</NextRunTime>
+		<LastRunTime>2025-03-02 07:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -2471,7 +2471,7 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-02-27 05:44:32</EndDateTime>
+		<EndDateTime>2025-03-02 11:29:04</EndDateTime>
 		<NextRunDateTime>2025-03-06 07:00:00</NextRunDateTime>
 		<NextRunTime>2025-03-06 07:00:00</NextRunTime>
 		<LastRunTime>2025-02-24 07:00:00</LastRunTime>
@@ -2590,7 +2590,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>70</ID>
+				<ID>129</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2687,7 +2687,7 @@ env2=value2</edtAppEnv>
 				<ID>70</ID>
 			</Tasker>
 			<Tasker>
-				<ID>54</ID>
+				<ID>764</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2781,7 +2781,7 @@ env2=value2</edtAppEnv>
 				<ID>54</ID>
 			</Tasker>
 			<Tasker>
-				<ID>78</ID>
+				<ID>606</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2878,7 +2878,7 @@ env2=value2</edtAppEnv>
 				<ID>78</ID>
 			</Tasker>
 			<Tasker>
-				<ID>46</ID>
+				<ID>979</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2973,6 +2973,102 @@ env2=value2</edtAppEnv>
 				</Param>
 				<Name>update mpv&amp;scripts</Name>
 				<ID>46</ID>
+			</Tasker>
+			<Tasker>
+				<ID>26</ID>
+				<TaskType>ttExec</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
+				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
+				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>2</Ver>
+				<Param>
+					<AppParam></AppParam>
+					<AppPath>D:\Program Files\CingFox\Software\RimeIME Portable\usr\update-cangjie5-dict.bat</AppPath>
+					<BackClr>-12500671</BackClr>
+					<DialPass></DialPass>
+					<DialUser></DialUser>
+					<FileParam></FileParam>
+					<FilePath></FilePath>
+					<IsExitRest>0</IsExitRest>
+					<IsPassExitRest>0</IsPassExitRest>
+					<Name>update cangjie5 dict</Name>
+					<PassExitRest></PassExitRest>
+					<PlayTime>10</PlayTime>
+					<ProcName></ProcName>
+					<RemindTitle></RemindTitle>
+					<RestAlpha>0</RestAlpha>
+					<RestClr>-1</RestClr>
+					<RestMin>10</RestMin>
+					<RmdClr>-1</RmdClr>
+					<SearchEngineNames></SearchEngineNames>
+					<SearchEngines></SearchEngines>
+					<SnapDir></SnapDir>
+					<SnapFormat>png</SnapFormat>
+					<SnapSaveDay>10</SnapSaveDay>
+					<SnapSaveMode>optSaveAll</SnapSaveMode>
+					<SnapSaveNum>100</SnapSaveNum>
+					<SoundPath></SoundPath>
+					<SvcStart></SvcStart>
+					<SvcStop></SvcStop>
+					<TitleShow>执行程序</TitleShow>
+					<TypeShow>程序</TypeShow>
+					<VolAdd>10</VolAdd>
+					<VolDec>10</VolDec>
+					<VolSet>10</VolSet>
+					<Webpage></Webpage>
+					<chkAppAdmin>0</chkAppAdmin>
+					<chkAppClip>0</chkAppClip>
+					<chkAppEnv>0</chkAppEnv>
+					<chkAppVar>0</chkAppVar>
+					<chkBackDateSub>0</chkBackDateSub>
+					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
+					<chkBackFileRecyle>0</chkBackFileRecyle>
+					<chkBackZipMulti>0</chkBackZipMulti>
+					<chkBackZipPass>0</chkBackZipPass>
+					<chkExecWait>0</chkExecWait>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<cmbAppShowCmd>1</cmbAppShowCmd>
+					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
+					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
+					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
+					<cmbBackType>zip</cmbBackType>
+					<cmbBackType_text>压缩</cmbBackType_text>
+					<cmbClass_text></cmbClass_text>
+					<cmbHotkey>0</cmbHotkey>
+					<edtAppDir></edtAppDir>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppVar></edtAppVar>
+					<edtBackSaveDir></edtBackSaveDir>
+					<edtBackZipCount>10</edtBackZipCount>
+					<edtBackZipName></edtBackZipName>
+					<edtBackZipPass></edtBackZipPass>
+					<edtExecWaitTime>0</edtExecWaitTime>
+					<edtTaskName></edtTaskName>
+					<edtTaskSubName>update cangjie5 dict</edtTaskSubName>
+					<httpReq></httpReq>
+					<httpReqHeader></httpReqHeader>
+					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
+					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
+					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
+					<optPlaySnd>0</optPlaySnd>
+					<optRmdSnd>0</optRmdSnd>
+					<optRptSnd>0</optRptSnd>
+					<sldZipLevel>3</sldZipLevel>
+					<tabBtnTask>1</tabBtnTask>
+				</Param>
+				<Name>update cangjie5 dict</Name>
+				<ID>29</ID>
 			</Tasker>
 		</Actions>
 	</TaskItem>
