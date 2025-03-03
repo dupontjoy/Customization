@@ -127,6 +127,32 @@
 			"to": "https://use.sevencdn.com/$1",
 			"group": "CingList-Redirect",
 			"encoding": "UTF-8"
+		},
+		{
+			"enable": true,
+			"name": "greasyfork >> 镜像",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/greasyfork\\.org\\/.*scripts\\/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://yx.dahi.edu.eu.org/zh-CN/scripts/$1",
+			"group": "CingList-Redirect",
+			"encoding": "UTF-8"
+		},
+		{
+			"enable": true,
+			"name": "DMM JP >> Global Redirect",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/(.*\\.)?dmm\\.co\\.jp(\\/.*)?$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://$1dmm.com$2",
+			"group": "CingList-Redirect",
+			"encoding": "UTF-8"
 		}
 	],
 	"sendHeader": [

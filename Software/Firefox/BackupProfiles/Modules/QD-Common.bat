@@ -1,6 +1,7 @@
 ::2025.03.02
 
 @echo off
+setlocal enabledelayedexpansion
 
 Title 批量启动程序
 color 0a
@@ -18,6 +19,9 @@ rd /s /q "%cd%\..\Profiles\FxProfiles\cache2"
 ::删除N_m3u8DL-RE下载失败的缓存和日志
 rd /s /q "%cd%\N_m3u8DL-RE\cache"
 rd /s /q "%cd%\N_m3u8DL-RE\Logs"
+
+::清空用户\下载文件夹
+rd /s /q "C:\Users\%USERNAME%\Downloads"
 
 ::管理员启动
 mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIME Portable\weasel\WeaselServer.exe""","::",,"runas",1)(window.close)
