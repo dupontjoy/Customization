@@ -23,9 +23,9 @@ rd /s /q "%cd%\N_m3u8DL-RE\Logs"
 ::清空用户\下载文件夹
 rd /s /q "C:\Users\%USERNAME%\Downloads"
 
-::管理员启动
+::管理员启动WeaselServer.exe
 mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIME Portable\weasel\WeaselServer.exe""","::",,"runas",1)(window.close)
-mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIME Portable\weasel\WeaselDeployer.exe""","::",,"runas",1)(window.close)
+
 
 ::普通啟動
 start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"

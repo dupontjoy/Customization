@@ -3,7 +3,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
-title update mpv&scripts
+title 一键更新MPV和脚本
 color 0a
 
 pushd %~dp0
@@ -20,7 +20,7 @@ set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 set "test_url=https://github.com/Jackchows/Cangjie5/raw/master/README.md"
 
 :: 定义镜像站点列表
-set "proxies=gh-proxy.com ghfast.top ghproxy.net"
+set "proxies=gh-proxy.com ghfast.top ghproxy.net github.moeyy.xyz"
 
 :: 初始化变量
 set "fastest_proxy="
