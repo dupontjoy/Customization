@@ -1,9 +1,6 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
-      "DirectoryOpus": {
-        "EnableMouseMiddleClick": false
-      },
       "WindowsExplorer": {
         "EnableMouseMiddleClick": false
       },
@@ -15,6 +12,9 @@
         "EnableMouseMiddleClick": false
       },
       "TotalCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "DirectoryOpus": {
         "EnableMouseMiddleClick": false
       },
       "FreeCommander": {
@@ -325,6 +325,7 @@
             "Path": "cscript.exe",
             "Parameter": "//Nologo \"UserProfile\\Settings\\CopyFileName.vbs\" \"{action_path}\"",
             "RunAsAdmin": true,
+            "Silent": true,
             "Keyword": "N",
             "Hotkey": 590,
             "HotkeyScope": 1,

@@ -84,9 +84,6 @@ echo.&echo █ 正在更新UC脚本...
 (
 echo %GH_PROXY%/https://raw.githubusercontent.com/benzBrake/FirefoxCustomize/master/userChromeJS/Loader/fx100.zip
 echo %GH_PROXY%/https://raw.githubusercontent.com/benzBrake/Firefox-downloadPlus.uc.js/main/downloadPlus_Fx136.uc.js
-echo %GH_PROXY%/https://raw.githubusercontent.com/garywill/FirefoxTaskMonitor/master/dist/taskmonitor_part1.uc.js
-echo %GH_PROXY%/https://raw.githubusercontent.com/garywill/FirefoxTaskMonitor/master/dist/taskmonitor_part2.uc.js
-echo %GH_PROXY%/https://raw.githubusercontent.com/garywill/FirefoxTaskMonitor/master/dist/taskmonitor_part3_clearMemoryPeriodically.uc.js
 ) > urls.tmp
 
 :: 批量下载文件
