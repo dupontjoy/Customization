@@ -1,4 +1,4 @@
-::2025.02.26
+::2025.03.12
 
 @echo off
 setlocal enabledelayedexpansion
@@ -151,10 +151,6 @@ goto :eof
 :updating_mpv
 setlocal enabledelayedexpansion
 
-:: 获取脚本所在路径
-set "script_dir=%~dp0"
-set "target_dir=%script_dir%..\"
-
 :: GitHub API 地址和文件名匹配模式
 set "api_url=https://api.github.com/repos/zhongfly/mpv-winbuild/releases/latest"
 set "mpv_file_pattern=mpv-x86_64.*\.7z"
@@ -175,17 +171,8 @@ set "mpv_download_url=%GH_PROXY%/%mpv_original_url%"
 
 :: 下载文件
 echo 正在下载: %mpv_download_url%
-powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%mpv_download_url%' -OutFile 'mpv-x86_64_Latest.7z' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
+powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%mpv_download_url%' -OutFile '%cd%\..\mpv-x86_64_Latest.7z' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
 
-:: 移动文件到上级目录
-if exist "mpv-x86_64_Latest.7z" (
-    echo 正在移动文件到上级目录...
-    move /Y "mpv-x86_64_Latest.7z" "%target_dir%" >nul
-    echo 文件保存位置: "%target_dir%mpv-x86_64_Latest.7z"
-) else (
-    echo 错误：文件下载失败
-    exit /b 1
-)
 
 :: 清理临时文件
 del mpv_download_url.tmp 2>nul
@@ -193,10 +180,6 @@ goto :eof
 
 :updating_ffmpeg
 setlocal enabledelayedexpansion
-
-:: 获取脚本所在路径
-set "script_dir=%~dp0"
-set "target_dir=%script_dir%..\"
 
 :: GitHub API 地址和文件名匹配模式
 set "api_url=https://api.github.com/repos/zhongfly/mpv-winbuild/releases/latest"
@@ -218,17 +201,7 @@ set "ffmpeg_download_url=%GH_PROXY%/%ffmpeg_original_url%"
 
 :: 下载文件
 echo 正在下载: %ffmpeg_download_url%
-powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%ffmpeg_download_url%' -OutFile 'ffmpeg-x86_64-git_Latest.7z' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
-
-:: 移动文件到上级目录
-if exist "ffmpeg-x86_64-git_Latest.7z" (
-    echo 正在移动文件到上级目录...
-    move /Y "ffmpeg-x86_64-git_Latest.7z" "%target_dir%" >nul
-    echo 文件保存位置: "%target_dir%ffmpeg-x86_64-git_Latest.7z"
-) else (
-    echo 错误：文件下载失败
-    exit /b 1
-)
+powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%ffmpeg_download_url%' -OutFile '%cd%\..\ffmpeg-x86_64-git_Latest.7z' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
 
 :: 清理临时文件
 del ffmpeg_download_url.tmp 2>nul

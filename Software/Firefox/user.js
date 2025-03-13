@@ -1,4 +1,4 @@
-//2025.01.14
+//2025.03.11
 
 
 /*
@@ -64,6 +64,9 @@ user_pref("security.enterprise_roots.enabled", true);//未连接：有潜在的�
 user_pref("security.insecure_field_warning.contextual.enabled", false);//未连接：有潜在的安全问题
 user_pref("security.certerrors.permanentOverride", false);//未连接：有潜在的安全问题
 user_pref("network.stricttransportsecurity.preloadlist", false);//未连接：有潜在的安全问题
+//缓存
+user_pref("browser.cache.memory.capacity", 1048576);//内存缓存大小（1GiB）
+user_pref("browser.cache.disk.enable", false);//关闭硬盘缓存
 
 //*==========FX其它类==========*//
 
