@@ -334,7 +334,14 @@
           }
         }
       ],
-      "Updates": []
+      "Updates": [
+        {
+          "Id": "284ecbe8-1ef2-49c9-bd93-f7025519402b",
+          "UpdatedProperties": {
+            "Hotkey": 600
+          }
+        }
+      ]
     }
   },
   "AutoUpdate": {},
