@@ -49,6 +49,8 @@ edtWebPort=80
 edtWebUser=
 edtWebPass=
 chkClassLast=0
+chkHotkeyDupKey=0
+chkHotkeyDupMouse=0
 [Hotkey]
 chkHotkey=0
 new_remind=Ctrl+Shift+R
@@ -68,8 +70,8 @@ option_key=79
 option_enabled=1
 [Stat]
 Zoomed=0
-Left=201
-Top=64
+Left=157
+Top=16
 Width=1030
 Height=640
 Monitor=\\.\DISPLAY1

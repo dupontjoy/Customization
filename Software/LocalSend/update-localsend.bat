@@ -1,9 +1,9 @@
-:: 2025.02.28
+:: 2025.03.19
 
 @echo off
 setlocal enabledelayedexpansion
 
-title 一键更新readest portable
+title 一键更新localsend
 COLOR 0A
 cls
 
@@ -67,7 +67,7 @@ exit /b
 :: 主流程
 ::=======================================
 :menu
-call :updating_readest
+call :updating_localsend
 call :end
 exit /b
 
@@ -75,13 +75,13 @@ exit /b
 ::=======================================
 :: 子程序
 ::=======================================
-:updating_readest
+:updating_localsend
 setlocal
-echo.&echo █ 正在更新readest...
+echo.&echo █ 正在更新localsend...
 
 :: GitHub API 地址和文件名匹配模式
-set "api_url=https://api.github.com/repos/readest/readest/releases/latest"
-set "file_pattern=Readest_.*x64-portable\.exe"
+set "api_url=https://api.github.com/repos/localsend/localsend/releases/latest"
+set "file_pattern=localsend-.*-windows-x86-64\.zip"
 
 :: 使用 PowerShell 解析下载链接
 powershell -Command "$response = Invoke-WebRequest -Uri '%api_url%' -UseBasicParsing | ConvertFrom-Json; $asset = $response.assets | Where-Object { $_.name -match '%file_pattern%' } | Select-Object -First 1; if ($asset) { $asset.browser_download_url } else { exit 1 }" > download_url.tmp
@@ -99,12 +99,13 @@ set "download_url=%GH_PROXY%/%original_url%"
 
 :: 下载文件
 echo [下载] %download_url%
-powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%download_url%' -OutFile '%cd%\Readest-portable.exe' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
+powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%download_url%' -OutFile '%cd%\localsend-latest.zip' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
 
 :: 清理临时文件
 del download_url.tmp 2>nul
 
-
+::解压
+tar -xvf .\localsend-latest.zip
 
 ::=======================================
 :: 结束处理
