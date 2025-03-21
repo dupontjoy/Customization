@@ -131,7 +131,7 @@ del urls.tmp
 goto :eof
 
 :updating_uosc
-echo. downloading uosc.zip
+echo. [下载] %GH_PROXY%/https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip
 %Curl_Download% -o "%cd%\uosc.zip" %GH_PROXY%/https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip
 
 :: 删除旧版uosc文件
@@ -144,7 +144,7 @@ goto :eof
 
 :updating_yt-dlp
 :: Download latest yt-dlp
-echo. downloading yt-dlp.exe
+echo. [下载] %GH_PROXY%/https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
 %Curl_Download% -o "%cd%\..\yt-dlp.exe" %GH_PROXY%/https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
 goto :eof
 

@@ -65,7 +65,7 @@ goto :eof
 
 :updating
 :: scripts
-echo. downloading render_api.js
+echo. [обть] https://fastly.jsdelivr.net/gh/Huibq/keep-alive/render_api.js
 %Curl_Download% -o "%cd%\render_api.js" https://fastly.jsdelivr.net/gh/Huibq/keep-alive/render_api.js
 
 

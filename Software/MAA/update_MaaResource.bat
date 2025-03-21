@@ -62,7 +62,7 @@ if !int_time! lss !int_fastest! (
 exit /b
 
 :update_MaaResource
-echo. downloading MaaResource
+echo. [下载] %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
 %Curl_Download% -O %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
 
 :: x解压，v显示所有过程，f使用档案名字，切记，这个参数是最后一个参数
