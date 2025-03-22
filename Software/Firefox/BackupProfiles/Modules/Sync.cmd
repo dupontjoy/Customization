@@ -26,7 +26,7 @@ xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\weasel.custom.yaml" "%Out
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\skins-backup.yaml" "%OutputDir%\RimeIME-Portable\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\rime.lua" "%OutputDir%\RimeIME-Portable\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\README.md" "%OutputDir%\RimeIME-Portable\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\update-cangjie5-dict.bat" "%OutputDir%\RimeIME-Portable\config\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\RimeIME Portable\usr\update-cangjie5-dict.cmd" "%OutputDir%\RimeIME-Portable\config\"  /s /y /i
 
 :capslock+
 ::Ç‰∑›Capslock+‘O÷√
@@ -41,7 +41,7 @@ xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%OutputDir%\Customizat
 rd /s /q "%OutputDir%\Customization\Software\Firefox\BackupProfiles"
 timeout /t 3 /nobreak
 xcopy "%BackupDir%\user.js" "%OutputDir%\Customization\Software\Firefox\"  /s /y /i
-xcopy "%BackupDir%\chrome\userChromeJS\update-uc-scripts.bat" "%OutputDir%\Customization\Software\Firefox\"  /s /y /i
+xcopy "%BackupDir%\chrome\userChromeJS\update-uc-scripts.cmd" "%OutputDir%\Customization\Software\Firefox\"  /s /y /i
 xcopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Firefox\BackupProfiles"  /s /y /i
 
 :foobar
@@ -60,7 +60,7 @@ xcopy "%BackupDir%\..\..\Software\ImageGlass\igconfig.json" "%OutputDir%\Customi
 ::Ç‰∑›Listary 5‘O÷√
 xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary5\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary5\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Run_Listary5.bat" "%OutputDir%\Customization\Software\Listary\Listary5\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Run_Listary5.cmd" "%OutputDir%\Customization\Software\Listary\Listary5\"  /s /y /i
 
 
 :listary6
@@ -68,11 +68,11 @@ xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Run_Listary5.bat" "%Outpu
 xcopy "%BackupDir%\..\..\Software\Listary6\DataFolderRedirection.txt" "%OutputDir%\Customization\Software\Listary\Listary6\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Run_Listary6.bat" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Run_Listary6.cmd" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\"  /s /y /i
 
 :MAA
-xcopy "%BackupDir%\..\..\..\MAA\Run_MAA.bat" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
-xcopy "%BackupDir%\..\..\..\MAA\update_MaaResource.bat" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
+xcopy "%BackupDir%\..\..\..\MAA\Run_MAA.cmd" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
+xcopy "%BackupDir%\..\..\..\MAA\update_MaaResource.cmd" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
 xcopy "%BackupDir%\..\..\..\MAA\config\gui.json" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
 
 :mail-filter
@@ -85,7 +85,7 @@ rd /s /q "%OutputDir%\Customization\Software\MPV\portable_config"
 timeout /t 3 /nobreak
 xcopy "%BackupDir%\..\..\Software\MPV\installer" "%OutputDir%\Customization\Software\MPV\installer\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\MPV\portable_config" "%OutputDir%\Customization\Software\MPV\portable_config\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\MPV\Run_yt-dlp.bat" "%OutputDir%\Customization\Software\MPV\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\MPV\Run_yt-dlp.cmd" "%OutputDir%\Customization\Software\MPV\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\MPV\README.md" "%OutputDir%\Customization\Software\MPV\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\MPV\yt-dlp.conf" "%OutputDir%\Customization\Software\MPV\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\MPV\settings.xml" "%OutputDir%\Customization\Software\MPV\"  /s /y /i
@@ -94,7 +94,7 @@ rd /s /q "%OutputDir%\Customization\Software\MPV\portable_config\cache"
 
 :N_m3u8DL-RE
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\N_m3u8DL-RE.exe" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\Run_N_m3u8DL-RE.bat" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\Run_N_m3u8DL-RE.cmd" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_ad_keyword.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_common.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_live_record.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\"  /s /y /i
@@ -108,7 +108,7 @@ xcopy "%BackupDir%\..\..\Software\PixPin\Config\PixPinConfig.json" "%OutputDir%\
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config\prolasso.ini" "%OutputDir%\Customization\Software\ProcessLasso\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config\ProlassoCNSettings.reg" "%OutputDir%\Customization\Software\ProcessLasso\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config\ProlassoEN.reg" "%OutputDir%\Customization\Software\ProcessLasso\config\"  /s /y /i
-xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\_Start-ProcessLasso.bat" "%OutputDir%\Customization\Software\ProcessLasso\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\_Start-ProcessLasso.cmd" "%OutputDir%\Customization\Software\ProcessLasso\"  /s /y /i
 
 :Snipaste
 xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%OutputDir%\Customization\Software\Snipaste\"  /s /y /i

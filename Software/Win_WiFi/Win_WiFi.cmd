@@ -43,34 +43,34 @@ if %a%==5 goto DHCP
 :Build_WiFi
 cls
 @echo off
-CALL "%b%\Modules\Build_WiFi.bat"
+CALL "%b%\Modules\Build_WiFi.cmd"
 @echo.
 Goto menu
 
 :Open_WiFi
 cls
 @echo off
-CALL "%b%\Modules\Open_WiFi.bat"
+CALL "%b%\Modules\Open_WiFi.cmd"
 @echo.
 Goto menu
 
 :Restart_WiFi
 cls
 @echo off
-CALL "%b%\Modules\Restart_WiFi.bat"
+CALL "%b%\Modules\Restart_WiFi.cmd"
 @echo.
 Goto menu
 
 :Close_WiFi
 cls
 @echo off
-CALL "%b%\Modules\Close_WiFi.bat"
+CALL "%b%\Modules\Close_WiFi.cmd"
 @echo.
 Goto menu
 
 :DHCP
 cls
 @echo off
-CALL "%b%\Modules\DHCP.bat"
+CALL "%b%\Modules\DHCP.cmd"
 @echo.
 Goto menu

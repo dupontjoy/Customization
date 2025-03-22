@@ -26,8 +26,8 @@ set "TargetFolder1=E:\My Documents\Nutstore\NutStoreSync\Firefox\Profiles"
 :Profiles
 cls
 @echo off
-CALL "%~dp0Modules\Profiles-Files.bat"
-CALL "%~dp0Modules\Profiles-Zip.bat"
+CALL "%~dp0Modules\Profiles-Files.cmd"
+CALL "%~dp0Modules\Profiles-Zip.cmd"
 call :when_done
 @echo.
 Goto eof
