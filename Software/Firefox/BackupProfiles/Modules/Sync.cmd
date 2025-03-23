@@ -1,4 +1,4 @@
-::2025.02.20
+::2025.03.22
 
 Title 备份文件到托管网站
 ::界面颜色大小，Cols为宽，Lines为高
@@ -70,6 +70,10 @@ xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\CopyFileName.vbs
 xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Run_Listary6.cmd" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\"  /s /y /i
 
+:localsend
+xcopy "%BackupDir%\..\..\..\LocalSend\update-localsend.cmd" "%OutputDir%\Customization\Software\LocalSend\"  /s /y /i
+
+
 :MAA
 xcopy "%BackupDir%\..\..\..\MAA\Run_MAA.cmd" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
 xcopy "%BackupDir%\..\..\..\MAA\update_MaaResource.cmd" "%OutputDir%\Customization\Software\MAA\"  /s /y /i
@@ -110,6 +114,9 @@ xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config\ProlassoCNSettings.reg"
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config\ProlassoEN.reg" "%OutputDir%\Customization\Software\ProcessLasso\config\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\_Start-ProcessLasso.cmd" "%OutputDir%\Customization\Software\ProcessLasso\"  /s /y /i
 
+:readest
+xcopy "%BackupDir%\..\..\..\readest\update-readest.cmd" "%OutputDir%\Customization\Software\readest\"  /s /y /i
+
 :Snipaste
 xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%OutputDir%\Customization\Software\Snipaste\"  /s /y /i
 
@@ -124,6 +131,7 @@ xcopy "%BackupDir%\..\..\Software\totalcmd64\Default.bar" "%OutputDir%\Customiza
 xcopy "%BackupDir%\..\..\Software\totalcmd64\Default.br2" "%OutputDir%\Customization\Software\TotalCMD\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\totalcmd64\user\user.ini" "%OutputDir%\Customization\Software\TotalCMD\user\"  /s /y /i
 xcopy "%BackupDir%\..\..\Software\totalcmd64\user\TCIgnore.ini" "%OutputDir%\Customization\Software\TotalCMD\user\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\Everything.ini" "%OutputDir%\Customization\Software\TotalCMD\Tools\"  /s /y /i
 
 :trafficmonitor
 xcopy "%BackupDir%\..\..\..\TrafficMonitor\config.json" "%OutputDir%\Customization\Software\TrafficMonitor\"  /s /y /i

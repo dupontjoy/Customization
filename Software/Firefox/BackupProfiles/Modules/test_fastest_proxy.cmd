@@ -1,5 +1,4 @@
 @echo off
-pushd %~dp0
 
 goto :test_fastest_proxy
  
@@ -26,7 +25,7 @@ exit /b
 set "test_url=https://github.com/Jackchows/Cangjie5/raw/master/README.md"
 
 :: 定义镜像站点列表
-set "proxies=gh-proxy.com ghproxy.net github.moeyy.xyz"
+set "proxies=gh-proxy.com ghproxy.net"
 
 :: 初始化变量
 set "fastest_proxy="

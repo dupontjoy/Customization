@@ -64,10 +64,10 @@ del click.vbs
 REM 等点击微信登录几秒后再启動
 timeout /t 5 /nobreak >nul
 ::Listary5代
-::start  "" "%cd%\Listary Pro\UserData\Run_listary.bat"
+::start  "" "%cd%\Listary Pro\UserData\Run_listary.cmd"
 
 ::Listary6代
-start  "" "%cd%\Listary6\UserProfile\Settings\Run_Listary6.bat"
+start  "" "%cd%\Listary6\UserProfile\Settings\Run_Listary6.cmd"
 
 :capslock
 ::必须使用pushd+cd方式获取并保存路径的方式启動，相對路径的動作和命令才能生效
