@@ -9,13 +9,16 @@ title 一键更新MaaResource
 COLOR 0a
 cls
 
+:: 最小化当前窗口
+powershell -window minimized -command "Start-Process cmd -ArgumentList '/c %~0' -WindowStyle Hidden"
+
 pushd %~dp0
 
 :: 下载工具配置
 set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 
-:test_fastest_proxy
-CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_proxy.cmd"
+:test_fastest_ghmirror
+CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 
 ::=======================================
 :: 主流程

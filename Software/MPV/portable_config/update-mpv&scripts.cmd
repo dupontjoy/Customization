@@ -6,6 +6,9 @@ setlocal enabledelayedexpansion
 title 一键更新MPV和脚本
 color 0a
 
+:: 最小化当前窗口
+powershell -window minimized -command "Start-Process cmd -ArgumentList '/c %~0' -WindowStyle Hidden"
+
 pushd %~dp0
 
 ::删除mpv缓存
@@ -15,8 +18,8 @@ rd /s /q "%cd%\cache"
 :: 下载工具配置
 set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 
-:test_fastest_proxy
-CALL "%cd%\..\..\..\Profiles\BackupProfiles\Modules\test_fastest_proxy.cmd"
+:test_fastest_ghmirror
+CALL "%cd%\..\..\..\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 
 ::=======================================
 :: 主流程

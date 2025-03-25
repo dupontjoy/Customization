@@ -7,6 +7,9 @@ title 一键更新localsend
 COLOR 0A
 cls
 
+:: 最小化当前窗口
+powershell -window minimized -command "Start-Process cmd -ArgumentList '/c %~0' -WindowStyle Hidden"
+
 ::=======================================
 :: 初始化配置
 ::=======================================
@@ -16,8 +19,8 @@ pushd "%~dp0"
 set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 
 
-:test_fastest_proxy
-CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_proxy.cmd"
+:test_fastest_ghmirror
+CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 
 ::=======================================
 :: 主流程

@@ -1,7 +1,7 @@
 ::2025.03.02
 
 @echo off
-setlocal enabledelayedexpansion
+
 
 Title 批量启动程序
 color 0a
