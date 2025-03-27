@@ -1,8 +1,6 @@
 :: 2025.02.28
 
 @echo off
-setlocal enabledelayedexpansion
-
 title 一键更新readest portable
 COLOR 0A
 cls
@@ -18,7 +16,6 @@ pushd "%~dp0"
 :: 下载工具配置
 set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 
-
 :test_fastest_ghmirror
 CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 
@@ -28,8 +25,6 @@ CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 :menu
 call :updating_readest
 call :end
-exit /b
-
 
 ::=======================================
 :: 子程序
@@ -62,13 +57,10 @@ powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -U
 
 :: 清理临时文件
 del download_url.tmp 2>nul
-
-
+endlocal
 
 ::=======================================
 :: 结束处理
 ::=======================================
 :end
-echo.&echo █ 操作已完成！5秒后自动关闭...
 timeout /t 5 /nobreak
-exit /b

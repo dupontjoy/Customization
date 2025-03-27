@@ -1,8 +1,6 @@
 ::2023.11.03
 
 @echo off
-setlocal enabledelayedexpansion
-
 title Ò»¼üÏÂÔØ Huibq°ælx musicÒôÔ´
 color 0a
 

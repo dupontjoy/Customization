@@ -1,7 +1,6 @@
 :: 2025.02.28
 
 @echo off
-setlocal enabledelayedexpansion
 
 title 一键更新Firefox uc脚本 和 customCSS样式
 COLOR 0A
@@ -30,7 +29,6 @@ call :updating_uc
 call :updating_flashgot
 call :updating_customCSS
 call :end
-exit /b
 
 ::=======================================
 :: 子程序：更新UC脚本
@@ -124,6 +122,8 @@ powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -U
 
 :: 清理临时文件
 del download_url.tmp 2>nul
+endlocal
+
 
 :: 删除旧版customCSS文件
 rd /s /q "%cd%\..\config"
@@ -144,6 +144,4 @@ goto :eof
 :: 结束处理
 ::=======================================
 :end
-echo.&echo █ 操作已完成！5秒后自动关闭...
 timeout /t 5 /nobreak
-exit /b

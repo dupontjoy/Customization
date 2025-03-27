@@ -1,8 +1,6 @@
 ::2025.03.02
 
 @echo off
-
-
 Title 批量启动程序
 color 0a
 cls
@@ -64,7 +62,7 @@ del click.vbs
 REM 等点击微信登录几秒后再启動
 timeout /t 5 /nobreak >nul
 ::Listary5代
-::start  "" "%cd%\Listary Pro\UserData\Run_listary.cmd"
+::start  "" "%cd%\Listary Pro\UserData\Run_listary5.cmd"
 
 ::Listary6代
 start  "" "%cd%\Listary6\UserProfile\Settings\Run_Listary6.cmd"

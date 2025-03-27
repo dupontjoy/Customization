@@ -1,8 +1,6 @@
 ::2025.03.12
 
 @echo off
-setlocal enabledelayedexpansion
-
 title 一键更新MPV和脚本
 color 0a
 
@@ -35,7 +33,7 @@ call :end
 goto :eof
 
 :updating_scripts
-setlocal enabledelayedexpansion
+setlocal
 
 :: 创建目录（如果不存在）
 mkdir scripts 2>nul
@@ -90,6 +88,8 @@ for /f "delims=" %%a in (urls.tmp) do (
 
 :: 清理临时文件
 del urls.tmp
+endlocal
+
 goto :eof
 
 :updating_uosc
@@ -102,6 +102,7 @@ echo. [下载] %GH_PROXY%/https://github.com/tomasklaen/uosc/releases/latest/downl
 :: 解压
 echo. extracting uosc.zip
 tar -xvf .\uosc.zip
+del /s /q .\uosc.zip
 goto :eof
 
 :updating_yt-dlp
@@ -111,7 +112,7 @@ echo. [下载] %GH_PROXY%/https://github.com/yt-dlp/yt-dlp/releases/latest/downloa
 goto :eof
 
 :updating_mpv
-setlocal enabledelayedexpansion
+setlocal
 
 :: GitHub API 地址和文件名匹配模式
 set "api_url=https://api.github.com/repos/zhongfly/mpv-winbuild/releases/latest"
@@ -138,10 +139,12 @@ powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -U
 
 :: 清理临时文件
 del mpv_download_url.tmp 2>nul
+endlocal
+
 goto :eof
 
 :updating_ffmpeg
-setlocal enabledelayedexpansion
+setlocal
 
 :: GitHub API 地址和文件名匹配模式
 set "api_url=https://api.github.com/repos/zhongfly/mpv-winbuild/releases/latest"
@@ -167,6 +170,8 @@ powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -U
 
 :: 清理临时文件
 del ffmpeg_download_url.tmp 2>nul
+endlocal
+
 goto :eof
 
 :unzip_mpv_ffmpeg
@@ -178,8 +183,8 @@ set zip=..\..\..\7-Zip\7z.exe
 %zip% x -y -aoa -sccUTF-8 -scsWIN .\mpv-x86_64_Latest.7z
 :: 解压新版ffmpeg文件
 %zip% x -y -aoa -sccUTF-8 -scsWIN .\ffmpeg-x86_64-git_Latest.7z
-:: del /s /q .\mpv-x86_64_Latest.7z
-:: del /s /q .\ffmpeg-x86_64-git_Latest.7z
+del /s /q .\mpv-x86_64_Latest.7z
+del /s /q .\ffmpeg-x86_64-git_Latest.7z
 
 popd
 

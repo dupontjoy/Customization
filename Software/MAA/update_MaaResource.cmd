@@ -1,8 +1,6 @@
 ::2025.02.26
 
 @echo off
-setlocal enabledelayedexpansion
-
 title 一键更新MaaResource
 
 ::界面大小，Cols为宽，Lines为高

@@ -1,4 +1,6 @@
 @echo off
+setlocal enabledelayedexpansion
+
 goto :test_fastest_ghmirror
 
 :compare_speed
@@ -17,7 +19,7 @@ exit /b
 :: 测试链接和镜像列表
 :: 镜像来源：Github 增强 - 高速下载
 set "test_url=Jackchows/Cangjie5/raw/master/largefile.zip"
-set "proxies=gh-proxy.com,ghproxy.net,ghfast.top,ghproxy.1888866.xyz,gh.ddlc.top,slink.ltd,hub.gitmirror.com,ghproxy.cfd,github.yongyong.online,github.boki.moe"
+set "proxies=gh-proxy.com,ghfast.top,ghproxy.1888866.xyz,gh.ddlc.top,hub.gitmirror.com,ghproxy.cfd,github.yongyong.online,github.boki.moe"
 
 :: 初始化最快记录
 set "fastest_proxy="
@@ -42,4 +44,5 @@ for %%p in (!proxies!) do (
 echo ------------------------
 echo 最快的镜像站点是: !fastest_proxy! (下载速度 !fastest_speed! 字节/秒)
 set "GH_PROXY=https://!fastest_proxy!"
-echo GH_PROXY=!GH_PROXY!
+endlocal & set "GH_PROXY=%GH_PROXY%"
+echo GH_PROXY=%GH_PROXY%
