@@ -33,7 +33,7 @@ call :end
 goto :eof
 
 :updating_scripts
-setlocal
+setlocal enabledelayedexpansion
 
 :: 创建目录（如果不存在）
 mkdir scripts 2>nul
@@ -112,7 +112,7 @@ echo. [下载] %GH_PROXY%/https://github.com/yt-dlp/yt-dlp/releases/latest/downloa
 goto :eof
 
 :updating_mpv
-setlocal
+setlocal enabledelayedexpansion
 
 :: GitHub API 地址和文件名匹配模式
 set "api_url=https://api.github.com/repos/zhongfly/mpv-winbuild/releases/latest"
@@ -144,7 +144,7 @@ endlocal
 goto :eof
 
 :updating_ffmpeg
-setlocal
+setlocal enabledelayedexpansion
 
 :: GitHub API 地址和文件名匹配模式
 set "api_url=https://api.github.com/repos/zhongfly/mpv-winbuild/releases/latest"

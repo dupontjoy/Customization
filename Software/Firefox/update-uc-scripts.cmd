@@ -29,12 +29,13 @@ call :updating_uc
 call :updating_flashgot
 call :updating_customCSS
 call :end
+goto :eof
 
 ::=======================================
 :: 子程序：更新UC脚本
 ::=======================================
 :updating_uc
-setlocal
+setlocal enabledelayedexpansion
 echo.&echo █ 正在更新UC脚本...
 
 :: 生成下载列表
@@ -73,15 +74,17 @@ xcopy "%cd%\program\config.js" "%cd%\..\..\..\..\Firefox\"  /s /y /i
 rd /s /q "%cd%\profile"
 rd /s /q "%cd%\program"
 
+del /s /q .\fx100.zip
+
 del urls.tmp
 endlocal
-exit /b
+goto :eof
 
 ::=======================================
 :: 子程序：更新FlashGot
 ::=======================================
 :updating_flashgot
-setlocal
+setlocal enabledelayedexpansion
 echo.&echo █ 正在更新FlashGot...
 
 set "save_path=..\UserTools\flashgot.exe"
@@ -89,13 +92,13 @@ if not exist "..\UserTools\" md "..\UserTools"
 
 %Curl_Download% -o "%save_path%" "%GH_PROXY%/https://github.com/benzBrake/Firefox-downloadPlus.uc.js/releases/latest/download/flashgot.exe"
 endlocal
-exit /b
+goto :eof
 
 ::=======================================
 :: 子程序：更新CustomCSS
 ::=======================================
 :updating_customCSS
-setlocal
+setlocal enabledelayedexpansion
 echo.&echo █ 正在更新CustomCSS...
 
 :: GitHub API 地址和文件名匹配模式
@@ -136,12 +139,10 @@ pushd %~dp0
 cd ..\
 :: 解压新版customCSS文件
 tar -xvf .\CustomCSSforFx_Latest.zip
+del /s /q .\CustomCSSforFx_Latest.zip
 popd
 
 goto :eof
 
-::=======================================
-:: 结束处理
-::=======================================
 :end
-timeout /t 5 /nobreak
+timeout /t 3 /nobreak
