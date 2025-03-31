@@ -640,7 +640,7 @@
 		},
 		{
 			"enable": true,
-			"name": "网站UA设置为Chrome",
+			"name": "网站UA设置为Edge",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
 			"pattern": "^https?:\\/\\/.*(bili|huya|kuaishou|douyu|jianshu|youtube|google).*",
@@ -648,7 +648,7 @@
 			"isFunction": false,
 			"action": {
 				"name": "user-agent",
-				"value": "Chrome/1000"
+				"value": "Edge/1000"
 			},
 			"group": "CingList-Request",
 			"encoding": "UTF-8"

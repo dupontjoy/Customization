@@ -1,9 +1,6 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
-      "DirectoryOpus": {
-        "EnableMouseMiddleClick": false
-      },
       "WindowsExplorer": {
         "EnableMouseMiddleClick": false
       },
@@ -15,6 +12,9 @@
         "EnableMouseMiddleClick": false
       },
       "TotalCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "DirectoryOpus": {
         "EnableMouseMiddleClick": false
       },
       "FreeCommander": {
@@ -134,7 +134,6 @@
             "Path": "cmd.exe",
             "Parameter": "/c \"mpv {query}\"",
             "WorkingDirectory": "..\\MPV\\",
-            "RunAsAdmin": true,
             "Silent": true,
             "Id": "8c7b728d-5828-4c8b-ae7c-b2e04614814e",
             "Keyword": "mpv",
@@ -169,11 +168,13 @@
           "Item": {
             "Keyword": "db",
             "Url": "https://www.douban.com/search?q={query}",
-            "Title": "Search 豆瓣 for '{query}'",
+            "Title": "豆瓣",
             "Icon": {
               "Path": "{user}\\43d21b46-9a6e-4fda-8b61-3999a0baea8b.png",
               "TypeName": "Path"
-            }
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://www.douban.com/search?q={query}"
           }
         },
         {
@@ -182,11 +183,13 @@
           "Item": {
             "Keyword": "sg",
             "Url": "https://www.sogou.com/web?query={query}",
-            "Title": "Search 搜狗 for 'query'",
+            "Title": "搜狗",
             "Icon": {
               "Path": "{user}\\107649dc-d39b-4d3e-844a-e190aa484114.png",
               "TypeName": "Path"
-            }
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://www.sogou.com/web?query={query}"
           }
         },
         {
@@ -195,11 +198,13 @@
           "Item": {
             "Keyword": "ds",
             "Url": "https://www.dushe9.app/search?k={query}",
-            "Title": "Search 毒舌電影 for 'query'",
+            "Title": "毒舌電影",
             "Icon": {
               "Path": "{user}\\b48ff520-dafb-4ff1-8463-f2e6b1225a37.png",
               "TypeName": "Path"
-            }
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://www.dushe9.app/search?k={query}"
           }
         },
         {
@@ -208,11 +213,13 @@
           "Item": {
             "Keyword": "prts",
             "Url": "https://prts.wiki/w/{query}",
-            "Title": "Search PRTS for 'query'",
+            "Title": "PRTS",
             "Icon": {
               "Path": "{user}\\78ec2357-c391-4b1d-ba90-000a20e1e47a.png",
               "TypeName": "Path"
-            }
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://prts.wiki/w/{query}"
           }
         }
       ],
@@ -226,21 +233,21 @@
         {
           "Id": "c78295a6-2cf8-4569-bf42-33f1e5c030d7",
           "UpdatedProperties": {
-            "Keyword": "wk"
+            "Keyword": "wk",
+            "Title": "Wiki"
           }
         },
         {
           "Id": "dd896809-2af4-405b-834f-45816615e3e3",
           "UpdatedProperties": {
             "Keyword": "bi",
-            "Url": "https://www.bing.com/search?q={query}"
+            "Url": "https://www.bing.com/search?q={query}&FORM=ANAB01"
           }
         },
         {
           "Id": "b36cf1bb-5527-42d8-bf91-d034bcbf057b",
           "UpdatedProperties": {
-            "Url": "https://www.baidu.com/s?wd={query}",
-            "Title": "Search 百度 for '{query}'"
+            "Url": "https://www.baidu.com/s?wd={query}"
           }
         },
         {
@@ -272,26 +279,34 @@
           "Id": "610a486d-0028-4739-8eb6-50f5247c918f",
           "UpdatedProperties": {
             "Keyword": "amz",
-            "Url": "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}"
+            "Url": "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}",
+            "SuggestionUrl": "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}"
           }
         },
         {
           "Id": "2db0261a-1114-4c8d-8cc8-62a89aeb1a35",
           "UpdatedProperties": {
             "Keyword": "eb",
-            "Url": "https://www.ebay.com/sch/?_nkw={query}"
+            "Url": "https://www.ebay.com/sch/?_nkw={query}",
+            "Title": "Ebay",
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://www.ebay.com/sch/?_nkw={query}"
           }
         },
         {
           "Id": "455e1dc4-5e38-4b00-85da-d0bf46c68f4f",
           "UpdatedProperties": {
-            "Url": "https://www.imdb.com/find?s=all&q={query}"
+            "Url": "https://www.imdb.com/find?s=all&q={query}",
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://www.imdb.com/find?s=all&q={query}"
           }
         },
         {
           "Id": "1744aa0c-751a-495f-aac5-6910e7406229",
           "UpdatedProperties": {
-            "Keyword": "fb"
+            "Keyword": "fb",
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "FB"
           }
         }
       ]
