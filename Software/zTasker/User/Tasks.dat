@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 07:57:00</StartDateTime>
 		<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-		<NextRunDateTime>2025-04-01 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-04-01 07:57:00</NextRunTime>
-		<LastRunTime>2025-03-31 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-04-04 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-04-04 07:57:00</NextRunTime>
+		<LastRunTime>2025-04-03 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -214,9 +214,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 08:57:00</StartDateTime>
 		<EndDateTime>2025-03-20 06:43:12</EndDateTime>
-		<NextRunDateTime>2025-03-31 08:57:00</NextRunDateTime>
-		<NextRunTime>2025-03-31 08:57:00</NextRunTime>
-		<LastRunTime>2025-03-30 08:57:00</LastRunTime>
+		<NextRunDateTime>2025-04-04 08:57:00</NextRunDateTime>
+		<NextRunTime>2025-04-04 08:57:00</NextRunTime>
+		<LastRunTime>2025-04-03 08:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -473,9 +473,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 17:57:00</StartDateTime>
 		<EndDateTime>2025-03-19 13:26:24</EndDateTime>
-		<NextRunDateTime>2025-03-31 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-03-31 17:57:00</NextRunTime>
-		<LastRunTime>2025-03-30 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-04-03 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-04-03 17:57:00</NextRunTime>
+		<LastRunTime>2025-04-02 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -732,9 +732,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-25 18:57:00</StartDateTime>
 		<EndDateTime>2025-03-20 02:52:48</EndDateTime>
-		<NextRunDateTime>2025-03-31 18:57:00</NextRunDateTime>
-		<NextRunTime>2025-03-31 18:57:00</NextRunTime>
-		<LastRunTime>2025-03-30 18:57:00</LastRunTime>
+		<NextRunDateTime>2025-04-03 18:57:00</NextRunDateTime>
+		<NextRunTime>2025-04-03 18:57:00</NextRunTime>
+		<LastRunTime>2025-04-02 18:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -991,9 +991,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-24 21:27:00</StartDateTime>
 		<EndDateTime>2025-03-20 06:43:12</EndDateTime>
-		<NextRunDateTime>2025-03-31 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-03-31 21:27:00</NextRunTime>
-		<LastRunTime>2025-03-30 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-04-03 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-04-03 21:27:00</NextRunTime>
+		<LastRunTime>2025-04-02 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -1248,9 +1248,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-08-24 22:27:00</StartDateTime>
 		<EndDateTime>2025-03-20 06:43:12</EndDateTime>
-		<NextRunDateTime>2025-03-31 22:27:00</NextRunDateTime>
-		<NextRunTime>2025-03-31 22:27:00</NextRunTime>
-		<LastRunTime>2025-03-30 22:27:00</LastRunTime>
+		<NextRunDateTime>2025-04-03 22:27:00</NextRunDateTime>
+		<NextRunTime>2025-04-03 22:27:00</NextRunTime>
+		<LastRunTime>2025-04-02 22:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -1719,10 +1719,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-03-29 22:43:12</EndDateTime>
-		<NextRunDateTime>2125-03-07 07:49:35</NextRunDateTime>
+		<EndDateTime>2025-04-03 21:26:24</EndDateTime>
+		<NextRunDateTime>2125-03-10 07:30:07</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-03-31 07:49:35</LastRunTime>
+		<LastRunTime>2025-04-03 07:30:07</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -1934,103 +1934,7 @@ env2=value2</edtAppEnv>
 				<ID>23</ID>
 			</Tasker>
 			<Delay>
-				<Sec>50000</Sec>
-				<Sec2>4980736</Sec2>
-				<Random>0</Random>
-				<Name>延迟</Name>
-				<ID>33</ID>
-			</Delay>
-			<Tasker>
-				<ID>71</ID>
-				<TaskType>ttWndClose</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
-				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
-				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>2</Ver>
-				<Param>
-					<AppParam></AppParam>
-					<AppPath></AppPath>
-					<BackClr>-12500671</BackClr>
-					<DialPass></DialPass>
-					<DialUser></DialUser>
-					<FileParam></FileParam>
-					<FilePath></FilePath>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>登录微信后关闭窗口</Name>
-					<PassExitRest></PassExitRest>
-					<PlayTime>10</PlayTime>
-					<ProcName></ProcName>
-					<RemindTitle></RemindTitle>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SearchEngineNames></SearchEngineNames>
-					<SearchEngines></SearchEngines>
-					<SnapDir></SnapDir>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<SoundPath></SoundPath>
-					<SvcStart></SvcStart>
-					<SvcStop></SvcStop>
-					<TitleShow>关闭窗口</TitleShow>
-					<TypeShow>窗口</TypeShow>
-					<VolAdd>10</VolAdd>
-					<VolDec>10</VolDec>
-					<VolSet>10</VolSet>
-					<Webpage></Webpage>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<chkWinClosePart>1</chkWinClosePart>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbClass_text></cmbClass_text>
-					<cmbHotkey>0</cmbHotkey>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
-					<edtTaskName>登录微信后关闭窗口</edtTaskName>
-					<edtTaskSubName>登录微信后关闭窗口</edtTaskSubName>
-					<edtWndCloseClass>Qt51514QWindowIcon</edtWndCloseClass>
-					<edtWndCloseTitle>微信（测试版）</edtWndCloseTitle>
-					<httpReq></httpReq>
-					<httpReqHeader></httpReqHeader>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<optWinCloseMulti>0</optWinCloseMulti>
-					<optWinCloseSingle>1</optWinCloseSingle>
-					<sldZipLevel>3</sldZipLevel>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>登录微信后关闭窗口</Name>
-				<ID>71</ID>
-			</Tasker>
-			<Delay>
-				<Sec>5000</Sec>
+				<Sec>15000</Sec>
 				<Sec2>99000</Sec2>
 				<Random>0</Random>
 				<Name>延迟</Name>
@@ -2209,14 +2113,12 @@ env2=value2</edtAppEnv>
 					<cmbHotkey>0</cmbHotkey>
 					<edtActionRec>928,MouseLeftDown,578,350
 1056,MouseLeftUp,578,350
-6704,MouseLeftDown,578,350
-6832,MouseLeftUp,578,350
 </edtActionRec>
 					<edtBackSaveDir></edtBackSaveDir>
 					<edtBackZipCount>10</edtBackZipCount>
 					<edtBackZipName></edtBackZipName>
 					<edtBackZipPass></edtBackZipPass>
-					<edtTaskName>录制動作-steam302重启服务</edtTaskName>
+					<edtTaskName>录制-steam302重启服务</edtTaskName>
 					<edtTaskSubName>录制-steam302重启服务</edtTaskSubName>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
@@ -2499,9 +2401,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 08:50:00</StartDateTime>
 		<EndDateTime>2025-03-30 09:16:48</EndDateTime>
-		<NextRunDateTime>2025-04-01 08:50:00</NextRunDateTime>
-		<NextRunTime>2025-04-01 08:50:00</NextRunTime>
-		<LastRunTime>2025-03-31 08:50:00</LastRunTime>
+		<NextRunDateTime>2025-04-04 08:50:00</NextRunDateTime>
+		<NextRunTime>2025-04-04 08:50:00</NextRunTime>
+		<LastRunTime>2025-04-03 08:50:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -3014,7 +2916,7 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 12:00:00</StartDateTime>
-		<EndDateTime>2025-03-27 15:45:04</EndDateTime>
+		<EndDateTime>2025-04-02 07:30:08</EndDateTime>
 		<NextRunDateTime>2025-04-06 12:00:00</NextRunDateTime>
 		<NextRunTime>2025-04-06 12:00:00</NextRunTime>
 		<LastRunTime>2025-03-30 12:00:00</LastRunTime>
@@ -3134,8 +3036,8 @@ env2=value2</edtAppEnv>
 			<optHKMouse>0</optHKMouse>
 			<tabBtnExec>0</tabBtnExec>
 			<tabBtnHK>0</tabBtnHK>
-			<tabBtnSch>1</tabBtnSch>
-			<tabBtnTask>0</tabBtnTask>
+			<tabBtnSch>0</tabBtnSch>
+			<tabBtnTask>1</tabBtnTask>
 		</Param>
 		<Actions>
 			<Tasker>
@@ -3356,7 +3258,7 @@ env2=value2</edtAppEnv>
 					<FilePath></FilePath>
 					<IsExitRest>0</IsExitRest>
 					<IsPassExitRest>0</IsPassExitRest>
-					<Name>更新UC脚本</Name>
+					<Name>更新uc脚本</Name>
 					<PassExitRest></PassExitRest>
 					<PlayTime>10</PlayTime>
 					<ProcName></ProcName>
@@ -3413,8 +3315,8 @@ env2=value2</edtAppEnv>
 					<edtBackZipName></edtBackZipName>
 					<edtBackZipPass></edtBackZipPass>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>update uc</edtTaskName>
-					<edtTaskSubName>更新UC脚本</edtTaskSubName>
+					<edtTaskName>更新UC脚本</edtTaskName>
+					<edtTaskSubName>更新uc脚本</edtTaskSubName>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
@@ -3426,7 +3328,7 @@ env2=value2</edtAppEnv>
 					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
-				<Name>更新UC脚本</Name>
+				<Name>更新uc脚本</Name>
 				<ID>78</ID>
 			</Tasker>
 			<Tasker>

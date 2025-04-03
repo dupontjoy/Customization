@@ -1,3 +1,5 @@
+:: 2025.04.01
+
 @echo off
 setlocal enabledelayedexpansion
 
@@ -19,7 +21,7 @@ exit /b
 :: 测试链接和镜像列表
 :: 镜像来源：Github 增强 - 高速下载
 set "test_url=Jackchows/Cangjie5/raw/master/largefile.zip"
-set "proxies=gh-proxy.com,ghfast.top,ghproxy.1888866.xyz,gh.ddlc.top,hub.gitmirror.com,ghproxy.cfd,github.yongyong.online,github.boki.moe"
+set "proxies=ghproxy.monkeyray.net,hub.gitmirror.com,ghproxy.cfd,github.boki.moe, gh.jasonzeng.dev, gh.monlor.com, fastgit.cc, mirrors.chenby.cn, gh.chjina.com, gh-proxy.ygxz.in"
 
 :: 初始化最快记录
 set "fastest_proxy="

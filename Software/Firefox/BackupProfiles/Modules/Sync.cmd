@@ -45,7 +45,7 @@ xcopy "%BackupDir%\chrome\userChromeJS\update-uc-scripts.cmd" "%OutputDir%\Custo
 xcopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Firefox\BackupProfiles"  /s /y /i
 
 :foobar
-xcopy "%BackupDir%\..\..\..\foobar2000_v2\profile\config.sqlite" "%OutputDir%\Customization\Software\foobar2000_v2\profile\"  /s /y /i
+xcopy "%BackupDir%\..\..\..\foobar2000\profile\config.sqlite" "%OutputDir%\Customization\Software\foobar2000\profile\"  /s /y /i
 
 :GoldenDict
 xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customization\Software\GoldenDict\"  /s /y /i

@@ -1,6 +1,9 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
+      "DirectoryOpus": {
+        "EnableMouseMiddleClick": false
+      },
       "WindowsExplorer": {
         "EnableMouseMiddleClick": false
       },
@@ -12,9 +15,6 @@
         "EnableMouseMiddleClick": false
       },
       "TotalCommander": {
-        "EnableMouseMiddleClick": false
-      },
-      "DirectoryOpus": {
         "EnableMouseMiddleClick": false
       },
       "FreeCommander": {

@@ -1,4 +1,4 @@
-:: 2025.02.28
+:: 2025.04.01
 
 @echo off
 
@@ -40,7 +40,7 @@ echo.&echo █ 正在更新UC脚本...
 
 :: 生成下载列表
 (
-echo %GH_PROXY%/https://raw.githubusercontent.com/benzBrake/FirefoxCustomize/master/userChromeJS/Loader/fx100.zip
+echo %GH_PROXY%/https://github.com/benzBrake/userChrome.js-Loader/archive/refs/heads/main.zip
 echo %GH_PROXY%/https://raw.githubusercontent.com/benzBrake/Firefox-downloadPlus.uc.js/main/downloadPlus_Fx136.uc.js
 ) > urls.tmp
 
@@ -65,16 +65,15 @@ for /f "delims=" %%a in (urls.tmp) do (
 
 :: 解压fx100zip并移动到指定文件夹
 :: x解压，v显示所有过程，f使用档案名字，切记，这个参数是最后一个参数
-tar -xvf .\fx100.zip
-xcopy "%cd%\profile\chrome\userChromeJS" "%cd%\..\userChromeJS"  /s /y /i
-xcopy "%cd%\profile\chrome\utils" "%cd%\..\utils"  /s /y /i
-xcopy "%cd%\profile\chrome\userChrome.js" "%cd%\..\"  /s /y /i
-xcopy "%cd%\program\defaults" "%cd%\..\..\..\..\Firefox\defaults"  /s /y /i
-xcopy "%cd%\program\config.js" "%cd%\..\..\..\..\Firefox\"  /s /y /i
-rd /s /q "%cd%\profile"
-rd /s /q "%cd%\program"
+tar -xvf .\main.zip
+xcopy "%cd%\userChrome.js-Loader-main\profile\chrome\userChromeJS" "%cd%\..\userChromeJS"  /s /y /i
+xcopy "%cd%\userChrome.js-Loader-main\profile\chrome\utils" "%cd%\..\utils"  /s /y /i
+xcopy "%cd%\userChrome.js-Loader-main\profile\chrome\userChrome.js" "%cd%\..\"  /s /y /i
+xcopy "%cd%\userChrome.js-Loader-main\program\defaults" "%cd%\..\..\..\..\Firefox\defaults"  /s /y /i
+xcopy "%cd%\userChrome.js-Loader-main\program\config.js" "%cd%\..\..\..\..\Firefox\"  /s /y /i
+rd /s /q "%cd%\userChrome.js-Loader-main"
 
-del /s /q .\fx100.zip
+:: del /s /q .\main.zip
 
 del urls.tmp
 endlocal
@@ -139,7 +138,7 @@ pushd %~dp0
 cd ..\
 :: 解压新版customCSS文件
 tar -xvf .\CustomCSSforFx_Latest.zip
-del /s /q .\CustomCSSforFx_Latest.zip
+:: del /s /q .\CustomCSSforFx_Latest.zip
 popd
 
 goto :eof
