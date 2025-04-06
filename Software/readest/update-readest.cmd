@@ -25,6 +25,7 @@ CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 :menu
 call :updating_readest
 call :end
+goto :eof
 
 ::=======================================
 :: 子程序
@@ -63,4 +64,4 @@ endlocal
 :: 结束处理
 ::=======================================
 :end
-timeout /t 5 /nobreak
+timeout /t 3 /nobreak

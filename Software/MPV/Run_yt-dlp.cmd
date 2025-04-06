@@ -20,7 +20,7 @@ call :common_input
 call :setting_path
 call :setting_yt-dlp_params
 call :yt-dlp_downloading
-call :when_done
+call :end
 goto :eof
 
 ::---------------输入部分---------------
@@ -85,7 +85,6 @@ goto :eof
 
 ::---------------结束部分---------------
 ::下载完成暂停一段时间关闭窗口，防止运行报错时直接关闭窗口。
-:when_done
+:end
 timeout /t 3 /nobreak
-exit
 goto :eof

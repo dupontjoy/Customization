@@ -39,7 +39,7 @@ echo.
 call :common_input
 call :setting_video_download_no_ad
 call :video_downloading
-call :when_done
+call :end
 goto :eof
 
 :live_record
@@ -49,7 +49,7 @@ echo.
 call :common_input & call :record_limit_input
 call :setting_live_record
 call :live_recording
-call :when_done
+call :end
 goto :eof
 
 
@@ -133,6 +133,6 @@ goto :eof
 
 ::---------------结束部分---------------
 ::下载完成暂停一段时间关闭窗口，防止运行报错时直接关闭窗口，来不及看错误信息。
-:when_done
+:end
 timeout /t 3 /nobreak
 goto :eof

@@ -25,6 +25,7 @@ CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 :menu
 call :updating_localsend
 call :end
+goto :eof
 
 ::=======================================
 :: 子程序
@@ -66,4 +67,4 @@ tar -xvf .\localsend-latest.zip
 :: 结束处理
 ::=======================================
 :end
-timeout /t 5 /nobreak
+timeout /t 3 /nobreak
