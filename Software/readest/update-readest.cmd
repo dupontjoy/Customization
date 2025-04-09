@@ -16,13 +16,11 @@ pushd "%~dp0"
 :: 下载工具配置
 set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 
-:test_fastest_ghmirror
-CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
-
 ::=======================================
 :: 主流程
 ::=======================================
 :menu
+call :test_fastest_ghmirror
 call :updating_readest
 call :end
 goto :eof
@@ -30,6 +28,10 @@ goto :eof
 ::=======================================
 :: 子程序
 ::=======================================
+:test_fastest_ghmirror
+CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
+goto :eof
+
 :updating_readest
 setlocal
 echo.&echo █ 正在更新readest...

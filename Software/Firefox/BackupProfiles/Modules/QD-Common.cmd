@@ -69,7 +69,7 @@ start  "" "%cd%\Listary6\UserProfile\Settings\Run_Listary6.cmd"
 
 :capslock
 ::必须使用pushd+cd方式获取并保存路径的方式启動，相對路径的動作和命令才能生效
-::跳转到Capslock+文件夹
+::必须跳转到Capslock+文件夹，启動時会生成配置文件
 cd .\Capslock+\
 start  "" "%cd%\Capslock+_v3.3.0.exe"
 

@@ -17,14 +17,11 @@ pushd "%~dp0"
 :: 下载工具配置
 set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 
-
-:test_fastest_ghmirror
-CALL "%cd%\..\..\..\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
-
 ::=======================================
 :: 主流程
 ::=======================================
 :menu
+call :test_fastest_ghmirror
 call :updating_uc
 call :updating_flashgot
 call :updating_customCSS
@@ -34,6 +31,10 @@ goto :eof
 ::=======================================
 :: 子程序：更新UC脚本
 ::=======================================
+:test_fastest_ghmirror
+CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
+goto :eof
+
 :updating_uc
 setlocal enabledelayedexpansion
 echo.&echo █ 正在更新UC脚本...
