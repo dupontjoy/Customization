@@ -1,4 +1,4 @@
-::2025.03.12
+::2025.04.10
 
 @echo off
 title 一键更新MPV和脚本
@@ -34,7 +34,7 @@ goto :eof
 :: 子程序
 ::=======================================
 :test_fastest_ghmirror
-CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
+call "%cd%\..\..\..\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 goto :eof
 
 :updating_scripts

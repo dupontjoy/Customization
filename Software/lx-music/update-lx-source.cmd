@@ -25,7 +25,7 @@ goto :eof
 :: ×Ó³ÌÐò
 ::=======================================
 :test_fastest_ghmirror
-CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
+CALL "D:\Program Files\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 goto :eof
 
 :updating

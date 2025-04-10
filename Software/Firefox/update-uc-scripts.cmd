@@ -1,4 +1,4 @@
-:: 2025.04.01
+:: 2025.04.10
 
 @echo off
 
@@ -25,6 +25,7 @@ call :test_fastest_ghmirror
 call :updating_uc
 call :updating_flashgot
 call :updating_customCSS
+call :updating_runfirefox
 call :end
 goto :eof
 
@@ -32,7 +33,7 @@ goto :eof
 :: 子程序：更新UC脚本
 ::=======================================
 :test_fastest_ghmirror
-CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
+call "%cd%\..\..\..\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 goto :eof
 
 :updating_uc
@@ -40,9 +41,9 @@ setlocal enabledelayedexpansion
 echo.&echo █ 正在更新UC脚本...
 
 :: 生成下载列表
+:: echo %GH_PROXY%/https://raw.githubusercontent.com/benzBrake/Firefox-downloadPlus.uc.js/main/downloadPlus_Fx136.uc.js
 (
 echo %GH_PROXY%/https://github.com/benzBrake/userChrome.js-Loader/archive/refs/heads/main.zip
-echo %GH_PROXY%/https://raw.githubusercontent.com/benzBrake/Firefox-downloadPlus.uc.js/main/downloadPlus_Fx136.uc.js
 ) > urls.tmp
 
 :: 批量下载文件
@@ -78,20 +79,20 @@ rd /s /q "%cd%\userChrome.js-Loader-main"
 
 del urls.tmp
 endlocal
+
 goto :eof
 
 ::=======================================
 :: 子程序：更新FlashGot
 ::=======================================
 :updating_flashgot
-setlocal enabledelayedexpansion
 echo.&echo █ 正在更新FlashGot...
 
 set "save_path=..\UserTools\flashgot.exe"
 if not exist "..\UserTools\" md "..\UserTools"
 
 %Curl_Download% -o "%save_path%" "%GH_PROXY%/https://github.com/benzBrake/Firefox-downloadPlus.uc.js/releases/latest/download/flashgot.exe"
-endlocal
+
 goto :eof
 
 ::=======================================
@@ -140,6 +141,45 @@ cd ..\
 :: 解压新版customCSS文件
 tar -xvf .\CustomCSSforFx_Latest.zip
 :: del /s /q .\CustomCSSforFx_Latest.zip
+popd
+
+goto :eof
+
+:updating_runfirefox
+setlocal enabledelayedexpansion
+echo.&echo █ 正在更新runfirefox...
+
+:: GitHub API 地址和文件名匹配模式
+set "api_url=https://api.github.com/repos/benzBrake/RunFirefox/releases/latest"
+set "file_pattern=RunFirefox_.*_x64\.zip"
+
+:: 使用 PowerShell 解析下载链接
+powershell -Command "$response = Invoke-WebRequest -Uri '%api_url%' -UseBasicParsing | ConvertFrom-Json; $asset = $response.assets | Where-Object { $_.name -match '%file_pattern%' } | Select-Object -First 1; if ($asset) { $asset.browser_download_url } else { exit 1 }" > download_url.tmp
+
+:: 检查是否获取到下载链接
+if %errorlevel% neq 0 (
+    echo 未找到匹配的文件
+    del download_url.tmp 2>nul
+    exit /b 1
+)
+
+:: 读取下载链接并添加镜像代理
+set /p original_url=<download_url.tmp
+set "download_url=%GH_PROXY%/%original_url%"
+
+:: 下载文件
+echo [下载] %download_url%
+powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%download_url%' -OutFile '%cd%\..\..\..\Run\RunFirefox_Latest.zip' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
+
+:: 清理临时文件
+del download_url.tmp 2>nul
+endlocal
+
+pushd %~dp0
+cd ..\..\..\Run\
+:: 解压新版customCSS文件
+tar -xvf .\RunFirefox_Latest.zip
+:: del /s /q .\RunFirefox_Latest.zip
 popd
 
 goto :eof

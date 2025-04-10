@@ -33,6 +33,7 @@ start /b "" cmd /c "cd /d %~dp0\adb\platform-tools&&adb disconnect 127.0.0.1:163
 rd /s /q "%cd%\debug"
 del /s /q "%cd%\compact_log.txt"
 del /s /q "%cd%\filelist.txt"
+del /s /q "%cd%\removelist.txt"
 del /s /q "%cd%\MaaResource_update.log"
 
 ::Æô¶¯MAA
