@@ -43,6 +43,7 @@ xcopy "%cd%\MaaResource-main\resource" "%cd%\resource"  /s /y /i
 
 del /s /q .\MaaResource-main.zip
 rd /s /q MaaResource-main
+
 goto :eof
 
 :update_maa_ota

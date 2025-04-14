@@ -62,6 +62,8 @@ powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -U
 del download_url.tmp 2>nul
 endlocal
 
+goto :eof
+
 ::=======================================
 :: Ω· ¯¥¶¿Ì
 ::=======================================

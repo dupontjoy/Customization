@@ -14,7 +14,7 @@ rem 設置路徑
 
 pushd %~dp0
 
-::从批处理所在位置到ProgramFiles文件夹,共跨了1层
+::从批处理所在文件夹到ProgramFiles文件夹,共跨了1层
 set MAA=MAA.exe
 set Player=..\MuMuPlayer\shell\MuMuPlayer.exe
 
@@ -35,6 +35,7 @@ del /s /q "%cd%\compact_log.txt"
 del /s /q "%cd%\filelist.txt"
 del /s /q "%cd%\removelist.txt"
 del /s /q "%cd%\MaaResource_update.log"
+del /s /q "%cd%\main.zip"
 
 ::启动MAA
 mshta vbscript:createobject("shell.application").shellexecute("""%MAA%""","::",,"runas",1)(window.close)
@@ -45,11 +46,9 @@ mshta vbscript:createobject("shell.application").shellexecute("""%Player%""","::
 :: 等待模拟器启动（根据电脑性能调整等待时间）
 timeout /t 5 /nobreak
 
-:: 检测并最小化标题含"MuMu"的窗口
 :: 创建临时VBS脚本执行最小化操作
 echo Set WshShell = CreateObject("WScript.Shell") > minimize.vbs
 echo WshShell.AppActivate "MuMu" >> minimize.vbs
-echo targetClass = "Qt5156QWindowIcon" >> minimize.vbs
 echo WshShell.SendKeys "%% " >> minimize.vbs
 echo WshShell.SendKeys "n" >> minimize.vbs
 

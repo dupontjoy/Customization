@@ -1,7 +1,7 @@
-:: 2025.03.19
+:: 2025.04.13
 
 @echo off
-title 一键更新localsend
+title 一键更新goldendict
 COLOR 0A
 cls
 
@@ -21,7 +21,8 @@ set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 ::=======================================
 :menu
 call :test_fastest_ghmirror
-call :updating_localsend
+call :updating_goldendict
+call :unzip_goldendict
 call :end
 goto :eof
 
@@ -32,13 +33,13 @@ goto :eof
 CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 goto :eof
 
-:updating_localsend
+:updating_goldendict
 setlocal
-echo.&echo █ 正在更新localsend...
+echo.&echo █ 正在更新goldendict...
 
 :: GitHub API 地址和文件名匹配模式
-set "api_url=https://api.github.com/repos/localsend/localsend/releases/latest"
-set "file_pattern=localsend-.*-windows-x86-64\.zip"
+set "api_url=https://api.github.com/repos/xiaoyifang/goldendict-ng/releases/latest"
+set "file_pattern=GoldenDict-ng-.*-Qt6.7.2-Windows-installer\.7z"
 
 :: 使用 PowerShell 解析下载链接
 powershell -Command "$response = Invoke-WebRequest -Uri '%api_url%' -UseBasicParsing | ConvertFrom-Json; $asset = $response.assets | Where-Object { $_.name -match '%file_pattern%' } | Select-Object -First 1; if ($asset) { $asset.browser_download_url } else { exit 1 }" > download_url.tmp
@@ -56,16 +57,35 @@ set "download_url=%GH_PROXY%/%original_url%"
 
 :: 下载文件
 echo [下载] %download_url%
-powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%download_url%' -OutFile '%cd%\localsend-latest.zip' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
+powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%download_url%' -OutFile '%cd%\goldendict-latest.7z' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
 
 :: 清理临时文件
 del download_url.tmp 2>nul
 endlocal
+goto :eof
 
-::解压
-tar -xvf .\localsend-latest.zip
-del /s /q .\localsend-latest.zip
+:unzip_goldendict
+setlocal
+::解压, 跳過压缩包的第一层目录
+set "zip=..\7-Zip\7z.exe"
+set "zipfile=goldendict-latest.7z"
+set "tempdir=%cd%\unzip_temp"
 
+REM 创建临时目录并解压
+md "%tempdir%" 2>nul
+%zip% x "%zipfile%" -o "%tempdir%" -y
+
+REM 复制第一层子目录中的内容到当前目录
+for /d %%D in ("%tempdir%\*") do (
+    xcopy /s /e /h /y "%%D\*" ".\"
+)
+
+REM 清理临时目录
+rd /s /q "%tempdir%"
+
+del /s /q .\goldendict-latest.7z
+
+endlocal
 goto :eof
 
 ::=======================================

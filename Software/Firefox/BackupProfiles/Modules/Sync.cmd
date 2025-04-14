@@ -49,12 +49,14 @@ xcopy "%BackupDir%\..\..\..\foobar2000\profile\config.sqlite" "%OutputDir%\Custo
 
 :GoldenDict
 xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customization\Software\GoldenDict\"  /s /y /i
+xcopy "%BackupDir%\..\..\..\GoldenDict\update-goldendict.cmd" "%OutputDir%\Customization\Software\GoldenDict\"  /s /y /i
 
 :IDM
 xcopy "%BackupDir%\..\..\..\IDM\!)—°œÓ≈‰÷√.reg" "%OutputDir%\Customization\Software\IDM\"  /s /y /i
 
 :ImageGlass
 xcopy "%BackupDir%\..\..\Software\ImageGlass\igconfig.json" "%OutputDir%\Customization\Software\ImageGlass\"  /s /y /i
+xcopy "%BackupDir%\..\..\Software\ImageGlass\update-imageglass.cmd" "%OutputDir%\Customization\Software\ImageGlass\"  /s /y /i
 
 :listary5
 ::Ç‰∑›Listary 5‘O÷√
@@ -73,6 +75,8 @@ xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Run_Listary6.cmd
 :localsend
 xcopy "%BackupDir%\..\..\..\LocalSend\update-localsend.cmd" "%OutputDir%\Customization\Software\LocalSend\"  /s /y /i
 
+:lx_music_desktop
+xcopy "%BackupDir%\..\..\..\lx-music-desktop\update-lx_music_desktop.cmd" "%OutputDir%\Customization\Software\lx-music\"  /s /y /i
 
 :MAA
 xcopy "%BackupDir%\..\..\..\MAA\Run_MAA.cmd" "%OutputDir%\Customization\Software\MAA\"  /s /y /i

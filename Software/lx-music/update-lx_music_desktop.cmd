@@ -1,7 +1,7 @@
-:: 2025.03.19
+:: 2025.04.14
 
 @echo off
-title 一键更新localsend
+title 一键更新lx_music_desktop
 COLOR 0A
 cls
 
@@ -21,7 +21,7 @@ set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 ::=======================================
 :menu
 call :test_fastest_ghmirror
-call :updating_localsend
+call :updating_lx_music_desktop
 call :end
 goto :eof
 
@@ -32,13 +32,13 @@ goto :eof
 CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 goto :eof
 
-:updating_localsend
+:updating_lx_music_desktop
 setlocal
-echo.&echo █ 正在更新localsend...
+echo.&echo █ 正在更新lx_music_desktop...
 
 :: GitHub API 地址和文件名匹配模式
-set "api_url=https://api.github.com/repos/localsend/localsend/releases/latest"
-set "file_pattern=localsend-.*-windows-x86-64\.zip"
+set "api_url=https://api.github.com/repos/lyswhut/lx-music-desktop/releases/latest"
+set "file_pattern=lx-music-desktop-.*-win_x64-green\.7z"
 
 :: 使用 PowerShell 解析下载链接
 powershell -Command "$response = Invoke-WebRequest -Uri '%api_url%' -UseBasicParsing | ConvertFrom-Json; $asset = $response.assets | Where-Object { $_.name -match '%file_pattern%' } | Select-Object -First 1; if ($asset) { $asset.browser_download_url } else { exit 1 }" > download_url.tmp
@@ -56,15 +56,17 @@ set "download_url=%GH_PROXY%/%original_url%"
 
 :: 下载文件
 echo [下载] %download_url%
-powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%download_url%' -OutFile '%cd%\localsend-latest.zip' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
+powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%download_url%' -OutFile '%cd%\lx_music_desktop-latest.7z' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
 
 :: 清理临时文件
 del download_url.tmp 2>nul
 endlocal
 
-::解压
-tar -xvf .\localsend-latest.zip
-del /s /q .\localsend-latest.zip
+:: 解压文件
+set "zip=..\7-Zip\7z.exe"
+%zip% x -y -aoa -sccUTF-8 -scsWIN .\lx_music_desktop-latest.7z
+
+del /s /q  .\lx_music_desktop-latest.7z
 
 goto :eof
 

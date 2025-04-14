@@ -107,7 +107,8 @@ echo. [下载] %GH_PROXY%/https://github.com/tomasklaen/uosc/releases/latest/downl
 :: 解压
 echo. extracting uosc.zip
 tar -xvf .\uosc.zip
-:: del /s /q .\uosc.zip
+del /s /q .\uosc.zip
+
 goto :eof
 
 :updating_yt-dlp
@@ -188,8 +189,8 @@ set zip=..\..\..\7-Zip\7z.exe
 %zip% x -y -aoa -sccUTF-8 -scsWIN .\mpv-x86_64_Latest.7z
 :: 解压新版ffmpeg文件
 %zip% x -y -aoa -sccUTF-8 -scsWIN .\ffmpeg-x86_64-git_Latest.7z
-:: del /s /q .\mpv-x86_64_Latest.7z
-:: del /s /q .\ffmpeg-x86_64-git_Latest.7z
+del /s /q .\mpv-x86_64_Latest.7z
+del /s /q .\ffmpeg-x86_64-git_Latest.7z
 
 popd
 
