@@ -36,8 +36,8 @@ goto :eof
 echo. [下载] %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
 %Curl_Download% -O %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
 
-:: x解压，v显示所有过程，f使用档案名字，切记，这个参数是最后一个参数
-tar -xvf .\MaaResource-main.zip
+:: x解压，v显示所有过程，f使用档案名字（这个参数放最后）
+tar -xf .\MaaResource-main.zip
 xcopy "%cd%\MaaResource-main\cache" "%cd%\cache"  /s /y /i
 xcopy "%cd%\MaaResource-main\resource" "%cd%\resource"  /s /y /i
 
@@ -138,8 +138,8 @@ if exist "%version_file%" (
 
 endlocal
 
-:: x解压，v显示所有过程，f使用档案名字，切记，这个参数是最后一个参数
-tar -xvf .\MAAComponent-OTA-win-x64.zip
+:: 解压
+tar -xf .\MAAComponent-OTA-win-x64.zip
 del /s /q .\MAAComponent-OTA-win-x64.zip
 
 goto :eof

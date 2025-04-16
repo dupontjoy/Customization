@@ -27,7 +27,7 @@ taskkill /f /t /im mumu*
 
 ::adb断连
 start /b "" cmd /c "cd /d %~dp0\..\MuMuPlayer\shell && adb disconnect 127.0.0.1:16384&exit"
-start /b "" cmd /c "cd /d %~dp0\adb\platform-tools&&adb disconnect 127.0.0.1:16384&exit"
+start /b "" cmd /c "cd /d %~dp0\adb\platform-tools && adb disconnect 127.0.0.1:16384&exit"
 
 ::删除debug文件夹（保存了各种截图和日志），和几个无用的文件
 rd /s /q "%cd%\debug"

@@ -106,7 +106,7 @@ echo. [œ¬‘ÿ] %GH_PROXY%/https://github.com/tomasklaen/uosc/releases/latest/downl
 
 :: Ω‚—π
 echo. extracting uosc.zip
-tar -xvf .\uosc.zip
+tar -xf .\uosc.zip
 del /s /q .\uosc.zip
 
 goto :eof

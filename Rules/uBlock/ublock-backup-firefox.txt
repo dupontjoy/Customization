@@ -1,17 +1,17 @@
 {
-  "timeStamp": 1744547433652,
-  "version": "1.62.0",
+  "timeStamp": 1744613388239,
+  "version": "1.63.2",
   "userSettings": {
     "alwaysDetachLogger": false,
     "cnameUncloakEnabled": false,
     "contextMenuEnabled": false,
-    "externalLists": "https://gh-proxy.com/https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt\nhttps://gh-proxy.com/https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt\nhttps://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt\nhttps://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt\nhttps://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt\nhttps://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
+    "externalLists": "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt\nhttps://mirrors.chenby.cn/https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt\nhttps://mirrors.chenby.cn/https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt\nhttps://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt\nhttps://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt\nhttps://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
     "firewallPaneMinimized": false,
     "hyperlinkAuditingDisabled": false,
     "importedLists": [
-      "https://gh-proxy.com/https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt",
-      "https://gh-proxy.com/https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
       "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt",
+      "https://mirrors.chenby.cn/https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt",
+      "https://mirrors.chenby.cn/https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
       "https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt",
       "https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt",
       "https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt"
@@ -33,8 +33,8 @@
     "https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt",
     "https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt",
     "https://raw.githubusercontents.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
-    "https://gh-proxy.com/https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt",
-    "https://gh-proxy.com/https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
+    "https://mirrors.chenby.cn/https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt",
+    "https://mirrors.chenby.cn/https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
   ],
   "hiddenSettings": {
     "autoUpdatePeriod": 60,

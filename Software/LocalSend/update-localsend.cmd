@@ -63,7 +63,7 @@ del download_url.tmp 2>nul
 endlocal
 
 ::Ω‚—π
-tar -xvf .\localsend-latest.zip
+tar -xf .\localsend-latest.zip
 del /s /q .\localsend-latest.zip
 
 goto :eof

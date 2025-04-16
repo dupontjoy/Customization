@@ -65,10 +65,11 @@ for /f "delims=" %%a in (urls.tmp) do (
     powershell -Command "$url='!safe_url!'; $outfile='!filename!'; [Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; (New-Object Net.WebClient).DownloadFile($url, $outfile)"
 )
 del urls.tmp
+endlocal
 
 :: 解压fx100zip并移动到指定文件夹
-:: x解压，v显示所有过程，f使用档案名字，切记，这个参数是最后一个参数
-tar -xvf .\main.zip
+:: x解压，f使用档案名字（这个参数放最后）
+tar -xf .\main.zip
 xcopy "%cd%\userChrome.js-Loader-main\profile\chrome\userChromeJS" "%cd%\..\userChromeJS"  /s /y /i
 xcopy "%cd%\userChrome.js-Loader-main\profile\chrome\utils" "%cd%\..\utils"  /s /y /i
 xcopy "%cd%\userChrome.js-Loader-main\profile\chrome\userChrome.js" "%cd%\..\"  /s /y /i
@@ -77,8 +78,6 @@ xcopy "%cd%\userChrome.js-Loader-main\program\config.js" "%cd%\..\..\..\..\Firef
 rd /s /q "%cd%\userChrome.js-Loader-main"
 
 del /s /q .\main.zip
-
-endlocal
 
 goto :eof
 
@@ -139,7 +138,7 @@ del /s /q "%cd%\..\userContent.css"
 pushd %~dp0
 cd ..\
 :: 解压新版customCSS文件
-tar -xvf .\CustomCSSforFx_Latest.zip
+tar -xf .\CustomCSSforFx_Latest.zip
 del /s /q .\CustomCSSforFx_Latest.zip
 popd
 
@@ -178,7 +177,7 @@ endlocal
 pushd %~dp0
 cd ..\..\..\Run\
 :: 解压新版customCSS文件
-tar -xvf .\RunFirefox_Latest.zip
+tar -xf .\RunFirefox_Latest.zip
 del /s /q .\RunFirefox_Latest.zip
 popd
 
