@@ -1,4 +1,4 @@
-::2025.03.02
+::2025.04.17
 
 @echo off
 Title 批量启动程序
@@ -11,6 +11,7 @@ pushd %~dp0
 ::从批处理所在位置到Software文件夹,共跨了3层
 cd ..\..\..\Software
 
+:delete
 ::删除firefox配置文件夹误生成的cache文件夹
 rd /s /q "%cd%\..\Profiles\FxProfiles\cache2"
 
@@ -18,13 +19,16 @@ rd /s /q "%cd%\..\Profiles\FxProfiles\cache2"
 rd /s /q "%cd%\N_m3u8DL-RE\cache"
 rd /s /q "%cd%\N_m3u8DL-RE\Logs"
 
-::清空用户\下载文件夹
-rd /s /q "C:\Users\%USERNAME%\Downloads"
+::删除FoxmailUpdate, 有可能导致foxmail无法启动
+rd /s /q "%cd%\..\..\Tencent\Foxmail\FoxmailUpdate"
+
+::清空用户\下载文件夹，但不会删除文件夹本身
+del /s /q /f "C:\Users\%USERNAME%\Downloads\*"
 
 ::管理员启动WeaselServer.exe
 mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIME Portable\weasel\WeaselServer.exe""","::",,"runas",1)(window.close)
 
-
+:run
 ::普通啟動
 start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
 start  "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
@@ -32,6 +36,15 @@ start  "" "%cd%\PixPin\PixPin.exe"
 ::start  "" "%cd%\Snipaste\Snipaste.exe"
 start  "" "%cd%\Ditto\Ditto.exe"
 
+:listary
+::Listary5代
+::start "" "%cd%\Listary Pro\UserData\Run_listary5.cmd"
+
+::Listary6代
+::使用 start 启动 cmd 并执行命令后退出
+pushd
+call "%cd%\Listary6\UserProfile\Settings\Run_Listary6.cmd"
+popd
 
 :foxmail
 ::启動Foxmail后，关闭Foxmail的主窗口但不终止进程
@@ -57,15 +70,6 @@ echo WshShell.SendKeys "{ENTER}" >> click.vbs
 REM 执行脚本并清理
 cscript //nologo click.vbs
 del click.vbs
-
-:listary
-REM 等点击微信登录几秒后再启動
-timeout /t 5 /nobreak >nul
-::Listary5代
-::start  "" "%cd%\Listary Pro\UserData\Run_listary5.cmd"
-
-::Listary6代
-start  "" "%cd%\Listary6\UserProfile\Settings\Run_Listary6.cmd"
 
 :capslock
 ::必须使用pushd+cd方式获取并保存路径的方式启動，相對路径的動作和命令才能生效

@@ -66,6 +66,8 @@ goto :eof
 
 :unzip_goldendict
 setlocal
+taskkill /f /t /im goldendict*
+
 ::解压, 跳過压缩包的第一层目录
 set "zip=..\7-Zip\7z.exe"
 set "zipfile=goldendict-latest.7z"

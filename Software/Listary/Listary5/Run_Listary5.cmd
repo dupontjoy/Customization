@@ -21,10 +21,8 @@ taskkill /f /t /im Listary*
 del  /s /q "listary_log.log"
 del  /s /q "*.tmp"
 
-::等待一段时间
-timeout /t 3 /nobreak
-
 ::管理员方式启动程序
 mshta vbscript:createobject("shell.application").shellexecute("""%Listary%""","::",,"runas",1)(window.close)
 
-exit
+:end
+timeout /t 3 /nobreak

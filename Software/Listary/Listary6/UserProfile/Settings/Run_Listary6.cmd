@@ -45,10 +45,8 @@ for %%f in (Listary*.exe) do (
     netsh advfirewall firewall add rule name="Block_%%~nf" dir=out action=block program="%%~ff" enable=yes
 )
 
-::等待一段时间
-timeout /t 3 /nobreak
-
 ::管理员方式启动程序
 mshta vbscript:createobject("shell.application").shellexecute("""%cd%\Listary.exe""","::",,"runas",1)(window.close)
 
-exit
+:end
+timeout /t 3 /nobreak

@@ -87,4 +87,3 @@ goto :eof
 ::下载完成暂停一段时间关闭窗口，防止运行报错时直接关闭窗口。
 :end
 timeout /t 3 /nobreak
-goto :eof

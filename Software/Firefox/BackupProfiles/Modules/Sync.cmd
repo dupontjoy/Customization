@@ -168,5 +168,5 @@ xcopy "%OutputDir%\Customization" "%OutputDir%\..\..\GitHub\Customization\"  /s 
 xcopy "%OutputDir%\RimeIME-Portable" "%OutputDir%\..\..\GitHub\RimeIME-Portable\"  /s /y /i
 
 
-:when_done
+:end
 timeout /t 3 /nobreak

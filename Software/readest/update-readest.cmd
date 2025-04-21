@@ -1,4 +1,5 @@
 :: 2025.02.28
+:: readest运行依赖MicrosoftEdgeWebview2
 
 @echo off
 title 一键更新readest portable

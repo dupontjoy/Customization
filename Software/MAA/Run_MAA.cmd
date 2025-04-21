@@ -55,3 +55,6 @@ echo WshShell.SendKeys "n" >> minimize.vbs
 :: 执行VBS脚本并删除临时文件
 start /wait minimize.vbs
 del minimize.vbs
+
+:: 完成后退出
+exit
