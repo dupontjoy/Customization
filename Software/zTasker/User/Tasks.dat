@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:57:00</StartDateTime>
 		<EndDateTime>2025-04-18 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-04-23 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-04-23 07:57:00</NextRunTime>
-		<LastRunTime>2025-04-22 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-04-26 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-04-26 07:57:00</NextRunTime>
+		<LastRunTime>2025-04-25 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -347,9 +347,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 09:27:00</StartDateTime>
 		<EndDateTime>2025-04-21 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-04-22 09:27:00</NextRunDateTime>
-		<NextRunTime>2025-04-22 09:27:00</NextRunTime>
-		<LastRunTime>2025-04-20 17:55:00</LastRunTime>
+		<NextRunDateTime>2025-04-25 09:27:00</NextRunDateTime>
+		<NextRunTime>2025-04-25 09:27:00</NextRunTime>
+		<LastRunTime>2025-04-22 09:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -685,8 +685,8 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:55:00</StartDateTime>
 		<EndDateTime>2025-04-21 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-04-22 17:55:00</NextRunDateTime>
-		<NextRunTime>2025-04-22 17:55:00</NextRunTime>
+		<NextRunDateTime>2025-04-25 17:55:00</NextRunDateTime>
+		<NextRunTime>2025-04-25 17:55:00</NextRunTime>
 		<LastRunTime>2025-04-21 17:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
@@ -1120,8 +1120,8 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 19:27:00</StartDateTime>
 		<EndDateTime>2025-04-17 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-04-22 19:27:00</NextRunDateTime>
-		<NextRunTime>2025-04-22 19:27:00</NextRunTime>
+		<NextRunDateTime>2025-04-25 19:27:00</NextRunDateTime>
+		<NextRunTime>2025-04-25 19:27:00</NextRunTime>
 		<LastRunTime>2025-04-21 19:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
@@ -1458,8 +1458,8 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:27:00</StartDateTime>
 		<EndDateTime>2025-04-18 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-04-22 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-04-22 21:27:00</NextRunTime>
+		<NextRunDateTime>2025-04-25 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-04-25 21:27:00</NextRunTime>
 		<LastRunTime>2025-04-21 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
@@ -1796,8 +1796,8 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 22:27:00</StartDateTime>
 		<EndDateTime>2025-04-18 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-04-22 22:27:00</NextRunDateTime>
-		<NextRunTime>2025-04-22 22:27:00</NextRunTime>
+		<NextRunDateTime>2025-04-25 22:27:00</NextRunDateTime>
+		<NextRunTime>2025-04-25 22:27:00</NextRunTime>
 		<LastRunTime>2025-04-21 22:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
@@ -2349,9 +2349,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-04-18 03:31:12</EndDateTime>
-		<NextRunDateTime>2125-03-29 07:06:01</NextRunDateTime>
+		<NextRunDateTime>2125-04-01 07:39:59</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-04-22 07:06:01</LastRunTime>
+		<LastRunTime>2025-04-25 07:39:59</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -2767,10 +2767,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 08:30:00</StartDateTime>
-		<EndDateTime>2025-04-12 13:07:12</EndDateTime>
-		<NextRunDateTime>2025-04-23 08:30:00</NextRunDateTime>
-		<NextRunTime>2025-04-23 08:30:00</NextRunTime>
-		<LastRunTime>2025-04-22 08:30:00</LastRunTime>
+		<EndDateTime>2025-04-26 02:14:24</EndDateTime>
+		<NextRunDateTime>2025-04-26 08:30:00</NextRunDateTime>
+		<NextRunTime>2025-04-26 08:30:00</NextRunTime>
+		<LastRunTime>2025-04-25 08:30:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -2881,109 +2881,12 @@ env2=value2</edtAppEnv>
 			<optHKMouse>0</optHKMouse>
 			<tabBtnExec>0</tabBtnExec>
 			<tabBtnHK>0</tabBtnHK>
-			<tabBtnSch>1</tabBtnSch>
-			<tabBtnTask>0</tabBtnTask>
+			<tabBtnSch>0</tabBtnSch>
+			<tabBtnTask>1</tabBtnTask>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>63</ID>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
-				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
-				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>2</Ver>
-				<Param>
-					<AppParam></AppParam>
-					<AppPath>D:\Program Files\CingFox\Profiles\BackupProfiles\Modules\Sync.cmd</AppPath>
-					<BackClr>-12500671</BackClr>
-					<DialPass></DialPass>
-					<DialUser></DialUser>
-					<FileParam></FileParam>
-					<FilePath></FilePath>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>软件设置Sync</Name>
-					<PassExitRest></PassExitRest>
-					<PlayTime>10</PlayTime>
-					<ProcName></ProcName>
-					<RemindTitle></RemindTitle>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SearchEngineNames></SearchEngineNames>
-					<SearchEngines></SearchEngines>
-					<SnapDir></SnapDir>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<SoundPath></SoundPath>
-					<SvcStart></SvcStart>
-					<SvcStop></SvcStop>
-					<TitleShow>执行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<VolAdd>10</VolAdd>
-					<VolDec>10</VolDec>
-					<VolSet>10</VolSet>
-					<Webpage></Webpage>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
-					<chkExecWait>1</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<cmbAppShowCmd>1</cmbAppShowCmd>
-					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbClass_text></cmbClass_text>
-					<cmbHotkey>0</cmbHotkey>
-					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>软件设置Sync</edtTaskName>
-					<edtTaskSubName>软件设置Sync</edtTaskSubName>
-					<httpReq></httpReq>
-					<httpReqHeader></httpReqHeader>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>软件设置Sync</Name>
-				<ID>63</ID>
-			</Tasker>
-			<Tasker>
-				<ID>88</ID>
+				<ID>173</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3080,7 +2983,7 @@ env2=value2</edtAppEnv>
 				<ID>88</ID>
 			</Tasker>
 			<Tasker>
-				<ID>11</ID>
+				<ID>388</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3175,6 +3078,103 @@ env2=value2</edtAppEnv>
 				</Param>
 				<Name>Glary清理</Name>
 				<ID>11</ID>
+			</Tasker>
+			<Tasker>
+				<ID>370</ID>
+				<TaskType>ttExec</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
+				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
+				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>2</Ver>
+				<Param>
+					<AppParam></AppParam>
+					<AppPath>D:\Program Files\CingFox\Profiles\BackupProfiles\Modules\Sync.cmd</AppPath>
+					<BackClr>-12500671</BackClr>
+					<DialPass></DialPass>
+					<DialUser></DialUser>
+					<FileParam></FileParam>
+					<FilePath></FilePath>
+					<IsExitRest>0</IsExitRest>
+					<IsPassExitRest>0</IsPassExitRest>
+					<Name>软件设置Sync</Name>
+					<PassExitRest></PassExitRest>
+					<PlayTime>10</PlayTime>
+					<ProcName></ProcName>
+					<RemindTitle></RemindTitle>
+					<RestAlpha>0</RestAlpha>
+					<RestClr>-1</RestClr>
+					<RestMin>10</RestMin>
+					<RmdClr>-1</RmdClr>
+					<SearchEngineNames></SearchEngineNames>
+					<SearchEngines></SearchEngines>
+					<SnapDir></SnapDir>
+					<SnapFormat>png</SnapFormat>
+					<SnapSaveDay>10</SnapSaveDay>
+					<SnapSaveMode>optSaveAll</SnapSaveMode>
+					<SnapSaveNum>100</SnapSaveNum>
+					<SoundPath></SoundPath>
+					<SvcStart></SvcStart>
+					<SvcStop></SvcStop>
+					<TitleShow>执行程序</TitleShow>
+					<TypeShow>程序</TypeShow>
+					<VolAdd>10</VolAdd>
+					<VolDec>10</VolDec>
+					<VolSet>10</VolSet>
+					<Webpage></Webpage>
+					<chkAppAdmin>0</chkAppAdmin>
+					<chkAppClip>0</chkAppClip>
+					<chkAppEnv>0</chkAppEnv>
+					<chkAppVar>0</chkAppVar>
+					<chkBackDateSub>0</chkBackDateSub>
+					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
+					<chkBackFileRecyle>0</chkBackFileRecyle>
+					<chkBackZipMulti>0</chkBackZipMulti>
+					<chkBackZipPass>0</chkBackZipPass>
+					<chkExecWait>1</chkExecWait>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<cmbAppShowCmd>1</cmbAppShowCmd>
+					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
+					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
+					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
+					<cmbBackType>zip</cmbBackType>
+					<cmbBackType_text>压缩</cmbBackType_text>
+					<cmbClass_text></cmbClass_text>
+					<cmbHotkey>0</cmbHotkey>
+					<edtAppDir></edtAppDir>
+					<edtAppEnv>env1=value1
+env2=value2</edtAppEnv>
+					<edtAppVar></edtAppVar>
+					<edtBackSaveDir></edtBackSaveDir>
+					<edtBackZipCount>10</edtBackZipCount>
+					<edtBackZipName></edtBackZipName>
+					<edtBackZipPass></edtBackZipPass>
+					<edtExecWaitTime>0</edtExecWaitTime>
+					<edtTaskName>软件设置Sync</edtTaskName>
+					<edtTaskSubName>软件设置Sync</edtTaskSubName>
+					<httpReq></httpReq>
+					<httpReqHeader></httpReqHeader>
+					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
+					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
+					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
+					<optPlaySnd>0</optPlaySnd>
+					<optRmdSnd>0</optRmdSnd>
+					<optRptSnd>0</optRptSnd>
+					<sldZipLevel>3</sldZipLevel>
+					<tabBtnTask>1</tabBtnTask>
+				</Param>
+				<Name>软件设置Sync</Name>
+				<ID>63</ID>
 			</Tasker>
 		</Actions>
 	</TaskItem>

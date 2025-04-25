@@ -1,4 +1,4 @@
-::2025.02.28
+::2025.04.25
 
 @echo off
 
@@ -17,6 +17,7 @@ pushd %~dp0
 ::从批处理所在文件夹到ProgramFiles文件夹,共跨了1层
 set MAA=MAA.exe
 set Player=..\MuMuPlayer\shell\MuMuPlayer.exe
+set seven-max=..\7-max\7maxc.exe
 
 
 :start
@@ -38,10 +39,10 @@ del /s /q "%cd%\MaaResource_update.log"
 del /s /q "%cd%\main.zip"
 
 ::启动MAA
-mshta vbscript:createobject("shell.application").shellexecute("""%MAA%""","::",,"runas",1)(window.close)
+start "%seven-max%" "%MAA%"
 
 ::启动模拟器
-mshta vbscript:createobject("shell.application").shellexecute("""%Player%""","::",,"runas",1)(window.close)
+start "%seven-max%" "%Player%"
 
 :: 等待模拟器启动（根据电脑性能调整等待时间）
 timeout /t 5 /nobreak
