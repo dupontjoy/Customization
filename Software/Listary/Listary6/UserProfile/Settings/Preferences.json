@@ -253,13 +253,17 @@
         {
           "Id": "5ac62036-62aa-49d3-866b-d041bc7b1b76",
           "UpdatedProperties": {
-            "Keyword": "gm"
+            "Keyword": "gm",
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "Gmail"
           }
         },
         {
           "Id": "4ed886fb-1df0-4fd0-abc1-810fc180e647",
           "UpdatedProperties": {
-            "Keyword": "tw"
+            "Keyword": "tw",
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "Twitter"
           }
         },
         {
@@ -306,7 +310,7 @@
           "UpdatedProperties": {
             "Keyword": "fb",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "FB"
+            "SuggestionUrl": "Facebook"
           }
         }
       ]

@@ -21,7 +21,7 @@ set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 ::=======================================
 :menu
 call :test_fastest_ghmirror
-call :updating_goldendict
+call :update_goldendict
 call :unzip_goldendict
 call :end
 goto :eof
@@ -33,8 +33,8 @@ goto :eof
 CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 goto :eof
 
-:updating_goldendict
-setlocal
+:update_goldendict
+setlocal enabledelayedexpansion
 echo.&echo █ 正在更新goldendict...
 
 :: GitHub API 地址和文件名匹配模式
@@ -61,25 +61,32 @@ powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -U
 
 :: 清理临时文件
 del download_url.tmp 2>nul
+
 endlocal
 goto :eof
 
 :unzip_goldendict
-setlocal
+setlocal enabledelayedexpansion
+
 taskkill /f /t /im goldendict*
 
-::解压, 跳過压缩包的第一层目录
+::解压, 跳過压缩包的第一层目录(兼容无顶层目录的 ZIP 文件)
 set "zip=..\7-Zip\7z.exe"
 set "zipfile=goldendict-latest.7z"
 set "tempdir=%cd%\unzip_temp"
 
-REM 创建临时目录并解压
+REM 创建临时目录并解压（（注意-o与路径间无空格））
 md "%tempdir%" 2>nul
-%zip% x "%zipfile%" -o "%tempdir%" -y
+%zip% x "%zipfile%" -o"%tempdir%" -y
 
-REM 复制第一层子目录中的内容到当前目录
-for /d %%D in ("%tempdir%\*") do (
-    xcopy /s /e /h /y "%%D\*" ".\"
+REM 判断临时目录中是否有子目录
+dir /b "%tempdir%" | findstr /i "[0-9a-zA-Z]" >nul
+if %errorlevel% equ 0 (
+    for /d %%D in ("%tempdir%\*") do (
+        xcopy /s /e /h /y "%%D\*" ".\"
+    )
+) else (
+    xcopy /s /e /h /y "%tempdir%\*" ".\"
 )
 
 REM 清理临时目录

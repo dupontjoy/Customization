@@ -624,23 +624,8 @@
 			}
 		},
 		{
-			"name": "同花顺K线图",
-			"ruleType": "modifySendHeader",
-			"pattern": "d.10jqka.com.cn",
-			"exclude": "",
-			"action": {
-				"name": "referer",
-				"value": "https://stockpage.10jqka.com.cn/"
-			},
-			"matchType": "regexp",
-			"isFunction": false,
 			"enable": true,
-			"group": "CingList-Request",
-			"encoding": "UTF-8"
-		},
-		{
-			"enable": true,
-			"name": "网站UA设置为Edge",
+			"name": "网站UA设置为Edg",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
 			"pattern": "^https?:\\/\\/.*(hdslb|bili|huya|kuaishou|douyu|jianshu|youtube|google).*",
@@ -648,7 +633,7 @@
 			"isFunction": false,
 			"action": {
 				"name": "user-agent",
-				"value": "Edge/1000"
+				"value": "Edg/1000"
 			},
 			"group": "CingList-Request",
 			"encoding": "UTF-8"

@@ -17,14 +17,11 @@ pushd %~dp0
 ::从批处理所在文件夹到ProgramFiles文件夹,共跨了1层
 set MAA=MAA.exe
 set Player=..\MuMuPlayer\shell\MuMuPlayer.exe
-set seven-max=..\7-max\7maxc.exe
-
 
 :start
 ::终止一些进程
 taskkill /f /t /im maa*
 taskkill /f /t /im mumu*
-
 
 ::adb断连
 start /b "" cmd /c "cd /d %~dp0\..\MuMuPlayer\shell && adb disconnect 127.0.0.1:16384&exit"
@@ -39,10 +36,10 @@ del /s /q "%cd%\MaaResource_update.log"
 del /s /q "%cd%\main.zip"
 
 ::启动MAA
-start "%seven-max%" "%MAA%"
+start "" "%MAA%"
 
 ::启动模拟器
-start "%seven-max%" "%Player%"
+start "" "%Player%"
 
 :: 等待模拟器启动（根据电脑性能调整等待时间）
 timeout /t 5 /nobreak

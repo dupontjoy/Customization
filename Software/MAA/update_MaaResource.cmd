@@ -1,4 +1,4 @@
-::2025.04.21
+::2025.04.27
 
 @echo off
 title 一键更新MaaResource
@@ -61,22 +61,22 @@ if exist maa_versions.txt (
         set "old_version1=%%i"
         set "old_version2=%%j"
     )
+) else (
+    set "old_version2=%version1%"
 )
 
 :: 比较版本号是否相同
-if defined old_version1 (
     if defined old_version2 (
-        if "!old_version1!" == "%version1%" if "!old_version2!" == "%version2%" (
-            echo. 已是最新版本.
+        if "!old_version2!" == "%version2%" (
+            echo. 本地版本：!old_version2!，已是最新版本.
             exit /b 0
         )
     )
-)
 
 :: 下载新版本
 echo. 
-echo. 发现新版本: %version1% to %version2%
-set "download_url=%GH_PROXY%/https://github.com/MaaAssistantArknights/MaaRelease/releases/download/%version2%/MAAComponent-OTA-%version1%_%version2%-win-x64.zip"
+echo. 发现新版本: %old_version2% to %version2%
+set "download_url=%GH_PROXY%/https://github.com/MaaAssistantArknights/MaaRelease/releases/download/%version2%/MAAComponent-OTA-%old_version2%_%version2%-win-x64.zip"
 echo. [下载] %download_url%
 
 :: 使用 PowerShell 下载文件
@@ -88,21 +88,59 @@ if errorlevel 1 (
 
 :: 保存新版本号到文件
 echo. 
-echo. %version1% %version2% > maa_versions.txt
+echo. %old_version2% %version2% > maa_versions.txt
 echo. 下载完成 且 保存新版本号到文件.
 
 endlocal
 
 :: 解压
+echo. 
+echo. 解压MAAComponent-OTA-win-x64.zip ...
+echo. 
+taskkill /f /t /im maa*
 tar -xf .\MAAComponent-OTA-win-x64.zip
 del /s /q .\MAAComponent-OTA-win-x64.zip
 
 goto :eof
 
 :update_MaaResource
+setlocal enabledelayedexpansion
+
+:: 使用 PowerShell 获取最新提交時间
+echo. 
+echo. 获取MaaResource最新提交時间...
+for /f "delims=" %%i in ('powershell -Command "(Invoke-RestMethod 'https://api.github.com/repos/MaaAssistantArknights/MaaResource/commits/main').commit.committer.date"') do (
+    set "last_date=%%i"
+)
+echo 最新提交時间: %last_date%
+
+:: 读取本地保存的版本号
+set "local_date="
+if exist maaresource_versions.txt (
+    for /f "tokens=1,2" %%i in (maaresource_versions.txt) do (
+        set "local_date=%%i"
+    )
+)
+
+:: 比较版本号是否相同
+    if defined local_date (
+        if "!local_date!" == "%last_date%" (
+            echo. 本地時间: %local_date%，已是最新版本.
+            exit /b 0
+        )
+    )
+
+:: 下载资源
 echo.
 echo. [下载] %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
 %Curl_Download% -O %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
+
+:: 更新本地時间文件
+echo. 
+echo. %last_date% > maaresource_versions.txt
+
+echo 下载完成，時间已更新为：%last_date%
+echo. 
 
 :: x解压，v显示所有过程，f使用档案名字（这个参数放最后）
 tar -xf .\MaaResource-main.zip
