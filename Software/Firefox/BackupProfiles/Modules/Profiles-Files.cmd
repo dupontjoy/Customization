@@ -12,7 +12,7 @@ set Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs
 
 
 ::一次性设置7-zip程序地址
-set zip=..\..\..\..\7-Zip\7z.exe
+set "zip=..\..\..\..\7-Zip\7z.exe"
 
 
 rem 設置備份路徑以及臨時文件夾
@@ -22,12 +22,12 @@ taskkill /f /t /im firefox.exe
 
 
 ::从批处理所在位置到Profiles文件夹,共跨了2层
-set BackDir=..\..\FxProfiles
+set "BackDir=..\..\FxProfiles"
 
 ::設置臨時文件夾
-set TempFolder1="%TempFolder%\1"
-set TempFolder2="%TempFolder%\2"
-set TempFolder3="%TempFolder%\3"
+set "TempFolder1=%TempFolder%\1"
+set "TempFolder2=%TempFolder%\2"
+set "TempFolder3=%TempFolder%\3"
 
 
 ::等待一段时间

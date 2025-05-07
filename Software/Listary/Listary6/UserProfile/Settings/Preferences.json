@@ -1,9 +1,6 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
-      "DirectoryOpus": {
-        "EnableMouseMiddleClick": false
-      },
       "WindowsExplorer": {
         "EnableMouseMiddleClick": false
       },
@@ -15,6 +12,9 @@
         "EnableMouseMiddleClick": false
       },
       "TotalCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "DirectoryOpus": {
         "EnableMouseMiddleClick": false
       },
       "FreeCommander": {
@@ -57,7 +57,7 @@
           "Index": -1,
           "Info": null,
           "Item": {
-            "Folder": "C:\\Users\\Cing\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\",
+            "Folder": "%USERPROFILE%\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\",
             "Priority": -2
           }
         }
@@ -212,7 +212,7 @@
           "Info": null,
           "Item": {
             "Keyword": "prts",
-            "Url": "https://prts.wiki/w/{query}",
+            "Url": "https://prts.wiki/index.php?search={query}&profile=advanced&fulltext=1&ns0=1",
             "Title": "PRTS",
             "Icon": {
               "Path": "{user}\\78ec2357-c391-4b1d-ba90-000a20e1e47a.png",

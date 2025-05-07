@@ -19,11 +19,12 @@ rd /s /q "%cd%\..\Profiles\FxProfiles\cache2"
 rd /s /q "%cd%\N_m3u8DL-RE\cache"
 rd /s /q "%cd%\N_m3u8DL-RE\Logs"
 
-::删除FoxmailUpdate, 有可能导致foxmail无法启动
+::删除FoxmailUpdate文件夹, 有可能导致foxmail无法启动
 rd /s /q "%cd%\..\..\Tencent\Foxmail\FoxmailUpdate"
 
-::清空用户\下载文件夹，但不会删除文件夹本身
+::清空文件夹，但不会删除文件夹本身
 del /s /q /f "C:\Users\%USERNAME%\Downloads\*"
+del /s /q /f "C:\Users\%USERNAME%\AppData\Local\Temp\*"
 
 ::管理员启动WeaselServer.exe
 mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIME Portable\weasel\WeaselServer.exe""","::",,"runas",1)(window.close)

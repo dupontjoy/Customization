@@ -13,9 +13,9 @@ pushd %~dp0
 
 ::設置文件所在位置
 ::从批处理所在文件夹到Profiles文件夹，共跨了2层
-set BackupDir=..\..\FxProfiles
-set softDir=E:\Cing@Soft
-set OutputDir=E:\My Documents\Nutstore\NutStoreSync
+set "BackupDir=..\..\FxProfiles"
+set "softDir=E:\Cing@Soft"
+set "OutputDir=E:\My Documents\Nutstore\NutStoreSync"
 
 
 :cangjie5
@@ -148,6 +148,10 @@ xcopy "%BackupDir%\..\..\..\XnViewMP\xnview.ini" "%OutputDir%\Customization\Soft
 xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Clean]Settings@Cing.ini" "%OutputDir%\Customization\Software\xyr系统优化\"  /s /y /i
 xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Optimization]Only Update-off@Cing.ini" "%OutputDir%\Customization\Software\xyr系统优化\"  /s /y /i
 xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config\[Optimization]Settings@Cing.ini" "%OutputDir%\Customization\Software\xyr系统优化\"  /s /y /i
+
+:zlib
+::zlib可用域名
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\z-library\config.json" "%OutputDir%\Customization\Software\z-library\"  /s /y /i
 
 :ztasker
 ::備份ztasker設置
