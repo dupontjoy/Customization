@@ -4818,7 +4818,7 @@ env2=value2</edtAppEnv>
 			<EveryMonthDay>0</EveryMonthDay>
 			<EverySec>30</EverySec>
 			<EveryWeek>7</EveryWeek>
-			<Name>上传github</Name>
+			<Name>打开github并提交</Name>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
 			<YearDay></YearDay>
@@ -4914,7 +4914,7 @@ env2=value2</edtAppEnv>
 			<edtSKWinClass></edtSKWinClass>
 			<edtSKWinTitle></edtSKWinTitle>
 			<edtSchLimitCount>1</edtSchLimitCount>
-			<edtTaskName>上传github</edtTaskName>
+			<edtTaskName>打开github并提交</edtTaskName>
 			<edtWakeDelayBoot>0</edtWakeDelayBoot>
 			<optHKKey>1</optHKKey>
 			<optHKMouse>0</optHKMouse>
@@ -4925,7 +4925,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>750</ID>
+				<ID>307</ID>
 				<TaskType>ttActionRec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -4990,12 +4990,12 @@ env2=value2</edtAppEnv>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
 					<cmbHotkey>0</cmbHotkey>
-					<edtActionRec>2284,MouseLeftDown,20,7512387,MouseLeftUp,20,7514372,MouseLeftDown,371,4354508,MouseLeftUp,371,43513287,MouseLeftDown,399,9013427,MouseLeftUp,399,9015267,MouseLeftDown,291,19715423,MouseLeftUp,291,19720419,MouseLeftDown,261,51020572,MouseLeftUp,261,51022322,KeyDown,8522494,KeyDown,8022549,KeyUp,8522662,KeyUp,8022884,KeyDown,6823071,KeyDown,6523081,KeyUp,6823239,KeyUp,6523318,KeyDown,8423471,KeyDown,6923480,KeyUp,8423688,KeyUp,6923796,KeyDown,1323895,KeyUp,1327235,MouseLeftDown,318,67427371,MouseLeftUp,318,67431487,MouseLeftDown,775,8931627,MouseLeftUp,775,892571,MouseLeftDown,1143,502691,MouseLeftUp,1143,50</edtActionRec>
+					<edtActionRec>1764,MouseLeftDown,25,7481904,MouseLeftUp,25,7483564,MouseLeftDown,368,4423680,MouseLeftUp,368,44210608,MouseLeftDown,392,8910772,MouseLeftUp,392,8913884,MouseLeftDown,303,19514008,MouseLeftUp,303,19519428,MouseLeftDown,265,50719520,MouseLeftUp,265,50721019,KeyDown,8521117,KeyDown,8021171,KeyUp,8521260,KeyUp,8022050,KeyDown,6822241,KeyUp,6822506,KeyDown,6522575,KeyUp,6522992,KeyDown,8423126,KeyUp,8423204,KeyDown,6923381,KeyUp,6923480,KeyDown,1323559,KeyUp,1326936,MouseLeftDown,343,67227068,MouseLeftUp,343,67231752,MouseLeftDown,767,9731884,MouseLeftUp,767,9761712,MouseLeftDown,1139,5161832,MouseLeftUp,1139,51</edtActionRec>
 					<edtBackSaveDir></edtBackSaveDir>
 					<edtBackZipCount>10</edtBackZipCount>
 					<edtBackZipName></edtBackZipName>
 					<edtBackZipPass></edtBackZipPass>
-					<edtTaskName>录制键盘鼠标动作 (新)</edtTaskName>
+					<edtTaskName></edtTaskName>
 					<edtTaskSubName></edtTaskSubName>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
@@ -5008,7 +5008,7 @@ env2=value2</edtAppEnv>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>录制键盘鼠标动作 (新)</Name>
-				<ID>71</ID>
+				<ID>10</ID>
 			</Tasker>
 		</Actions>
 	</TaskItem>
