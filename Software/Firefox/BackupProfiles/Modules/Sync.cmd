@@ -35,8 +35,8 @@ xcopy "%BackupDir%\..\..\Software\Capslock+\CapsLock+settings.ini" "%OutputDir%\
 :CCleaner
 xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%OutputDir%\Customization\Software\CCleaner\"  /s /y /i
 
-:CustomFileAssoc
-xcopy "%softDir%\Microsoft\NewPC-Tools\CustomFileAssoc" "%OutputDir%\Customization\Software\CustomFileAssoc\"  /s /y /i
+:DefaultAppAssociations
+xcopy "%softDir%\Microsoft\NewPC-Tools\DefaultAppAssociations" "%OutputDir%\Customization\Software\DefaultAppAssociations\"  /s /y /i
 
 :firefox
 ::‚ä·ÝŽ×‚€FirefoxÎÄ¼þ

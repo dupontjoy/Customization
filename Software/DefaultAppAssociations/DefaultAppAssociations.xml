@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DefaultAssociations>
-  <Association Identifier=".3fr" ProgId="ImageGlass.AssocFile.3FR" ApplicationName="ImageGlass" />
   <Association Identifier=".3g2" ProgId="io.mpv.3gp2" ApplicationName="mpv" />
   <Association Identifier=".3gp" ProgId="io.mpv.3gpp" ApplicationName="mpv" />
   <Association Identifier=".3gp2" ProgId="io.mpv.3gp2" ApplicationName="mpv" />
@@ -9,36 +8,18 @@
   <Association Identifier=".aif" ProgId="foobar2000.AIF" ApplicationName="foobar2000" />
   <Association Identifier=".aifc" ProgId="foobar2000.AIFC" ApplicationName="foobar2000" />
   <Association Identifier=".aiff" ProgId="foobar2000.AIFF" ApplicationName="foobar2000" />
-  <Association Identifier=".ari" ProgId="ImageGlass.AssocFile.ARI" ApplicationName="ImageGlass" />
-  <Association Identifier=".arw" ProgId="ImageGlass.AssocFile.ARW" ApplicationName="ImageGlass" />
   <Association Identifier=".asf" ProgId="io.mpv.asf" ApplicationName="mpv" />
   <Association Identifier=".au" ProgId="foobar2000.AU" ApplicationName="foobar2000" />
   <Association Identifier=".avi" ProgId="io.mpv.avi" ApplicationName="mpv" />
-  <Association Identifier=".avif" ProgId="ImageGlass.AssocFile.AVIF" ApplicationName="ImageGlass" />
-  <Association Identifier=".bay" ProgId="ImageGlass.AssocFile.BAY" ApplicationName="ImageGlass" />
   <Association Identifier=".bmp" ProgId="ImageGlass.AssocFile.BMP" ApplicationName="ImageGlass" />
-  <Association Identifier=".cap" ProgId="ImageGlass.AssocFile.CAP" ApplicationName="ImageGlass" />
   <Association Identifier=".cda" ProgId="foobar2000.CDA" ApplicationName="foobar2000" />
-  <Association Identifier=".cr2" ProgId="ImageGlass.AssocFile.CR2" ApplicationName="ImageGlass" />
-  <Association Identifier=".cr3" ProgId="ImageGlass.AssocFile.CR3" ApplicationName="ImageGlass" />
-  <Association Identifier=".crw" ProgId="ImageGlass.AssocFile.CRW" ApplicationName="ImageGlass" />
-  <Association Identifier=".dcr" ProgId="ImageGlass.AssocFile.DCR" ApplicationName="ImageGlass" />
-  <Association Identifier=".dcs" ProgId="ImageGlass.AssocFile.DCS" ApplicationName="ImageGlass" />
   <Association Identifier=".dib" ProgId="ImageGlass.AssocFile.DIB" ApplicationName="ImageGlass" />
-  <Association Identifier=".dng" ProgId="ImageGlass.AssocFile.DNG" ApplicationName="ImageGlass" />
-  <Association Identifier=".drf" ProgId="ImageGlass.AssocFile.DRF" ApplicationName="ImageGlass" />
-  <Association Identifier=".eip" ProgId="ImageGlass.AssocFile.EIP" ApplicationName="ImageGlass" />
   <Association Identifier=".emf" ProgId="ImageGlass.AssocFile.EMF" ApplicationName="ImageGlass" />
-  <Association Identifier=".erf" ProgId="ImageGlass.AssocFile.ERF" ApplicationName="ImageGlass" />
-  <Association Identifier=".fff" ProgId="ImageGlass.AssocFile.FFF" ApplicationName="ImageGlass" />
   <Association Identifier=".flac" ProgId="foobar2000.FLAC" ApplicationName="foobar2000" />
   <Association Identifier=".gif" ProgId="ImageGlass.AssocFile.GIF" ApplicationName="ImageGlass" />
-  <Association Identifier=".heic" ProgId="ImageGlass.AssocFile.HEIC" ApplicationName="ImageGlass" />
-  <Association Identifier=".heif" ProgId="ImageGlass.AssocFile.HEIF" ApplicationName="ImageGlass" />
   <Association Identifier=".htm" ProgId="FirefoxHTML-A3DDEBDF70B20541" ApplicationName="Firefox Portable" />
   <Association Identifier=".html" ProgId="FirefoxHTML-A3DDEBDF70B20541" ApplicationName="Firefox Portable" />
   <Association Identifier=".ico" ProgId="ImageGlass.AssocFile.ICO" ApplicationName="ImageGlass" />
-  <Association Identifier=".iiq" ProgId="ImageGlass.AssocFile.IIQ" ApplicationName="ImageGlass" />
   <Association Identifier=".inf" ProgId="inffile" ApplicationName="记事本" />
   <Association Identifier=".ini" ProgId="inifile" ApplicationName="记事本" />
   <Association Identifier=".jfif" ProgId="ImageGlass.AssocFile.JFIF" ApplicationName="ImageGlass" />
@@ -46,8 +27,6 @@
   <Association Identifier=".jpeg" ProgId="ImageGlass.AssocFile.JPEG" ApplicationName="ImageGlass" />
   <Association Identifier=".jpg" ProgId="ImageGlass.AssocFile.JPG" ApplicationName="ImageGlass" />
   <Association Identifier=".jxr" ProgId="AppX43hnxtbyyps62jhe9sqpdzxn1790zetc" ApplicationName="照片" />
-  <Association Identifier=".k25" ProgId="ImageGlass.AssocFile.K25" ApplicationName="ImageGlass" />
-  <Association Identifier=".kdc" ProgId="ImageGlass.AssocFile.KDC" ApplicationName="ImageGlass" />
   <Association Identifier=".log" ProgId="txtfile" ApplicationName="记事本" />
   <Association Identifier=".m1v" ProgId="io.mpv.mpeg" ApplicationName="mpv" />
   <Association Identifier=".m2t" ProgId="io.mpv.m2ts" ApplicationName="mpv" />
@@ -56,12 +35,10 @@
   <Association Identifier=".m4a" ProgId="foobar2000.M4A" ApplicationName="foobar2000" />
   <Association Identifier=".m4v" ProgId="io.mpv.mpeg4" ApplicationName="mpv" />
   <Association Identifier=".md" ProgId="Applications\Notepad2.exe" ApplicationName="Notepad2 Text Editor" />
-  <Association Identifier=".mef" ProgId="ImageGlass.AssocFile.MEF" ApplicationName="ImageGlass" />
   <Association Identifier=".mk3d" ProgId="io.mpv.mk3d" ApplicationName="mpv" />
   <Association Identifier=".mka" ProgId="foobar2000.MKA" ApplicationName="foobar2000" />
   <Association Identifier=".mkv" ProgId="io.mpv.mkv" ApplicationName="mpv" />
   <Association Identifier=".mod" ProgId="AppX6eg8h5sxqq90pv53845wmnbewywdqq5h" ApplicationName="电影和电视" />
-  <Association Identifier=".mos" ProgId="ImageGlass.AssocFile.MOS" ApplicationName="ImageGlass" />
   <Association Identifier=".mov" ProgId="io.mpv.qt" ApplicationName="mpv" />
   <Association Identifier=".MP2" ProgId="foobar2000.MP2" ApplicationName="foobar2000" />
   <Association Identifier=".mp2v" ProgId="io.mpv.mpeg" ApplicationName="mpv" />
@@ -73,40 +50,17 @@
   <Association Identifier=".mpeg" ProgId="io.mpv.mpeg" ApplicationName="mpv" />
   <Association Identifier=".mpg" ProgId="io.mpv.mpeg" ApplicationName="mpv" />
   <Association Identifier=".mpv2" ProgId="io.mpv.mpeg" ApplicationName="mpv" />
-  <Association Identifier=".mrw" ProgId="ImageGlass.AssocFile.MRW" ApplicationName="ImageGlass" />
   <Association Identifier=".mts" ProgId="io.mpv.m2ts" ApplicationName="mpv" />
-  <Association Identifier=".nef" ProgId="ImageGlass.AssocFile.NEF" ApplicationName="ImageGlass" />
-  <Association Identifier=".nrw" ProgId="ImageGlass.AssocFile.NRW" ApplicationName="ImageGlass" />
-  <Association Identifier=".ogm" ProgId="AppX6eg8h5sxqq90pv53845wmnbewywdqq5h" ApplicationName="电影和电视" />
-  <Association Identifier=".ogv" ProgId="AppX6eg8h5sxqq90pv53845wmnbewywdqq5h" ApplicationName="电影和电视" />
-  <Association Identifier=".ogx" ProgId="AppX6eg8h5sxqq90pv53845wmnbewywdqq5h" ApplicationName="电影和电视" />
-  <Association Identifier=".orf" ProgId="ImageGlass.AssocFile.ORF" ApplicationName="ImageGlass" />
-  <Association Identifier=".pcx" ProgId="ImageGlass.AssocFile.PCX" ApplicationName="ImageGlass" />
   <Association Identifier=".pdf" ProgId="MSEdgePDF" ApplicationName="Microsoft Edge" />
-  <Association Identifier=".pef" ProgId="ImageGlass.AssocFile.PEF" ApplicationName="ImageGlass" />
-  <Association Identifier=".pgm" ProgId="ImageGlass.AssocFile.PGM" ApplicationName="ImageGlass" />
   <Association Identifier=".png" ProgId="ImageGlass.AssocFile.PNG" ApplicationName="ImageGlass" />
-  <Association Identifier=".ppm" ProgId="ImageGlass.AssocFile.PPM" ApplicationName="ImageGlass" />
   <Association Identifier=".ps1" ProgId="Microsoft.PowerShellScript.1" ApplicationName="记事本" />
-  <Association Identifier=".psd" ProgId="ImageGlass.AssocFile.PSD" ApplicationName="ImageGlass" />
   <Association Identifier=".psd1" ProgId="Microsoft.PowerShellData.1" ApplicationName="记事本" />
   <Association Identifier=".psm1" ProgId="Microsoft.PowerShellModule.1" ApplicationName="记事本" />
-  <Association Identifier=".ptx" ProgId="ImageGlass.AssocFile.PTX" ApplicationName="ImageGlass" />
-  <Association Identifier=".pxn" ProgId="ImageGlass.AssocFile.PXN" ApplicationName="ImageGlass" />
-  <Association Identifier=".qt" ProgId="io.mpv.qt" ApplicationName="mpv" />
-  <Association Identifier=".raf" ProgId="ImageGlass.AssocFile.RAF" ApplicationName="ImageGlass" />
-  <Association Identifier=".raw" ProgId="ImageGlass.AssocFile.RAW" ApplicationName="ImageGlass" />
-  <Association Identifier=".rw2" ProgId="ImageGlass.AssocFile.RW2" ApplicationName="ImageGlass" />
-  <Association Identifier=".rwl" ProgId="ImageGlass.AssocFile.RWL" ApplicationName="ImageGlass" />
   <Association Identifier=".scp" ProgId="txtfile" ApplicationName="记事本" />
   <Association Identifier=".snd" ProgId="foobar2000.SND" ApplicationName="foobar2000" />
-  <Association Identifier=".sr2" ProgId="ImageGlass.AssocFile.SR2" ApplicationName="ImageGlass" />
-  <Association Identifier=".srf" ProgId="ImageGlass.AssocFile.SRF" ApplicationName="ImageGlass" />
-  <Association Identifier=".srw" ProgId="ImageGlass.AssocFile.SRW" ApplicationName="ImageGlass" />
   <Association Identifier=".svg" ProgId="MSEdgeHTM" ApplicationName="Microsoft Edge" />
   <Association Identifier=".tif" ProgId="ImageGlass.AssocFile.TIF" ApplicationName="ImageGlass" />
   <Association Identifier=".tiff" ProgId="ImageGlass.AssocFile.TIFF" ApplicationName="ImageGlass" />
-  <Association Identifier=".tod" ProgId="AppX6eg8h5sxqq90pv53845wmnbewywdqq5h" ApplicationName="电影和电视" />
   <Association Identifier=".TS" ProgId="io.mpv.m2ts" ApplicationName="mpv" />
   <Association Identifier=".TTS" ProgId="io.mpv.m2ts" ApplicationName="mpv" />
   <Association Identifier=".txt" ProgId="txtfile" ApplicationName="记事本" />
@@ -114,19 +68,13 @@
   <Association Identifier=".wav" ProgId="foobar2000.WAV" ApplicationName="foobar2000" />
   <Association Identifier=".wax" ProgId="foobar2000.WAX" ApplicationName="foobar2000" />
   <Association Identifier=".wdp" ProgId="AppX43hnxtbyyps62jhe9sqpdzxn1790zetc" ApplicationName="照片" />
-  <Association Identifier=".webm" ProgId="AppX6eg8h5sxqq90pv53845wmnbewywdqq5h" ApplicationName="电影和电视" />
-  <Association Identifier=".webp" ProgId="ImageGlass.AssocFile.WEBP" ApplicationName="ImageGlass" />
   <Association Identifier=".website" ProgId="IE.AssocFile.WEBSITE" ApplicationName="Internet Explorer" />
   <Association Identifier=".wm" ProgId="io.mpv.wm" ApplicationName="mpv" />
   <Association Identifier=".wma" ProgId="foobar2000.WMA" ApplicationName="foobar2000" />
   <Association Identifier=".wmf" ProgId="ImageGlass.AssocFile.WMF" ApplicationName="ImageGlass" />
   <Association Identifier=".wmv" ProgId="io.mpv.wmv" ApplicationName="mpv" />
   <Association Identifier=".wtx" ProgId="txtfile" ApplicationName="记事本" />
-  <Association Identifier=".x3f" ProgId="ImageGlass.AssocFile.X3F" ApplicationName="ImageGlass" />
-  <Association Identifier=".xbm" ProgId="ImageGlass.AssocFile.XBM" ApplicationName="ImageGlass" />
   <Association Identifier=".xml" ProgId="MSEdgeHTM" ApplicationName="Microsoft Edge" />
-  <Association Identifier=".xpm" ProgId="ImageGlass.AssocFile.XPM" ApplicationName="ImageGlass" />
-  <Association Identifier=".xvid" ProgId="AppX6eg8h5sxqq90pv53845wmnbewywdqq5h" ApplicationName="电影和电视" />
   <Association Identifier="bingmaps" ProgId="AppXp9gkwccvk6fa6yyfq3tmsk8ws2nprk1p" ApplicationName="地图" />
   <Association Identifier="http" ProgId="FirefoxURL-A3DDEBDF70B20541" ApplicationName="Firefox Portable" />
   <Association Identifier="https" ProgId="FirefoxURL-A3DDEBDF70B20541" ApplicationName="Firefox Portable" />

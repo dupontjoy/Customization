@@ -10,7 +10,7 @@
 pushd "%~dp0"
 
 setlocal
-set "config_path=%cd%\CustomFileAssoc.xml"
+set "config_path=%cd%\DefaultAppAssociations.xml"
 
 :menu
 cls
@@ -33,7 +33,7 @@ goto menu
 
 :export
 echo 正在导出默认程序关联配置...
-Dism /online /export-defaultappassociations:"%config_path%"
+Dism /Online /Export-DefaultAppAssociations:"%config_path%"
 if %errorlevel% equ 0 (
     echo 导出成功！配置文件已保存到:
     echo %config_path%
@@ -45,7 +45,7 @@ goto menu
 
 :import
 echo 正在导入默认程序关联配置...
-Dism /online /import-defaultappassociations:"%config_path%"
+Dism /Online /Import-DefaultAppAssociations:"%config_path%"
 if %errorlevel% equ 0 (
     echo 导入成功！配置文件为:
     echo %config_path%
