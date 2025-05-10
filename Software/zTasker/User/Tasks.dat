@@ -4792,4 +4792,224 @@ env2=value2</edtAppEnv>
 			</Tasker>
 		</Actions>
 	</TaskItem>
+	<TaskItem>
+		<ID>563</ID>
+		<TaskType>ttMultiTasker</TaskType>
+		<Stopped>0</Stopped>
+		<HKStopped>1</HKStopped>
+		<HasEndDateTime>0</HasEndDateTime>
+		<SchType>3</SchType>
+		<StartDateTime>2025-05-10 14:00:00</StartDateTime>
+		<EndDateTime>2025-05-10 12:03:46</EndDateTime>
+		<NextRunDateTime>2025-05-11 14:00:00</NextRunDateTime>
+		<NextRunTime>2025-05-11 14:00:00</NextRunTime>
+		<LastRunTime></LastRunTime>
+		<Fav>0</Fav>
+		<Ver>2</Ver>
+		<Param>
+			<CountDownHour>1</CountDownHour>
+			<CountDownMin>0</CountDownMin>
+			<CountDownSec>0</CountDownSec>
+			<DTOnce>2025-05-10 12:03:46</DTOnce>
+			<DayLimit></DayLimit>
+			<EveryDay>1</EveryDay>
+			<EveryHour>1</EveryHour>
+			<EveryMin>30</EveryMin>
+			<EveryMonthDay>0</EveryMonthDay>
+			<EverySec>30</EverySec>
+			<EveryWeek>7</EveryWeek>
+			<Name>上传github</Name>
+			<TitleShow>弹窗提醒</TitleShow>
+			<TypeShow>提醒</TypeShow>
+			<YearDay></YearDay>
+			<YearMonth></YearMonth>
+			<YearWeekDay></YearWeekDay>
+			<YearWeekNum></YearWeekNum>
+			<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
+			<ZeroHalfs></ZeroHalfs>
+			<chk1>0</chk1>
+			<chk2>0</chk2>
+			<chk3>0</chk3>
+			<chk4>0</chk4>
+			<chk5>0</chk5>
+			<chk6>0</chk6>
+			<chk7>1</chk7>
+			<chkAutoClose>0</chkAutoClose>
+			<chkAutoCloseHK>0</chkAutoCloseHK>
+			<chkDayLimit1>0</chkDayLimit1>
+			<chkDayLimit2>0</chkDayLimit2>
+			<chkDayLimit3>0</chkDayLimit3>
+			<chkDayLimit4>0</chkDayLimit4>
+			<chkDayLimit5>0</chkDayLimit5>
+			<chkDayLimit6>0</chkDayLimit6>
+			<chkDayLimit7>0</chkDayLimit7>
+			<chkDayLimitTime>0</chkDayLimitTime>
+			<chkDayLimitTimeRev>0</chkDayLimitTimeRev>
+			<chkEndDateSel>0</chkEndDateSel>
+			<chkExecDlg>0</chkExecDlg>
+			<chkExecDlgHK>0</chkExecDlgHK>
+			<chkExecExitFocus>0</chkExecExitFocus>
+			<chkExecExitFullScr>0</chkExecExitFullScr>
+			<chkExecExitPre>1</chkExecExitPre>
+			<chkExecPost>0</chkExecPost>
+			<chkExecPre>0</chkExecPre>
+			<chkHKMouseCorner>0</chkHKMouseCorner>
+			<chkHKMouseCorner1>0</chkHKMouseCorner1>
+			<chkHKMouseCorner2>0</chkHKMouseCorner2>
+			<chkHKMouseCorner3>0</chkHKMouseCorner3>
+			<chkHKMouseCorner4>0</chkHKMouseCorner4>
+			<chkHKMouseEdge>0</chkHKMouseEdge>
+			<chkHKMouseEdge1>0</chkHKMouseEdge1>
+			<chkHKMouseEdge2>0</chkHKMouseEdge2>
+			<chkHKMouseEdge3>0</chkHKMouseEdge3>
+			<chkHKMouseEdge4>0</chkHKMouseEdge4>
+			<chkHotkey>0</chkHotkey>
+			<chkHotkeyAlt>0</chkHotkeyAlt>
+			<chkHotkeyCtrl>0</chkHotkeyCtrl>
+			<chkHotkeyLeft>0</chkHotkeyLeft>
+			<chkHotkeyMiddle>0</chkHotkeyMiddle>
+			<chkHotkeyRight>0</chkHotkeyRight>
+			<chkHotkeyShift>0</chkHotkeyShift>
+			<chkHotkeyWheel>0</chkHotkeyWheel>
+			<chkHotkeyWin>0</chkHotkeyWin>
+			<chkRunMiss>0</chkRunMiss>
+			<chkSKPartMatch>0</chkSKPartMatch>
+			<chkSKProcExists>0</chkSKProcExists>
+			<chkSKWinExists>0</chkSKWinExists>
+			<chkSKWinFore>0</chkSKWinFore>
+			<chkSKWinMouseIn>0</chkSKWinMouseIn>
+			<chkSKWinSub>0</chkSKWinSub>
+			<chkSchLimitCount>0</chkSchLimitCount>
+			<chkSelfDelete>0</chkSelfDelete>
+			<chkTimer>1</chkTimer>
+			<chkUseStartDT>1</chkUseStartDT>
+			<chkWakeRunMiss>0</chkWakeRunMiss>
+			<cmbAutoCloseAction>0</cmbAutoCloseAction>
+			<cmbAutoCloseActionHK>0</cmbAutoCloseActionHK>
+			<cmbAutoCloseActionHK_text>执行</cmbAutoCloseActionHK_text>
+			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
+			<cmbClass>无</cmbClass>
+			<cmbClass_text>无</cmbClass_text>
+			<cmbDayLimit></cmbDayLimit>
+			<cmbExecPost>0</cmbExecPost>
+			<cmbExecPostTasks_text></cmbExecPostTasks_text>
+			<cmbExecPost_text>启用计划</cmbExecPost_text>
+			<cmbExecPre>0</cmbExecPre>
+			<cmbExecPreTasks_text></cmbExecPreTasks_text>
+			<cmbExecPre_text>启用计划</cmbExecPre_text>
+			<cmbHKMouse>0</cmbHKMouse>
+			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
+			<cmbHotkey>0</cmbHotkey>
+			<cmbYearDay></cmbYearDay>
+			<cmbYearMonth></cmbYearMonth>
+			<cmbYearWeekDay></cmbYearWeekDay>
+			<cmbYearWeekNum></cmbYearWeekNum>
+			<edtDayLimitTime></edtDayLimitTime>
+			<edtDelayBoot>0</edtDelayBoot>
+			<edtExecSec>30</edtExecSec>
+			<edtExecSecHK>5</edtExecSecHK>
+			<edtHKMouseCorner>50</edtHKMouseCorner>
+			<edtHKMouseEdge>50</edtHKMouseEdge>
+			<edtSKProcName></edtSKProcName>
+			<edtSKWinClass></edtSKWinClass>
+			<edtSKWinTitle></edtSKWinTitle>
+			<edtSchLimitCount>1</edtSchLimitCount>
+			<edtTaskName>上传github</edtTaskName>
+			<edtWakeDelayBoot>0</edtWakeDelayBoot>
+			<optHKKey>1</optHKKey>
+			<optHKMouse>0</optHKMouse>
+			<tabBtnExec>0</tabBtnExec>
+			<tabBtnHK>0</tabBtnHK>
+			<tabBtnSch>0</tabBtnSch>
+			<tabBtnTask>1</tabBtnTask>
+		</Param>
+		<Actions>
+			<Tasker>
+				<ID>750</ID>
+				<TaskType>ttActionRec</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
+				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
+				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>2</Ver>
+				<Param>
+					<AppParam></AppParam>
+					<AppPath></AppPath>
+					<BackClr>-12500671</BackClr>
+					<DialPass></DialPass>
+					<DialUser></DialUser>
+					<FileParam></FileParam>
+					<FilePath></FilePath>
+					<IsExitRest>0</IsExitRest>
+					<IsPassExitRest>0</IsPassExitRest>
+					<Name>录制键盘鼠标动作 (新)</Name>
+					<PassExitRest></PassExitRest>
+					<PlayTime>10</PlayTime>
+					<ProcName></ProcName>
+					<RemindTitle></RemindTitle>
+					<RestAlpha>0</RestAlpha>
+					<RestClr>-1</RestClr>
+					<RestMin>10</RestMin>
+					<RmdClr>-1</RmdClr>
+					<SearchEngineNames></SearchEngineNames>
+					<SearchEngines></SearchEngines>
+					<SnapDir></SnapDir>
+					<SnapFormat>png</SnapFormat>
+					<SnapSaveDay>10</SnapSaveDay>
+					<SnapSaveMode>optSaveAll</SnapSaveMode>
+					<SnapSaveNum>100</SnapSaveNum>
+					<SoundPath></SoundPath>
+					<SvcStart></SvcStart>
+					<SvcStop></SvcStop>
+					<TitleShow>录制键盘鼠标动作 (新)</TitleShow>
+					<TypeShow>输入</TypeShow>
+					<VolAdd>10</VolAdd>
+					<VolDec>10</VolDec>
+					<VolSet>10</VolSet>
+					<Webpage></Webpage>
+					<chkActionRecMove>0</chkActionRecMove>
+					<chkBackDateSub>0</chkBackDateSub>
+					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
+					<chkBackFileRecyle>0</chkBackFileRecyle>
+					<chkBackZipMulti>0</chkBackZipMulti>
+					<chkBackZipPass>0</chkBackZipPass>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
+					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
+					<cmbBackType>zip</cmbBackType>
+					<cmbBackType_text>压缩</cmbBackType_text>
+					<cmbClass_text></cmbClass_text>
+					<cmbHotkey>0</cmbHotkey>
+					<edtActionRec>2284,MouseLeftDown,20,7512387,MouseLeftUp,20,7514372,MouseLeftDown,371,4354508,MouseLeftUp,371,43513287,MouseLeftDown,399,9013427,MouseLeftUp,399,9015267,MouseLeftDown,291,19715423,MouseLeftUp,291,19720419,MouseLeftDown,261,51020572,MouseLeftUp,261,51022322,KeyDown,8522494,KeyDown,8022549,KeyUp,8522662,KeyUp,8022884,KeyDown,6823071,KeyDown,6523081,KeyUp,6823239,KeyUp,6523318,KeyDown,8423471,KeyDown,6923480,KeyUp,8423688,KeyUp,6923796,KeyDown,1323895,KeyUp,1327235,MouseLeftDown,318,67427371,MouseLeftUp,318,67431487,MouseLeftDown,775,8931627,MouseLeftUp,775,892571,MouseLeftDown,1143,502691,MouseLeftUp,1143,50</edtActionRec>
+					<edtBackSaveDir></edtBackSaveDir>
+					<edtBackZipCount>10</edtBackZipCount>
+					<edtBackZipName></edtBackZipName>
+					<edtBackZipPass></edtBackZipPass>
+					<edtTaskName>录制键盘鼠标动作 (新)</edtTaskName>
+					<edtTaskSubName></edtTaskSubName>
+					<httpReq></httpReq>
+					<httpReqHeader></httpReqHeader>
+					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
+					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
+					<optPlaySnd>0</optPlaySnd>
+					<optRmdSnd>0</optRmdSnd>
+					<optRptSnd>0</optRptSnd>
+					<sldZipLevel>3</sldZipLevel>
+					<tabBtnTask>1</tabBtnTask>
+				</Param>
+				<Name>录制键盘鼠标动作 (新)</Name>
+				<ID>71</ID>
+			</Tasker>
+		</Actions>
+	</TaskItem>
 </Tasks>
