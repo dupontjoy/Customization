@@ -8,7 +8,7 @@ cls
 pushd %~dp0
 
 :: Set download command
-set Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs
+set "Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 
 
 ::一次性设置7-zip程序地址

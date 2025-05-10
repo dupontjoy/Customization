@@ -184,7 +184,7 @@ goto :eof
 :: 解压文件
 pushd %~dp0
 cd ..\
-set zip=..\..\..\7-Zip\7z.exe
+set "zip=..\..\..\7-Zip\7z.exe"
 :: 解压新版mpv文件
 %zip% x -y -aoa -sccUTF-8 -scsWIN .\mpv-x86_64_Latest.7z
 :: 解压新版ffmpeg文件

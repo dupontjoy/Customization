@@ -1,13 +1,13 @@
 {
-  "author": "Cing",
-  "description": "3-243-龙门币",
-  "id": 1746583229663379,
-  "title": "3-243",
+  "author": "文件作者",
+  "description": "文件描述",
+  "id": 1746712524083154,
+  "title": "文件标题",
   "buildingType": 243,
   "planTimes": "3班",
   "plans": [
     {
-      "name": "08:00-18:59",
+      "name": "08:00-17:59",
       "description": "11小时",
       "Fiammetta": {
         "enable": true,
@@ -18,7 +18,7 @@
         "room": "trading",
         "index": 1,
         "enable": true,
-        "order": "pre"
+        "order": "post"
       },
       "rooms": {
         "trading": [
@@ -195,7 +195,7 @@
       ]
     },
     {
-      "name": "18:00-21:30",
+      "name": "18:00-21:29",
       "description": "3.5小时",
       "Fiammetta": {
         "enable": false,
@@ -204,7 +204,7 @@
       },
       "drones": {
         "room": "manufacture",
-        "index": 4,
+        "index": 3,
         "enable": true,
         "order": "pre"
       },
@@ -335,11 +335,11 @@
           {
             "skip": false,
             "operators": [
-              "阿",
               "老鲤",
-              "重岳",
-              "红隼",
-              "阿米娅"
+              "阿米娅",
+              "琴柳",
+              "火龙S黑角",
+              "麒麟R夜刀"
             ],
             "sort": false,
             "autofill": false
@@ -537,8 +537,8 @@
           {
             "skip": false,
             "operators": [
-              "远山",
-              "红"
+              "信仰搅拌机",
+              "谜图"
             ],
             "sort": false,
             "autofill": false

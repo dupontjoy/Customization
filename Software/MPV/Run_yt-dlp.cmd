@@ -79,6 +79,7 @@ goto :eof
 ::обтьцЭаН
 cls
 echo.обтьцЭаНё╨%yt-dlp_download%
+echo.
 %yt-dlp_download%
 goto :eof
 

@@ -35,6 +35,9 @@ xcopy "%BackupDir%\..\..\Software\Capslock+\CapsLock+settings.ini" "%OutputDir%\
 :CCleaner
 xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%OutputDir%\Customization\Software\CCleaner\"  /s /y /i
 
+:CustomFileAssoc
+xcopy "%softDir%\Microsoft\NewPC-Tools\CustomFileAssoc" "%OutputDir%\Customization\Software\CustomFileAssoc\"  /s /y /i
+
 :firefox
 ::備份幾個Firefox文件
 ::先删除旧备份文件夹

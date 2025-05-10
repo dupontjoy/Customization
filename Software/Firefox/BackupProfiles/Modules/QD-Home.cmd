@@ -9,7 +9,7 @@ cls
 ::設置程序文件夾位置
 cd /d %~dp0
 ::从批处理所在位置到Software文件夹,共跨了3层
-set SoftDir=..\..\..\Software
+set "SoftDir=..\..\..\Software"
 
 start "" "%SoftDir%\steamcommunity_302\steamcommunity_302.exe"
 
