@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:55:00</StartDateTime>
 		<EndDateTime>2025-04-27 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-05-11 07:55:00</NextRunDateTime>
-		<NextRunTime>2025-05-11 07:55:00</NextRunTime>
-		<LastRunTime>2025-05-10 07:55:00</LastRunTime>
+		<NextRunDateTime>2025-05-12 07:55:00</NextRunDateTime>
+		<NextRunTime>2025-05-12 07:55:00</NextRunTime>
+		<LastRunTime>2025-05-11 07:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -879,9 +879,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:55:00</StartDateTime>
 		<EndDateTime>2025-04-28 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-05-10 17:55:00</NextRunDateTime>
-		<NextRunTime>2025-05-10 17:55:00</NextRunTime>
-		<LastRunTime>2025-05-09 17:55:00</LastRunTime>
+		<NextRunDateTime>2025-05-11 17:55:00</NextRunDateTime>
+		<NextRunTime>2025-05-11 17:55:00</NextRunTime>
+		<LastRunTime>2025-05-10 17:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -1314,9 +1314,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 18:55:00</StartDateTime>
 		<EndDateTime>2025-05-06 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-05-10 18:55:00</NextRunDateTime>
-		<NextRunTime>2025-05-10 18:55:00</NextRunTime>
-		<LastRunTime>2025-05-09 18:55:00</LastRunTime>
+		<NextRunDateTime>2025-05-11 18:55:00</NextRunDateTime>
+		<NextRunTime>2025-05-11 18:55:00</NextRunTime>
+		<LastRunTime>2025-05-10 18:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -1749,9 +1749,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:25:00</StartDateTime>
 		<EndDateTime>2025-04-28 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-05-10 21:25:00</NextRunDateTime>
-		<NextRunTime>2025-05-10 21:25:00</NextRunTime>
-		<LastRunTime>2025-05-09 21:25:00</LastRunTime>
+		<NextRunDateTime>2025-05-11 21:25:00</NextRunDateTime>
+		<NextRunTime>2025-05-11 21:25:00</NextRunTime>
+		<LastRunTime>2025-05-10 21:25:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -2184,9 +2184,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 22:25:00</StartDateTime>
 		<EndDateTime>2025-04-28 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-05-10 22:25:00</NextRunDateTime>
-		<NextRunTime>2025-05-10 22:25:00</NextRunTime>
-		<LastRunTime>2025-05-09 22:25:00</LastRunTime>
+		<NextRunDateTime>2025-05-11 22:25:00</NextRunDateTime>
+		<NextRunTime>2025-05-11 22:25:00</NextRunTime>
+		<LastRunTime>2025-05-10 22:25:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -2618,10 +2618,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-04-30 07:02:24</EndDateTime>
-		<NextRunDateTime>2125-04-16 07:43:58</NextRunDateTime>
+		<EndDateTime>2025-05-11 14:04:48</EndDateTime>
+		<NextRunDateTime>2035-05-09 07:23:38</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-05-10 07:43:58</LastRunTime>
+		<LastRunTime>2025-05-11 07:16:42</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -2736,7 +2736,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>23</ID>
+				<ID>849</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2833,14 +2833,14 @@ env2=value2</edtAppEnv>
 				<ID>23</ID>
 			</Tasker>
 			<Delay>
-				<Sec>5000</Sec>
+				<Sec>30000</Sec>
 				<Sec2>99000</Sec2>
 				<Random>0</Random>
 				<Name>延迟</Name>
 				<ID>80</ID>
 			</Delay>
 			<Tasker>
-				<ID>8</ID>
+				<ID>92</ID>
 				<TaskType>ttMouseClick</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2945,7 +2945,7 @@ env2=value2</edtAppEnv>
 				<ID>29</ID>
 			</Delay>
 			<Tasker>
-				<ID>98</ID>
+				<ID>250</ID>
 				<TaskType>ttVolumeSet</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3038,9 +3038,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 08:30:00</StartDateTime>
 		<EndDateTime>2025-04-26 02:14:24</EndDateTime>
-		<NextRunDateTime>2025-05-11 08:30:00</NextRunDateTime>
-		<NextRunTime>2025-05-11 08:30:00</NextRunTime>
-		<LastRunTime>2025-05-10 08:30:00</LastRunTime>
+		<NextRunDateTime>2025-05-12 08:30:00</NextRunDateTime>
+		<NextRunTime>2025-05-12 08:30:00</NextRunTime>
+		<LastRunTime>2025-05-11 08:30:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -4818,7 +4818,7 @@ env2=value2</edtAppEnv>
 			<EveryMonthDay>0</EveryMonthDay>
 			<EverySec>30</EverySec>
 			<EveryWeek>7</EveryWeek>
-			<Name>打开github并提交</Name>
+			<Name>同步github</Name>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
 			<YearDay></YearDay>
@@ -4914,7 +4914,7 @@ env2=value2</edtAppEnv>
 			<edtSKWinClass></edtSKWinClass>
 			<edtSKWinTitle></edtSKWinTitle>
 			<edtSchLimitCount>1</edtSchLimitCount>
-			<edtTaskName>打开github并提交</edtTaskName>
+			<edtTaskName>同步github</edtTaskName>
 			<edtWakeDelayBoot>0</edtWakeDelayBoot>
 			<optHKKey>1</optHKKey>
 			<optHKMouse>0</optHKMouse>
@@ -4925,7 +4925,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>175</ID>
+				<ID>10</ID>
 				<TaskType>ttActionRec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -4990,7 +4990,63 @@ env2=value2</edtAppEnv>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
 					<cmbHotkey>0</cmbHotkey>
-					<edtActionRec>1204,KeyDown,1621359,KeyUp,1621408,KeyDown,1621543,KeyUp,1622324,KeyDown,712419,KeyDown,732464,KeyUp,712543,KeyDown,842548,KeyUp,732717,KeyDown,722757,KeyUp,842842,KeyUp,723703,KeyDown,133813,KeyUp,135012,KeyDown,135117,KeyUp,1311142,MouseLeftDown,385,9311266,MouseLeftUp,385,9314054,MouseLeftDown,288,19414186,MouseLeftUp,288,19418066,MouseLeftDown,296,50518166,MouseLeftUp,296,50519350,KeyDown,8519465,KeyDown,8019514,KeyUp,8519614,KeyUp,8019803,KeyDown,6819972,KeyUp,6820017,KeyDown,6520176,KeyUp,6520276,KeyDown,8420410,KeyUp,8420470,KeyDown,6920639,KeyUp,6920704,KeyDown,1320794,KeyUp,1324178,MouseLeftDown,325,66924291,MouseLeftUp,325,66934186,MouseLeftDown,767,9234302,MouseLeftUp,767,9261030,MouseLeftDown,1144,5461289,MouseLeftUp,1144,54</edtActionRec>
+					<edtActionRec>1673,MouseLeftDown,1050,748
+1760,MouseLeftUp,1050,748
+1848,MouseLeftDown,1050,748
+1972,MouseLeftUp,1050,748
+4687,KeyDown,71
+4831,KeyDown,73
+4866,KeyUp,71
+4961,KeyDown,84
+4975,KeyUp,73
+5130,KeyDown,72
+5189,KeyUp,84
+5249,KeyUp,72
+6170,KeyDown,13
+6269,KeyUp,13
+7056,KeyDown,32
+7225,KeyUp,32
+7345,KeyDown,69
+7479,KeyUp,69
+7584,KeyDown,88
+7718,KeyUp,88
+7768,KeyDown,69
+7957,KeyUp,69
+8032,KeyDown,13
+8111,KeyUp,13
+10082,KeyDown,40
+10212,KeyUp,40
+13188,KeyDown,13
+13313,KeyUp,13
+19480,MouseLeftDown,327,89
+19588,MouseLeftUp,327,89
+21652,MouseLeftDown,308,201
+21773,MouseLeftUp,308,201
+24536,MouseLeftDown,272,510
+24668,MouseLeftUp,272,510
+25901,KeyDown,85
+26005,KeyDown,80
+26060,KeyUp,85
+26194,KeyUp,80
+26782,KeyDown,68
+26926,KeyDown,65
+26936,KeyUp,68
+27070,KeyUp,65
+27150,KeyDown,84
+27284,KeyUp,84
+27324,KeyDown,69
+27503,KeyUp,69
+27523,KeyDown,13
+27613,KeyUp,13
+29320,MouseLeftDown,334,670
+29428,MouseLeftUp,334,670
+36840,MouseLeftDown,792,89
+36912,MouseLeftUp,792,89
+62044,MouseLeftDown,1139,53
+62184,MouseLeftUp,1139,53
+65416,MouseLeftDown,1149,20
+65644,MouseLeftUp,1149,20
+</edtActionRec>
 					<edtBackSaveDir></edtBackSaveDir>
 					<edtBackZipCount>10</edtBackZipCount>
 					<edtBackZipName></edtBackZipName>

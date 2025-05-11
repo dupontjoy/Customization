@@ -1,7 +1,7 @@
 {
   "author": "文件作者",
   "description": "文件描述",
-  "id": 1746712524083154,
+  "id": 1746885795446421,
   "title": "文件标题",
   "buildingType": 243,
   "planTimes": "3班",
@@ -308,25 +308,47 @@
         "dormitory": [
           {
             "skip": false,
-            "operators": [],
+            "operators": [
+              "明椒",
+              "灵知",
+              "玛恩纳",
+              "凯尔希",
+              "魔王"
+            ],
             "sort": false,
             "autofill": true
           },
           {
             "skip": false,
-            "operators": [],
+            "operators": [
+              "澄闪",
+              "温蒂",
+              "银灰",
+              "但书",
+              "孑"
+            ],
             "sort": false,
             "autofill": true
           },
           {
             "skip": false,
-            "operators": [],
+            "operators": [
+              "清流",
+              "承曦格雷伊",
+              "格雷伊",
+              "稀音",
+              "森蚺"
+            ],
             "sort": false,
             "autofill": true
           },
           {
             "skip": false,
-            "operators": [],
+            "operators": [
+              "龙舌兰",
+              "刻俄柏",
+              "红云"
+            ],
             "sort": false,
             "autofill": true
           }
@@ -496,25 +518,49 @@
         "dormitory": [
           {
             "skip": false,
-            "operators": [],
+            "operators": [
+              "斥罪",
+              "伊内丝",
+              "晓歌",
+              "水月",
+              "槐琥"
+            ],
             "sort": false,
             "autofill": true
           },
           {
             "skip": false,
-            "operators": [],
+            "operators": [
+              "菲亚梅塔",
+              "砾",
+              "断罪者",
+              "霜叶",
+              "Castle-3"
+            ],
             "sort": false,
             "autofill": true
           },
           {
             "skip": false,
-            "operators": [],
+            "operators": [
+              "麒麟R夜刀",
+              "铎铃",
+              "烛煌",
+              "阿米娅",
+              "老鲤"
+            ],
             "sort": false,
             "autofill": true
           },
           {
             "skip": false,
-            "operators": [],
+            "operators": [
+              "海霓",
+              "琴柳",
+              "伊芙利特",
+              "火龙S黑角",
+              "德克萨斯"
+            ],
             "sort": false,
             "autofill": true
           }

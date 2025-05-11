@@ -47,4 +47,4 @@ echo ------------------------
 echo 最快的镜像站点是: !fastest_proxy! (下载速度 !fastest_speed! 字节/秒)
 set "GH_PROXY=https://!fastest_proxy!"
 endlocal & set "GH_PROXY=%GH_PROXY%"
-echo GH_PROXY=%GH_PROXY%
+echo. GH_PROXY=%GH_PROXY%

@@ -1,4 +1,4 @@
-::2025.04.27
+::2025.05.10
 
 @echo off
 title 一键更新MaaResource
@@ -37,11 +37,12 @@ setlocal enabledelayedexpansion
 
 :: 获取最新的两个版本号
 echo. 
-echo. 查找最新MAA版本...
+echo 查找最新MAA版本...
 for /f "tokens=1,2" %%a in ('powershell -command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $tags = (Invoke-RestMethod -Uri 'https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases').tag_name | Where-Object { $_ -match '^v\d+\.\d+\.\d+$' } | Sort-Object { [version]($_.Substring(1)) } -Descending; if ($tags.Count -ge 2) { write-output ($tags[1] + ' ' + $tags[0]) } else { exit 1 }"') do (
     set "version1=%%a"
     set "version2=%%b"
 )
+echo. 最新在线版本: %version2%
 
 :: 检查版本号获取结果
 if not defined version1 (
@@ -108,11 +109,11 @@ setlocal enabledelayedexpansion
 
 :: 使用 PowerShell 获取最新提交時间
 echo. 
-echo. 获取MaaResource最新提交時间...
+echo 获取MaaResource最新提交時间...
 for /f "delims=" %%i in ('powershell -Command "(Invoke-RestMethod 'https://api.github.com/repos/MaaAssistantArknights/MaaResource/commits/main').commit.committer.date"') do (
     set "last_date=%%i"
 )
-echo 最新提交時间: %last_date%
+echo. 最新在线提交時间: %last_date%
 
 :: 读取本地保存的版本号
 set "local_date="
