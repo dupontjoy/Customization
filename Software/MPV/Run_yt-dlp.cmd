@@ -39,31 +39,31 @@ if "!link!"=="" (
 set "res="
 set /p "res=分辨率（如480/720[默认]/1080，可为空）: "
 if "!res!"=="" (
-    set format_res=--format-sort res:720
+    set "format_res=--format-sort res:720"
 ) else (
-    set format_res=--format-sort res:%res%
+    set "format_res=--format-sort res:%res%"
 )
 
 
 ::---------------设置部分---------------
 :setting_path
 ::设置firefox配置目录
-set firefox_profile=..\..\Profiles\FxProfiles
+set "firefox_profile=..\..\Profiles\FxProfiles"
 
 ::设置输出目录
-set SaveDir=E:\Download\
+set "SaveDir=E:\Download"
 
 ::设置ffmpeg.exe路径
-set ffmpeg=ffmpeg.exe
+set "ffmpeg=ffmpeg.exe"
 
 goto :eof
 
 :setting_yt-dlp_params
 ::设置yt-dlp下载参数
-set title=%%(title)s@%%(uploader)s.%%(ext)s
-set yt-dlp_params=--cookies-from-browser firefox:"%firefox_profile%" %format_res% --ffmpeg-location %ffmpeg% -o "%title%"
+set "title=%%(title)s@%%(uploader)s.%%(ext)s"
+set "yt-dlp_params=--cookies-from-browser firefox:"%firefox_profile%" %format_res% --ffmpeg-location %ffmpeg% -o "%title%""
 ::下载视频转换成mp4（用--merge-output-format参数）
-set yt-dlp_download=yt-dlp --merge-output-format mp4 %yt-dlp_params% -P %SaveDir% "%link%"
+set "yt-dlp_download=yt-dlp "%link%" -P %SaveDir% --merge-output-format mp4 %yt-dlp_params%"
 goto :eof
 
 

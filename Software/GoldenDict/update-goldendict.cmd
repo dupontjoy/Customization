@@ -67,7 +67,7 @@ goto :eof
 
 :unzip_goldendict
 setlocal enabledelayedexpansion
-
+::先终止运行中的goldendict程序
 taskkill /f /t /im goldendict*
 
 ::解压, 跳過压缩包的第一层目录(兼容无顶层目录的 ZIP 文件)

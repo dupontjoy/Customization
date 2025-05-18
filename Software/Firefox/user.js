@@ -1,4 +1,4 @@
-//2025.03.11
+//2025.05.17
 
 
 /*
@@ -20,6 +20,8 @@
  *******************************************************************************************/
 
 //*==========选项卡里的设置==========*//
+user_pref("sidebar.revamp", false);//显示侧栏（否）
+user_pref("sidebar.visibility", "hide-sidebar");//显示侧栏按钮（否）
 user_pref("privacy.userContext.enabled", true);//启用身份标签页
 user_pref("signon.rememberSignons", false);//不保存密码
 user_pref("browser.shell.checkDefaultBrowser", false);//总是检查是否为默认浏览器(否)
@@ -27,6 +29,8 @@ user_pref("browser.search.suggest.enabled", false);//禁用搜索建议
 user_pref("dom.private-attribution.submission.enabled", false);//允许网站进行隐私保护下的广告监测（否）
 user_pref("browser.preferences.moreFromMozilla", false);//更多Mozilla产品
 user_pref("media.autoplay.default", 0);//自动播放默认值：阻止音频和视频
+user_pref("datareporting.healthreport.uploadEnabled", false);//向 Mozilla 发送技术与交互数据
+user_pref("datareporting.usage.uploadEnabled", false);//向 Mozilla 发送每日使用情况报告
 
 //字体语言编码
 user_pref("font.name.serif.zh-CN", "Arial");//衬线字体

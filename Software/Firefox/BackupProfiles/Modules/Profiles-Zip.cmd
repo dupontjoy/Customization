@@ -21,7 +21,7 @@ set "mm=%time:~3,2%"
 set "ss=%time:~6,2%"
 
 :: 生成压缩包文件名（强制无空格）
-set "Name=FxProfiles_%YY%(%YY_HD%).%MON%%DD%.%hh%%mm%_%ver%.7z"
+set "Name=FxProfiles_(%YY_HD%)%YY%.%MON%%DD%.%hh%%mm%_%ver%.7z"
 
 :: 压缩操作（路径严格引号包裹）
 "%zip%" -mx9 -mhc -ms -mmt -mfb=273 -r u "%TargetFolder%\!Name!" "%TempFolder%\Profiles\BackupProfiles" "%TempFolder%\Profiles\FxProfiles" "%TempFolder%\Profiles\Run"

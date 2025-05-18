@@ -45,6 +45,7 @@ echo.&echo █ 正在更新UC脚本...
 (
 echo %GH_PROXY%/https://github.com/benzBrake/userChrome.js-Loader/archive/refs/heads/main.zip
 echo %GH_PROXY%/https://github.com/benzBrake/Firefox-downloadPlus.uc.js/raw/refs/heads/main/FlashGot.uc.js
+echo https://gcore.jsdelivr.net/gh/xinggsf/uc/BookmarkOpt.uc.js
 ) > urls.tmp
 
 :: 批量下载文件

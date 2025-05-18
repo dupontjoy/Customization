@@ -80,9 +80,9 @@ goto :eof
 set "record_limit="
 set /p "record_limit=请输入录制时长限制(格式：HH:mm:ss, 可为空): "
 if "!record_limit!"=="" (
-    set live_record_limit=
+    set "live_record_limit="
 ) else (
-    set live_record_limit=--live-record-limit %record_limit%
+    set "live_record_limit=--live-record-limit %record_limit%"
     )
 goto :eof
 
@@ -91,9 +91,9 @@ goto :eof
 set "custom_range="
 set /p "custom_range=请输入分片范围(格式：0-10或10-或-99或05:00-20:00, 可为空): "
 if "!custom_range!"=="" (
-    set custom_range=
+    set "custom_range="
 ) else (
-    set custom_range=--custom-range %custom_range%
+    set "custom_range=--custom-range %custom_range%"
     )
 goto :eof
 
@@ -102,12 +102,12 @@ goto :eof
 :setting_video_download_no_ad
 ::设置video下载命令
 ::将%filename%加引号，防止文件名带有某些符号导致路径识別失败
-set video_download=N_m3u8DL-RE "%link%" --save-name "%filename%" @config_common.conf @config_ad_keyword.conf
+set "video_download=N_m3u8DL-RE "%link%" --save-name "%filename%" @config_common.conf @config_ad_keyword.conf"
 goto :eof
 
 :setting_live_record
 ::设置直播录制命令
-set live_record=N_m3u8DL-RE "%link%" --save-name "%filename%" %live_record_limit% @config_common.conf @config_live_record.conf
+set "live_record=N_m3u8DL-RE "%link%" --save-name "%filename%" %live_record_limit% @config_common.conf @config_live_record.conf"
 goto :eof
 
 

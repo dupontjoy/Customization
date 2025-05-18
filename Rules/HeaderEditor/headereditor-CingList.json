@@ -129,19 +129,6 @@
 			"encoding": "UTF-8"
 		},
 		{
-			"enable": false,
-			"name": "greasyfork >> 镜像",
-			"ruleType": "redirect",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/greasyfork\\.org\\/.*scripts\\/(.*)$",
-			"exclude": "",
-			"isFunction": false,
-			"action": "redirect",
-			"to": "https://yx.dahi.edu.eu.org/zh-CN/scripts/$1",
-			"group": "CingList-Redirect",
-			"encoding": "UTF-8"
-		},
-		{
 			"enable": true,
 			"name": "DMM JP >> Global Redirect",
 			"ruleType": "redirect",
