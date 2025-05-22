@@ -95,10 +95,10 @@ echo. 下载完成 且 保存新版本号到文件.
 endlocal
 
 :: 解压
+taskkill /f /t /im maa*
 echo. 
 echo. 解压MAAComponent-OTA-win-x64.zip ...
 echo. 
-taskkill /f /t /im maa*
 tar -xf .\MAAComponent-OTA-win-x64.zip
 del /s /q .\MAAComponent-OTA-win-x64.zip
 

@@ -60,6 +60,22 @@
             "Folder": "%USERPROFILE%\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\",
             "Priority": -2
           }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Folder": "c:\\",
+            "Priority": 1
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Folder": "d:\\",
+            "Priority": 1
+          }
         }
       ],
       "Updates": []
@@ -365,6 +381,7 @@
   },
   "AutoUpdate": {},
   "Settings": {
+    "General.EnableAnalytics": false,
     "Hotkey.PressShowListaryHotkeyAgainBehavior": "hide",
     "OpenFolder.Path": "..\\TotalCMD64\\TotalCMD64.exe",
     "OpenFolder.Param": "/O /T /P=R \"%1\"",

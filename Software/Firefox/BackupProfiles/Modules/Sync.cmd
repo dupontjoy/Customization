@@ -54,8 +54,8 @@ xcopy "%BackupDir%\..\..\..\foobar2000\profile\config.sqlite" "%OutputDir%\Custo
 xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customization\Software\GoldenDict\"  /s /y /i
 xcopy "%BackupDir%\..\..\..\GoldenDict\update-goldendict.cmd" "%OutputDir%\Customization\Software\GoldenDict\"  /s /y /i
 
-:IDM
-xcopy "%BackupDir%\..\..\..\IDM\!)选项配置.reg" "%OutputDir%\Customization\Software\IDM\"  /s /y /i
+:IDMan
+xcopy "%BackupDir%\..\..\..\IDM\!)选项配置.reg" "%OutputDir%\Customization\Software\IDMan\"  /s /y /i
 
 :ImageGlass
 xcopy "%BackupDir%\..\..\Software\ImageGlass\igconfig.json" "%OutputDir%\Customization\Software\ImageGlass\"  /s /y /i

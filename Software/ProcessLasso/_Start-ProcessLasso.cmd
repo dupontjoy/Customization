@@ -9,8 +9,7 @@ taskkill /f /t /im ProcessGovernor.exe
 taskkill /f /t /im ProcessLasso.exe
 taskkill /f /t /im bitsumsessionagent.exe
 
-
-::Æô„Ó³ÌÐò
+::Æô„Ó
 START ProcessGovernor.exe "/configfolder=./config" "/logfolder=%tmp%"
 START ProcessLasso.exe "/configfolder=./config" "/logfolder=%tmp%"
 

@@ -33,9 +33,10 @@ mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIME Po
 ::ÆÕÍ¨†¢„Ó
 start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
 start  "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
+start  "" "%cd%\Ditto\Ditto.exe"
 start  "" "%cd%\PixPin\PixPin.exe"
 ::start  "" "%cd%\Snipaste\Snipaste.exe"
-start  "" "%cd%\Ditto\Ditto.exe"
+start  "" "%cd%\ProcessLassoPro\_Start-ProcessLasso.cmd"
 
 :listary
 ::Listary5´ú

@@ -3,14 +3,14 @@
 ! Description:  自用过滤规则。
 ! Author:       Cing
 ! License:      Creative Commons BY-NC-SA
-! Version:      2024
-! Expires:      1h
+! Version:      2025
+! Expires:      8h
 !-------------------------------------------------------------------------------------!
 
 ! Bili
 bilibili.com##.reply-notice
 bilibili.com##.browser-tip > .title
-
+bilibili.com##.adblock-tips
 
 ! 防止斗鱼直播切回标签页会重新加载
 douyu.com##+js(aeld,visibilitychange)
@@ -96,9 +96,6 @@ feikuai.tv##.popupShow.none.popup-tips.popup
 ! dushe9.app
 dushe9.app###modal-anc
 dushe9.app##.iziModal-overlay
-
-! zlibrary
-zlibrary-cn.se##.support-us-headline
 
 ! torkitty.net
 torkitty.net##.modal-body
