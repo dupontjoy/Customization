@@ -19,6 +19,15 @@ rd /s /q "%cd%\..\Profiles\FxProfiles\cache2"
 rd /s /q "%cd%\N_m3u8DL-RE\cache"
 rd /s /q "%cd%\N_m3u8DL-RE\Logs"
 
+::删除ztasker User文件夹中的无用文件
+rd /s /q "%cd%\zTasker\User\Backup"
+rd /s /q "%cd%\zTasker\User\Custom"
+rd /s /q "%cd%\zTasker\User\Logs"
+rd /s /q "%cd%\zTasker\User\pinyin.db"
+rd /s /q "%cd%\zTasker\User\TasksBackup"
+rd /s /q "%cd%\zTasker\User\Temp"
+
+
 ::删除FoxmailUpdate文件夹, 有可能导致foxmail无法启动
 rd /s /q "%cd%\..\..\Tencent\Foxmail\FoxmailUpdate"
 
@@ -26,10 +35,11 @@ rd /s /q "%cd%\..\..\Tencent\Foxmail\FoxmailUpdate"
 del /s /q /f "C:\Users\%USERNAME%\Downloads\*"
 del /s /q /f "C:\Users\%USERNAME%\AppData\Local\Temp\*"
 
+
+:run
 ::管理员启动WeaselServer.exe
 mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIME Portable\weasel\WeaselServer.exe""","::",,"runas",1)(window.close)
 
-:run
 ::普通啟動
 start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
 start  "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
