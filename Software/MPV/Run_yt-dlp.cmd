@@ -61,9 +61,9 @@ goto :eof
 :setting_yt-dlp_params
 ::设置yt-dlp下载参数
 set "title=%%(title)s@%%(uploader)s.%%(ext)s"
-set "yt-dlp_params=--cookies-from-browser firefox:"%firefox_profile%" %format_res% --ffmpeg-location %ffmpeg% -o "%title%""
+set "yt-dlp_params=--cookies-from-browser firefox:"%firefox_profile%" %format_res% --ffmpeg-location %ffmpeg% -o %title%"
 ::下载视频转换成mp4（用--merge-output-format参数）
-set "yt-dlp_download=yt-dlp "%link%" -P %SaveDir% --merge-output-format mp4 %yt-dlp_params%"
+set "yt-dlp_download=yt-dlp --merge-output-format mp4 %yt-dlp_params% -P %SaveDir% %link%"
 goto :eof
 
 

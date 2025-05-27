@@ -101,13 +101,12 @@ goto :eof
 ::---------------设置部分---------------
 :setting_video_download_no_ad
 ::设置video下载命令
-::将%filename%加引号，防止文件名带有某些符号导致路径识別失败
-set "video_download=N_m3u8DL-RE "!link!" --save-name "!filename!" @config_common.conf @config_ad_keyword.conf"
+set "video_download=N_m3u8DL-RE @config_common.conf @config_ad_keyword.conf --save-name %filename% %link%"
 goto :eof
 
 :setting_live_record
 ::设置直播录制命令
-set "live_record=N_m3u8DL-RE "!link!" --save-name "!filename!" %live_record_limit% @config_common.conf @config_live_record.conf"
+set "live_record=N_m3u8DL-RE @config_common.conf @config_live_record.conf %live_record_limit% --save-name %filename% %link%"
 goto :eof
 
 
@@ -115,19 +114,19 @@ goto :eof
 :video_downloading
 ::输出运行命令
 cls
-echo.运行命令：!video_download!
+echo.运行命令：%video_download%
 echo.
 ::开始下载
-!video_download!
+%video_download%
 goto :eof
 
 :live_recording
 ::输出运行命令
 cls
-echo.运行命令：!live_record!
+echo.运行命令：%live_record%
 echo.
 ::开始录制
-!live_record!
+%live_record%
 goto :eof
 
 
