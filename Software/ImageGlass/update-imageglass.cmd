@@ -16,13 +16,23 @@ pushd "%~dp0"
 :: 下载工具配置
 set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 
+:: 版本文件
+set "version_file=versions_imageglass.txt"
+
 ::=======================================
 :: 主流程
 ::=======================================
 :menu
 call :test_fastest_ghmirror
-call :updating_imageglass
-call :unzip_imageglass
+call :check_version
+if "%need_update%"=="1" (
+    call :update_imageglass
+    call :unzip_imageglass
+    echo %latest_version% > "%version_file%"
+    echo 已更新到最新版本: %latest_version%
+) else (
+    echo 当前已是最新版本: %latest_version%，无需更新
+)
 call :end
 goto :eof
 
@@ -33,8 +43,41 @@ goto :eof
 CALL "%cd%\..\..\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 goto :eof
 
-:updating_imageglass
-setlocal
+:check_version
+setlocal enabledelayedexpansion
+echo.&echo █ 正在检查ImageGlass版本...
+
+:: GitHub API 地址
+set "api_url=https://api.github.com/repos/d2phap/ImageGlass/releases/latest"
+
+:: 获取最新版本更新時间
+for /f %%i in ('powershell -Command "(Invoke-WebRequest -Uri '%api_url%' -UseBasicParsing | ConvertFrom-Json).published_at"') do (
+    set "latest_version=%%i"
+)
+echo 在线版本: %latest_version%
+    
+:: 读取本地版本更新時间
+set "local_version="
+if exist "%version_file%" (
+    for /f "usebackq delims=" %%i in ("%version_file%") do (
+        set "local_version=%%i"
+    )
+)
+echo 本地版本: %local_version%
+
+:: 比较版本
+if "%latest_version%"=="%local_version%" (
+    set "need_update=0"
+) else (
+    set "need_update=1"
+)
+echo 版本比较结果: %need_update%
+
+endlocal & set "need_update=%need_update%" & set "latest_version=%latest_version%"
+goto :eof
+
+:update_imageglass
+setlocal enabledelayedexpansion
 echo.&echo █ 正在更新imageglass...
 
 :: GitHub API 地址和文件名匹配模式
@@ -65,26 +108,41 @@ endlocal
 goto :eof
 
 :unzip_imageglass
-setlocal
-::解压, 跳過压缩包的第一层目录(兼容无顶层目录的 ZIP 文件)
+setlocal enabledelayedexpansion
+
+:: 解压imageglass，跳过压缩包的第一层目录(兼容无顶层目录的ZIP文件)
 set "zipfile=imageglass-latest.zip"
 set "tempdir=%cd%\unzip_temp"
 
-REM 创建临时目录并解压
+:: 创建临时目录并解压
 mkdir "%tempdir%" 2>nul
 tar -xf "%zipfile%" -C "%tempdir%"
 
-REM 判断临时目录中是否有子目录
-dir /b "%tempdir%" | findstr /i "[0-9a-zA-Z]" >nul
-if %errorlevel% equ 0 (
-    for /d %%D in ("%tempdir%\*") do (
-        xcopy /s /e /h /y "%%D\*" ".\"
+:: 判断临时目录内容并复制
+set "hasSubdir=0"
+for /d %%D in ("%tempdir%\*") do (
+    set "hasSubdir=1"
+    echo 正在复制文件...
+    xcopy /s /e /h /y "%%D\*" ".\" >nul || (
+        echo 错误: 复制文件失败
+        rmdir /s /q "%tempdir%" 2>nul
+        pause
+        exit /b 1
     )
-) else (
-    xcopy /s /e /h /y "%tempdir%\*" ".\"
 )
 
-rd /s /q "%tempdir%"
+if "!hasSubdir!"=="0" (
+    echo 正在复制文件...
+    xcopy /s /e /h /y "%tempdir%\*" ".\" >nul || (
+        echo 错误: 复制文件失败
+        rmdir /s /q "%tempdir%" 2>nul
+        pause
+        exit /b 1
+    )
+)
+
+:: 清理临时目录
+rmdir /s /q "%tempdir%" 2>nul
 endlocal
 
 del /s /q .\imageglass-latest.zip

@@ -51,6 +51,13 @@ edtWebPass=
 chkClassLast=0
 chkHotkeyDupKey=0
 chkHotkeyDupMouse=0
+chkToMultiTip=1
+chkNotSetAutoTip=1
+optThemeLight=0
+optThemeDark=0
+optThemeSys=1
+chkLockNoHK=0
+cmbLockNoHK=0
 [Hotkey]
 chkHotkey=0
 new_remind=Ctrl+Shift+R
@@ -69,6 +76,12 @@ option=Ctrl+Shift+O
 option_key=79
 option_enabled=1
 Disabled=0
+fav=Ctrl+Shift+~
+fav_key=192
+fav_enabled=1
+all=Ctrl+Shift+A
+all_key=65
+all_enabled=1
 [Stat]
 Zoomed=0
 Left=144

@@ -1,7 +1,7 @@
 {
   "author": "文件作者",
   "description": "文件描述",
-  "id": 1748177429752152,
+  "id": 1748393171370147,
   "title": "文件标题",
   "buildingType": 243,
   "planTimes": "3班",
@@ -146,7 +146,13 @@
         "control": [
           {
             "skip": false,
-            "operators": [],
+            "operators": [
+              "灵知",
+              "凯尔希",
+              "玛恩纳",
+              "明椒",
+              "魔王"
+            ],
             "sort": false,
             "autofill": false
           }

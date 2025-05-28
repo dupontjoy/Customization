@@ -17,12 +17,22 @@ pushd "%~dp0"
 :: 下载工具配置
 set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 
+:: 版本文件
+set "version_file=versions_readest.txt"
+
 ::=======================================
 :: 主流程
 ::=======================================
 :menu
 call :test_fastest_ghmirror
-call :updating_readest
+call :check_version
+if "%need_update%"=="1" (
+    call :update_readest
+    echo %latest_version% > "%version_file%"
+    echo 已更新到最新版本: %latest_version%
+) else (
+    echo 当前已是最新版本: %latest_version%，无需更新
+)
 call :end
 goto :eof
 
@@ -33,8 +43,41 @@ goto :eof
 CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
 goto :eof
 
-:updating_readest
-setlocal
+:check_version
+setlocal enabledelayedexpansion
+echo.&echo █ 正在检查readest版本...
+
+:: GitHub API 地址
+set "api_url=https://api.github.com/repos/readest/readest/releases/latest"
+
+:: 获取最新版本更新時间
+for /f %%i in ('powershell -Command "(Invoke-WebRequest -Uri '%api_url%' -UseBasicParsing | ConvertFrom-Json).published_at"') do (
+    set "latest_version=%%i"
+)
+echo 在线版本: %latest_version%
+
+:: 读取本地版本更新時间
+set "local_version="
+if exist "%version_file%" (
+    for /f "usebackq delims=" %%i in ("%version_file%") do (
+        set "local_version=%%i"
+    )
+)
+echo 本地版本: %local_version%
+
+:: 比较版本
+if "%latest_version%"=="%local_version%" (
+    set "need_update=0"
+) else (
+    set "need_update=1"
+)
+echo 版本比较结果: %need_update%
+
+endlocal & set "need_update=%need_update%" & set "latest_version=%latest_version%"
+goto :eof
+
+:update_readest
+setlocal enabledelayedexpansion
 echo.&echo █ 正在更新readest...
 
 :: GitHub API 地址和文件名匹配模式
