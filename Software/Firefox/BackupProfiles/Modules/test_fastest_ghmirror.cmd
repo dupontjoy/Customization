@@ -20,7 +20,7 @@ exit /b
 :: 测试链接和镜像列表
 :: 镜像来源：Github 增强 - 高速下载
 set "test_url=Jackchows/Cangjie5/raw/master/largefile.zip"
-set "proxies=fastgit.cc, gh.xx9527.cn, hub.gitmirror.com,ghproxy.cfd,github.boki.moe, gh.jasonzeng.dev, gh.monlor.com, mirrors.chenby.cn"
+set "proxies=fastgit.cc, gh.xx9527.cn, hub.gitmirror.com,ghproxy.cfd,github.boki.moe, gh.jasonzeng.dev, mirrors.chenby.cn"
 
 :: 初始化最快记录
 set "fastest_proxy="

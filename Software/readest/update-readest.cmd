@@ -28,7 +28,7 @@ call :test_fastest_ghmirror
 call :check_version
 if "%need_update%"=="1" (
     call :update_readest
-    echo %latest_version% > "%version_file%"
+    (echo|set /p="%latest_version%") > "%version_file%"
     echo 已更新到最新版本: %latest_version%
 ) else (
     echo 当前已是最新版本: %latest_version%，无需更新
