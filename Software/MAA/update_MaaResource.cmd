@@ -57,19 +57,20 @@ if not defined version2 (
 :: 读取本地保存的版本号
 set "old_version1="
 set "old_version2="
-if exist maa_versions.txt (
-    for /f "tokens=1,2" %%i in (maa_versions.txt) do (
+if exist versions_maa.txt (
+    for /f "tokens=1,2" %%i in (versions_maa.txt) do (
         set "old_version1=%%i"
         set "old_version2=%%j"
     )
 ) else (
     set "old_version2=%version1%"
 )
+echo. 本地版本: %old_version2%
 
 :: 比较版本号是否相同
     if defined old_version2 (
         if "!old_version2!" == "%version2%" (
-            echo. 本地版本：!old_version2!，已是最新版本.
+            echo. 当前已是最新版本：!version2!，无需更新.
             exit /b 0
         )
     )
@@ -89,7 +90,7 @@ if errorlevel 1 (
 
 :: 保存新版本号到文件
 echo. 
-echo. %old_version2% %version2% > maa_versions.txt
+echo. %old_version2% %version2% > versions_maa.txt
 echo. 下载完成 且 保存新版本号到文件.
 
 endlocal
@@ -107,26 +108,30 @@ goto :eof
 :update_MaaResource
 setlocal enabledelayedexpansion
 
+:: GitHub API 地址
+set "api_url=https://api.github.com/repos/MaaAssistantArknights/MaaResource/commits/main"
+
 :: 使用 PowerShell 获取最新提交時间
 echo. 
 echo 获取MaaResource最新提交時间...
-for /f "delims=" %%i in ('powershell -Command "(Invoke-RestMethod 'https://api.github.com/repos/MaaAssistantArknights/MaaResource/commits/main').commit.committer.date"') do (
+for /f %%i in ('powershell -Command "(Invoke-WebRequest -Uri '%api_url%' -UseBasicParsing | ConvertFrom-Json).commit.committer.date"') do (
     set "last_date=%%i"
 )
 echo. 最新在线提交時间: %last_date%
 
 :: 读取本地保存的版本号
 set "local_date="
-if exist maaresource_versions.txt (
-    for /f "tokens=1,2" %%i in (maaresource_versions.txt) do (
+if exist versions_maaresource.txt (
+    for /f "tokens=1,2" %%i in (versions_maaresource.txt) do (
         set "local_date=%%i"
     )
 )
+echo. 本地時间: %local_date%
 
 :: 比较版本号是否相同
     if defined local_date (
         if "!local_date!" == "%last_date%" (
-            echo. 本地時间: %local_date%，已是最新版本.
+            echo. 当前已是最新版本: %last_date%，无需更新.
             exit /b 0
         )
     )
@@ -138,7 +143,7 @@ echo. [下载] %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/arc
 
 :: 更新本地時间文件
 echo. 
-echo. %last_date% > maaresource_versions.txt
+(echo|set /p="%last_date%") > versions_maaresource.txt
 
 echo 下载完成，時间已更新为：%last_date%
 echo. 

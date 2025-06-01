@@ -1,26 +1,13 @@
-::2025.05.27
+::2025.05.29
+
 @echo off
 setlocal enabledelayedexpansion
-
-goto :test_fastest_ghmirror
-
-:compare_speed
-if "%~2"=="" exit /b
-set "speed=%~2"
-:: 提取整数部分
-for /f "tokens=1 delims=." %%i in ("!speed!") do set "int_speed=%%i"
-if "!int_speed!"=="" set "int_speed=0"
-if !int_speed! gtr !fastest_speed! (
-    set "fastest_speed=!int_speed!"
-    set "fastest_proxy=%~1"
-)
-exit /b
 
 :test_fastest_ghmirror
 :: 测试链接和镜像列表
 :: 镜像来源：Github 增强 - 高速下载
 set "test_url=Jackchows/Cangjie5/raw/master/largefile.zip"
-set "proxies=fastgit.cc, gh.xx9527.cn, hub.gitmirror.com,ghproxy.cfd,github.boki.moe, gh.jasonzeng.dev, mirrors.chenby.cn"
+set "proxies=fastgit.cc, gh.xx9527.cn, hub.gitmirror.com,ghproxy.cfd,github.boki.moe, gh.jasonzeng.dev, mirrors.chenby.cn, gh.h233.eu.org, gh.ddlc.top, cors.isteed.cc, hub.gitmirror.com, github.tbedu.top, gh-proxy.linioi.com, firewall.lxstd.org, ghp.keleyaa.com, github.wuzhij.com, github.limoruirui.com"
 
 :: 初始化最快记录
 set "fastest_proxy="
@@ -88,3 +75,6 @@ echo 随机选择的镜像站点是: !selected_proxy! (下载速度 !selected_speed! 字节/秒)
 set "GH_PROXY=https://!selected_proxy!"
 endlocal & set "GH_PROXY=%GH_PROXY%"
 echo GH_PROXY=%GH_PROXY%
+
+:end
+timeout /t 3 /nobreak
