@@ -21,7 +21,7 @@ cd ..\..\
 taskkill /f /t /im Listary*
 
 ::删除日志和临时文件
-del  /s /q "%cd%\UserProfile\Cache"
+rd /s /q "%cd%\UserProfile\Cache"
 
 ::禁止Listary*.exe联网，防止激活码被检测失效
 :: 直接请求管理员权限（不依赖VBScript）
