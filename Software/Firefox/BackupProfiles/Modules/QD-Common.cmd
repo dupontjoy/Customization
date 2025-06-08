@@ -71,17 +71,18 @@ powershell -command "& {$app = Get-Process -Name Foxmail; if ($app) { $app.Close
 start "" "%cd%\..\..\Tencent\Weixin\Weixin.exe"
 
 REM 等待微信界面加载（时间可根据实际情况调整）
-timeout /t 5 /nobreak >nul
+timeout /t 8 /nobreak >nul
 
 REM 生成临时VBS脚本模拟键盘操作
 echo Set WshShell = CreateObject("WScript.Shell") > click.vbs
 echo WshShell.AppActivate "微信" >> click.vbs
-echo WScript.Sleep 300 >> click.vbs
+echo WScript.Sleep 500 >> click.vbs
 echo WshShell.SendKeys "{ENTER}" >> click.vbs
 
 REM 执行脚本并清理
 cscript //nologo click.vbs
 del click.vbs
+
 
 :capslock
 ::必须使用pushd+cd方式获取并保存路径的方式启動，相對路径的動作和命令才能生效

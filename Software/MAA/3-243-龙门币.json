@@ -1,7 +1,7 @@
 {
   "author": "文件作者",
   "description": "文件描述",
-  "id": 1748393171370147,
+  "id": 1749206141605176,
   "title": "文件标题",
   "buildingType": 243,
   "planTimes": "3班",
@@ -203,8 +203,8 @@
         "order": "pre"
       },
       "drones": {
-        "room": "manufacture",
-        "index": 3,
+        "room": "trading",
+        "index": 1,
         "enable": true,
         "order": "pre"
       },

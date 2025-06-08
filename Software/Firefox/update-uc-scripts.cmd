@@ -41,10 +41,10 @@ setlocal enabledelayedexpansion
 echo.&echo █ 正在更新UC脚本...
 
 :: 生成下载列表
-:: echo %GH_PROXY%/https://raw.githubusercontent.com/benzBrake/Firefox-downloadPlus.uc.js/main/downloadPlus_Fx136.uc.js
+:: %GH_PROXY%/https://github.com/benzBrake/Firefox-downloadPlus.uc.js/raw/refs/heads/main/FlashGot.uc.js
 (
 echo %GH_PROXY%/https://github.com/benzBrake/userChrome.js-Loader/archive/refs/heads/main.zip
-echo %GH_PROXY%/https://github.com/benzBrake/Firefox-downloadPlus.uc.js/raw/refs/heads/main/FlashGot.uc.js
+echo %GH_PROXY%/https://raw.githubusercontent.com/benzBrake/Firefox-downloadPlus.uc.js/main/downloadPlus_Fx136.uc.js
 echo https://gcore.jsdelivr.net/gh/xinggsf/uc/BookmarkOpt.uc.js
 ) > urls.tmp
 
