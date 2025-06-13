@@ -83,7 +83,7 @@
          "guid": "",
          "hotkey": 3332,
          "keyword": "T",
-         "param": "/O /T /A /S /L=\"{action_path}\"",
+         "param": "/O /A /S /L=\"{action_path}\"",
          "path": "..\\TotalCMD64\\TotalCMD64.exe",
          "run_as_admin": false,
          "slient": false,
@@ -131,7 +131,7 @@
    "general": {
       "check_updates": false,
       "default_file_manager": {
-         "param": "/O /T /P=R \"%1\"",
+         "param": "/O /P=R \"%1\"",
          "path": "..\\TotalCMD64\\TotalCMD64.exe"
       },
       "language_file": "zh-CN.ini",

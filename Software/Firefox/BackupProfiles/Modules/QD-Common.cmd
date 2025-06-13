@@ -50,13 +50,13 @@ start  "" "%cd%\ProcessLassoPro\_Start-ProcessLasso.cmd"
 
 :listary
 ::Listary5代
-::start "" "%cd%\Listary Pro\UserData\Run_listary5.cmd"
+start "" "%cd%\Listary Pro\UserData\Run_listary5.cmd"
 
 ::Listary6代
-::使用 start 启动 cmd 并执行命令后退出
-pushd
-call "%cd%\Listary6\UserProfile\Settings\Run_Listary6.cmd"
-popd
+::需要获取完整路径才行
+::pushd
+::call "%cd%\Listary6\UserProfile\Settings\Run_Listary6.cmd"
+::popd
 
 :foxmail
 ::启動Foxmail后，关闭Foxmail的主窗口但不终止进程

@@ -64,27 +64,27 @@ xcopy "%BackDir%\storage" %TempFolder%\Profiles\FxProfiles\storage\ /s /y /i
 
 ::/**以下是文件**/
 ::扩展
-xcopy "%BackDir%\addons*.*" %TempFolder%\Profiles\FxProfiles\  /s /y /i
+xcopy "%BackDir%\addons*.*" %TempFolder%\Profiles\FxProfiles\  /y
 ::Cookies: 保留着你曾访问过的网站信息，通常是你的网站首选项信息或登录状态
-xcopy "%BackDir%\cookies.sqlite" %TempFolder%\Profiles\FxProfiles\  /s /y /i
+xcopy "%BackDir%\cookies.sqlite" %TempFolder%\Profiles\FxProfiles\  /y
 ::extensions.json: 扩展状态(是否禁用)
-xcopy "%BackDir%\extension*.json" %TempFolder%\Profiles\FxProfiles\  /s /y /i
+xcopy "%BackDir%\extension*.json" %TempFolder%\Profiles\FxProfiles\  /y
 ::favicons.sqlite: 首页及书签图标文件
-xcopy "%BackDir%\favicons.sqlite" %TempFolder%\Profiles\FxProfiles\  /s /y /i
+xcopy "%BackDir%\favicons.sqlite" %TempFolder%\Profiles\FxProfiles\  /y
 ::handlers.json：保存了Firefox 如何处理这些文件的方式，如pdf在firefox中打开还是下载或询问
-xcopy "%BackDir%\handlers.json" %TempFolder%\Profiles\FxProfiles\  /s /y /i
+xcopy "%BackDir%\handlers.json" %TempFolder%\Profiles\FxProfiles\  /y
 ::站点自定的首选项: 保存了许多针对站点的权限设置（比如，它保存着哪些网站被允许显示弹出窗口），或者针对站点的页面缩放级别
-xcopy "%BackDir%\permissions.sqlite" %TempFolder%\Profiles\FxProfiles\  /s /y /i
+xcopy "%BackDir%\permissions.sqlite" %TempFolder%\Profiles\FxProfiles\  /y
 ::书签和浏览历史
-xcopy "%BackDir%\places.sqlite" %TempFolder%\Profiles\FxProfiles\  /s /y /i
+xcopy "%BackDir%\places.sqlite" %TempFolder%\Profiles\FxProfiles\  /y
 ::搜索引擎
-xcopy "%BackDir%\search.json.mozlz4" %TempFolder%\Profiles\FxProfiles\  /s /y /i
+xcopy "%BackDir%\search.json.mozlz4" %TempFolder%\Profiles\FxProfiles\  /y
 ::参数设置
-xcopy "%BackDir%\user.js" %TempFolder%\Profiles\FxProfiles\  /s /y /i
-xcopy "%BackDir%\prefs.js" %TempFolder%\Profiles\FxProfiles\  /s /y /i
+xcopy "%BackDir%\user.js" %TempFolder%\Profiles\FxProfiles\  /y
+xcopy "%BackDir%\prefs.js" %TempFolder%\Profiles\FxProfiles\  /y
 ::其它文件
 ::storage-sync-v2必要,保存了一些扩展的设置（如HeaderEditor，BypassWalls等）
-xcopy "%BackDir%\storage*.sqlite*" %TempFolder%\Profiles\FxProfiles\  /s /y /i
+xcopy "%BackDir%\storage*.sqlite*" %TempFolder%\Profiles\FxProfiles\  /y
 
 
 ::讀取版本號和日期及時間

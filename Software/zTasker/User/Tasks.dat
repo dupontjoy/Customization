@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:55:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-06-09 07:55:00</NextRunDateTime>
-		<NextRunTime>2025-06-09 07:55:00</NextRunTime>
-		<LastRunTime>2025-06-08 07:55:00</LastRunTime>
+		<NextRunDateTime>2025-06-14 07:55:00</NextRunDateTime>
+		<NextRunTime>2025-06-14 07:55:00</NextRunTime>
+		<LastRunTime>2025-06-13 07:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -442,9 +442,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:55:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-06-08 17:55:00</NextRunDateTime>
-		<NextRunTime>2025-06-08 17:55:00</NextRunTime>
-		<LastRunTime>2025-06-07 17:55:00</LastRunTime>
+		<NextRunDateTime>2025-06-13 17:55:00</NextRunDateTime>
+		<NextRunTime>2025-06-13 17:55:00</NextRunTime>
+		<LastRunTime>2025-06-12 17:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -875,9 +875,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:25:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-06-08 21:25:00</NextRunDateTime>
-		<NextRunTime>2025-06-08 21:25:00</NextRunTime>
-		<LastRunTime>2025-06-07 21:25:00</LastRunTime>
+		<NextRunDateTime>2025-06-13 21:25:00</NextRunDateTime>
+		<NextRunTime>2025-06-13 21:25:00</NextRunTime>
+		<LastRunTime>2025-06-12 21:25:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>
@@ -1307,12 +1307,12 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-05-18 04:09:36</EndDateTime>
-		<NextRunDateTime>2125-05-14 14:09:03</NextRunDateTime>
+		<EndDateTime>2025-06-12 08:19:12</EndDateTime>
+		<NextRunDateTime>2125-05-20 07:26:26</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-06-07 14:09:03</LastRunTime>
+		<LastRunTime>2025-06-13 07:26:26</LastRunTime>
 		<Fav>0</Fav>
-		<Ver>2</Ver>
+		<Ver>3</Ver>
 		<Param>
 			<CountDownHour>0</CountDownHour>
 			<CountDownMin>0</CountDownMin>
@@ -1402,10 +1402,6 @@ env2=value2</edtAppEnv>
 			<cmbYearWeekNum></cmbYearWeekNum>
 			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
 			<edtDelayBoot>0</edtDelayBoot>
-			<edtEveryDay>1</edtEveryDay>
-			<edtEveryHour>1</edtEveryHour>
-			<edtEveryMin>30</edtEveryMin>
-			<edtEverySec>30</edtEverySec>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
 			<edtHKMouseCorner>50</edtHKMouseCorner>
@@ -1420,8 +1416,8 @@ env2=value2</edtAppEnv>
 			<optHKMouse>0</optHKMouse>
 			<tabBtnExec>0</tabBtnExec>
 			<tabBtnHK>0</tabBtnHK>
-			<tabBtnSch>1</tabBtnSch>
-			<tabBtnTask>0</tabBtnTask>
+			<tabBtnSch>0</tabBtnSch>
+			<tabBtnTask>1</tabBtnTask>
 		</Param>
 		<Actions>
 			<Tasker>
@@ -1437,7 +1433,7 @@ env2=value2</edtAppEnv>
 				<NextRunTime></NextRunTime>
 				<LastRunTime></LastRunTime>
 				<Fav>0</Fav>
-				<Ver>2</Ver>
+				<Ver>3</Ver>
 				<Param>
 					<BackClr>-12500671</BackClr>
 					<IsExitRest>0</IsExitRest>
@@ -1457,17 +1453,12 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<chkAppAdmin>0</chkAppAdmin>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -1476,46 +1467,28 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
 					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
 					<edtAppEnv>env1=value1
 env2=value2</edtAppEnv>
 					<edtAppParam></edtAppParam>
 					<edtAppPath>D:\Program Files\CingFox\Profiles\BackupProfiles\Modules\QD-Home.vbs</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
 					<edtTaskName>qd-home.vbs</edtTaskName>
 					<edtTaskSubName>qd-home.vbs</edtTaskSubName>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>qd-home.vbs</Name>
@@ -3052,9 +3025,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 13:30:00</StartDateTime>
 		<EndDateTime>2025-06-04 08:57:36</EndDateTime>
-		<NextRunDateTime>2025-06-09 13:30:00</NextRunDateTime>
-		<NextRunTime>2025-06-09 13:30:00</NextRunTime>
-		<LastRunTime>2025-06-08 13:30:00</LastRunTime>
+		<NextRunDateTime>2025-06-14 13:30:00</NextRunDateTime>
+		<NextRunTime>2025-06-14 13:30:00</NextRunTime>
+		<LastRunTime>2025-06-13 13:30:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>3</Ver>
 		<Param>
@@ -3470,9 +3443,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2025-05-28 14:00:00</StartDateTime>
 		<EndDateTime>2025-05-28 15:38:12</EndDateTime>
-		<NextRunDateTime>2025-06-08 14:00:00</NextRunDateTime>
-		<NextRunTime>2025-06-08 14:00:00</NextRunTime>
-		<LastRunTime>2025-06-01 14:00:00</LastRunTime>
+		<NextRunDateTime>2025-06-15 14:00:00</NextRunDateTime>
+		<NextRunTime>2025-06-15 14:00:00</NextRunTime>
+		<LastRunTime>2025-06-08 14:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>2</Ver>
 		<Param>

@@ -1,9 +1,6 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
-      "DirectoryOpus": {
-        "EnableMouseMiddleClick": false
-      },
       "WindowsExplorer": {
         "EnableMouseMiddleClick": false
       },
@@ -15,6 +12,9 @@
         "EnableMouseMiddleClick": false
       },
       "TotalCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "DirectoryOpus": {
         "EnableMouseMiddleClick": false
       },
       "FreeCommander": {
@@ -360,7 +360,7 @@
           "Item": {
             "Title": "在TC中定位到该文件",
             "Path": "TotalCMD64.exe",
-            "Parameter": "/O /T /A /S /L=\"{action_path}\"",
+            "Parameter": "/O /A /S /L=\"{action_path}\"",
             "WorkingDirectory": "..\\TotalCMD64\\",
             "Keyword": "T",
             "Hotkey": 1037,
@@ -371,9 +371,22 @@
       ],
       "Updates": [
         {
+          "Id": "44eca225-98f6-489c-b97a-03163e83ce7e",
+          "UpdatedProperties": {
+            "HotkeyScope": 1
+          }
+        },
+        {
+          "Id": "81927428-1534-44c4-88aa-f119f682339d",
+          "UpdatedProperties": {
+            "HotkeyScope": 1
+          }
+        },
+        {
           "Id": "284ecbe8-1ef2-49c9-bd93-f7025519402b",
           "UpdatedProperties": {
-            "Hotkey": 600
+            "Hotkey": 600,
+            "HotkeyScope": 1
           }
         }
       ]
@@ -384,7 +397,7 @@
     "General.EnableAnalytics": false,
     "Hotkey.PressShowListaryHotkeyAgainBehavior": "hide",
     "OpenFolder.Path": "..\\TotalCMD64\\TotalCMD64.exe",
-    "OpenFolder.Param": "/O /T /P=R \"%1\"",
+    "OpenFolder.Param": "/O /P=R \"%1\"",
     "Tutorial.ShowMainV3": false,
     "Listary5.SettingsImported": true,
     "Listary5.ProLicense.Name": "Adven Dai",
