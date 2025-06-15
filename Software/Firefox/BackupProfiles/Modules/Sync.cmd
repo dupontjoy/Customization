@@ -1,4 +1,4 @@
-::2025.06.12
+::2025.06.14
 
 Title 备份文件到托管网站
 ::界面颜色大小，Cols为宽，Lines为高
@@ -20,7 +20,8 @@ set "OutputDir=E:\My Documents\Nutstore\NutStoreSync"
 :cangjie5
 ::复制文件夹時，源文件夹不要带斜杠，目标文件夹带斜杠。末尾写/s /y /i
 ::复制文件時，末尾写/y
-xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\usr" "%OutputDir%\RimeIME-Portable\usr\" /s /y /i
+::使用robocopy复制usr時排除usr\build文件夹
+robocopy "%BackupDir%\..\..\Software\RimeIMEPortable\usr" "%OutputDir%\RimeIME-Portable\usr\" /E /ZB /R:3 /W:5 /XD "build"
 xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\install.bat" "%OutputDir%\RimeIME-Portable\" /y
 xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\uninstall.bat" "%OutputDir%\RimeIME-Portable\" /y
 xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\readme.txt" "%OutputDir%\RimeIME-Portable\" /y
@@ -58,9 +59,9 @@ xcopy "%BackupDir%\..\..\Software\ImageGlass\update-imageglass.cmd" "%OutputDir%
 
 :listary5
 ::備份Listary 5設置
-xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
-xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
-xcopy "%BackupDir%\..\..\Software\Listary Pro\UserData\Run_Listary5.cmd" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
+xcopy "%BackupDir%\..\..\Software\Listary5\UserData\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
+xcopy "%BackupDir%\..\..\Software\Listary5\UserData\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
+xcopy "%BackupDir%\..\..\Software\Listary5\UserData\Run_Listary5.cmd" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
 
 
 :listary6
@@ -159,8 +160,7 @@ xcopy "%BackupDir%\..\..\Software\zTasker\User\Tasks.dat" "%OutputDir%\Customiza
 ::先删除旧备份文件夹
 rd /s /q "%OutputDir%\..\..\GitHub\Customization\Rules"
 rd /s /q "%OutputDir%\..\..\GitHub\Customization\Software"
-rd /s /q "%OutputDir%\..\..\GitHub\RimeIME-Portable\config"
-rd /s /q "%OutputDir%\..\..\GitHub\RimeIME-Portable\soft"
+rd /s /q "%OutputDir%\..\..\GitHub\RimeIME-Portable\usr"
 timeout /t 3 /nobreak
 xcopy "%OutputDir%\Customization" "%OutputDir%\..\..\GitHub\Customization\"  /s /y /i
 xcopy "%OutputDir%\RimeIME-Portable" "%OutputDir%\..\..\GitHub\RimeIME-Portable\"  /s /y /i

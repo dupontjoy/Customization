@@ -38,7 +38,7 @@ del /s /q /f "C:\Users\%USERNAME%\AppData\Local\Temp\*"
 
 :run
 ::管理员启动WeaselServer.exe
-mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIME Portable\weasel\WeaselServer.exe""","::",,"runas",1)(window.close)
+mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIMEPortable\weasel\WeaselServer.exe""","::",,"runas",1)(window.close)
 
 ::普通啟動
 start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
@@ -50,7 +50,7 @@ start  "" "%cd%\ProcessLassoPro\_Start-ProcessLasso.cmd"
 
 :listary
 ::Listary5代
-start "" "%cd%\Listary Pro\UserData\Run_listary5.cmd"
+start "" "%cd%\Listary5\UserData\Run_listary5.cmd"
 
 ::Listary6代
 ::需要获取完整路径才行

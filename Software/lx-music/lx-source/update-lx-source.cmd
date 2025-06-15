@@ -17,7 +17,7 @@ set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 ::=======================================
 :menu
 call :test_fastest_ghmirror
-call :update_fixed
+:: call :update_fixed
 call :update_change
 call :end
 goto :eof
@@ -51,7 +51,7 @@ set "repo=lxmusic-source-all"
 set "branch=main"
 
 echo.
-echo 正在检查仓库文件...
+echo 正在检查以“聚合”开头的文件...
 echo.
 
 :: 使用提交历史获取文件更新时间（更可靠的方法）
