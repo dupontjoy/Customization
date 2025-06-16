@@ -17,7 +17,7 @@ set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 ::=======================================
 :menu
 call :test_fastest_ghmirror
-:: call :update_fixed
+call :update_fixed
 call :update_change
 call :end
 goto :eof
