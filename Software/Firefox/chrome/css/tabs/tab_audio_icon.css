@@ -1,0 +1,58 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+/* thanks to Speravir: https://github.com/Aris-t2/CustomCSSforFx/issues/368#issuecomment-859216327 */
+
+/* Fx 136+ */
+.tab-audio-button {
+  --button-size-icon-small: 22px !important;
+  --button-min-height-small: 22px !important;
+  --button-border-color-ghost: unset !important;
+  --button-border-radius: 30px !important;
+  background: var(--button-background-color-ghost-hover) !important;
+  border-radius: 30px !important;
+  scale: .8 !important;
+  transform: translateY(-1px);
+  margin-inline-start: -2px !important;
+}
+
+/* Fx 128-135 */
+/* thanks to Speravir: https://github.com/Aris-t2/CustomCSSforFx/issues/368#issuecomment-859216327 */
+/* https://old.reddit.com/r/FirefoxCSS/comments/nqyhcm/anyone_got_any_css_to_put_the_audible_icon_back/h0eti2o/ */
+.tab-icon-stack:is([muted],[soundplaying],[activemedia-blocked]){
+  grid-template-areas: "a s";
+}
+.tab-icon-overlay:is([muted],[soundplaying],[activemedia-blocked]) {
+  grid-area: s;
+}
+.tab-icon-overlay {
+  padding: 0 !important;
+  border: 0 !important;
+  background-position: center !important;
+  fill: currentColor !important;
+}
+.tab-icon-overlay:hover {
+  filter: brightness(1.10)!important;
+  opacity: 0.8 !important;
+}
+.tab-icon-stack:is([soundplaying], [muted], [activemedia-blocked]) > * {
+  opacity: 1 !important;
+}
+
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab:not([pinned]) .tab-icon-overlay:not([pinned]) {
+  margin-inline-start: -2px !important;
+  margin-inline-end: 2px !important; 
+}
+
+/* adds transparent background to icon*/
+.tab-icon-overlay:is([soundplaying], [muted], [activemedia-blocked]) {
+  background-color: rgba(0,0,0,0.1) !important
+}
+
+@media (-moz-toolbar-prefers-color-scheme: dark), (prefers-color-scheme: dark) {
+  .tab-icon-overlay:is([soundplaying], [muted], [activemedia-blocked]) {
+    background-color: rgba(255,255,255,0.1) !important
+  }
+}

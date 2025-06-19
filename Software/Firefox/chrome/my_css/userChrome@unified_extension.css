@@ -1,0 +1,15 @@
+#unified-extensions-view > .panel-subview-body > .unified-extensions-list{display:none !important;}
+#unified-extensions-button {
+ list-style-image: url("chrome://global/skin/icons/chevron.svg") !important;
+}
+.unified-extensions-item-icon,
+#unified-extensions-panel .unified-extensions-item .webextension-browser-action > .toolbarbutton-badge-stack > .toolbarbutton-icon {
+ height: 16px !important;
+ width: 16px !important;
+}
+.unified-extensions-item-message-deck,
+#unified-extensions-view>.panel-header,
+#unified-extensions-view>toolbarseparator,
+#unified-extensions-view>#unified-extensions-manage-extensions,
+.unified-extensions-context-menu-report-extension
+{display:none !important;}

@@ -1,0 +1,37 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root{
+  --sidebar-hover-width: 8px;
+  --sidebar-visible-width: 300px;
+}
+
+#sidebar-main{
+  display: none !important;
+}
+
+#sidebar-box,
+#sidebar-box #sidebar {
+  padding: 0 !important;
+  margin: 0 !important;
+  opacity: 0 !important;
+}
+
+#sidebar-box:hover,
+#sidebar-box:hover #sidebar {
+  opacity: 1.0 !important;
+}
+
+#sidebar-box {
+  min-width: var(--sidebar-hover-width) !important;
+  width: var(--sidebar-hover-width) !important;
+  max-width: var(--sidebar-hover-width) !important;
+}
+
+#sidebar-box:hover {
+  min-width: var(--sidebar-visible-width) !important;
+  width: var(--sidebar-visible-width) !important;
+  max-width: var(--sidebar-visible-width) !important;
+}

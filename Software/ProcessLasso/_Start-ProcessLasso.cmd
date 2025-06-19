@@ -13,4 +13,6 @@ taskkill /f /t /im bitsumsessionagent.exe
 START ProcessGovernor.exe "/configfolder=./config" "/logfolder=%tmp%"
 START ProcessLasso.exe "/configfolder=./config" "/logfolder=%tmp%"
 
+popd
+
 exit

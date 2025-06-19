@@ -1,0 +1,295 @@
+/* == 新标签页图标定制 ==
+   @namespace   新标签页图标定制
+   @version     2.0.25.0530-兼容fx139
+   @reference   https://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=2109126&pid=41020158
+   == 功能列表 ==
+   1. 隐藏默认图标
+   2. 自定义背景图片
+   3. 水滴形图标样式
+   4. 悬停动态效果
+   5. 新版图标尺寸适配
+   6. 定制网站图标
+   7. 显示定制网站名称
+============================================ */
+@-moz-document url(about:newtab), url("about:home") {
+    /*隐藏搜索框上的firefox文字和logo*/
+    .logo-and-wordmark-wrapper {display: none!important;}
+    
+    /* 隐藏所有快捷图标的悬停背景 */
+    .top-site-outer:hover {
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    /*-- 原子级隐藏系统元素 --*/
+    .top-sites-list .top-site-outer .title > *:not(.title-text),  
+    #onboarding-overlay-button,
+    .top-sites-list .top-site-outer .default-icon,
+    .section-top-bar .info-option-icon,
+    .top-sites-list .top-site-outer .context-menu-button, /* 隐藏固定pin图标 */
+    .top-sites-list .top-site-outer .pinned-icon, /* 隐藏固定pin图标 */
+    .icon.icon-pin-small {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        width: 0 !important;
+        opacity: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 0 !important;
+        line-height: 0 !important;
+    }
+
+    /*-- 精确打击域名元素 --*/
+    .top-sites-list .top-site-outer .title .url {
+        all: unset !important;
+        display: none !important;
+    }
+
+    /*-- 重建标题容器 --*/
+    .top-sites-list .top-site-outer .title {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: auto !important;
+        min-height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /*-- 调整图标容器宽度与搜索框对齐 --*/
+    .top-sites-list, .top-sites-list .top-site-outer {
+        width: var(--newtab-search-container-width) !important;
+        min-width: var(--newtab-search-container-width) !important;
+        max-width: var(--newtab-search-container-width) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /*-- 动态名称标注 --*/
+    .top-sites-list .top-site-outer .title::after {
+        content: var(--site-name, "") !important;
+        display: block !important;
+        order: 2;
+        width: 100%;
+        font-size: 12px !important;
+        color: #333 !important;
+        text-align: center !important;
+        margin: 4px 0 0 !important;
+        line-height: 1.2;
+        font-family: "Microsoft YaHei", sans-serif !important;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    /*-- 全屏背景设置 --*/
+    body {
+        background-image: url("../my_image/newtab_logo/bg01.png") !important;
+        background-position: center !important;
+        background-size: 100% 100% !important;
+    }
+
+    /*-- 强制水滴形图标容器 --*/
+    .top-sites-list .top-site-outer {
+        .tile {
+            box-shadow: none !important;
+            border-radius: 50px 50px 18px !important;
+            margin: auto !important;
+            /**​ 新增：强制子元素继承圆角 */
+            > * {
+                border-radius: inherit !important;
+            }
+        }
+        
+        .top-site-icon,
+        .screenshot {
+            background-color: #FFF !important;
+            border-radius: 50px 50px 18px !important;
+            /**​ 新增：图片裁剪为圆形 */
+            image-rendering: cover !important;
+            object-fit: contain !important;
+        }
+    }
+
+    /*-- 悬停动画效果 --*/
+    .top-sites-list:not(.dnd-active) .top-site-outer:-moz-any(.active, :focus, :hover) .tile,
+    .card-outer:-moz-any(:hover, :focus, .active):not(.placeholder) {
+        box-shadow: 0px 5px 15px 6px rgba(0, 0, 0, .5) !important;
+        transform: translateY(-5px) !important;
+        transition: box-shadow 150ms, transform 150ms !important;
+    }
+
+    /*-- 统一图标尺寸 --*/
+    .screenshot,
+    .icon-wrapper,
+    .rich-icon {
+        height: 58px !important;
+        width: 58px !important;
+        /**​ 新增：防止图片变形 */
+        object-fit: cover !important;
+    }
+
+    /*-- 自定义网站图标及名称 --*/
+    .screenshot { opacity: 1 !important; }
+    
+    /* ================= 网站名称及图标配置 ================= */
+    /* 哈佛商业评论 */
+    [href*="hbr.org"] { --site-name: "哈佛商业评论"; }
+    [href*="hbr.org"] .screenshot,
+    [href*="hbr.org"] .icon-wrapper,
+    [href*="hbr.org"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/hbr.jpg") center/100% no-repeat !important;
+    }
+
+    /* 华盛顿邮报 */
+    [href*="washingtonpost.com"] { --site-name: "华盛顿邮报"; }
+    [href*="washingtonpost.com"] .screenshot,
+    [href*="washingtonpost.com"] .icon-wrapper,
+    [href*="washingtonpost.com"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/wapo.jpg") center/100% no-repeat !important;
+    }
+
+    /* 红迪 */
+    [href*="reddit.com"] {
+        --site-name: "红迪";
+    }
+    [href*="reddit.com"] .screenshot,
+    [href*="reddit.com"] .icon-wrapper,
+    [href*="reddit.com"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/reddit.png") center/100% no-repeat !important;
+    }
+
+    /* 卡饭论坛 */
+    [href*="bbs.kafan.cn"] {
+        --site-name: "卡饭论坛";
+    }
+    [href*="bbs.kafan.cn"] .screenshot,
+    [href*="bbs.kafan.cn"] .icon-wrapper,
+    [href*="bbs.kafan.cn"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/kafan.jpg") center/100% no-repeat !important;
+    }
+
+    /* 乌有之乡 */
+    [href*="wyzxwk.com"] {
+        --site-name: "乌有之乡";
+    }
+    [href*="wyzxwk.com"] .screenshot,
+    [href*="wyzxwk.com"] .icon-wrapper,
+    [href*="wyzxwk.com"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/wyzxwk.jpg") center/100% no-repeat !important;
+    }
+
+    /* 界面新闻 */
+    [href*="jiemian.com"] {
+        --site-name: "界面新闻";
+    }
+    [href*="jiemian.com"] .screenshot,
+    [href*="jiemian.com"] .icon-wrapper,
+    [href*="jiemian.com"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/jiemian.jpg") center/100% no-repeat !important;
+    }
+
+    /* 百度贴吧 */
+    [href*="tieba.baidu.com"] {
+        --site-name: "百度贴吧";
+    }
+    [href*="tieba.baidu.com"] .screenshot,
+    [href*="tieba.baidu.com"] .icon-wrapper,
+    [href*="tieba.baidu.com"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/tieba.jpg") center/100% no-repeat !important;
+    }
+
+    /* 摸摸鱼 */
+    [href*="momoyu.cc"] {
+        --site-name: "摸摸鱼";
+    }
+    [href*="momoyu.cc"] .screenshot,
+    [href*="momoyu.cc"] .icon-wrapper,
+    [href*="momoyu.cc"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/momoyu.png") center/100% no-repeat !important;
+    }
+
+    /* Tophub */
+    [href*="tophub.today"] {
+        --site-name: "今日热榜";
+    }
+    [href*="tophub.today"] .screenshot,
+    [href*="tophub.today"] .icon-wrapper,
+    [href*="tophub.today"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/tophub.png") center/80% no-repeat !important;
+    }
+
+    /* 知乎 */
+    [href*="zhihu.com"] {
+        --site-name: "知乎";
+    }
+    [href*="zhihu.com"] .screenshot,
+    [href*="zhihu.com"] .icon-wrapper,
+    [href*="zhihu.com"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/zhihu.jpg") center/100% no-repeat !important;
+    }
+
+    /* 哔哩哔哩 */
+    [href*="bilibili.com"] {
+        --site-name: "哔哩哔哩";
+    }
+    [href*="bilibili.com"] .screenshot,
+    [href*="bilibili.com"] .icon-wrapper,
+    [href*="bilibili.com"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/bilibili.jpg") center/100% no-repeat !important;
+    }
+
+    /* 观察者网 */
+    [href*="guancha.cn"] {
+        --site-name: "观察者网";
+    }
+    [href*="guancha.cn"] .screenshot,
+    [href*="guancha.cn"] .icon-wrapper,
+    [href*="guancha.cn"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/guancha.jpg") center/100% no-repeat !important;
+    }
+
+    /* 科学网 */
+    [href*="sciencenet.cn"] {
+        --site-name: "科学网";
+    }
+    [href*="sciencenet.cn"] .screenshot,
+    [href*="sciencenet.cn"] .icon-wrapper,
+    [href*="sciencenet.cn"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/kexue.jpg") center/100% no-repeat !important;
+    }
+
+    /* 虎扑社区 */
+    [href*="hupu.com"] {
+        --site-name: "虎扑社区";
+    }
+    [href*="hupu.com"] .screenshot,
+    [href*="hupu.com"] .icon-wrapper,
+    [href*="hupu.com"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/hupu.jpg") center/100% no-repeat !important;
+    }
+
+    /* YouTube */
+    [href*="youtube.com"] {
+        --site-name: "油管";
+    }
+    [href*="youtube.com"] .screenshot,
+    [href*="youtube.com"] .icon-wrapper,
+    [href*="youtube.com"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/youtube.jpg") center/100% no-repeat !important;
+    }
+
+    /* IT之家 */
+    [href*="ithome.com"] {
+        --site-name: "IT之家";
+    }
+    [href*="ithome.com"] .screenshot,
+    [href*="ithome.com"] .icon-wrapper,
+    [href*="ithome.com"] .rich-icon {
+        background: rgba(255, 255, 255, 1) url("../my_image/newtab_logo/ithome.png") center/100% no-repeat !important;
+    }
+}

@@ -9,7 +9,7 @@ rem 設置備份路徑以及臨時文件夾
 
 cd /d %~dp0
 
-::从批处理所在位置到ProgramFiles文件夹,共跨了1层
+::从批处理所在位置到Listary.exe文件夹,共跨了1层
 set Listary=..\Listary.exe
 
 

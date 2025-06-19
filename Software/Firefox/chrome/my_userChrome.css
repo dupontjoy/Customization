@@ -1,0 +1,7 @@
+/*userChrome.css用于修改浏览器界面元素，如工具栏、标签页等*/
+
+/*加载CSS文件*/
+@import "./my_css/userChrome@unified_extension.css";
+@import "./my_css/userChrome@webcontent.css";
+@import "./my_css/userChrome@tab_fix.css";
+

@@ -77,7 +77,7 @@ user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 
 //书签相关
-user_pref("browser.bookmarks.max_backups", 1);//书签最大备份数目
+user_pref("browser.bookmarks.max_backups", 2);//书签最大备份数目
 
 
 //自定义CSS（chrome文件夹）

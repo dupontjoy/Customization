@@ -1,0 +1,44 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #TabsToolbar{
+  padding-inline-start: 2px !important;
+  margin-top: 3px !important;
+}
+
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="false"] ~ #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar[autohide="false"] ~ #TabsToolbar,
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar:not([inactive="true"]) ~ #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="maximized"] #toolbar-menubar:not([inactive="true"]) ~ #TabsToolbar{
+  margin-top: 3px !important;
+}
+
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar,
+#main-window[uidensity=compact]:is([tabsintitlebar],[customtitlebar])[sizemode="normal"] #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar{
+  padding-inline-start: 2px !important;
+  margin-top: 24px !important;
+}
+
+#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar .private-browsing-indicator,
+#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar #window-controls,
+#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar *[type="caption-buttons"],
+#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar *[type="pre-tabs"],
+#main-window:is([tabsintitlebar],[customtitlebar]) #TabsToolbar *[type="post-tabs"] {
+  display: none !important;
+}
+
+
+#main-window:is([tabsintitlebar],[customtitlebar])[sizemode="normal"]:not([inDOMFullscreen="true"]) #toolbar-menubar[autohide="true"][inactive="true"] ~ #TabsToolbar .titlebar-buttonbox-container {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+#navigator-toolbox {
+  -moz-window-dragging: drag !important;
+}

@@ -1,0 +1,21 @@
+@-moz-document regexp("https://libretv-.*.pages.dev/.*"), 
+               regexp("http://localhost:8080/.*") {
+
+/*顶部栏高度缩小*/
+[class*="player-header-fixed"] {
+    height: 40px !important;
+    min-height: 40px !important;
+ }
+
+ /*返回上一页按钮 缩小*/
+#goBack {
+    transform: scale(0.7) !important;
+ }
+
+/*播放区域上移*/
+#playerContainer {
+    margin-top: -9% !important;
+ }
+
+}
+

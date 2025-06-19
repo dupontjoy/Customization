@@ -37,11 +37,13 @@ xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%OutputDir%\Customizat
 :firefox
 ::備份幾個Firefox文件
 ::先删除旧备份文件夹
-rd /s /q "%OutputDir%\Customization\Software\Firefox\BackupProfiles"
+rd /s /q "%OutputDir%\Customization\Software\Firefox"
 timeout /t 3 /nobreak
 xcopy "%BackupDir%\user.js" "%OutputDir%\Customization\Software\Firefox\" /y
-xcopy "%BackupDir%\chrome\userChromeJS\update-uc-scripts.cmd" "%OutputDir%\Customization\Software\Firefox\" /y
+xcopy "%BackupDir%\bookmarkbackups" "%OutputDir%\Customization\Software\Firefox\bookmarkbackups\" /s /y /i
+xcopy "%BackupDir%\chrome" "%OutputDir%\Customization\Software\Firefox\chrome\" /s /y /i
 xcopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Firefox\BackupProfiles\" /s /y /i
+
 
 :foobar
 xcopy "%BackupDir%\..\..\..\foobar2000\profile\config.sqlite" "%OutputDir%\Customization\Software\foobar2000\profile\" /y
