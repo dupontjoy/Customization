@@ -1,4 +1,4 @@
-@-moz-document regexp("https://libretv-.*.pages.dev/.*"), 
+@-moz-document regexp("https://libretv.*.pages.dev/.*"), 
                regexp("http://localhost:8080/.*") {
 
 /*顶部栏高度缩小*/
@@ -15,6 +15,14 @@
 /*播放区域上移*/
 #playerContainer {
     margin-top: -9% !important;
+ }
+ 
+ /*集数信息移到右上角*/
+#episodeInfo {
+    position: fixed !important;
+    top: 40px !important;
+    right: 20px !important;  /* 添加一些右边距 */
+    padding: 5px !important;  /* 添加内边距 */
  }
 
 }

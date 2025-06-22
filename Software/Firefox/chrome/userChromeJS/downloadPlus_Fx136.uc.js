@@ -22,6 +22,7 @@ userChromeJS.downloadPlus.enableSaveAs 下载对话框启用另存为
 userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 // @note userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 */
+// @note            20250620 修复按钮和弹出菜单的一些问题
 // @note            20250610 Fx139
 // @note            20250509 修复文件名无效字符导致下载失败的问题，简化几处 locationText 的调用
 // @note            20250501 修复下载文件改名失效
@@ -298,8 +299,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                             btn.appendChild(this.populateMenu(doc, {
                                 id: 'DownloadPlus-Btn-Popup',
                             }));
-                            this.handleEvent({ type: "aftercustomization" });
-                            window.addEventListener("aftercustomization", this, false);
+                            btn.addEventListener('mouseover', this, false);
                             return btn;
                         }
                     });
@@ -361,7 +361,9 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                     }));
                     let converter = Cc['@mozilla.org/intl/scriptableunicodeconverter']
                         .getService(Ci.nsIScriptableUnicodeConverter);
-                    let menupopup = createEl(document, 'menupopup', {}), orginalString;
+                    let menupopup = createEl(document, 'menupopup', {
+                        position: 'after_end'
+                    }), orginalString;
                     menupopup.appendChild(createEl(document, 'menuitem', {
                         value: dialog.mLauncher.suggestedFileName,
                         label: LANG.format("original name") + dialog.mLauncher.suggestedFileName,
@@ -556,7 +558,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
             if (isTrue('userChromeJS.downloadPlus.enableSaveTo')) {
                 let saveTo = createEl(document, 'button', {
                     id: 'save-to',
-                    class: 'dialog-button',
+                    part: 'dialog-button',
                     size: 'small',
                     label: LANG.format("save to"),
                     type: 'menu',
@@ -642,16 +644,16 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                         dropdown.appendChild(menuitemManager);
                     })
                 }
-            } else if (type === "aftercustomization") {
-                const btn = $('#DownloadPlus-Btn');
+            } else if (type === "mouseover") {
+                const btn = target.ownerDocument.querySelector('#DownloadPlus-Btn');
                 if (!btn) return;
                 const mp = btn.querySelector("#DownloadPlus-Btn-Popup");
                 if (!mp) return;
                 // 获取按钮的位置信息
                 const rect = btn.getBoundingClientRect();
                 // 获取窗口的宽度和高度
-                const windowWidth = window.innerWidth;
-                const windowHeight = window.innerHeight;
+                const windowWidth = target.ownerGlobal.innerWidth;
+                const windowHeight = target.ownerGlobal.innerHeight;
 
                 const x = rect.left + rect.width / 2;  // 按钮的水平中心点
                 const y = rect.top + rect.height / 2;  // 按钮的垂直中心点
@@ -1234,7 +1236,8 @@ menuseparator:not([hidden=true])+#FlashGot-DownloadManagers-Separator,
     appearance: none;
     padding-block: 2px !important;
     margin: 0;
-    height: calc(var(--button-min-height-small, 28px) - 4px - 1px) !important;
+    min-height: calc(var(--button-min-height-small, 28px) - 4px - 2px) !important;
+    max-height: calc(var(--button-min-height-small, 28px) - 4px - 2px) !important;
 }
 #locationText.invalid {
     outline: 2px solid red !important;
@@ -1247,6 +1250,9 @@ menuseparator:not([hidden=true])+#FlashGot-DownloadManagers-Separator,
     visibility: collapse;
 }
 #encodingConvertButton {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-inline-start: 0 !important;
     min-height: var(--button-min-height-small, 28px) !important;
     max-height: var(--button-min-height-small, 28px) !important;
     min-width: unset !important;

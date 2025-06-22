@@ -4,13 +4,15 @@
 const { Services } = globalThis;
 const { Management } = ChromeUtils.importESModule('resource://gre/modules/Extension.sys.mjs');
 
+const { initUloadMap, setUnloadMap, getUnloadMaps } = ChromeUtils.importESModule("chrome://userchromejs/content/utils/ucf.sys.mjs")
+
 const UC = {
     webExts: new Map(),
     sidebar: new Map()
 }
 
 try {
-    function UserChrome_js() {
+    function UserChrome_js () {
         Services.obs.addObserver(this, 'domwindowopened', false);
     };
 
@@ -53,9 +55,15 @@ try {
                     return;
                 }
 
+                initUloadMap(window);
+
                 Cu.exportFunction((key, func, context) => {
-                    this.setUnloadMap(key, func, context);
+                    setUnloadMap(key, func, context);
                 }, window, { defineAs: "setUnloadMap" });
+
+                Cu.exportFunction(() => {
+                    return getUnloadMaps();
+                }, window, { defineAs: "getUnloadMaps" });
 
                 ChromeUtils.defineLazyGetter(window, "xPref", () =>
                     ChromeUtils.importESModule("chrome://userchromejs/content/utils/xPref.sys.mjs").xPref

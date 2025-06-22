@@ -1,4 +1,4 @@
-export { initUloadMap, setUnloadMap }
+export { initUloadMap, setUnloadMap, getUnloadMaps }
 
 const handler = {
 
@@ -20,14 +20,13 @@ function initUloadMap (win) {
     }, { once: true })
 }
 
-function setUnloadMap (key, func, context) {
+function setUnloadMap(key, func, context) {
     if (!handler.unloadMap) {
         return;
     }
-    key = typeof key === "symbol" ? key : Symbol(key)
-    if (!handler.unloadMap.has(key)) {
-        Cu.reportError(new Error(`ucf.sys.mjs: setUnloadMap: key ${key} is not a symbol`))
-        return;
-    }
-    handler.unloadMap.set(key, [{ func, context }]);
+    handler.unloadMap.set(key, { func, context });
+}
+
+function getUnloadMaps() {
+    return handler.unloadMap;
 }
