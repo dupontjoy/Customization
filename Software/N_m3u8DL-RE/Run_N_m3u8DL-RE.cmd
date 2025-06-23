@@ -101,12 +101,12 @@ goto :eof
 ::---------------设置部分---------------
 :setting_video_download_no_ad
 ::设置video下载命令
-set "video_download=N_m3u8DL-RE @config_common.conf @config_ad_keyword.conf --save-name %filename% %link%"
+set video_download=N_m3u8DL-RE @config_common.conf @config_ad_keyword.conf --save-name "%filename%" "%link%"
 goto :eof
 
 :setting_live_record
 ::设置直播录制命令
-set "live_record=N_m3u8DL-RE @config_common.conf @config_live_record.conf %live_record_limit% --save-name %filename% %link%"
+set live_record=N_m3u8DL-RE @config_common.conf @config_live_record.conf %live_record_limit% --save-name "%filename%" "%link%"
 goto :eof
 
 
