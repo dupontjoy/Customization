@@ -624,6 +624,20 @@
 			},
 			"group": "CingList-Request",
 			"encoding": "UTF-8"
+		},
+		{
+			"enable": true,
+			"name": "DMM改语言直连",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://(.*).dmm\\.co\\.jp/(.*)",
+			"exclude": "",
+			"group": "CingList-Request",
+			"isFunction": false,
+			"action": {
+				"name": "accept-language",
+				"value": "ja"
+			}
 		}
 	],
 	"receiveHeader": [

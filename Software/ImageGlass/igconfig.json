@@ -70,7 +70,7 @@
   "ImageBoosterCacheCount": 1,
   "ImageBoosterCacheMaxDimension": 8000,
   "ImageBoosterCacheMaxFileSizeInMb": 100,
-  "ZoomLockValue": 21.36487,
+  "ZoomLockValue": 100,
   "ToolbarIconHeight": 24,
   "ImageEditQuality": 80,
   "InAppMessageDuration": 2000,
@@ -87,7 +87,7 @@
   "WindowBackdrop": "Mica",
   "ColorProfile": "None",
   "AutoUpdate": "2025-01-24T12:09:58.1374797Z",
-  "LastSeenImagePath": "D:\\Program Files\\CingFox\\Software\\ImageGlass\\default.webp",
+  "LastSeenImagePath": "C:\\Users\\Cing\\Desktop\\Libretv.png",
   "LastOpenedSetting": "appearance",
   "DarkTheme": "Kobe",
   "LightTheme": "Kobe-Light",
@@ -495,5 +495,22 @@
       "Hotkeys": []
     }
   ],
-  "ToolSettings": {}
+  "ToolSettings": {
+    "CropTool": {
+      "InitSelectionType": "Select50Percent",
+      "InitSelectedArea": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "CloseToolAfterSaving": "False",
+      "AutoCenterSelection": "True",
+      "AspectRatioValues": [
+        "1",
+        "1"
+      ],
+      "AspectRatio": "Original"
+    }
+  }
 }

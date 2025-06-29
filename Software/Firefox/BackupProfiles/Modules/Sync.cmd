@@ -20,6 +20,9 @@ set "OutputDir=E:\My Documents\Nutstore\NutStoreSync"
 :anytxt
 xcopy "C:\ProgramData\Anytxt\config" "%OutputDir%\Customization\Software\Anytxt\config\" /s /y /i
 
+:BleachBit
+xcopy "%BackupDir%\..\..\Software\BleachBit-Portable\BleachBit.ini" "%OutputDir%\Customization\Software\BleachBit\" /y
+
 :cangjie5
 ::复制文件夹時，源文件夹不要带斜杠，目标文件夹带斜杠。末尾写/s /y /i
 ::复制文件時，末尾写/y

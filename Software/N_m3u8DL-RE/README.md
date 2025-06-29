@@ -14,11 +14,16 @@
 ## 主程序
 [N_m3u8DL-RE nilaoda](https://github.com/nilaoda/N_m3u8DL-RE)
 
-
 ## 运行截图
 <img width="650" src="img/1.png">
 
 <img width="650" src="img/2.png">
+
+<img width="650" src="img/3.png">
+
+## 广告過滤
+
+很多广告片段url比正常片段长，通過这个特征来检测，检测到广告片段后，自動生成广告正则，用户确认是否应用。
 
 ## 其它广告过滤关键词
 [m3u8_downloader/ignore_url_list.txt](https://github.com/leavjenn/leavjenn.github.io/blob/master/m3u8_downloader/ignore_url_list.txt)

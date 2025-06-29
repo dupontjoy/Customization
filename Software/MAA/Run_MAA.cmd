@@ -16,17 +16,20 @@ pushd %~dp0
 
 ::从批处理所在文件夹到ProgramFiles文件夹,共跨了1层
 set "MAA=MAA.exe"
-set "Player=..\MuMuPlayer\shell\MuMuPlayer.exe"
+set Player="..\MuMuPlayer\nx_device\12.0\shell\MuMuNxDevice.exe"
+
 
 :start
 
+::adb断连
+start /b "" cmd /c "cd /d %cd%\..\MuMuPlayer\nx_device\12.0\shell && adb disconnect 127.0.0.1:16384&exit"
+start /b "" cmd /c "cd /d %cd%\..\MuMuPlayer\nx_main && adb disconnect 127.0.0.1:16384&exit"
+start /b "" cmd /c "cd /d %cd%\adb\platform-tools && adb disconnect 127.0.0.1:16384&exit"
+
 ::终止一些进程
+taskkill /f /t /im adb.exe
 taskkill /f /t /im maa*
 taskkill /f /t /im mumu*
-
-::adb断连
-start /b "" cmd /c "cd /d %cd%\..\MuMuPlayer\shell && adb disconnect 127.0.0.1:16384&exit"
-start /b "" cmd /c "cd /d %cd%\adb\platform-tools && adb disconnect 127.0.0.1:16384&exit"
 
 ::删除debug文件夹（保存了各种截图和日志），和几个无用的文件
 rd /s /q "%cd%\debug"
