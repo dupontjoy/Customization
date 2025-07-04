@@ -1,0 +1,1 @@
+扩展地址：https://addons.mozilla.org/zh-CN/firefox/addon/contextsearch-web-ext/

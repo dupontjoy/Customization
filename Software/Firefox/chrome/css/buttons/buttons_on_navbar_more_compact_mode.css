@@ -1,0 +1,36 @@
+/* Firefox userChrome.css tweaks ********************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+:root {
+  --space_required_for_appbutton_fix: 28px !important;
+}
+
+/* more compact navigation toolbar */
+:root[uidensity=compact] {
+  --toolbarbutton-inner-padding: 6px !important;
+}
+
+:root[uidensity=compact] #nav-bar #nav-bar-overflow-button,
+:root[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbarbutton,
+:root[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbaritem textbox,
+:root[uidensity=compact] #nav-bar #nav-bar-customization-target #stop-reload-button > toolbarbutton {
+  margin: 1px 0px !important;
+  padding: 0 !important;
+}
+
+:root[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbaritem {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* fix for toolbar button badges */
+:root[uidensity=compact] #nav-bar .toolbarbutton-1 .toolbarbutton-badge {
+  margin-inline-end: -5px !important;
+}
+
+:root[uidensity=compact] #nav-bar .toolbaritem-combined-buttons,
+:root[uidensity=compact] #nav-bar .unified-extensions-item-row-wrapper {
+  margin-inline: -2px !important
+}

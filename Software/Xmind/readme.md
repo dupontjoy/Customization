@@ -1,0 +1,1 @@
+修改configuration地址, 不然老是报错, 提示c:/windows/system32/./configuration不可读

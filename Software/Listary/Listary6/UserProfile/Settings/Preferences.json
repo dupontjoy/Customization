@@ -1,0 +1,413 @@
+{
+  "AppConfigs": {
+    "TypeConfigs": {
+      "WindowsExplorer": {
+        "EnableMouseMiddleClick": false
+      },
+      "FileDialog": {
+        "EnableMouseMiddleClick": false
+      },
+      "FolderDialog": {},
+      "Desktop": {
+        "EnableMouseMiddleClick": false
+      },
+      "TotalCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "DirectoryOpus": {
+        "EnableMouseMiddleClick": false
+      },
+      "FreeCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "XYplorer": {
+        "EnableMouseMiddleClick": false
+      },
+      "xplorer2": {
+        "EnableMouseMiddleClick": false
+      },
+      "Bandizip": {
+        "EnableMouseMiddleClick": false
+      },
+      "AutoCAD": {
+        "EnableMouseMiddleClick": false
+      },
+      "Explzh": {},
+      "Files": {},
+      "OneCommander": {},
+      "WinRAR.ExtractDialog": {},
+      "WPS.FileDialog": {}
+    },
+    "PathConfigs": {}
+  },
+  "Menus": {
+    "Favorites": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": []
+    }
+  },
+  "DiskSearch": {
+    "FolderPriority": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Folder": "%USERPROFILE%\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\",
+            "Priority": -2
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Folder": "c:\\",
+            "Priority": 1
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Folder": "d:\\",
+            "Priority": 1
+          }
+        }
+      ],
+      "Updates": []
+    },
+    "FileNamePriority": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": []
+    },
+    "SearchFilter": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": []
+    }
+  },
+  "FileSearchWindow": {
+    "Columns": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [],
+      "Updates": [
+        {
+          "Id": "FileName",
+          "UpdatedProperties": {
+            "Width": 200
+          }
+        },
+        {
+          "Id": "Path",
+          "UpdatedProperties": {
+            "Width": 400
+          }
+        },
+        {
+          "Id": "DateModified",
+          "UpdatedProperties": {
+            "Width": 200
+          }
+        }
+      ]
+    },
+    "WindowWidth": 1000,
+    "WindowHeight": 720,
+    "PreviewWidth": 300,
+    "SideBarWidth": 225
+  },
+  "Commands": {
+    "Items": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "Everything全盘搜索\"{query}\"",
+            "Path": "Everything.exe",
+            "Parameter": "-search {query}",
+            "WorkingDirectory": "..\\TotalCMD64\\Tools\\",
+            "Id": "64703c90-e15f-4712-85be-9c6c1484d0e3",
+            "Keyword": "ev",
+            "$customType": "CustomCommand"
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "使用mpv播放",
+            "Path": "cmd.exe",
+            "Parameter": "/c \"mpv {query}\"",
+            "WorkingDirectory": "..\\MPV\\",
+            "Silent": true,
+            "Id": "8c7b728d-5828-4c8b-ae7c-b2e04614814e",
+            "Keyword": "mpv",
+            "$customType": "CustomCommand"
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "使用GoldenDict搜索",
+            "Path": "GoldenDict.exe",
+            "Parameter": "{query}",
+            "WorkingDirectory": "..\\..\\..\\GoldenDict\\",
+            "Id": "fa15a95d-7366-4eeb-ab02-92073f9a396e",
+            "Keyword": "gd",
+            "$customType": "CustomCommand"
+          }
+        }
+      ],
+      "Updates": []
+    }
+  },
+  "WebSearch": {
+    "Items": {
+      "Deletions": [],
+      "Moves": [],
+      "Insertions": [
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "db",
+            "Url": "https://www.douban.com/search?q={query}",
+            "Title": "豆瓣",
+            "Icon": {
+              "Path": "{user}\\43d21b46-9a6e-4fda-8b61-3999a0baea8b.png",
+              "TypeName": "Path"
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://www.douban.com/search?q={query}"
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "sg",
+            "Url": "https://www.sogou.com/web?query={query}",
+            "Title": "搜狗",
+            "Icon": {
+              "Path": "{user}\\107649dc-d39b-4d3e-844a-e190aa484114.png",
+              "TypeName": "Path"
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://www.sogou.com/web?query={query}"
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "ds",
+            "Url": "https://www.dushe9.app/search?k={query}",
+            "Title": "毒舌電影",
+            "Icon": {
+              "Path": "{user}\\b48ff520-dafb-4ff1-8463-f2e6b1225a37.png",
+              "TypeName": "Path"
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://www.dushe9.app/search?k={query}"
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "prts",
+            "Url": "https://prts.wiki/index.php?search={query}&profile=advanced&fulltext=1&ns0=1",
+            "Title": "PRTS",
+            "Icon": {
+              "Path": "{user}\\78ec2357-c391-4b1d-ba90-000a20e1e47a.png",
+              "TypeName": "Path"
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://prts.wiki/w/{query}"
+          }
+        }
+      ],
+      "Updates": [
+        {
+          "Id": "ecb51462-cb27-4b89-ae53-333b4550f489",
+          "UpdatedProperties": {
+            "Url": "https://www.google.com/search?q={query}"
+          }
+        },
+        {
+          "Id": "c78295a6-2cf8-4569-bf42-33f1e5c030d7",
+          "UpdatedProperties": {
+            "Keyword": "wk",
+            "Title": "Wiki"
+          }
+        },
+        {
+          "Id": "dd896809-2af4-405b-834f-45816615e3e3",
+          "UpdatedProperties": {
+            "Keyword": "bi",
+            "Url": "https://www.bing.com/search?q={query}&FORM=ANAB01"
+          }
+        },
+        {
+          "Id": "b36cf1bb-5527-42d8-bf91-d034bcbf057b",
+          "UpdatedProperties": {
+            "Url": "https://www.baidu.com/s?wd={query}"
+          }
+        },
+        {
+          "Id": "5ac62036-62aa-49d3-866b-d041bc7b1b76",
+          "UpdatedProperties": {
+            "Keyword": "gm",
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "Gmail"
+          }
+        },
+        {
+          "Id": "4ed886fb-1df0-4fd0-abc1-810fc180e647",
+          "UpdatedProperties": {
+            "Keyword": "tw",
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "Twitter"
+          }
+        },
+        {
+          "Id": "5014b42a-884d-40d3-835d-69079dd9fc51",
+          "UpdatedProperties": {
+            "Keyword": "ytb",
+            "Url": "https://youtube.com/results?q={query}"
+          }
+        },
+        {
+          "Id": "95147e79-6274-4127-98bb-09d9ffa2a39a",
+          "UpdatedProperties": {
+            "Url": "https://maps.google.com/?q={query}"
+          }
+        },
+        {
+          "Id": "610a486d-0028-4739-8eb6-50f5247c918f",
+          "UpdatedProperties": {
+            "Keyword": "amz",
+            "Url": "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}",
+            "SuggestionUrl": "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}"
+          }
+        },
+        {
+          "Id": "2db0261a-1114-4c8d-8cc8-62a89aeb1a35",
+          "UpdatedProperties": {
+            "Keyword": "eb",
+            "Url": "https://www.ebay.com/sch/?_nkw={query}",
+            "Title": "Ebay",
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://www.ebay.com/sch/?_nkw={query}"
+          }
+        },
+        {
+          "Id": "455e1dc4-5e38-4b00-85da-d0bf46c68f4f",
+          "UpdatedProperties": {
+            "Url": "https://www.imdb.com/find?s=all&q={query}",
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://www.imdb.com/find?s=all&q={query}"
+          }
+        },
+        {
+          "Id": "1744aa0c-751a-495f-aac5-6910e7406229",
+          "UpdatedProperties": {
+            "Keyword": "fb",
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "Facebook"
+          }
+        }
+      ]
+    }
+  },
+  "Actions": {
+    "Items": {
+      "Deletions": [
+        "afc47971-acaa-4731-bd26-0cd85109bee0"
+      ],
+      "Moves": [],
+      "Insertions": [
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "复制文件名到剪贴板",
+            "Path": "cscript.exe",
+            "Parameter": "//Nologo \"UserProfile\\Settings\\CopyFileName.vbs\" \"{action_path}\"",
+            "RunAsAdmin": true,
+            "Silent": true,
+            "Keyword": "N",
+            "Hotkey": 590,
+            "HotkeyScope": 1,
+            "$customType": "CustomCommand"
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "在TC中定位到该文件",
+            "Path": "TotalCMD64.exe",
+            "Parameter": "/O /A /S /L=\"{action_path}\"",
+            "WorkingDirectory": "..\\TotalCMD64\\",
+            "Keyword": "T",
+            "Hotkey": 1037,
+            "HotkeyScope": 1,
+            "$customType": "CustomCommand"
+          }
+        }
+      ],
+      "Updates": [
+        {
+          "Id": "44eca225-98f6-489c-b97a-03163e83ce7e",
+          "UpdatedProperties": {
+            "HotkeyScope": 1
+          }
+        },
+        {
+          "Id": "81927428-1534-44c4-88aa-f119f682339d",
+          "UpdatedProperties": {
+            "HotkeyScope": 1
+          }
+        },
+        {
+          "Id": "284ecbe8-1ef2-49c9-bd93-f7025519402b",
+          "UpdatedProperties": {
+            "Hotkey": 600,
+            "HotkeyScope": 1
+          }
+        }
+      ]
+    }
+  },
+  "AutoUpdate": {},
+  "Settings": {
+    "General.EnableAnalytics": false,
+    "Hotkey.PressShowListaryHotkeyAgainBehavior": "hide",
+    "OpenFolder.Path": "..\\TotalCMD64\\TotalCMD64.exe",
+    "OpenFolder.Param": "/O /P=R \"%1\"",
+    "Tutorial.ShowMainV3": false,
+    "Listary5.SettingsImported": true,
+    "Listary5.ProLicense.Name": "Adven Dai",
+    "Listary5.ProLicense.Email": "daiqiang7297@163.com",
+    "Listary5.ProLicense.Key": "FP7832JRZS7TVFCHJXN8Z7S7MBZZSRBJDEX6PY3PL239QU53M2R9JHNK2XW4LY6D32CJ3BJDHK2L5APH3LFVFASHVLHFEXEHFX79M6NDNUJCMR8LRCLAN7MPSD6CAGTMCAHYH22CGT8T542RFPAGVY23W349QJV4C4G8XT2893SSUZV9E3CCPRGVY3A7FE3B",
+    "LastUpdateTimeV1": "2025-02-15T15:05:31.8558174+08:00"
+  },
+  "Extensions": {
+    "Extensions": {
+      "1a63ea9d-bf25-431f-96e3-17b80027efab": {}
+    }
+  }
+}

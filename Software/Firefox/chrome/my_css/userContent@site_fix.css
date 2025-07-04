@@ -1,0 +1,62 @@
+@-moz-document regexp("https://libretv.*.pages.dev/.*"),
+               regexp("https://libretv.*.netlify.app/.*")
+{
+
+/*顶部栏 高度缩小*/
+[class*="player-header-fixed"] {
+    height: 40px !important;
+    min-height: 40px !important;
+ }
+
+ /*返回上一页按钮 缩小*/
+#goBack {
+    padding: 5px !important;  /* 添加内边距 */
+    transform: scale(0.7) !important;
+ }
+
+/*播放区域 上移*/
+#playerContainer {
+    margin-top: calc(-1 * (4vh + 1%)) !important;/*向上移*/
+ }
+ 
+ /*集数信息 移到顶栏*/
+#episodeInfo {
+    position: fixed !important;
+    top: 0px !important;
+    height: 40px !important;  /* 和顶栏高度一致 */
+    display: flex !important;
+    align-items: center !important;  /* 垂直居中 */
+    left: 10% !important;
+    padding: 5px !important;  /* 添加内边距 */
+    z-index: 9999 !important;   /* 设置一个很高的 z-index 确保它在最上层 */
+    transform: scale(0.8) !important;
+ }
+
+ /*上一集按钮 移到顶栏*/
+#prevButton {
+    position: fixed !important;
+    top: 0px !important;
+    height: 40px !important;  /* 和顶栏高度一致 */
+    display: flex !important;
+    align-items: center !important;  /* 垂直居中 */
+    left: 20% !important;
+    padding: 5px !important;  /* 添加内边距 */
+    z-index: 9999 !important;   /* 设置一个很高的 z-index 确保它在最上层 */
+    transform: scale(0.7) !important;
+ }
+
+ /*下一集按钮 移到顶栏*/
+#nextButton {
+    position: fixed !important;
+    top: 0px !important;
+    height: 40px !important;  /* 和顶栏高度一致 */
+    display: flex !important;
+    align-items: center !important;  /* 垂直居中 */
+    right: 20% !important;
+    padding: 5px !important;  /* 添加内边距 */
+    z-index: 9999 !important;   /* 设置一个很高的 z-index 确保它在最上层 */
+    transform: scale(0.7) !important;
+ }
+ 
+}
+

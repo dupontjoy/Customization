@@ -1,0 +1,64 @@
+{
+  "timeStamp": 1748260676166,
+  "version": "1.64.0",
+  "userSettings": {
+    "alwaysDetachLogger": false,
+    "cnameUncloakEnabled": false,
+    "contextMenuEnabled": false,
+    "externalLists": "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt\nhttps://mirrors.chenby.cn/https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt\nhttps://mirrors.chenby.cn/https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
+    "firewallPaneMinimized": false,
+    "hyperlinkAuditingDisabled": false,
+    "importedLists": [
+      "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt",
+      "https://mirrors.chenby.cn/https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt",
+      "https://mirrors.chenby.cn/https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
+      "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt",
+      "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt",
+      "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt"
+    ],
+    "popupPanelSections": 63,
+    "prefetchingDisabled": false,
+    "webrtcIPAddressHidden": true
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-quick-fixes",
+    "ublock-unbreak",
+    "easylist",
+    "adguard-generic",
+    "adguard-mobile",
+    "fanboy-cookiemonster",
+    "ublock-cookies-easylist",
+    "adguard-cookies",
+    "ublock-cookies-adguard",
+    "CHN-0",
+    "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt",
+    "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt",
+    "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
+    "https://mirrors.chenby.cn/https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt",
+    "https://mirrors.chenby.cn/https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
+  ],
+  "hiddenSettings": {
+    "autoUpdatePeriod": 60,
+    "blockingProfiles": "11111/#F00 11011/#C0F 11001/#00F 00001",
+    "cloudStorageCompression": false,
+    "filterAuthorMode": true
+  },
+  "whitelist": [
+    "# edge-scheme",
+    "# wyciwyg-scheme",
+    "about-scheme",
+    "chrome-extension-scheme",
+    "chrome-scheme",
+    "moz-extension-scheme",
+    "opera-scheme",
+    "vivaldi-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false",
+  "userFilters": ""
+}

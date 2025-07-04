@@ -1,0 +1,196 @@
+<config>
+ <paths>
+  <path recursive="1">D:/Program Files/GoldenDict/content/dicts</path>
+ </paths>
+ <sounddirs/>
+ <dictionaryOrder id="0" name="">
+  <dictionary name="教育部重編國語辭典(第五版)">02aa59d32d3a2b3f58e4c65efd649a7f</dictionary>
+  <dictionary name="王力古汉语字典文字版">a63428ebd34f222f1755c4e08f6306c3</dictionary>
+  <dictionary name="漢語大詞典3">c3c29f92508ce1a24b6839e1b8f44eb4</dictionary>
+  <dictionary name="现代汉语词典7">7fc9ba47acf82b11cec63d3892ba1d47</dictionary>
+  <dictionary name="汉字源流字典2003">15077127c861cb0031a15cbe087bf8d8</dictionary>
+  <dictionary name="字源（整页版）">3541511b76e2a4cf4b3244cd7efff92b</dictionary>
+  <dictionary name="字海(葉典)20210618">1d703bd332b51ab983d32bfed3f58e81</dictionary>
+  <dictionary name="千篇汉语词典2021">6e076422700782496a452c503d85e9bb</dictionary>
+  <dictionary name="古人名字解詁">f92666583875ee86a6cf61ade2161578</dictionary>
+  <dictionary name="韦氏高阶英汉双解词典2019">9f327fb63e2cad2a1faddf93a4adb703</dictionary>
+  <dictionary name="牛津高阶英汉双解词典（第9版）">9152153f4410f8049b0770420e09c0d5</dictionary>
+  <dictionary name="中國書法大字典·楷書卷">92a5bfd1392b4715cdb346c8c2f17cd9</dictionary>
+  <dictionary name="國學大師書法字典(黑白)">5551ccc5c4a6ea22875385af59267111</dictionary>
+  <mutedDictionaries/>
+ </dictionaryOrder>
+ <inactiveDictionaries id="0" name="">
+  <mutedDictionaries/>
+ </inactiveDictionaries>
+ <groups nextId="3"/>
+ <hunspell dictionariesPath=""/>
+ <transliteration>
+  <enableRussianTransliteration>0</enableRussianTransliteration>
+  <enableGermanTransliteration>0</enableGermanTransliteration>
+  <enableGreekTransliteration>0</enableGreekTransliteration>
+  <enableBelarusianTransliteration>0</enableBelarusianTransliteration>
+  <chinese>
+   <enable>0</enable>
+   <enableSCToTWConversion>1</enableSCToTWConversion>
+   <enableSCToHKConversion>1</enableSCToHKConversion>
+   <enableTCToSCConversion>1</enableTCToSCConversion>
+  </chinese>
+  <romaji>
+   <enable>0</enable>
+   <enableHiragana>1</enableHiragana>
+   <enableKatakana>1</enableKatakana>
+  </romaji>
+  <customtrans>
+   <enable>0</enable>
+   <context></context>
+  </customtrans>
+ </transliteration>
+ <lingua>
+  <enable>0</enable>
+  <languageCodes></languageCodes>
+ </lingua>
+ <forvo>
+  <enable>0</enable>
+  <apiKey></apiKey>
+  <languageCodes></languageCodes>
+ </forvo>
+ <mediawikis>
+  <mediawiki enabled="0" icon="" id="ae6f89aac7151829681b85f035d54e48" lang="" name="English Wikipedia" url="https://en.wikipedia.org/w"/>
+  <mediawiki enabled="0" icon="" id="affcf9678e7bfe701c9b071f97eccba3" lang="" name="English Wiktionary" url="https://en.wiktionary.org/w"/>
+  <mediawiki enabled="0" icon="" id="8e0c1c2b6821dab8bdba8eb869ca7176" lang="" name="Russian Wikipedia" url="https://ru.wikipedia.org/w"/>
+  <mediawiki enabled="0" icon="" id="b09947600ae3902654f8ad4567ae8567" lang="" name="Russian Wiktionary" url="https://ru.wiktionary.org/w"/>
+  <mediawiki enabled="0" icon="" id="a8a66331a1242ca2aeb0b4aed361c41d" lang="" name="German Wikipedia" url="https://de.wikipedia.org/w"/>
+  <mediawiki enabled="0" icon="" id="21c64bca5ec10ba17ff19f3066bc962a" lang="" name="German Wiktionary" url="https://de.wiktionary.org/w"/>
+  <mediawiki enabled="0" icon="" id="96957cb2ad73a20c7a1d561fc83c253a" lang="" name="Portuguese Wikipedia" url="https://pt.wikipedia.org/w"/>
+  <mediawiki enabled="0" icon="" id="ed4c3929196afdd93cc08b9a903aad6a" lang="" name="Portuguese Wiktionary" url="https://pt.wiktionary.org/w"/>
+  <mediawiki enabled="0" icon="" id="f3b4ec8531e52ddf5b10d21e4577a7a2" lang="" name="Greek Wikipedia" url="https://el.wikipedia.org/w"/>
+  <mediawiki enabled="0" icon="" id="5d45232075d06e002dea72fe3e137da1" lang="" name="Greek Wiktionary" url="https://el.wiktionary.org/w"/>
+ </mediawikis>
+ <websites>
+  <website enabled="0" icon="" id="b88cb2898e634c6638df618528284c2d" inside_iframe="0" name="Google En-En (Oxford)" url="https://www.google.com/search?q=define:%GDWORD%&amp;hl=en"/>
+  <website enabled="0" icon="" id="f376365a0de651fd7505e7e5e683aa45" inside_iframe="0" name="Urban Dictionary" url="https://www.urbandictionary.com/define.php?term=%GDWORD%"/>
+  <website enabled="0" icon="" id="324ca0306187df7511b26d3847f4b07c" inside_iframe="0" name="Multitran (En-Ru)" url="https://www.multitran.com/m.exe?s=%GDWORD%&amp;l1=1&amp;l2=2"/>
+  <website enabled="0" icon="" id="379a0ce02a34747d642cb0d7de1b2882" inside_iframe="0" name="Merriam-Webster (En)" url="https://www.merriam-webster.com/dictionary/%GDWORD%"/>
+ </websites>
+ <dictservers/>
+ <programs/>
+ <mutedDictionaries>
+  <mutedDictionary>0e4f7ac6dbb66db12f812e65b6735183</mutedDictionary>
+ </mutedDictionaries>
+ <popupMutedDictionaries>
+  <mutedDictionary>9152153f4410f8049b0770420e09c0d5</mutedDictionary>
+ </popupMutedDictionaries>
+ <preferences>
+  <interfaceLanguage>zh_CN</interfaceLanguage>
+  <interfaceFont>Microsoft YaHei UI</interfaceFont>
+  <interfaceFontSize_0>12</interfaceFontSize_0>
+  <customFonts monospace="Courier New" sans-serif="Arial" serif="Times New Roman" standard="Times New Roman"/>
+  <displayStyle></displayStyle>
+  <newTabsOpenAfterCurrentOne>0</newTabsOpenAfterCurrentOne>
+  <newTabsOpenInBackground>1</newTabsOpenInBackground>
+  <hideSingleTab>0</hideSingleTab>
+  <mruTabOrder>0</mruTabOrder>
+  <hideMenubar>0</hideMenubar>
+  <enableTrayIcon>1</enableTrayIcon>
+  <startToTray>0</startToTray>
+  <closeToTray>1</closeToTray>
+  <autoStart>0</autoStart>
+  <doubleClickTranslates>1</doubleClickTranslates>
+  <selectWordBySingleClick>0</selectWordBySingleClick>
+  <autoScrollToTargetArticle>1</autoScrollToTargetArticle>
+  <escKeyHidesMainWindow>0</escKeyHidesMainWindow>
+  <darkMode>0</darkMode>
+  <darkReaderMode>0</darkReaderMode>
+  <zoomFactor>1</zoomFactor>
+  <helpZoomFactor>1</helpZoomFactor>
+  <enableMainWindowHotkey>1</enableMainWindowHotkey>
+  <mainWindowHotkey>Ctrl+F11, F11</mainWindowHotkey>
+  <enableClipboardHotkey>1</enableClipboardHotkey>
+  <clipboardHotkey>Ctrl+C, C</clipboardHotkey>
+  <startWithScanPopupOn>0</startWithScanPopupOn>
+  <enableScanPopupModifiers>0</enableScanPopupModifiers>
+  <scanPopupModifiers>0</scanPopupModifiers>
+  <ignoreOwnClipboardChanges>0</ignoreOwnClipboardChanges>
+  <scanToMainWindow>1</scanToMainWindow>
+  <ignoreDiacritics>0</ignoreDiacritics>
+  <ignorePunctuation>1</ignorePunctuation>
+  <sessionCollapse>1</sessionCollapse>
+  <pronounceOnLoadMain>1</pronounceOnLoadMain>
+  <pronounceOnLoadPopup>1</pronounceOnLoadPopup>
+  <useInternalPlayer>1</useInternalPlayer>
+  <internalPlayerBackend>Qt Multimedia</internalPlayerBackend>
+  <audioPlaybackProgram></audioPlaybackProgram>
+  <alwaysOnTop>0</alwaysOnTop>
+  <searchInDock>0</searchInDock>
+  <historyStoreInterval>0</historyStoreInterval>
+  <favoritesStoreInterval>0</favoritesStoreInterval>
+  <confirmFavoritesDeletion>1</confirmFavoritesDeletion>
+  <proxyserver enabled="0" useSystemProxy="0">
+   <type>0</type>
+   <host></host>
+   <port>3128</port>
+   <user></user>
+   <password></password>
+  </proxyserver>
+  <ankiConnectServer enabled="0">
+   <host>127.0.0.1</host>
+   <port>8765</port>
+   <deck></deck>
+   <model></model>
+   <text>selected_text</text>
+   <word>word</word>
+   <sentence>marked_sentence</sentence>
+  </ankiConnectServer>
+  <checkForNewReleases>1</checkForNewReleases>
+  <disallowContentFromOtherSites>0</disallowContentFromOtherSites>
+  <hideGoldenDictHeader>0</hideGoldenDictHeader>
+  <maxNetworkCacheSize>50</maxNetworkCacheSize>
+  <clearNetworkCacheOnExit>1</clearNetworkCacheOnExit>
+  <removeInvalidIndexOnExit>1</removeInvalidIndexOnExit>
+  <enableApplicationLog>0</enableApplicationLog>
+  <maxStringsInHistory>20</maxStringsInHistory>
+  <storeHistory>1</storeHistory>
+  <alwaysExpandOptionalParts>1</alwaysExpandOptionalParts>
+  <addonStyle></addonStyle>
+  <collapseBigArticles>0</collapseBigArticles>
+  <articleSizeLimit>2000</articleSizeLimit>
+  <limitInputPhraseLength>0</limitInputPhraseLength>
+  <inputPhraseLengthLimit>1000</inputPhraseLengthLimit>
+  <maxDictionaryRefsInContextMenu>20</maxDictionaryRefsInContextMenu>
+  <synonymSearchEnabled>1</synonymSearchEnabled>
+  <stripClipboard>0</stripClipboard>
+  <raiseWindowOnSearch>1</raiseWindowOnSearch>
+  <fullTextSearch>
+   <searchMode>0</searchMode>
+   <dialogGeometry></dialogGeometry>
+   <disabledTypes></disabledTypes>
+   <enabled>0</enabled>
+   <maxDictionarySize>0</maxDictionarySize>
+   <parallelThreads>4</parallelThreads>
+  </fullTextSearch>
+ </preferences>
+ <lastMainGroupId>0</lastMainGroupId>
+ <lastPopupGroupId>0</lastPopupGroupId>
+ <popupWindowState2>AAAA/wAAAAD9AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAkAHAAbwBwAHUAcABOAGEAdgBnAGkAYQB0AGkAbwBuAEIAYQByAwAAAAD/////AAAAAAAAAAAAAAACAAAAAgAAABwAcABvAHAAdQBwAFMAZQBhAHIAYwBoAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAAYAHAAbwBwAHUAcABUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAACAAAAAQAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAAA/////wAAAAAAAAAA</popupWindowState2>
+ <popupWindowGeometry2>AdnQywADAAAAAAABAAAAIAAAAPcAAAGvAAAAAQAAACAAAAD3AAABrwAAAAAAAAAABVYAAAABAAAAIAAAAPcAAAGv</popupWindowGeometry2>
+ <pinPopupWindow>0</pinPopupWindow>
+ <popupWindowAlwaysOnTop>0</popupWindowAlwaysOnTop>
+ <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAABNAAACivwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAANwAAAooAAACFAP///wAAAAEAAADMAAACivwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAADcAAAE4AAAAZAD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAAAAARIAAADVAAAAYgD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAABcwAAAU4AAABkAP///wAABIYAAAKKAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAIZ/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowGeometry>AdnQywADAAAAAAAA////+AAABVUAAALXAAAAxgAAAF8AAANSAAACeAAAAAACAAAABVYAAAAAAAAAFwAABVUAAALX</mainWindowGeometry>
+ <dictInfoGeometry></dictInfoGeometry>
+ <inspectorGeometry></inspectorGeometry>
+ <dictionariesDialogGeometry>AdnQywADAAAAAAD+AAAARQAABEQAAAJ3AAAA/gAAAGQAAAREAAACdwAAAAAAAAAABVYAAAD+AAAAZAAABEQAAAJ3</dictionariesDialogGeometry>
+ <timeForNewReleaseCheck></timeForNewReleaseCheck>
+ <skippedRelease></skippedRelease>
+ <showingDictBarNames>0</showingDictBarNames>
+ <usingToolbarsIconSize>1</usingToolbarsIconSize>
+ <maxHeadwordSize>256</maxHeadwordSize>
+ <maxHeadwordsToExpand>0</maxHeadwordsToExpand>
+ <headwordsDialog>
+  <searchMode>0</searchMode>
+  <matchCase>0</matchCase>
+  <autoApply>0</autoApply>
+  <headwordsExportPath></headwordsExportPath>
+  <headwordsDialogGeometry></headwordsDialogGeometry>
+ </headwordsDialog>
+</config>

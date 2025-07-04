@@ -1,0 +1,26 @@
+@-moz-document url-prefix("http"), url-prefix("https"), url-prefix("file") {
+
+/*显示丢失图片*/
+img {
+	font: 12px Arial!important;
+}
+
+img:-moz-broken {
+	-moz-force-broken-image-icon: 1 !important;
+	width: 48px;
+	height: 24px;
+  }
+}
+
+/*图片经过外发光*/
+img:hover {
+	box-shadow: 0px 0px 4px 4px rgba(130,190,10,0.6) !important;
+	-moz-transition-property: box-shadow;
+	-moz-transition-duration: .31s;
+}
+
+img {
+	-moz-transition-property: box-shadow;
+	-moz-transition-duration: .31s;
+}
+

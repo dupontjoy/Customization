@@ -1,0 +1,10 @@
+/*隐藏输入框不安全提示*/
+#PopupAutoComplete[resultstyles~="insecureWarning"] {
+  visibility: collapse;
+}
+
+ @supports -moz-bool-pref("security.insecure_field_warning.contextual.enabled") {
+#PopupAutoComplete[resultstyles~="insecureWarning"] {
+  visibility: visible;
+  }
+}
