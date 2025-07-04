@@ -18,7 +18,7 @@ set "softDir=E:\Cing@Soft"
 set "OutputDir=E:\My Documents\Nutstore\NutStoreSync"
 
 :anytxt
-robocopy "C:\ProgramData\Anytxt\config" "%OutputDir%\Customization\Software\Anytxt\config" /MIR /ZB /R:3 /W:5
+xcopy "C:\ProgramData\Anytxt\config" "%OutputDir%\Customization\Software\Anytxt\config" /s /y /i
 
 :BleachBit
 xcopy "%BackupDir%\..\..\Software\BleachBit-Portable\BleachBit.ini" "%OutputDir%\Customization\Software\BleachBit\" /y
@@ -46,9 +46,9 @@ xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%OutputDir%\Customizat
 rd /s /q "%OutputDir%\Customization\Software\Firefox"
 timeout /t 3 /nobreak
 xcopy "%BackupDir%\user.js" "%OutputDir%\Customization\Software\Firefox\" /y
-robocopy "%BackupDir%\bookmarkbackups" "%OutputDir%\Customization\Software\Firefox\bookmarkbackups" /MIR /ZB /R:3 /W:5
-robocopy "%BackupDir%\chrome" "%OutputDir%\Customization\Software\Firefox\chrome" /MIR /ZB /R:3 /W:5
-robocopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Firefox\BackupProfiles" /MIR /ZB /R:3 /W:5
+xcopy "%BackupDir%\bookmarkbackups" "%OutputDir%\Customization\Software\Firefox\bookmarkbackups" /s /y /i
+xcopy "%BackupDir%\chrome" "%OutputDir%\Customization\Software\Firefox\chrome" /s /y /i
+xcopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Firefox\BackupProfiles" /s /y /i
 
 
 :foobar
@@ -93,8 +93,8 @@ xcopy "%BackupDir%\..\..\..\MAA\config\gui.json" "%OutputDir%\Customization\Soft
 xcopy "%BackupDir%\..\..\..\Tencent\Foxmail\Storage\dupontjoy@163.com\Filter\1.fter" "%OutputDir%\Customization\Software\Foxmail-Filter\mail-filter.fter" /y
 
 :MPV
-robocopy "%BackupDir%\..\..\Software\MPV\installer" "%OutputDir%\Customization\Software\MPV\installer" /MIR /ZB /R:3 /W:5
-robocopy "%BackupDir%\..\..\Software\MPV\portable_config" "%OutputDir%\Customization\Software\MPV\portable_config" /MIR /ZB /R:3 /W:5
+xcopy "%BackupDir%\..\..\Software\MPV\installer" "%OutputDir%\Customization\Software\MPV\installer" /s /y /i
+xcopy "%BackupDir%\..\..\Software\MPV\portable_config" "%OutputDir%\Customization\Software\MPV\portable_config" /s /y /i
 xcopy "%BackupDir%\..\..\Software\MPV\Run_yt-dlp.cmd" "%OutputDir%\Customization\Software\MPV\" /y
 xcopy "%BackupDir%\..\..\Software\MPV\README.md" "%OutputDir%\Customization\Software\MPV\" /y
 xcopy "%BackupDir%\..\..\Software\MPV\yt-dlp.conf" "%OutputDir%\Customization\Software\MPV\" /y
@@ -115,7 +115,7 @@ xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\README.md" "%OutputDir%\Customizat
 xcopy "%BackupDir%\..\..\Software\PixPin\Config\PixPinConfig.json" "%OutputDir%\Customization\Software\PixPin\Config\" /y
 
 :Processlasso
-robocopy "%BackupDir%\..\..\Software\ProcessLassoPro\config" "%OutputDir%\Customization\Software\ProcessLasso\config" /MIR /ZB /R:3 /W:5
+xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\config" "%OutputDir%\Customization\Software\ProcessLasso\config" /s /y /i
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\_Start-ProcessLasso.cmd" "%OutputDir%\Customization\Software\ProcessLasso\" /y
 
 :readest
@@ -145,7 +145,7 @@ xcopy "%BackupDir%\..\..\..\TrafficMonitor\global_cfg.ini" "%OutputDir%\Customiz
 xcopy "%BackupDir%\..\..\..\XnViewMP\xnview.ini" "%OutputDir%\Customization\Software\XnViewMP\" /y
 
 :xyr
-robocopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config" "%OutputDir%\Customization\Software\xyr系统优化\Config" /MIR /ZB /R:3 /W:5
+xcopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config" "%OutputDir%\Customization\Software\xyr系统优化\Config" /s /y /i
 
 
 :zlib
