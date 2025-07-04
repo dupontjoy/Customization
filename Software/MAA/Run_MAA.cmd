@@ -27,7 +27,6 @@ start /b "" cmd /c "cd /d %cd%\..\MuMuPlayer\nx_main && adb disconnect 127.0.0.1
 start /b "" cmd /c "cd /d %cd%\adb\platform-tools && adb disconnect 127.0.0.1:16384&exit"
 
 ::终止一些进程
-taskkill /f /t /im adb.exe
 taskkill /f /t /im maa*
 taskkill /f /t /im mumu*
 
