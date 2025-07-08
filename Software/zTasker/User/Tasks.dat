@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:55:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-05 07:55:00</NextRunDateTime>
-		<NextRunTime>2025-07-05 07:55:00</NextRunTime>
-		<LastRunTime>2025-07-04 07:55:00</LastRunTime>
+		<NextRunDateTime>2025-07-09 07:55:00</NextRunDateTime>
+		<NextRunTime>2025-07-09 07:55:00</NextRunTime>
+		<LastRunTime>2025-07-08 07:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -449,9 +449,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:55:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-05 17:55:00</NextRunDateTime>
-		<NextRunTime>2025-07-05 17:55:00</NextRunTime>
-		<LastRunTime>2025-07-04 17:55:00</LastRunTime>
+		<NextRunDateTime>2025-07-08 17:55:00</NextRunDateTime>
+		<NextRunTime>2025-07-08 17:55:00</NextRunTime>
+		<LastRunTime>2025-07-07 17:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -889,9 +889,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:25:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-05 21:25:00</NextRunDateTime>
-		<NextRunTime>2025-07-05 21:25:00</NextRunTime>
-		<LastRunTime>2025-07-04 21:25:00</LastRunTime>
+		<NextRunDateTime>2025-07-08 21:25:00</NextRunDateTime>
+		<NextRunTime>2025-07-08 21:25:00</NextRunTime>
+		<LastRunTime>2025-07-07 21:25:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1329,9 +1329,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-06-12 08:19:12</EndDateTime>
-		<NextRunDateTime>2125-06-10 11:21:25</NextRunDateTime>
+		<NextRunDateTime>2125-06-14 07:03:08</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-07-04 11:21:25</LastRunTime>
+		<LastRunTime>2025-07-08 07:03:08</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1735,9 +1735,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 08:30:00</StartDateTime>
 		<EndDateTime>2025-07-04 11:50:24</EndDateTime>
-		<NextRunDateTime>2025-07-05 08:30:00</NextRunDateTime>
-		<NextRunTime>2025-07-05 08:30:00</NextRunTime>
-		<LastRunTime>2025-07-04 08:30:00</LastRunTime>
+		<NextRunDateTime>2025-07-09 08:30:00</NextRunDateTime>
+		<NextRunTime>2025-07-09 08:30:00</NextRunTime>
+		<LastRunTime>2025-07-08 08:30:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1973,7 +1973,7 @@ env2=value2</edtAppEnv>
 					<edtAppEnv.max>1</edtAppEnv.max>
 					<edtAppEnv.min>16843008</edtAppEnv.min>
 					<edtAppParam>/AUTOSC</edtAppParam>
-					<edtAppPath>D:\Program Files\CingFox\Software\CCleaner\CCleaner64.exe </edtAppPath>
+					<edtAppPath>D:\Program Files\CingFox\Software\CCleaner\CCleaner.exe </edtAppPath>
 					<edtAppVar></edtAppVar>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
@@ -2204,9 +2204,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 12:00:00</StartDateTime>
 		<EndDateTime>2025-06-15 00:08:32</EndDateTime>
-		<NextRunDateTime>2025-07-06 12:00:00</NextRunDateTime>
-		<NextRunTime>2025-07-06 12:00:00</NextRunTime>
-		<LastRunTime>2025-06-29 12:00:00</LastRunTime>
+		<NextRunDateTime>2025-07-13 12:00:00</NextRunDateTime>
+		<NextRunTime>2025-07-13 12:00:00</NextRunTime>
+		<LastRunTime>2025-07-06 12:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -3291,9 +3291,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2025-05-28 13:00:00</StartDateTime>
 		<EndDateTime>2025-05-28 16:21:22</EndDateTime>
-		<NextRunDateTime>2025-07-06 13:00:00</NextRunDateTime>
-		<NextRunTime>2025-07-06 13:00:00</NextRunTime>
-		<LastRunTime>2025-06-29 13:00:00</LastRunTime>
+		<NextRunDateTime>2025-07-13 13:00:00</NextRunDateTime>
+		<NextRunTime>2025-07-13 13:00:00</NextRunTime>
+		<LastRunTime>2025-07-06 13:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -3516,260 +3516,6 @@ env2=value2</edtAppEnv>
 				</Param>
 				<Name>Fx配置打包</Name>
 				<ID>50</ID>
-				<Stat>1</Stat>
-			</Tasker>
-		</Actions>
-	</TaskItem>
-	<TaskItem>
-		<ID>68-HLGBKP4LYW</ID>
-		<TaskType>ttMultiTasker</TaskType>
-		<Stopped>0</Stopped>
-		<HKStopped>1</HKStopped>
-		<HasEndDateTime>0</HasEndDateTime>
-		<SchType>3</SchType>
-		<StartDateTime>2025-05-28 13:30:00</StartDateTime>
-		<EndDateTime>2025-06-27 07:16:24</EndDateTime>
-		<NextRunDateTime>2025-07-06 13:30:00</NextRunDateTime>
-		<NextRunTime>2025-07-06 13:30:00</NextRunTime>
-		<LastRunTime>2025-06-29 13:30:00</LastRunTime>
-		<Fav>0</Fav>
-		<Ver>6</Ver>
-		<Param>
-			<CountDownHour>1</CountDownHour>
-			<CountDownMin>0</CountDownMin>
-			<CountDownSec>0</CountDownSec>
-			<DTOnce>2025-05-28 15:38:12</DTOnce>
-			<DayLimit></DayLimit>
-			<EveryMonthDay>0</EveryMonthDay>
-			<EveryWeek>7</EveryWeek>
-			<Name>同步github</Name>
-			<RemindTitle></RemindTitle>
-			<TitleShow>弹窗提醒</TitleShow>
-			<TypeShow>提醒</TypeShow>
-			<YearDay></YearDay>
-			<YearMonth></YearMonth>
-			<YearWeekDay></YearWeekDay>
-			<YearWeekNum></YearWeekNum>
-			<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
-			<ZeroHalfs></ZeroHalfs>
-			<chk1>0</chk1>
-			<chk2>0</chk2>
-			<chk3>0</chk3>
-			<chk4>0</chk4>
-			<chk5>0</chk5>
-			<chk6>0</chk6>
-			<chk7>1</chk7>
-			<chkAutoClose>0</chkAutoClose>
-			<chkAutoCloseHK>0</chkAutoCloseHK>
-			<chkDayLimit1>0</chkDayLimit1>
-			<chkDayLimit2>0</chkDayLimit2>
-			<chkDayLimit3>0</chkDayLimit3>
-			<chkDayLimit4>0</chkDayLimit4>
-			<chkDayLimit5>0</chkDayLimit5>
-			<chkDayLimit6>0</chkDayLimit6>
-			<chkDayLimit7>0</chkDayLimit7>
-			<chkDayLimitTime>0</chkDayLimitTime>
-			<chkDayLimitTimeRev>0</chkDayLimitTimeRev>
-			<chkEndDateSel>0</chkEndDateSel>
-			<chkExecDlg>0</chkExecDlg>
-			<chkExecDlgHK>0</chkExecDlgHK>
-			<chkExecExitFocus>0</chkExecExitFocus>
-			<chkExecExitFullScr>0</chkExecExitFullScr>
-			<chkExecExitPre>1</chkExecExitPre>
-			<chkHKMouseCorner>0</chkHKMouseCorner>
-			<chkHKMouseCorner1>0</chkHKMouseCorner1>
-			<chkHKMouseCorner2>0</chkHKMouseCorner2>
-			<chkHKMouseCorner3>0</chkHKMouseCorner3>
-			<chkHKMouseCorner4>0</chkHKMouseCorner4>
-			<chkHKMouseEdge>0</chkHKMouseEdge>
-			<chkHKMouseEdge1>0</chkHKMouseEdge1>
-			<chkHKMouseEdge2>0</chkHKMouseEdge2>
-			<chkHKMouseEdge3>0</chkHKMouseEdge3>
-			<chkHKMouseEdge4>0</chkHKMouseEdge4>
-			<chkHotkey>0</chkHotkey>
-			<chkHotkeyAlt>0</chkHotkeyAlt>
-			<chkHotkeyCtrl>0</chkHotkeyCtrl>
-			<chkHotkeyLeft>0</chkHotkeyLeft>
-			<chkHotkeyMiddle>0</chkHotkeyMiddle>
-			<chkHotkeyRight>0</chkHotkeyRight>
-			<chkHotkeyShift>0</chkHotkeyShift>
-			<chkHotkeyWheel>0</chkHotkeyWheel>
-			<chkHotkeyWin>0</chkHotkeyWin>
-			<chkRunMiss>0</chkRunMiss>
-			<chkSKPartMatch>0</chkSKPartMatch>
-			<chkSKProcExists>0</chkSKProcExists>
-			<chkSKWinExists>0</chkSKWinExists>
-			<chkSKWinFore>0</chkSKWinFore>
-			<chkSKWinMouseIn>0</chkSKWinMouseIn>
-			<chkSKWinSub>0</chkSKWinSub>
-			<chkSchLimitCount>0</chkSchLimitCount>
-			<chkSelfDelete>0</chkSelfDelete>
-			<chkTimer>1</chkTimer>
-			<chkUseStartDT>1</chkUseStartDT>
-			<chkWakeRunMiss>0</chkWakeRunMiss>
-			<cmbAutoCloseAction>0</cmbAutoCloseAction>
-			<cmbAutoCloseActionHK>0</cmbAutoCloseActionHK>
-			<cmbAutoCloseActionHK_text>执行</cmbAutoCloseActionHK_text>
-			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
-			<cmbClass>无</cmbClass>
-			<cmbClass_text>无</cmbClass_text>
-			<cmbDayLimit></cmbDayLimit>
-			<cmbHKMouse>0</cmbHKMouse>
-			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
-			<cmbHotkey>0</cmbHotkey>
-			<cmbYearDay></cmbYearDay>
-			<cmbYearMonth></cmbYearMonth>
-			<cmbYearWeekDay></cmbYearWeekDay>
-			<cmbYearWeekNum></cmbYearWeekNum>
-			<edtDayLimitTime></edtDayLimitTime>
-			<edtDefRmd></edtDefRmd>
-			<edtDelayBoot>0</edtDelayBoot>
-			<edtExecSec>30</edtExecSec>
-			<edtExecSecHK>5</edtExecSecHK>
-			<edtHKMouseCorner>50</edtHKMouseCorner>
-			<edtHKMouseEdge>50</edtHKMouseEdge>
-			<edtSKProcName></edtSKProcName>
-			<edtSKWinClass></edtSKWinClass>
-			<edtSKWinTitle></edtSKWinTitle>
-			<edtSchLimitCount>1</edtSchLimitCount>
-			<edtTaskName>同步github</edtTaskName>
-			<edtToastFloat></edtToastFloat>
-			<edtWakeDelayBoot>0</edtWakeDelayBoot>
-			<optHKKey>1</optHKKey>
-			<optHKMouse>0</optHKMouse>
-			<tabBtnExec>0</tabBtnExec>
-			<tabBtnHK>0</tabBtnHK>
-			<tabBtnSch>1</tabBtnSch>
-			<tabBtnTask>0</tabBtnTask>
-		</Param>
-		<Actions>
-			<Tasker>
-				<ID>69</ID>
-				<TaskType>ttActionRec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
-				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
-				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>6</Ver>
-				<Param>
-					<BackClr>-12500671</BackClr>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>同步github</Name>
-					<PassExitRest></PassExitRest>
-					<PlayTime>10</PlayTime>
-					<RemindTitle></RemindTitle>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SearchEngineNames></SearchEngineNames>
-					<SearchEngines></SearchEngines>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<SoundPath></SoundPath>
-					<TitleShow>录制键盘鼠标动作</TitleShow>
-					<TypeShow>输入</TypeShow>
-					<chkActionRecMove>0</chkActionRecMove>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbClass_text></cmbClass_text>
-					<cmbHotkey>0</cmbHotkey>
-					<cmbOpenApp_text></cmbOpenApp_text>
-					<cmbRecPlaySpeed>1</cmbRecPlaySpeed>
-					<cmbRecPlaySpeed_text>100%</cmbRecPlaySpeed_text>
-					<dataEnableDevice></dataEnableDevice>
-					<edtActionRec>1860,MouseLeftDown,20,749
-1984,MouseLeftUp,20,749
-4361,MouseLeftDown,372,337
-4496,MouseLeftUp,372,337
-10996,MouseLeftDown,389,95
-11128,MouseLeftUp,389,95
-12948,MouseLeftDown,315,202
-13072,MouseLeftUp,315,202
-16437,MouseLeftDown,278,509
-16536,MouseLeftUp,278,509
-17950,KeyDown,85
-18134,KeyUp,85
-18539,KeyDown,219
-18603,KeyUp,219
-19456,KeyDown,8
-19555,KeyUp,8
-19879,KeyDown,80
-20009,KeyUp,80
-20313,KeyDown,68
-20523,KeyDown,65
-20544,KeyUp,68
-20697,KeyUp,65
-20762,KeyDown,84
-20911,KeyUp,84
-20936,KeyDown,69
-21126,KeyUp,69
-21181,KeyDown,13
-21271,KeyUp,13
-22960,MouseLeftDown,322,667
-23060,MouseLeftUp,322,667
-30116,MouseLeftDown,798,87
-30240,MouseLeftUp,798,87
-48324,MouseLeftDown,1142,54
-48428,MouseLeftUp,1142,54
-51195,MouseLeftDown,683,429
-51304,MouseLeftUp,683,429
-</edtActionRec>
-					<edtAppParam></edtAppParam>
-					<edtAppPath></edtAppPath>
-					<edtBackDateCount>10</edtBackDateCount>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
-					<edtDefRmd></edtDefRmd>
-					<edtDialPass></edtDialPass>
-					<edtDialUser></edtDialUser>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName></edtTaskName>
-					<edtTaskSubName>同步github</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
-					<httpReqHeader></httpReqHeader>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>同步github</Name>
-				<ID>69</ID>
 				<Stat>1</Stat>
 			</Tasker>
 		</Actions>

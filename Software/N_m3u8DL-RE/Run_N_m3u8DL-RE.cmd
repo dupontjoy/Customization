@@ -83,7 +83,7 @@ echo.
 if exist config_ad_keyword.conf (
     for /f "tokens=2 delims= " %%a in (config_ad_keyword.conf) do (
         set "regex_pattern=%%a"
-        echo 正在使用正则表达式: !regex_pattern!
+        echo 正在使用正则表达式: !regex_pattern! 检测广告片段...
         for /f "delims=" %%b in ('type temp_analyze.m3u8 ^| findstr /r /i /c:"!regex_pattern!"') do (
             set "ad_detected=1"
             echo. 使用正则表达式: !regex_pattern! 检测到广告片段: %%b
@@ -107,7 +107,7 @@ set "total_segments=0"
 
 :: 首先计算总片段数
 echo.
-echo 正在使用對比分片ID长度方法检测广告...
+echo 正在使用 對比分片ID长度方法 检测广告...
 for /f %%a in ('type temp_analyze.m3u8 ^| find /c ".ts"') do set "total_segments=%%a"
 echo 总片段数: !total_segments!
 

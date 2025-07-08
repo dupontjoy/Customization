@@ -108,6 +108,13 @@
          "explorer": {
             "enable_middle_click": false
          },
+         "listary_launcher": {
+            "toolbar_position": 5,
+            "x": 470,
+            "x_from_left": true,
+            "y": 343,
+            "y_from_top": true
+         },
          "total_cmd": {
             "enable_hot_key_when_toolbar_hidden": true,
             "enable_middle_click": false
