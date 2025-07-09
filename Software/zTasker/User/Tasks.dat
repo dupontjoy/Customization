@@ -9,8 +9,8 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:55:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-09 07:55:00</NextRunDateTime>
-		<NextRunTime>2025-07-09 07:55:00</NextRunTime>
+		<NextRunDateTime>2025-07-10 07:55:00</NextRunDateTime>
+		<NextRunTime>2025-07-10 07:55:00</NextRunTime>
 		<LastRunTime>2025-07-08 07:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
@@ -449,9 +449,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:55:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-08 17:55:00</NextRunDateTime>
-		<NextRunTime>2025-07-08 17:55:00</NextRunTime>
-		<LastRunTime>2025-07-07 17:55:00</LastRunTime>
+		<NextRunDateTime>2025-07-09 17:55:00</NextRunDateTime>
+		<NextRunTime>2025-07-09 17:55:00</NextRunTime>
+		<LastRunTime>2025-07-08 17:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -889,9 +889,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:25:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-08 21:25:00</NextRunDateTime>
-		<NextRunTime>2025-07-08 21:25:00</NextRunTime>
-		<LastRunTime>2025-07-07 21:25:00</LastRunTime>
+		<NextRunDateTime>2025-07-09 21:25:00</NextRunDateTime>
+		<NextRunTime>2025-07-09 21:25:00</NextRunTime>
+		<LastRunTime>2025-07-08 21:25:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1329,9 +1329,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-06-12 08:19:12</EndDateTime>
-		<NextRunDateTime>2125-06-14 07:03:08</NextRunDateTime>
+		<NextRunDateTime>2125-06-15 13:34:08</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-07-08 07:03:08</LastRunTime>
+		<LastRunTime>2025-07-09 13:34:08</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1735,9 +1735,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 08:30:00</StartDateTime>
 		<EndDateTime>2025-07-04 11:50:24</EndDateTime>
-		<NextRunDateTime>2025-07-09 08:30:00</NextRunDateTime>
-		<NextRunTime>2025-07-09 08:30:00</NextRunTime>
-		<LastRunTime>2025-07-08 08:30:00</LastRunTime>
+		<NextRunDateTime>2025-07-10 08:30:00</NextRunDateTime>
+		<NextRunTime>2025-07-10 08:30:00</NextRunTime>
+		<LastRunTime>2025-07-09 08:30:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -3516,6 +3516,212 @@ env2=value2</edtAppEnv>
 				</Param>
 				<Name>Fx配置打包</Name>
 				<ID>50</ID>
+				<Stat>1</Stat>
+			</Tasker>
+		</Actions>
+	</TaskItem>
+	<TaskItem>
+		<ID>423-IGXNFPZU3K</ID>
+		<TaskType>ttMultiTasker</TaskType>
+		<Stopped>0</Stopped>
+		<HKStopped>1</HKStopped>
+		<HasEndDateTime>0</HasEndDateTime>
+		<SchType>3</SchType>
+		<StartDateTime>2025-07-08 14:00:00</StartDateTime>
+		<EndDateTime>2025-07-08 13:56:43</EndDateTime>
+		<NextRunDateTime>2025-07-13 14:00:00</NextRunDateTime>
+		<NextRunTime>2025-07-13 14:00:00</NextRunTime>
+		<LastRunTime></LastRunTime>
+		<Fav>0</Fav>
+		<Ver>6</Ver>
+		<Param>
+			<CountDownHour>1</CountDownHour>
+			<CountDownMin>0</CountDownMin>
+			<CountDownSec>0</CountDownSec>
+			<DTOnce>2025-07-08 13:56:43</DTOnce>
+			<DayLimit></DayLimit>
+			<EveryMonthDay>0</EveryMonthDay>
+			<EveryWeek>7</EveryWeek>
+			<Name>github同步</Name>
+			<TitleShow>弹窗提醒</TitleShow>
+			<TypeShow>提醒</TypeShow>
+			<YearDay></YearDay>
+			<YearMonth></YearMonth>
+			<YearWeekDay></YearWeekDay>
+			<YearWeekNum></YearWeekNum>
+			<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
+			<ZeroHalfs></ZeroHalfs>
+			<chk1>0</chk1>
+			<chk2>0</chk2>
+			<chk3>0</chk3>
+			<chk4>0</chk4>
+			<chk5>0</chk5>
+			<chk6>0</chk6>
+			<chk7>1</chk7>
+			<chkAutoClose>0</chkAutoClose>
+			<chkAutoCloseHK>0</chkAutoCloseHK>
+			<chkDayLimit1>0</chkDayLimit1>
+			<chkDayLimit2>0</chkDayLimit2>
+			<chkDayLimit3>0</chkDayLimit3>
+			<chkDayLimit4>0</chkDayLimit4>
+			<chkDayLimit5>0</chkDayLimit5>
+			<chkDayLimit6>0</chkDayLimit6>
+			<chkDayLimit7>0</chkDayLimit7>
+			<chkDayLimitTime>0</chkDayLimitTime>
+			<chkDayLimitTimeRev>0</chkDayLimitTimeRev>
+			<chkEndDateSel>0</chkEndDateSel>
+			<chkExecDlg>0</chkExecDlg>
+			<chkExecDlgHK>0</chkExecDlgHK>
+			<chkExecExitFocus>0</chkExecExitFocus>
+			<chkExecExitFullScr>0</chkExecExitFullScr>
+			<chkExecExitPre>1</chkExecExitPre>
+			<chkHKMouseCorner>0</chkHKMouseCorner>
+			<chkHKMouseCorner1>0</chkHKMouseCorner1>
+			<chkHKMouseCorner2>0</chkHKMouseCorner2>
+			<chkHKMouseCorner3>0</chkHKMouseCorner3>
+			<chkHKMouseCorner4>0</chkHKMouseCorner4>
+			<chkHKMouseEdge>0</chkHKMouseEdge>
+			<chkHKMouseEdge1>0</chkHKMouseEdge1>
+			<chkHKMouseEdge2>0</chkHKMouseEdge2>
+			<chkHKMouseEdge3>0</chkHKMouseEdge3>
+			<chkHKMouseEdge4>0</chkHKMouseEdge4>
+			<chkHotkey>0</chkHotkey>
+			<chkHotkeyAlt>0</chkHotkeyAlt>
+			<chkHotkeyCtrl>0</chkHotkeyCtrl>
+			<chkHotkeyLeft>0</chkHotkeyLeft>
+			<chkHotkeyMiddle>0</chkHotkeyMiddle>
+			<chkHotkeyRight>0</chkHotkeyRight>
+			<chkHotkeyShift>0</chkHotkeyShift>
+			<chkHotkeyWheel>0</chkHotkeyWheel>
+			<chkHotkeyWin>0</chkHotkeyWin>
+			<chkRunMiss>0</chkRunMiss>
+			<chkSKPartMatch>0</chkSKPartMatch>
+			<chkSKProcExists>0</chkSKProcExists>
+			<chkSKWinExists>0</chkSKWinExists>
+			<chkSKWinFore>0</chkSKWinFore>
+			<chkSKWinMouseIn>0</chkSKWinMouseIn>
+			<chkSKWinSub>0</chkSKWinSub>
+			<chkSchLimitCount>0</chkSchLimitCount>
+			<chkSelfDelete>0</chkSelfDelete>
+			<chkTimer>1</chkTimer>
+			<chkUseStartDT>1</chkUseStartDT>
+			<chkWakeRunMiss>0</chkWakeRunMiss>
+			<cmbAutoCloseAction>0</cmbAutoCloseAction>
+			<cmbAutoCloseActionHK>0</cmbAutoCloseActionHK>
+			<cmbAutoCloseActionHK_text>执行</cmbAutoCloseActionHK_text>
+			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
+			<cmbClass>无</cmbClass>
+			<cmbClass_text>无</cmbClass_text>
+			<cmbDayLimit></cmbDayLimit>
+			<cmbHKMouse>0</cmbHKMouse>
+			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
+			<cmbHotkey>0</cmbHotkey>
+			<cmbYearDay></cmbYearDay>
+			<cmbYearMonth></cmbYearMonth>
+			<cmbYearWeekDay></cmbYearWeekDay>
+			<cmbYearWeekNum></cmbYearWeekNum>
+			<edtDayLimitTime></edtDayLimitTime>
+			<edtDelayBoot>0</edtDelayBoot>
+			<edtExecSec>30</edtExecSec>
+			<edtExecSecHK>5</edtExecSecHK>
+			<edtHKMouseCorner>50</edtHKMouseCorner>
+			<edtHKMouseEdge>50</edtHKMouseEdge>
+			<edtSKProcName></edtSKProcName>
+			<edtSKWinClass></edtSKWinClass>
+			<edtSKWinTitle></edtSKWinTitle>
+			<edtSchLimitCount>1</edtSchLimitCount>
+			<edtTaskName>github同步</edtTaskName>
+			<edtWakeDelayBoot>0</edtWakeDelayBoot>
+			<optHKKey>1</optHKKey>
+			<optHKMouse>0</optHKMouse>
+		</Param>
+		<Actions>
+			<Tasker>
+				<ID>66</ID>
+				<TaskType>ttActionRec</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
+				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
+				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>6</Ver>
+				<Param>
+					<ActionRecHK>Ctrl+Alt+P</ActionRecHK>
+					<Name>录制键盘鼠标动作</Name>
+					<TitleShow>录制键盘鼠标动作</TitleShow>
+					<TypeShow>输入</TypeShow>
+					<chkActionRecMove>0</chkActionRecMove>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
+					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
+					<cmbRecPlaySpeed>1</cmbRecPlaySpeed>
+					<cmbRecPlaySpeed_text>100%</cmbRecPlaySpeed_text>
+					<edtActionRec>1172,MouseLeftDown,15,756
+1172,MouseLeftDownWindow,15,28,Shell_TrayWnd,
+1299,MouseLeftUp,15,756
+1299,MouseLeftUpWindow,15,28,Shell_TrayWnd,
+2744,MouseLeftDown,375,341
+2744,MouseLeftDownWindow,327,253,Windows.UI.Core.CoreWindow,搜索
+2855,MouseLeftUp,375,341
+2855,MouseLeftUpWindow,375,341,Windows.UI.Core.CoreWindow,启动
+8440,MouseLeftDown,450,105
+8440,MouseLeftDownWindow,218,58,Chrome_WidgetWin_1,GitHub Desktop
+8563,MouseLeftUp,450,105
+8563,MouseLeftUpWindow,218,58,Chrome_WidgetWin_1,GitHub Desktop
+10155,MouseLeftDown,341,209
+10155,MouseLeftDownWindow,109,162,Chrome_WidgetWin_1,GitHub Desktop
+10288,MouseLeftUp,341,209
+10288,MouseLeftUpWindow,109,162,Chrome_WidgetWin_1,GitHub Desktop
+13096,MouseLeftDown,322,523
+13096,MouseLeftDownWindow,90,476,Chrome_WidgetWin_1,GitHub Desktop
+13195,MouseLeftUp,322,523
+13195,MouseLeftUpWindow,90,476,Chrome_WidgetWin_1,GitHub Desktop
+15303,KeyDown,85
+15538,KeyUp,85
+15808,KeyDown,80
+15923,KeyUp,80
+16688,KeyDown,68
+16853,KeyUp,68
+17163,KeyDown,65
+17313,KeyUp,65
+17463,KeyDown,84
+17628,KeyUp,84
+17683,KeyDown,69
+17923,KeyUp,69
+18198,KeyDown,13
+18312,KeyUp,13
+20840,MouseLeftDown,377,686
+20840,MouseLeftDownWindow,145,639,Chrome_WidgetWin_1,GitHub Desktop
+20951,MouseLeftUp,377,686
+20951,MouseLeftUpWindow,145,639,Chrome_WidgetWin_1,GitHub Desktop
+28076,MouseLeftDown,800,104
+28076,MouseLeftDownWindow,568,57,Chrome_WidgetWin_1,GitHub Desktop
+28203,MouseLeftUp,800,103
+28203,MouseLeftUpWindow,568,56,Chrome_WidgetWin_1,GitHub Desktop
+42279,MouseLeftDown,1167,63
+42279,MouseLeftDownWindow,935,16,Chrome_WidgetWin_1,GitHub Desktop
+42447,MouseLeftUp,1167,63
+42447,MouseLeftUpWindow,935,16,Chrome_WidgetWin_1,GitHub Desktop
+</edtActionRec>
+					<edtActionRec.max>23</edtActionRec.max>
+					<edtActionRec.min>0</edtActionRec.min>
+					<edtTaskName></edtTaskName>
+					<edtTaskSubName></edtTaskSubName>
+				</Param>
+				<Name>录制键盘鼠标动作</Name>
+				<ID>66</ID>
 				<Stat>1</Stat>
 			</Tasker>
 		</Actions>
