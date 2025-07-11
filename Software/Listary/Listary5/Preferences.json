@@ -188,6 +188,17 @@
          "run_as_admin": false,
          "slient": false,
          "working_dir": ""
+      }, {
+         "description": "",
+         "display_title": "\u4F7F\u7528anytxt\u641C\u7D22",
+         "enabled": true,
+         "keyword": "at",
+         "only_show_in_launcher": false,
+         "param": "/st 1 /s \"{query}\"",
+         "path": "..\\..\\..\\AnyTXT Searcher\\ATGUI.exe",
+         "run_as_admin": false,
+         "slient": false,
+         "working_dir": ""
       } ],
       "folder": [  ],
       "web_search": [ {

@@ -38,13 +38,13 @@ del /s /q /f "C:\Users\%USERNAME%\AppData\Local\Temp\*"
 :run
 :listary
 ::Listary5代
-start  "" "%cd%\Listary5\UserData\Run_listary5.cmd"
+::start  "" "%cd%\Listary5\UserData\Run_listary5.cmd"
 
 ::Listary6代
 ::需要获取完整路径才行
-::pushd
-::call "%cd%\Listary6\UserProfile\Settings\Run_Listary6.cmd"
-::popd
+pushd
+call "%cd%\Listary6\UserProfile\Settings\Run_Listary6.cmd"
+popd
 
 ::管理员启动WeaselServer.exe
 mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIMEPortable\weasel\WeaselServer.exe""","::",,"runas",1)(window.close)

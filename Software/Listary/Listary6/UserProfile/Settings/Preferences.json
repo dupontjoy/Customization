@@ -168,6 +168,19 @@
             "Keyword": "gd",
             "$customType": "CustomCommand"
           }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Title": "使用anytxt搜索",
+            "Path": "ATGUI.exe",
+            "Parameter": "/st 1 /s \"{query}\"",
+            "WorkingDirectory": "..\\..\\..\\AnyTXT Searcher\\",
+            "Id": "679ce21e-2e8c-4215-898d-f17c3e19ed01",
+            "Keyword": "at",
+            "$customType": "CustomCommand"
+          }
         }
       ],
       "Updates": []
@@ -236,6 +249,17 @@
             },
             "SuggestionProvider": "Custom",
             "SuggestionUrl": "https://prts.wiki/w/{query}"
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "lb",
+            "Url": "https://libretv-698.pages.dev/s={query}",
+            "Title": "Libretv",
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://libretv-698.pages.dev/s={query}"
           }
         }
       ],
