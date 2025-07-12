@@ -361,7 +361,7 @@
       "GUI.CustomStageCode": "False",
       "GUI.DarkMode": "Light",
       "GUI.HideSeries": "False",
-      "GUI.HideUnavailableStage": "False",
+      "GUI.HideUnavailableStage": "True",
       "GUI.MinimizeToTray": "False",
       "GUI.UseAlternateStage": "False",
       "GUI.UseLogItemDateFormat": "False",
@@ -548,8 +548,8 @@
       "VersionUpdate.ScheduledUpdateCheck": "True",
       "VersionUpdate.UpdateCheck": "True",
       "VersionUpdate.VersionType": "Beta",
-      "Visit.CreditFightSelectFormation": "0",
-      "Visit.CreditFightTaskEnabled": "False",
+      "Visit.CreditFightSelectFormation": "4",
+      "Visit.CreditFightTaskEnabled": "True",
       "Visit.LastCreditFightTaskTime": "2023/07/20 00:00:00",
       "Yituliu.EnableYituliu": "True"
     }

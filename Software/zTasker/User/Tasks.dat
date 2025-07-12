@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:55:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-12 07:55:00</NextRunDateTime>
-		<NextRunTime>2025-07-12 07:55:00</NextRunTime>
-		<LastRunTime>2025-07-11 07:55:00</LastRunTime>
+		<NextRunDateTime>2025-07-13 07:55:00</NextRunDateTime>
+		<NextRunTime>2025-07-13 07:55:00</NextRunTime>
+		<LastRunTime>2025-07-12 07:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -449,9 +449,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:55:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-11 17:55:00</NextRunDateTime>
-		<NextRunTime>2025-07-11 17:55:00</NextRunTime>
-		<LastRunTime>2025-07-10 17:55:00</LastRunTime>
+		<NextRunDateTime>2025-07-12 17:55:00</NextRunDateTime>
+		<NextRunTime>2025-07-12 17:55:00</NextRunTime>
+		<LastRunTime>2025-07-11 17:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -889,9 +889,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:25:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-11 21:25:00</NextRunDateTime>
-		<NextRunTime>2025-07-11 21:25:00</NextRunTime>
-		<LastRunTime>2025-07-10 21:25:00</LastRunTime>
+		<NextRunDateTime>2025-07-12 21:25:00</NextRunDateTime>
+		<NextRunTime>2025-07-12 21:25:00</NextRunTime>
+		<LastRunTime>2025-07-11 21:25:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1328,22 +1328,21 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-06-12 08:19:12</EndDateTime>
-		<NextRunDateTime>2125-06-17 07:43:02</NextRunDateTime>
+		<EndDateTime>2025-07-12 16:38:24</EndDateTime>
+		<NextRunDateTime>2125-06-18 08:37:46</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-07-11 07:43:02</LastRunTime>
+		<LastRunTime>2025-07-12 08:37:46</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
 			<CountDownHour>0</CountDownHour>
 			<CountDownMin>0</CountDownMin>
-			<CountDownSec>10</CountDownSec>
+			<CountDownSec>15</CountDownSec>
 			<DTOnce>2024-12-26 20:34:03</DTOnce>
 			<DayLimit></DayLimit>
 			<EveryMonthDay>0</EveryMonthDay>
 			<EveryWeek></EveryWeek>
 			<Name>开机运行</Name>
-			<RemindTitle></RemindTitle>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
 			<YearDay></YearDay>
@@ -1369,8 +1368,6 @@ env2=value2</edtAppEnv>
 			<chkExecExitFocus>0</chkExecExitFocus>
 			<chkExecExitFullScr>0</chkExecExitFullScr>
 			<chkExecExitPre>0</chkExecExitPre>
-			<chkExecPost>0</chkExecPost>
-			<chkExecPre>0</chkExecPre>
 			<chkHKMouseCorner>0</chkHKMouseCorner>
 			<chkHKMouseCorner1>0</chkHKMouseCorner1>
 			<chkHKMouseCorner2>0</chkHKMouseCorner2>
@@ -1409,12 +1406,6 @@ env2=value2</edtAppEnv>
 			<cmbClass>无</cmbClass>
 			<cmbClass_text>无</cmbClass_text>
 			<cmbDayLimit></cmbDayLimit>
-			<cmbExecPost>0</cmbExecPost>
-			<cmbExecPostTasks_text></cmbExecPostTasks_text>
-			<cmbExecPost_text>启用计划</cmbExecPost_text>
-			<cmbExecPre>0</cmbExecPre>
-			<cmbExecPreTasks_text></cmbExecPreTasks_text>
-			<cmbExecPre_text>启用计划</cmbExecPre_text>
 			<cmbHKMouse>0</cmbHKMouse>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
 			<cmbHotkey>0</cmbHotkey>
@@ -1423,7 +1414,6 @@ env2=value2</edtAppEnv>
 			<cmbYearWeekDay></cmbYearWeekDay>
 			<cmbYearWeekNum></cmbYearWeekNum>
 			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
-			<edtDefRmd></edtDefRmd>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
@@ -1434,14 +1424,9 @@ env2=value2</edtAppEnv>
 			<edtSKWinTitle></edtSKWinTitle>
 			<edtSchLimitCount>1</edtSchLimitCount>
 			<edtTaskName>开机运行</edtTaskName>
-			<edtToastFloat></edtToastFloat>
 			<edtWakeDelayBoot>0</edtWakeDelayBoot>
 			<optHKKey>1</optHKKey>
 			<optHKMouse>0</optHKMouse>
-			<tabBtnExec>0</tabBtnExec>
-			<tabBtnHK>0</tabBtnHK>
-			<tabBtnSch>0</tabBtnSch>
-			<tabBtnTask>1</tabBtnTask>
 		</Param>
 		<Actions>
 			<Tasker>
@@ -1735,9 +1720,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 09:00:00</StartDateTime>
 		<EndDateTime>2025-07-09 23:40:48</EndDateTime>
-		<NextRunDateTime>2025-07-12 09:00:00</NextRunDateTime>
-		<NextRunTime>2025-07-12 09:00:00</NextRunTime>
-		<LastRunTime>2025-07-11 09:00:00</LastRunTime>
+		<NextRunDateTime>2025-07-13 09:00:00</NextRunDateTime>
+		<NextRunTime>2025-07-13 09:00:00</NextRunTime>
+		<LastRunTime>2025-07-12 09:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
