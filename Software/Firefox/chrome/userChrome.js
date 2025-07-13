@@ -9,11 +9,12 @@
 // scripts without metadata will run only on the main browser window, for backwards compatibility
 //
 // 1.Including function of UCJS_loader. <--- not work in Firefox135+
-// 2.Compatible with Firefox139
+// 2.Compatible with Firefox141
 // 3.Cached script data (path, leafname, regex)
 // 4.Support window.userChrome_js.loadOverlay(overlay [,observer]) <--- not work in recent Firefox
 // Modified by Alice0775
 //
+// @version       2025/06/16 Bug 1968479 - Only allow eval (with system principal / in the parent) when an explicit pref is set
 // @version       2025/05/11 fix extended property flag(enumerable)
 // @version       2025/04/16 loadSubScript chrome:// instead of file://
 // @version       2025/04/07 default disabled sandbox
@@ -240,6 +241,7 @@
                             script.chromedir = file.path.replace(chromeDirPath, "chrome://userchromejs/content/").replace(/\\/g, "/");
                             if (/\.uc\.js$|\.mjs$/i.test(script.filename)) {
                                 script.ucjs = checkUCJS(script.file.path);
+                                script.LastModifiedTime = this.getLastModifiedTime(script.file);
                                 s.push(script);
                             } else {
                                 script.xul = '<?xul-overlay href=\"' + script.url + '\"?>\n';
@@ -610,8 +612,6 @@
                 globalThis.setUnloadMap = setUnloadMap;
             `, target);
 
-            this[Symbol.for("sandbox")] = target;
-
             /* toSource() is not available in sandbox */
             Cu.evalInSandbox(`
                   Function.prototype.toSource = window.Function.prototype.toSource;
@@ -626,6 +626,8 @@
                     Cu.nukeSandbox(target);
                 }, 0);
             }, { once: true });
+            this.sb = target;
+            
             for (var m = 0, len = this.scripts.length; m < len; m++) {
                 script = this.scripts[m];
                 if (this.ALWAYSEXECUTE.indexOf(script.filename) < 0

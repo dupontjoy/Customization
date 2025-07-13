@@ -21,9 +21,6 @@ set "OutputDir=E:\My Documents\Nutstore\NutStoreSync"
 :anytxt
 robocopy "C:\ProgramData\Anytxt\config" "%OutputDir%\Customization\Software\Anytxt\config" /MIR /ZB /R:3 /W:5
 
-:BleachBit
-xcopy "%BackupDir%\..\..\Software\BleachBit-Portable\BleachBit.ini" "%OutputDir%\Customization\Software\BleachBit\" /y
-
 :cangjie5
 ::复制文件夹時，源文件夹不要带斜杠，目标文件夹带斜杠。末尾写/s /y /i
 ::复制文件時，末尾写/y
@@ -100,7 +97,7 @@ xcopy "%BackupDir%\..\..\Software\MPV\README.md" "%OutputDir%\Customization\Soft
 xcopy "%BackupDir%\..\..\Software\MPV\yt-dlp.conf" "%OutputDir%\Customization\Software\MPV\" /y
 xcopy "%BackupDir%\..\..\Software\MPV\settings.xml" "%OutputDir%\Customization\Software\MPV\" /y
 ::删除不需要备份的播放进度
-rd /s /q "%OutputDir%\Customization\Software\MPV\portable_config\cache"
+rd /s /q "%OutputDir%\Customization\Software\MPV\portable_config\watch_later"
 
 :N_m3u8DL-RE
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\N_m3u8DL-RE.exe" "%OutputDir%\Customization\Software\N_m3u8DL-RE\" /y
@@ -165,6 +162,7 @@ xcopy "%BackupDir%\..\..\Software\zTasker\User\Tasks.dat" "%OutputDir%\Customiza
 rd /s /q "%OutputDir%\..\..\GitHub\Customization\Rules"
 rd /s /q "%OutputDir%\..\..\GitHub\Customization\Software"
 rd /s /q "%OutputDir%\..\..\GitHub\RimeIME-Portable\usr"
+rd /s /q "%OutputDir%\..\..\GitHub\RimeIME-Portable\book"
 timeout /t 3 /nobreak
 xcopy "%OutputDir%\Customization" "%OutputDir%\..\..\GitHub\Customization\"  /s /y /i
 xcopy "%OutputDir%\RimeIME-Portable" "%OutputDir%\..\..\GitHub\RimeIME-Portable\"  /s /y /i

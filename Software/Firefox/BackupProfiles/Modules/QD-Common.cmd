@@ -12,7 +12,7 @@ pushd %~dp0
 cd ..\..\..\Software
 
 :delete
-::删除firefox配置文件夹误生成的cache文件夹
+::删除firefox配置文件夹误生成的cache2文件夹
 rd /s /q "%cd%\..\Profiles\FxProfiles\cache2"
 
 ::删除N_m3u8DL-RE下载失败的缓存和日志

@@ -49,9 +49,8 @@ timeout /t 5 /nobreak
 
 :: 创建临时VBS脚本执行最小化操作
 echo Set WshShell = CreateObject("WScript.Shell") > minimize.vbs
-echo WshShell.AppActivate "MuMu模拟" >> minimize.vbs
-timeout /t 5 /nobreak
 echo WshShell.AppActivate "MuMu安卓" >> minimize.vbs
+echo WshShell.AppActivate "MuMu模拟" >> minimize.vbs
 echo WshShell.SendKeys "%% " >> minimize.vbs
 echo WshShell.SendKeys "n" >> minimize.vbs
 

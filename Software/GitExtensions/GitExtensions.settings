@@ -1,0 +1,1935 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dictionary>
+  <item>
+    <key>
+      <string>addnewlinetocommitmessagewhenmissing</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>AlwaysShowAdvOpt</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>AlwaysShowCheckoutBranchDlg</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Appearance.AvatarProvider</string>
+    </key>
+    <value>
+      <string>None</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Appearance.RememberDiffDisplayAppearance</string>
+    </key>
+    <value>
+      <string>False</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Appearance.ReverseGitColoring</string>
+    </key>
+    <value>
+      <string>True</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Appearance.RevisionGraph.MergeGraphLanesHavingCommonParent</string>
+    </key>
+    <value>
+      <string>True</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Appearance.RevisionGraph.RenderGraphWithDiagonals</string>
+    </key>
+    <value>
+      <string>True</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Appearance.RevisionGraph.StraightenGraphDiagonals</string>
+    </key>
+    <value>
+      <string>True</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Appearance.ShowFindInCommitFilesGitGrep</string>
+    </key>
+    <value>
+      <string>False</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Appearance.UseGitColoring</string>
+    </key>
+    <value>
+      <string>True</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>authorimagecachedays</string>
+    </key>
+    <value>
+      <string>13</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>AutoNormaliseBranchName</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>AutoNormaliseSymbol</string>
+    </key>
+    <value>
+      <string>_</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>autostartpageant</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>AvailableEncodings</string>
+    </key>
+    <value>
+      <string>Default;us-ascii;utf-16;gb2312</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Blame.DisplayAuthorFirst</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Blame.ShowAuthor</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Blame.ShowAuthorAvatar</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Blame.ShowAuthorDate</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Blame.ShowAuthorTime</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Blame.ShowLineNumbers</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Blame.ShowOriginalFilePath</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CheckForReleaseCandidates</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>checkforuncommittedchangesincheckoutbranch</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CheckForUpdates</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>closeprocessdialog</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitAndPushForcedWhenAmend</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitLeft_Distance</string>
+    </key>
+    <value>
+      <string>268</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitLeft_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitLeft_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitLeft_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitLeft_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitLeft_Size</string>
+    </key>
+    <value>
+      <string>610</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitMain_Distance</string>
+    </key>
+    <value>
+      <string>397</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitMain_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitMain_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitMain_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitMain_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitMain_Size</string>
+    </key>
+    <value>
+      <string>918</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitRight_Distance</string>
+    </key>
+    <value>
+      <string>420</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitRight_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitRight_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitRight_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitRight_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CommitDialog.splitRight_Size</string>
+    </key>
+    <value>
+      <string>610</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>commitDialogNumberOfPreviousMessages</string>
+    </key>
+    <value>
+      <string>6</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>commitDialogShowOnlyMyMessages</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>commitfont</string>
+    </key>
+    <value>
+      <string>Microsoft YaHei UI;9;_IC_;0;0</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>conemuconsolefont</string>
+    </key>
+    <value>
+      <string>Consolas;12;_IC_;0;0</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Confirmations.ConfirmBranchCheckout</string>
+    </key>
+    <value>
+      <string>False</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>CustomAvatarTemplate</string>
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>dashboardshowcurrentbranch</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>defaultclonedestinationpath</string>
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DefaultPullAction</string>
+    </key>
+    <value>
+      <string>Merge</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Detailed.ConEmuTerminal</string>
+    </key>
+    <value>
+      <string>bash</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Detailed.ShowConEmuTab</string>
+    </key>
+    <value>
+      <string>True</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Detailed.ShowGpgInformation</string>
+    </key>
+    <value>
+      <string>True</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Detailed.ShowProcessDialogPasswordInput</string>
+    </key>
+    <value>
+      <string>False</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Detailed.UseBrowseForFileHistory</string>
+    </key>
+    <value>
+      <string>True</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Detailed.UseDiffViewerForBlame</string>
+    </key>
+    <value>
+      <string>False</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DetectCopyInAllOnBlame</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DetectCopyInFileOnBlame</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>dictionary</string>
+    </key>
+    <value>
+      <string>none</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>difffont</string>
+    </key>
+    <value>
+      <string>Consolas;10;_IC_;0;0</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>difftools.showavailable</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>diffverticalrulerposition</string>
+    </key>
+    <value>
+      <string>0</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DiffViewer.AutomaticContinuousScroll</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmAddTrackingRef</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmAmend</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmCommitAfterConflictsResolved</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmCommitIfNoBranch</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmDeleteUnmergedBranch</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmFetchAndPruneAll</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmPushNewBranch</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmRebase</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmResolveConflicts</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmSecondAbortConfirmation</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmSwitchWorktree</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontConfirmUndoLastCommit</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DontShowHelpImages</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>enableautoscale</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FillRefLabels</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>followrenamesinfilehistory</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>followrenamesinfilehistoryexactonly</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>font</string>
+    </key>
+    <value>
+      <string>Microsoft YaHei UI;9;_IC_;0;0</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.DiffSplitContainer_Distance</string>
+    </key>
+    <value>
+      <string>300</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.DiffSplitContainer_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.DiffSplitContainer_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.DiffSplitContainer_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.DiffSplitContainer_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.DiffSplitContainer_Size</string>
+    </key>
+    <value>
+      <string>643</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.FileTreeSplitContainer_Distance</string>
+    </key>
+    <value>
+      <string>350</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.FileTreeSplitContainer_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.FileTreeSplitContainer_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.FileTreeSplitContainer_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.FileTreeSplitContainer_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.FileTreeSplitContainer_Size</string>
+    </key>
+    <value>
+      <string>643</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.LeftSplitContainer_Distance</string>
+    </key>
+    <value>
+      <string>412</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.LeftSplitContainer_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.LeftSplitContainer_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.LeftSplitContainer_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.LeftSplitContainer_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.LeftSplitContainer_Size</string>
+    </key>
+    <value>
+      <string>501</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.MainSplitContainer_Distance</string>
+    </key>
+    <value>
+      <string>260</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.MainSplitContainer_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.MainSplitContainer_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.MainSplitContainer_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.MainSplitContainer_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.MainSplitContainer_Size</string>
+    </key>
+    <value>
+      <string>911</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RevisionDiffControl.LeftSplitContainer_Distance</string>
+    </key>
+    <value>
+      <string>229</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RevisionDiffControl.LeftSplitContainer_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RevisionDiffControl.LeftSplitContainer_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RevisionDiffControl.LeftSplitContainer_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RevisionDiffControl.LeftSplitContainer_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RevisionDiffControl.LeftSplitContainer_Size</string>
+    </key>
+    <value>
+      <string>256</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RevisionsSplitContainer_Distance</string>
+    </key>
+    <value>
+      <string>361</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RevisionsSplitContainer_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RevisionsSplitContainer_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RevisionsSplitContainer_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RevisionsSplitContainer_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RevisionsSplitContainer_Size</string>
+    </key>
+    <value>
+      <string>645</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RightSplitContainer_Distance</string>
+    </key>
+    <value>
+      <string>209</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RightSplitContainer_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RightSplitContainer_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RightSplitContainer_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RightSplitContainer_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.RightSplitContainer_Size</string>
+    </key>
+    <value>
+      <string>503</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>gitcommand</string>
+    </key>
+    <value>
+      <string>C:\Program Files\Git\bin\git.exe</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>GravatarDefaultImageType</string>
+    </key>
+    <value>
+      <string>AuthorInitials</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Hidden.Migration.IsEditorSettingsMigrated</string>
+    </key>
+    <value>
+      <string>True</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>highlightauthoredrevisions</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>history</string>
+    </key>
+    <value>
+      <string>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;RepositoryHistory&gt;
+  &lt;Repositories&gt;
+    &lt;Repository&gt;
+      &lt;Anchor&gt;None&lt;/Anchor&gt;
+      &lt;Path&gt;E:\My Documents\GitHub\Customization\&lt;/Path&gt;
+    &lt;/Repository&gt;
+    &lt;Repository&gt;
+      &lt;Anchor&gt;None&lt;/Anchor&gt;
+      &lt;Path&gt;E:\My Documents\GitHub\RimeIME-Portable\&lt;/Path&gt;
+    &lt;/Repository&gt;
+  &lt;/Repositories&gt;
+&lt;/RepositoryHistory&gt;</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>IgnoreWhitespaceOnBlame</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>includeUntrackedFilesInAutoStash</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>lastCommitMessage</string>
+    </key>
+    <value>
+      <string>update</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>LastUpdateCheck</string>
+    </key>
+    <value>
+      <string>2025/7/11</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>LinuxToolsDir</string>
+    </key>
+    <value>
+      <string>C:\Program Files\Git\usr\bin\</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>maxrevisiongraphcommits</string>
+    </key>
+    <value>
+      <string>100000</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>monospacefont</string>
+    </key>
+    <value>
+      <string>Consolas;9;_IC_;0;0</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>multicolorbranches</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>OmitUninterestingDiff</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>opensubmodulediffinseparatewindow</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>ownScripts</string>
+    </key>
+    <value>
+      <string>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfScriptInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ScriptInfo&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Name&gt;Fetch changes after commit&lt;/Name&gt;
+    &lt;Command&gt;git&lt;/Command&gt;
+    &lt;Arguments&gt;fetch&lt;/Arguments&gt;
+    &lt;AddToRevisionGridContextMenu&gt;false&lt;/AddToRevisionGridContextMenu&gt;
+    &lt;OnEvent&gt;AfterCommit&lt;/OnEvent&gt;
+    &lt;AskConfirmation&gt;true&lt;/AskConfirmation&gt;
+    &lt;RunInBackground&gt;false&lt;/RunInBackground&gt;
+    &lt;IsPowerShell&gt;false&lt;/IsPowerShell&gt;
+    &lt;HotkeyCommandIdentifier&gt;9000&lt;/HotkeyCommandIdentifier&gt;
+    &lt;Icon&gt;bug&lt;/Icon&gt;
+  &lt;/ScriptInfo&gt;
+  &lt;ScriptInfo&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Name&gt;Update submodules after pull&lt;/Name&gt;
+    &lt;Command&gt;git&lt;/Command&gt;
+    &lt;Arguments&gt;submodule update --init --recursive&lt;/Arguments&gt;
+    &lt;AddToRevisionGridContextMenu&gt;false&lt;/AddToRevisionGridContextMenu&gt;
+    &lt;OnEvent&gt;AfterPull&lt;/OnEvent&gt;
+    &lt;AskConfirmation&gt;true&lt;/AskConfirmation&gt;
+    &lt;RunInBackground&gt;false&lt;/RunInBackground&gt;
+    &lt;IsPowerShell&gt;false&lt;/IsPowerShell&gt;
+    &lt;HotkeyCommandIdentifier&gt;9001&lt;/HotkeyCommandIdentifier&gt;
+    &lt;Icon&gt;bug&lt;/Icon&gt;
+  &lt;/ScriptInfo&gt;
+  &lt;ScriptInfo&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Name&gt;&amp;amp;Example&lt;/Name&gt;
+    &lt;Command&gt;c:\windows\system32\calc.exe&lt;/Command&gt;
+    &lt;Arguments /&gt;
+    &lt;AddToRevisionGridContextMenu&gt;false&lt;/AddToRevisionGridContextMenu&gt;
+    &lt;OnEvent&gt;ShowInUserMenuBar&lt;/OnEvent&gt;
+    &lt;AskConfirmation&gt;false&lt;/AskConfirmation&gt;
+    &lt;RunInBackground&gt;false&lt;/RunInBackground&gt;
+    &lt;IsPowerShell&gt;false&lt;/IsPowerShell&gt;
+    &lt;HotkeyCommandIdentifier&gt;9002&lt;/HotkeyCommandIdentifier&gt;
+    &lt;Icon&gt;bug&lt;/Icon&gt;
+  &lt;/ScriptInfo&gt;
+  &lt;ScriptInfo&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Name&gt;Open on GitHub&lt;/Name&gt;
+    &lt;Command&gt;{openurl}&lt;/Command&gt;
+    &lt;Arguments&gt;https://github.com{cDefaultRemotePathFromUrl}/commit/{sHash}&lt;/Arguments&gt;
+    &lt;AddToRevisionGridContextMenu&gt;true&lt;/AddToRevisionGridContextMenu&gt;
+    &lt;OnEvent&gt;None&lt;/OnEvent&gt;
+    &lt;AskConfirmation&gt;false&lt;/AskConfirmation&gt;
+    &lt;RunInBackground&gt;false&lt;/RunInBackground&gt;
+    &lt;IsPowerShell&gt;false&lt;/IsPowerShell&gt;
+    &lt;HotkeyCommandIdentifier&gt;9003&lt;/HotkeyCommandIdentifier&gt;
+    &lt;Icon&gt;bug&lt;/Icon&gt;
+  &lt;/ScriptInfo&gt;
+  &lt;ScriptInfo&gt;
+    &lt;Enabled&gt;false&lt;/Enabled&gt;
+    &lt;Name&gt;Fetch All Submodules&lt;/Name&gt;
+    &lt;Command&gt;git&lt;/Command&gt;
+    &lt;Arguments&gt;submodule foreach --recursive git fetch --all&lt;/Arguments&gt;
+    &lt;AddToRevisionGridContextMenu&gt;true&lt;/AddToRevisionGridContextMenu&gt;
+    &lt;OnEvent&gt;None&lt;/OnEvent&gt;
+    &lt;AskConfirmation&gt;false&lt;/AskConfirmation&gt;
+    &lt;RunInBackground&gt;false&lt;/RunInBackground&gt;
+    &lt;IsPowerShell&gt;false&lt;/IsPowerShell&gt;
+    &lt;HotkeyCommandIdentifier&gt;9004&lt;/HotkeyCommandIdentifier&gt;
+    &lt;Icon&gt;bug&lt;/Icon&gt;
+  &lt;/ScriptInfo&gt;
+&lt;/ArrayOfScriptInfo&gt;</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>pageant</string>
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>plink</string>
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>PrioritizedBranchNames</string>
+    </key>
+    <value>
+      <string>main[^/]*|master[^/]*|release/.*</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>PrioritizedRemoteNames</string>
+    </key>
+    <value>
+      <string>origin|upstream</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>provideautocompletion</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>puttygen</string>
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RecentWorkingDir</string>
+    </key>
+    <value>
+      <string>E:\My Documents\GitHub\Customization\</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RecursiveSubmodules</string>
+    </key>
+    <value>
+      <string>1</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RefsSortBy</string>
+    </key>
+    <value>
+      <string>Default</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RefsSortOrder</string>
+    </key>
+    <value>
+      <string>Descending</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>relativedate</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RememberAmendCommitState</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>rememberIgnoreWhiteSpacePreference</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RememberNumberOfContextLines</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RememberShowEntireFilePreference</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RememberShowNonPrintableCharsPreference</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RememberShowSyntaxHighlightingInDiff</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RepoObjectsTree.BranchesIndex</string>
+    </key>
+    <value>
+      <string>0</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RepoObjectsTree.RemotesIndex</string>
+    </key>
+    <value>
+      <string>1</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RepoObjectsTree.StashesIndex</string>
+    </key>
+    <value>
+      <string>4</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RepoObjectsTree.SubmodulesIndex</string>
+    </key>
+    <value>
+      <string>3</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RepoObjectsTree.TagsIndex</string>
+    </key>
+    <value>
+      <string>2</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RevisionGraphDrawAlternateBackColor</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>revisiongraphdrawnonrelativesgray</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>revisiongraphdrawnonrelativestextgray</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>revisiongridquicksearchtimeout</string>
+    </key>
+    <value>
+      <string>4000</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RevisionSortOrder</string>
+    </key>
+    <value>
+      <string>GitDefault</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>SerializedHotkeys</string>
+    </key>
+    <value>
+      <string>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfHotkeySettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;HotkeySettings Name="Commit"&gt;
+    &lt;Commands&gt;
+      &lt;HotkeyCommand CommandCode="16" Name="AddSelectionToCommitMessage" KeyData="C" /&gt;
+      &lt;HotkeyCommand CommandCode="0" Name="AddToGitIgnore" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="25" Name="ConventionalCommit_PrefixMessage" KeyData="MButton ShiftKey Capital CapsLock D P T Control" /&gt;
+      &lt;HotkeyCommand CommandCode="26" Name="ConventionalCommit_PrefixMessageWithScope" KeyData="MButton ShiftKey Capital CapsLock D P T Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="17" Name="CreateBranch" KeyData="RButton B Control" /&gt;
+      &lt;HotkeyCommand CommandCode="1" Name="DeleteSelectedFiles" KeyData="Delete" /&gt;
+      &lt;HotkeyCommand CommandCode="15" Name="EditFile" KeyData="F4" /&gt;
+      &lt;HotkeyCommand CommandCode="2" Name="FocusUnstagedFiles" KeyData="LButton ShiftKey ControlKey Space Prior PageUp D0 D1 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="3" Name="FocusSelectedDiff" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="4" Name="FocusStagedFiles" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause Space Prior PageUp Next PageDown End D0 D1 D2 D3 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="5" Name="FocusCommitMessage" KeyData="MButton ShiftKey Capital CapsLock Space Home D0 D4 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="13" Name="OpenFile" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause Space Prior PageUp Next PageDown End D0 D1 D2 D3 A B C P Q R S NumPad0 NumPad1 NumPad2 NumPad3 F1 F2 F3 F4 Shift" /&gt;
+      &lt;HotkeyCommand CommandCode="14" Name="OpenFileWith" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause Space Prior PageUp Next PageDown End D0 D1 D2 D3 A B C P Q R S NumPad0 NumPad1 NumPad2 NumPad3 F1 F2 F3 F4 Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="12" Name="OpenWithDifftool" KeyData="F3" /&gt;
+      &lt;HotkeyCommand CommandCode="18" Name="Refresh" KeyData="F5" /&gt;
+      &lt;HotkeyCommand CommandCode="6" Name="ResetSelectedFiles" KeyData="R" /&gt;
+      &lt;HotkeyCommand CommandCode="19" Name="SelectNext" KeyData="RButton MButton XButton2 Back LineFeed Clear B D F H J L N Control" /&gt;
+      &lt;HotkeyCommand CommandCode="20" Name="SelectNext_AlternativeHotkey1" KeyData="Back Space Down Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="21" Name="SelectNext_AlternativeHotkey2" KeyData="LButton RButton Cancel MButton XButton1 XButton2 Space Prior PageUp Next PageDown End Home Left Up Right Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="22" Name="SelectPrevious" KeyData="ShiftKey P Control" /&gt;
+      &lt;HotkeyCommand CommandCode="23" Name="SelectPrevious_AlternativeHotkey1" KeyData="RButton MButton XButton2 Space Next PageDown Home Up Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="24" Name="SelectPrevious_AlternativeHotkey2" KeyData="LButton MButton XButton1 Space Prior PageUp Home Left Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="7" Name="StageSelectedFile" KeyData="S" /&gt;
+      &lt;HotkeyCommand CommandCode="8" Name="UnStageSelectedFile" KeyData="U" /&gt;
+      &lt;HotkeyCommand CommandCode="9" Name="ShowHistory" KeyData="H" /&gt;
+      &lt;HotkeyCommand CommandCode="11" Name="StageAll" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause A B C P Q R S Control" /&gt;
+      &lt;HotkeyCommand CommandCode="10" Name="ToggleSelectionFilter" KeyData="RButton MButton XButton2 B D F Control" /&gt;
+    &lt;/Commands&gt;
+  &lt;/HotkeySettings&gt;
+  &lt;HotkeySettings Name="Browse"&gt;
+    &lt;Commands&gt;
+      &lt;HotkeyCommand CommandCode="8" Name="AddNotes" KeyData="RButton MButton XButton2 Back LineFeed Clear B D F H J L N Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="10" Name="CheckoutBranch" KeyData="RButton MButton XButton2 Back LineFeed Clear ShiftKey Menu Capital CapsLock FinalMode IMEConvert IMEAccept IMEAceept Space Next PageDown Home Up Down Print Snapshot PrintScreen Delete D0 D2 D4 D6 D8 F17 F19 F21 F23 NumLock LShiftKey LControlKey LMenu BrowserBack BrowserRefresh BrowserSearch BrowserHome VolumeDown MediaNextTrack MediaStop LaunchMail LaunchApplication1 OemSemicolon Oem1 Oemcomma OemPeriod Control" /&gt;
+      &lt;HotkeyCommand CommandCode="15" Name="CloseRepository" KeyData="LButton RButton Cancel MButton XButton1 XButton2 ShiftKey ControlKey Menu Pause Capital CapsLock KanaMode HanguelMode HangulMode JunjaMode A B C D E F G P Q R S T U V W Control" /&gt;
+      &lt;HotkeyCommand CommandCode="7" Name="Commit" KeyData="Space Control" /&gt;
+      &lt;HotkeyCommand CommandCode="41" Name="CreateBranch" KeyData="RButton B Control" /&gt;
+      &lt;HotkeyCommand CommandCode="43" Name="CreateTag" KeyData="MButton ShiftKey Capital CapsLock D P T Control" /&gt;
+      &lt;HotkeyCommand CommandCode="22" Name="EditFile" KeyData="F4" /&gt;
+      &lt;HotkeyCommand CommandCode="9" Name="FindFileInSelectedCommit" KeyData="RButton MButton XButton2 B D F Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="25" Name="FocusLeftPanel" KeyData="ShiftKey Space D0 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="3" Name="FocusRevisionGrid" KeyData="LButton ShiftKey ControlKey Space Prior PageUp D0 D1 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="4" Name="FocusCommitInfo" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="5" Name="FocusDiff" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause Space Prior PageUp Next PageDown End D0 D1 D2 D3 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="6" Name="FocusFileTree" KeyData="MButton ShiftKey Capital CapsLock Space Home D0 D4 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="26" Name="FocusGpgInfo" KeyData="LButton MButton XButton1 ShiftKey ControlKey Capital CapsLock KanaMode HanguelMode HangulMode Space Prior PageUp Home Left D0 D1 D4 D5 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="29" Name="FocusGitConsole" KeyData="RButton MButton XButton2 ShiftKey Menu Capital CapsLock Space Next PageDown Home Up D0 D2 D4 D6 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="30" Name="FocusBuildServerStatus" KeyData="LButton RButton Cancel MButton XButton1 XButton2 ShiftKey ControlKey Menu Pause Capital CapsLock KanaMode HanguelMode HangulMode JunjaMode Space Prior PageUp Next PageDown End Home Left Up Right D0 D1 D2 D3 D4 D5 D6 D7 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="47" Name="FocusOutputHistoryAndToggleIfPanel" KeyData="LButton Back Tab ShiftKey ControlKey FinalMode HanjaMode KanjiMode Space Prior PageUp Down Select D0 D1 D8 D9 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="31" Name="FocusNextTab" KeyData="LButton Back Tab Control" /&gt;
+      &lt;HotkeyCommand CommandCode="32" Name="FocusPrevTab" KeyData="LButton Back Tab Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="18" Name="FocusFilter" KeyData="LButton MButton XButton1 A D E Control" /&gt;
+      &lt;HotkeyCommand CommandCode="0" Name="GitBash" KeyData="LButton RButton Cancel MButton XButton1 XButton2 A B C D E F G Control" /&gt;
+      &lt;HotkeyCommand CommandCode="1" Name="GitGui" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="2" Name="GitGitK" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="37" Name="GoToChild" KeyData="RButton MButton XButton2 Back LineFeed Clear B D F H J L N Control" /&gt;
+      &lt;HotkeyCommand CommandCode="38" Name="GoToParent" KeyData="ShiftKey P Control" /&gt;
+      &lt;HotkeyCommand CommandCode="28" Name="GoToSubmodule" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="27" Name="GoToSuperproject" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="42" Name="MergeBranches" KeyData="LButton MButton XButton1 Back Tab Clear Return Enter A D E H I L M Control" /&gt;
+      &lt;HotkeyCommand CommandCode="23" Name="OpenAsTempFile" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="24" Name="OpenAsTempFileWith" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="35" Name="OpenCommitsWithDifftool" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="45" Name="OpenRepo" KeyData="LButton RButton Cancel MButton XButton1 XButton2 Back Tab LineFeed Clear Return Enter A B C D E F G H I J K L M N O Control" /&gt;
+      &lt;HotkeyCommand CommandCode="20" Name="OpenSettings" KeyData="MButton Back Clear ShiftKey Capital CapsLock FinalMode IMEConvert Space Home Down Snapshot PrintScreen D0 D4 D8 F17 F21 NumLock LShiftKey LMenu BrowserRefresh BrowserHome MediaNextTrack LaunchMail Oemcomma Control" /&gt;
+      &lt;HotkeyCommand CommandCode="19" Name="OpenWithDifftool" KeyData="F3" /&gt;
+      &lt;HotkeyCommand CommandCode="33" Name="OpenWithDifftoolFirstToLocal" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="34" Name="OpenWithDifftoolSelectedToLocal" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Shift Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="39" Name="PullOrFetch" KeyData="Back Space Down Control" /&gt;
+      &lt;HotkeyCommand CommandCode="40" Name="Push" KeyData="RButton MButton XButton2 Space Next PageDown Home Up Control" /&gt;
+      &lt;HotkeyCommand CommandCode="11" Name="QuickFetch" KeyData="Back Space Down Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="12" Name="QuickPull" KeyData="ShiftKey P Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="48" Name="QuickPullOrFetch" KeyData="F8" /&gt;
+      &lt;HotkeyCommand CommandCode="13" Name="QuickPush" KeyData="RButton MButton XButton2 Space Next PageDown Home Up Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="44" Name="Rebase" KeyData="LButton MButton XButton1 A D E Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="16" Name="Stash" KeyData="RButton MButton XButton2 Space Next PageDown Home Up Control Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="17" Name="StashPop" KeyData="Back Space Down Control Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="46" Name="StashStaged" KeyData="RButton MButton XButton2 Space Next PageDown Home Up Shift Control Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="36" Name="ToggleBetweenArtificialAndHeadCommits" KeyData="RButton Space Next PageDown B NumPad0 NumPad2 F17 F19 LShiftKey LControlKey Oemtilde Oem3 OemBackslash Oem102 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="21" Name="ToggleLeftPanel" KeyData="LButton RButton Cancel A B C Control Alt" /&gt;
+    &lt;/Commands&gt;
+  &lt;/HotkeySettings&gt;
+  &lt;HotkeySettings Name="LeftPanel"&gt;
+    &lt;Commands&gt;
+      &lt;HotkeyCommand CommandCode="0" Name="Delete" KeyData="Delete" /&gt;
+      &lt;HotkeyCommand CommandCode="3" Name="MultiSelect" KeyData="Space Control" /&gt;
+      &lt;HotkeyCommand CommandCode="4" Name="MultiSelectWithChildren" KeyData="Space Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="1" Name="Rename" KeyData="F2" /&gt;
+      &lt;HotkeyCommand CommandCode="2" Name="Search" KeyData="F3" /&gt;
+    &lt;/Commands&gt;
+  &lt;/HotkeySettings&gt;
+  &lt;HotkeySettings Name="RevisionGrid"&gt;
+    &lt;Commands&gt;
+      &lt;HotkeyCommand CommandCode="30" Name="CompareSelectedCommits" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="24" Name="CompareToBase" KeyData="RButton ShiftKey Menu B P R Control" /&gt;
+      &lt;HotkeyCommand CommandCode="29" Name="CompareToBranch" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="28" Name="CompareToCurrentBranch" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="27" Name="CompareToWorkingDirectory" KeyData="MButton D Control" /&gt;
+      &lt;HotkeyCommand CommandCode="44" Name="CreateAmendCommit" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="25" Name="CreateFixupCommit" KeyData="Back ShiftKey FinalMode H P X Control" /&gt;
+      &lt;HotkeyCommand CommandCode="43" Name="CreateSquashCommit" KeyData="Back ShiftKey FinalMode H P X Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="41" Name="DeleteRef" KeyData="Delete" /&gt;
+      &lt;HotkeyCommand CommandCode="15" Name="GoToChild" KeyData="RButton MButton XButton2 Back LineFeed Clear B D F H J L N Control" /&gt;
+      &lt;HotkeyCommand CommandCode="20" Name="GoToCommit" KeyData="LButton RButton Cancel MButton XButton1 XButton2 A B C D E F G Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="45" Name="GoToFirstParent" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="46" Name="GoToLastParent" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="31" Name="GoToMergeBase" KeyData="LButton RButton Cancel Back Tab LineFeed A B C H I J K Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="14" Name="GoToParent" KeyData="ShiftKey P Control" /&gt;
+      &lt;HotkeyCommand CommandCode="21" Name="NavigateBackward" KeyData="LButton MButton XButton1 Space Prior PageUp Home Left Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="39" Name="NavigateBackward_AlternativeHotkey" KeyData="BrowserBack" /&gt;
+      &lt;HotkeyCommand CommandCode="22" Name="NavigateForward" KeyData="LButton RButton Cancel MButton XButton1 XButton2 Space Prior PageUp Next PageDown End Home Left Up Right Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="40" Name="NavigateForward_AlternativeHotkey" KeyData="BrowserForward" /&gt;
+      &lt;HotkeyCommand CommandCode="17" Name="NextQuickSearch" KeyData="Back Space Down Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="32" Name="OpenCommitsWithDifftool" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="18" Name="PrevQuickSearch" KeyData="RButton MButton XButton2 Space Next PageDown Home Up Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="42" Name="RenameRef" KeyData="F2" /&gt;
+      &lt;HotkeyCommand CommandCode="37" Name="ResetRevisionPathFilter" KeyData="Back H Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="36" Name="ResetRevisionFilter" KeyData="LButton Back Tab A H I Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="1" Name="RevisionFilter" KeyData="LButton Back Tab A H I Control" /&gt;
+      &lt;HotkeyCommand CommandCode="23" Name="SelectAsBaseToCompare" KeyData="MButton Back Clear D H L Control" /&gt;
+      &lt;HotkeyCommand CommandCode="19" Name="SelectCurrentRevision" KeyData="LButton RButton Cancel A B C Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="38" Name="SelectNextForkPointAsDiffBase" KeyData="LButton RButton Cancel Back Tab LineFeed A B C H I J K Control" /&gt;
+      &lt;HotkeyCommand CommandCode="9" Name="ShowAllBranches" KeyData="LButton A Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="10" Name="ShowCurrentBranchOnly" KeyData="LButton MButton XButton1 ShiftKey ControlKey Capital CapsLock KanaMode HanguelMode HangulMode A D E P Q T U Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="11" Name="ShowFilteredBranches" KeyData="MButton ShiftKey Capital CapsLock D P T Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="13" Name="ShowFirstParent" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause A B C P Q R S Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="34" Name="ShowReflogReferences" KeyData="MButton Back Clear D H L Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="12" Name="ShowRemoteBranches" KeyData="RButton ShiftKey Menu B P R Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="2" Name="ToggleAuthorDateCommitDate" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="33" Name="ToggleBetweenArtificialAndHeadCommits" KeyData="RButton Space Next PageDown B NumPad0 NumPad2 F17 F19 LShiftKey LControlKey Oemtilde Oem3 OemBackslash Oem102 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="5" Name="ToggleDrawNonRelativesGray" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="16" Name="ToggleHighlightSelectedBranch" KeyData="RButton B Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="3" Name="ToggleOrderRevisionsByDate" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="0" Name="ToggleRevisionGraph" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="6" Name="ToggleShowGitNotes" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="8" Name="ToggleHideMergeCommits" KeyData="LButton MButton XButton1 Back Tab Clear Return Enter A D E H I L M Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="4" Name="ToggleShowRelativeDate" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="26" Name="ToggleShowTags" KeyData="MButton ShiftKey Capital CapsLock D P T Control Alt" /&gt;
+    &lt;/Commands&gt;
+  &lt;/HotkeySettings&gt;
+  &lt;HotkeySettings Name="FileViewer"&gt;
+    &lt;Commands&gt;
+      &lt;HotkeyCommand CommandCode="0" Name="Find" KeyData="RButton MButton XButton2 B D F Control" /&gt;
+      &lt;HotkeyCommand CommandCode="16" Name="Replace" KeyData="Back H Control" /&gt;
+      &lt;HotkeyCommand CommandCode="8" Name="FindNextOrOpenWithDifftool" KeyData="F3" /&gt;
+      &lt;HotkeyCommand CommandCode="9" Name="FindPrevious" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Shift" /&gt;
+      &lt;HotkeyCommand CommandCode="1" Name="GoToLine" KeyData="LButton RButton Cancel MButton XButton1 XButton2 A B C D E F G Control" /&gt;
+      &lt;HotkeyCommand CommandCode="2" Name="IncreaseNumberOfVisibleLines" KeyData="LButton RButton Cancel Back Tab LineFeed ShiftKey ControlKey Menu Pause FinalMode HanjaMode KanjiMode Escape Space Prior PageUp Next PageDown End Down Select Print Execute D0 D1 D2 D3 D8 D9 F17 F18 F19 F20 NumLock Scroll LShiftKey RShiftKey LControlKey RControlKey BrowserRefresh BrowserStop BrowserSearch BrowserFavorites MediaNextTrack MediaPreviousTrack MediaStop MediaPlayPause OemSemicolon Oem1 Oemplus Control" /&gt;
+      &lt;HotkeyCommand CommandCode="3" Name="DecreaseNumberOfVisibleLines" KeyData="LButton MButton XButton1 Back Tab Clear Return Enter ShiftKey ControlKey Capital CapsLock KanaMode HanguelMode HangulMode FinalMode HanjaMode KanjiMode IMEConvert IMENonconvert Space Prior PageUp Home Left Down Select Snapshot PrintScreen Insert D0 D1 D4 D5 D8 D9 F17 F18 F21 F22 NumLock Scroll LShiftKey RShiftKey LMenu RMenu BrowserRefresh BrowserStop BrowserHome VolumeMute MediaNextTrack MediaPreviousTrack LaunchMail SelectMedia Oemcomma OemMinus Control" /&gt;
+      &lt;HotkeyCommand CommandCode="6" Name="NextChange" KeyData="Back Space Down Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="7" Name="PreviousChange" KeyData="RButton MButton XButton2 Space Next PageDown Home Up Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="4" Name="ShowEntireFile" KeyData="LButton MButton XButton1 A D E Control" /&gt;
+      &lt;HotkeyCommand CommandCode="17" Name="ShowSyntaxHighlighting" KeyData="X" /&gt;
+      &lt;HotkeyCommand CommandCode="18" Name="ShowGitWordColoring" KeyData="MButton D Control" /&gt;
+      &lt;HotkeyCommand CommandCode="19" Name="ShowDifftastic" KeyData="MButton ShiftKey Capital CapsLock D P T Control" /&gt;
+      &lt;HotkeyCommand CommandCode="5" Name="TreatFileAsText" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="10" Name="NextOccurrence" KeyData="LButton RButton Cancel MButton XButton1 XButton2 Space Prior PageUp Next PageDown End Home Left Up Right Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="11" Name="PreviousOccurrence" KeyData="LButton MButton XButton1 Space Prior PageUp Home Left Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="12" Name="StageLines" KeyData="S" /&gt;
+      &lt;HotkeyCommand CommandCode="13" Name="UnstageLines" KeyData="U" /&gt;
+      &lt;HotkeyCommand CommandCode="14" Name="ResetLines" KeyData="R" /&gt;
+      &lt;HotkeyCommand CommandCode="15" Name="IgnoreAllWhitespace" KeyData="LButton RButton Cancel MButton XButton1 XButton2 ShiftKey ControlKey Menu Pause Capital CapsLock KanaMode HanguelMode HangulMode JunjaMode A B C D E F G P Q R S T U V W Shift Control" /&gt;
+    &lt;/Commands&gt;
+  &lt;/HotkeySettings&gt;
+  &lt;HotkeySettings Name="FormMergeConflicts"&gt;
+    &lt;Commands&gt;
+      &lt;HotkeyCommand CommandCode="4" Name="ChooseBase" KeyData="B" /&gt;
+      &lt;HotkeyCommand CommandCode="3" Name="ChooseLocal" KeyData="L" /&gt;
+      &lt;HotkeyCommand CommandCode="2" Name="ChooseRemote" KeyData="R" /&gt;
+      &lt;HotkeyCommand CommandCode="0" Name="Merge" KeyData="M" /&gt;
+      &lt;HotkeyCommand CommandCode="1" Name="Rescan" KeyData="F5" /&gt;
+    &lt;/Commands&gt;
+  &lt;/HotkeySettings&gt;
+  &lt;HotkeySettings Name="BrowseDiff"&gt;
+    &lt;Commands&gt;
+      &lt;HotkeyCommand CommandCode="2" Name="Blame" KeyData="B" /&gt;
+      &lt;HotkeyCommand CommandCode="0" Name="DeleteSelectedFiles" KeyData="Delete" /&gt;
+      &lt;HotkeyCommand CommandCode="4" Name="EditFile" KeyData="F4" /&gt;
+      &lt;HotkeyCommand CommandCode="13" Name="FilterFileInGrid" KeyData="F" /&gt;
+      &lt;HotkeyCommand CommandCode="15" Name="FindFile" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="18" Name="GoToFirstParent" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="19" Name="GoToLastParent" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="5" Name="OpenAsTempFile" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="6" Name="OpenAsTempFileWith" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="3" Name="OpenWithDifftool" KeyData="F3" /&gt;
+      &lt;HotkeyCommand CommandCode="7" Name="OpenWithDifftoolFirstToLocal" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="8" Name="OpenWithDifftoolSelectedToLocal" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Shift Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="16" Name="OpenWorkingDirectoryFileWith" KeyData="LButton RButton Cancel MButton XButton1 XButton2 Back Tab LineFeed Clear Return Enter A B C D E F G H I J K L M N O Control" /&gt;
+      &lt;HotkeyCommand CommandCode="9" Name="ResetSelectedFiles" KeyData="R" /&gt;
+      &lt;HotkeyCommand CommandCode="17" Name="FindInCommitFilesUsingGitGrep" KeyData="RButton MButton XButton2 B D F Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="14" Name="SelectFirstGroupChanges" KeyData="LButton A Control" /&gt;
+      &lt;HotkeyCommand CommandCode="12" Name="ShowFileTree" KeyData="T" /&gt;
+      &lt;HotkeyCommand CommandCode="1" Name="ShowHistory" KeyData="H" /&gt;
+      &lt;HotkeyCommand CommandCode="10" Name="StageSelectedFile" KeyData="S" /&gt;
+      &lt;HotkeyCommand CommandCode="11" Name="UnStageSelectedFile" KeyData="U" /&gt;
+    &lt;/Commands&gt;
+  &lt;/HotkeySettings&gt;
+  &lt;HotkeySettings Name="RevisionFileTree"&gt;
+    &lt;Commands&gt;
+      &lt;HotkeyCommand CommandCode="1" Name="Blame" KeyData="B" /&gt;
+      &lt;HotkeyCommand CommandCode="5" Name="EditFile" KeyData="F4" /&gt;
+      &lt;HotkeyCommand CommandCode="6" Name="FilterFileInGrid" KeyData="F" /&gt;
+      &lt;HotkeyCommand CommandCode="7" Name="FindFile" KeyData="RButton MButton XButton2 B D F Control" /&gt;
+      &lt;HotkeyCommand CommandCode="3" Name="OpenAsTempFile" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="4" Name="OpenAsTempFileWith" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="2" Name="OpenWithDifftool" KeyData="F3" /&gt;
+      &lt;HotkeyCommand CommandCode="8" Name="OpenWorkingDirectoryFileWith" KeyData="LButton RButton Cancel MButton XButton1 XButton2 Back Tab LineFeed Clear Return Enter A B C D E F G H I J K L M N O Control" /&gt;
+      &lt;HotkeyCommand CommandCode="0" Name="ShowHistory" KeyData="H" /&gt;
+    &lt;/Commands&gt;
+  &lt;/HotkeySettings&gt;
+  &lt;HotkeySettings Name="Stash"&gt;
+    &lt;Commands&gt;
+      &lt;HotkeyCommand CommandCode="0" Name="NextStash" KeyData="RButton MButton XButton2 Back LineFeed Clear B D F H J L N Control" /&gt;
+      &lt;HotkeyCommand CommandCode="1" Name="PreviousStash" KeyData="ShiftKey P Control" /&gt;
+      &lt;HotkeyCommand CommandCode="2" Name="Refresh" KeyData="F5" /&gt;
+    &lt;/Commands&gt;
+  &lt;/HotkeySettings&gt;
+  &lt;HotkeySettings Name="Scripts"&gt;
+    &lt;Commands&gt;
+      &lt;HotkeyCommand CommandCode="9000" Name="Fetch changes after commit" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="9001" Name="Update submodules after pull" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="9002" Name="Example" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="9003" Name="Open on GitHub" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="9004" Name="Fetch All Submodules" KeyData="None" /&gt;
+    &lt;/Commands&gt;
+  &lt;/HotkeySettings&gt;
+&lt;/ArrayOfHotkeySettings&gt;</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showaheadbehinddata</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showauthorgravatar</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showcommitandpush</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showdiffforallparents</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>ShowEolMarkerAsGlyph</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showerrorswhenstagingfiles</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showfirstparent</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showgitcommandline</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showgitstatusforartificialcommits</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showgitstatusinbrowsetoolbar</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showmergecommits</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showresetallchanges</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showresetunstagedchanges</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showrevisiongridauthoravatarcolumn</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showsimplifybydecoration</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showstashcount</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>showsubmodulestatus</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>SmtpPort</string>
+    </key>
+    <value>
+      <string>587</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>StartWithRecentWorkingDir</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>stashconfirmdropshow</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>systemvisualstyle</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>TelemetryEnabled</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>translation</string>
+    </key>
+    <value>
+      <string>Simplified Chinese</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>truncatepathmethod</string>
+    </key>
+    <value>
+      <string>None</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>uitheme_v2</string>
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>uithemeisbuiltin_v2</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>uithemevariations</string>
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>UseConsoleEmulatorForCommands</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>UseDefaultCheckoutBranchAction</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>UseFormCommitMessage</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>usepatiencediffalgorithm</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+</dictionary>

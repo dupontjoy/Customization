@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:55:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-13 07:55:00</NextRunDateTime>
-		<NextRunTime>2025-07-13 07:55:00</NextRunTime>
-		<LastRunTime>2025-07-12 07:55:00</LastRunTime>
+		<NextRunDateTime>2025-07-14 07:55:00</NextRunDateTime>
+		<NextRunTime>2025-07-14 07:55:00</NextRunTime>
+		<LastRunTime>2025-07-13 07:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -449,9 +449,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:55:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-12 17:55:00</NextRunDateTime>
-		<NextRunTime>2025-07-12 17:55:00</NextRunTime>
-		<LastRunTime>2025-07-11 17:55:00</LastRunTime>
+		<NextRunDateTime>2025-07-14 17:55:00</NextRunDateTime>
+		<NextRunTime>2025-07-14 17:55:00</NextRunTime>
+		<LastRunTime>2025-07-13 17:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -889,9 +889,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:25:00</StartDateTime>
 		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-12 21:25:00</NextRunDateTime>
-		<NextRunTime>2025-07-12 21:25:00</NextRunTime>
-		<LastRunTime>2025-07-11 21:25:00</LastRunTime>
+		<NextRunDateTime>2025-07-14 21:25:00</NextRunDateTime>
+		<NextRunTime>2025-07-14 21:25:00</NextRunTime>
+		<LastRunTime>2025-07-13 21:25:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1329,9 +1329,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-07-12 16:38:24</EndDateTime>
-		<NextRunDateTime>2125-06-18 08:37:46</NextRunDateTime>
+		<NextRunDateTime>2125-06-19 07:10:44</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-07-12 08:37:46</LastRunTime>
+		<LastRunTime>2025-07-13 07:10:44</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1719,10 +1719,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 09:00:00</StartDateTime>
-		<EndDateTime>2025-07-09 23:40:48</EndDateTime>
-		<NextRunDateTime>2025-07-13 09:00:00</NextRunDateTime>
-		<NextRunTime>2025-07-13 09:00:00</NextRunTime>
-		<LastRunTime>2025-07-12 09:00:00</LastRunTime>
+		<EndDateTime>2025-07-13 23:21:36</EndDateTime>
+		<NextRunDateTime>2025-07-14 09:00:00</NextRunDateTime>
+		<NextRunTime>2025-07-14 09:00:00</NextRunTime>
+		<LastRunTime>2025-07-13 09:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1821,83 +1821,6 @@ env2=value2</edtAppEnv>
 			<optHKMouse>0</optHKMouse>
 		</Param>
 		<Actions>
-			<Tasker>
-				<ID>99</ID>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
-				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
-				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>6</Ver>
-				<Param>
-					<BackClr>-12500671</BackClr>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>BleachBit清理</Name>
-					<PassExitRest></PassExitRest>
-					<PlayTime>10</PlayTime>
-					<RemindTitle></RemindTitle>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SearchEngineNames></SearchEngineNames>
-					<SearchEngines></SearchEngines>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<SoundPath></SoundPath>
-					<TitleShow>运行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppVar>0</chkAppVar>
-					<chkExecWait>1</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<cmbAppShowCmd>1</cmbAppShowCmd>
-					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbClass_text></cmbClass_text>
-					<cmbHotkey>0</cmbHotkey>
-					<cmbOpenApp_text></cmbOpenApp_text>
-					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppParam>--update-winapp2 --clean --preset</edtAppParam>
-					<edtAppPath>D:\Program Files\CingFox\Software\BleachBit-Portable\bleachbit_console.exe</edtAppPath>
-					<edtAppVar></edtAppVar>
-					<edtDefRmd></edtDefRmd>
-					<edtDialPass></edtDialPass>
-					<edtDialUser></edtDialUser>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>BleachBit清理</edtTaskName>
-					<edtTaskSubName>BleachBit清理</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<httpReq></httpReq>
-					<httpReqHeader></httpReqHeader>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>BleachBit清理</Name>
-				<ID>99</ID>
-				<Stat>1</Stat>
-			</Tasker>
 			<Tasker>
 				<ID>88</ID>
 				<TaskType>ttExec</TaskType>
@@ -2189,9 +2112,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 12:00:00</StartDateTime>
 		<EndDateTime>2025-06-15 00:08:32</EndDateTime>
-		<NextRunDateTime>2025-07-13 12:00:00</NextRunDateTime>
-		<NextRunTime>2025-07-13 12:00:00</NextRunTime>
-		<LastRunTime>2025-07-06 12:00:00</LastRunTime>
+		<NextRunDateTime>2025-07-20 12:00:00</NextRunDateTime>
+		<NextRunTime>2025-07-20 12:00:00</NextRunTime>
+		<LastRunTime>2025-07-13 12:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -3275,10 +3198,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
 		<StartDateTime>2025-05-28 13:00:00</StartDateTime>
-		<EndDateTime>2025-05-28 16:21:22</EndDateTime>
-		<NextRunDateTime>2025-07-13 13:00:00</NextRunDateTime>
-		<NextRunTime>2025-07-13 13:00:00</NextRunTime>
-		<LastRunTime>2025-07-06 13:00:00</LastRunTime>
+		<EndDateTime>2025-07-14 08:42:44</EndDateTime>
+		<NextRunDateTime>2025-07-20 13:00:00</NextRunDateTime>
+		<NextRunTime>2025-07-20 13:00:00</NextRunTime>
+		<LastRunTime>2025-07-13 13:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -3290,7 +3213,6 @@ env2=value2</edtAppEnv>
 			<EveryMonthDay>0</EveryMonthDay>
 			<EveryWeek>7</EveryWeek>
 			<Name>备份Fx配置</Name>
-			<RemindTitle></RemindTitle>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
 			<YearDay></YearDay>
@@ -3323,8 +3245,6 @@ env2=value2</edtAppEnv>
 			<chkExecExitFocus>0</chkExecExitFocus>
 			<chkExecExitFullScr>0</chkExecExitFullScr>
 			<chkExecExitPre>1</chkExecExitPre>
-			<chkExecPost>0</chkExecPost>
-			<chkExecPre>0</chkExecPre>
 			<chkHKMouseCorner>0</chkHKMouseCorner>
 			<chkHKMouseCorner1>0</chkHKMouseCorner1>
 			<chkHKMouseCorner2>0</chkHKMouseCorner2>
@@ -3363,12 +3283,6 @@ env2=value2</edtAppEnv>
 			<cmbClass>无</cmbClass>
 			<cmbClass_text>无</cmbClass_text>
 			<cmbDayLimit></cmbDayLimit>
-			<cmbExecPost>0</cmbExecPost>
-			<cmbExecPostTasks_text></cmbExecPostTasks_text>
-			<cmbExecPost_text>启用计划</cmbExecPost_text>
-			<cmbExecPre>0</cmbExecPre>
-			<cmbExecPreTasks_text></cmbExecPreTasks_text>
-			<cmbExecPre_text>启用计划</cmbExecPre_text>
 			<cmbHKMouse>0</cmbHKMouse>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
 			<cmbHotkey>0</cmbHotkey>
@@ -3377,12 +3291,7 @@ env2=value2</edtAppEnv>
 			<cmbYearWeekDay></cmbYearWeekDay>
 			<cmbYearWeekNum></cmbYearWeekNum>
 			<edtDayLimitTime></edtDayLimitTime>
-			<edtDefRmd></edtDefRmd>
 			<edtDelayBoot>0</edtDelayBoot>
-			<edtEveryDay>1</edtEveryDay>
-			<edtEveryHour>1</edtEveryHour>
-			<edtEveryMin>30</edtEveryMin>
-			<edtEverySec>30</edtEverySec>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
 			<edtHKMouseCorner>50</edtHKMouseCorner>
@@ -3392,18 +3301,13 @@ env2=value2</edtAppEnv>
 			<edtSKWinTitle></edtSKWinTitle>
 			<edtSchLimitCount>1</edtSchLimitCount>
 			<edtTaskName>备份Fx配置</edtTaskName>
-			<edtToastFloat></edtToastFloat>
 			<edtWakeDelayBoot>0</edtWakeDelayBoot>
 			<optHKKey>1</optHKKey>
 			<optHKMouse>0</optHKMouse>
-			<tabBtnExec>0</tabBtnExec>
-			<tabBtnHK>0</tabBtnHK>
-			<tabBtnSch>1</tabBtnSch>
-			<tabBtnTask>0</tabBtnTask>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>50</ID>
+				<ID>467-FM7JBTRD1A</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3441,11 +3345,6 @@ env2=value2</edtAppEnv>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -3454,53 +3353,85 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
 					<cmbOpenApp_text></cmbOpenApp_text>
 					<dataEnableDevice></dataEnableDevice>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>1</edtAppEnv.max>
+					<edtAppEnv.min>16843008</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
 					<edtAppPath>D:\Program Files\CingFox\Profiles\BackupProfiles\Backup_FirefoxProfiles.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackDateCount>10</edtBackDateCount>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName></edtTaskName>
+					<edtTaskName>Fx配置打包</edtTaskName>
 					<edtTaskSubName>Fx配置打包</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
 					<httpReqHeader></httpReqHeader>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>Fx配置打包</Name>
 				<ID>50</ID>
+				<Stat>1</Stat>
+			</Tasker>
+			<Tasker>
+				<ID>393-A9JCJCOK7F</ID>
+				<TaskType>ttExec</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
+				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
+				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>6</Ver>
+				<Param>
+					<Name>运行runfirefox</Name>
+					<TitleShow>运行程序</TitleShow>
+					<TypeShow>程序</TypeShow>
+					<chkAppAdmin>0</chkAppAdmin>
+					<chkAppClip>0</chkAppClip>
+					<chkAppEnv>0</chkAppEnv>
+					<chkAppVar>0</chkAppVar>
+					<chkExecWait>1</chkExecWait>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<cmbAppShowCmd>1</cmbAppShowCmd>
+					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
+					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
+					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
+					<edtAppDir></edtAppDir>
+					<edtAppEnv>env1=value1\r\nenv2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
+					<edtAppParam></edtAppParam>
+					<edtAppPath>D:\Program Files\CingFox\Profiles\Run\RunFirefox_x64.exe</edtAppPath>
+					<edtAppVar></edtAppVar>
+					<edtExecWaitTime>0</edtExecWaitTime>
+					<edtTaskName></edtTaskName>
+					<edtTaskSubName>运行runfirefox</edtTaskSubName>
+				</Param>
+				<Name>运行runfirefox</Name>
+				<ID>30</ID>
 				<Stat>1</Stat>
 			</Tasker>
 		</Actions>
