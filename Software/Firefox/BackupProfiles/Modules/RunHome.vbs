@@ -7,6 +7,6 @@ If WScript.Arguments.Length = 0 Then
   WScript.Quit 
 End if 
 
-WshShell.run "cmd /c QD-Common.cmd",vbhide
+WshShell.run "cmd /c RunCommon.cmd",vbhide
 WScript.Sleep 10000
-WshShell.run "cmd /c QD-Home.cmd",vbhide
+WshShell.run "cmd /c RunHome.cmd",vbhide

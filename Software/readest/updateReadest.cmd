@@ -24,7 +24,7 @@ set "version_file=versions_readest.txt"
 :: 主流程
 ::=======================================
 :menu
-call :test_fastest_ghmirror
+call :testGHmirror
 call :check_version
 if "%need_update%"=="1" (
     call :update_readest
@@ -39,8 +39,8 @@ goto :eof
 ::=======================================
 :: 子程序
 ::=======================================
-:test_fastest_ghmirror
-CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
+:testGHmirror
+CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\testGHmirror.cmd"
 goto :eof
 
 :check_version

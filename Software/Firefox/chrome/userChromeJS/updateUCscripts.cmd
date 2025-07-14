@@ -21,7 +21,7 @@ set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 :: 主流程
 ::=======================================
 :menu
-call :test_fastest_ghmirror
+call :testGHmirror
 call :updating_uc
 call :updating_flashgot
 call :updating_customCSS
@@ -32,8 +32,8 @@ goto :eof
 ::=======================================
 :: 子程序：更新UC脚本
 ::=======================================
-:test_fastest_ghmirror
-call "%cd%\..\..\..\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
+:testGHmirror
+call "%cd%\..\..\..\BackupProfiles\Modules\testGHmirror.cmd"
 goto :eof
 
 :updating_uc

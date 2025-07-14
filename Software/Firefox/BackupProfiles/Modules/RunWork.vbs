@@ -8,4 +8,4 @@ If WScript.Arguments.Length = 0 Then
 End if 
 
 
-WshShell.run "cmd /c QD-Common.cmd",vbhide
+WshShell.run "cmd /c RunCommon.cmd",vbhide

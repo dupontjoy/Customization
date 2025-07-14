@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
-:test_fastest_ghmirror
+:testGHmirror
 :: 测试链接和镜像列表
 :: 镜像来源：Github 增强 - 高速下载
 set "test_url=Jackchows/Cangjie5/raw/master/largefile.zip"

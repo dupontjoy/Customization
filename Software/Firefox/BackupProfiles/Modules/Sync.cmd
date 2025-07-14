@@ -53,20 +53,20 @@ xcopy "%BackupDir%\..\..\..\foobar2000\profile\config.sqlite" "%OutputDir%\Custo
 
 :GoldenDict
 xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customization\Software\GoldenDict\" /y
-xcopy "%BackupDir%\..\..\..\GoldenDict\update-goldendict.cmd" "%OutputDir%\Customization\Software\GoldenDict\" /y
+xcopy "%BackupDir%\..\..\..\GoldenDict\updateGoldenDict.cmd" "%OutputDir%\Customization\Software\GoldenDict\" /y
 
 :IDMan
 xcopy "%BackupDir%\..\..\..\IDM\!)—°œÓ≈‰÷√.reg" "%OutputDir%\Customization\Software\IDMan\" /y
 
 :ImageGlass
 xcopy "%BackupDir%\..\..\Software\ImageGlass\igconfig.json" "%OutputDir%\Customization\Software\ImageGlass\" /y
-xcopy "%BackupDir%\..\..\Software\ImageGlass\update-imageglass.cmd" "%OutputDir%\Customization\Software\ImageGlass\" /y
+xcopy "%BackupDir%\..\..\Software\ImageGlass\updateImageGlass.cmd" "%OutputDir%\Customization\Software\ImageGlass\" /y
 
 :listary5
 ::Ç‰∑›Listary 5‘O÷√
 xcopy "%BackupDir%\..\..\Software\Listary5\UserData\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
 xcopy "%BackupDir%\..\..\Software\Listary5\UserData\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
-xcopy "%BackupDir%\..\..\Software\Listary5\UserData\Run_Listary5.cmd" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
+xcopy "%BackupDir%\..\..\Software\Listary5\UserData\RunListary5.cmd" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
 
 
 :listary6
@@ -74,17 +74,17 @@ xcopy "%BackupDir%\..\..\Software\Listary5\UserData\Run_Listary5.cmd" "%OutputDi
 xcopy "%BackupDir%\..\..\Software\Listary6\DataFolderRedirection.txt" "%OutputDir%\Customization\Software\Listary\Listary6\" /y
 xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\" /y
 xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\" /y
-xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Run_Listary6.cmd" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\" /y
+xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\RunListary6.cmd" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\" /y
 
 :localsend
-xcopy "%BackupDir%\..\..\..\LocalSend\update-localsend.cmd" "%OutputDir%\Customization\Software\LocalSend\" /y
+xcopy "%BackupDir%\..\..\..\LocalSend\updateLocalSend.cmd" "%OutputDir%\Customization\Software\LocalSend\" /y
 
-:lx_music_desktop
-xcopy "%BackupDir%\..\..\..\lx-music-desktop\update-lx_music_desktop.cmd" "%OutputDir%\Customization\Software\lx-music\" /y
+:LXmusicDesktop
+xcopy "%BackupDir%\..\..\..\lx-music-desktop\updateLXmusicDesktop.cmd" "%OutputDir%\Customization\Software\lx-music\" /y
 
 :MAA
-xcopy "%BackupDir%\..\..\..\MAA\Run_MAA.cmd" "%OutputDir%\Customization\Software\MAA\" /y
-xcopy "%BackupDir%\..\..\..\MAA\update_MaaResource.cmd" "%OutputDir%\Customization\Software\MAA\" /y
+xcopy "%BackupDir%\..\..\..\MAA\RunMAA.cmd" "%OutputDir%\Customization\Software\MAA\" /y
+xcopy "%BackupDir%\..\..\..\MAA\updateMaaResource.cmd" "%OutputDir%\Customization\Software\MAA\" /y
 xcopy "%BackupDir%\..\..\..\MAA\config\gui.json" "%OutputDir%\Customization\Software\MAA\" /y
 :mail-filter
 xcopy "%BackupDir%\..\..\..\Tencent\Foxmail\Storage\dupontjoy@163.com\Filter\1.fter" "%OutputDir%\Customization\Software\Foxmail-Filter\mail-filter.fter" /y
@@ -92,7 +92,7 @@ xcopy "%BackupDir%\..\..\..\Tencent\Foxmail\Storage\dupontjoy@163.com\Filter\1.f
 :MPV
 robocopy "%BackupDir%\..\..\Software\MPV\installer" "%OutputDir%\Customization\Software\MPV\installer" /MIR /ZB /R:3 /W:5
 robocopy "%BackupDir%\..\..\Software\MPV\portable_config" "%OutputDir%\Customization\Software\MPV\portable_config" /MIR /ZB /R:3 /W:5
-xcopy "%BackupDir%\..\..\Software\MPV\Run_yt-dlp.cmd" "%OutputDir%\Customization\Software\MPV\" /y
+xcopy "%BackupDir%\..\..\Software\MPV\RunYT-dlp.cmd" "%OutputDir%\Customization\Software\MPV\" /y
 xcopy "%BackupDir%\..\..\Software\MPV\README.md" "%OutputDir%\Customization\Software\MPV\" /y
 xcopy "%BackupDir%\..\..\Software\MPV\yt-dlp.conf" "%OutputDir%\Customization\Software\MPV\" /y
 xcopy "%BackupDir%\..\..\Software\MPV\settings.xml" "%OutputDir%\Customization\Software\MPV\" /y
@@ -101,7 +101,7 @@ rd /s /q "%OutputDir%\Customization\Software\MPV\portable_config\watch_later"
 
 :N_m3u8DL-RE
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\N_m3u8DL-RE.exe" "%OutputDir%\Customization\Software\N_m3u8DL-RE\" /y
-xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\Run_N_m3u8DL-RE.cmd" "%OutputDir%\Customization\Software\N_m3u8DL-RE\" /y
+xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\RunNm3u8DLRE.cmd" "%OutputDir%\Customization\Software\N_m3u8DL-RE\" /y
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_ad_keyword.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\" /y
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_common.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\" /y
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_live_record.conf" "%OutputDir%\Customization\Software\N_m3u8DL-RE\" /y
@@ -113,10 +113,10 @@ xcopy "%BackupDir%\..\..\Software\PixPin\Config\PixPinConfig.json" "%OutputDir%\
 
 :Processlasso
 robocopy "%BackupDir%\..\..\Software\ProcessLassoPro\config" "%OutputDir%\Customization\Software\ProcessLasso\config" /MIR /ZB /R:3 /W:5
-xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\_Start-ProcessLasso.cmd" "%OutputDir%\Customization\Software\ProcessLasso\" /y
+xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\RunProcessLasso.cmd" "%OutputDir%\Customization\Software\ProcessLasso\" /y
 
 :readest
-xcopy "%BackupDir%\..\..\..\readest\update-readest.cmd" "%OutputDir%\Customization\Software\readest\" /y
+xcopy "%BackupDir%\..\..\..\readest\updateReadest.cmd" "%OutputDir%\Customization\Software\readest\" /y
 
 :Snipaste
 xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%OutputDir%\Customization\Software\Snipaste\" /y

@@ -8,9 +8,9 @@
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:55:00</StartDateTime>
-		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-14 07:55:00</NextRunDateTime>
-		<NextRunTime>2025-07-14 07:55:00</NextRunTime>
+		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
+		<NextRunDateTime>2025-07-15 07:55:00</NextRunDateTime>
+		<NextRunTime>2025-07-15 07:55:00</NextRunTime>
 		<LastRunTime>2025-07-13 07:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
@@ -23,7 +23,6 @@
 			<EveryMonthDay>0</EveryMonthDay>
 			<EveryWeek></EveryWeek>
 			<Name>MAA-换班</Name>
-			<RemindTitle></RemindTitle>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
 			<YearDay></YearDay>
@@ -49,8 +48,6 @@
 			<chkExecExitFocus>0</chkExecExitFocus>
 			<chkExecExitFullScr>0</chkExecExitFullScr>
 			<chkExecExitPre>1</chkExecExitPre>
-			<chkExecPost>0</chkExecPost>
-			<chkExecPre>0</chkExecPre>
 			<chkHKMouseCorner>0</chkHKMouseCorner>
 			<chkHKMouseCorner1>0</chkHKMouseCorner1>
 			<chkHKMouseCorner2>0</chkHKMouseCorner2>
@@ -89,12 +86,6 @@
 			<cmbClass>无</cmbClass>
 			<cmbClass_text>无</cmbClass_text>
 			<cmbDayLimit></cmbDayLimit>
-			<cmbExecPost>0</cmbExecPost>
-			<cmbExecPostTasks_text></cmbExecPostTasks_text>
-			<cmbExecPost_text>启用计划</cmbExecPost_text>
-			<cmbExecPre>0</cmbExecPre>
-			<cmbExecPreTasks_text></cmbExecPreTasks_text>
-			<cmbExecPre_text>启用计划</cmbExecPre_text>
 			<cmbHKMouse>0</cmbHKMouse>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
 			<cmbHotkey>0</cmbHotkey>
@@ -103,12 +94,8 @@
 			<cmbYearWeekDay></cmbYearWeekDay>
 			<cmbYearWeekNum></cmbYearWeekNum>
 			<edtDayLimitTime></edtDayLimitTime>
-			<edtDefRmd></edtDefRmd>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtEveryDay>1</edtEveryDay>
-			<edtEveryHour>1</edtEveryHour>
-			<edtEveryMin>30</edtEveryMin>
-			<edtEverySec>30</edtEverySec>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
 			<edtHKMouseCorner>50</edtHKMouseCorner>
@@ -118,18 +105,13 @@
 			<edtSKWinTitle></edtSKWinTitle>
 			<edtSchLimitCount>1</edtSchLimitCount>
 			<edtTaskName>MAA-换班</edtTaskName>
-			<edtToastFloat></edtToastFloat>
 			<edtWakeDelayBoot>0</edtWakeDelayBoot>
 			<optHKKey>1</optHKKey>
 			<optHKMouse>0</optHKMouse>
-			<tabBtnExec>0</tabBtnExec>
-			<tabBtnHK>0</tabBtnHK>
-			<tabBtnSch>1</tabBtnSch>
-			<tabBtnTask>0</tabBtnTask>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>13</ID>
+				<ID>455-XW6H2P535J</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -161,17 +143,12 @@
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<chkAppAdmin>0</chkAppAdmin>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -180,48 +157,32 @@
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>1</edtAppEnv.max>
+					<edtAppEnv.min>16843008</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\MAA\update_MaaResource.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\MAA\updateMaaResource.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName></edtTaskName>
+					<edtTaskName>更新maa</edtTaskName>
 					<edtTaskSubName>更新maa</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>更新maa</Name>
@@ -229,7 +190,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>48</ID>
+				<ID>592-YTP588GHFF</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>1</HKStopped>
@@ -268,7 +229,7 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<YearDay>1</YearDay>
 					<YearMonth>1</YearMonth>
@@ -283,11 +244,6 @@ env2=value2</edtAppEnv>
 					<chkAppVar>0</chkAppVar>
 					<chkAutoClose>0</chkAutoClose>
 					<chkAutoCloseHK>0</chkAutoCloseHK>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkDayLimit1>1</chkDayLimit1>
 					<chkDayLimit2>1</chkDayLimit2>
 					<chkDayLimit3>1</chkDayLimit3>
@@ -333,15 +289,15 @@ env2=value2</edtAppEnv>
 					<cmbAudioComp_text></cmbAudioComp_text>
 					<cmbAutoCloseAction>0</cmbAutoCloseAction>
 					<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>copy</cmbBackType>
 					<cmbBackType_text>复制</cmbBackType_text>
 					<cmbClass>无</cmbClass>
 					<cmbClass_text></cmbClass_text>
 					<cmbDayLimit>周一,周二,周三,周...</cmbDayLimit>
 					<cmbDialDown_text></cmbDialDown_text>
 					<cmbDialUp_text></cmbDialUp_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbEveryMonth_text>1</cmbEveryMonth_text>
 					<cmbExecPost>0</cmbExecPost>
 					<cmbExecPostTasks_text></cmbExecPostTasks_text>
@@ -356,6 +312,7 @@ env2=value2</edtAppEnv>
 					<cmbInetStat_text>上线(从离线变为在线)</cmbInetStat_text>
 					<cmbLidStat_text>合上时</cmbLidStat_text>
 					<cmbMon_text>SDC464C(主显示器)</cmbMon_text>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<cmbPing_text>可以Ping通</cmbPing_text>
 					<cmbPort_text>端口开放</cmbPort_text>
 					<cmbProcChk_text>创建(从无到有)</cmbProcChk_text>
@@ -379,15 +336,12 @@ env2=value2</edtAppEnv>
 					<combYearDay_text>1</combYearDay_text>
 					<combYearMonth_text>1</combYearMonth_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\MAA\Run_MAA.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\MAA\RunMAA.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDayLimitMax>24</edtDayLimitMax>
 					<edtDayLimitMin>0</edtDayLimitMin>
 					<edtDefRmd></edtDefRmd>
@@ -401,34 +355,20 @@ env2=value2</edtAppEnv>
 					<edtExecSec>30</edtExecSec>
 					<edtExecSecHK>5</edtExecSecHK>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
 					<edtSKProcName></edtSKProcName>
 					<edtSKWinClass></edtSKWinClass>
 					<edtSKWinTitle></edtSKWinTitle>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName>执行程序</edtTaskName>
+					<edtTaskName>运行maa</edtTaskName>
 					<edtTaskSubName>运行maa</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
 					<edtWakeDelayBoot>0</edtWakeDelayBoot>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optHKKey>1</optHKKey>
 					<optHKMouse>0</optHKMouse>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>9</sldZipLevel>
 					<tabBtnExec>0</tabBtnExec>
 					<tabBtnHK>0</tabBtnHK>
 					<tabBtnSch>0</tabBtnSch>
@@ -448,7 +388,7 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:55:00</StartDateTime>
-		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
+		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
 		<NextRunDateTime>2025-07-14 17:55:00</NextRunDateTime>
 		<NextRunTime>2025-07-14 17:55:00</NextRunTime>
 		<LastRunTime>2025-07-13 17:55:00</LastRunTime>
@@ -463,7 +403,6 @@ env2=value2</edtAppEnv>
 			<EveryMonthDay>0</EveryMonthDay>
 			<EveryWeek></EveryWeek>
 			<Name>MAA-换班</Name>
-			<RemindTitle></RemindTitle>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
 			<YearDay></YearDay>
@@ -489,8 +428,6 @@ env2=value2</edtAppEnv>
 			<chkExecExitFocus>0</chkExecExitFocus>
 			<chkExecExitFullScr>0</chkExecExitFullScr>
 			<chkExecExitPre>1</chkExecExitPre>
-			<chkExecPost>0</chkExecPost>
-			<chkExecPre>0</chkExecPre>
 			<chkHKMouseCorner>0</chkHKMouseCorner>
 			<chkHKMouseCorner1>0</chkHKMouseCorner1>
 			<chkHKMouseCorner2>0</chkHKMouseCorner2>
@@ -529,12 +466,6 @@ env2=value2</edtAppEnv>
 			<cmbClass>无</cmbClass>
 			<cmbClass_text>无</cmbClass_text>
 			<cmbDayLimit></cmbDayLimit>
-			<cmbExecPost>0</cmbExecPost>
-			<cmbExecPostTasks_text></cmbExecPostTasks_text>
-			<cmbExecPost_text>启用计划</cmbExecPost_text>
-			<cmbExecPre>0</cmbExecPre>
-			<cmbExecPreTasks_text></cmbExecPreTasks_text>
-			<cmbExecPre_text>启用计划</cmbExecPre_text>
 			<cmbHKMouse>0</cmbHKMouse>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
 			<cmbHotkey>0</cmbHotkey>
@@ -543,12 +474,8 @@ env2=value2</edtAppEnv>
 			<cmbYearWeekDay></cmbYearWeekDay>
 			<cmbYearWeekNum></cmbYearWeekNum>
 			<edtDayLimitTime></edtDayLimitTime>
-			<edtDefRmd></edtDefRmd>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtEveryDay>1</edtEveryDay>
-			<edtEveryHour>1</edtEveryHour>
-			<edtEveryMin>30</edtEveryMin>
-			<edtEverySec>30</edtEverySec>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
 			<edtHKMouseCorner>50</edtHKMouseCorner>
@@ -558,18 +485,13 @@ env2=value2</edtAppEnv>
 			<edtSKWinTitle></edtSKWinTitle>
 			<edtSchLimitCount>1</edtSchLimitCount>
 			<edtTaskName>MAA-换班</edtTaskName>
-			<edtToastFloat></edtToastFloat>
 			<edtWakeDelayBoot>0</edtWakeDelayBoot>
 			<optHKKey>1</optHKKey>
 			<optHKMouse>0</optHKMouse>
-			<tabBtnExec>0</tabBtnExec>
-			<tabBtnHK>0</tabBtnHK>
-			<tabBtnSch>1</tabBtnSch>
-			<tabBtnTask>0</tabBtnTask>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>57</ID>
+				<ID>536-HZ1L2WVA52</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -601,17 +523,12 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<chkAppAdmin>0</chkAppAdmin>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -620,48 +537,32 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\MAA\update_MaaResource.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\MAA\updateMaaResource.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
 					<edtTaskName>更新maa</edtTaskName>
 					<edtTaskSubName>更新maa</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>更新maa</Name>
@@ -669,7 +570,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>48</ID>
+				<ID>381-DJLYVKP5U8</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>1</HKStopped>
@@ -708,7 +609,7 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<YearDay>1</YearDay>
 					<YearMonth>1</YearMonth>
@@ -723,11 +624,6 @@ env2=value2</edtAppEnv>
 					<chkAppVar>0</chkAppVar>
 					<chkAutoClose>0</chkAutoClose>
 					<chkAutoCloseHK>0</chkAutoCloseHK>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkDayLimit1>1</chkDayLimit1>
 					<chkDayLimit2>1</chkDayLimit2>
 					<chkDayLimit3>1</chkDayLimit3>
@@ -773,15 +669,15 @@ env2=value2</edtAppEnv>
 					<cmbAudioComp_text></cmbAudioComp_text>
 					<cmbAutoCloseAction>0</cmbAutoCloseAction>
 					<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>copy</cmbBackType>
 					<cmbBackType_text>复制</cmbBackType_text>
 					<cmbClass>无</cmbClass>
 					<cmbClass_text></cmbClass_text>
 					<cmbDayLimit>周一,周二,周三,周...</cmbDayLimit>
 					<cmbDialDown_text></cmbDialDown_text>
 					<cmbDialUp_text></cmbDialUp_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbEveryMonth_text>1</cmbEveryMonth_text>
 					<cmbExecPost>0</cmbExecPost>
 					<cmbExecPostTasks_text></cmbExecPostTasks_text>
@@ -796,6 +692,7 @@ env2=value2</edtAppEnv>
 					<cmbInetStat_text>上线(从离线变为在线)</cmbInetStat_text>
 					<cmbLidStat_text>合上时</cmbLidStat_text>
 					<cmbMon_text>SDC464C(主显示器)</cmbMon_text>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<cmbPing_text>可以Ping通</cmbPing_text>
 					<cmbPort_text>端口开放</cmbPort_text>
 					<cmbProcChk_text>创建(从无到有)</cmbProcChk_text>
@@ -819,15 +716,12 @@ env2=value2</edtAppEnv>
 					<combYearDay_text>1</combYearDay_text>
 					<combYearMonth_text>1</combYearMonth_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\MAA\Run_MAA.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\MAA\RunMAA.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDayLimitMax>24</edtDayLimitMax>
 					<edtDayLimitMin>0</edtDayLimitMin>
 					<edtDefRmd></edtDefRmd>
@@ -841,34 +735,20 @@ env2=value2</edtAppEnv>
 					<edtExecSec>30</edtExecSec>
 					<edtExecSecHK>5</edtExecSecHK>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
 					<edtSKProcName></edtSKProcName>
 					<edtSKWinClass></edtSKWinClass>
 					<edtSKWinTitle></edtSKWinTitle>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName>执行程序</edtTaskName>
+					<edtTaskName>运行maa</edtTaskName>
 					<edtTaskSubName>运行maa</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
 					<edtWakeDelayBoot>0</edtWakeDelayBoot>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optHKKey>1</optHKKey>
 					<optHKMouse>0</optHKMouse>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>9</sldZipLevel>
 					<tabBtnExec>0</tabBtnExec>
 					<tabBtnHK>0</tabBtnHK>
 					<tabBtnSch>0</tabBtnSch>
@@ -888,7 +768,7 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:25:00</StartDateTime>
-		<EndDateTime>2025-05-29 00:00:00</EndDateTime>
+		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
 		<NextRunDateTime>2025-07-14 21:25:00</NextRunDateTime>
 		<NextRunTime>2025-07-14 21:25:00</NextRunTime>
 		<LastRunTime>2025-07-13 21:25:00</LastRunTime>
@@ -903,7 +783,6 @@ env2=value2</edtAppEnv>
 			<EveryMonthDay>0</EveryMonthDay>
 			<EveryWeek></EveryWeek>
 			<Name>MAA-换班</Name>
-			<RemindTitle></RemindTitle>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
 			<YearDay></YearDay>
@@ -929,8 +808,6 @@ env2=value2</edtAppEnv>
 			<chkExecExitFocus>0</chkExecExitFocus>
 			<chkExecExitFullScr>0</chkExecExitFullScr>
 			<chkExecExitPre>1</chkExecExitPre>
-			<chkExecPost>0</chkExecPost>
-			<chkExecPre>0</chkExecPre>
 			<chkHKMouseCorner>0</chkHKMouseCorner>
 			<chkHKMouseCorner1>0</chkHKMouseCorner1>
 			<chkHKMouseCorner2>0</chkHKMouseCorner2>
@@ -969,12 +846,6 @@ env2=value2</edtAppEnv>
 			<cmbClass>无</cmbClass>
 			<cmbClass_text>无</cmbClass_text>
 			<cmbDayLimit></cmbDayLimit>
-			<cmbExecPost>0</cmbExecPost>
-			<cmbExecPostTasks_text></cmbExecPostTasks_text>
-			<cmbExecPost_text>启用计划</cmbExecPost_text>
-			<cmbExecPre>0</cmbExecPre>
-			<cmbExecPreTasks_text></cmbExecPreTasks_text>
-			<cmbExecPre_text>启用计划</cmbExecPre_text>
 			<cmbHKMouse>0</cmbHKMouse>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
 			<cmbHotkey>0</cmbHotkey>
@@ -983,12 +854,8 @@ env2=value2</edtAppEnv>
 			<cmbYearWeekDay></cmbYearWeekDay>
 			<cmbYearWeekNum></cmbYearWeekNum>
 			<edtDayLimitTime></edtDayLimitTime>
-			<edtDefRmd></edtDefRmd>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtEveryDay>1</edtEveryDay>
-			<edtEveryHour>1</edtEveryHour>
-			<edtEveryMin>30</edtEveryMin>
-			<edtEverySec>30</edtEverySec>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
 			<edtHKMouseCorner>50</edtHKMouseCorner>
@@ -998,18 +865,13 @@ env2=value2</edtAppEnv>
 			<edtSKWinTitle></edtSKWinTitle>
 			<edtSchLimitCount>1</edtSchLimitCount>
 			<edtTaskName>MAA-换班</edtTaskName>
-			<edtToastFloat></edtToastFloat>
 			<edtWakeDelayBoot>0</edtWakeDelayBoot>
 			<optHKKey>1</optHKKey>
 			<optHKMouse>0</optHKMouse>
-			<tabBtnExec>0</tabBtnExec>
-			<tabBtnHK>0</tabBtnHK>
-			<tabBtnSch>1</tabBtnSch>
-			<tabBtnTask>0</tabBtnTask>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>20</ID>
+				<ID>206-RDXVZNLL6A</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1041,17 +903,12 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<chkAppAdmin>0</chkAppAdmin>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -1060,48 +917,32 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\MAA\update_MaaResource.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\MAA\updateMaaResource.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName></edtTaskName>
+					<edtTaskName>更新maa</edtTaskName>
 					<edtTaskSubName>更新maa</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>更新maa</Name>
@@ -1109,7 +950,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>48</ID>
+				<ID>10-H3B8IJSIDW</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>1</HKStopped>
@@ -1148,7 +989,7 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<YearDay>1</YearDay>
 					<YearMonth>1</YearMonth>
@@ -1163,11 +1004,6 @@ env2=value2</edtAppEnv>
 					<chkAppVar>0</chkAppVar>
 					<chkAutoClose>0</chkAutoClose>
 					<chkAutoCloseHK>0</chkAutoCloseHK>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkDayLimit1>1</chkDayLimit1>
 					<chkDayLimit2>1</chkDayLimit2>
 					<chkDayLimit3>1</chkDayLimit3>
@@ -1213,15 +1049,15 @@ env2=value2</edtAppEnv>
 					<cmbAudioComp_text></cmbAudioComp_text>
 					<cmbAutoCloseAction>0</cmbAutoCloseAction>
 					<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>copy</cmbBackType>
 					<cmbBackType_text>复制</cmbBackType_text>
 					<cmbClass>无</cmbClass>
 					<cmbClass_text></cmbClass_text>
 					<cmbDayLimit>周一,周二,周三,周...</cmbDayLimit>
 					<cmbDialDown_text></cmbDialDown_text>
 					<cmbDialUp_text></cmbDialUp_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbEveryMonth_text>1</cmbEveryMonth_text>
 					<cmbExecPost>0</cmbExecPost>
 					<cmbExecPostTasks_text></cmbExecPostTasks_text>
@@ -1236,6 +1072,7 @@ env2=value2</edtAppEnv>
 					<cmbInetStat_text>上线(从离线变为在线)</cmbInetStat_text>
 					<cmbLidStat_text>合上时</cmbLidStat_text>
 					<cmbMon_text>SDC464C(主显示器)</cmbMon_text>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<cmbPing_text>可以Ping通</cmbPing_text>
 					<cmbPort_text>端口开放</cmbPort_text>
 					<cmbProcChk_text>创建(从无到有)</cmbProcChk_text>
@@ -1259,15 +1096,12 @@ env2=value2</edtAppEnv>
 					<combYearDay_text>1</combYearDay_text>
 					<combYearMonth_text>1</combYearMonth_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\MAA\Run_MAA.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\MAA\RunMAA.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDayLimitMax>24</edtDayLimitMax>
 					<edtDayLimitMin>0</edtDayLimitMin>
 					<edtDefRmd></edtDefRmd>
@@ -1281,34 +1115,20 @@ env2=value2</edtAppEnv>
 					<edtExecSec>30</edtExecSec>
 					<edtExecSecHK>5</edtExecSecHK>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
 					<edtSKProcName></edtSKProcName>
 					<edtSKWinClass></edtSKWinClass>
 					<edtSKWinTitle></edtSKWinTitle>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
 					<edtTaskName>运行maa</edtTaskName>
 					<edtTaskSubName>运行maa</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
 					<edtWakeDelayBoot>0</edtWakeDelayBoot>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optHKKey>1</optHKKey>
 					<optHKMouse>0</optHKMouse>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>9</sldZipLevel>
 					<tabBtnExec>0</tabBtnExec>
 					<tabBtnHK>0</tabBtnHK>
 					<tabBtnSch>0</tabBtnSch>
@@ -1328,10 +1148,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-07-12 16:38:24</EndDateTime>
-		<NextRunDateTime>2125-06-19 07:10:44</NextRunDateTime>
+		<EndDateTime>2025-07-15 09:16:48</EndDateTime>
+		<NextRunDateTime>2035-07-12 08:25:23</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-07-13 07:10:44</LastRunTime>
+		<LastRunTime>2025-07-14 07:56:21</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1430,7 +1250,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>23</ID>
+				<ID>540-85P5PZX1LE</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1447,7 +1267,7 @@ env2=value2</edtAppEnv>
 					<BackClr>-12500671</BackClr>
 					<IsExitRest>0</IsExitRest>
 					<IsPassExitRest>0</IsPassExitRest>
-					<Name>qd-home.vbs</Name>
+					<Name>runHome.vbs</Name>
 					<PassExitRest></PassExitRest>
 					<PlayTime>10</PlayTime>
 					<RemindTitle></RemindTitle>
@@ -1479,21 +1299,23 @@ env2=value2</edtAppEnv>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
 					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\CingFox\Profiles\BackupProfiles\Modules\QD-Home.vbs</edtAppPath>
+					<edtAppPath>D:\Program Files\CingFox\Profiles\BackupProfiles\Modules\runHome.vbs</edtAppPath>
 					<edtAppVar></edtAppVar>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
 					<edtTaskName>qd-home.vbs</edtTaskName>
-					<edtTaskSubName>qd-home.vbs</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
+					<edtTaskSubName>runHome.vbs</edtTaskSubName>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
@@ -1502,7 +1324,7 @@ env2=value2</edtAppEnv>
 					<optRptSnd>0</optRptSnd>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
-				<Name>qd-home.vbs</Name>
+				<Name>runHome.vbs</Name>
 				<ID>23</ID>
 				<Stat>1</Stat>
 			</Tasker>
@@ -1515,7 +1337,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Delay>
 			<Tasker>
-				<ID>8</ID>
+				<ID>778-D1IR07FT3C</ID>
 				<TaskType>ttMouseClick</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1624,7 +1446,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Delay>
 			<Tasker>
-				<ID>98</ID>
+				<ID>113-FFFPYZLYNJ</ID>
 				<TaskType>ttVolumeSet</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1822,7 +1644,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>88</ID>
+				<ID>859-6B18B8E4EU</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1902,7 +1724,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>11</ID>
+				<ID>680-D07KDMMHA3</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2002,7 +1824,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>63</ID>
+				<ID>903-YXRHTRX60Y</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2111,7 +1933,7 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 12:00:00</StartDateTime>
-		<EndDateTime>2025-06-15 00:08:32</EndDateTime>
+		<EndDateTime>2025-07-14 00:17:04</EndDateTime>
 		<NextRunDateTime>2025-07-20 12:00:00</NextRunDateTime>
 		<NextRunTime>2025-07-20 12:00:00</NextRunTime>
 		<LastRunTime>2025-07-13 12:00:00</LastRunTime>
@@ -2126,7 +1948,6 @@ env2=value2</edtAppEnv>
 			<EveryMonthDay>0</EveryMonthDay>
 			<EveryWeek>7</EveryWeek>
 			<Name>更新软件</Name>
-			<RemindTitle></RemindTitle>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
 			<YearDay></YearDay>
@@ -2159,8 +1980,6 @@ env2=value2</edtAppEnv>
 			<chkExecExitFocus>0</chkExecExitFocus>
 			<chkExecExitFullScr>0</chkExecExitFullScr>
 			<chkExecExitPre>1</chkExecExitPre>
-			<chkExecPost>0</chkExecPost>
-			<chkExecPre>0</chkExecPre>
 			<chkHKMouseCorner>0</chkHKMouseCorner>
 			<chkHKMouseCorner1>0</chkHKMouseCorner1>
 			<chkHKMouseCorner2>0</chkHKMouseCorner2>
@@ -2199,12 +2018,6 @@ env2=value2</edtAppEnv>
 			<cmbClass>无</cmbClass>
 			<cmbClass_text>无</cmbClass_text>
 			<cmbDayLimit></cmbDayLimit>
-			<cmbExecPost>0</cmbExecPost>
-			<cmbExecPostTasks_text></cmbExecPostTasks_text>
-			<cmbExecPost_text>启用计划</cmbExecPost_text>
-			<cmbExecPre>0</cmbExecPre>
-			<cmbExecPreTasks_text></cmbExecPreTasks_text>
-			<cmbExecPre_text>启用计划</cmbExecPre_text>
 			<cmbHKMouse>0</cmbHKMouse>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
 			<cmbHotkey>0</cmbHotkey>
@@ -2213,7 +2026,6 @@ env2=value2</edtAppEnv>
 			<cmbYearWeekDay></cmbYearWeekDay>
 			<cmbYearWeekNum></cmbYearWeekNum>
 			<edtDayLimitTime>20:42—20:42</edtDayLimitTime>
-			<edtDefRmd></edtDefRmd>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
@@ -2224,18 +2036,13 @@ env2=value2</edtAppEnv>
 			<edtSKWinTitle></edtSKWinTitle>
 			<edtSchLimitCount>1</edtSchLimitCount>
 			<edtTaskName>更新软件</edtTaskName>
-			<edtToastFloat></edtToastFloat>
 			<edtWakeDelayBoot>0</edtWakeDelayBoot>
 			<optHKKey>1</optHKKey>
 			<optHKMouse>0</optHKMouse>
-			<tabBtnExec>0</tabBtnExec>
-			<tabBtnHK>0</tabBtnHK>
-			<tabBtnSch>0</tabBtnSch>
-			<tabBtnTask>1</tabBtnTask>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>78</ID>
+				<ID>727-CIJ792JOEG</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2267,17 +2074,12 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<chkAppAdmin>0</chkAppAdmin>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -2286,48 +2088,32 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\CingFox\Profiles\FxProfiles\chrome\userChromeJS\update-uc-scripts.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\CingFox\Profiles\FxProfiles\chrome\userChromeJS\updateUCscripts.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName>更新UC脚本</edtTaskName>
+					<edtTaskName>更新uc脚本</edtTaskName>
 					<edtTaskSubName>更新uc脚本</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>更新uc脚本</Name>
@@ -2335,7 +2121,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>70</ID>
+				<ID>36-L43O5T2XSF</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2352,7 +2138,7 @@ env2=value2</edtAppEnv>
 					<BackClr>-12500671</BackClr>
 					<IsExitRest>0</IsExitRest>
 					<IsPassExitRest>0</IsPassExitRest>
-					<Name>更新lx_music音源</Name>
+					<Name>更新LXmusic音源</Name>
 					<PassExitRest></PassExitRest>
 					<PlayTime>10</PlayTime>
 					<RemindTitle></RemindTitle>
@@ -2384,21 +2170,23 @@ env2=value2</edtAppEnv>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
 					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>E:\My Documents\Nutstore\NutStoreSync\Customization\Software\lx-music\lx-source\update-lx-source.cmd</edtAppPath>
+					<edtAppPath>E:\My Documents\Nutstore\NutStoreSync\Customization\Software\LXmusic\LXsource\updateLXsource.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>更新lx_music音源</edtTaskName>
-					<edtTaskSubName>更新lx_music音源</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
+					<edtTaskName>更新LXmusic音源</edtTaskName>
+					<edtTaskSubName>更新LXmusic音源</edtTaskSubName>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
@@ -2407,12 +2195,12 @@ env2=value2</edtAppEnv>
 					<optRptSnd>0</optRptSnd>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
-				<Name>更新lx_music音源</Name>
+				<Name>更新LXmusic音源</Name>
 				<ID>70</ID>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>31</ID>
+				<ID>899-Q3TVY8RDSF</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2444,17 +2232,12 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<chkAppAdmin>0</chkAppAdmin>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -2463,48 +2246,32 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>E:\Cing@Soft\Microsoft\NewPC-Tools\激活工具\update-MAS_AIO.cmd</edtAppPath>
+					<edtAppPath>E:\Cing@Soft\Microsoft\NewPC-Tools\激活工具\updateMAS_AIO.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName>更新lx-music-desktop</edtTaskName>
+					<edtTaskName>更新MAS_AIO</edtTaskName>
 					<edtTaskSubName>更新MAS_AIO</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>更新MAS_AIO</Name>
@@ -2512,7 +2279,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>29</ID>
+				<ID>688-4DAOJ9D6Z7</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2561,13 +2328,16 @@ env2=value2</edtAppEnv>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
 					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\CingFox\Software\RimeIMEPortable\usr\update-cangjie5-dict.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\CingFox\Software\RimeIMEPortable\usr\updateCangjie5dict.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
@@ -2575,7 +2345,6 @@ env2=value2</edtAppEnv>
 					<edtExecWaitTime>0</edtExecWaitTime>
 					<edtTaskName>更新cangjie5码表</edtTaskName>
 					<edtTaskSubName>更新cangjie5码表</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
@@ -2589,7 +2358,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>88</ID>
+				<ID>636-0NC5M9DPUX</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2621,17 +2390,12 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<chkAppAdmin>0</chkAppAdmin>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -2640,48 +2404,32 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\readest\update-readest.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\readest\updateReadest.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
 					<edtTaskName>更新readest</edtTaskName>
 					<edtTaskSubName>更新readest</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>更新readest</Name>
@@ -2689,7 +2437,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>26</ID>
+				<ID>320-BW7WHXWYPN</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2721,17 +2469,12 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<chkAppAdmin>0</chkAppAdmin>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -2740,48 +2483,32 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\LocalSend\update-localsend.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\LocalSend\updateLocalSend.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName>执行程序</edtTaskName>
+					<edtTaskName>更新localsend</edtTaskName>
 					<edtTaskSubName>更新localsend</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>更新localsend</Name>
@@ -2789,7 +2516,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>46</ID>
+				<ID>491-3KUDXT2M3C</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2821,17 +2548,12 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<chkAppAdmin>0</chkAppAdmin>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -2840,48 +2562,32 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\CingFox\Software\MPV\portable_config\update-mpv&amp;scripts.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\CingFox\Software\MPV\portable_config\updateMPV&amp;scripts.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
 					<edtTaskName>更新mpv&amp;scripts</edtTaskName>
 					<edtTaskSubName>更新mpv&amp;scripts</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>更新mpv&amp;scripts</Name>
@@ -2889,7 +2595,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>17</ID>
+				<ID>762-RL4KE0BW1S</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2921,17 +2627,12 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<chkAppAdmin>0</chkAppAdmin>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -2940,48 +2641,32 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\GoldenDict\update-goldendict.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\GoldenDict\updateGoldenDict.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName>执行程序</edtTaskName>
+					<edtTaskName>更新goldendict</edtTaskName>
 					<edtTaskSubName>更新goldendict</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>更新goldendict</Name>
@@ -2989,7 +2674,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>54</ID>
+				<ID>998-7JNQ5I2NH7</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3021,17 +2706,12 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<chkAppAdmin>0</chkAppAdmin>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -3040,48 +2720,32 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\CingFox\Software\ImageGlass\update-imageglass.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\CingFox\Software\ImageGlass\updateImageGlass.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName></edtTaskName>
+					<edtTaskName>更新imageglass</edtTaskName>
 					<edtTaskSubName>更新imageglass</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>更新imageglass</Name>
@@ -3089,7 +2753,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>44</ID>
+				<ID>24-DEZHD8TBSA</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3106,7 +2770,7 @@ env2=value2</edtAppEnv>
 					<BackClr>-12500671</BackClr>
 					<IsExitRest>0</IsExitRest>
 					<IsPassExitRest>0</IsPassExitRest>
-					<Name>更新lx-music-desktop</Name>
+					<Name>更新LXmusicDesktop</Name>
 					<PassExitRest></PassExitRest>
 					<PlayTime>10</PlayTime>
 					<RemindTitle></RemindTitle>
@@ -3121,17 +2785,12 @@ env2=value2</edtAppEnv>
 					<SnapSaveMode>optSaveAll</SnapSaveMode>
 					<SnapSaveNum>100</SnapSaveNum>
 					<SoundPath></SoundPath>
-					<TitleShow>执行程序</TitleShow>
+					<TitleShow>运行程序</TitleShow>
 					<TypeShow>程序</TypeShow>
 					<chkAppAdmin>0</chkAppAdmin>
 					<chkAppClip>0</chkAppClip>
 					<chkAppEnv>0</chkAppEnv>
 					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkExecWait>1</chkExecWait>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
@@ -3140,51 +2799,35 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\lx-music-desktop\update-lx_music_desktop.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\lx-music-desktop\updateLXmusicDesktop.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName></edtTaskName>
-					<edtTaskSubName>更新lx-music-desktop</edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<edtWebpage></edtWebpage>
+					<edtTaskName>更新lx-music-desktop</edtTaskName>
+					<edtTaskSubName>更新LXmusicDesktop</edtTaskSubName>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
-				<Name>更新lx-music-desktop</Name>
+				<Name>更新LXmusicDesktop</Name>
 				<ID>44</ID>
 				<Stat>1</Stat>
 			</Tasker>
@@ -3307,7 +2950,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>467-FM7JBTRD1A</ID>
+				<ID>27-Y4ZGEARWN4</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3363,10 +3006,10 @@ env2=value2</edtAppEnv>
 					<dataEnableDevice></dataEnableDevice>
 					<edtAppDir></edtAppDir>
 					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
-					<edtAppEnv.max>1</edtAppEnv.max>
-					<edtAppEnv.min>16843008</edtAppEnv.min>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
-					<edtAppPath>D:\Program Files\CingFox\Profiles\BackupProfiles\Backup_FirefoxProfiles.cmd</edtAppPath>
+					<edtAppPath>D:\Program Files\CingFox\Profiles\BackupProfiles\BackupFxProfiles.cmd</edtAppPath>
 					<edtAppVar></edtAppVar>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
@@ -3385,7 +3028,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>393-A9JCJCOK7F</ID>
+				<ID>243-7FQVHU5D6K</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>

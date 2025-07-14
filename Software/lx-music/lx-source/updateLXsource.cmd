@@ -16,7 +16,7 @@ set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 :: 主流程
 ::=======================================
 :menu
-call :test_fastest_ghmirror
+call :testGHmirror
 call :update_fixed
 call :update_change
 call :end
@@ -25,8 +25,8 @@ goto :eof
 ::=======================================
 :: 子程序
 ::=======================================
-:test_fastest_ghmirror
-CALL "D:\Program Files\CingFox\Profiles\BackupProfiles\Modules\test_fastest_ghmirror.cmd"
+:testGHmirror
+CALL "D:\Program Files\CingFox\Profiles\BackupProfiles\Modules\testGHmirror.cmd"
 goto :eof
 
 :update_fixed

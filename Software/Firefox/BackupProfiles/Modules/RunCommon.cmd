@@ -38,12 +38,12 @@ del /s /q /f "C:\Users\%USERNAME%\AppData\Local\Temp\*"
 :run
 :listary
 ::Listary5代
-::start  "" "%cd%\Listary5\UserData\Run_listary5.cmd"
+::start  "" "%cd%\Listary5\UserData\Runlistary5.cmd"
 
 ::Listary6代
 ::需要获取完整路径才行
 pushd
-call "%cd%\Listary6\UserProfile\Settings\Run_Listary6.cmd"
+call "%cd%\Listary6\UserProfile\Settings\RunListary6.cmd"
 popd
 
 ::管理员启动WeaselServer.exe
@@ -55,7 +55,7 @@ start  "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
 start  "" "%cd%\Ditto\Ditto.exe"
 start  "" "%cd%\PixPin\PixPin.exe"
 ::start  "" "%cd%\Snipaste\Snipaste.exe"
-start  "" "%cd%\ProcessLassoPro\_Start-ProcessLasso.cmd"
+start  "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
 
 :foxmail
 ::启動Foxmail后，关闭Foxmail的主窗口但不终止进程
