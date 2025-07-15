@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1752219265515,
+  "timeStamp": 1752456807123,
   "version": "1.65.0",
   "userSettings": {
     "alwaysDetachLogger": false,
@@ -35,11 +35,9 @@
     "adguard-cookies",
     "ublock-cookies-adguard",
     "CHN-0",
-    "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt",
-    "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt",
     "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
-    "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
-    "https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt"
+    "https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt",
+    "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
   ],
   "hiddenSettings": {
     "autoUpdatePeriod": 60,

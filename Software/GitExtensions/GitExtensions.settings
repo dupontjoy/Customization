@@ -122,6 +122,14 @@
   </item>
   <item>
     <key>
+      <string>autostash</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
       <string>AvailableEncodings</string>
     </key>
     <value>
@@ -789,7 +797,7 @@
       <string>FormBrowse.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>412</string>
+      <string>460</string>
     </value>
   </item>
   <item>
@@ -925,7 +933,7 @@
       <string>FormBrowse.RevisionDiffControl.LeftSplitContainer_Size</string>
     </key>
     <value>
-      <string>256</string>
+      <string>258</string>
     </value>
   </item>
   <item>
@@ -933,7 +941,7 @@
       <string>FormBrowse.RevisionsSplitContainer_Distance</string>
     </key>
     <value>
-      <string>361</string>
+      <string>397</string>
     </value>
   </item>
   <item>
@@ -1026,6 +1034,14 @@
   </item>
   <item>
     <key>
+      <string>FormPullAction</string>
+    </key>
+    <value>
+      <string>Fetch</string>
+    </value>
+  </item>
+  <item>
+    <key>
       <string>gitcommand</string>
     </key>
     <value>
@@ -1070,7 +1086,23 @@
     &lt;/Repository&gt;
     &lt;Repository&gt;
       &lt;Anchor&gt;None&lt;/Anchor&gt;
-      &lt;Path&gt;E:\My Documents\GitHub\RimeIME-Portable\&lt;/Path&gt;
+      &lt;Path&gt;E:\My Documents\GitHub\RimeIMEPortable\&lt;/Path&gt;
+    &lt;/Repository&gt;
+  &lt;/Repositories&gt;
+&lt;/RepositoryHistory&gt;</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>history remote</string>
+    </key>
+    <value>
+      <string>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;RepositoryHistory&gt;
+  &lt;Repositories&gt;
+    &lt;Repository&gt;
+      &lt;Anchor&gt;None&lt;/Anchor&gt;
+      &lt;Path&gt;https://github.com/dupontjoy/RimeIMEPortable.git&lt;/Path&gt;
     &lt;/Repository&gt;
   &lt;/Repositories&gt;
 &lt;/RepositoryHistory&gt;</string>

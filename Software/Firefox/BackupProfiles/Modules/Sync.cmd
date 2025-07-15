@@ -1,4 +1,4 @@
-::2025.07.04
+::2025.07.14
 ::注意換行符必须是：windows（CR+LF）
 
 Title 备份文件到托管网站
@@ -25,10 +25,10 @@ robocopy "C:\ProgramData\Anytxt\config" "%OutputDir%\Customization\Software\Anyt
 ::复制文件夹時，源文件夹不要带斜杠，目标文件夹带斜杠。末尾写/s /y /i
 ::复制文件時，末尾写/y
 ::使用robocopy复制usr時排除usr\build文件夹。目标的usr不能带斜杠。/MIR??（镜像模式），完全同步源目录和目标目录，包括子目录和文件。
-robocopy "%BackupDir%\..\..\Software\RimeIMEPortable\usr" "%OutputDir%\RimeIME-Portable\usr" /MIR /ZB /R:3 /W:5 /XD "build"
-xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\install.bat" "%OutputDir%\RimeIME-Portable\" /y
-xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\uninstall.bat" "%OutputDir%\RimeIME-Portable\" /y
-xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\readme.txt" "%OutputDir%\RimeIME-Portable\" /y
+robocopy "%BackupDir%\..\..\Software\RimeIMEPortable\usr" "%OutputDir%\RimeIMEPortable\usr" /MIR /ZB /R:3 /W:5 /XD "build"
+xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\install.bat" "%OutputDir%\RimeIMEPortable\" /y
+xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\uninstall.bat" "%OutputDir%\RimeIMEPortable\" /y
+xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\readme.txt" "%OutputDir%\RimeIMEPortable\" /y
 
 
 :capslock
@@ -50,6 +50,12 @@ robocopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Fir
 
 :foobar
 xcopy "%BackupDir%\..\..\..\foobar2000\profile\config.sqlite" "%OutputDir%\Customization\Software\foobar2000\profile\" /y
+
+:Foxmail
+xcopy "%BackupDir%\..\..\..\Tencent\Foxmail\Storage\dupontjoy@163.com\Filter\1.fter" "%OutputDir%\Customization\Software\Foxmail-Filter\mail-filter.fter" /y
+
+:GitExtensions
+xcopy "%BackupDir%\..\..\..\GitExtensions\GitExtensions.settings" "%OutputDir%\Customization\Software\GitExtensions\" /y
 
 :GoldenDict
 xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customization\Software\GoldenDict\" /y
@@ -86,8 +92,6 @@ xcopy "%BackupDir%\..\..\..\lx-music-desktop\updateLXmusicDesktop.cmd" "%OutputD
 xcopy "%BackupDir%\..\..\..\MAA\RunMAA.cmd" "%OutputDir%\Customization\Software\MAA\" /y
 xcopy "%BackupDir%\..\..\..\MAA\updateMaaResource.cmd" "%OutputDir%\Customization\Software\MAA\" /y
 xcopy "%BackupDir%\..\..\..\MAA\config\gui.json" "%OutputDir%\Customization\Software\MAA\" /y
-:mail-filter
-xcopy "%BackupDir%\..\..\..\Tencent\Foxmail\Storage\dupontjoy@163.com\Filter\1.fter" "%OutputDir%\Customization\Software\Foxmail-Filter\mail-filter.fter" /y
 
 :MPV
 robocopy "%BackupDir%\..\..\Software\MPV\installer" "%OutputDir%\Customization\Software\MPV\installer" /MIR /ZB /R:3 /W:5
@@ -97,6 +101,7 @@ xcopy "%BackupDir%\..\..\Software\MPV\README.md" "%OutputDir%\Customization\Soft
 xcopy "%BackupDir%\..\..\Software\MPV\yt-dlp.conf" "%OutputDir%\Customization\Software\MPV\" /y
 xcopy "%BackupDir%\..\..\Software\MPV\settings.xml" "%OutputDir%\Customization\Software\MPV\" /y
 ::删除不需要备份的播放进度
+rd /s /q "%OutputDir%\Customization\Software\MPV\portable_config\cache"
 rd /s /q "%OutputDir%\Customization\Software\MPV\portable_config\watch_later"
 
 :N_m3u8DL-RE
@@ -161,11 +166,11 @@ xcopy "%BackupDir%\..\..\Software\zTasker\User\Tasks.dat" "%OutputDir%\Customiza
 ::先删除旧备份文件夹
 rd /s /q "%OutputDir%\..\..\GitHub\Customization\Rules"
 rd /s /q "%OutputDir%\..\..\GitHub\Customization\Software"
-rd /s /q "%OutputDir%\..\..\GitHub\RimeIME-Portable\usr"
-rd /s /q "%OutputDir%\..\..\GitHub\RimeIME-Portable\book"
+rd /s /q "%OutputDir%\..\..\GitHub\RimeIMEPortable\usr"
+rd /s /q "%OutputDir%\..\..\GitHub\RimeIMEPortable\book"
 timeout /t 3 /nobreak
 xcopy "%OutputDir%\Customization" "%OutputDir%\..\..\GitHub\Customization\"  /s /y /i
-xcopy "%OutputDir%\RimeIME-Portable" "%OutputDir%\..\..\GitHub\RimeIME-Portable\"  /s /y /i
+xcopy "%OutputDir%\RimeIMEPortable" "%OutputDir%\..\..\GitHub\RimeIMEPortable\"  /s /y /i
 
 :end
 timeout /t 3 /nobreak
