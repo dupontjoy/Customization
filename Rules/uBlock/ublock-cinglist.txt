@@ -11,6 +11,10 @@
 bilibili.com##.reply-notice
 bilibili.com##.browser-tip > .title
 bilibili.com##.adblock-tips
+bilibili.com##.animated-banner
+ ! 从贴吧和B站评论区里面听说是sentry导致GC以及log收集，从而卡顿
+hdslb.com^$csp=script-src 'none'
+||s1.hdslb.com/bfs/seed/log/*/
 
 ! 防止斗鱼直播切回标签页会重新加载
 douyu.com##+js(aeld,visibilitychange)

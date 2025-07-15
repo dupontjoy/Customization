@@ -109,9 +109,10 @@ user_pref("browser.menu.showViewImageInfo", true);//显示查看图像信息菜�
 user_pref("security.insecure_field_warning.contextual.enabled", false);//隐藏输入框不安全提示（配合css）
 user_pref("dom.ipc.processPriorityManager.backgroundUsesEcoQoS", false);//关闭win系统的效能模式
 user_pref("intl.icu4x.segmenter.enabled", false);//双击是选取一个短句
-user_pref("extensions.screenshots.disabled", true);   //禁用自带截图
-user_pref("layout.css.system-ui.enabled", false);   //解決小红书emoji显示错误问题
-
+user_pref("extensions.screenshots.disabled", true);//禁用自带截图
+user_pref("layout.css.system-ui.enabled", false);//解決小红书emoji显示错误问题
+user_pref("javascript.options.experimental.shadow_realms", true);//让js引擎像node.js那样虚拟化
+user_pref("javascript.options.experimental.weakrefs.expose_cleanupSome", true);
 
 
 /******************************************************************************************
