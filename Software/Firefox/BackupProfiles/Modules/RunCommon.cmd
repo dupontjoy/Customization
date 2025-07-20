@@ -55,7 +55,7 @@ start  "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
 start  "" "%cd%\Ditto\Ditto.exe"
 start  "" "%cd%\PixPin\PixPin.exe"
 ::start  "" "%cd%\Snipaste\Snipaste.exe"
-start  "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
+::start  "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
 
 :foxmail
 ::启動Foxmail后，关闭Foxmail的主窗口但不终止进程

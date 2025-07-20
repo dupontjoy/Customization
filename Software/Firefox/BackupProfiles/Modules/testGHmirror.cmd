@@ -5,7 +5,7 @@ setlocal enabledelayedexpansion
 :: 测试链接和镜像列表
 :: 镜像来源：Github 增强 - 高速下载
 set "test_url=Jackchows/Cangjie5/raw/master/largefile.zip"
-set "proxies=hk.gh-proxy.com, ghfile.geekertao.top, fastgit.cc, gh.xx9527.cn, ghproxy.cfd,github.boki.moe, gh.h233.eu.org, cors.isteed.cc, firewall.lxstd.org, ghp.keleyaa.com, github.limoruirui.com"
+set "proxies=git.yylx.win, gh.chjina.com, ghpxy.hwinzniej.top, hk.gh-proxy.com, ghfile.geekertao.top, fastgit.cc, gh.xx9527.cn, ghproxy.cfd,github.boki.moe, gh.h233.eu.org, cors.isteed.cc, firewall.lxstd.org, ghp.keleyaa.com, github.limoruirui.com"
 
 :: 初始化最快记录
 set "fastest_proxy="

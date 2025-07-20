@@ -24,8 +24,8 @@ robocopy "C:\ProgramData\Anytxt\config" "%OutputDir%\Customization\Software\Anyt
 :cangjie5
 ::复制文件夹時，源文件夹不要带斜杠，目标文件夹带斜杠。末尾写/s /y /i
 ::复制文件時，末尾写/y
-::使用robocopy复制usr時排除usr\build文件夹。目标的usr不能带斜杠。/MIR??（镜像模式），完全同步源目录和目标目录，包括子目录和文件。
-robocopy "%BackupDir%\..\..\Software\RimeIMEPortable\usr" "%OutputDir%\RimeIMEPortable\usr" /MIR /ZB /R:3 /W:5 /XD "build"
+::目标的usr不能带斜杠。/MIR（镜像模式），完全同步源目录和目标目录，包括子目录和文件。
+robocopy "%BackupDir%\..\..\Software\RimeIMEPortable\usr" "%OutputDir%\RimeIMEPortable\usr" /MIR /ZB /R:3 /W:5
 xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\install.bat" "%OutputDir%\RimeIMEPortable\" /y
 xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\uninstall.bat" "%OutputDir%\RimeIMEPortable\" /y
 xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\readme.txt" "%OutputDir%\RimeIMEPortable\" /y
@@ -86,7 +86,7 @@ xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\RunListary6.cmd"
 xcopy "%BackupDir%\..\..\..\LocalSend\updateLocalSend.cmd" "%OutputDir%\Customization\Software\LocalSend\" /y
 
 :LXmusicDesktop
-xcopy "%BackupDir%\..\..\..\lx-music-desktop\updateLXmusicDesktop.cmd" "%OutputDir%\Customization\Software\lx-music\" /y
+xcopy "%BackupDir%\..\..\..\lx-music-desktop\updateLXmusicDesktop.cmd" "%OutputDir%\Customization\Software\LXmusic\" /y
 
 :MAA
 xcopy "%BackupDir%\..\..\..\MAA\RunMAA.cmd" "%OutputDir%\Customization\Software\MAA\" /y

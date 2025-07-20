@@ -29,7 +29,7 @@ call :common_input
 call :check_mixed_m3u8
 call :analyze_ad_segments_from_config
 if "!ad_detected!"=="0" call :analyze_ad_segments
-set "video_download=N_m3u8DL-RE @config_common.conf @config_ad_keyword.conf !custom_ad_keyword! --save-name "!filename!" "!link!""
+set "video_download=N_m3u8DL-RE @config_common.conf @config_ad_keyword.conf !custom_ad_keyword! !custom-hls-key! --save-name "!filename!" "!link!""
 echo.
 echo.运行命令：!video_download! & echo.
 !video_download!
@@ -48,11 +48,16 @@ goto :end
 :: 输入处理
 :common_input
 :set_link
-set "link=" & set /p "link=请输入链接: "
+set "link=" & set /p "link=请输入 链接: "
 if "!link!"=="" (echo 错误：输入不能为空！ & goto :set_link)
 
+:set_key
+set "key="
+set /p "key=请输入 HLS解密KEY（HEX或Base64, 可为空）: "
+if "!key!"=="" (set "custom-hls-key=") else set "custom-hls-key=--custom-hls-key !key!"
+
 :set_filename 
-set "filename=" & set /p "filename=请输入文件名（不能包含\/:*?^<>|）: "
+set "filename=" & set /p "filename=请输入 文件名（不能包含\/:*?^<>|）: "
 if "!filename!"=="" (echo 错误：输入不能为空！ & goto :set_filename)
 goto :eof
 
@@ -184,7 +189,7 @@ exit /b
 
 :record_limit_input
 set "record_limit="
-set /p "record_limit=请输入录制时长限制(格式：HH:mm:ss, 可为空): "
+set /p "record_limit=请输入 录制时长限制(格式：HH:mm:ss, 可为空): "
 if "!record_limit!"=="" (set "live_record_limit=") else set "live_record_limit=--live-record-limit !record_limit!"
 goto :eof
 

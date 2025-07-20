@@ -60,3 +60,23 @@
  
 }
 
+@-moz-document regexp("https://moontv.*.pages.dev/.*")
+{
+ /*播放区域缩小*/
+.space-y-2, div.grid-cols-1:nth-child(3) {
+    margin-top: calc(-1 * (6.5vh + 1%)) !important;/*向上移*/
+    transform: scale(0.9) !important;
+ }
+ 
+  /*左上角标题，右上角设置退出和暗色*/
+.text-xl, .top-2 {
+    margin-top: calc(-1 * (0vh + 1%)) !important;/*向上移*/
+    transform: scale(0.9) !important;
+ }
+ 
+ /*左上角返回和右上角显示/隐藏按钮*/
+ .top-3, button.group {
+    display: none !important;
+ }
+
+}
