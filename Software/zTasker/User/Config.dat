@@ -58,6 +58,8 @@ optThemeDark=0
 optThemeSys=1
 chkLockNoHK=0
 cmbLockNoHK=0
+chkTestRunUpdLastTime=0
+chkTaskNextRunWeek=1
 [Hotkey]
 chkHotkey=0
 new_remind=Ctrl+Shift+R
@@ -84,7 +86,7 @@ all_key=65
 all_enabled=1
 [Stat]
 Zoomed=0
-Left=153
+Left=204
 Top=65
 Width=1100
 Height=640
