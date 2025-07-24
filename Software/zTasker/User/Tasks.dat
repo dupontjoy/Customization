@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:57:00</StartDateTime>
 		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-23 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-07-23 07:57:00</NextRunTime>
-		<LastRunTime>2025-07-22 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-07-25 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-07-25 07:57:00</NextRunTime>
+		<LastRunTime>2025-07-24 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -773,9 +773,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:57:00</StartDateTime>
 		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-22 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-07-22 17:57:00</NextRunTime>
-		<LastRunTime>2025-07-21 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-07-24 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-07-24 17:57:00</NextRunTime>
+		<LastRunTime>2025-07-23 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1537,9 +1537,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:27:00</StartDateTime>
 		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-22 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-07-22 21:27:00</NextRunTime>
-		<LastRunTime>2025-07-21 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-07-24 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-07-24 21:27:00</NextRunTime>
+		<LastRunTime>2025-07-23 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -2301,9 +2301,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-07-15 09:16:48</EndDateTime>
-		<NextRunDateTime>2035-07-20 12:48:04</NextRunDateTime>
+		<NextRunDateTime>2035-07-22 08:40:56</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-07-22 11:56:21</LastRunTime>
+		<LastRunTime>2025-07-23 23:53:33</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -2695,9 +2695,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 09:00:00</StartDateTime>
 		<EndDateTime>2025-07-13 23:21:36</EndDateTime>
-		<NextRunDateTime>2025-07-23 09:00:00</NextRunDateTime>
-		<NextRunTime>2025-07-23 09:00:00</NextRunTime>
-		<LastRunTime>2025-07-22 09:00:00</LastRunTime>
+		<NextRunDateTime>2025-07-25 09:00:00</NextRunDateTime>
+		<NextRunTime>2025-07-25 09:00:00</NextRunTime>
+		<LastRunTime>2025-07-24 09:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -3086,7 +3086,7 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 12:00:00</StartDateTime>
-		<EndDateTime>2025-07-14 00:17:04</EndDateTime>
+		<EndDateTime>2025-07-24 00:34:08</EndDateTime>
 		<NextRunDateTime>2025-07-27 12:00:00</NextRunDateTime>
 		<NextRunTime>2025-07-27 12:00:00</NextRunTime>
 		<LastRunTime>2025-07-20 12:00:00</LastRunTime>
@@ -3195,7 +3195,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>78</ID>
+				<ID>971-3D2N66SFMB</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3275,7 +3275,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>70</ID>
+				<ID>277-0TLRGHZBK6</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3355,7 +3355,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>31</ID>
+				<ID>474-KUD8JGUV7S</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3435,7 +3435,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>29</ID>
+				<ID>912-42UH7PL2MC</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3515,7 +3515,86 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>88</ID>
+				<ID>395-RCEGA5YPC0</ID>
+				<TaskType>ttExec</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
+				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
+				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>6</Ver>
+				<Param>
+					<BackClr>-12500671</BackClr>
+					<IsExitRest>0</IsExitRest>
+					<IsPassExitRest>0</IsPassExitRest>
+					<Name>更新Notepad4</Name>
+					<PassExitRest></PassExitRest>
+					<PlayTime>10</PlayTime>
+					<RemindTitle></RemindTitle>
+					<RestAlpha>0</RestAlpha>
+					<RestClr>-1</RestClr>
+					<RestMin>10</RestMin>
+					<RmdClr>-1</RmdClr>
+					<SearchEngineNames></SearchEngineNames>
+					<SearchEngines></SearchEngines>
+					<SnapFormat>png</SnapFormat>
+					<SnapSaveDay>10</SnapSaveDay>
+					<SnapSaveMode>optSaveAll</SnapSaveMode>
+					<SnapSaveNum>100</SnapSaveNum>
+					<SoundPath></SoundPath>
+					<TitleShow>运行程序</TitleShow>
+					<TypeShow>程序</TypeShow>
+					<chkAppAdmin>0</chkAppAdmin>
+					<chkAppClip>0</chkAppClip>
+					<chkAppEnv>0</chkAppEnv>
+					<chkAppVar>0</chkAppVar>
+					<chkExecWait>1</chkExecWait>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<cmbAppShowCmd>1</cmbAppShowCmd>
+					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
+					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
+					<cmbBackType_text>压缩</cmbBackType_text>
+					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
+					<cmbHotkey>0</cmbHotkey>
+					<cmbOpenApp_text></cmbOpenApp_text>
+					<edtAppDir></edtAppDir>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv.max>-145312</edtAppEnv.max>
+					<edtAppEnv.min>-2975171</edtAppEnv.min>
+					<edtAppParam></edtAppParam>
+					<edtAppPath>D:\Program Files\CingFox\Software\TotalCMD64\Tools\updateNotepad4.cmd</edtAppPath>
+					<edtAppVar>exec</edtAppVar>
+					<edtDefRmd></edtDefRmd>
+					<edtDialPass></edtDialPass>
+					<edtDialUser></edtDialUser>
+					<edtExecWaitTime>0</edtExecWaitTime>
+					<edtTaskName>更新LXmusicDesktop</edtTaskName>
+					<edtTaskSubName>更新Notepad4</edtTaskSubName>
+					<httpReq></httpReq>
+					<httpReqHeader></httpReqHeader>
+					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
+					<optPlaySnd>0</optPlaySnd>
+					<optRmdSnd>0</optRmdSnd>
+					<optRptSnd>0</optRptSnd>
+					<tabBtnTask>1</tabBtnTask>
+				</Param>
+				<Name>更新Notepad4</Name>
+				<ID>11</ID>
+				<Stat>1</Stat>
+			</Tasker>
+			<Tasker>
+				<ID>212-3TWARCREEO</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3595,7 +3674,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>26</ID>
+				<ID>977-BMY3GHP3NI</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3675,7 +3754,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>46</ID>
+				<ID>871-WHAW21802T</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3755,7 +3834,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>17</ID>
+				<ID>563-HCMRU4CS3W</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3835,7 +3914,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>54</ID>
+				<ID>772-8T7FP09AVL</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3915,7 +3994,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>44</ID>
+				<ID>783-UFQYMB4HTR</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>

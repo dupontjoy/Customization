@@ -32,6 +32,7 @@ if "%need_update%"=="1" (
     echo 已更新到最新版本: %latest_version%
 ) else (
     echo 当前已是最新版本: %latest_version%，无需更新
+    del download_url.tmp 2>nul
 )
 call :end
 goto :eof

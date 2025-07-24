@@ -51,9 +51,6 @@ robocopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Fir
 :foobar
 xcopy "%BackupDir%\..\..\..\foobar2000\profile\config.sqlite" "%OutputDir%\Customization\Software\foobar2000\profile\" /y
 
-:Foxmail
-xcopy "%BackupDir%\..\..\..\Tencent\Foxmail\Storage\dupontjoy@163.com\Filter\1.fter" "%OutputDir%\Customization\Software\Foxmail-Filter\mail-filter.fter" /y
-
 :GitExtensions
 xcopy "%BackupDir%\..\..\..\GitExtensions\GitExtensions.settings" "%OutputDir%\Customization\Software\GitExtensions\" /y
 
@@ -138,6 +135,7 @@ xcopy "%BackupDir%\..\..\Software\totalcmd64\Default.br2" "%OutputDir%\Customiza
 xcopy "%BackupDir%\..\..\Software\totalcmd64\user\user.ini" "%OutputDir%\Customization\Software\TotalCMD\user\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\user\TCIgnore.ini" "%OutputDir%\Customization\Software\TotalCMD\user\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\Everything.ini" "%OutputDir%\Customization\Software\TotalCMD\Tools\" /y
+xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\updateNotepad4.cmd" "%OutputDir%\Customization\Software\TotalCMD\Tools\" /y
 
 :trafficmonitor
 xcopy "%BackupDir%\..\..\..\TrafficMonitor\config.json" "%OutputDir%\Customization\Software\TrafficMonitor\" /y

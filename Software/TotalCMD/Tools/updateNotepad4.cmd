@@ -1,7 +1,7 @@
 :: 2025.05.27
 
 @echo off
-title 一键更新goldendict
+title 一键更新notepad4
 COLOR 0A
 cls
 
@@ -17,7 +17,7 @@ pushd "%~dp0"
 set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-days"
 
 :: 版本文件
-set "version_file=versions_goldendict.txt"
+set "version_file=versions_notepad4.txt"
 
 ::=======================================
 :: 主流程
@@ -26,8 +26,8 @@ set "version_file=versions_goldendict.txt"
 call :testGHmirror
 call :check_version
 if "%need_update%"=="1" (
-    call :update_goldendict
-    call :unzip_goldendict
+    call :update_notepad4
+    call :unzip_notepad4
     (echo|set /p="%latest_version%") > "%version_file%"
     echo 已更新到最新版本: %latest_version%
 ) else (
@@ -41,15 +41,15 @@ goto :eof
 :: 子程序
 ::=======================================
 :testGHmirror
-CALL "%cd%\..\CingFox\Profiles\BackupProfiles\Modules\testGHmirror.cmd"
+CALL "%cd%\..\..\..\Profiles\BackupProfiles\Modules\testGHmirror.cmd"
 goto :eof
 
 :check_version
 setlocal enabledelayedexpansion
-echo.&echo █ 正在检查goldendict版本...
+echo.&echo █ 正在检查notepad4版本...
 
 :: GitHub API 地址
-set "api_url=https://api.github.com/repos/xiaoyifang/goldendict-ng/releases/latest"
+set "api_url=https://api.github.com/repos/zufuliu/notepad4/releases/latest"
 
 :: 获取最新版本更新時间
 for /f %%i in ('powershell -Command "(Invoke-WebRequest -Uri '%api_url%' -UseBasicParsing | ConvertFrom-Json).published_at"') do (
@@ -77,13 +77,13 @@ echo 版本比较结果: %need_update%
 endlocal & set "need_update=%need_update%" & set "latest_version=%latest_version%"
 goto :eof
 
-:update_goldendict
+:update_notepad4
 setlocal enabledelayedexpansion
-echo.&echo █ 正在更新goldendict...
+echo.&echo █ 正在更新notepad4...
 
 :: GitHub API 地址和文件名匹配模式
-set "api_url=https://api.github.com/repos/xiaoyifang/goldendict-ng/releases/latest"
-set "file_pattern=GoldenDict-ng-.*-Windows.*\.7z"
+set "api_url=https://api.github.com/repos/zufuliu/notepad4/releases/latest"
+set "file_pattern=Notepad4_zh-Hans_x64*"
 
 :: 使用 PowerShell 解析下载链接
 powershell -Command "$response = Invoke-WebRequest -Uri '%api_url%' -UseBasicParsing | ConvertFrom-Json; $asset = $response.assets | Where-Object { $_.name -match '%file_pattern%' } | Select-Object -First 1; if ($asset) { $asset.browser_download_url } else { exit 1 }" > download_url.tmp
@@ -101,25 +101,24 @@ set "download_url=%GH_PROXY%/%original_url%"
 
 :: 下载文件
 echo [下载] %download_url%
-powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%download_url%' -OutFile '%cd%\goldendict-latest.7z' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
+powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%download_url%' -OutFile '%cd%\notepad4-latest.zip' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
 
 del download_url.tmp 2>nul
 endlocal
 goto :eof
 
-:unzip_goldendict
+:unzip_notepad4
 setlocal enabledelayedexpansion
-::先终止运行中的goldendict程序
-taskkill /f /t /im goldendict*
+::先终止运行中的notepad4程序
+taskkill /f /t /im notepad4*
 
 ::解压, 跳過压缩包的第一层目录(兼容无顶层目录的 ZIP 文件)
-set "zip=..\7-Zip\7z.exe"
-set "zipfile=goldendict-latest.7z"
+set "zipfile=notepad4-latest.zip"
 set "tempdir=%cd%\unzip_temp"
 
 REM 创建临时目录并解压（（注意-o与路径间无空格））
 md "%tempdir%" 2>nul
-%zip% x "%zipfile%" -o"%tempdir%" -y
+tar -xf "%zipfile%" -C "%tempdir%"
 
 :: 判断临时目录内容并复制
 set "hasSubdir=0"
@@ -148,7 +147,7 @@ if "!hasSubdir!"=="0" (
 rmdir /s /q "%tempdir%" 2>nul
 endlocal
 
-del /s /q .\goldendict-latest.7z
+del /s /q .\notepad4-latest.zip
 goto :eof
 
 ::=======================================

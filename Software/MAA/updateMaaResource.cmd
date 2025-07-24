@@ -137,9 +137,18 @@ echo. 本地時间: %local_date%
     )
 
 :: 下载资源
+:: echo.
+:: echo. [下载] %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
+:: %Curl_Download% -O %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
+
+:: 使用 PowerShell 下载文件
 echo.
-echo. [下载] %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
-%Curl_Download% -O %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
+set "download_url=%GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip"
+powershell -Command "Invoke-WebRequest -Uri '%download_url%' -OutFile 'MaaResource-main.zip' -ErrorAction Stop"
+if errorlevel 1 (
+    echo 下载失败.
+    exit /b 1
+)
 
 :: 更新本地時间文件
 echo. 

@@ -116,6 +116,13 @@ echo 正在使用 對比分片ID长度方法 检测广告...
 for /f %%a in ('type temp_analyze.m3u8 ^| find /c ".ts"') do set "total_segments=%%a"
 echo 总片段数: !total_segments!
 
+:: 如果总片段数为0，跳过广告检测
+if !total_segments! equ 0 (
+    echo 没有找到.ts片段，跳过广告检测
+    del temp_analyze.m3u8
+    goto :eof
+)
+
 :: 使用更高效的方式处理m3u8内容
 for /f "delims=" %%a in ('type temp_analyze.m3u8 ^| find ".ts"') do (
     :: 提取片段ID（保留.ts后缀）
