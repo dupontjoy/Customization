@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:57:00</StartDateTime>
 		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-25 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-07-25 07:57:00</NextRunTime>
-		<LastRunTime>2025-07-24 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-07-27 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-07-27 07:57:00</NextRunTime>
+		<LastRunTime>2025-07-26 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -773,9 +773,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:57:00</StartDateTime>
 		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-24 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-07-24 17:57:00</NextRunTime>
-		<LastRunTime>2025-07-23 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-07-26 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-07-26 17:57:00</NextRunTime>
+		<LastRunTime>2025-07-25 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1537,9 +1537,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:27:00</StartDateTime>
 		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-24 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-07-24 21:27:00</NextRunTime>
-		<LastRunTime>2025-07-23 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-07-26 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-07-26 21:27:00</NextRunTime>
+		<LastRunTime>2025-07-25 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -2301,9 +2301,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-07-15 09:16:48</EndDateTime>
-		<NextRunDateTime>2035-07-22 08:40:56</NextRunDateTime>
+		<NextRunDateTime>2125-07-02 06:50:43</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-07-23 23:53:33</LastRunTime>
+		<LastRunTime>2025-07-26 06:50:43</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -2695,9 +2695,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 09:00:00</StartDateTime>
 		<EndDateTime>2025-07-13 23:21:36</EndDateTime>
-		<NextRunDateTime>2025-07-25 09:00:00</NextRunDateTime>
-		<NextRunTime>2025-07-25 09:00:00</NextRunTime>
-		<LastRunTime>2025-07-24 09:00:00</LastRunTime>
+		<NextRunDateTime>2025-07-27 09:00:00</NextRunDateTime>
+		<NextRunTime>2025-07-27 09:00:00</NextRunTime>
+		<LastRunTime>2025-07-26 09:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -3195,7 +3195,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>971-3D2N66SFMB</ID>
+				<ID>78</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3275,7 +3275,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>277-0TLRGHZBK6</ID>
+				<ID>70</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3355,7 +3355,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>474-KUD8JGUV7S</ID>
+				<ID>31</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3435,7 +3435,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>912-42UH7PL2MC</ID>
+				<ID>29</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3515,7 +3515,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>395-RCEGA5YPC0</ID>
+				<ID>11</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3569,7 +3569,8 @@ env2=value2</edtAppEnv>
 					<cmbHotkey>0</cmbHotkey>
 					<cmbOpenApp_text></cmbOpenApp_text>
 					<edtAppDir></edtAppDir>
-					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1
+env2=value2</edtAppEnv>
 					<edtAppEnv.max>-145312</edtAppEnv.max>
 					<edtAppEnv.min>-2975171</edtAppEnv.min>
 					<edtAppParam></edtAppParam>
@@ -3594,7 +3595,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>212-3TWARCREEO</ID>
+				<ID>88</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3674,7 +3675,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>977-BMY3GHP3NI</ID>
+				<ID>26</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3754,7 +3755,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>871-WHAW21802T</ID>
+				<ID>46</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3834,7 +3835,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>563-HCMRU4CS3W</ID>
+				<ID>17</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3914,7 +3915,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>772-8T7FP09AVL</ID>
+				<ID>54</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -3994,7 +3995,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>783-UFQYMB4HTR</ID>
+				<ID>44</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>

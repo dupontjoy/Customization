@@ -261,6 +261,17 @@
             "SuggestionProvider": "Custom",
             "SuggestionUrl": "https://libretv-698.pages.dev/s={query}"
           }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "mn",
+            "Url": "https://moontv-5qj.pages.dev/search?q={query}",
+            "Title": "MoonTV",
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://moontv-5qj.pages.dev/search?q={query}"
+          }
         }
       ],
       "Updates": [

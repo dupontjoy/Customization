@@ -16,23 +16,16 @@ pushd %~dp0
 
 ::从批处理所在文件夹到ProgramFiles文件夹,共跨了1层
 set "MAA=MAA.exe"
-::set MuMuPlayer="..\MuMuPlayer\nx_device\12.0\shell\MuMuNxDevice.exe"
-::set LDPlayer="..\leidian\LDPlayer9\dnplayer.exe"
-
 
 :start
-
 ::adb断连
 start /b "" cmd /c "cd /d %cd%\..\MuMuPlayer\nx_device\12.0\shell && adb disconnect 127.0.0.1:16384&exit"
 start /b "" cmd /c "cd /d %cd%\..\MuMuPlayer\nx_main && adb disconnect 127.0.0.1:16384&exit"
-start /b "" cmd /c "cd /d %cd%\..\leidian\LDPlayer9 && adb disconnect 127.0.0.1:16384&exit"
 start /b "" cmd /c "cd /d %cd%\adb\platform-tools && adb disconnect 127.0.0.1:16384&exit"
 
 ::终止一些进程
-taskkill /f /t /im adb.exe
 taskkill /f /t /im maa*
-::taskkill /f /t /im mumu*
-::taskkill /f /t /im dnplay*
+
 
 ::删除debug文件夹（保存了各种截图和日志），和几个无用的文件
 rd /s /q "%cd%\debug"
@@ -44,10 +37,6 @@ del /s /q "%cd%\main.zip"
 
 ::启动MAA
 start "" "%MAA%"
-
-::启动模拟器
-::start "" "%MuMuPlayer%"
-::start "" "%LDPlayer%"
 
 :: 完成后退出
 exit
