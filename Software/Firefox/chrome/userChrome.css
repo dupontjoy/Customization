@@ -1,8 +1,8 @@
 /*===============================================================================
   Firefox userChrome.css tweaks: main file
   
-  Custom CSS for Firefox 133+ (128 ESR compatible with corresponding settings) 
-  Current version: 4.7.3
+  Custom CSS for Firefox 140+ (128 ESR - 139 compatible with corresponding settings) 
+  Current version: 4.7.5
 
   Based on 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons CSS code 
   Github: https://github.com/aris-t2/customcssforfx
@@ -269,7 +269,7 @@
    ------------------------------------
    
    [!] only use one option at a time
-   [!] Windows 7-10 only: buttons_on_bookmarks_toolbar_old_size_and_appearance.css
+   [!] buttons_on_bookmarks_toolbar_old_size_and_appearance.css uses rebuild Aero appearance and old sizes 
 */
 
 /* @import "./css/buttons/buttons_on_bookmarks_toolbar_classic_appearance.css"; /**/
@@ -353,7 +353,6 @@
    ----------------------------------------
    
    [!] only use one option at a time
-   [!] custom_backforward_connected_to_location_bar.css is not working on Fx 133+
 */
 
 /* @import "./css/buttons/custom_backforward_large_ff2.css"; /**/
@@ -377,7 +376,7 @@
 /* @import "./css/buttons/custom_backforward_small_kempelton.css"; /**/
 /* @import "./css/buttons/custom_backforward_small_phoenix.css"; /**/
 /* @import "./css/buttons/custom_backforward_connected.css"; /**/ /* round */
-/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/ /* round */ /* not working on Fx 133+ as before */
+/* @import "./css/buttons/custom_backforward_connected_to_location_bar.css"; /**/ /* round */
 /* @import "./css/buttons/custom_backforward_connected_alt.css"; /**/ /* squared */
 /* @import "./css/buttons/custom_backforward_connected_to_location_bar_alt.css"; /**/ /* squared */
 
@@ -643,10 +642,13 @@
    [!] not compatible with 'newtab button always_visible' option
    [!] Fx 133+: compatible with tabs_below_navigation_toolbar.css
    [!] Fx 128-132: only compatible with tabs_below_navigation_toolbar_alt.css
+   [!] Fx 128-140: *_fx128-140.css settings are for Firefox 128-132 only
 */
 
 /* @import "./css/tabs/tabs_multiple_lines.css"; /**/
+/* @import "./css/tabs/tabs_multiple_lines_fx128-140.css"; /**/
 /* @import "./css/tabs/tabs_multiple_lines_force_newtab_button_visibility.css"; /**/
+/* @import "./css/tabs/tabs_multiple_lines_force_newtab_button_visibility_fx128-140.css"; /**/
 
 
 /* ---------------------------------
@@ -800,10 +802,13 @@
 
 /* @import "./css/generalui/popup_compact_menus.css"; /**/
 /* @import "./css/generalui/popup_compact_menus_squared.css"; /**/
-/* @import "./css/generalui/popup_menus_space_before_label.css"; /**/ /* for Fx 139 and older only */
-/* @import "./css/generalui/popup_menus_space_before_label_fx140.css"; /**/ /* for Fx 140+ (test only) */
 /* @import "./css/generalui/popup_menus_menu_background.css"; /**/
 
+/*
+   [!] only use one option at a time
+*/
+/* @import "./css/generalui/popup_menus_space_before_label_fx128_139.css"; /**/ /* for Fx 128-139 */
+/* @import "./css/generalui/popup_menus_space_before_label.css"; /**/ /* for Fx 140+  */
 
 /* ---------------------------
    Other context menu settings

@@ -29,8 +29,6 @@ const NS_NC = "http://home.netscape.com/NC-rdf#";
 
 /* eslint prefer-template: 1 */
 
-const Services = globalThis.Services;
-
 function isElement(obj) {
   return Element.isInstance(obj);
 }

@@ -3,7 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 "use strict";
 
-import {RDFDataSource} from "chrome://userchromejs/content/utils/RDFDataSource.sys.mjs";
+import { RDFDataSource } from "chrome://userchromejs/content/utils/RDFDataSource.sys.mjs";
 
 const RDFURI_INSTALL_MANIFEST_ROOT = "urn:mozilla:install-manifest";
 

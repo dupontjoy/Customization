@@ -627,7 +627,7 @@
                 }, 0);
             }, { once: true });
             this.sb = target;
-            
+
             for (var m = 0, len = this.scripts.length; m < len; m++) {
                 script = this.scripts[m];
                 if (this.ALWAYSEXECUTE.indexOf(script.filename) < 0
@@ -639,7 +639,7 @@
                 let targetWin = script.sandbox ? target : doc.defaultView;
                 if (script.onlyonce && script.isRunning) {
                     if (script.startup) {
-                        Services.scriptloader.loadSubScript("data:application/javascript;," + encodeURIComponent(script.startup));
+                        Cu.evalInSandbox(`(function(script, win){${script.startup}})`, target)(script, target);
                     }
                     continue;
                 }
@@ -766,7 +766,7 @@
                     "userchrome",
                     "app",
                     locales,
-                    "chrome://userchromejs/content/locales/{locale}/"
+                    "chrome://userchromejs/content/utils/locales/{locale}/"
                 ),
             ]);
 

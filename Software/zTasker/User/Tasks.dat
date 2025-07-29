@@ -9,9 +9,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:57:00</StartDateTime>
 		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-27 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-07-27 07:57:00</NextRunTime>
-		<LastRunTime>2025-07-26 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-07-30 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-07-30 07:57:00</NextRunTime>
+		<LastRunTime>2025-07-29 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -773,9 +773,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:57:00</StartDateTime>
 		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-26 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-07-26 17:57:00</NextRunTime>
-		<LastRunTime>2025-07-25 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-07-30 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-07-30 17:57:00</NextRunTime>
+		<LastRunTime>2025-07-29 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -1537,9 +1537,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:27:00</StartDateTime>
 		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-07-26 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-07-26 21:27:00</NextRunTime>
-		<LastRunTime>2025-07-25 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-07-30 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-07-30 21:27:00</NextRunTime>
+		<LastRunTime>2025-07-29 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -2300,10 +2300,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-07-15 09:16:48</EndDateTime>
-		<NextRunDateTime>2125-07-02 06:50:43</NextRunDateTime>
+		<EndDateTime>2025-07-29 13:07:12</EndDateTime>
+		<NextRunDateTime>2035-07-26 11:08:37</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-07-26 06:50:43</LastRunTime>
+		<LastRunTime>2025-07-28 07:35:23</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -2402,7 +2402,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>23</ID>
+				<ID>905-6AYRHOZKR7</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2490,7 +2490,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Delay>
 			<Tasker>
-				<ID>8</ID>
+				<ID>608-1YYNM2O4RC</ID>
 				<TaskType>ttMouseClick</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2599,7 +2599,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Delay>
 			<Tasker>
-				<ID>98</ID>
+				<ID>523-X262C43VRY</ID>
 				<TaskType>ttVolumeSet</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2633,10 +2633,6 @@ env2=value2</edtAppEnv>
 					<SoundPath></SoundPath>
 					<TitleShow>设置系统音量</TitleShow>
 					<TypeShow>音量</TypeShow>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
 					<chkHotkey>0</chkHotkey>
 					<chkHotkeyAlt>0</chkHotkeyAlt>
 					<chkHotkeyCtrl>0</chkHotkeyCtrl>
@@ -2644,40 +2640,25 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<chkVolSetUnMute>1</chkVolSetUnMute>
 					<chkVolWndSet>0</chkVolWndSet>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
 					<cmbBackType_text>压缩</cmbBackType_text>
 					<cmbClass_text></cmbClass_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
-					<edtAppParam></edtAppParam>
-					<edtAppPath></edtAppPath>
-					<edtBackSaveDir></edtBackSaveDir>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtBackZipName></edtBackZipName>
-					<edtBackZipPass></edtBackZipPass>
 					<edtDefRmd></edtDefRmd>
 					<edtDialPass></edtDialPass>
 					<edtDialUser></edtDialUser>
-					<edtFileParam></edtFileParam>
-					<edtFilePath></edtFilePath>
-					<edtProcName></edtProcName>
-					<edtSnapDir></edtSnapDir>
-					<edtSvcStart></edtSvcStart>
-					<edtSvcStop></edtSvcStop>
-					<edtTaskName></edtTaskName>
+					<edtTaskName>设置系统音量</edtTaskName>
 					<edtTaskSubName></edtTaskSubName>
-					<edtToastFloat></edtToastFloat>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
 					<edtVolSet>30</edtVolSet>
-					<edtWebpage></edtWebpage>
+					<edtVolSet.max>100</edtVolSet.max>
+					<edtVolSet.min>1</edtVolSet.min>
 					<httpReq></httpReq>
 					<httpReqHeader></httpReqHeader>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
 				<Name>设置系统音量</Name>
@@ -2695,9 +2676,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 09:00:00</StartDateTime>
 		<EndDateTime>2025-07-13 23:21:36</EndDateTime>
-		<NextRunDateTime>2025-07-27 09:00:00</NextRunDateTime>
-		<NextRunTime>2025-07-27 09:00:00</NextRunTime>
-		<LastRunTime>2025-07-26 09:00:00</LastRunTime>
+		<NextRunDateTime>2025-07-30 09:00:00</NextRunDateTime>
+		<NextRunTime>2025-07-30 09:00:00</NextRunTime>
+		<LastRunTime>2025-07-29 09:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -3087,9 +3068,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 12:00:00</StartDateTime>
 		<EndDateTime>2025-07-24 00:34:08</EndDateTime>
-		<NextRunDateTime>2025-07-27 12:00:00</NextRunDateTime>
-		<NextRunTime>2025-07-27 12:00:00</NextRunTime>
-		<LastRunTime>2025-07-20 12:00:00</LastRunTime>
+		<NextRunDateTime>2025-08-03 12:00:00</NextRunDateTime>
+		<NextRunTime>2025-08-03 12:00:00</NextRunTime>
+		<LastRunTime>2025-07-27 12:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>
@@ -4085,9 +4066,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2025-05-28 13:00:00</StartDateTime>
 		<EndDateTime>2025-07-14 08:42:44</EndDateTime>
-		<NextRunDateTime>2025-07-27 13:00:00</NextRunDateTime>
-		<NextRunTime>2025-07-27 13:00:00</NextRunTime>
-		<LastRunTime>2025-07-20 13:00:00</LastRunTime>
+		<NextRunDateTime>2025-08-03 13:00:00</NextRunDateTime>
+		<NextRunTime>2025-08-03 13:00:00</NextRunTime>
+		<LastRunTime>2025-07-27 13:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>6</Ver>
 		<Param>

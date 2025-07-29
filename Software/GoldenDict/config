@@ -1,22 +1,23 @@
 <config>
- <paths>
-  <path recursive="1">D:/Program Files/GoldenDict/content/dicts</path>
- </paths>
+ <paths/>
  <sounddirs/>
  <dictionaryOrder id="0" name="">
   <dictionary name="教育部重編國語辭典(第五版)">02aa59d32d3a2b3f58e4c65efd649a7f</dictionary>
   <dictionary name="王力古汉语字典文字版">a63428ebd34f222f1755c4e08f6306c3</dictionary>
   <dictionary name="漢語大詞典3">c3c29f92508ce1a24b6839e1b8f44eb4</dictionary>
-  <dictionary name="现代汉语词典7">7fc9ba47acf82b11cec63d3892ba1d47</dictionary>
-  <dictionary name="汉字源流字典2003">15077127c861cb0031a15cbe087bf8d8</dictionary>
-  <dictionary name="字源（整页版）">3541511b76e2a4cf4b3244cd7efff92b</dictionary>
+  <dictionary name="【现代汉语大词典】">14116af56477894c199aadbaeac6398d</dictionary>
+  <dictionary name="现代汉语规范词典第4版">162c511f1f26926b2426118c92648c97</dictionary>
+  <dictionary name="【成语词典】">9881be4c6a1400e1bbcb7011088c181b</dictionary>
+  <dictionary name="【新华字典(第12版)】">85e70b147769ebd1f93b9162993a4de6</dictionary>
+  <dictionary name="漢語大字典 (2010)">3485251e618fddb1dfba536ead6f1241</dictionary>
   <dictionary name="字海(葉典)20210618">1d703bd332b51ab983d32bfed3f58e81</dictionary>
+  <dictionary name="字源（整页版）">3541511b76e2a4cf4b3244cd7efff92b</dictionary>
   <dictionary name="千篇汉语词典2021">6e076422700782496a452c503d85e9bb</dictionary>
   <dictionary name="古人名字解詁">f92666583875ee86a6cf61ade2161578</dictionary>
-  <dictionary name="韦氏高阶英汉双解词典2019">9f327fb63e2cad2a1faddf93a4adb703</dictionary>
-  <dictionary name="牛津高阶英汉双解词典（第9版）">9152153f4410f8049b0770420e09c0d5</dictionary>
   <dictionary name="中國書法大字典·楷書卷">92a5bfd1392b4715cdb346c8c2f17cd9</dictionary>
   <dictionary name="國學大師書法字典(黑白)">5551ccc5c4a6ea22875385af59267111</dictionary>
+  <dictionary name="牛津高阶英汉双解词典（第9版）">9152153f4410f8049b0770420e09c0d5</dictionary>
+  <dictionary name="韦氏高阶英汉双解词典2019">9f327fb63e2cad2a1faddf93a4adb703</dictionary>
   <mutedDictionaries/>
  </dictionaryOrder>
  <inactiveDictionaries id="0" name="">
@@ -82,9 +83,9 @@
  </popupMutedDictionaries>
  <preferences>
   <interfaceLanguage>zh_CN</interfaceLanguage>
-  <interfaceFont>Microsoft YaHei UI</interfaceFont>
+  <interfaceFont>Microsoft YaHei</interfaceFont>
   <interfaceFontSize_0>12</interfaceFontSize_0>
-  <customFonts monospace="Courier New" sans-serif="Arial" serif="Times New Roman" standard="Times New Roman"/>
+  <customFonts monospace="Courier New" sans-serif="Arial" serif="TH-Tshyn-P1" standard="TH-Tshyn-P1"/>
   <displayStyle></displayStyle>
   <newTabsOpenAfterCurrentOne>0</newTabsOpenAfterCurrentOne>
   <newTabsOpenInBackground>1</newTabsOpenInBackground>
@@ -93,7 +94,7 @@
   <hideMenubar>0</hideMenubar>
   <enableTrayIcon>1</enableTrayIcon>
   <startToTray>0</startToTray>
-  <closeToTray>1</closeToTray>
+  <closeToTray>0</closeToTray>
   <autoStart>0</autoStart>
   <doubleClickTranslates>1</doubleClickTranslates>
   <selectWordBySingleClick>0</selectWordBySingleClick>
@@ -175,7 +176,7 @@
  <popupWindowGeometry2>AdnQywADAAAAAAABAAAAIAAAAPcAAAGvAAAAAQAAACAAAAD3AAABrwAAAAAAAAAABVYAAAABAAAAIAAAAPcAAAGv</popupWindowGeometry2>
  <pinPopupWindow>0</pinPopupWindow>
  <popupWindowAlwaysOnTop>0</popupWindowAlwaysOnTop>
- <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAABNAAACivwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAANwAAAooAAACFAP///wAAAAEAAADMAAACivwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAADcAAAE4AAAAZAD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAAAAARIAAADVAAAAYgD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAABcwAAAU4AAABkAP///wAABIYAAAKKAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAIZ/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAABNAAACivwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAANwAAAooAAACHAP///wAAAAEAAADMAAACifwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAADgAAAE4AAAAZQD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAAAAARIAAADVAAAAYwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAABdAAAAU0AAABlAP///wAABIYAAAKJAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAIZ/////wAAAAAAAAAA</mainWindowState>
  <mainWindowGeometry>AdnQywADAAAAAAAA////+AAABVUAAALXAAAAxgAAAF8AAANSAAACeAAAAAACAAAABVYAAAAAAAAAFwAABVUAAALX</mainWindowGeometry>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>
