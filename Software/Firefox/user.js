@@ -1,4 +1,4 @@
-//2025.05.17
+//2025.07.30
 
 
 /*
@@ -26,7 +26,9 @@ user_pref("privacy.userContext.enabled", true);//启用身份标签页
 user_pref("signon.rememberSignons", false);//不保存密码
 user_pref("browser.shell.checkDefaultBrowser", false);//总是检查是否为默认浏览器(否)
 user_pref("browser.search.suggest.enabled", false);//禁用搜索建议
+user_pref("browser.preferences.defaultPerformanceSettings.enabled", false);//使用推荐的性能设置（否），以启用硬件加速
 user_pref("dom.private-attribution.submission.enabled", false);//允许网站进行隐私保护下的广告监测（否）
+user_pref("privacy.globalprivacycontrol.enabled", true);//要求网站不许出售或共享我的数据（是）
 user_pref("browser.preferences.moreFromMozilla", false);//更多Mozilla产品
 user_pref("media.autoplay.default", 0);//自动播放默认值：阻止音频和视频
 user_pref("datareporting.healthreport.uploadEnabled", false);//向 Mozilla 发送技术与交互数据
@@ -63,6 +65,7 @@ user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", false);/
 user_pref("browser.safebrowsing.malware.enabled", false);//关闭欺诈内容和危险软件防护（谷歌网站黑名单）
 user_pref("browser.safebrowsing.phishing.enabled", false);//关闭欺诈内容和危险软件防护（谷歌网站黑名单）
 
+
 //*==========网络相关==========*//
 user_pref("security.enterprise_roots.enabled", true);//未连接：有潜在的安全问题
 user_pref("security.insecure_field_warning.contextual.enabled", false);//未连接：有潜在的安全问题
@@ -71,16 +74,17 @@ user_pref("network.stricttransportsecurity.preloadlist", false);//未连接：�
 user_pref("network.dns.disablePrefetch", true);//关闭dns预读取
 user_pref("network.dns.disablePrefetchFromHTTPS", true);//关闭dns预读取
 
+//缓存
+user_pref("browser.cache.disk.enable", false);//关闭硬盘缓存
+
 
 //*==========FX其它类==========*//
-
 //去除附加组中的"推荐扩展"
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 
 //书签相关
 user_pref("browser.bookmarks.max_backups", 2);//书签最大备份数目
-
 
 //自定义CSS（chrome文件夹）
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);//69以后自动加载 userChrome.ss 和 userContent.css

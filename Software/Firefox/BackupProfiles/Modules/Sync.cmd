@@ -141,9 +141,6 @@ xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\updateNotepad4.cmd" "%OutputD
 xcopy "%BackupDir%\..\..\..\TrafficMonitor\config.json" "%OutputDir%\Customization\Software\TrafficMonitor\" /y
 xcopy "%BackupDir%\..\..\..\TrafficMonitor\global_cfg.ini" "%OutputDir%\Customization\Software\TrafficMonitor\" /y
 
-:XnView
-xcopy "%BackupDir%\..\..\..\XnViewMP\xnview.ini" "%OutputDir%\Customization\Software\XnViewMP\" /y
-
 :xyr
 robocopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config" "%OutputDir%\Customization\Software\xyr系统优化\Config" /MIR /ZB /R:3 /W:5
 

@@ -50,12 +50,12 @@ popd
 mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIMEPortable\weasel\WeaselServer.exe""","::",,"runas",1)(window.close)
 
 ::普通啟動，start 会启动一个新窗口并在其中运行命令
+start  "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
 start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
 start  "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
 start  "" "%cd%\Ditto\Ditto.exe"
 start  "" "%cd%\PixPin\PixPin.exe"
 ::start  "" "%cd%\Snipaste\Snipaste.exe"
-::start  "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
 
 :foxmail
 ::启動Foxmail后，关闭Foxmail的主窗口但不终止进程
