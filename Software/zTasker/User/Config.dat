@@ -60,6 +60,7 @@ chkLockNoHK=0
 cmbLockNoHK=0
 chkTestRunUpdLastTime=0
 chkTaskNextRunWeek=1
+SelfExitTime=2025-08-07 00:06:17
 [Hotkey]
 chkHotkey=0
 new_remind=Ctrl+Shift+R
@@ -84,12 +85,15 @@ fav_enabled=1
 all=Ctrl+Shift+A
 all_key=65
 all_enabled=1
+task_hk=Ctrl+Shift+K
+task_hk_key=75
+task_hk_enabled=1
 [Stat]
 Zoomed=0
-Left=204
-Top=65
-Width=1100
-Height=640
+Left=69
+Top=939
+Width=1300
+Height=800
 Monitor=\\.\DISPLAY1
 Filter=0
 FilterBarWidth=160

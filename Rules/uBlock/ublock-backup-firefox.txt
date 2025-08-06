@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1753504559575,
+  "timeStamp": 1754467389599,
   "version": "1.65.0",
   "userSettings": {
     "alwaysDetachLogger": false,
@@ -7,6 +7,7 @@
     "contextMenuEnabled": false,
     "externalLists": "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt\nhttps://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt\nhttps://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
     "firewallPaneMinimized": false,
+    "ignoreGenericCosmeticFilters": true,
     "importedLists": [
       "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt",
       "https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt",
@@ -27,7 +28,6 @@
     "ublock-unbreak",
     "easylist",
     "adguard-generic",
-    "adguard-mobile",
     "fanboy-cookiemonster",
     "ublock-cookies-easylist",
     "adguard-cookies",
@@ -48,6 +48,7 @@
     "# wyciwyg-scheme",
     "chrome-extension-scheme",
     "chrome-scheme",
+    "cloudflare.com",
     "moz-extension-scheme",
     "opera-scheme",
     "vivaldi-scheme"

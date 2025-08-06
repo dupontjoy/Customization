@@ -22,6 +22,7 @@ userChromeJS.downloadPlus.enableSaveAs 下载对话框启用另存为
 userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 // @note userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 */
+// @note            20250802 修复 Fx140 dropmarker 显示异常, 强制弹出下载对话框
 // @note            20250620 修复按钮和弹出菜单的一些问题
 // @note            20250610 Fx139
 // @note            20250509 修复文件名无效字符导致下载失败的问题，简化几处 locationText 的调用
@@ -217,8 +218,34 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
             }
         },
         initChrome: async function () {
+            Services.prefs.setBoolPref('browser.download.always_ask_before_handling_new_types', true);
             // 保存按钮无需等待即可点击
             Services.prefs.setIntPref('security.dialog_enable_delay', 0);
+
+            let sb = window.userChrome_js?.sb;
+            if (!sb) {
+                sb = Cu.Sandbox(window, {
+                    sandboxPrototype: window,
+                    sameZoneAs: window,
+                });
+
+                /* toSource() is not available in sandbox */
+                Cu.evalInSandbox(`
+          Function.prototype.toSource = window.Function.prototype.toSource;
+          Object.defineProperty(Function.prototype, "toSource", {enumerable : false})
+          Object.prototype.toSource = window.Object.prototype.toSource;
+          Object.defineProperty(Object.prototype, "toSource", {enumerable : false})
+          Array.prototype.toSource = window.Array.prototype.toSource;
+          Object.defineProperty(Array.prototype, "toSource", {enumerable : false})
+      `, sb);
+                window.addEventListener("unload", () => {
+                    setTimeout(() => {
+                        Cu.nukeSandbox(sb);
+                    }, 0);
+                }, { once: true });
+            }
+            this.sb = sb;
+
             if (isTrue('userChromeJS.downloadPlus.enableRename')) {
                 const obsService = Cc['@mozilla.org/observer-service;1'].getService(Ci.nsIObserverService);
                 const RESPONSE_TOPIC = 'http-on-examine-response';
@@ -540,15 +567,8 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                     accesskey: 'E',
                     oncommand: function () {
                         const mainwin = Services.wm.getMostRecentWindow("navigator:browser");
-
-                        // 感谢 ycls006
-                        // mainwin.eval("(" + mainwin.internalSave.toString().replace("let ", "").replace("var fpParams", "fileInfo.fileExt=null;fileInfo.fileName=aDefaultFileName;var fpParams") + ")")(dialog.mLauncher.source.asciiSpec, null, null, ($("#locationText")?.value?.replace(invalidChars, '_') || dialog.mLauncher.suggestedFileName), null, null, false, null, null, null, null, null, false, null, mainwin.PrivateBrowsingUtils.isBrowserPrivate(mainwin.gBrowser.selectedBrowser), Services.scriptSecurityManager.getSystemPrincipal());
-                        let fnSource = "(function() {" + mainwin.internalSave.toString().replace("let ", "").replace("var fpParams", "fileInfo.fileExt=null;fileInfo.fileName=aDefaultFileName;var fpParams") + "\ninternalSave('" + dialog.mLauncher.source.asciiSpec + "', null, null,'" + ($('#locationText')?.value?.replace(invalidChars, '_') || dialog.mLauncher.suggestedFileName) + "', null, null, false, null, null, null, null, null, false, null, " + mainwin.PrivateBrowsingUtils.isBrowserPrivate(mainwin.gBrowser.selectedBrowser) + ", Services.scriptSecurityManager.getSystemPrincipal());\n})()";
-                        try {
-                            Services.scriptloader.loadSubScript("data:application/javascript;," + encodeURIComponent(fnSource), mainwin);
-                        } catch (e) {
-                            console.error(e);
-                        }
+                        // 感谢 ycls006 / alice0775
+                        Cu.evalInSandbox("(" + mainwin.internalSave.toString().replace("let ", "").replace("var fpParams", "fileInfo.fileExt=null;fileInfo.fileName=aDefaultFileName;var fpParams") + ")", mainwin.DownloadPlus.sb)(dialog.mLauncher.source.asciiSpec, null, null, ($("#locationText")?.value?.replace(invalidChars, '_') || dialog.mLauncher.suggestedFileName), null, null, false, null, null, null, null, null, false, null, mainwin.PrivateBrowsingUtils.isBrowserPrivate(mainwin.gBrowser.selectedBrowser), Services.scriptSecurityManager.getSystemPrincipal());
                         close();
                     }
                 });
@@ -1281,5 +1301,11 @@ hbox.copied > #completeLinkDescription {
 .dialog-button-box > .dialog-button {
     min-height: var(--button-min-height-small, 28px) !important;
     max-height: var(--button-min-height-small, 28px) !important;
+}
+.button-menu-dropmarker {
+    appearance: none;
+    content: url("chrome://global/skin/icons/arrow-down-12.svg");
+    -moz-context-properties: fill;
+    fill: currentColor;
 }
 `)

@@ -20,7 +20,7 @@ set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 ::=======================================
 :menu
 call :testGHmirror
-call :update_maa_ota
+:: call :update_maa_ota
 call :update_MaaResource
 call :end
 goto :eof

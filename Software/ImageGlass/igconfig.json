@@ -23,7 +23,7 @@
   "ShowCheckerboardOnlyImageRegion": false,
   "EnableMultiInstances": true,
   "EnableWindowTopMost": false,
-  "ShowDeleteConfirmation": false,
+  "ShowDeleteConfirmation": true,
   "ShowSaveOverrideConfirmation": true,
   "ShouldPreserveModifiedDate": false,
   "OpenSaveAsDialogInTheCurrentImageDir": true,
@@ -33,7 +33,7 @@
   "ShouldUseColorProfileForAll": false,
   "EnableNavigationButtons": true,
   "EnableRecursiveLoading": false,
-  "ShouldUseExplorerSortOrder": true,
+  "ShouldUseExplorerSortOrder": false,
   "ShouldGroupImagesByDirectory": false,
   "ShouldLoadHiddenImages": false,
   "EnableWindowFit": false,
@@ -51,14 +51,14 @@
   "HideToolbarInFullscreen": false,
   "HideGalleryInFullscreen": false,
   "QuickSetupVersion": 9,
-  "FrmMainPositionX": 84,
-  "FrmMainPositionY": 7,
-  "FrmMainWidth": 1215,
-  "FrmMainHeight": 722,
-  "FrmSettingsPositionX": 127,
-  "FrmSettingsPositionY": 46,
-  "FrmSettingsWidth": 1121,
-  "FrmSettingsHeight": 653,
+  "FrmMainPositionX": 40,
+  "FrmMainPositionY": 16,
+  "FrmMainWidth": 1300,
+  "FrmMainHeight": 788,
+  "FrmSettingsPositionX": 200,
+  "FrmSettingsPositionY": 200,
+  "FrmSettingsWidth": 1300,
+  "FrmSettingsHeight": 800,
   "PanSpeed": 20,
   "ZoomSpeed": 0,
   "SlideshowInterval": 5,
@@ -70,7 +70,7 @@
   "ImageBoosterCacheCount": 1,
   "ImageBoosterCacheMaxDimension": 8000,
   "ImageBoosterCacheMaxFileSizeInMb": 100,
-  "ZoomLockValue": 100,
+  "ZoomLockValue": 22.217915,
   "ToolbarIconHeight": 24,
   "ImageEditQuality": 80,
   "InAppMessageDuration": 2000,
@@ -86,9 +86,9 @@
   "AfterEditingAction": "Nothing",
   "WindowBackdrop": "Mica",
   "ColorProfile": "None",
-  "AutoUpdate": "2025-01-24T12:09:58.1374797Z",
-  "LastSeenImagePath": "C:\\Users\\Cing\\Desktop\\PixPin_2025-08-01_19-24-22.png",
-  "LastOpenedSetting": "appearance",
+  "AutoUpdate": "2025-07-03T15:08:01.3763292Z",
+  "LastSeenImagePath": "D:\\Program Files\\CingFox\\Software\\ImageGlass\\default.webp",
+  "LastOpenedSetting": "",
   "DarkTheme": "Kobe",
   "LightTheme": "Kobe-Light",
   "BackgroundColor": "",
@@ -96,7 +96,7 @@
   "Language": "Chinese Simplified.iglang.json",
   "ZoomLevels": [],
   "EditApps": {},
-  "FileFormats": ".3fr;.apng;.ari;.arw;.avif;.b64;.bay;.bmp;.cap;.cr2;.cr3;.crw;.cur;.cut;.dcr;.dcs;.dds;.dib;.dng;.drf;.eip;.emf;.erf;.exif;.exr;.fff;.fits;.flif;.gif;.gifv;.gpr;.hdr;.heic;.heif;.ico;.iiq;.jfif;.jp2;.jpe;.jpeg;.jpg;.jxl;.k25;.kdc;.mdc;.mef;.mjpeg;.mos;.mrw;.nef;.nrw;.obm;.orf;.pbm;.pcx;.pef;.pgm;.png;.ppm;.psb;.psd;.ptx;.pxn;.qoi;.r3d;.raf;.raw;.rw2;.rwl;.rwz;.sr2;.srf;.srw;.svg;.tga;.tif;.tiff;.viff;.webp;.wmf;.wpg;.x3f;.xbm;.xpm;.xv;.jxr;.hdp;.wdp;",
+  "FileFormats": ".3fr;.apng;.ari;.arw;.avif;.b64;.bay;.bmp;.cap;.cr2;.cr3;.crw;.cur;.cut;.dcr;.dcs;.dds;.dib;.dng;.drf;.eip;.emf;.erf;.exif;.exr;.fff;.fits;.flif;.gif;.gifv;.gpr;.hdp;.hdr;.heic;.heif;.ico;.iiq;.jfif;.jp2;.jpe;.jpeg;.jpg;.jxl;.jxr;.k25;.kdc;.mdc;.mef;.mjpeg;.mos;.mrw;.nef;.nrw;.obm;.orf;.pbm;.pcx;.pef;.pgm;.png;.ppm;.psb;.psd;.ptx;.pxn;.qoi;.r3d;.raf;.raw;.rw2;.rwl;.rwz;.sr2;.srf;.srw;.svg;.tga;.tif;.tiff;.viff;.wdp;.webp;.wmf;.wpg;.x3f;.xbm;.xpm;.xv;",
   "SingleFrameFormats": ".avif;.heic;.heif;.psd;.jxl;",
   "ImageInfoTags": [
     "Name",
@@ -138,10 +138,10 @@
     }
   },
   "MouseWheelActions": {
-    "AltAndScroll": "BrowseImages",
-    "CtrlAndScroll": "PanVertically",
     "Scroll": "Zoom",
-    "ShiftAndScroll": "PanHorizontally"
+    "CtrlAndScroll": "PanVertically",
+    "ShiftAndScroll": "PanHorizontally",
+    "AltAndScroll": "BrowseImages"
   },
   "Layout": {},
   "Tools": [
@@ -495,22 +495,5 @@
       "Hotkeys": []
     }
   ],
-  "ToolSettings": {
-    "CropTool": {
-      "InitSelectionType": "Select50Percent",
-      "InitSelectedArea": [
-        "0",
-        "0",
-        "0",
-        "0"
-      ],
-      "CloseToolAfterSaving": "False",
-      "AutoCenterSelection": "True",
-      "AspectRatioValues": [
-        "1",
-        "1"
-      ],
-      "AspectRatio": "Original"
-    }
-  }
+  "ToolSettings": {}
 }

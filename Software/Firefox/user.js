@@ -74,10 +74,6 @@ user_pref("network.stricttransportsecurity.preloadlist", false);//未连接：�
 user_pref("network.dns.disablePrefetch", true);//关闭dns预读取
 user_pref("network.dns.disablePrefetchFromHTTPS", true);//关闭dns预读取
 
-//缓存
-user_pref("browser.cache.disk.enable", false);//关闭硬盘缓存
-
-
 //*==========FX其它类==========*//
 //去除附加组中的"推荐扩展"
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);

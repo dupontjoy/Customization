@@ -1,5 +1,5 @@
-@-moz-document regexp("https://libretv.*.pages.dev/.*"),
-               regexp("https://libretv.*.netlify.app/.*")
+@-moz-document regexp("https://libretv.*.(dev|app|shop|xyz)/.*"),
+               regexp("https://lisp.*.(dev|app|shop|xyz)/.*")
 {
 
 /*顶部栏 高度缩小*/
@@ -60,7 +60,8 @@
  
 }
 
-@-moz-document regexp("https://moontv.*.pages.dev/.*")
+@-moz-document regexp("https://moontv.*.(dev|app|shop|xyz)/.*"), 
+               regexp("https://ytll.*.(dev|app|shop|xyz)/.*")
 {
  /*播放区域缩小*/
 .space-y-2, div.grid-cols-1:nth-child(3) {
