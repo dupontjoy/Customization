@@ -70,7 +70,7 @@
   "ImageBoosterCacheCount": 1,
   "ImageBoosterCacheMaxDimension": 8000,
   "ImageBoosterCacheMaxFileSizeInMb": 100,
-  "ZoomLockValue": 22.217915,
+  "ZoomLockValue": 100,
   "ToolbarIconHeight": 24,
   "ImageEditQuality": 80,
   "InAppMessageDuration": 2000,
@@ -87,7 +87,7 @@
   "WindowBackdrop": "Mica",
   "ColorProfile": "None",
   "AutoUpdate": "2025-07-03T15:08:01.3763292Z",
-  "LastSeenImagePath": "D:\\Program Files\\CingFox\\Software\\ImageGlass\\default.webp",
+  "LastSeenImagePath": "D:\\Program Files\\GoldenDict\\content\\dicts\\chn\\漢语大字典（2010）\\漢語大字典 (2010).png",
   "LastOpenedSetting": "",
   "DarkTheme": "Kobe",
   "LightTheme": "Kobe-Light",
@@ -138,10 +138,10 @@
     }
   },
   "MouseWheelActions": {
-    "Scroll": "Zoom",
+    "AltAndScroll": "BrowseImages",
     "CtrlAndScroll": "PanVertically",
-    "ShiftAndScroll": "PanHorizontally",
-    "AltAndScroll": "BrowseImages"
+    "Scroll": "Zoom",
+    "ShiftAndScroll": "PanHorizontally"
   },
   "Layout": {},
   "Tools": [

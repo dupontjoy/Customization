@@ -71,8 +71,7 @@ user_pref("security.enterprise_roots.enabled", true);//未连接：有潜在的�
 user_pref("security.insecure_field_warning.contextual.enabled", false);//未连接：有潜在的安全问题
 user_pref("security.certerrors.permanentOverride", false);//未连接：有潜在的安全问题
 user_pref("network.stricttransportsecurity.preloadlist", false);//未连接：有潜在的安全问题
-user_pref("network.dns.disablePrefetch", true);//关闭dns预读取
-user_pref("network.dns.disablePrefetchFromHTTPS", true);//关闭dns预读取
+
 
 //*==========FX其它类==========*//
 //去除附加组中的"推荐扩展"

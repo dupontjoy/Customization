@@ -27,11 +27,8 @@ start /b "" cmd /c "cd /d %cd%\adb\platform-tools && adb disconnect 127.0.0.1:16
 taskkill /f /t /im adb.exe
 taskkill /f /t /im maa*
 
-::删除debug文件夹（保存了各种截图和日志），和几个无用的文件
-rd /s /q "%cd%\debug"
+::删除几个无用的文件
 del /s /q "%cd%\compact_log.txt"
-del /s /q "%cd%\filelist.txt"
-del /s /q "%cd%\removelist.txt"
 del /s /q "%cd%\MaaResource_update.log"
 del /s /q "%cd%\main.zip"
 

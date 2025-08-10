@@ -20,7 +20,7 @@ set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 ::=======================================
 :menu
 call :testGHmirror
-:: call :update_maa_ota
+call :update_maa_ota
 call :update_MaaResource
 call :end
 goto :eof
@@ -97,6 +97,7 @@ endlocal
 
 :: 解压
 taskkill /f /t /im maa*
+
 echo. 
 echo. 解压MAAComponent-OTA-win-x64.zip ...
 echo. 
@@ -144,6 +145,7 @@ echo. 本地時间: %local_date%
 :: 使用 PowerShell 下载文件
 echo.
 set "download_url=%GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip"
+echo. [下载] %download_url%
 powershell -Command "Invoke-WebRequest -Uri '%download_url%' -OutFile 'MaaResource-main.zip' -ErrorAction Stop"
 if errorlevel 1 (
     echo 下载失败.
