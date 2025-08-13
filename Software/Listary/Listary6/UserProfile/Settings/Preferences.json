@@ -256,10 +256,10 @@
           "Info": null,
           "Item": {
             "Keyword": "lb",
-            "Url": "https://libretv-698.pages.dev/s={query}",
+            "Url": "https://lizw.netlify.app/s={query}",
             "Title": "Libretv",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://libretv-698.pages.dev/s={query}"
+            "SuggestionUrl": "https://lizw.netlify.app/s={query}"
           }
         },
         {
@@ -267,10 +267,10 @@
           "Info": null,
           "Item": {
             "Keyword": "mn",
-            "Url": "https://moontv-5qj.pages.dev/search?q={query}",
+            "Url": "https://ytll.netlify.app/search?q={query}",
             "Title": "MoonTV",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://moontv-5qj.pages.dev/search?q={query}"
+            "SuggestionUrl": "https://ytll.netlify.app/search?q={query}"
           }
         }
       ],

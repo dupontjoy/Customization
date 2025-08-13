@@ -1,4 +1,4 @@
-//2025.07.30
+//2025.08.10
 
 
 /*
@@ -95,6 +95,10 @@ user_pref("media.videocontrols.picture-in-picture.improved-video-controls.enable
 user_pref("full-screen-api.warning.timeout", 0); //双击设置为 0，关闭视频进入全屏时的提示
 user_pref("full-screen-api.transition-duration.enter", "0 0"); //双击设置为 0 0，去除全屏模式的过渡动画–进入
 user_pref("full-screen-api.transition-duration.leave", "0 0"); //双击设置为 0 0，去除全屏模式的过渡动画–退出
+
+//AI功能，導致CPU 占用显著升高、电量迅速消耗
+user_pref("browser.ml.chat.enabled", false);//关闭 AI 聊天功能
+user_pref("browser.tabs.groups.smart.enabled", false);//关闭智能标签分组
 
 //单项, 未分类
 user_pref("browser.promo.pin.enabled", false);//弹窗推广-固定标签页
