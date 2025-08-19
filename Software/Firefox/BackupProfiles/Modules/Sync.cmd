@@ -6,8 +6,12 @@ Title 备份文件到托管网站
 color 0a
 cls
 
-:: 最小化当前窗口
-powershell -window minimized -command "Start-Process cmd -ArgumentList '/c %~0' -WindowStyle Hidden"
+:: === 修改点：使用原生CMD命令最小化当前窗口 ===
+if not defined _MINIMIZED_ (
+    set "_MINIMIZED_=1"
+    start /min cmd /c "%~f0"
+    exit
+)
 
 ::pushd命令，将当前目录的路径保存下来，并且切换到你指定的新目录路径。
 pushd %~dp0

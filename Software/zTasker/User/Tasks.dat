@@ -10,9 +10,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:57:00</StartDateTime>
 		<EndDateTime>2025-07-30 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-14 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-08-14 07:57:00</NextRunTime>
-		<LastRunTime>2025-08-12 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-08-20 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-08-20 07:57:00</NextRunTime>
+		<LastRunTime>2025-08-19 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -643,9 +643,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:57:00</StartDateTime>
 		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-13 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-08-13 17:57:00</NextRunTime>
-		<LastRunTime>2025-08-12 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-08-19 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-08-19 17:57:00</NextRunTime>
+		<LastRunTime>2025-08-18 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1275,9 +1275,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:27:00</StartDateTime>
 		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-13 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-08-13 21:27:00</NextRunTime>
-		<LastRunTime>2025-08-12 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-08-19 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-08-19 21:27:00</NextRunTime>
+		<LastRunTime>2025-08-18 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1906,16 +1906,16 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-08-08 02:14:24</EndDateTime>
-		<NextRunDateTime>2125-07-20 07:58:51</NextRunDateTime>
+		<EndDateTime>2025-08-17 04:28:48</EndDateTime>
+		<NextRunDateTime>2125-07-26 10:45:52</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-08-13 07:58:51</LastRunTime>
+		<LastRunTime>2025-08-19 10:45:52</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
 			<CountDownHour>0</CountDownHour>
 			<CountDownMin>0</CountDownMin>
-			<CountDownSec>8</CountDownSec>
+			<CountDownSec>10</CountDownSec>
 			<DTOnce>2024-12-26 20:34:03</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
 			<Name>开机运行</Name>
@@ -2023,7 +2023,7 @@ env2=value2</edtAppEnv>
 					<BackClr>-12500671</BackClr>
 					<IsExitRest>0</IsExitRest>
 					<IsPassExitRest>0</IsPassExitRest>
-					<Name>runHome.vbs</Name>
+					<Name>RunHome.vbs</Name>
 					<PlayTime>10</PlayTime>
 					<RestAlpha>0</RestAlpha>
 					<RestClr>-1</RestClr>
@@ -2057,17 +2057,18 @@ env2=value2</edtAppEnv>
 env2=value2</edtAppEnv>
 					<edtAppEnv.max>23</edtAppEnv.max>
 					<edtAppEnv.min>0</edtAppEnv.min>
-					<edtAppPath>D:\Program Files\CingFox\Profiles\BackupProfiles\Modules\runHome.vbs</edtAppPath>
+					<edtAppPath>D:\Program Files\CingFox\Profiles\BackupProfiles\Modules\RunHome.vbs</edtAppPath>
+					<edtAppVar>exec</edtAppVar>
 					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>qd-home.vbs</edtTaskName>
-					<edtTaskSubName>runHome.vbs</edtTaskSubName>
+					<edtTaskName>RunHome.vbs</edtTaskName>
+					<edtTaskSubName>RunHome.vbs</edtTaskSubName>
 					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
 					<optPlaySnd>0</optPlaySnd>
 					<optRmdSnd>0</optRmdSnd>
 					<optRptSnd>0</optRptSnd>
 					<tabBtnTask>1</tabBtnTask>
 				</Param>
-				<Name>runHome.vbs</Name>
+				<Name>RunHome.vbs</Name>
 				<ID>23</ID>
 				<Stat>1</Stat>
 			</Tasker>
@@ -2235,9 +2236,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 10:00:00</StartDateTime>
 		<EndDateTime>2025-08-02 22:43:12</EndDateTime>
-		<NextRunDateTime>2025-08-14 10:00:00</NextRunDateTime>
-		<NextRunTime>2025-08-14 10:00:00</NextRunTime>
-		<LastRunTime>2025-08-13 10:00:00</LastRunTime>
+		<NextRunDateTime>2025-08-20 10:00:00</NextRunDateTime>
+		<NextRunTime>2025-08-20 10:00:00</NextRunTime>
+		<LastRunTime>2025-08-19 10:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2553,9 +2554,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 12:00:00</StartDateTime>
 		<EndDateTime>2025-07-24 00:34:08</EndDateTime>
-		<NextRunDateTime>2025-08-17 12:00:00</NextRunDateTime>
-		<NextRunTime>2025-08-17 12:00:00</NextRunTime>
-		<LastRunTime>2025-08-03 12:00:00</LastRunTime>
+		<NextRunDateTime>2025-08-24 12:00:00</NextRunDateTime>
+		<NextRunTime>2025-08-24 12:00:00</NextRunTime>
+		<LastRunTime>2025-08-17 12:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -3385,9 +3386,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2025-05-28 13:00:00</StartDateTime>
 		<EndDateTime>2025-07-14 08:42:44</EndDateTime>
-		<NextRunDateTime>2025-08-17 13:00:00</NextRunDateTime>
-		<NextRunTime>2025-08-17 13:00:00</NextRunTime>
-		<LastRunTime>2025-08-03 13:00:00</LastRunTime>
+		<NextRunDateTime>2025-08-24 13:00:00</NextRunDateTime>
+		<NextRunTime>2025-08-24 13:00:00</NextRunTime>
+		<LastRunTime>2025-08-17 13:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>

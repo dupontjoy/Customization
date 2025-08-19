@@ -5,8 +5,12 @@
 ::界面颜色大小，Cols为宽，Lines为高
 COLOR 0a
 
-:: 最小化当前窗口
-powershell -window minimized -command "Start-Process cmd -ArgumentList '/c %~0' -WindowStyle Hidden"
+:: === 修改点：使用原生CMD命令最小化当前窗口 ===
+if not defined _MINIMIZED_ (
+    set "_MINIMIZED_=1"
+    start /min cmd /c "%~f0"
+    exit
+)
 
 :settings
 rem 設置路徑

@@ -1,4 +1,4 @@
-::2025.04.17
+::2025.08.18
 
 @echo off
 Title 批量启动程序
@@ -27,7 +27,6 @@ rd /s /q "%cd%\zTasker\User\pinyin.db"
 rd /s /q "%cd%\zTasker\User\TasksBackup"
 rd /s /q "%cd%\zTasker\User\Temp"
 
-
 ::删除FoxmailUpdate文件夹, 有可能导致foxmail无法启动
 rd /s /q "%cd%\..\..\Tencent\Foxmail\FoxmailUpdate"
 
@@ -36,26 +35,28 @@ del /s /q /f "C:\Users\%USERNAME%\Downloads\*"
 del /s /q /f "C:\Users\%USERNAME%\AppData\Local\Temp\*"
 
 :run
-:listary
-::Listary5代
-::start  "" "%cd%\Listary5\UserData\Runlistary5.cmd"
-
-::Listary6代
-::需要获取完整路径才行
-pushd
-call "%cd%\Listary6\UserProfile\Settings\RunListary6.cmd"
-popd
-
-::管理员启动WeaselServer.exe
-mshta vbscript:createobject("shell.application").shellexecute("""%cd%\RimeIMEPortable\weasel\WeaselServer.exe""","::",,"runas",1)(window.close)
-
 ::普通啟動，start 会启动一个新窗口并在其中运行命令
+start "" "%cd%\RimeIMEPortable\weasel\WeaselServer.exe"
 ::start  "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
 start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
 start  "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
 start  "" "%cd%\Ditto\Ditto.exe"
 start  "" "%cd%\PixPin\PixPin.exe"
 ::start  "" "%cd%\Snipaste\Snipaste.exe"
+
+:listary
+::Listary5代
+::start  "" "%cd%\Listary5\UserData\Runlistary5.cmd"
+
+::Listary6代
+::需要获取完整路径才行
+set "listary6_dir=%cd%\Listary6"
+start "" /D "%listary6_dir%" "%listary6_dir%\UserProfile\Settings\RunListary6.cmd"
+
+:capslock
+::需要获取完整路径才行
+set "capslock_dir=%cd%\Capslock+"
+start "" /D "%capslock_dir%" "%capslock_dir%\Capslock+_v3.3.0.exe"
 
 :foxmail
 ::启動Foxmail后，关闭Foxmail的主窗口但不终止进程
@@ -82,9 +83,3 @@ REM 执行脚本并清理
 cscript //nologo click.vbs
 del click.vbs
 
-
-:capslock
-::必须使用pushd+cd方式获取并保存路径的方式启動，相對路径的動作和命令才能生效
-::必须跳转到Capslock+文件夹，启動時会生成配置文件
-cd .\Capslock+\
-start  "" "%cd%\Capslock+_v3.3.0.exe"
