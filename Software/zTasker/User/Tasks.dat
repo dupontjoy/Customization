@@ -638,14 +638,14 @@ env2=value2</edtAppEnv>
 		<TaskType>ttMultiTasker</TaskType>
 		<Stopped>0</Stopped>
 		<HKStopped>1</HKStopped>
-		<QukPhzStopped>0</QukPhzStopped>
+		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:57:00</StartDateTime>
-		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-19 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-08-19 17:57:00</NextRunTime>
-		<LastRunTime>2025-08-18 17:57:00</LastRunTime>
+		<EndDateTime>2025-08-19 00:00:00</EndDateTime>
+		<NextRunDateTime>2025-08-20 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-08-20 17:57:00</NextRunTime>
+		<LastRunTime>2025-08-19 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -687,15 +687,24 @@ env2=value2</edtAppEnv>
 			<chkHKMouseEdge4>0</chkHKMouseEdge4>
 			<chkHotkey>0</chkHotkey>
 			<chkHotkeyAlt>0</chkHotkeyAlt>
+			<chkHotkeyAltM>0</chkHotkeyAltM>
 			<chkHotkeyCtrl>0</chkHotkeyCtrl>
+			<chkHotkeyCtrlM>0</chkHotkeyCtrlM>
 			<chkHotkeyLeft>0</chkHotkeyLeft>
 			<chkHotkeyMiddle>0</chkHotkeyMiddle>
+			<chkHotkeyMouseMod>0</chkHotkeyMouseMod>
 			<chkHotkeyRight>0</chkHotkeyRight>
 			<chkHotkeyShift>0</chkHotkeyShift>
+			<chkHotkeyShiftM>0</chkHotkeyShiftM>
 			<chkHotkeyWheel>0</chkHotkeyWheel>
 			<chkHotkeyWin>0</chkHotkeyWin>
+			<chkHotkeyWinM>0</chkHotkeyWinM>
+			<chkQukPhz>0</chkQukPhz>
+			<chkQukPhzProc>0</chkQukPhzProc>
+			<chkQukPhzTip>1</chkQukPhzTip>
 			<chkRunMiss>0</chkRunMiss>
 			<chkSKPartMatch>0</chkSKPartMatch>
+			<chkSKProcActiveWnd>0</chkSKProcActiveWnd>
 			<chkSKProcExists>0</chkSKProcExists>
 			<chkSKWinExists>0</chkSKWinExists>
 			<chkSKWinFore>0</chkSKWinFore>
@@ -712,11 +721,14 @@ env2=value2</edtAppEnv>
 			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
 			<cmbClass>无</cmbClass>
 			<cmbClass_text>无</cmbClass_text>
+			<cmbExecExitType>0</cmbExecExitType>
+			<cmbExecExitType_text>跳过执行</cmbExecExitType_text>
 			<cmbHKMouse>0</cmbHKMouse>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
 			<cmbHotkey>0</cmbHotkey>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtEveryDay>1</edtEveryDay>
+			<edtExecExitWaitTime>60</edtExecExitWaitTime>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
 			<edtHKMouseCorner>50</edtHKMouseCorner>
@@ -769,6 +781,7 @@ env2=value2</edtAppEnv>
 					<chkHotkeyCtrl>0</chkHotkeyCtrl>
 					<chkHotkeyShift>0</chkHotkeyShift>
 					<chkHotkeyWin>0</chkHotkeyWin>
+					<chkQukPhz>0</chkQukPhz>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
@@ -781,6 +794,7 @@ env2=value2</edtAppEnv>
 					<edtAppEnv.max>23</edtAppEnv.max>
 					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppPath>D:\Program Files\MAA\updateMaaResource.cmd</edtAppPath>
+					<edtAppVar>exec</edtAppVar>
 					<edtExecWaitTime>0</edtExecWaitTime>
 					<edtTaskName>更新maa</edtTaskName>
 					<edtTaskSubName>更新maa</edtTaskSubName>
@@ -870,6 +884,7 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWheel>0</chkHotkeyWheel>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<chkMemOnce>0</chkMemOnce>
+					<chkQukPhz>0</chkQukPhz>
 					<chkRunMiss>0</chkRunMiss>
 					<chkSKPartMatch>0</chkSKPartMatch>
 					<chkSKProcExists>0</chkSKProcExists>
@@ -919,6 +934,7 @@ env2=value2</edtAppEnv>
 					<edtAppEnv.max>23</edtAppEnv.max>
 					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppPath>D:\Program Files\MAA\RunMAA.cmd</edtAppPath>
+					<edtAppVar>exec</edtAppVar>
 					<edtDayLimitMax>24</edtDayLimitMax>
 					<edtDayLimitMin>0</edtDayLimitMin>
 					<edtDelayBoot>0</edtDelayBoot>
@@ -1275,9 +1291,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:27:00</StartDateTime>
 		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-19 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-08-19 21:27:00</NextRunTime>
-		<LastRunTime>2025-08-18 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-08-20 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-08-20 21:27:00</NextRunTime>
+		<LastRunTime>2025-08-19 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1907,7 +1923,7 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-08-17 04:28:48</EndDateTime>
-		<NextRunDateTime>2125-07-26 10:45:52</NextRunDateTime>
+		<NextRunDateTime>2035-08-17 22:19:28</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
 		<LastRunTime>2025-08-19 10:45:52</LastRunTime>
 		<Fav>0</Fav>

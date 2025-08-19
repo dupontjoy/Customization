@@ -57,6 +57,7 @@ xcopy "%BackupDir%\..\..\..\foobar2000\profile\config.sqlite" "%OutputDir%\Custo
 
 :GitExtensions
 xcopy "%BackupDir%\..\..\..\GitExtensions\GitExtensions.settings" "%OutputDir%\Customization\Software\GitExtensions\" /y
+xcopy "C:\Users\%USERNAME%\.gitconfig" "%OutputDir%\Customization\Software\GitExtensions\" /y
 
 :GoldenDict
 xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customization\Software\GoldenDict\" /y

@@ -1,0 +1,34 @@
+::2025.07.14
+::注意換行符必须是：windows（CR+LF）
+
+Title 安装系统后恢复一些软件的设置
+::界面颜色大小，Cols为宽，Lines为高
+color 0a
+cls
+
+:: === 修改点：使用原生CMD命令最小化当前窗口 ===
+if not defined _MINIMIZED_ (
+    set "_MINIMIZED_=1"
+    start /min cmd /c "%~f0"
+    exit
+)
+
+::pushd命令，将当前目录的路径保存下来，并且切换到你指定的新目录路径。
+pushd %~dp0
+
+::設置文件所在位置
+set "SettingsDir=E:\My Documents\Nutstore\NutStoreSync"
+
+:anytxt
+robocopy "%SettingsDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt\config" /MIR /ZB /R:3 /W:5
+
+:gitextension
+xcopy "%SettingsDir%\Customization\Software\GitExtensions\.gitconfig" "C:\Users\%USERNAME%\" /y
+
+:zlib
+::zlib可用域名
+xcopy "%SettingsDir%\Customization\Software\z-library\config.json" "C:\Users\%USERNAME%\AppData\Roaming\z-library\" /y
+
+:end
+timeout /t 3 /nobreak >nul
+exit

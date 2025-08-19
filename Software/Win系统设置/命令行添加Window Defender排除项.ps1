@@ -1,0 +1,2 @@
+Set-ExecutionPolicy remotesigned
+Add-MpPreference -ExclusionPath "C:\Users", "D:\Program Files", "E:\Program Files", "E:\Cing@Soft", "E:\My Documents", "F:\Cing@Soft", "F:\D≈ÃBackup", "G:\Cing@Soft", "G:\D≈ÃBackup", "H:\Cing@Soft", "H:\D≈ÃBackup"

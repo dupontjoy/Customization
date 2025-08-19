@@ -1,0 +1,23 @@
+[core]
+	editor = notepad
+[user]
+	name = 玄清介
+	email = dupontjoy@users.noreply.github.com
+[diff]
+	guitool = bc3
+[difftool "bc3"]
+	path = bcomp.exe
+	cmd = \"bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
+[merge]
+	guitool = bc3
+[mergetool "bc3"]
+	path = bcomp.exe
+	cmd = \"bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+[pull]
+	rebase = false
+[fetch]
+	prune = false
+[rebase]
+	autoStash = false
+	autosquash = false
+	updateRefs = false

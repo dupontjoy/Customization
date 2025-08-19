@@ -62,7 +62,7 @@ start "" /D "%capslock_dir%" "%capslock_dir%\Capslock+_v3.3.0.exe"
 ::启動Foxmail后，关闭Foxmail的主窗口但不终止进程
 start "" "%cd%\..\..\Tencent\Foxmail\Foxmail.exe"
 REM 等待Foxmail完全启动，可根据需要调整等待时间
-timeout /t 10 /nobreak >nul
+timeout /t 8 /nobreak >nul
 :: 使用PowerShell脚本关闭Foxmail的主窗口但不终止进程
 powershell -command "& {$app = Get-Process -Name Foxmail; if ($app) { $app.CloseMainWindow() | Out-Null } else { Write-Host 'Foxmail is not running.' }}"
 
