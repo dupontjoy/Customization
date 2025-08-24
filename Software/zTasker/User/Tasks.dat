@@ -5,14 +5,14 @@
 		<TaskType>ttMultiTasker</TaskType>
 		<Stopped>0</Stopped>
 		<HKStopped>1</HKStopped>
-		<QukPhzStopped>0</QukPhzStopped>
+		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:57:00</StartDateTime>
-		<EndDateTime>2025-07-30 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-20 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-08-20 07:57:00</NextRunTime>
-		<LastRunTime>2025-08-19 07:57:00</LastRunTime>
+		<EndDateTime>2025-08-23 00:00:00</EndDateTime>
+		<NextRunDateTime>2025-08-25 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-08-25 07:57:00</NextRunTime>
+		<LastRunTime>2025-08-24 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -54,15 +54,24 @@
 			<chkHKMouseEdge4>0</chkHKMouseEdge4>
 			<chkHotkey>0</chkHotkey>
 			<chkHotkeyAlt>0</chkHotkeyAlt>
+			<chkHotkeyAltM>0</chkHotkeyAltM>
 			<chkHotkeyCtrl>0</chkHotkeyCtrl>
+			<chkHotkeyCtrlM>0</chkHotkeyCtrlM>
 			<chkHotkeyLeft>0</chkHotkeyLeft>
 			<chkHotkeyMiddle>0</chkHotkeyMiddle>
+			<chkHotkeyMouseMod>0</chkHotkeyMouseMod>
 			<chkHotkeyRight>0</chkHotkeyRight>
 			<chkHotkeyShift>0</chkHotkeyShift>
+			<chkHotkeyShiftM>0</chkHotkeyShiftM>
 			<chkHotkeyWheel>0</chkHotkeyWheel>
 			<chkHotkeyWin>0</chkHotkeyWin>
+			<chkHotkeyWinM>0</chkHotkeyWinM>
+			<chkQukPhz>0</chkQukPhz>
+			<chkQukPhzProc>0</chkQukPhzProc>
+			<chkQukPhzTip>1</chkQukPhzTip>
 			<chkRunMiss>0</chkRunMiss>
 			<chkSKPartMatch>0</chkSKPartMatch>
+			<chkSKProcActiveWnd>0</chkSKProcActiveWnd>
 			<chkSKProcExists>0</chkSKProcExists>
 			<chkSKWinExists>0</chkSKWinExists>
 			<chkSKWinFore>0</chkSKWinFore>
@@ -79,11 +88,14 @@
 			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
 			<cmbClass>无</cmbClass>
 			<cmbClass_text>无</cmbClass_text>
+			<cmbExecExitType>0</cmbExecExitType>
+			<cmbExecExitType_text>跳过执行</cmbExecExitType_text>
 			<cmbHKMouse>0</cmbHKMouse>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
 			<cmbHotkey>0</cmbHotkey>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtEveryDay>1</edtEveryDay>
+			<edtExecExitWaitTime>60</edtExecExitWaitTime>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
 			<edtHKMouseCorner>50</edtHKMouseCorner>
@@ -136,6 +148,7 @@
 					<chkHotkeyCtrl>0</chkHotkeyCtrl>
 					<chkHotkeyShift>0</chkHotkeyShift>
 					<chkHotkeyWin>0</chkHotkeyWin>
+					<chkQukPhz>0</chkQukPhz>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
@@ -148,6 +161,7 @@ env2=value2</edtAppEnv>
 					<edtAppEnv.max>1</edtAppEnv.max>
 					<edtAppEnv.min>16843008</edtAppEnv.min>
 					<edtAppPath>D:\Program Files\MAA\updateMaaResource.cmd</edtAppPath>
+					<edtAppVar>exec</edtAppVar>
 					<edtExecWaitTime>0</edtExecWaitTime>
 					<edtTaskName>更新maa</edtTaskName>
 					<edtTaskSubName>更新maa</edtTaskSubName>
@@ -237,6 +251,7 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWheel>0</chkHotkeyWheel>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<chkMemOnce>0</chkMemOnce>
+					<chkQukPhz>0</chkQukPhz>
 					<chkRunMiss>0</chkRunMiss>
 					<chkSKPartMatch>0</chkSKPartMatch>
 					<chkSKProcExists>0</chkSKProcExists>
@@ -318,322 +333,6 @@ env2=value2</edtAppEnv>
 		</Actions>
 	</TaskItem>
 	<TaskItem>
-		<ID>817-04GADITWND</ID>
-		<TaskType>ttMultiTasker</TaskType>
-		<Stopped>1</Stopped>
-		<HKStopped>1</HKStopped>
-		<QukPhzStopped>0</QukPhzStopped>
-		<HasEndDateTime>0</HasEndDateTime>
-		<SchType>2</SchType>
-		<StartDateTime>1970-12-30 08:57:00</StartDateTime>
-		<EndDateTime>2025-07-21 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-09 08:57:00</NextRunDateTime>
-		<NextRunTime>2025-08-09 08:57:00</NextRunTime>
-		<LastRunTime>2025-08-08 08:57:00</LastRunTime>
-		<Fav>0</Fav>
-		<Ver>7</Ver>
-		<Param>
-			<CountDownHour>1</CountDownHour>
-			<CountDownMin>0</CountDownMin>
-			<CountDownSec>0</CountDownSec>
-			<DTOnce>2025-04-09 15:10:49</DTOnce>
-			<EveryMonthDay>0</EveryMonthDay>
-			<Name>MAA-换班</Name>
-			<TitleShow>弹窗提醒</TitleShow>
-			<TypeShow>提醒</TypeShow>
-			<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
-			<chkAutoClose>0</chkAutoClose>
-			<chkAutoCloseHK>0</chkAutoCloseHK>
-			<chkDayLimit1>0</chkDayLimit1>
-			<chkDayLimit2>0</chkDayLimit2>
-			<chkDayLimit3>0</chkDayLimit3>
-			<chkDayLimit4>0</chkDayLimit4>
-			<chkDayLimit5>0</chkDayLimit5>
-			<chkDayLimit6>0</chkDayLimit6>
-			<chkDayLimit7>0</chkDayLimit7>
-			<chkDayLimitTime>0</chkDayLimitTime>
-			<chkDayLimitTimeRev>0</chkDayLimitTimeRev>
-			<chkEndDateSel>0</chkEndDateSel>
-			<chkExecDlg>0</chkExecDlg>
-			<chkExecDlgHK>0</chkExecDlgHK>
-			<chkExecExitFocus>0</chkExecExitFocus>
-			<chkExecExitFullScr>0</chkExecExitFullScr>
-			<chkExecExitPre>1</chkExecExitPre>
-			<chkHKMouseCorner>0</chkHKMouseCorner>
-			<chkHKMouseCorner1>0</chkHKMouseCorner1>
-			<chkHKMouseCorner2>0</chkHKMouseCorner2>
-			<chkHKMouseCorner3>0</chkHKMouseCorner3>
-			<chkHKMouseCorner4>0</chkHKMouseCorner4>
-			<chkHKMouseEdge>0</chkHKMouseEdge>
-			<chkHKMouseEdge1>0</chkHKMouseEdge1>
-			<chkHKMouseEdge2>0</chkHKMouseEdge2>
-			<chkHKMouseEdge3>0</chkHKMouseEdge3>
-			<chkHKMouseEdge4>0</chkHKMouseEdge4>
-			<chkHotkey>0</chkHotkey>
-			<chkHotkeyAlt>0</chkHotkeyAlt>
-			<chkHotkeyCtrl>0</chkHotkeyCtrl>
-			<chkHotkeyLeft>0</chkHotkeyLeft>
-			<chkHotkeyMiddle>0</chkHotkeyMiddle>
-			<chkHotkeyRight>0</chkHotkeyRight>
-			<chkHotkeyShift>0</chkHotkeyShift>
-			<chkHotkeyWheel>0</chkHotkeyWheel>
-			<chkHotkeyWin>0</chkHotkeyWin>
-			<chkRunMiss>0</chkRunMiss>
-			<chkSKPartMatch>0</chkSKPartMatch>
-			<chkSKProcExists>0</chkSKProcExists>
-			<chkSKWinExists>0</chkSKWinExists>
-			<chkSKWinFore>0</chkSKWinFore>
-			<chkSKWinMouseIn>0</chkSKWinMouseIn>
-			<chkSKWinSub>0</chkSKWinSub>
-			<chkSchLimitCount>0</chkSchLimitCount>
-			<chkSelfDelete>0</chkSelfDelete>
-			<chkTimer>1</chkTimer>
-			<chkUseStartDT>1</chkUseStartDT>
-			<chkWakeRunMiss>0</chkWakeRunMiss>
-			<cmbAutoCloseAction>0</cmbAutoCloseAction>
-			<cmbAutoCloseActionHK>0</cmbAutoCloseActionHK>
-			<cmbAutoCloseActionHK_text>执行</cmbAutoCloseActionHK_text>
-			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
-			<cmbClass>无</cmbClass>
-			<cmbClass_text>无</cmbClass_text>
-			<cmbHKMouse>0</cmbHKMouse>
-			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
-			<cmbHotkey>0</cmbHotkey>
-			<edtDelayBoot>0</edtDelayBoot>
-			<edtEveryDay>1</edtEveryDay>
-			<edtExecSec>30</edtExecSec>
-			<edtExecSecHK>5</edtExecSecHK>
-			<edtHKMouseCorner>50</edtHKMouseCorner>
-			<edtHKMouseEdge>50</edtHKMouseEdge>
-			<edtSchLimitCount>1</edtSchLimitCount>
-			<edtTaskName>MAA-换班</edtTaskName>
-			<edtWakeDelayBoot>0</edtWakeDelayBoot>
-			<optHKKey>1</optHKKey>
-			<optHKMouse>0</optHKMouse>
-		</Param>
-		<Actions>
-			<Tasker>
-				<ID>13</ID>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<QukPhzStopped>0</QukPhzStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
-				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
-				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>7</Ver>
-				<Param>
-					<BackClr>-12500671</BackClr>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>更新maa</Name>
-					<PlayTime>10</PlayTime>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<TitleShow>运行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppVar>0</chkAppVar>
-					<chkExecWait>1</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<cmbAppShowCmd>1</cmbAppShowCmd>
-					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbEcecType>1</cmbEcecType>
-					<cmbEcecType_text>同步</cmbEcecType_text>
-					<cmbHotkey>0</cmbHotkey>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppEnv.max>1</edtAppEnv.max>
-					<edtAppEnv.min>16843008</edtAppEnv.min>
-					<edtAppPath>D:\Program Files\MAA\updateMaaResource.cmd</edtAppPath>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>更新maa</edtTaskName>
-					<edtTaskSubName>更新maa</edtTaskSubName>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>更新maa</Name>
-				<ID>13</ID>
-				<Stat>1</Stat>
-			</Tasker>
-			<Tasker>
-				<ID>48</ID>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>1</HKStopped>
-				<QukPhzStopped>0</QukPhzStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>2</SchType>
-				<StartDateTime>2024-08-25 07:57:00</StartDateTime>
-				<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-				<NextRunDateTime>2025-04-10 07:57:00</NextRunDateTime>
-				<NextRunTime>2025-04-10 07:57:00</NextRunTime>
-				<LastRunTime>2025-04-09 07:57:00</LastRunTime>
-				<Fav>0</Fav>
-				<Ver>7</Ver>
-				<Param>
-					<BackClr>-12500671</BackClr>
-					<CountDownHour>1</CountDownHour>
-					<CountDownMin>0</CountDownMin>
-					<CountDownSec>0</CountDownSec>
-					<DTOnce>2024-11-30 08:10:03</DTOnce>
-					<DayLimit>1,2,3,4,5,6,7</DayLimit>
-					<EveryMonthDay>0</EveryMonthDay>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>运行maa</Name>
-					<PlayTime>10</PlayTime>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SnapFormat>jpg</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<TitleShow>运行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<YearDay>1</YearDay>
-					<YearMonth>1</YearMonth>
-					<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
-					<btnTaskType>0</btnTaskType>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppVar>0</chkAppVar>
-					<chkAutoClose>0</chkAutoClose>
-					<chkAutoCloseHK>0</chkAutoCloseHK>
-					<chkDayLimit1>1</chkDayLimit1>
-					<chkDayLimit2>1</chkDayLimit2>
-					<chkDayLimit3>1</chkDayLimit3>
-					<chkDayLimit4>1</chkDayLimit4>
-					<chkDayLimit5>1</chkDayLimit5>
-					<chkDayLimit6>1</chkDayLimit6>
-					<chkDayLimit7>1</chkDayLimit7>
-					<chkDayLimitTime>0</chkDayLimitTime>
-					<chkDayLimitTimeRev>0</chkDayLimitTimeRev>
-					<chkEndDateNone>1</chkEndDateNone>
-					<chkEndDateSel>0</chkEndDateSel>
-					<chkExecDlg>0</chkExecDlg>
-					<chkExecDlgHK>0</chkExecDlgHK>
-					<chkExecExitFocus>0</chkExecExitFocus>
-					<chkExecExitFullScr>0</chkExecExitFullScr>
-					<chkExecExitPre>1</chkExecExitPre>
-					<chkExecPost>0</chkExecPost>
-					<chkExecPre>0</chkExecPre>
-					<chkExecWait>1</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyLeft>0</chkHotkeyLeft>
-					<chkHotkeyMiddle>0</chkHotkeyMiddle>
-					<chkHotkeyRight>0</chkHotkeyRight>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWheel>0</chkHotkeyWheel>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<chkMemOnce>0</chkMemOnce>
-					<chkRunMiss>0</chkRunMiss>
-					<chkSKPartMatch>0</chkSKPartMatch>
-					<chkSKProcExists>0</chkSKProcExists>
-					<chkSKWinExists>0</chkSKWinExists>
-					<chkSKWinFore>0</chkSKWinFore>
-					<chkSelfDelete>0</chkSelfDelete>
-					<chkTimer>1</chkTimer>
-					<chkUseStartDT>1</chkUseStartDT>
-					<chkWakeRunMiss>0</chkWakeRunMiss>
-					<cmbAppShowCmd>0</cmbAppShowCmd>
-					<cmbAppShowCmd_text>隐藏</cmbAppShowCmd_text>
-					<cmbAutoCloseAction>0</cmbAutoCloseAction>
-					<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType_text>复制</cmbBackType_text>
-					<cmbClass>无</cmbClass>
-					<cmbDayLimit>周一,周二,周三,周...</cmbDayLimit>
-					<cmbEcecType>1</cmbEcecType>
-					<cmbEcecType_text>同步</cmbEcecType_text>
-					<cmbEveryMonth_text>1</cmbEveryMonth_text>
-					<cmbExecPost>0</cmbExecPost>
-					<cmbExecPost_text>启用计划</cmbExecPost_text>
-					<cmbExecPre>0</cmbExecPre>
-					<cmbExecPre_text>启用计划</cmbExecPre_text>
-					<cmbHKMouse>0</cmbHKMouse>
-					<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
-					<cmbHotkey>0</cmbHotkey>
-					<cmbIdle_text>空闲指定时间后</cmbIdle_text>
-					<cmbInetStat_text>上线(从离线变为在线)</cmbInetStat_text>
-					<cmbLidStat_text>合上时</cmbLidStat_text>
-					<cmbMon_text>SDC464C(主显示器)</cmbMon_text>
-					<cmbPing_text>可以Ping通</cmbPing_text>
-					<cmbPort_text>端口开放</cmbPort_text>
-					<cmbProcChk_text>创建(从无到有)</cmbProcChk_text>
-					<cmbRemindFont_text>12</cmbRemindFont_text>
-					<cmbSnapFmt_text>jpg</cmbSnapFmt_text>
-					<cmbSound_text>无</cmbSound_text>
-					<cmbTimeSyncSrv_text>time.nist.gov</cmbTimeSyncSrv_text>
-					<cmbWheelDirect_text>向上</cmbWheelDirect_text>
-					<cmbWinHide_text>隐藏</cmbWinHide_text>
-					<cmbWndChk_text>创建(从无到有)</cmbWndChk_text>
-					<combMonth_text>1</combMonth_text>
-					<combYearDay_text>1</combYearDay_text>
-					<combYearMonth_text>1</combYearMonth_text>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppEnv.max>23</edtAppEnv.max>
-					<edtAppEnv.min>0</edtAppEnv.min>
-					<edtAppPath>D:\Program Files\MAA\RunMAA.cmd</edtAppPath>
-					<edtDayLimitMax>24</edtDayLimitMax>
-					<edtDayLimitMin>0</edtDayLimitMin>
-					<edtDelayBoot>0</edtDelayBoot>
-					<edtEveryDay>1</edtEveryDay>
-					<edtEveryHour>1</edtEveryHour>
-					<edtEveryMin>30</edtEveryMin>
-					<edtEverySec>30</edtEverySec>
-					<edtExecSec>30</edtExecSec>
-					<edtExecSecHK>5</edtExecSecHK>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>运行maa</edtTaskName>
-					<edtTaskSubName>运行maa</edtTaskSubName>
-					<edtWakeDelayBoot>0</edtWakeDelayBoot>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optHKKey>1</optHKKey>
-					<optHKMouse>0</optHKMouse>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<tabBtnExec>0</tabBtnExec>
-					<tabBtnHK>0</tabBtnHK>
-					<tabBtnSch>0</tabBtnSch>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>运行maa</Name>
-				<ID>48</ID>
-				<Stat>1</Stat>
-			</Tasker>
-		</Actions>
-	</TaskItem>
-	<TaskItem>
 		<ID>183</ID>
 		<TaskType>ttMultiTasker</TaskType>
 		<Stopped>0</Stopped>
@@ -642,10 +341,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:57:00</StartDateTime>
-		<EndDateTime>2025-08-19 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-20 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-08-20 17:57:00</NextRunTime>
-		<LastRunTime>2025-08-19 17:57:00</LastRunTime>
+		<EndDateTime>2025-08-23 00:00:00</EndDateTime>
+		<NextRunDateTime>2025-08-24 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-08-24 17:57:00</NextRunTime>
+		<LastRunTime>2025-08-23 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -966,334 +665,18 @@ env2=value2</edtAppEnv>
 		</Actions>
 	</TaskItem>
 	<TaskItem>
-		<ID>402-KOII12GS3R</ID>
-		<TaskType>ttMultiTasker</TaskType>
-		<Stopped>1</Stopped>
-		<HKStopped>1</HKStopped>
-		<QukPhzStopped>0</QukPhzStopped>
-		<HasEndDateTime>0</HasEndDateTime>
-		<SchType>2</SchType>
-		<StartDateTime>1970-12-30 18:57:00</StartDateTime>
-		<EndDateTime>2025-07-21 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-09 18:57:00</NextRunDateTime>
-		<NextRunTime>2025-08-09 18:57:00</NextRunTime>
-		<LastRunTime>2025-08-08 18:57:00</LastRunTime>
-		<Fav>0</Fav>
-		<Ver>7</Ver>
-		<Param>
-			<CountDownHour>1</CountDownHour>
-			<CountDownMin>0</CountDownMin>
-			<CountDownSec>0</CountDownSec>
-			<DTOnce>2025-04-09 15:10:49</DTOnce>
-			<EveryMonthDay>0</EveryMonthDay>
-			<Name>MAA-换班</Name>
-			<TitleShow>弹窗提醒</TitleShow>
-			<TypeShow>提醒</TypeShow>
-			<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
-			<chkAutoClose>0</chkAutoClose>
-			<chkAutoCloseHK>0</chkAutoCloseHK>
-			<chkDayLimit1>0</chkDayLimit1>
-			<chkDayLimit2>0</chkDayLimit2>
-			<chkDayLimit3>0</chkDayLimit3>
-			<chkDayLimit4>0</chkDayLimit4>
-			<chkDayLimit5>0</chkDayLimit5>
-			<chkDayLimit6>0</chkDayLimit6>
-			<chkDayLimit7>0</chkDayLimit7>
-			<chkDayLimitTime>0</chkDayLimitTime>
-			<chkDayLimitTimeRev>0</chkDayLimitTimeRev>
-			<chkEndDateSel>0</chkEndDateSel>
-			<chkExecDlg>0</chkExecDlg>
-			<chkExecDlgHK>0</chkExecDlgHK>
-			<chkExecExitFocus>0</chkExecExitFocus>
-			<chkExecExitFullScr>0</chkExecExitFullScr>
-			<chkExecExitPre>1</chkExecExitPre>
-			<chkHKMouseCorner>0</chkHKMouseCorner>
-			<chkHKMouseCorner1>0</chkHKMouseCorner1>
-			<chkHKMouseCorner2>0</chkHKMouseCorner2>
-			<chkHKMouseCorner3>0</chkHKMouseCorner3>
-			<chkHKMouseCorner4>0</chkHKMouseCorner4>
-			<chkHKMouseEdge>0</chkHKMouseEdge>
-			<chkHKMouseEdge1>0</chkHKMouseEdge1>
-			<chkHKMouseEdge2>0</chkHKMouseEdge2>
-			<chkHKMouseEdge3>0</chkHKMouseEdge3>
-			<chkHKMouseEdge4>0</chkHKMouseEdge4>
-			<chkHotkey>0</chkHotkey>
-			<chkHotkeyAlt>0</chkHotkeyAlt>
-			<chkHotkeyCtrl>0</chkHotkeyCtrl>
-			<chkHotkeyLeft>0</chkHotkeyLeft>
-			<chkHotkeyMiddle>0</chkHotkeyMiddle>
-			<chkHotkeyRight>0</chkHotkeyRight>
-			<chkHotkeyShift>0</chkHotkeyShift>
-			<chkHotkeyWheel>0</chkHotkeyWheel>
-			<chkHotkeyWin>0</chkHotkeyWin>
-			<chkRunMiss>0</chkRunMiss>
-			<chkSKPartMatch>0</chkSKPartMatch>
-			<chkSKProcExists>0</chkSKProcExists>
-			<chkSKWinExists>0</chkSKWinExists>
-			<chkSKWinFore>0</chkSKWinFore>
-			<chkSKWinMouseIn>0</chkSKWinMouseIn>
-			<chkSKWinSub>0</chkSKWinSub>
-			<chkSchLimitCount>0</chkSchLimitCount>
-			<chkSelfDelete>0</chkSelfDelete>
-			<chkTimer>1</chkTimer>
-			<chkUseStartDT>1</chkUseStartDT>
-			<chkWakeRunMiss>0</chkWakeRunMiss>
-			<cmbAutoCloseAction>0</cmbAutoCloseAction>
-			<cmbAutoCloseActionHK>0</cmbAutoCloseActionHK>
-			<cmbAutoCloseActionHK_text>执行</cmbAutoCloseActionHK_text>
-			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
-			<cmbClass>无</cmbClass>
-			<cmbClass_text>无</cmbClass_text>
-			<cmbHKMouse>0</cmbHKMouse>
-			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
-			<cmbHotkey>0</cmbHotkey>
-			<edtDelayBoot>0</edtDelayBoot>
-			<edtEveryDay>1</edtEveryDay>
-			<edtExecSec>30</edtExecSec>
-			<edtExecSecHK>5</edtExecSecHK>
-			<edtHKMouseCorner>50</edtHKMouseCorner>
-			<edtHKMouseEdge>50</edtHKMouseEdge>
-			<edtSchLimitCount>1</edtSchLimitCount>
-			<edtTaskName>MAA-换班</edtTaskName>
-			<edtWakeDelayBoot>0</edtWakeDelayBoot>
-			<optHKKey>1</optHKKey>
-			<optHKMouse>0</optHKMouse>
-		</Param>
-		<Actions>
-			<Tasker>
-				<ID>57</ID>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<QukPhzStopped>0</QukPhzStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
-				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
-				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>7</Ver>
-				<Param>
-					<BackClr>-12500671</BackClr>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>更新maa</Name>
-					<PlayTime>10</PlayTime>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<TitleShow>运行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppVar>0</chkAppVar>
-					<chkExecWait>1</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<cmbAppShowCmd>1</cmbAppShowCmd>
-					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbEcecType>1</cmbEcecType>
-					<cmbEcecType_text>同步</cmbEcecType_text>
-					<cmbHotkey>0</cmbHotkey>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppEnv.max>23</edtAppEnv.max>
-					<edtAppEnv.min>0</edtAppEnv.min>
-					<edtAppPath>D:\Program Files\MAA\updateMaaResource.cmd</edtAppPath>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>更新maa</edtTaskName>
-					<edtTaskSubName>更新maa</edtTaskSubName>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>更新maa</Name>
-				<ID>57</ID>
-				<Stat>1</Stat>
-			</Tasker>
-			<Tasker>
-				<ID>48</ID>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>1</HKStopped>
-				<QukPhzStopped>0</QukPhzStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>2</SchType>
-				<StartDateTime>2024-08-25 07:57:00</StartDateTime>
-				<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-				<NextRunDateTime>2025-04-10 07:57:00</NextRunDateTime>
-				<NextRunTime>2025-04-10 07:57:00</NextRunTime>
-				<LastRunTime>2025-04-09 07:57:00</LastRunTime>
-				<Fav>0</Fav>
-				<Ver>7</Ver>
-				<Param>
-					<BackClr>-12500671</BackClr>
-					<CountDownHour>1</CountDownHour>
-					<CountDownMin>0</CountDownMin>
-					<CountDownSec>0</CountDownSec>
-					<DTOnce>2024-11-30 08:10:03</DTOnce>
-					<DayLimit>1,2,3,4,5,6,7</DayLimit>
-					<EveryMonthDay>0</EveryMonthDay>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>运行maa</Name>
-					<PlayTime>10</PlayTime>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SnapFormat>jpg</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<TitleShow>运行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<YearDay>1</YearDay>
-					<YearMonth>1</YearMonth>
-					<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
-					<btnTaskType>0</btnTaskType>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppVar>0</chkAppVar>
-					<chkAutoClose>0</chkAutoClose>
-					<chkAutoCloseHK>0</chkAutoCloseHK>
-					<chkDayLimit1>1</chkDayLimit1>
-					<chkDayLimit2>1</chkDayLimit2>
-					<chkDayLimit3>1</chkDayLimit3>
-					<chkDayLimit4>1</chkDayLimit4>
-					<chkDayLimit5>1</chkDayLimit5>
-					<chkDayLimit6>1</chkDayLimit6>
-					<chkDayLimit7>1</chkDayLimit7>
-					<chkDayLimitTime>0</chkDayLimitTime>
-					<chkDayLimitTimeRev>0</chkDayLimitTimeRev>
-					<chkEndDateNone>1</chkEndDateNone>
-					<chkEndDateSel>0</chkEndDateSel>
-					<chkExecDlg>0</chkExecDlg>
-					<chkExecDlgHK>0</chkExecDlgHK>
-					<chkExecExitFocus>0</chkExecExitFocus>
-					<chkExecExitFullScr>0</chkExecExitFullScr>
-					<chkExecExitPre>1</chkExecExitPre>
-					<chkExecPost>0</chkExecPost>
-					<chkExecPre>0</chkExecPre>
-					<chkExecWait>1</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyLeft>0</chkHotkeyLeft>
-					<chkHotkeyMiddle>0</chkHotkeyMiddle>
-					<chkHotkeyRight>0</chkHotkeyRight>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWheel>0</chkHotkeyWheel>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<chkMemOnce>0</chkMemOnce>
-					<chkRunMiss>0</chkRunMiss>
-					<chkSKPartMatch>0</chkSKPartMatch>
-					<chkSKProcExists>0</chkSKProcExists>
-					<chkSKWinExists>0</chkSKWinExists>
-					<chkSKWinFore>0</chkSKWinFore>
-					<chkSelfDelete>0</chkSelfDelete>
-					<chkTimer>1</chkTimer>
-					<chkUseStartDT>1</chkUseStartDT>
-					<chkWakeRunMiss>0</chkWakeRunMiss>
-					<cmbAppShowCmd>0</cmbAppShowCmd>
-					<cmbAppShowCmd_text>隐藏</cmbAppShowCmd_text>
-					<cmbAutoCloseAction>0</cmbAutoCloseAction>
-					<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType_text>复制</cmbBackType_text>
-					<cmbClass>无</cmbClass>
-					<cmbDayLimit>周一,周二,周三,周...</cmbDayLimit>
-					<cmbEcecType>1</cmbEcecType>
-					<cmbEcecType_text>同步</cmbEcecType_text>
-					<cmbEveryMonth_text>1</cmbEveryMonth_text>
-					<cmbExecPost>0</cmbExecPost>
-					<cmbExecPost_text>启用计划</cmbExecPost_text>
-					<cmbExecPre>0</cmbExecPre>
-					<cmbExecPre_text>启用计划</cmbExecPre_text>
-					<cmbHKMouse>0</cmbHKMouse>
-					<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
-					<cmbHotkey>0</cmbHotkey>
-					<cmbIdle_text>空闲指定时间后</cmbIdle_text>
-					<cmbInetStat_text>上线(从离线变为在线)</cmbInetStat_text>
-					<cmbLidStat_text>合上时</cmbLidStat_text>
-					<cmbMon_text>SDC464C(主显示器)</cmbMon_text>
-					<cmbPing_text>可以Ping通</cmbPing_text>
-					<cmbPort_text>端口开放</cmbPort_text>
-					<cmbProcChk_text>创建(从无到有)</cmbProcChk_text>
-					<cmbRemindFont_text>12</cmbRemindFont_text>
-					<cmbSnapFmt_text>jpg</cmbSnapFmt_text>
-					<cmbSound_text>无</cmbSound_text>
-					<cmbTimeSyncSrv_text>time.nist.gov</cmbTimeSyncSrv_text>
-					<cmbWheelDirect_text>向上</cmbWheelDirect_text>
-					<cmbWinHide_text>隐藏</cmbWinHide_text>
-					<cmbWndChk_text>创建(从无到有)</cmbWndChk_text>
-					<combMonth_text>1</combMonth_text>
-					<combYearDay_text>1</combYearDay_text>
-					<combYearMonth_text>1</combYearMonth_text>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppEnv.max>23</edtAppEnv.max>
-					<edtAppEnv.min>0</edtAppEnv.min>
-					<edtAppPath>D:\Program Files\MAA\RunMAA.cmd</edtAppPath>
-					<edtDayLimitMax>24</edtDayLimitMax>
-					<edtDayLimitMin>0</edtDayLimitMin>
-					<edtDelayBoot>0</edtDelayBoot>
-					<edtEveryDay>1</edtEveryDay>
-					<edtEveryHour>1</edtEveryHour>
-					<edtEveryMin>30</edtEveryMin>
-					<edtEverySec>30</edtEverySec>
-					<edtExecSec>30</edtExecSec>
-					<edtExecSecHK>5</edtExecSecHK>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>运行maa</edtTaskName>
-					<edtTaskSubName>运行maa</edtTaskSubName>
-					<edtWakeDelayBoot>0</edtWakeDelayBoot>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optHKKey>1</optHKKey>
-					<optHKMouse>0</optHKMouse>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<tabBtnExec>0</tabBtnExec>
-					<tabBtnHK>0</tabBtnHK>
-					<tabBtnSch>0</tabBtnSch>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>运行maa</Name>
-				<ID>48</ID>
-				<Stat>1</Stat>
-			</Tasker>
-		</Actions>
-	</TaskItem>
-	<TaskItem>
 		<ID>271</ID>
 		<TaskType>ttMultiTasker</TaskType>
 		<Stopped>0</Stopped>
 		<HKStopped>1</HKStopped>
-		<QukPhzStopped>0</QukPhzStopped>
+		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:27:00</StartDateTime>
-		<EndDateTime>2025-07-14 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-20 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-08-20 21:27:00</NextRunTime>
-		<LastRunTime>2025-08-19 21:27:00</LastRunTime>
+		<EndDateTime>2025-08-23 00:00:00</EndDateTime>
+		<NextRunDateTime>2025-08-24 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-08-24 21:27:00</NextRunTime>
+		<LastRunTime>2025-08-23 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1335,15 +718,24 @@ env2=value2</edtAppEnv>
 			<chkHKMouseEdge4>0</chkHKMouseEdge4>
 			<chkHotkey>0</chkHotkey>
 			<chkHotkeyAlt>0</chkHotkeyAlt>
+			<chkHotkeyAltM>0</chkHotkeyAltM>
 			<chkHotkeyCtrl>0</chkHotkeyCtrl>
+			<chkHotkeyCtrlM>0</chkHotkeyCtrlM>
 			<chkHotkeyLeft>0</chkHotkeyLeft>
 			<chkHotkeyMiddle>0</chkHotkeyMiddle>
+			<chkHotkeyMouseMod>0</chkHotkeyMouseMod>
 			<chkHotkeyRight>0</chkHotkeyRight>
 			<chkHotkeyShift>0</chkHotkeyShift>
+			<chkHotkeyShiftM>0</chkHotkeyShiftM>
 			<chkHotkeyWheel>0</chkHotkeyWheel>
 			<chkHotkeyWin>0</chkHotkeyWin>
+			<chkHotkeyWinM>0</chkHotkeyWinM>
+			<chkQukPhz>0</chkQukPhz>
+			<chkQukPhzProc>0</chkQukPhzProc>
+			<chkQukPhzTip>1</chkQukPhzTip>
 			<chkRunMiss>0</chkRunMiss>
 			<chkSKPartMatch>0</chkSKPartMatch>
+			<chkSKProcActiveWnd>0</chkSKProcActiveWnd>
 			<chkSKProcExists>0</chkSKProcExists>
 			<chkSKWinExists>0</chkSKWinExists>
 			<chkSKWinFore>0</chkSKWinFore>
@@ -1360,11 +752,14 @@ env2=value2</edtAppEnv>
 			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
 			<cmbClass>无</cmbClass>
 			<cmbClass_text>无</cmbClass_text>
+			<cmbExecExitType>0</cmbExecExitType>
+			<cmbExecExitType_text>跳过执行</cmbExecExitType_text>
 			<cmbHKMouse>0</cmbHKMouse>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
 			<cmbHotkey>0</cmbHotkey>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtEveryDay>1</edtEveryDay>
+			<edtExecExitWaitTime>60</edtExecExitWaitTime>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
 			<edtHKMouseCorner>50</edtHKMouseCorner>
@@ -1417,6 +812,7 @@ env2=value2</edtAppEnv>
 					<chkHotkeyCtrl>0</chkHotkeyCtrl>
 					<chkHotkeyShift>0</chkHotkeyShift>
 					<chkHotkeyWin>0</chkHotkeyWin>
+					<chkQukPhz>0</chkQukPhz>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
@@ -1518,322 +914,7 @@ env2=value2</edtAppEnv>
 					<chkHotkeyWheel>0</chkHotkeyWheel>
 					<chkHotkeyWin>0</chkHotkeyWin>
 					<chkMemOnce>0</chkMemOnce>
-					<chkRunMiss>0</chkRunMiss>
-					<chkSKPartMatch>0</chkSKPartMatch>
-					<chkSKProcExists>0</chkSKProcExists>
-					<chkSKWinExists>0</chkSKWinExists>
-					<chkSKWinFore>0</chkSKWinFore>
-					<chkSelfDelete>0</chkSelfDelete>
-					<chkTimer>1</chkTimer>
-					<chkUseStartDT>1</chkUseStartDT>
-					<chkWakeRunMiss>0</chkWakeRunMiss>
-					<cmbAppShowCmd>0</cmbAppShowCmd>
-					<cmbAppShowCmd_text>隐藏</cmbAppShowCmd_text>
-					<cmbAutoCloseAction>0</cmbAutoCloseAction>
-					<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType_text>复制</cmbBackType_text>
-					<cmbClass>无</cmbClass>
-					<cmbDayLimit>周一,周二,周三,周...</cmbDayLimit>
-					<cmbEcecType>1</cmbEcecType>
-					<cmbEcecType_text>同步</cmbEcecType_text>
-					<cmbEveryMonth_text>1</cmbEveryMonth_text>
-					<cmbExecPost>0</cmbExecPost>
-					<cmbExecPost_text>启用计划</cmbExecPost_text>
-					<cmbExecPre>0</cmbExecPre>
-					<cmbExecPre_text>启用计划</cmbExecPre_text>
-					<cmbHKMouse>0</cmbHKMouse>
-					<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
-					<cmbHotkey>0</cmbHotkey>
-					<cmbIdle_text>空闲指定时间后</cmbIdle_text>
-					<cmbInetStat_text>上线(从离线变为在线)</cmbInetStat_text>
-					<cmbLidStat_text>合上时</cmbLidStat_text>
-					<cmbMon_text>SDC464C(主显示器)</cmbMon_text>
-					<cmbPing_text>可以Ping通</cmbPing_text>
-					<cmbPort_text>端口开放</cmbPort_text>
-					<cmbProcChk_text>创建(从无到有)</cmbProcChk_text>
-					<cmbRemindFont_text>12</cmbRemindFont_text>
-					<cmbSnapFmt_text>jpg</cmbSnapFmt_text>
-					<cmbSound_text>无</cmbSound_text>
-					<cmbTimeSyncSrv_text>time.nist.gov</cmbTimeSyncSrv_text>
-					<cmbWheelDirect_text>向上</cmbWheelDirect_text>
-					<cmbWinHide_text>隐藏</cmbWinHide_text>
-					<cmbWndChk_text>创建(从无到有)</cmbWndChk_text>
-					<combMonth_text>1</combMonth_text>
-					<combYearDay_text>1</combYearDay_text>
-					<combYearMonth_text>1</combYearMonth_text>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppEnv.max>23</edtAppEnv.max>
-					<edtAppEnv.min>0</edtAppEnv.min>
-					<edtAppPath>D:\Program Files\MAA\RunMAA.cmd</edtAppPath>
-					<edtDayLimitMax>24</edtDayLimitMax>
-					<edtDayLimitMin>0</edtDayLimitMin>
-					<edtDelayBoot>0</edtDelayBoot>
-					<edtEveryDay>1</edtEveryDay>
-					<edtEveryHour>1</edtEveryHour>
-					<edtEveryMin>30</edtEveryMin>
-					<edtEverySec>30</edtEverySec>
-					<edtExecSec>30</edtExecSec>
-					<edtExecSecHK>5</edtExecSecHK>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>运行maa</edtTaskName>
-					<edtTaskSubName>运行maa</edtTaskSubName>
-					<edtWakeDelayBoot>0</edtWakeDelayBoot>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optHKKey>1</optHKKey>
-					<optHKMouse>0</optHKMouse>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<tabBtnExec>0</tabBtnExec>
-					<tabBtnHK>0</tabBtnHK>
-					<tabBtnSch>0</tabBtnSch>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>运行maa</Name>
-				<ID>48</ID>
-				<Stat>1</Stat>
-			</Tasker>
-		</Actions>
-	</TaskItem>
-	<TaskItem>
-		<ID>604-UJNN63QU1I</ID>
-		<TaskType>ttMultiTasker</TaskType>
-		<Stopped>1</Stopped>
-		<HKStopped>1</HKStopped>
-		<QukPhzStopped>0</QukPhzStopped>
-		<HasEndDateTime>0</HasEndDateTime>
-		<SchType>2</SchType>
-		<StartDateTime>1970-12-30 22:27:00</StartDateTime>
-		<EndDateTime>2025-07-21 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-09 22:27:00</NextRunDateTime>
-		<NextRunTime>2025-08-09 22:27:00</NextRunTime>
-		<LastRunTime>2025-08-08 22:27:00</LastRunTime>
-		<Fav>0</Fav>
-		<Ver>7</Ver>
-		<Param>
-			<CountDownHour>1</CountDownHour>
-			<CountDownMin>0</CountDownMin>
-			<CountDownSec>0</CountDownSec>
-			<DTOnce>2025-04-09 15:10:49</DTOnce>
-			<EveryMonthDay>0</EveryMonthDay>
-			<Name>MAA-换班</Name>
-			<TitleShow>弹窗提醒</TitleShow>
-			<TypeShow>提醒</TypeShow>
-			<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
-			<chkAutoClose>0</chkAutoClose>
-			<chkAutoCloseHK>0</chkAutoCloseHK>
-			<chkDayLimit1>0</chkDayLimit1>
-			<chkDayLimit2>0</chkDayLimit2>
-			<chkDayLimit3>0</chkDayLimit3>
-			<chkDayLimit4>0</chkDayLimit4>
-			<chkDayLimit5>0</chkDayLimit5>
-			<chkDayLimit6>0</chkDayLimit6>
-			<chkDayLimit7>0</chkDayLimit7>
-			<chkDayLimitTime>0</chkDayLimitTime>
-			<chkDayLimitTimeRev>0</chkDayLimitTimeRev>
-			<chkEndDateSel>0</chkEndDateSel>
-			<chkExecDlg>0</chkExecDlg>
-			<chkExecDlgHK>0</chkExecDlgHK>
-			<chkExecExitFocus>0</chkExecExitFocus>
-			<chkExecExitFullScr>0</chkExecExitFullScr>
-			<chkExecExitPre>1</chkExecExitPre>
-			<chkHKMouseCorner>0</chkHKMouseCorner>
-			<chkHKMouseCorner1>0</chkHKMouseCorner1>
-			<chkHKMouseCorner2>0</chkHKMouseCorner2>
-			<chkHKMouseCorner3>0</chkHKMouseCorner3>
-			<chkHKMouseCorner4>0</chkHKMouseCorner4>
-			<chkHKMouseEdge>0</chkHKMouseEdge>
-			<chkHKMouseEdge1>0</chkHKMouseEdge1>
-			<chkHKMouseEdge2>0</chkHKMouseEdge2>
-			<chkHKMouseEdge3>0</chkHKMouseEdge3>
-			<chkHKMouseEdge4>0</chkHKMouseEdge4>
-			<chkHotkey>0</chkHotkey>
-			<chkHotkeyAlt>0</chkHotkeyAlt>
-			<chkHotkeyCtrl>0</chkHotkeyCtrl>
-			<chkHotkeyLeft>0</chkHotkeyLeft>
-			<chkHotkeyMiddle>0</chkHotkeyMiddle>
-			<chkHotkeyRight>0</chkHotkeyRight>
-			<chkHotkeyShift>0</chkHotkeyShift>
-			<chkHotkeyWheel>0</chkHotkeyWheel>
-			<chkHotkeyWin>0</chkHotkeyWin>
-			<chkRunMiss>0</chkRunMiss>
-			<chkSKPartMatch>0</chkSKPartMatch>
-			<chkSKProcExists>0</chkSKProcExists>
-			<chkSKWinExists>0</chkSKWinExists>
-			<chkSKWinFore>0</chkSKWinFore>
-			<chkSKWinMouseIn>0</chkSKWinMouseIn>
-			<chkSKWinSub>0</chkSKWinSub>
-			<chkSchLimitCount>0</chkSchLimitCount>
-			<chkSelfDelete>0</chkSelfDelete>
-			<chkTimer>1</chkTimer>
-			<chkUseStartDT>1</chkUseStartDT>
-			<chkWakeRunMiss>0</chkWakeRunMiss>
-			<cmbAutoCloseAction>0</cmbAutoCloseAction>
-			<cmbAutoCloseActionHK>0</cmbAutoCloseActionHK>
-			<cmbAutoCloseActionHK_text>执行</cmbAutoCloseActionHK_text>
-			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
-			<cmbClass>无</cmbClass>
-			<cmbClass_text>无</cmbClass_text>
-			<cmbHKMouse>0</cmbHKMouse>
-			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
-			<cmbHotkey>0</cmbHotkey>
-			<edtDelayBoot>0</edtDelayBoot>
-			<edtEveryDay>1</edtEveryDay>
-			<edtExecSec>30</edtExecSec>
-			<edtExecSecHK>5</edtExecSecHK>
-			<edtHKMouseCorner>50</edtHKMouseCorner>
-			<edtHKMouseEdge>50</edtHKMouseEdge>
-			<edtSchLimitCount>1</edtSchLimitCount>
-			<edtTaskName>MAA-换班</edtTaskName>
-			<edtWakeDelayBoot>0</edtWakeDelayBoot>
-			<optHKKey>1</optHKKey>
-			<optHKMouse>0</optHKMouse>
-		</Param>
-		<Actions>
-			<Tasker>
-				<ID>20</ID>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<QukPhzStopped>0</QukPhzStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
-				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
-				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>7</Ver>
-				<Param>
-					<BackClr>-12500671</BackClr>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>更新maa</Name>
-					<PlayTime>10</PlayTime>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<TitleShow>运行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppVar>0</chkAppVar>
-					<chkExecWait>1</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<cmbAppShowCmd>1</cmbAppShowCmd>
-					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbEcecType>1</cmbEcecType>
-					<cmbEcecType_text>同步</cmbEcecType_text>
-					<cmbHotkey>0</cmbHotkey>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppEnv.max>23</edtAppEnv.max>
-					<edtAppEnv.min>0</edtAppEnv.min>
-					<edtAppPath>D:\Program Files\MAA\updateMaaResource.cmd</edtAppPath>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>更新maa</edtTaskName>
-					<edtTaskSubName>更新maa</edtTaskSubName>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>更新maa</Name>
-				<ID>20</ID>
-				<Stat>1</Stat>
-			</Tasker>
-			<Tasker>
-				<ID>48</ID>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>1</HKStopped>
-				<QukPhzStopped>0</QukPhzStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>2</SchType>
-				<StartDateTime>2024-08-25 07:57:00</StartDateTime>
-				<EndDateTime>2025-01-12 15:21:36</EndDateTime>
-				<NextRunDateTime>2025-04-10 07:57:00</NextRunDateTime>
-				<NextRunTime>2025-04-10 07:57:00</NextRunTime>
-				<LastRunTime>2025-04-09 07:57:00</LastRunTime>
-				<Fav>0</Fav>
-				<Ver>7</Ver>
-				<Param>
-					<BackClr>-12500671</BackClr>
-					<CountDownHour>1</CountDownHour>
-					<CountDownMin>0</CountDownMin>
-					<CountDownSec>0</CountDownSec>
-					<DTOnce>2024-11-30 08:10:03</DTOnce>
-					<DayLimit>1,2,3,4,5,6,7</DayLimit>
-					<EveryMonthDay>0</EveryMonthDay>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>运行maa</Name>
-					<PlayTime>10</PlayTime>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SnapFormat>jpg</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<TitleShow>运行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<YearDay>1</YearDay>
-					<YearMonth>1</YearMonth>
-					<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
-					<btnTaskType>0</btnTaskType>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppVar>0</chkAppVar>
-					<chkAutoClose>0</chkAutoClose>
-					<chkAutoCloseHK>0</chkAutoCloseHK>
-					<chkDayLimit1>1</chkDayLimit1>
-					<chkDayLimit2>1</chkDayLimit2>
-					<chkDayLimit3>1</chkDayLimit3>
-					<chkDayLimit4>1</chkDayLimit4>
-					<chkDayLimit5>1</chkDayLimit5>
-					<chkDayLimit6>1</chkDayLimit6>
-					<chkDayLimit7>1</chkDayLimit7>
-					<chkDayLimitTime>0</chkDayLimitTime>
-					<chkDayLimitTimeRev>0</chkDayLimitTimeRev>
-					<chkEndDateNone>1</chkEndDateNone>
-					<chkEndDateSel>0</chkEndDateSel>
-					<chkExecDlg>0</chkExecDlg>
-					<chkExecDlgHK>0</chkExecDlgHK>
-					<chkExecExitFocus>0</chkExecExitFocus>
-					<chkExecExitFullScr>0</chkExecExitFullScr>
-					<chkExecExitPre>1</chkExecExitPre>
-					<chkExecPost>0</chkExecPost>
-					<chkExecPre>0</chkExecPre>
-					<chkExecWait>1</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyLeft>0</chkHotkeyLeft>
-					<chkHotkeyMiddle>0</chkHotkeyMiddle>
-					<chkHotkeyRight>0</chkHotkeyRight>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWheel>0</chkHotkeyWheel>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<chkMemOnce>0</chkMemOnce>
+					<chkQukPhz>0</chkQukPhz>
 					<chkRunMiss>0</chkRunMiss>
 					<chkSKPartMatch>0</chkSKPartMatch>
 					<chkSKProcExists>0</chkSKProcExists>
@@ -1923,9 +1004,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-08-17 04:28:48</EndDateTime>
-		<NextRunDateTime>2035-08-17 22:19:28</NextRunDateTime>
+		<NextRunDateTime>2125-07-31 07:06:57</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-08-19 10:45:52</LastRunTime>
+		<LastRunTime>2025-08-24 07:06:57</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2252,9 +1333,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 10:00:00</StartDateTime>
 		<EndDateTime>2025-08-02 22:43:12</EndDateTime>
-		<NextRunDateTime>2025-08-20 10:00:00</NextRunDateTime>
-		<NextRunTime>2025-08-20 10:00:00</NextRunTime>
-		<LastRunTime>2025-08-19 10:00:00</LastRunTime>
+		<NextRunDateTime>2025-08-25 10:00:00</NextRunDateTime>
+		<NextRunTime>2025-08-25 10:00:00</NextRunTime>
+		<LastRunTime>2025-08-24 10:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>

@@ -6,12 +6,6 @@ Title 安装系统后恢复一些软件的设置
 color 0a
 cls
 
-:: === 修改点：使用原生CMD命令最小化当前窗口 ===
-if not defined _MINIMIZED_ (
-    set "_MINIMIZED_=1"
-    start /min cmd /c "%~f0"
-    exit
-)
 
 ::pushd命令，将当前目录的路径保存下来，并且切换到你指定的新目录路径。
 pushd %~dp0
@@ -21,6 +15,10 @@ set "SettingsDir=E:\My Documents\Nutstore\NutStoreSync"
 
 :anytxt
 robocopy "%SettingsDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt\config" /MIR /ZB /R:3 /W:5
+
+:clashverge
+xcopy "%SettingsDir%\Customization\Software\ClashVerge\profiles.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
+xcopy "%SettingsDir%\Customization\Software\ClashVerge\verge.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
 
 :gitextension
 xcopy "%SettingsDir%\Customization\Software\GitExtensions\.gitconfig" "C:\Users\%USERNAME%\" /y

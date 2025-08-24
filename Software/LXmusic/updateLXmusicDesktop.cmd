@@ -5,13 +5,6 @@ title 一键更新lx_music_desktop
 COLOR 0A
 cls
 
-:: === 修改点：使用原生CMD命令最小化当前窗口 ===
-if not defined _MINIMIZED_ (
-    set "_MINIMIZED_=1"
-    start /min cmd /c "%~f0"
-    exit
-)
-
 ::=======================================
 :: 初始化配置
 ::=======================================

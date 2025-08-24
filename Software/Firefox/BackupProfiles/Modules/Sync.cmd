@@ -6,12 +6,6 @@ Title 备份文件到托管网站
 color 0a
 cls
 
-:: === 修改点：使用原生CMD命令最小化当前窗口 ===
-if not defined _MINIMIZED_ (
-    set "_MINIMIZED_=1"
-    start /min cmd /c "%~f0"
-    exit
-)
 
 ::pushd命令，将当前目录的路径保存下来，并且切换到你指定的新目录路径。
 pushd %~dp0
@@ -41,6 +35,10 @@ xcopy "%BackupDir%\..\..\Software\Capslock+\CapsLock+settings.ini" "%OutputDir%\
 
 :CCleaner
 xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%OutputDir%\Customization\Software\CCleaner\" /y
+
+:clashverge
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles.yaml" "%OutputDir%\Customization\Software\ClashVerge\" /y
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\verge.yaml" "%OutputDir%\Customization\Software\ClashVerge\" /y
 
 :firefox
 ::備份幾個Firefox文件
@@ -134,8 +132,8 @@ xcopy "%BackupDir%\..\..\Software\steamcommunity_302\S302.ini" "%OutputDir%\Cust
 
 :tc
 ::備份Total Commander設置
-xcopy "%BackupDir%\..\..\Software\totalcmd64\wincmd.ini" "%OutputDir%\Customization\Software\TotalCMD\" /y
-xcopy "%BackupDir%\..\..\Software\totalcmd64\Default.bar" "%OutputDir%\Customization\Software\TotalCMD\" /y
+xcopy "%BackupDir%\..\..\Software\totalcmd64\WinCMD.ini" "%OutputDir%\Customization\Software\TotalCMD\" /y
+xcopy "%BackupDir%\..\..\Software\totalcmd64\DEFAULT.BAR" "%OutputDir%\Customization\Software\TotalCMD\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\Default.br2" "%OutputDir%\Customization\Software\TotalCMD\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\user\user.ini" "%OutputDir%\Customization\Software\TotalCMD\user\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\user\TCIgnore.ini" "%OutputDir%\Customization\Software\TotalCMD\user\" /y
