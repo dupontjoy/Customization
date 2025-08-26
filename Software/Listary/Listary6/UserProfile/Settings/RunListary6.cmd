@@ -20,8 +20,6 @@ taskkill /f /t /im Listary*
 
 ::删除日志和临时文件
 rd /s /q "%cd%\UserProfile\Cache"
-del /s /q "%cd%\UserProfile\Settings\PathHistory.json"
-del /s /q "%cd%\UserProfile\Settings\SearchHistory.json"
 
 ::启动程序
 start "" "%cd%\Listary.exe"

@@ -59,20 +59,20 @@ test_list:
   icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48"><path fill="#FF3D00" d="M43.2 33.9c-.4 2.1-2.1 3.7-4.2 4-3.3.5-8.8 1.1-15 1.1-6.1 0-11.6-.6-15-1.1-2.1-.3-3.8-1.9-4.2-4-.4-2.3-.8-5.7-.8-9.9s.4-7.6.8-9.9c.4-2.1 2.1-3.7 4.2-4C12.3 9.6 17.8 9 24 9c6.2 0 11.6.6 15 1.1 2.1.3 3.8 1.9 4.2 4 .4 2.3.9 5.7.9 9.9-.1 4.2-.5 7.6-.9 9.9z"/><path fill="#FFF" d="M20 31V17l12 7z"/></svg>
   url: https://www.youtube.com
 auto_log_clean: 2
-enable_random_port: false
 verge_mixed_port: 7897
 verge_socks_port: 7898
 verge_socks_enabled: false
 verge_port: 7899
 verge_http_enabled: false
-webdav_url: 0DMcY2Yru3p1es36/s7NKf8IpMN2rR+uZjMjSCp+ySUCjzUWiYVCSjK1NLqVMi57MG3opTdgTUQ+loYvvg==
-webdav_username: HBgAjAswpLrRTrU9Y3FMc+TBfm3YY6KLbss6WOnxOq6WlZJcHfL1Cv+yT+G6S54=
-webdav_password: lO2ErJeMqhMcz8O0FldHxR7YT7mFE+550NrXcsVRCYcuG0fzChQUBRG2vw3hsw==
+webdav_url: MgSGsZhq7+i0U1e/fol6zuPE7gU2+OtIGlXCUA8b/+MVCoRgJlSTfpArzBWIMLiiO22G1bXHZxuMM59uPA==
+webdav_username: j8DXCGjYL1S8iwIZuIlT1cTW08+Jzn6NEAq9yHKzsDo/KIDPUFr0jQwtvJzwwPQ=
+webdav_password: Hd0jh1PS8zMUvCMJ1wN7Tg1QT6VzFaBelARh5wJfRBtoNnFxVTzQIZmFScVmzw==
 enable_tray_speed: false
 enable_tray_icon: true
 enable_auto_light_weight_mode: false
 auto_light_weight_minutes: 10
 enable_hover_jump_navigator: true
+enable_external_controller: null
 service_state:
   last_install_time: 1755435908
   install_count: 1

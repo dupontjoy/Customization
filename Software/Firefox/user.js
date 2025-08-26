@@ -80,6 +80,7 @@ user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 
 //书签相关
 user_pref("browser.bookmarks.max_backups", 2);//书签最大备份数目
+user_pref("browser.bookmarks.openInTabClosesMenu", false);//打开书签后不关闭菜单，以便按Ctrl键打开多个书签
 
 //自定义CSS（chrome文件夹）
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);//69以后自动加载 userChrome.ss 和 userContent.css

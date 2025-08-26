@@ -87,6 +87,7 @@ xcopy "%BackupDir%\..\..\..\LocalSend\updateLocalSend.cmd" "%OutputDir%\Customiz
 
 :LXmusicDesktop
 xcopy "%BackupDir%\..\..\..\lx-music-desktop\updateLXmusicDesktop.cmd" "%OutputDir%\Customization\Software\LXmusic\" /y
+robocopy "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" "%OutputDir%\Customization\Software\LXmusic\LxDatas" /MIR /ZB /R:3 /W:5
 
 :MAA
 xcopy "%BackupDir%\..\..\..\MAA\RunMAA.cmd" "%OutputDir%\Customization\Software\MAA\" /y

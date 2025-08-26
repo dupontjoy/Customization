@@ -1,5 +1,5 @@
-@-moz-document regexp("https://libretv.*.(dev|app|shop|xyz)/.*"),
-               regexp("https://lizw.*.(dev|app|shop|xyz)/.*"), 
+@-moz-document regexp("https://.*libretv.*.(dev|app|shop|xyz)/.*"),
+               regexp("https://.*lizw.*.(dev|app|shop|xyz)/.*"), 
                regexp("http://localhost:8080/player.html.*")
 {
 
@@ -61,8 +61,8 @@
  
 }
 
-@-moz-document regexp("https://moontv.*.(dev|app|shop|xyz)/.*"), 
-               regexp("https://ytll.*.(dev|app|shop|xyz)/.*")
+@-moz-document regexp("https://.*moontv.*.(dev|app|shop|xyz)/.*"), 
+               regexp("https://.*ytll.*.(dev|app|shop|xyz)/.*")
 {
  /*播放区域缩小*/
 .space-y-2, div.grid-cols-1:nth-child(3) {
