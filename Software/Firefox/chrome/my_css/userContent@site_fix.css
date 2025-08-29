@@ -62,7 +62,9 @@
 }
 
 @-moz-document regexp("https://.*moontv.*.(dev|app|shop|xyz)/.*"), 
-               regexp("https://.*ytll.*.(dev|app|shop|xyz)/.*")
+               regexp("https://.*ytll.*.(dev|app|shop|xyz)/.*"), 
+               regexp("https://.*lunatv.*.(dev|app|shop|xyz)/.*"), 
+               regexp("https://ixnstwzdqcxu.ap-southeast-1.clawcloudrun.com/.*")
 {
  /*播放区域缩小*/
 .space-y-2, div.grid-cols-1:nth-child(3) {

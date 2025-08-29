@@ -23,6 +23,9 @@ xcopy "%SettingsDir%\Customization\Software\ClashVerge\verge.yaml" "C:\Users\%US
 :gitextension
 xcopy "%SettingsDir%\Customization\Software\GitExtensions\.gitconfig" "C:\Users\%USERNAME%\" /y
 
+:LXmusicDesktop
+robocopy "%SettingsDir%\Customization\Software\LXmusic\LxDatas" "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" /MIR /ZB /R:3 /W:5
+
 :zlib
 ::zlibø…”√”Ú√˚
 xcopy "%SettingsDir%\Customization\Software\z-library\config.json" "C:\Users\%USERNAME%\AppData\Roaming\z-library\" /y
