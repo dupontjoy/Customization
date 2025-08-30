@@ -29,6 +29,11 @@ bilibili.com##.animated-banner
 ! 防止斗鱼直播切回标签页会重新加载
 douyu.com##+js(aeld,visibilitychange)
 
+! next.itellyou.cn
+next.itellyou.cn##.modal-content
+next.itellyou.cn###info-header-modal
+next.itellyou.cn##.show.fade.modal-backdrop
+
 ! 1688
  ! js加载死循环造成的卡死
 ||g.alicdn.com/zgc/aem-od-assets-logger/*/index.js$script,domain=1688.com
