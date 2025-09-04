@@ -14,6 +14,7 @@
 // 4.Support window.userChrome_js.loadOverlay(overlay [,observer]) <--- not work in recent Firefox
 // Modified by Alice0775
 //
+// @version       2025/08/30 Fallback to only load mjs with chrome://
 // @version       2025/06/16 Bug 1968479 - Only allow eval (with system principal / in the parent) when an explicit pref is set
 // @version       2025/05/11 fix extended property flag(enumerable)
 // @version       2025/04/16 loadSubScript chrome:// instead of file://
@@ -238,8 +239,11 @@
                             || /\.xul$/i.test(file.leafName) && /\xul$/i.test(this.arrSubdir[i])) {
                             var script = getScriptData(readFile(file, true), file);
                             script.dir = dir;
-                            script.chromedir = file.path.replace(chromeDirPath, "chrome://userchromejs/content/").replace(/\\/g, "/");
-                            if (/\.uc\.js$|\.mjs$/i.test(script.filename)) {
+                            if (/\.(uc|sys)\.mjs$/i.test(script.filename)) {
+                                script.chromedir = file.path.replace(chromeDirPath, "chrome://userchromejs/content/").replace(/\\/g, "/");
+                                script.LastModifiedTime = this.getLastModifiedTime(script.file);
+                                s.push(script);
+                            } else if (/\.uc\.js$/i.test(script.filename)) {
                                 script.ucjs = checkUCJS(script.file.path);
                                 script.LastModifiedTime = this.getLastModifiedTime(script.file);
                                 s.push(script);
@@ -299,7 +303,6 @@
                     filename: aFile.leafName,
                     file: aFile,
                     url,
-                    isModule: aFile.leafName.endsWith(".mjs"),
                     isActor: false,
                     charset,
                     description,
@@ -310,7 +313,7 @@
                     icon: extractSingleMeta(header, /\/\/ @icon\s+(.+)\s*$/im),
                     regex: new RegExp(`^${exclude}(${include.join("|") || ".*"})$`, "i"),
                     onlyonce: /\/\/ @onlyonce\b/.test(header),
-                    homepageURL: extractSingleMeta(header, /\/\/ @homepage(URL)?\s+(.+)\s*$/im),
+                    homepageURL: extractSingleMeta(header, /\/\/ @homepage(URL)?\s+(.+)\s*$/im, 2),
                     downloadURL: extractSingleMeta(header, /\/\/ @downloadURL\s+(.+)\s*$/im),
                     optionsURL: extractSingleMeta(header, /\/\/ @optionsURL\s+(.+)\s*$/im),
                     startup: extractSingleMeta(header, /\/\/ @startup\s+(.+)\s*$/im),
@@ -361,9 +364,9 @@
                     return (content.match(/^\/\/ ==UserScript==[ \t]*\n(?:.*\n)*?\/\/ ==\/UserScript==[ \t]*\n/m) || [""])[0];
                 }
 
-                function extractSingleMeta (header, pattern) {
+                function extractSingleMeta (header, pattern, matchedGroup = 1) {
                     const match = header.match(pattern);
-                    return match?.[1]?.trim() || "";
+                    return match?.[matchedGroup]?.trim() || "";
                 }
 
                 function buildRegexRules (header, mainWindowURL, findNextRe) {
@@ -604,7 +607,6 @@
                 sameZoneAs: win,
             });
 
-
             // 兼容 ucf setUnloadMap
             Cu.evalInSandbox(`
                 const { initUloadMap, setUnloadMap } = ChromeUtils.importESModule("chrome://userchromejs/content/utils/ucf.sys.mjs")
@@ -636,14 +638,12 @@
                         || !!this.scriptDisable[script.filename])) continue;
                 if (script.skip) continue;
                 if (!script.isActor && !script.regex.test(dochref)) continue;
-                let targetWin = script.sandbox ? target : doc.defaultView;
                 if (script.onlyonce && script.isRunning) {
                     if (script.startup) {
-                        Cu.evalInSandbox(`(function(script, win){${script.startup}})`, target)(script, target);
+                        Cu.evalInSandbox(`(function(script, win){${script.startup}})`, target)(script, win);
                     }
                     continue;
                 }
-
                 if (script.ucjs) { //for UCJS_loader
                     if (this.INFO) this.debug("loadUCJSSubScript: " + script.filename);
                     aScript = doc.createElementNS("http://www.w3.org/1999/xhtml", "script");
@@ -655,7 +655,7 @@
                         this.error(script.filename, ex);
                     }
                 } else { //Not for UCJS_loader
-                    if (this.INFO) this.debug((script.isModule ? "loadModule: " : "loadSubScript: ") + script.filename);
+                    if (this.INFO) this.debug("loadSubScript: " + script.filename);
                     /*
                     try {
                     if (script.charset)
@@ -671,21 +671,22 @@
                     }
                     continue;
                     */
-                    if (!script.isModule) {
+                    let targetWin = script.sandbox ? target : doc.defaultView;
+                    if (!script.chromedir) {
                         if (!script.async) {
                             try {
                                 if (script.charset)
                                     Services.scriptloader.loadSubScript(
-                                        script.chromedir + "?" + this.getLastModifiedTime(script.file),
-                                        script.onlyonce ? { window: targetWin } : targetWin, script.charset);
+                                        script.url + "?" + script.LastModifiedTime,
+                                        targetWin, script.charset);
                                 else
                                     Services.scriptloader.loadSubScript(
-                                        script.chromedir + "?" + this.getLastModifiedTime(script.file),
-                                        script.onlyonce ? { window: targetWin } : targetWin);
+                                        script.url + "?" + script.LastModifiedTime,
+                                        targetWin);
 
                                 script.isRunning = true;
                                 if (script.startup) {
-                                    Services.scriptloader.loadSubScript("data:application/javascript;," + encodeURIComponent(script.startup));
+                                    Cu.evalInSandbox(`(function(script, win){${script.startup}})`, target)(script, win);
                                 }
                             } catch (ex) {
                                 this.error(script.filename, ex);
@@ -766,7 +767,7 @@
                     "userchrome",
                     "app",
                     locales,
-                    "chrome://userchromejs/content/utils/locales/{locale}/"
+                    "chrome://userchromejs/content/locales/{locale}/"
                 ),
             ]);
 

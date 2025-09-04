@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name            DownloadPlus_Fx135.uc.js
+// @name            DownloadPlus_Fx136.uc.js
 // @author          Ryan
 // @long-description
 // @description
@@ -22,6 +22,9 @@ userChromeJS.downloadPlus.enableSaveAs 下载对话框启用另存为
 userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 // @note userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 */
+// @note            20250827 修复 Fx143 菜单图标的问题
+// @note            20250827 修复选择 FlashGot 后点击保存文件无效的问题
+// @note            20250826 禁止快速保存后会自动打开文文件，感谢@Cloudy901
 // @note            20250802 修复 Fx140 dropmarker 显示异常, 强制弹出下载对话框
 // @note            20250620 修复按钮和弹出菜单的一些问题
 // @note            20250610 Fx139
@@ -40,7 +43,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 // @compatibility   Firefox 139
 // @homepageURL     https://github.com/benzBrake/FirefoxCustomize
 // ==/UserScript==
-(async function (gloalCSS, placesCSS, unknownContentCSS) {
+(async function (globalCSS, placesCSS, unknownContentCSS) {
 
     let { classes: Cc, interfaces: Ci, utils: Cu, results: Cr } = Components;
     const Services = globalThis.Services;
@@ -170,6 +173,17 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
         }
     })();
 
+    const versionGE = (v) => {
+        return Services.vc.compare(Services.appinfo.version, v) >= 0;
+    }
+
+    const processCSS = (css) => {
+        if (versionGE("143a1")) {
+            css =  `#DownloadPlus-Btn { list-style-image: var(--menuitem-icon); }\n` + css.replaceAll('list-style-image', '--menuitem-icon');
+        }
+        return css;
+    }
+
     /* Do not change below 不懂不要改下边的 */
     if (window.DownloadPlus) return;
 
@@ -204,15 +218,15 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
             const documentURI = location.href.replace(/\?.*$/, '');
             switch (documentURI) {
                 case 'chrome://browser/content/browser.xhtml':
-                    windowUtils.loadSheetUsingURIString("data:text/css;charset=utf-8," + encodeURIComponent(gloalCSS), windowUtils.AUTHOR_SHEET);
+                    windowUtils.loadSheetUsingURIString("data:text/css;charset=utf-8," + encodeURIComponent(processCSS(globalCSS)), windowUtils.AUTHOR_SHEET);
                     await this.initChrome();
                     break;
                 case 'about:downloads':
                 case 'chrome://browser/content/places/places.xhtml':
-                    windowUtils.loadSheetUsingURIString("data:text/css;charset=utf-8," + encodeURIComponent(placesCSS), windowUtils.AUTHOR_SHEET);
+                    windowUtils.loadSheetUsingURIString("data:text/css;charset=utf-8," + encodeURIComponent(processCSS(placesCSS)), windowUtils.AUTHOR_SHEET);
                     break;
                 case 'chrome://mozapps/content/downloads/unknownContentType.xhtml':
-                    windowUtils.loadSheetUsingURIString("data:text/css;charset=utf-8," + encodeURIComponent(unknownContentCSS), windowUtils.AGENT_SHEET);
+                    windowUtils.loadSheetUsingURIString("data:text/css;charset=utf-8," + encodeURIComponent(processCSS(unknownContentCSS)), windowUtils.AGENT_SHEET);
                     await this.initDownloadPopup();
                     break;
             }
@@ -607,6 +621,10 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                             let path = dir.replace(/^\./, Cc["@mozilla.org/file/directory_service;1"].getService(Ci.nsIProperties).get("ProfD", Ci.nsIFile).path);
                             path = path.endsWith("\\") ? path : path + "\\";
                             file.initWithPath(path + ($("#locationText")?.value?.replace(invalidChars, '_') || dialog.mLauncher.suggestedFileName));
+                            if (dialog.mLauncher.MIMEInfo) {
+                                dialog.mLauncher.MIMEInfo.preferredAction = Ci.nsIMIMEInfo.saveToDisk;
+                                dialog.mLauncher.MIMEInfo.alwaysAskBeforeHandling = false;
+                            }
                             dialog.mLauncher.saveDestinationAvailable(file);
                             dialog.onCancel = function () { };
                             close();
@@ -619,7 +637,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                 var cached_function = dialog.onOK;
                 return async function (...args) {
                     if ($('#flashgotRadio')?.selected)
-                        return triggerDownload();
+                        return $('#Flashgot-Download-By-Default-Manager').click();
                     else if ($('#locationText')?.value && $('#locationText')?.value != dialog.mLauncher.suggestedFileName) {
                         dialog.onCancel = function () { };
                         let file = await IOUtils.getFile(await Downloads.getPreferredDownloadsDirectory(), $('#locationText').value);

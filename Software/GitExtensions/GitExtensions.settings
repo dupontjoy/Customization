@@ -797,7 +797,7 @@
       <string>FormBrowse.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>468</string>
+      <string>492</string>
     </value>
   </item>
   <item>
@@ -837,7 +837,7 @@
       <string>FormBrowse.LeftSplitContainer_Size</string>
     </key>
     <value>
-      <string>501</string>
+      <string>505</string>
     </value>
   </item>
   <item>
@@ -893,7 +893,7 @@
       <string>FormBrowse.RevisionDiffControl.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>223</string>
+      <string>229</string>
     </value>
   </item>
   <item>
@@ -941,7 +941,7 @@
       <string>FormBrowse.RevisionsSplitContainer_Distance</string>
     </key>
     <value>
-      <string>583</string>
+      <string>601</string>
     </value>
   </item>
   <item>
@@ -989,7 +989,7 @@
       <string>FormBrowse.RightSplitContainer_Distance</string>
     </key>
     <value>
-      <string>209</string>
+      <string>211</string>
     </value>
   </item>
   <item>
@@ -1029,7 +1029,7 @@
       <string>FormBrowse.RightSplitContainer_Size</string>
     </key>
     <value>
-      <string>503</string>
+      <string>507</string>
     </value>
   </item>
   <item>
@@ -1102,6 +1102,10 @@
   &lt;Repositories&gt;
     &lt;Repository&gt;
       &lt;Anchor&gt;None&lt;/Anchor&gt;
+      &lt;Path&gt;https://github.com/dupontjoy/ytll2-v2.5.1.git&lt;/Path&gt;
+    &lt;/Repository&gt;
+    &lt;Repository&gt;
+      &lt;Anchor&gt;None&lt;/Anchor&gt;
       &lt;Path&gt;https://github.com/dupontjoy/RimeIMEPortable.git&lt;/Path&gt;
     &lt;/Repository&gt;
   &lt;/Repositories&gt;
@@ -1129,7 +1133,7 @@
       <string>lastCommitMessage</string>
     </key>
     <value>
-      <string>update</string>
+      <string>Add files via upload</string>
     </value>
   </item>
   <item>

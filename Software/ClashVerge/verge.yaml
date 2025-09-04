@@ -33,8 +33,17 @@ theme_setting: null
 web_ui_list: null
 clash_core: verge-mihomo
 hotkeys: null
-enable_global_hotkey: true
-home_cards: null
+enable_global_hotkey: null
+home_cards:
+  clashinfo: true
+  ip: false
+  mode: true
+  network: true
+  profile: true
+  proxy: true
+  systeminfo: true
+  test: false
+  traffic: false
 auto_close_connection: true
 auto_check_update: true
 default_latency_test: null
@@ -64,9 +73,9 @@ verge_socks_port: 7898
 verge_socks_enabled: false
 verge_port: 7899
 verge_http_enabled: false
-webdav_url: imcTqi4KaBYD23eDGLF5MedjSC73G7kAfS7stIj03AxkA1NLzmmJj+DTxGFQ1Ljd97k8PIrZ9vQscQlWSw==
-webdav_username: 0JhzbnHmekLF6momRy4AXu0tbX4qfEEVKWC0GPLoppGcsM6sGyj/oSX7qnoOhbw=
-webdav_password: e/0gc+LaXdYVLNaSZTEQttrAwHurXzCBQ1r5ysjzAUzZ8v2/vdDJ2JLqvUkD5w==
+webdav_url: KOGd/7f1WKIEs3n/G+lCdUNPHPpjKCV/gjupjyit9XxjE+a95AtjbtwN4tAjadtEPK5EuShJDG0D91k37A==
+webdav_username: ajMirU4r+6qnXk899am1F76dYuHtqpHxiPXslbibGYd0ojqyQu+3kFok42PLMFw=
+webdav_password: 5Of4OU5X8yhVOgKWs/dyR1s1ICyKgQPrMBvkR1RPVKvg8NwdLp6AoaXzd6lmUQ==
 enable_tray_speed: false
 enable_tray_icon: true
 enable_auto_light_weight_mode: false

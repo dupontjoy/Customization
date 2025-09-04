@@ -10,9 +10,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:57:00</StartDateTime>
 		<EndDateTime>2025-08-23 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-31 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-08-31 07:57:00</NextRunTime>
-		<LastRunTime>2025-08-30 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-09-05 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-09-05 07:57:00</NextRunTime>
+		<LastRunTime>2025-09-04 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -342,9 +342,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:57:00</StartDateTime>
 		<EndDateTime>2025-08-23 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-30 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-08-30 17:57:00</NextRunTime>
-		<LastRunTime>2025-08-29 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-09-04 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-09-04 17:57:00</NextRunTime>
+		<LastRunTime>2025-09-03 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -674,9 +674,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:27:00</StartDateTime>
 		<EndDateTime>2025-08-23 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-08-30 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-08-30 21:27:00</NextRunTime>
-		<LastRunTime>2025-08-29 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-09-04 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-09-04 21:27:00</NextRunTime>
+		<LastRunTime>2025-09-03 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1003,10 +1003,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-08-17 04:28:48</EndDateTime>
-		<NextRunDateTime>2125-08-06 06:43:02</NextRunDateTime>
+		<EndDateTime>2025-08-31 08:57:36</EndDateTime>
+		<NextRunDateTime>2125-08-11 09:54:25</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-08-30 06:43:02</LastRunTime>
+		<LastRunTime>2025-09-04 09:54:25</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1060,6 +1060,8 @@ env2=value2</edtAppEnv>
 			<chkHotkeyWheel>0</chkHotkeyWheel>
 			<chkHotkeyWin>0</chkHotkeyWin>
 			<chkHotkeyWinM>0</chkHotkeyWinM>
+			<chkHotkeyX1>0</chkHotkeyX1>
+			<chkHotkeyX2>0</chkHotkeyX2>
 			<chkQukPhz>0</chkQukPhz>
 			<chkQukPhzProc>0</chkQukPhzProc>
 			<chkQukPhzTip>1</chkQukPhzTip>
@@ -1092,6 +1094,7 @@ env2=value2</edtAppEnv>
 			<edtExecExitWaitTime>60</edtExecExitWaitTime>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
+			<edtExecTimeout>0</edtExecTimeout>
 			<edtHKMouseCorner>50</edtHKMouseCorner>
 			<edtHKMouseEdge>50</edtHKMouseEdge>
 			<edtSchLimitCount>1</edtSchLimitCount>
@@ -1309,7 +1312,7 @@ env2=value2</edtAppEnv>
 					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
 					<edtTaskName>设置系统音量</edtTaskName>
-					<edtVolSet>30</edtVolSet>
+					<edtVolSet>40</edtVolSet>
 					<edtVolSet.max>100</edtVolSet.max>
 					<edtVolSet.min>1</edtVolSet.min>
 					<optPlaySnd>0</optPlaySnd>
@@ -1333,9 +1336,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 10:00:00</StartDateTime>
 		<EndDateTime>2025-08-02 22:43:12</EndDateTime>
-		<NextRunDateTime>2025-08-31 10:00:00</NextRunDateTime>
-		<NextRunTime>2025-08-31 10:00:00</NextRunTime>
-		<LastRunTime>2025-08-30 10:00:00</LastRunTime>
+		<NextRunDateTime>2025-09-05 10:00:00</NextRunDateTime>
+		<NextRunTime>2025-09-05 10:00:00</NextRunTime>
+		<LastRunTime>2025-09-04 10:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1651,9 +1654,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 12:00:00</StartDateTime>
 		<EndDateTime>2025-07-24 00:34:08</EndDateTime>
-		<NextRunDateTime>2025-08-31 12:00:00</NextRunDateTime>
-		<NextRunTime>2025-08-31 12:00:00</NextRunTime>
-		<LastRunTime>2025-08-24 12:00:00</LastRunTime>
+		<NextRunDateTime>2025-09-07 12:00:00</NextRunDateTime>
+		<NextRunTime>2025-09-07 12:00:00</NextRunTime>
+		<LastRunTime>2025-08-31 12:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2483,9 +2486,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2025-05-28 13:00:00</StartDateTime>
 		<EndDateTime>2025-07-14 08:42:44</EndDateTime>
-		<NextRunDateTime>2025-08-31 13:00:00</NextRunDateTime>
-		<NextRunTime>2025-08-31 13:00:00</NextRunTime>
-		<LastRunTime>2025-08-24 13:00:00</LastRunTime>
+		<NextRunDateTime>2025-09-07 13:00:00</NextRunDateTime>
+		<NextRunTime>2025-09-07 13:00:00</NextRunTime>
+		<LastRunTime>2025-08-31 13:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
