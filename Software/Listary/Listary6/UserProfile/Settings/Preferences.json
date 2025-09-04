@@ -1,9 +1,6 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
-      "DirectoryOpus": {
-        "EnableMouseMiddleClick": false
-      },
       "WindowsExplorer": {
         "EnableMouseMiddleClick": false
       },
@@ -15,6 +12,9 @@
         "EnableMouseMiddleClick": false
       },
       "TotalCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "DirectoryOpus": {
         "EnableMouseMiddleClick": false
       },
       "FreeCommander": {
@@ -225,21 +225,6 @@
           "Index": -1,
           "Info": null,
           "Item": {
-            "Keyword": "ds",
-            "Url": "https://www.dushe9.app/search?k={query}",
-            "Title": "毒舌電影",
-            "Icon": {
-              "Path": "{user}\\b48ff520-dafb-4ff1-8463-f2e6b1225a37.png",
-              "TypeName": "Path"
-            },
-            "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://www.dushe9.app/search?k={query}"
-          }
-        },
-        {
-          "Index": -1,
-          "Info": null,
-          "Item": {
             "Keyword": "prts",
             "Url": "https://prts.wiki/index.php?search={query}&profile=advanced&fulltext=1&ns0=1",
             "Title": "PRTS",
@@ -249,28 +234,6 @@
             },
             "SuggestionProvider": "Custom",
             "SuggestionUrl": "https://prts.wiki/w/{query}"
-          }
-        },
-        {
-          "Index": -1,
-          "Info": null,
-          "Item": {
-            "Keyword": "lb",
-            "Url": "https://lizw.netlify.app/s={query}",
-            "Title": "Libretv",
-            "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://lizw.netlify.app/s={query}"
-          }
-        },
-        {
-          "Index": -1,
-          "Info": null,
-          "Item": {
-            "Keyword": "mn",
-            "Url": "https://ytll.netlify.app/search?q={query}",
-            "Title": "MoonTV",
-            "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://ytll.netlify.app/search?q={query}"
           }
         }
       ],
@@ -298,6 +261,7 @@
         {
           "Id": "b36cf1bb-5527-42d8-bf91-d034bcbf057b",
           "UpdatedProperties": {
+            "Keyword": "bd",
             "Url": "https://www.baidu.com/s?wd={query}"
           }
         },
