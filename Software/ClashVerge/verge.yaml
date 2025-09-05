@@ -73,9 +73,9 @@ verge_socks_port: 7898
 verge_socks_enabled: false
 verge_port: 7899
 verge_http_enabled: false
-webdav_url: KOGd/7f1WKIEs3n/G+lCdUNPHPpjKCV/gjupjyit9XxjE+a95AtjbtwN4tAjadtEPK5EuShJDG0D91k37A==
-webdav_username: ajMirU4r+6qnXk899am1F76dYuHtqpHxiPXslbibGYd0ojqyQu+3kFok42PLMFw=
-webdav_password: 5Of4OU5X8yhVOgKWs/dyR1s1ICyKgQPrMBvkR1RPVKvg8NwdLp6AoaXzd6lmUQ==
+webdav_url: T8c6mRwH1TeOfYUCMW25CB/YgX+evdon8m8CG1/mG6cQcFzQy1NN1VvhY+pEujWGJZEAVNvm+Ot1+30wTQ==
+webdav_username: CskQGdO7wtQoZ7iMiIgi7mI1TEoryk9VxaTFkIEX++qrB11u01xD1eNAxeOfA9M=
+webdav_password: NVWbgXG+0yqkhp4J73VaJg6/izuIXiika3Z3OnDTpBcybftGkPdMGtjQ+qcHsA==
 enable_tray_speed: false
 enable_tray_icon: true
 enable_auto_light_weight_mode: false
@@ -86,5 +86,5 @@ service_state:
   last_install_time: 1755435908
   install_count: 1
   last_check_time: 0
-  last_error: null
-  prefer_sidecar: false
+  last_error: '通过服务启动核心失败: failed to get runtime config'
+  prefer_sidecar: true
