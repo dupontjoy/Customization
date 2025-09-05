@@ -8,10 +8,7 @@
 !-------------------------------------------------------------------------------------!
 
 ! moontv
-lunatv.*,haf-lunatv.*,ytll.*,nytll.*,moontv.*##.fixed.z-\\[2000\\]
-lunatv.*,haf-lunatv.*,ytll.*,nytll.*,moontv.*##^script:inject(script.js)
-ixnstwzdqcxu.ap-southeast-1.clawcloudrun.com##.fixed.z-\\[2000\\]
-ixnstwzdqcxu.ap-southeast-1.clawcloudrun.com##^script:inject(script.js)
+lunatv.*,haf-lunatv.*,ytll.*,nytll.*,moontv.*##[class*="z-[2000]"].fixed.right-4.top-4
 
 ! Bili
 bilibili.com##.reply-notice
