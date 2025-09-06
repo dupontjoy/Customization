@@ -8,7 +8,7 @@
 !-------------------------------------------------------------------------------------!
 
 ! moontv
-lunatv.*,haf-lunatv.*,ytll.*,nytll.*,moontv.*##[class*="z-[2000]"].fixed.right-4.top-4
+lunatv.*,haf-lunatv.*,ytll.*,nytll.*,moontv.*##.z-\[2000\].right-4.top-4.fixed
 
 ! Bili
 bilibili.com##.reply-notice

@@ -11,7 +11,10 @@
 			"action": "redirect",
 			"to": "https://book.bfnn.org/books$1",
 			"group": "CingList-Redirect",
-			"encoding": "UTF-8"
+			"encoding": "UTF-8",
+			"condition": {
+				"regex": "^https?:\\/\\/book\\.bfnn\\.org\\/article([\\d]?\\/.*)$"
+			}
 		},
 		{
 			"enable": false,
@@ -24,7 +27,10 @@
 			"action": "redirect",
 			"to": "https://use.sevencdn.com/$1",
 			"group": "CingList-Redirect",
-			"encoding": "UTF-8"
+			"encoding": "UTF-8",
+			"condition": {
+				"regex": "^https?:\\/\\/fonts\\.googleapis\\.com\\/(.*)$"
+			}
 		},
 		{
 			"enable": false,
@@ -37,7 +43,10 @@
 			"action": "redirect",
 			"to": "https://use.sevencdn.com/gajax/$1",
 			"group": "CingList-Redirect",
-			"encoding": "UTF-8"
+			"encoding": "UTF-8",
+			"condition": {
+				"regex": "^https?:\\/\\/ajax\\.googleapis\\.com\\/ajax\\/(.*)$"
+			}
 		},
 		{
 			"enable": false,
@@ -50,7 +59,10 @@
 			"action": "redirect",
 			"to": "https://use.sevencdn.com/$1",
 			"group": "CingList-Redirect",
-			"encoding": "UTF-8"
+			"encoding": "UTF-8",
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.gravatar\\.com\\/(.*)$"
+			}
 		},
 		{
 			"enable": false,
@@ -63,7 +75,10 @@
 			"action": "redirect",
 			"to": "https://gcore.jsdelivr.net/gh/$1$3",
 			"group": "CingList-Redirect",
-			"code": "if (detail.type === \"main_frame\") {\n    return val.replace(\"cdn.jsdelivr.net\", \"gcore.jsdelivr.net\").replace(\"@master\",\"\").replace(\"@main\",\"\").replace(\"@dev\",\"\").replace(\"@develop\",\"\").replace(\"@public\",\"\");\n}"
+			"code": "if (detail.type === \"main_frame\") {\n    return val.replace(\"cdn.jsdelivr.net\", \"gcore.jsdelivr.net\").replace(\"@master\",\"\").replace(\"@main\",\"\").replace(\"@dev\",\"\").replace(\"@develop\",\"\").replace(\"@public\",\"\");\n}",
+			"condition": {
+				"regex": "^https?://cdn\\.jsdelivr\\.net/(.*)(master|main|dev|develop|public)?(.*)$"
+			}
 		},
 		{
 			"enable": true,
@@ -75,7 +90,10 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://www.$2.com$3/$4",
-			"group": "CingList-Redirect"
+			"group": "CingList-Redirect",
+			"condition": {
+				"regex": "^https?://(3g|m|wap)\\.(163|zol)\\.com(.cn)?/(.*)"
+			}
 		},
 		{
 			"enable": true,
@@ -87,7 +105,10 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "  https://www.ithome.com/0/$1/$2$3",
-			"group": "CingList-Redirect"
+			"group": "CingList-Redirect",
+			"condition": {
+				"regex": "^https?://m\\.ithome\\.com/html/(\\d{1,3})(\\d{4,6})(.*)"
+			}
 		},
 		{
 			"enable": false,
@@ -100,7 +121,10 @@
 			"action": "redirect",
 			"to": "https://use.sevencdn.com/$1",
 			"group": "CingList-Redirect",
-			"encoding": "UTF-8"
+			"encoding": "UTF-8",
+			"condition": {
+				"regex": "^https?:\\/\\/chart\\.googleapis\\.com\\/(.*)$"
+			}
 		},
 		{
 			"enable": false,
@@ -113,7 +137,10 @@
 			"action": "redirect",
 			"to": "https://use.sevencdn.com/qr/$1",
 			"group": "CingList-Redirect",
-			"encoding": "UTF-8"
+			"encoding": "UTF-8",
+			"condition": {
+				"regex": "^https?:\\/\\/api\\.qrserver\\.com\\/v1\\/create-qr-code\\/(.*)$"
+			}
 		},
 		{
 			"enable": false,
@@ -126,7 +153,10 @@
 			"action": "redirect",
 			"to": "https://use.sevencdn.com/$1",
 			"group": "CingList-Redirect",
-			"encoding": "UTF-8"
+			"encoding": "UTF-8",
+			"condition": {
+				"regex": "^https?:\\/\\/cdnjs\\.cloudflare\\.com\\/(.*)$"
+			}
 		}
 	],
 	"sendHeader": [
@@ -143,7 +173,13 @@
 			"isFunction": false,
 			"enable": true,
 			"group": "CingList-Request",
-			"encoding": "UTF-8"
+			"encoding": "UTF-8",
+			"headers": {
+				"accept-language": "en-US"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*(bing|pornhub|google).*"
+			}
 		},
 		{
 			"enable": true,
@@ -157,7 +193,13 @@
 				"name": "referer",
 				"value": "http://blog.sina.com.cn/"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": "http://blog.sina.com.cn/"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.sinaimg\\.cn.*"
+			}
 		},
 		{
 			"enable": true,
@@ -171,7 +213,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.isnowfy\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -186,7 +234,13 @@
 				"value": ""
 			},
 			"group": "CingList-Request",
-			"encoding": "UTF-8"
+			"encoding": "UTF-8",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/(mmbiz|a|gchat).*\\.(qpic|qlogo)\\.cn.*"
+			}
 		},
 		{
 			"enable": true,
@@ -200,7 +254,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.waylee\\.net.*"
+			}
 		},
 		{
 			"enable": true,
@@ -215,7 +275,13 @@
 				"value": "https://www.baidu.com"
 			},
 			"group": "CingList-Request",
-			"encoding": "UTF-8"
+			"encoding": "UTF-8",
+			"headers": {
+				"referer": "https://www.baidu.com"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*(bdimg|bdstatic|(.*(img|photo|pics).*\\.baidu))\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -229,7 +295,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*photo\\.store\\.qq\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -243,7 +315,13 @@
 				"name": "referer",
 				"value": "https://www.163.com/"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": "https://www.163.com/"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*(ph|bimg|nosdn|ws)\\.(127|126)\\.net.*"
+			}
 		},
 		{
 			"enable": true,
@@ -257,7 +335,13 @@
 				"name": "referer",
 				"value": "https://www.chiphell.com/"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": "https://www.chiphell.com/"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*chiphell\\.com\\/data\\/attachment\\/.*"
+			}
 		},
 		{
 			"enable": true,
@@ -271,7 +355,13 @@
 				"name": "referer",
 				"value": "http://www.pconline.com.cn/"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": "http://www.pconline.com.cn/"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.pconline\\.com\\.cn.*"
+			}
 		},
 		{
 			"enable": true,
@@ -286,7 +376,13 @@
 				"value": "https://www.pixiv.net/"
 			},
 			"group": "CingList-Request",
-			"encoding": "UTF-8"
+			"encoding": "UTF-8",
+			"headers": {
+				"referer": "https://www.pixiv.net/"
+			},
+			"condition": {
+				"regex": "i.pximg.net"
+			}
 		},
 		{
 			"enable": true,
@@ -300,7 +396,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.poco\\.cn.*"
+			}
 		},
 		{
 			"enable": true,
@@ -314,7 +416,13 @@
 				"name": "referer",
 				"value": "http://club.autohome.com.cn/"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": "http://club.autohome.com.cn/"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.autoimg\\.cn.*"
+			}
 		},
 		{
 			"enable": true,
@@ -328,7 +436,13 @@
 				"name": "referer",
 				"value": "https://www.douban.com/"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": "https://www.douban.com/"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.doubanio.*\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -342,7 +456,13 @@
 				"name": "referer",
 				"value": "http://jandan.net/"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": "http://jandan.net/"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*jdstatic\\.tankr\\.net.*"
+			}
 		},
 		{
 			"enable": true,
@@ -356,7 +476,13 @@
 				"name": "referer",
 				"value": "http://www.imanhua.com/"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": "http://www.imanhua.com/"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.mangafiles\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -370,7 +496,13 @@
 				"name": "referer",
 				"value": "http://www.tudou.com/"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": "http://www.tudou.com/"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.tudou\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -384,7 +516,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*photo\\.sina\\.com\\.cn.*"
+			}
 		},
 		{
 			"enable": true,
@@ -398,7 +536,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.(zol|zol-img)\\.com\\.cn.*"
+			}
 		},
 		{
 			"enable": true,
@@ -412,7 +556,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.(postimg|postimage)\\.org.*"
+			}
 		},
 		{
 			"enable": true,
@@ -426,7 +576,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*blogs\\.yahoo\\.co\\.jp.*"
+			}
 		},
 		{
 			"enable": true,
@@ -440,7 +596,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.quora\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -454,7 +616,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.tumblr\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -468,7 +636,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.wuyou\\.net.*"
+			}
 		},
 		{
 			"enable": true,
@@ -482,7 +656,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*img.*\\.178\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -496,7 +676,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\gtimg\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -510,7 +696,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.dgtle\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -524,7 +716,13 @@
 				"name": "referer",
 				"value": "https://paper.seebug.org"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": "https://paper.seebug.org"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.seebug\\.org.*"
+			}
 		},
 		{
 			"enable": true,
@@ -538,7 +736,13 @@
 				"name": "referer",
 				"value": "https://image.jiqizhixin.com"
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": "https://image.jiqizhixin.com"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.jiqizhixin\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -552,7 +756,13 @@
 				"name": "referer",
 				"value": ""
 			},
-			"group": "CingList-Request"
+			"group": "CingList-Request",
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*\\.zhimg\\.com.*"
+			}
 		},
 		{
 			"enable": true,
@@ -566,6 +776,12 @@
 			"action": {
 				"name": "referer",
 				"value": ""
+			},
+			"headers": {
+				"referer": ""
+			},
+			"condition": {
+				"regex": "sunzhongwei.com"
 			}
 		},
 		{
@@ -581,7 +797,13 @@
 				"value": "https://www.ithome.com/"
 			},
 			"group": "CingList-Request",
-			"encoding": "UTF-8"
+			"encoding": "UTF-8",
+			"headers": {
+				"referer": "https://www.ithome.com/"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/img\\.ithome.*"
+			}
 		},
 		{
 			"enable": true,
@@ -595,6 +817,12 @@
 			"action": {
 				"name": "referer",
 				"value": "https://www.thepaper.cn/"
+			},
+			"headers": {
+				"referer": "https://www.thepaper.cn/"
+			},
+			"condition": {
+				"regex": "thepaper.cn"
 			}
 		},
 		{
@@ -610,7 +838,30 @@
 			},
 			"group": "CingList-Request",
 			"encoding": "UTF-8",
-			"_exclude": {}
+			"headers": {
+				"user-agent": "Edge/1000"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*(jianshu|youtube|google).*"
+			}
+		},
+		{
+			"enable": true,
+			"name": "moontv cors unblock",
+			"ruleType": "modifySendHeader",
+			"pattern": "^https?:\\/\\/.*(jianshu|youtube|google).*",
+			"isFunction": false,
+			"group": "CingList-Request",
+			"encoding": "utf-8",
+			"headers": {
+				"access-control-allow-origin": "*",
+				"access-control-allow-methods": "GET, POST, OPTIONS",
+				"access-control-allow-headers": "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range",
+				"access-control-expose-headers": "Content-Length,Content-Range"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*(lunatv|moontv|ytll).*.(dev|app|shop|xyz)/.*"
+			}
 		}
 	],
 	"receiveHeader": [
@@ -626,6 +877,12 @@
 			"action": {
 				"name": "access-control-allow-origin",
 				"value": "*"
+			},
+			"headers": {
+				"access-control-allow-origin": "*"
+			},
+			"condition": {
+				"regex": "^https?:\\/\\/.*(ph|bimg|nosdn|ws)\\.(127|126)\\.net.*"
 			}
 		},
 		{
@@ -640,6 +897,12 @@
 			"action": {
 				"name": "content-disposition",
 				"value": "inline"
+			},
+			"headers": {
+				"content-disposition": "inline"
+			},
+			"condition": {
+				"regex": "^https?://image.baidu.com/search/down\\?url=(.*)"
 			}
 		}
 	],
