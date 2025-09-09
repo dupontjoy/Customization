@@ -43,7 +43,7 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1757385421
+  updated: 1757377348
   option:
     with_proxy: false
     self_proxy: false
@@ -84,12 +84,15 @@ items:
   file: RE2WWywsBQVi.yaml
   desc: ''
   url: https://yzxr.dupontjoy.shop/yzxr?proxyip=proxyip.cmliussss.net:443
+  selected:
+  - name: ♻️ 自动选择
+    now: CF-23.43MB/s
   extra:
-    upload: 1439144203068
-    download: 1439144203068
+    upload: 206250056176
+    download: 206250056176
     total: 26388279066624
     expire: 4102329600
-  updated: 1757385423
+  updated: 1757377350
   option:
     with_proxy: false
     self_proxy: false

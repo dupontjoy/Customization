@@ -1,17 +1,17 @@
 {
-  "timeStamp": 1757247952650,
+  "timeStamp": 1757390119341,
   "version": "1.65.0",
   "userSettings": {
     "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
     "cnameUncloakEnabled": false,
     "contextMenuEnabled": false,
-    "externalLists": "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt\nhttps://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt\nhttps://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
+    "externalLists": "https://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt\nhttps://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt\nhttps://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
     "firewallPaneMinimized": false,
     "hyperlinkAuditingDisabled": false,
     "ignoreGenericCosmeticFilters": true,
     "importedLists": [
-      "https://github.com/dupontjoy/Customization/raw/main/Rules/uBlock/ubo-cinglist.txt",
+      "https://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt",
       "https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt",
       "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
       "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt",
@@ -31,8 +31,8 @@
     "ublock-unbreak",
     "CHN-0",
     "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
-    "https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt",
-    "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
+    "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
+    "https://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt"
   ],
   "hiddenSettings": {
     "allowGenericProceduralFilters": true,
@@ -48,6 +48,7 @@
     "chrome-scheme",
     "cloudflare.com",
     "console.upstash.com",
+    "github.com",
     "moz-extension-scheme",
     "opera-scheme",
     "vivaldi-scheme"
