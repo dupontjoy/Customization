@@ -1,7 +1,8 @@
 {
-  "timeStamp": 1756529477527,
+  "timeStamp": 1757247952650,
   "version": "1.65.0",
   "userSettings": {
+    "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
     "cnameUncloakEnabled": false,
     "contextMenuEnabled": false,
@@ -28,22 +29,17 @@
     "ublock-privacy",
     "ublock-quick-fixes",
     "ublock-unbreak",
-    "easylist",
-    "adguard-generic",
-    "fanboy-cookiemonster",
-    "ublock-cookies-easylist",
-    "adguard-cookies",
-    "ublock-cookies-adguard",
     "CHN-0",
     "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
     "https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt",
     "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt"
   ],
   "hiddenSettings": {
+    "allowGenericProceduralFilters": true,
     "autoUpdatePeriod": 60,
     "blockingProfiles": "11111/#F00 11011/#C0F 11001/#00F 00001",
-    "cloudStorageCompression": false,
-    "filterAuthorMode": true
+    "filterAuthorMode": true,
+    "updateAssetBypassBrowserCache": true
   },
   "whitelist": [
     "# edge-scheme",

@@ -63,19 +63,24 @@
 @-moz-document regexp("https://.*(lunatv|moontv|ytll).*.(dev|app|shop|xyz)/.*"), 
                regexp("https://ixnstwzdqcxu.ap-southeast-1.clawcloudrun.com/.*")
 {
- /*播放区域缩小*/
-.space-y-2, div.grid-cols-1:nth-child(3) {
+ /*播放区域上移和缩小*/
+div.space-y-2:nth-child(2) {
     margin-top: calc(-1 * (6.5vh + 1%)) !important;/*向上移*/
     transform: scale(0.9) !important;
  }
  
-  /*左上角标题，右上角设置退出和暗色*/
+ /*详情区 缩小*/
+ div.grid:nth-child(3) {
+    transform: scale(0.9) !important;
+ }
+ 
+  /*左上角标题，右上角设置退出和暗色 缩小*/
 .text-xl, .top-2 {
     margin-top: calc(-1 * (0vh + 1%)) !important;/*向上移*/
     transform: scale(0.9) !important;
  }
  
- /*左上角返回和右上角显示/隐藏按钮*/
+ /*左上角返回和右上角显示/隐藏按钮 隐藏*/
  .top-3, button.group {
     display: none !important;
  }

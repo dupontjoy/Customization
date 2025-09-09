@@ -10,9 +10,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:57:00</StartDateTime>
 		<EndDateTime>2025-08-23 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-09-07 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-09-07 07:57:00</NextRunTime>
-		<LastRunTime>2025-09-06 07:57:01</LastRunTime>
+		<NextRunDateTime>2025-09-10 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-09-10 07:57:00</NextRunTime>
+		<LastRunTime>2025-09-08 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -342,9 +342,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:57:00</StartDateTime>
 		<EndDateTime>2025-08-23 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-09-07 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-09-07 17:57:00</NextRunTime>
-		<LastRunTime>2025-09-06 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-09-09 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-09-09 17:57:00</NextRunTime>
+		<LastRunTime>2025-09-08 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -674,9 +674,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:27:00</StartDateTime>
 		<EndDateTime>2025-08-23 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-09-06 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-09-06 21:27:00</NextRunTime>
-		<LastRunTime>2025-09-05 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-09-09 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-09-09 21:27:00</NextRunTime>
+		<LastRunTime>2025-09-08 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1003,10 +1003,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-08-31 08:57:36</EndDateTime>
-		<NextRunDateTime>2125-08-13 07:54:08</NextRunDateTime>
+		<EndDateTime>2025-09-08 17:55:12</EndDateTime>
+		<NextRunDateTime>2125-08-16 10:37:12</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-09-06 07:54:08</LastRunTime>
+		<LastRunTime>2025-09-09 10:37:12</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1336,9 +1336,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 10:00:00</StartDateTime>
 		<EndDateTime>2025-08-02 22:43:12</EndDateTime>
-		<NextRunDateTime>2025-09-07 10:00:00</NextRunDateTime>
-		<NextRunTime>2025-09-07 10:00:00</NextRunTime>
-		<LastRunTime>2025-09-06 10:00:00</LastRunTime>
+		<NextRunDateTime>2025-09-10 10:00:00</NextRunDateTime>
+		<NextRunTime>2025-09-10 10:00:00</NextRunTime>
+		<LastRunTime>2025-09-09 10:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1654,9 +1654,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 12:00:00</StartDateTime>
 		<EndDateTime>2025-07-24 00:34:08</EndDateTime>
-		<NextRunDateTime>2025-09-07 12:00:00</NextRunDateTime>
-		<NextRunTime>2025-09-07 12:00:00</NextRunTime>
-		<LastRunTime>2025-08-31 12:00:00</LastRunTime>
+		<NextRunDateTime>2025-09-14 12:00:00</NextRunDateTime>
+		<NextRunTime>2025-09-14 12:00:00</NextRunTime>
+		<LastRunTime>2025-09-07 12:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2481,14 +2481,14 @@ env2=value2</edtAppEnv>
 		<TaskType>ttMultiTasker</TaskType>
 		<Stopped>0</Stopped>
 		<HKStopped>1</HKStopped>
-		<QukPhzStopped>0</QukPhzStopped>
+		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
-		<StartDateTime>2025-05-28 13:00:00</StartDateTime>
-		<EndDateTime>2025-07-14 08:42:44</EndDateTime>
-		<NextRunDateTime>2025-09-07 13:00:00</NextRunDateTime>
-		<NextRunTime>2025-09-07 13:00:00</NextRunTime>
-		<LastRunTime>2025-08-31 13:00:00</LastRunTime>
+		<StartDateTime>2025-05-28 12:30:00</StartDateTime>
+		<EndDateTime>2025-09-07 17:25:28</EndDateTime>
+		<NextRunDateTime>2025-09-14 12:30:00</NextRunDateTime>
+		<NextRunTime>2025-09-14 12:30:00</NextRunTime>
+		<LastRunTime>2025-09-07 12:30:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2538,15 +2538,26 @@ env2=value2</edtAppEnv>
 			<chkHKMouseEdge4>0</chkHKMouseEdge4>
 			<chkHotkey>0</chkHotkey>
 			<chkHotkeyAlt>0</chkHotkeyAlt>
+			<chkHotkeyAltM>0</chkHotkeyAltM>
 			<chkHotkeyCtrl>0</chkHotkeyCtrl>
+			<chkHotkeyCtrlM>0</chkHotkeyCtrlM>
 			<chkHotkeyLeft>0</chkHotkeyLeft>
 			<chkHotkeyMiddle>0</chkHotkeyMiddle>
+			<chkHotkeyMouseMod>0</chkHotkeyMouseMod>
 			<chkHotkeyRight>0</chkHotkeyRight>
 			<chkHotkeyShift>0</chkHotkeyShift>
+			<chkHotkeyShiftM>0</chkHotkeyShiftM>
 			<chkHotkeyWheel>0</chkHotkeyWheel>
 			<chkHotkeyWin>0</chkHotkeyWin>
+			<chkHotkeyWinM>0</chkHotkeyWinM>
+			<chkHotkeyX1>0</chkHotkeyX1>
+			<chkHotkeyX2>0</chkHotkeyX2>
+			<chkQukPhz>0</chkQukPhz>
+			<chkQukPhzProc>0</chkQukPhzProc>
+			<chkQukPhzTip>1</chkQukPhzTip>
 			<chkRunMiss>0</chkRunMiss>
 			<chkSKPartMatch>0</chkSKPartMatch>
+			<chkSKProcActiveWnd>0</chkSKProcActiveWnd>
 			<chkSKProcExists>0</chkSKProcExists>
 			<chkSKWinExists>0</chkSKWinExists>
 			<chkSKWinFore>0</chkSKWinFore>
@@ -2563,12 +2574,17 @@ env2=value2</edtAppEnv>
 			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
 			<cmbClass>无</cmbClass>
 			<cmbClass_text>无</cmbClass_text>
+			<cmbExecExitType>0</cmbExecExitType>
+			<cmbExecExitType_text>跳过执行</cmbExecExitType_text>
 			<cmbHKMouse>0</cmbHKMouse>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
 			<cmbHotkey>0</cmbHotkey>
 			<edtDelayBoot>0</edtDelayBoot>
+			<edtEveryWeek>1</edtEveryWeek>
+			<edtExecExitWaitTime>60</edtExecExitWaitTime>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
+			<edtExecTimeout>0</edtExecTimeout>
 			<edtHKMouseCorner>50</edtHKMouseCorner>
 			<edtHKMouseEdge>50</edtHKMouseEdge>
 			<edtSchLimitCount>1</edtSchLimitCount>
@@ -2619,6 +2635,7 @@ env2=value2</edtAppEnv>
 					<chkHotkeyCtrl>0</chkHotkeyCtrl>
 					<chkHotkeyShift>0</chkHotkeyShift>
 					<chkHotkeyWin>0</chkHotkeyWin>
+					<chkQukPhz>0</chkQukPhz>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
 					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
@@ -2672,6 +2689,7 @@ env2=value2</edtAppEnv>
 					<chkHotkeyCtrl>0</chkHotkeyCtrl>
 					<chkHotkeyShift>0</chkHotkeyShift>
 					<chkHotkeyWin>0</chkHotkeyWin>
+					<chkQukPhz>0</chkQukPhz>
 					<cmbAppShowCmd>1</cmbAppShowCmd>
 					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
 					<cmbEcecType>1</cmbEcecType>

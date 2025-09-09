@@ -235,6 +235,21 @@
             "SuggestionProvider": "Custom",
             "SuggestionUrl": "https://prts.wiki/w/{query}"
           }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "gh",
+            "Url": "https://github.com/search?q={query}&type=repositories",
+            "Title": "github",
+            "Icon": {
+              "Path": "{user}\\44c25ec6-1946-4774-8846-aa5ad653a16e.jpg",
+              "TypeName": "Path"
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://github.com/search?q={query}&type=repositories"
+          }
         }
       ],
       "Updates": [

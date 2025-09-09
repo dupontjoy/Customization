@@ -3,7 +3,11 @@
 
 const { Services } = globalThis;
 const { AppConstants } = ChromeUtils.importESModule('resource://gre/modules/AppConstants.sys.mjs');
-const { CustomizableUI: CUI } = ChromeUtils.importESModule('resource:///modules/CustomizableUI.sys.mjs');
+try {
+    const { CustomizableUI: CUI } = ChromeUtils.importESModule('moz-src:///browser/components/customizableui/CustomizableUI.sys.mjs');
+} catch (ex) {
+    const { CustomizableUI: CUI } = ChromeUtils.importESModule('resource:///modules/CustomizableUI.sys.mjs');
+}
 const { console } = Cu.getGlobalForObject(Services);
 export const _uc = {
     APPNAME: AppConstants.MOZ_APP_NAME,
@@ -14,11 +18,11 @@ export const _uc = {
     chromedir: Services.dirsvc.get('UChrm', Ci.nsIFile),
     scriptsDir: '',
 
-    get isFaked() {
+    get isFaked () {
         return true;
     },
 
-    get isESM() {
+    get isESM () {
         return true;
     },
 
