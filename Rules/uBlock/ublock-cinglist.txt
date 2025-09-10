@@ -16,6 +16,12 @@ bilibili.com##.reply-notice
 bilibili.com##.browser-tip > .title
 bilibili.com##.adblock-tips
 bilibili.com##.animated-banner
+! B站优化：去掉监视、日志功能 by star-ray
+||hdslb.com/bfs/seed/jinkela/short/b-mirror/biliMirror.$script
+||hdslb.com/bfs/seed/jinkela/kv-sdk/$script
+||hdslb.com/bfs/seed/jinkela/short/reporter-pb/$script
+!bilibili.com##+js(nowebrtc)
+||data.bilibili.com/log/$xhr,empty
 
 ! 防止斗鱼直播切回标签页会重新加载
 douyu.com##+js(aeld,visibilitychange)
@@ -106,4 +112,3 @@ weibo.com##.yawf-dialog-outer
 
 ! https://hentaihub.xxx
 hentaihub.xxx##.vrav_a_pc
-

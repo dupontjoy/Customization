@@ -10,9 +10,9 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:57:00</StartDateTime>
 		<EndDateTime>2025-08-23 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-09-10 07:57:00</NextRunDateTime>
-		<NextRunTime>2025-09-10 07:57:00</NextRunTime>
-		<LastRunTime>2025-09-08 07:57:00</LastRunTime>
+		<NextRunDateTime>2025-09-11 07:57:00</NextRunDateTime>
+		<NextRunTime>2025-09-11 07:57:00</NextRunTime>
+		<LastRunTime>2025-09-10 07:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -674,9 +674,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 21:27:00</StartDateTime>
 		<EndDateTime>2025-08-23 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-09-09 21:27:00</NextRunDateTime>
-		<NextRunTime>2025-09-09 21:27:00</NextRunTime>
-		<LastRunTime>2025-09-08 21:27:00</LastRunTime>
+		<NextRunDateTime>2025-09-10 21:27:00</NextRunDateTime>
+		<NextRunTime>2025-09-10 21:27:00</NextRunTime>
+		<LastRunTime>2025-09-09 21:27:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1003,10 +1003,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-09-08 17:55:12</EndDateTime>
-		<NextRunDateTime>2125-08-16 15:54:41</NextRunDateTime>
+		<EndDateTime>2025-09-11 11:50:24</EndDateTime>
+		<NextRunDateTime>2035-09-08 10:26:25</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-09-09 15:54:41</LastRunTime>
+		<LastRunTime>2025-09-10 10:17:30</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1105,7 +1105,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>23</ID>
+				<ID>388-D6NFLU2YYP</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1181,7 +1181,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Delay>
 			<Tasker>
-				<ID>8</ID>
+				<ID>518-MHK5CPP2MD</ID>
 				<TaskType>ttMouseClick</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1268,7 +1268,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Delay>
 			<Tasker>
-				<ID>98</ID>
+				<ID>533-M0HLX15FXT</ID>
 				<TaskType>ttVolumeSet</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1336,9 +1336,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 10:00:00</StartDateTime>
 		<EndDateTime>2025-08-02 22:43:12</EndDateTime>
-		<NextRunDateTime>2025-09-10 10:00:00</NextRunDateTime>
-		<NextRunTime>2025-09-10 10:00:00</NextRunTime>
-		<LastRunTime>2025-09-09 10:00:00</LastRunTime>
+		<NextRunDateTime>2025-09-11 10:00:00</NextRunDateTime>
+		<NextRunTime>2025-09-11 10:00:00</NextRunTime>
+		<LastRunTime>2025-09-10 10:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
