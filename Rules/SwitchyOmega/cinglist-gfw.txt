@@ -6,7 +6,11 @@
 ! Expires:      1h
 !------------------------------------------------------------------!
 
-! no-group
+!#Whitelist Start#
+@@||pages.dev
+@@||cloudflare.com
+
+! 未分组
 ||netlify.com
 ||dota2.com.cn
 ||caixin.com
