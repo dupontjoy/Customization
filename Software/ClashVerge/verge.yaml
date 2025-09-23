@@ -5,7 +5,7 @@ language: zh
 theme_mode: system
 tray_event: null
 env_type: powershell
-start_page: /profile
+start_page: /
 startup_script: null
 traffic_graph: true
 enable_memory_usage: true
@@ -73,9 +73,9 @@ verge_socks_port: 7898
 verge_socks_enabled: false
 verge_port: 7899
 verge_http_enabled: false
-webdav_url: T8c6mRwH1TeOfYUCMW25CB/YgX+evdon8m8CG1/mG6cQcFzQy1NN1VvhY+pEujWGJZEAVNvm+Ot1+30wTQ==
-webdav_username: CskQGdO7wtQoZ7iMiIgi7mI1TEoryk9VxaTFkIEX++qrB11u01xD1eNAxeOfA9M=
-webdav_password: NVWbgXG+0yqkhp4J73VaJg6/izuIXiika3Z3OnDTpBcybftGkPdMGtjQ+qcHsA==
+webdav_url: OphTMRoClAFPn4ClhbYyRqPz6oBht0oQ7BGdgGYhQh/tTSZ+cyzAoWTL2DWGrCfc2EM0pomfBVpwQLowHQ==
+webdav_username: T5jt6O4WFxmY0++hf5zA4o7OEJK+tGi80jnfwUM01aa0mE/DfLu7f5wUVnNUVwE=
+webdav_password: BF9ZmYX42I1wsnJUFj7TLYv8eF12hY8hFITAsa1oNfUFT+0Kl1eZhLnJ50KVVQ==
 enable_tray_speed: false
 enable_tray_icon: true
 enable_auto_light_weight_mode: false

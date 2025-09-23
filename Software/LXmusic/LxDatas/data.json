@@ -1,12 +1,20 @@
 {
 	"viewPrevState": {
-		"url": "/download",
-		"query": {}
+		"url": "/list",
+		"query": {
+			"id": "分享玄清介创建的歌单「日语」"
+		}
 	},
 	"lastStartInfo": "2.11.0",
 	"listUpdateInfo": {},
 	"listScrollPosition": {
 		"分享玄清介创建的歌单「日语」": 0
 	},
-	"listPrevSelectId": "分享玄清介创建的歌单「日语」"
+	"listPrevSelectId": "分享玄清介创建的歌单「日语」",
+	"playInfo": {
+		"time": 198.621795,
+		"maxTime": 257.28,
+		"listId": "分享玄清介创建的歌单「日语」",
+		"index": 4
+	}
 }

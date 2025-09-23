@@ -1,4 +1,4 @@
-@-moz-document regexp("https://.*(lizw|libretv).*.(dev|app|shop|xyz)/.*"),
+@-moz-document regexp("https://.*(libretv|lizw).*.(dev|app|shop|xyz)/.*"),
                regexp("http://localhost:8080/player.html.*")
 {
 
@@ -60,7 +60,7 @@
  
 }
 
-@-moz-document regexp("https://.*(lunatv|moontv|ytll).*.(dev|app|shop|xyz)/.*"), 
+@-moz-document regexp("https://.*(lunatv|moontv|newtv).*.(dev|app|shop|xyz)/.*"), 
                regexp("https://ixnstwzdqcxu.ap-southeast-1.clawcloudrun.com/.*")
 {
  /*播放区域上移和缩小*/

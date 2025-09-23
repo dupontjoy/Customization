@@ -46,6 +46,7 @@ xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge
 rd /s /q "%OutputDir%\Customization\Software\Firefox"
 timeout /t 3 /nobreak
 xcopy "%BackupDir%\user.js" "%OutputDir%\Customization\Software\Firefox\" /y
+xcopy "%BackupDir%\bookmarks.html" "%OutputDir%\Customization\Software\Firefox\" /y
 robocopy "%BackupDir%\bookmarkbackups" "%OutputDir%\Customization\Software\Firefox\bookmarkbackups" /MIR /ZB /R:3 /W:5
 robocopy "%BackupDir%\chrome" "%OutputDir%\Customization\Software\Firefox\chrome" /MIR /ZB /R:3 /W:5
 robocopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Firefox\BackupProfiles" /MIR /ZB /R:3 /W:5
