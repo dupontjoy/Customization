@@ -837,30 +837,12 @@
 				"value": "Edge/1000"
 			},
 			"group": "CingList-Request",
-			"encoding": "UTF-8",
+			"encoding": "utf-8",
 			"headers": {
 				"user-agent": "Edge/1000"
 			},
 			"condition": {
 				"regex": "^https?:\\/\\/.*(jianshu|youtube|google).*"
-			}
-		},
-		{
-			"enable": true,
-			"name": "moontv cors unblock",
-			"ruleType": "modifySendHeader",
-			"pattern": "^https?:\\/\\/.*(jianshu|youtube|google).*",
-			"isFunction": false,
-			"group": "CingList-Request",
-			"encoding": "utf-8",
-			"headers": {
-				"access-control-allow-origin": "*",
-				"access-control-allow-methods": "GET, POST, OPTIONS",
-				"access-control-allow-headers": "DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range",
-				"access-control-expose-headers": "Content-Length,Content-Range"
-			},
-			"condition": {
-				"regex": "^https?:\\/\\/.*(lunatv|moontv|ytll).*.(dev|app|shop|xyz)/.*"
 			}
 		}
 	],

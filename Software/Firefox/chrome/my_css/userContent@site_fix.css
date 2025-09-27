@@ -60,8 +60,8 @@
  
 }
 
-@-moz-document regexp("https://.*(lunatv|moontv|newtv).*.(dev|app|shop|xyz)/.*"), 
-               regexp("https://ixnstwzdqcxu.ap-southeast-1.clawcloudrun.com/.*")
+@-moz-document regexp("https://.*(lunatv|moontv|newtv).*.(dev|app|shop|xyz)/.*")
+
 {
  /*播放区域上移和缩小*/
 div.space-y-2:nth-child(2) {
