@@ -1,8 +1,10 @@
 {
 	"viewPrevState": {
-		"url": "/list",
+		"url": "/search",
 		"query": {
-			"id": "分享玄清介创建的歌单「日语」"
+			"text": "尘埃 - 云の泣",
+			"source": "all",
+			"type": "music"
 		}
 	},
 	"lastStartInfo": "2.11.0",
@@ -12,9 +14,25 @@
 	},
 	"listPrevSelectId": "分享玄清介创建的歌单「日语」",
 	"playInfo": {
-		"time": 198.621795,
-		"maxTime": 257.28,
+		"time": 169.862676,
+		"maxTime": 347.036735,
 		"listId": "分享玄清介创建的歌单「日语」",
-		"index": 4
-	}
+		"index": 18
+	},
+	"searchHistoryList": [
+		"尘埃 - 云の泣",
+		"忆 月儿",
+		"忆 - 月儿",
+		"長い間 - 青鱼",
+		"ISI  Duca",
+		"故人长绝  妖言君",
+		"为弦为砚  伦桑",
+		"落梅 - 初夏小溪",
+		"家国天下  Tacke竹桑",
+		"胭脂窃 - 纱朵",
+		"醉仙美  娜美",
+		"芈月传摽有梅  Tacke竹桑",
+		"芈月传·摽有梅",
+		"惊蛰月"
+	]
 }
