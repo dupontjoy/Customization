@@ -1,23 +1,20 @@
 [Autoproxy 0.3.0]
 ! Title:        cinglist-gfw
-! Description:  gfwè‡ªå®šç¾©åå–®(autoproxyæ ¼å¼)
+! Description:  gfw×Ô¶¨ÁxÃû†Î
 ! Author:       Cing
 ! Version:      random
 ! Expires:      1h
-
+!
 ! ||aaa.com^
-! è¿™ä¸ªè§„åˆ™ä¼šåŒ¹é…ï¼š
-! aaa.com æœ¬èº«
-! æ‰€æœ‰å­åŸŸåå¦‚ app.aaa.comã€www.aaa.com ç­‰
-! æ‰€æœ‰è·¯å¾„å’Œå‚æ•°
-
+! Õâ¸ö¹æÔò»áÆ¥Åä£ºaaa.com ±¾Éí ºÍ ËùÓĞ×ÓÓòÃûÈç app.aaa.com¡¢www.aaa.com µÈ
+!
 !------------------------------------------------------------------!
 
 ! #Whitelist Start#
 @@||pages.dev^
 @@||cloudflare.com^
 
-! æœªåˆ†ç»„
+! Î´·Ö×é
 ||app.netlify.com^
 ||dota2.com.cn^
 ||userstyles.org^
@@ -128,7 +125,6 @@
 ||wikipedia.org^
 ||wikomobile.com^
 ||yahoo.com^
-||zimuzu.tv^
 ||zkcdn.net^
 ||anki.com^
 ||listary.com^
@@ -140,7 +136,7 @@
 ||books.google.com^
 ||imgscloud.com^
 
-ï¼H
+£¡H
 ||thisav.com^
 ||xvideos.com^
 ||avbebe.com^
@@ -156,5 +152,5 @@
 ||hanime.tv^
 ||missav*
 
-ï¼å¾®è½¯
+£¡Î¢Èí
 ||msocdn.com^
