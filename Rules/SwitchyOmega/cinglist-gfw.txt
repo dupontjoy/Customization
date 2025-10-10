@@ -4,14 +4,21 @@
 ! Author:       Cing
 ! Version:      random
 ! Expires:      1h
+
+! ||aaa.com^
+! 这个规则会匹配：
+! aaa.com 本身
+! 所有子域名如 app.aaa.com、www.aaa.com 等
+! 所有路径和参数
+
 !------------------------------------------------------------------!
 
-!#Whitelist Start#
+! #Whitelist Start#
 @@||pages.dev^
 @@||cloudflare.com^
 
 ! 未分组
-||netlify.com^
+||app.netlify.com^
 ||dota2.com.cn^
 ||userstyles.org^
 ||greasyfork.org^

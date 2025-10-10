@@ -1,0 +1,142 @@
+[
+  {
+    "settings": {
+      "disableAll": false,
+      "exposeIframes": false,
+      "exposeStyleName": false,
+      "keepAlive": 0,
+      "keepAliveIdle": false,
+      "newStyleAsUsercss": false,
+      "openEditInWindow": false,
+      "openEditInWindow.popup": false,
+      "patchCsp": false,
+      "show-badge": true,
+      "styleViaASS": false,
+      "styleViaXhr": true,
+      "urlInstaller": true,
+      "windowPosition": {},
+      "compactWidth": 850,
+      "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findSort": "w",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": false,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.links.expanded": true,
+      "manage.minColumnWidth": 750,
+      "manage.newUI": true,
+      "manage.newUI.favicons": true,
+      "manage.newUI.faviconsGray": false,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "manage.searchMode": "meta",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.options.style.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "sublime",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true,
+        "indent_mozdoc": true,
+        "space_around_combinator": true,
+        "space_around_cmp": false
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": false,
+      "editor.selectByTokens": true,
+      "editor.arrowKeysTraverse": true,
+      "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
+      "editor.livePreview": true,
+      "editor.livePreview.delay": 0.2,
+      "editor.targetsFirst": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": -1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
+      "popup.search.globals": false,
+      "popupWidth": 246,
+      "popupWidthMax": 280,
+      "updateInterval": 24,
+      "updateOnlyEnabled": false
+    },
+    "order": {
+      "main": [],
+      "prio": []
+    }
+  },
+  {
+    "enabled": true,
+    "installDate": 1760010939148,
+    "name": "site_fix",
+    "sections": [
+      {
+        "code": "/*顶部栏 高度缩小*/\n[class*=\"player-header-fixed\"] {\n    height: 40px !important;\n    min-height: 40px !important;\n }\n\n /*返回上一页按钮 缩小*/\n#goBack {\n    padding: 5px !important;  /* 添加内边距 */\n    transform: scale(0.7) !important;\n }\n\n/*播放区域 上移*/\n#playerContainer {\n    margin-top: calc(-1 * (4vh + 1%)) !important;/*向上移*/\n }\n \n /*集数信息 移到顶栏*/\n#episodeInfo {\n    position: fixed !important;\n    top: 0px !important;\n    height: 40px !important;  /* 和顶栏高度一致 */\n    display: flex !important;\n    align-items: center !important;  /* 垂直居中 */\n    left: 10% !important;\n    padding: 5px !important;  /* 添加内边距 */\n    z-index: 9999 !important;   /* 设置一个很高的 z-index 确保它在最上层 */\n    transform: scale(0.8) !important;\n }\n\n /*上一集按钮 移到顶栏*/\n#prevButton {\n    position: fixed !important;\n    top: 0px !important;\n    height: 40px !important;  /* 和顶栏高度一致 */\n    display: flex !important;\n    align-items: center !important;  /* 垂直居中 */\n    left: 20% !important;\n    padding: 5px !important;  /* 添加内边距 */\n    z-index: 9999 !important;   /* 设置一个很高的 z-index 确保它在最上层 */\n    transform: scale(0.7) !important;\n }\n\n /*下一集按钮 移到顶栏*/\n#nextButton {\n    position: fixed !important;\n    top: 0px !important;\n    height: 40px !important;  /* 和顶栏高度一致 */\n    display: flex !important;\n    align-items: center !important;  /* 垂直居中 */\n    right: 20% !important;\n    padding: 5px !important;  /* 添加内边距 */\n    z-index: 9999 !important;   /* 设置一个很高的 z-index 确保它在最上层 */\n    transform: scale(0.7) !important;\n }",
+        "regexps": [
+          "https://.*(libretv|lizw).*.(dev|app|shop|xyz)\\/play.*",
+          "http://localhost:8080\\/play.*"
+        ]
+      },
+      {
+        "code": "/*播放区域上移和缩小*/\n div.space-y-2:nth-child(2) {\n    margin-top: calc(-1 * (6.5vh + 1%)) !important;/*向上移*/\n    transform: scale(0.9) !important;\n }\n \n /*详情区 缩小*/\n div.grid:nth-child(3) {\n    transform: scale(0.9) !important;\n }\n \n\n /*左上角标题，右上角设置退出和暗色 缩小*/\n.text-xl, .top-2 {\n    margin-top: calc(-1 * (0vh + 1%)) !important;/*向上移*/\n    transform: scale(0.9) !important;\n }\n \n /*左上角返回和右上角显示/隐藏按钮 隐藏*/\n .top-3, button.group {\n    display: none !important;\n }",
+        "regexps": [
+          "https://.*(lunatv|moontv|newtv).*.(dev|app|shop|xyz)\\/play.*"
+        ]
+      },
+      {
+        "code": "/*播放区域上移和缩小*/\n .space-y-2 {\n    margin-top: calc(-1 * (6.5vh + 1%)) !important;/*向上移*/\n    transform: scale(0.9) !important;\n }\n \n /*详情区 缩小*/\ndiv.grid:nth-child(2) {\n    transform: scale(0.9) !important;\n }\n \n\n /*左上角标题，右上角设置退出和暗色 缩小*/\n.text-xl, .top-2 {\n    margin-top: calc(-1 * (0vh + 1%)) !important;/*向上移*/\n    transform: scale(0.9) !important;\n }\n \n /*左上角返回和右上角显示/隐藏按钮 隐藏*/\n .top-3, button.group {\n    display: none !important;\n }",
+        "regexps": [
+          "https://.*(sdmoontv).*.(dev|app|shop|xyz)\\/play.*"
+        ]
+      }
+    ],
+    "updateDate": 1760010939148,
+    "_id": "2afa2b34-8385-45f3-9788-97b2c845209e",
+    "_rev": 1760010939148,
+    "id": 4
+  }
+]
