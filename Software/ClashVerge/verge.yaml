@@ -17,7 +17,7 @@ tun_tray_icon: false
 enable_tun_mode: null
 enable_auto_launch: true
 enable_silent_start: true
-enable_system_proxy: true
+enable_system_proxy: false
 enable_proxy_guard: false
 enable_dns_settings: false
 use_default_bypass: true
@@ -73,9 +73,9 @@ verge_socks_port: 7898
 verge_socks_enabled: false
 verge_port: 7899
 verge_http_enabled: false
-webdav_url: aMYwQuVQbOb32PWFNaGyohARHXWxOVfTuOEE3rGRYwDWb0GZT0nQbcy+wIn6Igv13K20g18ONzbX0AUKKw==
-webdav_username: x0FQrgPRr8RMYjXuxomOU8+msqiZANDdV/+zeRuUOGWJqMteOIFND5TGqERtoqI=
-webdav_password: OlZfqx2MyHCJrAAwDQvrBflmt9Mvk226Zp6vCanDDKx3i9rQN/RG5QZfZU+LNw==
+webdav_url: 4HbVYaTzgzFhUa35ofI9sroVnabVATt6vFA6JZ5pJ+H53H0bp+t7fSwE7Rsl/346FzVqducGXjfdhiyg1g==
+webdav_username: ye8ndGDfsA0NG/YXtDDKfNid/04WCwea5rk8hCOKMF17xFOtAR8rftmZdDWh2XQ=
+webdav_password: TBvROP5tTqBcJmHT6XdVAzIG59gWWjl4XQQnfgEEi3dqmDSxoaIJKUL/K7S9Aw==
 enable_tray_speed: false
 enable_tray_icon: true
 enable_auto_light_weight_mode: false

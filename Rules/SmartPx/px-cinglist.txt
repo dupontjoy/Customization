@@ -1,16 +1,13 @@
-[Autoproxy 0.3.0]
-! Title:        px-cinglist
-! Description:  gfw×Ô¶¨ÒåÃûµ¥
-! Author:       Cing
-! Version:      random
-! Expires:      1h
-!
-! ||aaa.com^
-! Õâ¸ö¹æÔò»áÆ¥Åä£ºaaa.com ±¾Éí ºÍ ËùÓĞ×ÓÓòÃûÈç app.aaa.com¡¢www.aaa.com µÈ
-!
-!------------------------------------------------------------------!
+[AutoProxy 0.2.9]
+! Expires: 6h
+! Title: px-cinglist
 
-! Î´·Ö×é
+!---------start---------
+! Whitelist
+@@||pages.dev^
+@@||cloudflare.com^
+
+! æœªåˆ†ç»„
 ||app.netlify.com^
 ||dota2.com.cn^
 ||userstyles.org^
@@ -132,7 +129,7 @@
 ||books.google.com^
 ||imgscloud.com^
 
-! Î¢Èí
+! å¾®è½¯
 ||msocdn.com^
 
 ! H
@@ -150,3 +147,4 @@
 ||hentaifox.tv^
 ||hanime.tv^
 ||missav*
+!---------------------EOF-----------------------
