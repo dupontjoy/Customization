@@ -3,14 +3,11 @@
 ! Description:  gfw自定义名单
 ! Author:       Cing
 ! Version:      random
-! Expires:      1h
-!
-! ||aaa.com^
-! 这个规则会匹配：aaa.com 本身 和 所有子域名如 app.aaa.com、www.aaa.com 等
+! Expires:      6h
 !
 !------------------------------------------------------------------!
 
-! #Whitelist Start#
+! Whitelist Start
 @@||pages.dev^
 @@||cloudflare.com^
 
