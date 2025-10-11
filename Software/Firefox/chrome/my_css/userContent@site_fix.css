@@ -1,6 +1,5 @@
 @-moz-document regexp("https://.*(libretv|lizw).*.(dev|app|shop|xyz)\/play.*"),
-               regexp("http://localhost:8080\/play.*")
-{
+               regexp("http://localhost:8080\/play.*") {
 
 /*顶部栏 高度缩小*/
 [class*="player-header-fixed"] {
@@ -14,7 +13,7 @@
     transform: scale(0.7) !important;
  }
 
-/*播放区域 上移*/
+/*播放区 上移*/
 #playerContainer {
     margin-top: calc(-1 * (4vh + 1%)) !important;/*向上移*/
  }
@@ -60,17 +59,17 @@
  
 }
 
-@-moz-document regexp("https://.*(lunatv|moontv|newtv).*.(dev|app|shop|xyz)\/play.*")
+@-moz-document regexp("https://.*(lunatv|moontv|newtv).*.(dev|app|shop|xyz)\/play.*") {
 
-{
- /*播放区域上移和缩小*/
+/*播放区 上移和缩小*/
  div.space-y-2:nth-child(2) {
-    margin-top: calc(-1 * (6.5vh + 1%)) !important;/*向上移*/
+
     transform: scale(0.9) !important;
  }
  
- /*详情区 缩小*/
+ /*详情区 上移和缩小*/
  div.grid:nth-child(3) {
+    margin-top: calc(-1 * (6.5vh + 1%)) !important;/*向上移*/
     transform: scale(0.9) !important;
  }
  
@@ -82,23 +81,23 @@
  }
  
  /*左上角返回和右上角显示/隐藏按钮 隐藏*/
- .top-3, button.group {
+div.top-3,.justify-end {
     display: none !important;
  }
 
 }
 
-@-moz-document regexp("https://.*(sdmoontv).*.(dev|app|shop|xyz)\/play.*")
+@-moz-document regexp("https://.*(sdmoontv).*.(dev|app|shop|xyz)\/play.*") {
 
-{
- /*播放区域上移和缩小*/
+/*播放区 上移和缩小*/
  .space-y-2 {
     margin-top: calc(-1 * (6.5vh + 1%)) !important;/*向上移*/
     transform: scale(0.9) !important;
  }
  
- /*详情区 缩小*/
+ /*详情区 上移和缩小*/
 div.grid:nth-child(2) {
+    margin-top: calc(-1 * (6.5vh + 1%)) !important;/*向上移*/    
     transform: scale(0.9) !important;
  }
  
@@ -110,8 +109,13 @@ div.grid:nth-child(2) {
  }
  
  /*左上角返回和右上角显示/隐藏按钮 隐藏*/
- .top-3, button.group {
+div.top-3,.justify-end {
     display: none !important;
+ }
+
+ /*顶部栏 缩小*/
+.hidden {
+    transform: scale(0.8) !important;
  }
 
 }
