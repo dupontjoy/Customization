@@ -71,10 +71,10 @@
   <mediawiki enabled="0" icon="" id="5d45232075d06e002dea72fe3e137da1" lang="" name="Greek Wiktionary" url="https://el.wiktionary.org/w"/>
  </mediawikis>
  <websites>
-  <website enabled="0" icon="" id="b88cb2898e634c6638df618528284c2d" inside_iframe="0" name="Google En-En (Oxford)" url="https://www.google.com/search?q=define:%GDWORD%&amp;hl=en"/>
-  <website enabled="0" icon="" id="f376365a0de651fd7505e7e5e683aa45" inside_iframe="0" name="Urban Dictionary" url="https://www.urbandictionary.com/define.php?term=%GDWORD%"/>
-  <website enabled="0" icon="" id="324ca0306187df7511b26d3847f4b07c" inside_iframe="0" name="Multitran (En-Ru)" url="https://www.multitran.com/m.exe?s=%GDWORD%&amp;l1=1&amp;l2=2"/>
-  <website enabled="0" icon="" id="379a0ce02a34747d642cb0d7de1b2882" inside_iframe="0" name="Merriam-Webster (En)" url="https://www.merriam-webster.com/dictionary/%GDWORD%"/>
+  <website enabled="0" icon="" id="b88cb2898e634c6638df618528284c2d" name="Google En-En (Oxford)" script="" url="https://www.google.com/search?q=define:%GDWORD%&amp;hl=en"/>
+  <website enabled="0" icon="" id="f376365a0de651fd7505e7e5e683aa45" name="Urban Dictionary" script="" url="https://www.urbandictionary.com/define.php?term=%GDWORD%"/>
+  <website enabled="0" icon="" id="324ca0306187df7511b26d3847f4b07c" name="Multitran (En-Ru)" script="" url="https://www.multitran.com/m.exe?s=%GDWORD%&amp;l1=1&amp;l2=2"/>
+  <website enabled="0" icon="" id="379a0ce02a34747d642cb0d7de1b2882" name="Merriam-Webster (En)" script="" url="https://www.merriam-webster.com/dictionary/%GDWORD%"/>
  </websites>
  <dictservers/>
  <programs/>
@@ -84,10 +84,12 @@
  <popupMutedDictionaries>
   <mutedDictionary>9152153f4410f8049b0770420e09c0d5</mutedDictionary>
  </popupMutedDictionaries>
+ <dictionariesToReindex/>
  <preferences>
   <interfaceLanguage>zh_CN</interfaceLanguage>
   <interfaceFont>Microsoft YaHei</interfaceFont>
   <interfaceFontSize_0>12</interfaceFontSize_0>
+  <enableInterfaceFont>0</enableInterfaceFont>
   <customFonts monospace="Courier New" sans-serif="Arial" serif="Arial" standard="Arial"/>
   <displayStyle></displayStyle>
   <newTabsOpenAfterCurrentOne>0</newTabsOpenAfterCurrentOne>
@@ -152,6 +154,7 @@
   <clearNetworkCacheOnExit>1</clearNetworkCacheOnExit>
   <removeInvalidIndexOnExit>1</removeInvalidIndexOnExit>
   <enableApplicationLog>0</enableApplicationLog>
+  <openWebsiteInNewTab>0</openWebsiteInNewTab>
   <maxStringsInHistory>20</maxStringsInHistory>
   <storeHistory>1</storeHistory>
   <alwaysExpandOptionalParts>1</alwaysExpandOptionalParts>
@@ -179,7 +182,7 @@
  <popupWindowGeometry2>AdnQywADAAAAAAABAAAAIAAAAPcAAAGvAAAAAQAAACAAAAD3AAABrwAAAAAAAAAABVYAAAABAAAAIAAAAPcAAAGv</popupWindowGeometry2>
  <pinPopupWindow>0</pinPopupWindow>
  <popupWindowAlwaysOnTop>0</popupWindowAlwaysOnTop>
- <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAABNAAACivwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAANwAAAooAAACHAP///wAAAAEAAADMAAACifwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAADgAAAE4AAAAZQD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAAAAARIAAADVAAAAYwD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAABdAAAAU0AAABlAP///wAABIYAAAKJAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAIZ/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAABNAAACivwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAANwAAAooAAACFAP///wAAAAEAAADMAAACivwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAADcAAAE5AAAAZAD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAAAAARIAAADVAAAAYgD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAABdAAAAU0AAABkAP///wAABIYAAAKKAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAIZ/////wAAAAAAAAAA</mainWindowState>
  <mainWindowGeometry>AdnQywADAAAAAAAA////+AAABVUAAALXAAAAxgAAAF8AAANSAAACeAAAAAACAAAABVYAAAAAAAAAFwAABVUAAALX</mainWindowGeometry>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>

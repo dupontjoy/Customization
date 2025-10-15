@@ -86,36 +86,3 @@ div.top-3,.justify-end {
  }
 
 }
-
-@-moz-document regexp("https://.*(sdmoontv).*.(dev|app|shop|xyz)\/play.*") {
-
-/*播放区 上移和缩小*/
- .space-y-2 {
-    margin-top: calc(-1 * (6.5vh + 1%)) !important;/*向上移*/
-    transform: scale(0.9) !important;
- }
- 
- /*详情区 上移和缩小*/
-div.grid:nth-child(2) {
-    margin-top: calc(-1 * (6.5vh + 1%)) !important;/*向上移*/    
-    transform: scale(0.9) !important;
- }
- 
-
- /*左上角标题，右上角设置退出和暗色 缩小*/
-.text-xl, .top-2 {
-    margin-top: calc(-1 * (0vh + 1%)) !important;/*向上移*/
-    transform: scale(0.9) !important;
- }
- 
- /*左上角返回和右上角显示/隐藏按钮 隐藏*/
-div.top-3,.justify-end {
-    display: none !important;
- }
-
- /*顶部栏 缩小*/
-.hidden {
-    transform: scale(0.8) !important;
- }
-
-}

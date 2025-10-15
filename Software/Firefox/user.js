@@ -1,4 +1,4 @@
-//2025.08.10
+//2025.10.13
 
 
 /*
@@ -120,6 +120,7 @@ user_pref("intl.icu4x.segmenter.enabled", false);//双击是选取一个短句
 user_pref("extensions.screenshots.disabled", true);//禁用自带截图
 user_pref("layout.css.system-ui.enabled", false);//解決小红书emoji显示错误问题
 user_pref("extensions.webextensions.restrictedDomains", "");//清空禁止的内部页
+user_pref("svg.context-properties.content.enabled", true);//在 Firefox 中，-moz-context-properties 属性可用于特权上下文中，将元素的指定属性值共享给子级 SVG 图像
 
 
 /******************************************************************************************
