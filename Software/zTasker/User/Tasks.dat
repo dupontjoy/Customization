@@ -342,9 +342,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:57:00</StartDateTime>
 		<EndDateTime>2025-08-23 00:00:00</EndDateTime>
-		<NextRunDateTime>2025-10-16 17:57:00</NextRunDateTime>
-		<NextRunTime>2025-10-16 17:57:00</NextRunTime>
-		<LastRunTime>2025-10-14 17:57:00</LastRunTime>
+		<NextRunDateTime>2025-10-17 17:57:00</NextRunDateTime>
+		<NextRunTime>2025-10-17 17:57:00</NextRunTime>
+		<LastRunTime>2025-10-16 17:57:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1003,8 +1003,8 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-09-11 11:50:24</EndDateTime>
-		<NextRunDateTime>2125-09-22 07:42:44</NextRunDateTime>
+		<EndDateTime>2025-10-16 23:40:48</EndDateTime>
+		<NextRunDateTime>2035-10-14 17:13:59</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
 		<LastRunTime>2025-10-16 07:42:44</LastRunTime>
 		<Fav>0</Fav>
@@ -1105,7 +1105,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>23</ID>
+				<ID>601-J10SGXQ9DR</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1181,7 +1181,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Delay>
 			<Tasker>
-				<ID>8</ID>
+				<ID>645-TFJ5IW0HCY</ID>
 				<TaskType>ttMouseClick</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1268,7 +1268,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Delay>
 			<Tasker>
-				<ID>98</ID>
+				<ID>761-9Z7W38VPIN</ID>
 				<TaskType>ttVolumeSet</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1312,7 +1312,7 @@ env2=value2</edtAppEnv>
 					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
 					<edtTaskName>设置系统音量</edtTaskName>
-					<edtVolSet>40</edtVolSet>
+					<edtVolSet>30</edtVolSet>
 					<edtVolSet.max>100</edtVolSet.max>
 					<edtVolSet.min>1</edtVolSet.min>
 					<optPlaySnd>0</optPlaySnd>
@@ -1336,9 +1336,9 @@ env2=value2</edtAppEnv>
 		<SchType>36</SchType>
 		<StartDateTime>2024-12-26 09:00:00</StartDateTime>
 		<EndDateTime>2025-09-27 21:26:24</EndDateTime>
-		<NextRunDateTime>2025-10-16 21:00:00</NextRunDateTime>
-		<NextRunTime>2025-10-16 21:00:00</NextRunTime>
-		<LastRunTime>2025-10-16 09:00:00</LastRunTime>
+		<NextRunDateTime>2025-10-17 09:00:00</NextRunDateTime>
+		<NextRunTime>2025-10-17 09:00:00</NextRunTime>
+		<LastRunTime>2025-10-16 21:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
