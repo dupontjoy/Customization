@@ -24,6 +24,7 @@ start /b "" cmd /c "cd /d %cd%\adb\platform-tools && adb disconnect 127.0.0.1:16
 ::终止一些进程
 taskkill /f /t /im adb.exe
 taskkill /f /t /im maa*
+taskkill /f /t /im mumu*
 
 ::删除几个无用的文件
 del /s /q "%cd%\compact_log.txt"
