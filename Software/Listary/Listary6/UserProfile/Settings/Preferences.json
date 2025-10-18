@@ -250,6 +250,21 @@
             "SuggestionProvider": "Custom",
             "SuggestionUrl": "https://github.com/search?q={query}&type=repositories"
           }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "sm",
+            "Url": "https://smlunatv.dupontjoy.shop/search?q={query}",
+            "Title": "smlunatv",
+            "Icon": {
+              "Path": "{user}\\5698bbe7-8db6-4b53-b295-77b228686159.png",
+              "TypeName": "Path"
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://smlunatv.dupontjoy.shop/search?q={query}"
+          }
         }
       ],
       "Updates": [

@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RSXvIq1tcrMq
+current: RE2WWywsBQVi
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1760616924
+  updated: 1760791682
   option:
     with_proxy: false
     self_proxy: false
@@ -85,11 +85,11 @@ items:
   desc: ''
   url: https://yzxr.pages.dev/yzxr?proxyip=proxyip.cmliussss.net:443
   extra:
-    upload: 6738211478244
-    download: 6738211478244
+    upload: 7037249473399
+    download: 7037249473399
     total: 26388279066624
     expire: 4102329600
-  updated: 1760616924
+  updated: 1760791682
   option:
     with_proxy: false
     self_proxy: false
@@ -100,50 +100,97 @@ items:
     proxies: p7pHEmGQahyE
     groups: gEKSUYnnUw76
   home: https://yzxr.pages.dev/yzxr
-- uid: mD8938AfpeJD
+- uid: m5eY9rtJeCmo
   type: merge
   name: null
-  file: mD8938AfpeJD.yaml
-  updated: 1760573852
-- uid: sHe0zTknOPDw
+  file: m5eY9rtJeCmo.yaml
+  updated: 1760661124
+- uid: svZtKK93ClQQ
   type: script
   name: null
-  file: sHe0zTknOPDw.js
-  updated: 1760573852
-- uid: rUr4W1ThuWAg
+  file: svZtKK93ClQQ.js
+  updated: 1760661124
+- uid: rtjhJE7qoyLE
   type: rules
   name: null
-  file: rUr4W1ThuWAg.yaml
-  updated: 1760573852
-- uid: pAezLS9EYkfY
+  file: rtjhJE7qoyLE.yaml
+  updated: 1760661124
+- uid: pSAX0mylwLIv
   type: proxies
   name: null
-  file: pAezLS9EYkfY.yaml
-  updated: 1760573852
-- uid: gcQImdr1RmX6
+  file: pSAX0mylwLIv.yaml
+  updated: 1760661124
+- uid: gFNuUqJYij1z
   type: groups
   name: null
-  file: gcQImdr1RmX6.yaml
-  updated: 1760573852
-- uid: RSXvIq1tcrMq
+  file: gFNuUqJYij1z.yaml
+  updated: 1760661124
+- uid: RSDeM9xvwbVZ
   type: remote
-  name: dp163
-  file: RSXvIq1tcrMq.yaml
+  name: xrqj
+  file: RSDeM9xvwbVZ.yaml
   desc: ''
-  url: https://dp163.dupontjoy.workers.dev/dp163?proxyip=proxyip.cmliussss.net:443
+  url: https://xrqj.pages.dev/xrqj?proxyip=proxyip.cmliussss.net:443
   extra:
-    upload: 6764537604362
-    download: 6764537604362
+    upload: 7037238630993
+    download: 7037238630993
     total: 26388279066624
     expire: 4102329600
-  updated: 1760617096
+  updated: 1760791683
   option:
     with_proxy: false
     self_proxy: false
     update_interval: 120
-    merge: mD8938AfpeJD
-    script: sHe0zTknOPDw
-    rules: rUr4W1ThuWAg
-    proxies: pAezLS9EYkfY
-    groups: gcQImdr1RmX6
-  home: https://dp163.dupontjoy.workers.dev/dp163
+    merge: m5eY9rtJeCmo
+    script: svZtKK93ClQQ
+    rules: rtjhJE7qoyLE
+    proxies: pSAX0mylwLIv
+    groups: gFNuUqJYij1z
+  home: https://xrqj.pages.dev/xrqj
+- uid: mpWXfezvfCuU
+  type: merge
+  name: null
+  file: mpWXfezvfCuU.yaml
+  updated: 1760665894
+- uid: sI3OnsECM7vh
+  type: script
+  name: null
+  file: sI3OnsECM7vh.js
+  updated: 1760665894
+- uid: r1qxTKSmx7uS
+  type: rules
+  name: null
+  file: r1qxTKSmx7uS.yaml
+  updated: 1760665894
+- uid: pVca1rF1U0BR
+  type: proxies
+  name: null
+  file: pVca1rF1U0BR.yaml
+  updated: 1760665894
+- uid: gfagJ8HePaHV
+  type: groups
+  name: null
+  file: gfagJ8HePaHV.yaml
+  updated: 1760665894
+- uid: RAaLVso74gIf
+  type: remote
+  name: dp88
+  file: RAaLVso74gIf.yaml
+  desc: ''
+  url: https://dp88.dupontjoy.shop/dp88?proxyip=proxyip.cmliussss.net:443
+  extra:
+    upload: 7037213281141
+    download: 7037213281141
+    total: 26388279066624
+    expire: 4102329600
+  updated: 1760791682
+  option:
+    with_proxy: false
+    self_proxy: false
+    update_interval: 120
+    merge: mpWXfezvfCuU
+    script: sI3OnsECM7vh
+    rules: r1qxTKSmx7uS
+    proxies: pVca1rF1U0BR
+    groups: gfagJ8HePaHV
+  home: https://dp88.dupontjoy.shop/dp88

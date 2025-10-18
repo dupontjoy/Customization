@@ -14,7 +14,7 @@ common_tray_icon: false
 menu_icon: monochrome
 sysproxy_tray_icon: false
 tun_tray_icon: false
-enable_tun_mode: null
+enable_tun_mode: false
 enable_auto_launch: true
 enable_silent_start: true
 enable_system_proxy: false
