@@ -5,6 +5,10 @@
 ! Expires: 2 days
 !-------------------------------------------------------------------------------------!
 
+! moontv保存播放记录失败提示
+smlunatv.*,hflunatv.*,lunatv.*,moontv.*,ytll.*,nytll.*##.z-\[2000\].right-4.top-4.fixed
+netlify.app,dupontjoy.shop##.z-\[2000\].right-4.top-4.fixed
+
 ! Bili
 bilibili.com##.reply-notice
 bilibili.com##.browser-tip > .title
