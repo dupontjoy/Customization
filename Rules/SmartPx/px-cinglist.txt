@@ -1,15 +1,18 @@
 [AutoProxy 0.2.9]
-! Expires: 6h
 ! Title: px-cinglist
+! Expires: 2days
 
 !---------start---------
 ! Whitelist
 @@||pages.dev
 @@||cloudflare.com
 
-! 未分组
+! 部署平台
+||upstash.com
 ||app.netlify.com
 ||vercel.com
+
+! 未分组
 ||dota2.com.cn
 ||userstyles.org
 ||greasyfork.org

@@ -87,7 +87,7 @@
   "WindowBackdrop": "Mica",
   "ColorProfile": "None",
   "AutoUpdate": "2025-07-03T15:08:01.3763292Z",
-  "LastSeenImagePath": "C:\\Users\\Cing\\Desktop\\logo.png",
+  "LastSeenImagePath": "C:\\Users\\Cing\\Desktop\\OIP.png",
   "LastOpenedSetting": "gallery",
   "DarkTheme": "Kobe",
   "LightTheme": "Kobe-Light",
@@ -501,20 +501,20 @@
   ],
   "ToolSettings": {
     "CropTool": {
-      "CloseToolAfterSaving": false,
-      "AutoCenterSelection": true,
-      "AspectRatio": "Original",
       "InitSelectionType": "Select50Percent",
-      "AspectRatioValues": [
-        1,
-        1
-      ],
       "InitSelectedArea": [
-        0,
-        0,
-        0,
-        0
-      ]
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "CloseToolAfterSaving": "False",
+      "AutoCenterSelection": "True",
+      "AspectRatioValues": [
+        "1",
+        "1"
+      ],
+      "AspectRatio": "Original"
     }
   }
 }

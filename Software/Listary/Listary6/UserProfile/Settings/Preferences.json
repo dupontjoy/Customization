@@ -265,6 +265,21 @@
             "SuggestionProvider": "Custom",
             "SuggestionUrl": "https://smlunatv.dupontjoy.shop/search?q={query}"
           }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "sp",
+            "Url": "https://www.startpage.com/sp/search?query={query}&cat=web&pl=opensearch&language=english",
+            "Title": "Startpage",
+            "Icon": {
+              "Path": "{user}\\875d1360-fb26-4f3e-990f-34ef50b8d997.png",
+              "TypeName": "Path"
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://www.startpage.com/sp/search?query={query}&cat=web&pl=opensearch&language=english"
+          }
         }
       ],
       "Updates": [
