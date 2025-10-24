@@ -1,4 +1,4 @@
-::2025.07.14
+::2025.10.23
 ::注意換行符必须是：windows（CR+LF）
 
 Title 备份文件到托管网站
@@ -15,6 +15,9 @@ pushd %~dp0
 set "BackupDir=..\..\FxProfiles"
 set "softDir=E:\Cing@Soft"
 set "OutputDir=E:\My Documents\Nutstore\NutStoreSync"
+
+:abdm
+robocopy "C:\Users\Cing\.abdm\config" "%OutputDir%\Customization\Software\ABDM\config" /MIR /ZB /R:3 /W:5
 
 :anytxt
 robocopy "C:\ProgramData\Anytxt\config" "%OutputDir%\Customization\Software\Anytxt\config" /MIR /ZB /R:3 /W:5

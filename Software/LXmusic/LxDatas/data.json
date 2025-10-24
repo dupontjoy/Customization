@@ -1,7 +1,11 @@
 {
 	"viewPrevState": {
-		"url": "/setting",
-		"query": {}
+		"url": "/search",
+		"query": {
+			"text": "九张机 叶炫清",
+			"source": "all",
+			"type": "music"
+		}
 	},
 	"lastStartInfo": "2.11.0",
 	"listUpdateInfo": {},
@@ -11,12 +15,16 @@
 	},
 	"listPrevSelectId": "分享玄清介创建的歌单「国语 - 新生代",
 	"playInfo": {
-		"time": 169.862676,
-		"maxTime": 347.036735,
-		"listId": "分享玄清介创建的歌单「日语」",
-		"index": 18
+		"time": 5.603384,
+		"maxTime": 9.864,
+		"listId": "default",
+		"index": 3
 	},
 	"searchHistoryList": [
+		"九张机 叶炫清",
+		"桃花诺 G.E.M. 邓紫棋",
+		"桃花诺",
+		"桃方诺",
 		"尘埃 - 云の泣",
 		"忆 月儿",
 		"忆 - 月儿",
@@ -27,9 +35,6 @@
 		"落梅 - 初夏小溪",
 		"家国天下  Tacke竹桑",
 		"胭脂窃 - 纱朵",
-		"醉仙美  娜美",
-		"芈月传摽有梅  Tacke竹桑",
-		"芈月传·摽有梅",
-		"惊蛰月"
+		"醉仙美  娜美"
 	]
 }

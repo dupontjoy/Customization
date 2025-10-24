@@ -1,0 +1,25 @@
+{
+    "home": {
+        "window": {
+            "width": 1000.0,
+            "height": 500.0,
+            "isMaximized": false
+        },
+        "categories": {
+            "width": 185.0
+        },
+        "downloadListState": "{\n    \"sizes\": {},\n    \"sortBy\": {\n        \"name\": \"Date Added\",\n        \"descending\": true\n    },\n    \"visibleCells\": [\n        \"#\",\n        \"Name\",\n        \"Size\",\n        \"Status\",\n        \"Speed\",\n        \"Time Left\",\n        \"Date Added\"\n    ],\n    \"order\": [\n        \"#\",\n        \"Name\",\n        \"Size\",\n        \"Status\",\n        \"Speed\",\n        \"Time Left\",\n        \"Date Added\"\n    ]\n}"
+    },
+    "settings": {
+        "window": {
+            "width": 1000.0,
+            "height": 500.0
+        }
+    },
+    "downloadPage": {
+        "showPartInfo": false
+    },
+    "global": {
+        "lastSavedLocations": "[\n    \"E:\\\\Download\",\n    \"E:\\\\Cing@Soft\\\\Microsoft\\\\NewPC-Tools\"\n]"
+    }
+}

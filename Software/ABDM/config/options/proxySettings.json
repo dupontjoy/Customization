@@ -1,0 +1,18 @@
+{
+    "proxyMode": "manual",
+    "proxyWithRules": {
+        "proxy": {
+            "type": "socks",
+            "host": "127.0.0.1",
+            "port": 7897,
+            "username": null,
+            "password": null
+        },
+        "rules": {
+            "excludeURLPatterns": []
+        }
+    },
+    "pac": {
+        "uri": "http://localhost/some.pac"
+    }
+}

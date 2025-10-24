@@ -256,14 +256,14 @@
           "Info": null,
           "Item": {
             "Keyword": "sm",
-            "Url": "https://smlunatv.dupontjoy.shop/search?q={query}",
+            "Url": "https://smlunatv.netlify.app/search?q={query}",
             "Title": "smlunatv",
             "Icon": {
               "Path": "{user}\\5698bbe7-8db6-4b53-b295-77b228686159.png",
               "TypeName": "Path"
             },
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://smlunatv.dupontjoy.shop/search?q={query}"
+            "SuggestionUrl": "https://smlunatv.netlify.app/search?q={query}"
           }
         },
         {
@@ -271,14 +271,29 @@
           "Info": null,
           "Item": {
             "Keyword": "sp",
-            "Url": "https://www.startpage.com/sp/search?query={query}&cat=web&pl=opensearch&language=english",
+            "Url": "https://www.startpage.com/sp/search?query={query}&pl=opensearch",
             "Title": "Startpage",
             "Icon": {
               "Path": "{user}\\875d1360-fb26-4f3e-990f-34ef50b8d997.png",
               "TypeName": "Path"
             },
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://www.startpage.com/sp/search?query={query}&cat=web&pl=opensearch&language=english"
+            "SuggestionUrl": "https://www.startpage.com/sp/search?query={query}&pl=opensearch"
+          }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "xw",
+            "Url": "https://xwnewtv.netlify.app/search?q={query}",
+            "Title": "xwnewtv",
+            "Icon": {
+              "Path": "{user}\\f7144083-0f3f-4582-bf3d-d4fb7075c932.png",
+              "TypeName": "Path"
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://xwnewtv.netlify.app/search?q={query}"
           }
         }
       ],
