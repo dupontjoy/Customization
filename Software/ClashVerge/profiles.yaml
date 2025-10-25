@@ -43,7 +43,7 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1761263353
+  updated: 1761370151
   option:
     with_proxy: false
     self_proxy: false
@@ -53,53 +53,6 @@ items:
     rules: r9Slro1qLQSJ
     proxies: pZ09ZpiaNjkY
     groups: gftjOaFHRwML
-- uid: m6qq8sSjcBuS
-  type: merge
-  name: null
-  file: m6qq8sSjcBuS.yaml
-  updated: 1753337152
-- uid: sktu5UCedddL
-  type: script
-  name: null
-  file: sktu5UCedddL.js
-  updated: 1753337152
-- uid: r8a1djmYI7s8
-  type: rules
-  name: null
-  file: r8a1djmYI7s8.yaml
-  updated: 1753337152
-- uid: p7pHEmGQahyE
-  type: proxies
-  name: null
-  file: p7pHEmGQahyE.yaml
-  updated: 1753337152
-- uid: gEKSUYnnUw76
-  type: groups
-  name: null
-  file: gEKSUYnnUw76.yaml
-  updated: 1753337152
-- uid: RE2WWywsBQVi
-  type: remote
-  name: yzxr
-  file: RE2WWywsBQVi.yaml
-  desc: ''
-  url: https://yzxr.pages.dev/yzxr?proxyip=proxyip.cmliussss.net:443
-  extra:
-    upload: 13095686666091
-    download: 13095686666091
-    total: 26388279066624
-    expire: 4102329600
-  updated: 1761263355
-  option:
-    with_proxy: false
-    self_proxy: false
-    update_interval: 120
-    merge: m6qq8sSjcBuS
-    script: sktu5UCedddL
-    rules: r8a1djmYI7s8
-    proxies: p7pHEmGQahyE
-    groups: gEKSUYnnUw76
-  home: https://yzxr.pages.dev/yzxr
 - uid: m5eY9rtJeCmo
   type: merge
   name: null
@@ -132,11 +85,11 @@ items:
   desc: ''
   url: https://xrqj.pages.dev/xrqj?proxyip=proxyip.cmliussss.net:443
   extra:
-    upload: 13095698272047
-    download: 13095698272047
+    upload: 1918614499700
+    download: 1918614499700
     total: 26388279066624
     expire: 4102329600
-  updated: 1761263355
+  updated: 1761362963
   option:
     with_proxy: false
     self_proxy: false
@@ -179,11 +132,11 @@ items:
   desc: ''
   url: https://dp88.dupontjoy.shop/dp88?proxyip=proxyip.cmliussss.net:443
   extra:
-    upload: 13095607104208
-    download: 13095607104208
+    upload: 13157696983959
+    download: 13157696983959
     total: 26388279066624
     expire: 4102329600
-  updated: 1761263354
+  updated: 1761350162
   option:
     with_proxy: false
     self_proxy: false
@@ -194,3 +147,44 @@ items:
     proxies: pVca1rF1U0BR
     groups: gfagJ8HePaHV
   home: https://dp88.dupontjoy.shop/dp88
+- uid: mMN9ow4hpgRh
+  type: merge
+  name: null
+  file: mMN9ow4hpgRh.yaml
+  updated: 1761371903
+- uid: s6zE1BMSSR0U
+  type: script
+  name: null
+  file: s6zE1BMSSR0U.js
+  updated: 1761371903
+- uid: rP6w3dgwXVNL
+  type: rules
+  name: null
+  file: rP6w3dgwXVNL.yaml
+  updated: 1761371903
+- uid: prfhuKMRR2cx
+  type: proxies
+  name: null
+  file: prfhuKMRR2cx.yaml
+  updated: 1761371903
+- uid: g2zSvyJjsJZr
+  type: groups
+  name: null
+  file: g2zSvyJjsJZr.yaml
+  updated: 1761371903
+- uid: RzgKrJuL5u7s
+  type: remote
+  name: dp88bj
+  file: RzgKrJuL5u7s.yaml
+  desc: 88邮箱cfnew项目
+  url: https://s.jhb.edu.kg/sub?target=clash&url=https%3A%2F%2Fdp88bj.dupontjoy.shop%2F6b5988f6-952b-4a41-b57c-8573d40d3695%2Fsub&insert=false
+  updated: 1761371903
+  option:
+    with_proxy: false
+    self_proxy: false
+    update_interval: 120
+    merge: mMN9ow4hpgRh
+    script: s6zE1BMSSR0U
+    rules: rP6w3dgwXVNL
+    proxies: prfhuKMRR2cx
+    groups: g2zSvyJjsJZr

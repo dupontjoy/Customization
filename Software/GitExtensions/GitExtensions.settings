@@ -237,7 +237,7 @@
       <string>CommitDialog.splitLeft_Distance</string>
     </key>
     <value>
-      <string>268</string>
+      <string>263</string>
     </value>
   </item>
   <item>
@@ -277,7 +277,7 @@
       <string>CommitDialog.splitLeft_Size</string>
     </key>
     <value>
-      <string>610</string>
+      <string>599</string>
     </value>
   </item>
   <item>
@@ -333,7 +333,7 @@
       <string>CommitDialog.splitRight_Distance</string>
     </key>
     <value>
-      <string>420</string>
+      <string>409</string>
     </value>
   </item>
   <item>
@@ -373,7 +373,7 @@
       <string>CommitDialog.splitRight_Size</string>
     </key>
     <value>
-      <string>610</string>
+      <string>599</string>
     </value>
   </item>
   <item>
@@ -526,6 +526,14 @@
     </key>
     <value>
       <string>Consolas;10;_IC_;0;0</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>DiffListSortType</string>
+    </key>
+    <value>
+      <string>FilePathFlat</string>
     </value>
   </item>
   <item>
@@ -746,6 +754,198 @@
   </item>
   <item>
     <key>
+      <string>FormBrowse.fileTree.BlameControl.splitContainer1_Distance</string>
+    </key>
+    <value>
+      <string>26</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.BlameControl.splitContainer1_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.BlameControl.splitContainer1_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.BlameControl.splitContainer1_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.BlameControl.splitContainer1_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.BlameControl.splitContainer1_Size</string>
+    </key>
+    <value>
+      <string>258</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.BlameControl.splitContainer2_Distance</string>
+    </key>
+    <value>
+      <string>26</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.BlameControl.splitContainer2_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.BlameControl.splitContainer2_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.BlameControl.splitContainer2_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.BlameControl.splitContainer2_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.BlameControl.splitContainer2_Size</string>
+    </key>
+    <value>
+      <string>337</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.DiffSplitContainer_Distance</string>
+    </key>
+    <value>
+      <string>300</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.DiffSplitContainer_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.DiffSplitContainer_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.DiffSplitContainer_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.DiffSplitContainer_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.DiffSplitContainer_Size</string>
+    </key>
+    <value>
+      <string>643</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.LeftSplitContainer_Distance</string>
+    </key>
+    <value>
+      <string>223</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.LeftSplitContainer_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.LeftSplitContainer_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.LeftSplitContainer_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.LeftSplitContainer_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.fileTree.LeftSplitContainer_Size</string>
+    </key>
+    <value>
+      <string>258</string>
+    </value>
+  </item>
+  <item>
+    <key>
       <string>FormBrowse.FileTreeSplitContainer_Distance</string>
     </key>
     <value>
@@ -797,7 +997,7 @@
       <string>FormBrowse.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>428</string>
+      <string>436</string>
     </value>
   </item>
   <item>
@@ -890,6 +1090,198 @@
   </item>
   <item>
     <key>
+      <string>FormBrowse.revisionDiff.BlameControl.splitContainer1_Distance</string>
+    </key>
+    <value>
+      <string>26</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.BlameControl.splitContainer1_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.BlameControl.splitContainer1_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.BlameControl.splitContainer1_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.BlameControl.splitContainer1_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.BlameControl.splitContainer1_Size</string>
+    </key>
+    <value>
+      <string>264</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.BlameControl.splitContainer2_Distance</string>
+    </key>
+    <value>
+      <string>26</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.BlameControl.splitContainer2_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.BlameControl.splitContainer2_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.BlameControl.splitContainer2_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.BlameControl.splitContainer2_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.BlameControl.splitContainer2_Size</string>
+    </key>
+    <value>
+      <string>340</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.DiffSplitContainer_Distance</string>
+    </key>
+    <value>
+      <string>300</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.DiffSplitContainer_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.DiffSplitContainer_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.DiffSplitContainer_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.DiffSplitContainer_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.DiffSplitContainer_Size</string>
+    </key>
+    <value>
+      <string>643</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.LeftSplitContainer_Distance</string>
+    </key>
+    <value>
+      <string>223</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.LeftSplitContainer_Dpi</string>
+    </key>
+    <value>
+      <string>96</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.LeftSplitContainer_FontSize</string>
+    </key>
+    <value>
+      <string>9</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.LeftSplitContainer_Panel1Collapsed</string>
+    </key>
+    <value>
+      <string>false</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.LeftSplitContainer_Panel2Collapsed</string>
+    </key>
+    <value>
+      <string>true</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>FormBrowse.revisionDiff.LeftSplitContainer_Size</string>
+    </key>
+    <value>
+      <string>258</string>
+    </value>
+  </item>
+  <item>
+    <key>
       <string>FormBrowse.RevisionDiffControl.LeftSplitContainer_Distance</string>
     </key>
     <value>
@@ -941,7 +1333,7 @@
       <string>FormBrowse.RevisionsSplitContainer_Distance</string>
     </key>
     <value>
-      <string>547</string>
+      <string>553</string>
     </value>
   </item>
   <item>
