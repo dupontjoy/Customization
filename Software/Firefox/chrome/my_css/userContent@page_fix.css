@@ -10,7 +10,7 @@ img:-moz-broken {
 	width: 48px;
 	height: 24px;
   }
-}
+
 
 /*图片经过外发光*/
 img:hover {
@@ -24,3 +24,4 @@ img {
 	-moz-transition-duration: .31s;
 }
 
+}

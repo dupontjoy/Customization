@@ -123,13 +123,13 @@ div.grid:nth-child(2) {
 
  /*详情区 上移和缩小*/
 div.grid:nth-child(3) {
-    margin-top: calc(-1 * (6.5vh + 5%)) !important;/*向上移*/
-    transform: scale(0.85) !important;
+    margin-top: calc(-1 * (6.5vh + 4%)) !important;/*向上移*/
+    transform: scale(0.89) !important;
  }
 
  /*跳过设置按钮 左移*/
 button.group:nth-child(1) {
-    margin-left: calc(-1 * (6.5vh + 12%)) !important;/*向上移*/
+    margin-left: calc(-1 * (6.5vh + 13%)) !important;/*向左移*/
  }
 
  /*返回按钮，标题，隐藏按钮 隐藏*/
