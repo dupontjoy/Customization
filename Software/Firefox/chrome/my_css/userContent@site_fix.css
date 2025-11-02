@@ -59,7 +59,7 @@
  
 }
 
-@-moz-document regexp("https://(smlunatv|xwnewtv).*.(dev|app|shop|xyz)\/play.*") {
+@-moz-document regexp("https://(xwnewtv).*.(dev|app|shop|xyz)\/play.*") {
 
 /*播放区 上移和缩小*/
  div.space-y-2:nth-child(2) {
@@ -114,33 +114,62 @@ div.top-3,.justify-end {
 }
 
 @-moz-document regexp("https://(dcmoontv).*.(dev|app|shop|xyz)\/play.*") {
-/*播放区 上移和缩小*/
-div.grid:nth-child(2) {
-    margin-top: calc(-1 * (6.5vh + 5%)) !important;/*向上移*/
-    transform: scale(0.85) !important;
- }
-
-
- /*详情区 上移和缩小*/
-div.grid:nth-child(3) {
-    margin-top: calc(-1 * (6.5vh + 4%)) !important;/*向上移*/
-    transform: scale(0.89) !important;
- }
-
- /*跳过设置按钮 左移*/
-button.group:nth-child(1) {
-    margin-left: calc(-1 * (6.5vh + 13%)) !important;/*向左移*/
+ /*顶部栏 缩小*/
+.hidden {
+    margin-top: calc(-1 * (2vh + 0%)) !important;/*向上移*/    
+    transform: scale(0.9) !important;
  }
 
  /*返回按钮，标题，隐藏按钮 隐藏*/
 div.top-3,.text-xl,button.group:nth-child(2) {
     display: none !important;
  }
- 
- /*顶部栏 缩小*/
-.hidden {
-    margin-top: calc(-1 * (2vh + 0%)) !important;/*向上移*/    
-    transform: scale(0.8) !important;
+
+ /*跳过设置按钮 左移*/
+button.group:nth-child(1) {
+    margin-left: calc(-1 * (6.5vh + 6%)) !important;/*向左移*/
+ }
+
+
+/*播放区 上移和缩小*/
+div.grid:nth-child(2) {
+    margin-top: calc(-1 * (6.5vh + 5.5%)) !important;/*向上移*/
+    transform: scale(0.85) !important;
+ }
+
+
+ /*详情区 上移和缩小*/
+div.grid:nth-child(3) {
+    margin-top: calc(-1 * (6.5vh + 3%)) !important;/*向上移*/
+    transform: scale(0.87) !important;
  }
  
+ 
+}
+
+@-moz-document regexp("https://(smlunatv).*.(dev|app|shop|xyz)\/play.*") {
+
+/*播放区 上移和缩小*/
+ div.space-y-2:nth-child(2) {
+    margin-top: calc(-1 * (6.5vh + 9%)) !important;/*向上移*/
+    transform: scale(0.85) !important;
+ }
+ 
+ /*详情区 上移和缩小*/
+ div.grid:nth-child(3) {
+    margin-top: calc(-1 * (6.5vh + 5%)) !important;/*向上移*/
+    transform: scale(0.85) !important;
+ }
+ 
+
+ /*左上角标题，右上角设置退出和暗色 缩小*/
+.text-xl, .top-2 {
+    display: none !important;
+ }
+ 
+ /*左上角返回和右上角显示/隐藏按钮 隐藏*/
+div.top-3,.justify-end {
+    display: none !important;
+ }
+
 }
