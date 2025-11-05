@@ -15,13 +15,13 @@ userChromeJS.downloadPlus.enableRename 下载对话框启用改名功能
 userChromeJS.downloadPlus.enableEncodeConvert 启用编码转换，如果userChromeJS.lus.enableRename没开启，这个选项无效
 userChromeJS.downloadPlus.enableDoubleClickToCopyLink 下载对话框双击复制链接
 userChromeJS.downloadPlus.enableCopyLinkButton 下载对话框启用复制链接按钮
-userChromeJS.downloadPlus.enableDoubleClickToOpen 双击打开
 userChromeJS.downloadPlus.enableDoubleClickToSave 双击保存
 userChromeJS.downloadPlus.enableSaveAndOpen 下载对话框启用保存并打开
 userChromeJS.downloadPlus.enableSaveAs 下载对话框启用另存为
 userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 // @note userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 */
+// @note            20251103 修复修改文件名后点击保存不遵循“总是询问保存至何处(A)”设置的问题
 // @note            20250827 修复 Fx143 菜单图标的问题
 // @note            20250827 修复选择 FlashGot 后点击保存文件无效的问题
 // @note            20250826 禁止快速保存后会自动打开文文件，感谢@Cloudy901
@@ -179,7 +179,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 
     const processCSS = (css) => {
         if (versionGE("143a1")) {
-            css =  `#DownloadPlus-Btn { list-style-image: var(--menuitem-icon); }\n` + css.replaceAll('list-style-image', '--menuitem-icon');
+            css = `#DownloadPlus-Btn { list-style-image: var(--menuitem-icon); }\n` + css.replaceAll('list-style-image', '--menuitem-icon');
         }
         return css;
     }
@@ -188,6 +188,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
     if (window.DownloadPlus) return;
 
     window.DownloadPlus = {
+        debug: false,
         PREF_FLASHGOT_PATH: 'userChromeJS.downloadPlus.flashgotPath',
         PREF_DEFAULT_MANAGER: 'userChromeJS.downloadPlus.flashgotDefaultManager',
         PREF_DOWNLOAD_MANAGERS: 'userChromeJS.downloadPlus.flashgotDownloadManagers',
@@ -259,42 +260,6 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                 }, { once: true });
             }
             this.sb = sb;
-
-            if (isTrue('userChromeJS.downloadPlus.enableRename')) {
-                const obsService = Cc['@mozilla.org/observer-service;1'].getService(Ci.nsIObserverService);
-                const RESPONSE_TOPIC = 'http-on-examine-response';
-
-                this.changeNameObserver = {
-                    observing: false,
-                    observe: function (subject, topic, data) {
-                        try {
-                            let channel = subject.QueryInterface(Ci.nsIHttpChannel);
-                            let header = channel.contentDispositionHeader;
-                            let associatedWindow = channel.notificationCallbacks
-                                .getInterface(Ci.nsILoadContext)
-                                .associatedWindow;
-                            associatedWindow.localStorage.setItem(channel.URI.spec, header.split("=")[1]);
-                        } catch (e) { };
-                    },
-                    start: function () {
-                        if (!this.observing) {
-                            obsService.addObserver(this, RESPONSE_TOPIC, false);
-                            this.observing = true;
-                        }
-                    },
-                    stop: function () {
-                        if (this.observing) {
-                            obsService.removeObserver(this, RESPONSE_TOPIC, false);
-                            this.observing = false;
-                        }
-                    }
-                };
-
-                this.changeNameObserver.start();
-                window.addEventListener("beforeunload", () => {
-                    window.DownloadPlus.changeNameObserver.stop();
-                });
-            }
             if (isTrue('userChromeJS.downloadPlus.enableSaveAndOpen')) {
                 this.URLS_FOR_OPEN = [];
                 const saveAndOpenView = {
@@ -310,12 +275,24 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                     onDownloadAdded: function (dl) { },
                     onDownloadRemoved: function (dl) { },
                 }
-                Downloads.getList(Downloads.ALL).then(list => { list.addView(saveAndOpenView).then(null, Cu.reportError); });
+                function addDownloadView (list, view) {
+                    const result = list.addView(view);
+                    if (result && typeof result.then === "function") {
+                        result.then(null, Cu.reportError);
+                    }
+                }
+                function removeDownloadView (list, view) {
+                    const result = list.removeView(view);
+                    if (result && typeof result.then === "function") {
+                        result.then(null, Cu.reportError);
+                    }
+                }
+                Downloads.getList(Downloads.ALL).then(list => { addDownloadView(list, saveAndOpenView) });
                 window.addEventListener("beforeunload", () => {
-                    Downloads.getList(Downloads.ALL).then(list => { list.removeView(saveAndOpenView).then(null, Cu.reportError); });
+                    Downloads.getList(Downloads.ALL).then(list => { removeDownloadView(list, saveAndOpenView) });
                 });
             }
-            if (isTrue('userChromeJS.downloadPlus.showAllDrives ')) {
+            if (isTrue('userChromeJS.downloadPlus.showAllDrives')) {
                 getAllDrives().forEach(drive => {
                     this.SAVE_DIRS.push([drive, LANG.format("disk %s", drive.replace(':\\', ""))])
                 });
@@ -361,8 +338,10 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                 }));
                 contextMenu.insertBefore(downloadPlusMenu, contextMenu.querySelector('#context-media-eme-learnmore ~ menuseparator'));
             }
+            this._log("初始化完成");
         },
         initDownloadPopup: async function () {
+            this._log("initDownloadPopup 开始");
             const dialogFrame = dialog.dialogElement('unknownContentType');
             // 原有按钮增加 accesskey
             dialogFrame.getButton('accept').setAttribute('accesskey', 'c');
@@ -392,7 +371,6 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                         this.classList.remove('invalid');
                     }
                 });
-
                 if (isTrue('userChromeJS.downloadPlus.enableEncodeConvert')) {
                     let encodingConvertButton = locationHbox.appendChild(createEl(document, 'button', {
                         id: 'encodingConvertButton',
@@ -474,7 +452,6 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
             }
             // 双击保存
             if (isTrue('userChromeJS.downloadPlus.enableDoubleClickToSave')) {
-
                 $('#save').addEventListener('dblclick', (event) => {
                     const { dialog } = event.target.ownerGlobal;
                     dialog.dialogElement('unknownContentType').getButton("accept").click();
@@ -639,9 +616,16 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                     if ($('#flashgotRadio')?.selected)
                         return $('#Flashgot-Download-By-Default-Manager').click();
                     else if ($('#locationText')?.value && $('#locationText')?.value != dialog.mLauncher.suggestedFileName) {
-                        dialog.onCancel = function () { };
-                        let file = await IOUtils.getFile(await Downloads.getPreferredDownloadsDirectory(), $('#locationText').value);
-                        return dialog.mLauncher.saveDestinationAvailable(file);
+                        if (isTrue('browser.download.useDownloadDir')) {
+                            dialog.onCancel = function () { };
+                            let file = await IOUtils.getFile(await Downloads.getPreferredDownloadsDirectory(), $('#locationText').value);
+                            return dialog.mLauncher.saveDestinationAvailable(file);
+                        } else {
+                            const mainwin = Services.wm.getMostRecentWindow("navigator:browser");
+                            // 感谢 ycls006 / alice0775
+                            Cu.evalInSandbox("(" + mainwin.internalSave.toString().replace("let ", "").replace("var fpParams", "fileInfo.fileExt=null;fileInfo.fileName=aDefaultFileName;var fpParams") + ")", mainwin.DownloadPlus.sb)(dialog.mLauncher.source.asciiSpec, null, null, ($("#locationText")?.value?.replace(invalidChars, '_') || dialog.mLauncher.suggestedFileName), null, null, false, null, null, null, null, null, false, null, mainwin.PrivateBrowsingUtils.isBrowserPrivate(mainwin.gBrowser.selectedBrowser), Services.scriptSecurityManager.getSystemPrincipal());
+                            close();
+                        }
                     } else {
                         return cached_function.apply(this, ...args);
                     }
@@ -652,8 +636,10 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                 document.getElementById("normalBox").removeAttribute("collapsed");
                 window.sizeToContent();
             }, 100);
+            this._log("initDownloadPopup 结束");
         },
         handleEvent: async function (event) {
+            this._log("handleEvent", event.type, event.target.id);
             const { button, type, target } = event;
             if (type === 'popupshowing') {
                 if (target.id === "DownloadPlus-Btn-Popup" || target.id === "DownloadPlus-ContextMenu-Popup") {
@@ -780,6 +766,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
             return this.DEFAULT_MANAGER === name;
         },
         exec: async function (path, args, options = { startHidden: false }) {
+            this._log("exec 调用", { path, args, options });
             switch (typeof args) {
                 case 'string':
                     args = args.split(/\s+/);
@@ -801,12 +788,15 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                 if (file.isExecutable()) {
                     process.init(file);
                     if (typeof options.processObserver === "object") {
+                        this._log("使用异步 processObserver");
                         process.runwAsync(args, args.length, options.processObserver);
                     } else {
+                        this._log("同步执行");
                         process.runw(false, args, args.length);
                     }
 
                 } else {
+                    this._log("非可执行文件，直接 launch");
                     file.launch();
                 }
             } catch (e) {
@@ -814,12 +804,18 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
             }
         },
         reloadSupportedManagers: async function (force = false, alert = false, callback) {
+            this._log("reloadSupportedManagers 调用", { force, alert, current: this.DOWNLOAD_MANAGERS });
             try {
                 let prefVal = Services.prefs.getStringPref('userChromeJS.downloadPlus.flashgotDownloadManagers');
                 this.DOWNLOAD_MANAGERS = prefVal.split(",");
-            } catch (e) { force = true }
+                this._log("从 prefs 读取下载器列表", this.DOWNLOAD_MANAGERS);
+            } catch (e) {
+                force = true;
+                this._log("读取 prefs 失败，强制重新扫描", e);
+            }
             if (force) {
                 const resultPath = handlePath('{TmpD}\\.flashgot.dm.' + Math.random().toString(36).slice(2) + '.txt');
+                this._log("强制刷新，生成临时文件", resultPath);
                 await new Promise((resolve, reject) => {
                     // read download managers list from flashgot.exe
                     this.exec(this.FLASHGOT_PATH, ["-o", resultPath], {
@@ -827,6 +823,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                             observe (subject, topic) {
                                 switch (topic) {
                                     case "process-finished":
+                                        this._log("FlashGot.exe 执行完毕，准备读取结果");
                                         try {
                                             // Wait 1s after process to resolve
                                             setTimeout(resolve, 1000);
@@ -835,6 +832,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                                         }
                                         break;
                                     default:
+                                        this._log("FlashGot.exe 异常结束", topic);
                                         reject(topic);
                                         break;
                                 }
@@ -843,8 +841,10 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                     });
                 });
                 let resultString = readText(resultPath, FLASHGOT_OUTPUT_ENCODING);
+                this._log("FlashGot 输出原始内容", resultString);
                 this.DOWNLOAD_MANAGERS = resultString.split("\n").filter(l => l.includes("|OK")).map(l => l.replace("|OK", ""));
                 await IOUtils.remove(resultPath, { ignoreAbsent: true });
+                this._log("解析后下载器列表", this.DOWNLOAD_MANAGERS);
                 Services.prefs.setStringPref(this.PREF_DOWNLOAD_MANAGERS, this.DOWNLOAD_MANAGERS.join(","));
             }
             if (alert) {
@@ -915,7 +915,9 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                 1, manager, isPrivate, referer, uri.spec, description || '', gatherCookies(uri.spec), postData,
                 fileName, extension, downloadPageReferer, downloadPageCookies, userAgent
             ]);
+            this._log("生成 .dl.properties 内容", initData);
             const initFilePath = handlePath(`{TmpD}\\${hashText(uri.spec)}.dl.properties`);
+            this._log("写入临时文件", initFilePath);
             await IOUtils.writeUTF8(initFilePath, initData);
             await new Promise((resolve, reject) => {
                 this.exec(FLASHGOT_PATH, initFilePath, {
@@ -957,6 +959,11 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                     }
                     return false;
                 }
+            }
+        },
+        _log (...args) {
+            if (isTrue(this.debug)) {
+                Services.wm.getMostRecentWindow("navigator:browser").console.log("DownloadPlus", ...args);
             }
         }
     }

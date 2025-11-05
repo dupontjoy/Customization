@@ -1,24 +1,29 @@
 {
 	"viewPrevState": {
-		"url": "/setting",
-		"query": {}
+		"url": "/search",
+		"query": {
+			"text": "人世间 雷佳",
+			"source": "all",
+			"type": "music"
+		}
 	},
 	"lastStartInfo": "2.11.0",
 	"listUpdateInfo": {},
 	"listScrollPosition": {
 		"分享玄清介创建的歌单「日语」": 0,
-		"分享玄清介创建的歌单「国语 - 新生代": 3200,
-		"分享玄清介创建的歌单「国语 - 经典」": 2810,
+		"分享玄清介创建的歌单「国语 - 新生代": 0,
+		"分享玄清介创建的歌单「国语 - 经典」": 0,
 		"分享玄清介创建的歌单「业余 - 古风」": 0
 	},
-	"listPrevSelectId": "分享玄清介创建的歌单「国语 - 经典」",
+	"listPrevSelectId": "分享玄清介创建的歌单「国语 - 新生代",
 	"playInfo": {
-		"time": 69.829639,
-		"maxTime": 280.032653,
+		"time": 243.261333,
+		"maxTime": 253.512,
 		"listId": "default",
-		"index": 32
+		"index": 0
 	},
 	"searchHistoryList": [
+		"人世间 雷佳",
 		"暗香 沙宝亮",
 		"外婆桥任然",
 		"杀破狼 JS",
@@ -32,7 +37,6 @@
 		"千年泪 tank",
 		"邓俞君",
 		"欢俞君",
-		"平生不晚",
-		"如愿 王菲"
+		"平生不晚"
 	]
 }
