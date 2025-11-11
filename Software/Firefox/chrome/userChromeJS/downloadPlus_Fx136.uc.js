@@ -21,6 +21,7 @@ userChromeJS.downloadPlus.enableSaveAs 下载对话框启用另存为
 userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 // @note userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 */
+// @note            20251105 新增静默调用 FlashGot下载（Firefox 应如何处理其他文件？选择保存文件(S)后生效）
 // @note            20251103 修复修改文件名后点击保存不遵循“总是询问保存至何处(A)”设置的问题
 // @note            20250827 修复 Fx143 菜单图标的问题
 // @note            20250827 修复选择 FlashGot 后点击保存文件无效的问题
@@ -125,6 +126,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                                 if (isNaN(num)) {
                                     result += 'NaN';
                                 } else {
+                                    ``
                                     result += num.toString();
                                 }
                                 valueIndex++;
@@ -233,7 +235,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
             }
         },
         initChrome: async function () {
-            Services.prefs.setBoolPref('browser.download.always_ask_before_handling_new_types', true);
+            // Services.prefs.setBoolPref('browser.download.always_ask_before_handling_new_types', true);
             // 保存按钮无需等待即可点击
             Services.prefs.setIntPref('security.dialog_enable_delay', 0);
 
@@ -260,38 +262,60 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                 }, { once: true });
             }
             this.sb = sb;
-            if (isTrue('userChromeJS.downloadPlus.enableSaveAndOpen')) {
-                this.URLS_FOR_OPEN = [];
-                const saveAndOpenView = {
-                    onDownloadChanged: function (dl) {
+
+            this.URLS_FOR_OPEN = [];
+            const dlView = {
+                onDownloadChanged: function (dl) {
+                    if (isTrue('userChromeJS.downloadPlus.enableSaveAndOpen')) {
                         if (dl.progress != 100) return;
-                        if (window.DownloadPlus.URLS_FOR_OPEN.indexOf(dl.source.url) > -1) {
+                        const url = dl.source.url;
+                        const index = window.DownloadPlus.URLS_FOR_OPEN.indexOf(url);
+                        if (index > -1) {
                             let target = Cc["@mozilla.org/file/local;1"].createInstance(Ci.nsIFile);
                             target.initWithPath(dl.target.path);
                             target.launch();
-                            window.DownloadPlus.URLS_FOR_OPEN[window.DownloadPlus.URLS_FOR_OPEN.indexOf(dl.source.url)] = "";
+                            window.DownloadPlus.URLS_FOR_OPEN.splice(index, 1);
                         }
-                    },
-                    onDownloadAdded: function (dl) { },
-                    onDownloadRemoved: function (dl) { },
-                }
-                function addDownloadView (list, view) {
-                    const result = list.addView(view);
-                    if (result && typeof result.then === "function") {
-                        result.then(null, Cu.reportError);
                     }
-                }
-                function removeDownloadView (list, view) {
-                    const result = list.removeView(view);
-                    if (result && typeof result.then === "function") {
-                        result.then(null, Cu.reportError);
+                },
+                onDownloadAdded: async function (dl) {
+                    const { DownloadPlus: dp, DownloadsCommon: dc } = window;
+                    if (!isTrue('browser.download.always_ask_before_handling_new_types') && isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention') && dp.FLASHGOT_PATH && dp.DEFAULT_MANAGER) {
+                        dp._log("尝试使用 flashgot 下载 " + dl.source.url);
+                        const url = dl.source.url;
+                        const options = {
+                            isPrivate: true
+                        };
+                        const refererUrl = dl.source.referrerInfo.originalReferrer.spec;
+                        if (refererUrl) options.referer = refererUrl;
+                        dp.downloadByManager("", url, options).then(_ => {
+                            dp._log("downloadByManager 成功，准备删除下载任务");
+                            dc.deleteDownloadFiles(dl, 2);
+                            dp._log("deleteDownloadFiles 执行完成");
+                        }).catch((ex) => {
+                            dp._log("flashgot 下载失败: " + ex);
+                        });
                     }
-                }
-                Downloads.getList(Downloads.ALL).then(list => { addDownloadView(list, saveAndOpenView) });
-                window.addEventListener("beforeunload", () => {
-                    Downloads.getList(Downloads.ALL).then(list => { removeDownloadView(list, saveAndOpenView) });
-                });
+                },
+                onDownloadRemoved: function (dl) { },
             }
+            function addDownloadView (list, view) {
+                const result = list.addView(view);
+                if (result && typeof result.then === "function") {
+                    result.then(null, Cu.reportError);
+                }
+            }
+            function removeDownloadView (list, view) {
+                const result = list.removeView(view);
+                if (result && typeof result.then === "function") {
+                    result.then(null, Cu.reportError);
+                }
+            }
+            Downloads.getList(Downloads.ALL).then(list => { addDownloadView(list, dlView) });
+            window.addEventListener("beforeunload", () => {
+                Downloads.getList(Downloads.ALL).then(list => { removeDownloadView(list, dlView) });
+            });
+
             if (isTrue('userChromeJS.downloadPlus.showAllDrives')) {
                 getAllDrives().forEach(drive => {
                     this.SAVE_DIRS.push([drive, LANG.format("disk %s", drive.replace(':\\', ""))])
@@ -360,7 +384,6 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                     value: dialog.mLauncher.suggestedFileName,
                     flex: 1
                 }));
-
 
                 // 输入不能用于文件名的字符输入框变红
                 locationText.addEventListener('input', function (e) {
@@ -886,7 +909,9 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                 return m?.browsingContext?.customUserAgent || c["@mozilla.org/network/protocol;1?name=http"].getService(Ci.nsIHttpProtocolHandler).userAgent;
             })(USERAGENT_OVERRIDES, uri, mBrowser, Cc);
             let referer = '', postData = '', fileName = '', extension = '', downloadPageReferer = '', downloadPageCookies = '';
-            if (options.mBrowser) {
+            if (options.referer) {
+                referer = options.referer;
+            } else if (options.mBrowser) {
                 const { mBrowser, mContentData } = options;
                 referer = mBrowser.currentURI.spec;
                 downloadPageReferer = mContentData.referrerInfo.originalReferrer.spec
@@ -962,7 +987,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
             }
         },
         _log (...args) {
-            if (isTrue(this.debug)) {
+            if (this.debug) {
                 Services.wm.getMostRecentWindow("navigator:browser").console.log("DownloadPlus", ...args);
             }
         }
@@ -1048,7 +1073,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
         encoding || (encoding = "UTF-8");
         var aFile;
         if (typeof aFileOrPath == "string") {
-            aFile = Cc['@mozilla.org/file/local;1'].createInstance(Ci.nsIFile);;
+            aFile = Cc['@mozilla.org/file/local;1'].createInstance(Ci.nsIFile);
             aFile.initWithPath(aFileOrPath);
         } else {
             aFile = aFileOrPath;
