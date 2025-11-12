@@ -43,11 +43,12 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1762815810
+  updated: 1762903986
   option:
     with_proxy: false
     self_proxy: false
     update_interval: 60
+    allow_auto_update: true
     merge: mdSsUrAK6z5A
     script: s4q0xUnl9M3m
     rules: r9Slro1qLQSJ
@@ -82,18 +83,19 @@ items:
   type: remote
   name: xrqj
   file: RSDeM9xvwbVZ.yaml
-  desc: ''
+  desc: cmliu项目
   url: https://xrqj.pages.dev/xrqj?proxyip=proxyip.cmliussss.net:443
   extra:
-    upload: 12677028525072
-    download: 12677028525072
+    upload: 12948397004694
+    download: 12948397004694
     total: 26388279066624
     expire: 4102329600
-  updated: 1762815813
+  updated: 1762903990
   option:
     with_proxy: false
     self_proxy: false
     update_interval: 60
+    allow_auto_update: true
     merge: m5eY9rtJeCmo
     script: svZtKK93ClQQ
     rules: rtjhJE7qoyLE
@@ -129,18 +131,19 @@ items:
   type: remote
   name: dp88
   file: RAaLVso74gIf.yaml
-  desc: ''
+  desc: cmliu项目
   url: https://dp88.dupontjoy.shop/dp88?proxyip=proxyip.cmliussss.net:443
   extra:
-    upload: 12677132215127
-    download: 12677132215127
+    upload: 12947894894384
+    download: 12947894894384
     total: 26388279066624
     expire: 4102329600
-  updated: 1762815814
+  updated: 1762903987
   option:
     with_proxy: false
     self_proxy: false
     update_interval: 60
+    allow_auto_update: true
     merge: mpWXfezvfCuU
     script: sI3OnsECM7vh
     rules: r1qxTKSmx7uS
@@ -178,11 +181,12 @@ items:
   file: RzgKrJuL5u7s.yaml
   desc: 88邮箱cfnew项目
   url: https://url.v1.mk/sub?target=clash&url=https%3A%2F%2Fdp88bj.dupontjoy.shop%2Fdp88bj%2Fsub&insert=false
-  updated: 1762815826
+  updated: 1762903986
   option:
     with_proxy: false
     self_proxy: false
     update_interval: 60
+    allow_auto_update: true
     merge: mMN9ow4hpgRh
     script: s6zE1BMSSR0U
     rules: rP6w3dgwXVNL
