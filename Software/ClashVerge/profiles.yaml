@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RzgKrJuL5u7s
+current: RSDeM9xvwbVZ
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1762903986
+  updated: 1762998273
   option:
     with_proxy: false
     self_proxy: false
@@ -84,13 +84,13 @@ items:
   name: xrqj
   file: RSDeM9xvwbVZ.yaml
   desc: cmliu项目
-  url: https://xrqj.pages.dev/xrqj?proxyip=proxyip.cmliussss.net:443
+  url: https://xrqj.pages.dev/sub?token=f826b4c6974acb9a10d4d84a45603a04
   extra:
-    upload: 12948397004694
-    download: 12948397004694
+    upload: 1685328826985
+    download: 1685328826985
     total: 26388279066624
     expire: 4102329600
-  updated: 1762903990
+  updated: 1763003040
   option:
     with_proxy: false
     self_proxy: false
@@ -101,7 +101,7 @@ items:
     rules: rtjhJE7qoyLE
     proxies: pSAX0mylwLIv
     groups: gFNuUqJYij1z
-  home: https://xrqj.pages.dev/xrqj
+  home: https://xrqj.pages.dev/admin
 - uid: mpWXfezvfCuU
   type: merge
   name: null
@@ -132,13 +132,13 @@ items:
   name: dp88
   file: RAaLVso74gIf.yaml
   desc: cmliu项目
-  url: https://dp88.dupontjoy.shop/dp88?proxyip=proxyip.cmliussss.net:443
+  url: https://dp88.dupontjoy.shop/sub?token=124b230a5d60b2df863a4dddb836b47c
   extra:
-    upload: 12947894894384
-    download: 12947894894384
+    upload: 1764537339231
+    download: 1764537339231
     total: 26388279066624
     expire: 4102329600
-  updated: 1762903987
+  updated: 1763003562
   option:
     with_proxy: false
     self_proxy: false
@@ -149,7 +149,7 @@ items:
     rules: r1qxTKSmx7uS
     proxies: pVca1rF1U0BR
     groups: gfagJ8HePaHV
-  home: https://dp88.dupontjoy.shop/dp88
+  home: https://dp88.dupontjoy.shop/admin
 - uid: mMN9ow4hpgRh
   type: merge
   name: null
@@ -179,9 +179,9 @@ items:
   type: remote
   name: dp88bj
   file: RzgKrJuL5u7s.yaml
-  desc: 88邮箱cfnew项目
+  desc: cfnew项目
   url: https://url.v1.mk/sub?target=clash&url=https%3A%2F%2Fdp88bj.dupontjoy.shop%2Fdp88bj%2Fsub&insert=false
-  updated: 1762903986
+  updated: 1762998273
   option:
     with_proxy: false
     self_proxy: false
