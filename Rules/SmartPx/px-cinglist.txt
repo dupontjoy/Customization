@@ -5,7 +5,7 @@
 !---------start---------
 
 ! 白名单
-@@||netlify.app
+@@||*tv.netlify.app
 
 ! 部署平台
 ||upstash.com
