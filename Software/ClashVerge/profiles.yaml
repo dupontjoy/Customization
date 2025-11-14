@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RSDeM9xvwbVZ
+current: RzgKrJuL5u7s
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1762998273
+  updated: 1763095445
   option:
     with_proxy: false
     self_proxy: false
@@ -84,13 +84,13 @@ items:
   name: xrqj
   file: RSDeM9xvwbVZ.yaml
   desc: cmliu项目
-  url: https://xrqj.pages.dev/sub?token=f826b4c6974acb9a10d4d84a45603a04
+  url: https://xrqj.pages.dev/sub?token=2893513527d9c1c68e9e7f5d900712af
   extra:
-    upload: 1685328826985
-    download: 1685328826985
+    upload: 13048417439534
+    download: 13048417439534
     total: 26388279066624
     expire: 4102329600
-  updated: 1763003040
+  updated: 1763077452
   option:
     with_proxy: false
     self_proxy: false
@@ -132,13 +132,16 @@ items:
   name: dp88
   file: RAaLVso74gIf.yaml
   desc: cmliu项目
-  url: https://dp88.dupontjoy.shop/sub?token=124b230a5d60b2df863a4dddb836b47c
+  url: https://dp88.dupontjoy.shop/sub?token=761ed334dfd4fac44feaf19583294287
+  selected:
+  - name: ♻️ 自动选择
+    now: bestcf.030101.xyz
   extra:
-    upload: 1764537339231
-    download: 1764537339231
+    upload: 4780225299672
+    download: 4780225299672
     total: 26388279066624
     expire: 4102329600
-  updated: 1763003562
+  updated: 1763023308
   option:
     with_proxy: false
     self_proxy: false
@@ -181,7 +184,7 @@ items:
   file: RzgKrJuL5u7s.yaml
   desc: cfnew项目
   url: https://url.v1.mk/sub?target=clash&url=https%3A%2F%2Fdp88bj.dupontjoy.shop%2Fdp88bj%2Fsub&insert=false
-  updated: 1762998273
+  updated: 1763095446
   option:
     with_proxy: false
     self_proxy: false

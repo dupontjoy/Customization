@@ -4,6 +4,9 @@
 
 !---------start---------
 
+! 白名单
+||@@netlify.app
+
 ! 部署平台
 ||upstash.com
 ||console.upstash.com

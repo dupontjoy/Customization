@@ -1,9 +1,6 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
-      "DirectoryOpus": {
-        "EnableMouseMiddleClick": false
-      },
       "WindowsExplorer": {
         "EnableMouseMiddleClick": false
       },
@@ -15,6 +12,9 @@
         "EnableMouseMiddleClick": false
       },
       "TotalCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "DirectoryOpus": {
         "EnableMouseMiddleClick": false
       },
       "FreeCommander": {
@@ -256,14 +256,14 @@
           "Info": null,
           "Item": {
             "Keyword": "dc",
-            "Url": "https://dcmoontv.netlify.app/search?q={query}",
+            "Url": "https://dcmoontv.dupontjoy.shop/search?q={query}",
             "Title": "dcmoontv",
             "Icon": {
               "Path": "{user}\\5698bbe7-8db6-4b53-b295-77b228686159.png",
               "TypeName": "Path"
             },
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://dcmoontv.netlify.app/search?q={query}"
+            "SuggestionUrl": "https://dcmoontv.dupontjoy.shop/search?q={query}"
           }
         },
         {
@@ -286,14 +286,14 @@
           "Info": null,
           "Item": {
             "Keyword": "xw",
-            "Url": "https://xwnewtv.netlify.app/search?q={query}",
+            "Url": "https://xwnewtv.dupontjoy.shop/search?q={query}",
             "Title": "xwnewtv",
             "Icon": {
               "Path": "{user}\\f7144083-0f3f-4582-bf3d-d4fb7075c932.png",
               "TypeName": "Path"
             },
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://xwnewtv.netlify.app/search?q={query}"
+            "SuggestionUrl": "https://xwnewtv.dupontjoy.shop/search?q={query}"
           }
         }
       ],
