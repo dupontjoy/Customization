@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RzgKrJuL5u7s
+current: RaBFhQsycdEH
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1763095445
+  updated: 1763302846
   option:
     with_proxy: false
     self_proxy: false
@@ -184,7 +184,7 @@ items:
   file: RzgKrJuL5u7s.yaml
   desc: cfnew项目
   url: https://url.v1.mk/sub?target=clash&url=https%3A%2F%2Fdp88bj.dupontjoy.shop%2Fdp88bj%2Fsub&insert=false
-  updated: 1763095446
+  updated: 1763302846
   option:
     with_proxy: false
     self_proxy: false
@@ -195,3 +195,43 @@ items:
     rules: rP6w3dgwXVNL
     proxies: prfhuKMRR2cx
     groups: g2zSvyJjsJZr
+- uid: mNfajd829vzG
+  type: merge
+  name: null
+  file: mNfajd829vzG.yaml
+  updated: 1763180074
+- uid: snrnBiYSRz1y
+  type: script
+  name: null
+  file: snrnBiYSRz1y.js
+  updated: 1763180074
+- uid: rytyNP5QMTv4
+  type: rules
+  name: null
+  file: rytyNP5QMTv4.yaml
+  updated: 1763180074
+- uid: pTehsOA0z09Q
+  type: proxies
+  name: null
+  file: pTehsOA0z09Q.yaml
+  updated: 1763180074
+- uid: gn2snLXwudZ9
+  type: groups
+  name: null
+  file: gn2snLXwudZ9.yaml
+  updated: 1763180074
+- uid: RaBFhQsycdEH
+  type: remote
+  name: 163cfn
+  file: RaBFhQsycdEH.yaml
+  desc: cfnew项目
+  url: https://url.v1.mk/sub?target=clash&url=https%3A%2F%2F163cfn.232885.xyz%2F163cfn%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
+  updated: 1763302842
+  option:
+    update_interval: 60
+    allow_auto_update: true
+    merge: mNfajd829vzG
+    script: snrnBiYSRz1y
+    rules: rytyNP5QMTv4
+    proxies: pTehsOA0z09Q
+    groups: gn2snLXwudZ9
