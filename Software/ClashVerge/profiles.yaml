@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RAaLVso74gIf
+current: RSDeM9xvwbVZ
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1763427270
+  updated: 1763767703
   option:
     with_proxy: false
     self_proxy: false
@@ -84,13 +84,13 @@ items:
   name: xrqj
   file: RSDeM9xvwbVZ.yaml
   desc: cmliu项目
-  url: https://xrqj.pages.dev/sub?token=2893513527d9c1c68e9e7f5d900712af
+  url: https://xrqj.pages.dev/sub?token=f826b4c6974acb9a10d4d84a45603a04
   extra:
-    upload: 13048417439534
-    download: 13048417439534
+    upload: 12904363549231
+    download: 12904363549231
     total: 26388279066624
     expire: 4102329600
-  updated: 1763077452
+  updated: 1763767707
   option:
     with_proxy: false
     self_proxy: false
@@ -137,11 +137,11 @@ items:
   - name: ♻️ 自动选择
     now: bestcf.030101.xyz
   extra:
-    upload: 499333126897
-    download: 499333126897
+    upload: 12904235120165
+    download: 12904235120165
     total: 26388279066624
     expire: 4102329600
-  updated: 1763427273
+  updated: 1763767713
   option:
     with_proxy: false
     self_proxy: false
@@ -184,7 +184,7 @@ items:
   file: RzgKrJuL5u7s.yaml
   desc: cfnew项目
   url: https://url.v1.mk/sub?target=clash&url=https%3A%2F%2Fdp88bj.dupontjoy.shop%2Fdp88bj%2Fsub&insert=false
-  updated: 1763429983
+  updated: 1763767703
   option:
     with_proxy: false
     self_proxy: false
@@ -226,8 +226,10 @@ items:
   file: RaBFhQsycdEH.yaml
   desc: cfnew项目
   url: https://url.v1.mk/sub?target=clash&url=https%3A%2F%2F163cfn.232885.xyz%2F163cfn%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1763427277
+  updated: 1763767705
   option:
+    with_proxy: false
+    self_proxy: false
     update_interval: 60
     allow_auto_update: true
     merge: mNfajd829vzG
