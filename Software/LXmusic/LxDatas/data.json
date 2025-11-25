@@ -1,7 +1,10 @@
 {
 	"viewPrevState": {
-		"url": "/setting",
-		"query": {}
+		"url": "/search",
+		"query": {
+			"source": "all",
+			"type": "music"
+		}
 	},
 	"lastStartInfo": "2.11.0",
 	"listUpdateInfo": {},
