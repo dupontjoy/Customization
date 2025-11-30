@@ -1,6 +1,8 @@
 # Clash Verge Config
 
 app_log_level: null
+app_log_max_size: null
+app_log_max_count: null
 language: zh
 theme_mode: system
 tray_event: null
@@ -32,7 +34,6 @@ proxy_host: 127.0.0.1
 theme_setting: null
 web_ui_list: null
 clash_core: verge-mihomo
-hotkeys: null
 enable_global_hotkey: null
 home_cards:
   clashinfo: true
@@ -48,6 +49,7 @@ auto_close_connection: true
 auto_check_update: true
 default_latency_test: null
 default_latency_timeout: null
+enable_auto_delay_detection: null
 enable_builtin_enhanced: true
 proxy_layout_column: null
 test_list:
@@ -73,15 +75,9 @@ verge_socks_port: 7898
 verge_socks_enabled: false
 verge_port: 7899
 verge_http_enabled: false
-enable_tray_speed: false
-enable_tray_icon: true
+tray_inline_proxy_groups: null
 enable_auto_light_weight_mode: false
 auto_light_weight_minutes: 10
 enable_hover_jump_navigator: true
+hover_jump_navigator_delay: null
 enable_external_controller: null
-service_state:
-  last_install_time: 1755435908
-  install_count: 1
-  last_check_time: 0
-  last_error: '通过服务启动核心失败: failed to get runtime config'
-  prefer_sidecar: true
