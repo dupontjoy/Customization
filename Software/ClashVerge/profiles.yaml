@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RzgKrJuL5u7s
+current: RaBFhQsycdEH
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1764505152
+  updated: 1764630430
   option:
     with_proxy: false
     self_proxy: false
@@ -86,11 +86,11 @@ items:
   desc: cmliu项目
   url: https://xrqj.pages.dev/sub?token=f826b4c6974acb9a10d4d84a45603a04
   extra:
-    upload: 6773214430914
-    download: 6773214430914
+    upload: 12709912779920
+    download: 12709912779920
     total: 26388279066624
     expire: 4102329600
-  updated: 1764505155
+  updated: 1764630435
   option:
     with_proxy: false
     self_proxy: false
@@ -137,11 +137,11 @@ items:
   - name: ♻️ 自动选择
     now: bestcf.030101.xyz
   extra:
-    upload: 6773049962300
-    download: 6773049962300
+    upload: 12709874144303
+    download: 12709874144303
     total: 26388279066624
     expire: 4102329600
-  updated: 1764505155
+  updated: 1764630433
   option:
     with_proxy: false
     self_proxy: false
@@ -184,7 +184,7 @@ items:
   file: RzgKrJuL5u7s.yaml
   desc: cfnew项目
   url: https://url.v1.mk/sub?target=clash&url=https%3A%2F%2Fdp88bj.dupontjoy.shop%2Fdp88bj%2Fsub&insert=false
-  updated: 1764505151
+  updated: 1764630431
   option:
     with_proxy: false
     self_proxy: false
@@ -226,7 +226,7 @@ items:
   file: RaBFhQsycdEH.yaml
   desc: cfnew项目
   url: https://url.v1.mk/sub?target=clash&url=https%3A%2F%2F163cfn.232885.xyz%2F163cfn%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1764505154
+  updated: 1764630431
   option:
     with_proxy: false
     self_proxy: false
