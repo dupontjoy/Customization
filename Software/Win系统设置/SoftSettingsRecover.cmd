@@ -20,6 +20,7 @@ robocopy "%SettingsDir%\Customization\Software\ABDM\config" "C:\Users\Cing\.abdm
 robocopy "%SettingsDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt\config" /MIR /ZB /R:3 /W:5
 
 :clashverge
+robocopy "%SettingsDir%\Customization\Software\ClashVerge\profiles" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles" /MIR /ZB /R:3 /W:5
 xcopy "%SettingsDir%\Customization\Software\ClashVerge\profiles.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
 xcopy "%SettingsDir%\Customization\Software\ClashVerge\verge.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
 

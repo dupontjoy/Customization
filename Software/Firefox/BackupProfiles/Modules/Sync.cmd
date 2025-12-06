@@ -40,6 +40,7 @@ xcopy "%BackupDir%\..\..\Software\Capslock+\CapsLock+settings.ini" "%OutputDir%\
 xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%OutputDir%\Customization\Software\CCleaner\" /y
 
 :clashverge
+robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles" "%OutputDir%\Customization\Software\ClashVerge\profiles" /MIR /ZB /R:3 /W:5
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles.yaml" "%OutputDir%\Customization\Software\ClashVerge\" /y
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\verge.yaml" "%OutputDir%\Customization\Software\ClashVerge\" /y
 
@@ -91,7 +92,7 @@ xcopy "%BackupDir%\..\..\..\LocalSend\updateLocalSend.cmd" "%OutputDir%\Customiz
 
 :LXmusicDesktop
 xcopy "%BackupDir%\..\..\..\lx-music-desktop\updateLXmusicDesktop.cmd" "%OutputDir%\Customization\Software\LXmusic\" /y
-robocopy "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" "%OutputDir%\Customization\Software\LXmusic\LxDatas" /MIR /ZB /R:3 /W:5
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas\user_api.json" "%OutputDir%\Customization\Software\LXmusic\LxDatas\" /y
 
 :MAA
 xcopy "%BackupDir%\..\..\..\MAA\RunMAA.cmd" "%OutputDir%\Customization\Software\MAA\" /y
