@@ -71,81 +71,81 @@ proxies:
   - {name: cdn.tzpro.xyz-443-xhttp, server: cdn.tzpro.xyz, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
   - {name: cf.877771.xyz-443-xhttp, server: cf.877771.xyz, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
   - {name: xn--b6gac.eu.org-443-xhttp, server: xn--b6gac.eu.org, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 移动-SEA-443-WS-TLS, server: 172.67.79.203, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SEA-443-WS-TLS 2, server: 104.16.14.112, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SEA-443-WS-TLS 3, server: 104.18.37.96, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SEA-443-WS-TLS 4, server: 172.67.78.197, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SEA-443-WS-TLS 5, server: 172.67.77.219, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-WS-TLS, server: 104.16.126.166, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-LAX-443-WS-TLS, server: 104.24.47.164, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-LAX-443-WS-TLS 2, server: 104.18.39.191, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-WS-TLS 2, server: 104.17.127.130, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-WS-TLS 3, server: 104.16.142.205, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-WS-TLS, server: 172.64.38.214, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-WS-TLS 2, server: 172.64.148.168, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-WS-TLS 3, server: 172.64.149.217, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-WS-TLS 4, server: 172.64.146.127, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-WS-TLS 5, server: 172.64.145.156, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SIN-443-WS-TLS, server: 2606:4700:8dda::6697:6087, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SIN-443-WS-TLS 2, server: 2606:4700:9a9e::3ea0:5e23, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SIN-443-WS-TLS 3, server: 2606:4700:8ddd::a19:53e, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SIN-443-WS-TLS 4, server: 2606:4700:83bd::7066:31c0, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SIN-443-WS-TLS 5, server: 2606:4700:8de9::2cff:d46, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-WS-TLS 6, server: 2606:4700:4404::464c:5f2c, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-WS-TLS 7, server: 2606:4700:440a::31b4:1bd7, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-WS-TLS 8, server: 2606:4700:4401::6c16:2b60, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-WS-TLS 9, server: 2606:4700:440d::2bdf:9b4, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-WS-TLS 10, server: 2606:4700:4407::7cc0:7f3e, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS, server: 172.67.79.203, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS 2, server: 104.16.14.112, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS 3, server: 104.18.37.96, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS 4, server: 172.67.78.197, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS 5, server: 172.67.77.219, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS, server: 104.16.126.166, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-LAX-443-Trojan-WS-TLS, server: 104.24.47.164, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-LAX-443-Trojan-WS-TLS 2, server: 104.18.39.191, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 2, server: 104.17.127.130, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 3, server: 104.16.142.205, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS, server: 172.64.38.214, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 2, server: 172.64.148.168, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 3, server: 172.64.149.217, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 4, server: 172.64.146.127, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 5, server: 172.64.145.156, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SIN-443-Trojan-WS-TLS, server: 2606:4700:8dda::6697:6087, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SIN-443-Trojan-WS-TLS 2, server: 2606:4700:9a9e::3ea0:5e23, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SIN-443-Trojan-WS-TLS 3, server: 2606:4700:8ddd::a19:53e, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SIN-443-Trojan-WS-TLS 4, server: 2606:4700:83bd::7066:31c0, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SIN-443-Trojan-WS-TLS 5, server: 2606:4700:8de9::2cff:d46, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 6, server: 2606:4700:4404::464c:5f2c, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 7, server: 2606:4700:440a::31b4:1bd7, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 8, server: 2606:4700:4401::6c16:2b60, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 9, server: 2606:4700:440d::2bdf:9b4, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 10, server: 2606:4700:4407::7cc0:7f3e, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SEA-443-xhttp, server: 172.67.79.203, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 移动-SEA-443-xhttp 2, server: 104.16.14.112, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 移动-SEA-443-xhttp 3, server: 104.18.37.96, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 移动-SEA-443-xhttp 4, server: 172.67.78.197, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 移动-SEA-443-xhttp 5, server: 172.67.77.219, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 联通-SJC-443-xhttp, server: 104.16.126.166, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 联通-LAX-443-xhttp, server: 104.24.47.164, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 联通-LAX-443-xhttp 2, server: 104.18.39.191, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 联通-SJC-443-xhttp 2, server: 104.17.127.130, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 联通-SJC-443-xhttp 3, server: 104.16.142.205, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 电信-SIN-443-xhttp, server: 172.64.38.214, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 电信-SIN-443-xhttp 2, server: 172.64.148.168, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 电信-SIN-443-xhttp 3, server: 172.64.149.217, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 电信-SIN-443-xhttp 4, server: 172.64.146.127, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 电信-SIN-443-xhttp 5, server: 172.64.145.156, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 移动-SIN-443-xhttp, server: 2606:4700:8dda::6697:6087, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 移动-SIN-443-xhttp 2, server: 2606:4700:9a9e::3ea0:5e23, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 移动-SIN-443-xhttp 3, server: 2606:4700:8ddd::a19:53e, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 移动-SIN-443-xhttp 4, server: 2606:4700:83bd::7066:31c0, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 移动-SIN-443-xhttp 5, server: 2606:4700:8de9::2cff:d46, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 电信-SIN-443-xhttp 6, server: 2606:4700:4404::464c:5f2c, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 电信-SIN-443-xhttp 7, server: 2606:4700:440a::31b4:1bd7, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 电信-SIN-443-xhttp 8, server: 2606:4700:4401::6c16:2b60, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 电信-SIN-443-xhttp 9, server: 2606:4700:440d::2bdf:9b4, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
-  - {name: 电信-SIN-443-xhttp 10, server: 2606:4700:4407::7cc0:7f3e, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 移动-SJC-443-WS-TLS, server: 104.18.110.219, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-LAX-443-WS-TLS, server: 104.19.125.10, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SJC-443-WS-TLS 2, server: 172.67.222.139, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SEA-443-WS-TLS, server: 104.18.13.242, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SJC-443-WS-TLS 3, server: 104.16.79.120, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-WS-TLS, server: 104.16.223.93, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-WS-TLS 2, server: 104.17.109.32, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-WS-TLS 3, server: 104.16.189.116, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-WS-TLS 4, server: 104.18.79.88, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-WS-TLS 5, server: 104.16.222.132, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-WS-TLS, server: 104.18.46.16, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-WS-TLS 2, server: 172.64.153.138, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-WS-TLS 3, server: 104.18.35.215, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-WS-TLS 4, server: 172.64.148.63, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-WS-TLS 5, server: 172.64.32.135, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SIN-443-WS-TLS, server: 2606:4700:8dd6::4cb:f1a, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SIN-443-WS-TLS 2, server: 2606:4700:9a9f::2ff2:60c3, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SIN-443-WS-TLS 3, server: 2606:4700:8d79::71d2:25ca, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SIN-443-WS-TLS 4, server: 2606:4700:839e::38cb:5b9b, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SIN-443-WS-TLS 5, server: 2606:4700:8caf::1f99:5baa, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-WS-TLS 6, server: 2606:4700:440f::74ef:514c, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-WS-TLS 7, server: 2606:4700:440e::5857:19d6, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-WS-TLS 8, server: 2606:4700:4409::2b9d:53f0, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-WS-TLS 9, server: 2606:4700:4400::1397:3fdd, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-WS-TLS 10, server: 2606:4700:440b::39aa:2c6, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SJC-443-Trojan-WS-TLS, server: 104.18.110.219, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-LAX-443-Trojan-WS-TLS, server: 104.19.125.10, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SJC-443-Trojan-WS-TLS 2, server: 172.67.222.139, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SEA-443-Trojan-WS-TLS, server: 104.18.13.242, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SJC-443-Trojan-WS-TLS 3, server: 104.16.79.120, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS, server: 104.16.223.93, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 2, server: 104.17.109.32, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 3, server: 104.16.189.116, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 4, server: 104.18.79.88, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 5, server: 104.16.222.132, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS, server: 104.18.46.16, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 2, server: 172.64.153.138, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 3, server: 104.18.35.215, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 4, server: 172.64.148.63, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 5, server: 172.64.32.135, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SIN-443-Trojan-WS-TLS, server: 2606:4700:8dd6::4cb:f1a, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SIN-443-Trojan-WS-TLS 2, server: 2606:4700:9a9f::2ff2:60c3, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SIN-443-Trojan-WS-TLS 3, server: 2606:4700:8d79::71d2:25ca, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SIN-443-Trojan-WS-TLS 4, server: 2606:4700:839e::38cb:5b9b, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SIN-443-Trojan-WS-TLS 5, server: 2606:4700:8caf::1f99:5baa, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 6, server: 2606:4700:440f::74ef:514c, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 7, server: 2606:4700:440e::5857:19d6, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 8, server: 2606:4700:4409::2b9d:53f0, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 9, server: 2606:4700:4400::1397:3fdd, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 10, server: 2606:4700:440b::39aa:2c6, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SJC-443-xhttp, server: 104.18.110.219, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 移动-LAX-443-xhttp, server: 104.19.125.10, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 移动-SJC-443-xhttp 2, server: 172.67.222.139, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 移动-SEA-443-xhttp, server: 104.18.13.242, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 移动-SJC-443-xhttp 3, server: 104.16.79.120, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 联通-SJC-443-xhttp, server: 104.16.223.93, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 联通-SJC-443-xhttp 2, server: 104.17.109.32, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 联通-SJC-443-xhttp 3, server: 104.16.189.116, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 联通-SJC-443-xhttp 4, server: 104.18.79.88, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 联通-SJC-443-xhttp 5, server: 104.16.222.132, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 电信-SIN-443-xhttp, server: 104.18.46.16, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 电信-SIN-443-xhttp 2, server: 172.64.153.138, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 电信-SIN-443-xhttp 3, server: 104.18.35.215, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 电信-SIN-443-xhttp 4, server: 172.64.148.63, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 电信-SIN-443-xhttp 5, server: 172.64.32.135, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 移动-SIN-443-xhttp, server: 2606:4700:8dd6::4cb:f1a, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 移动-SIN-443-xhttp 2, server: 2606:4700:9a9f::2ff2:60c3, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 移动-SIN-443-xhttp 3, server: 2606:4700:8d79::71d2:25ca, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 移动-SIN-443-xhttp 4, server: 2606:4700:839e::38cb:5b9b, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 移动-SIN-443-xhttp 5, server: 2606:4700:8caf::1f99:5baa, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 电信-SIN-443-xhttp 6, server: 2606:4700:440f::74ef:514c, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 电信-SIN-443-xhttp 7, server: 2606:4700:440e::5857:19d6, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 电信-SIN-443-xhttp 8, server: 2606:4700:4409::2b9d:53f0, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 电信-SIN-443-xhttp 9, server: 2606:4700:4400::1397:3fdd, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
+  - {name: 电信-SIN-443-xhttp 10, server: 2606:4700:440b::39aa:2c6, port: 443, type: vless, uuid: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, tls: true, tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: h2, h2-opts: {path: /f5b3178d, host: [163cfn.232885.xyz]}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -224,16 +224,16 @@ proxy-groups:
       - cdn.tzpro.xyz-443-xhttp
       - cf.877771.xyz-443-xhttp
       - xn--b6gac.eu.org-443-xhttp
+      - 移动-SJC-443-WS-TLS
+      - 移动-LAX-443-WS-TLS
+      - 移动-SJC-443-WS-TLS 2
       - 移动-SEA-443-WS-TLS
-      - 移动-SEA-443-WS-TLS 2
-      - 移动-SEA-443-WS-TLS 3
-      - 移动-SEA-443-WS-TLS 4
-      - 移动-SEA-443-WS-TLS 5
+      - 移动-SJC-443-WS-TLS 3
       - 联通-SJC-443-WS-TLS
-      - 联通-LAX-443-WS-TLS
-      - 联通-LAX-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 3
+      - 联通-SJC-443-WS-TLS 4
+      - 联通-SJC-443-WS-TLS 5
       - 电信-SIN-443-WS-TLS
       - 电信-SIN-443-WS-TLS 2
       - 电信-SIN-443-WS-TLS 3
@@ -249,16 +249,16 @@ proxy-groups:
       - 电信-SIN-443-WS-TLS 8
       - 电信-SIN-443-WS-TLS 9
       - 电信-SIN-443-WS-TLS 10
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-SJC-443-Trojan-WS-TLS 2
       - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 3
-      - 移动-SEA-443-Trojan-WS-TLS 4
-      - 移动-SEA-443-Trojan-WS-TLS 5
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
@@ -274,16 +274,16 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 移动-SJC-443-xhttp
+      - 移动-LAX-443-xhttp
+      - 移动-SJC-443-xhttp 2
       - 移动-SEA-443-xhttp
-      - 移动-SEA-443-xhttp 2
-      - 移动-SEA-443-xhttp 3
-      - 移动-SEA-443-xhttp 4
-      - 移动-SEA-443-xhttp 5
+      - 移动-SJC-443-xhttp 3
       - 联通-SJC-443-xhttp
-      - 联通-LAX-443-xhttp
-      - 联通-LAX-443-xhttp 2
       - 联通-SJC-443-xhttp 2
       - 联通-SJC-443-xhttp 3
+      - 联通-SJC-443-xhttp 4
+      - 联通-SJC-443-xhttp 5
       - 电信-SIN-443-xhttp
       - 电信-SIN-443-xhttp 2
       - 电信-SIN-443-xhttp 3
@@ -370,16 +370,16 @@ proxy-groups:
       - cdn.tzpro.xyz-443-xhttp
       - cf.877771.xyz-443-xhttp
       - xn--b6gac.eu.org-443-xhttp
+      - 移动-SJC-443-WS-TLS
+      - 移动-LAX-443-WS-TLS
+      - 移动-SJC-443-WS-TLS 2
       - 移动-SEA-443-WS-TLS
-      - 移动-SEA-443-WS-TLS 2
-      - 移动-SEA-443-WS-TLS 3
-      - 移动-SEA-443-WS-TLS 4
-      - 移动-SEA-443-WS-TLS 5
+      - 移动-SJC-443-WS-TLS 3
       - 联通-SJC-443-WS-TLS
-      - 联通-LAX-443-WS-TLS
-      - 联通-LAX-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 3
+      - 联通-SJC-443-WS-TLS 4
+      - 联通-SJC-443-WS-TLS 5
       - 电信-SIN-443-WS-TLS
       - 电信-SIN-443-WS-TLS 2
       - 电信-SIN-443-WS-TLS 3
@@ -395,16 +395,16 @@ proxy-groups:
       - 电信-SIN-443-WS-TLS 8
       - 电信-SIN-443-WS-TLS 9
       - 电信-SIN-443-WS-TLS 10
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-SJC-443-Trojan-WS-TLS 2
       - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 3
-      - 移动-SEA-443-Trojan-WS-TLS 4
-      - 移动-SEA-443-Trojan-WS-TLS 5
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
@@ -420,16 +420,16 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 移动-SJC-443-xhttp
+      - 移动-LAX-443-xhttp
+      - 移动-SJC-443-xhttp 2
       - 移动-SEA-443-xhttp
-      - 移动-SEA-443-xhttp 2
-      - 移动-SEA-443-xhttp 3
-      - 移动-SEA-443-xhttp 4
-      - 移动-SEA-443-xhttp 5
+      - 移动-SJC-443-xhttp 3
       - 联通-SJC-443-xhttp
-      - 联通-LAX-443-xhttp
-      - 联通-LAX-443-xhttp 2
       - 联通-SJC-443-xhttp 2
       - 联通-SJC-443-xhttp 3
+      - 联通-SJC-443-xhttp 4
+      - 联通-SJC-443-xhttp 5
       - 电信-SIN-443-xhttp
       - 电信-SIN-443-xhttp 2
       - 电信-SIN-443-xhttp 3
@@ -531,16 +531,16 @@ proxy-groups:
       - cdn.tzpro.xyz-443-xhttp
       - cf.877771.xyz-443-xhttp
       - xn--b6gac.eu.org-443-xhttp
+      - 移动-SJC-443-WS-TLS
+      - 移动-LAX-443-WS-TLS
+      - 移动-SJC-443-WS-TLS 2
       - 移动-SEA-443-WS-TLS
-      - 移动-SEA-443-WS-TLS 2
-      - 移动-SEA-443-WS-TLS 3
-      - 移动-SEA-443-WS-TLS 4
-      - 移动-SEA-443-WS-TLS 5
+      - 移动-SJC-443-WS-TLS 3
       - 联通-SJC-443-WS-TLS
-      - 联通-LAX-443-WS-TLS
-      - 联通-LAX-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 3
+      - 联通-SJC-443-WS-TLS 4
+      - 联通-SJC-443-WS-TLS 5
       - 电信-SIN-443-WS-TLS
       - 电信-SIN-443-WS-TLS 2
       - 电信-SIN-443-WS-TLS 3
@@ -556,16 +556,16 @@ proxy-groups:
       - 电信-SIN-443-WS-TLS 8
       - 电信-SIN-443-WS-TLS 9
       - 电信-SIN-443-WS-TLS 10
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-SJC-443-Trojan-WS-TLS 2
       - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 3
-      - 移动-SEA-443-Trojan-WS-TLS 4
-      - 移动-SEA-443-Trojan-WS-TLS 5
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
@@ -581,16 +581,16 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 移动-SJC-443-xhttp
+      - 移动-LAX-443-xhttp
+      - 移动-SJC-443-xhttp 2
       - 移动-SEA-443-xhttp
-      - 移动-SEA-443-xhttp 2
-      - 移动-SEA-443-xhttp 3
-      - 移动-SEA-443-xhttp 4
-      - 移动-SEA-443-xhttp 5
+      - 移动-SJC-443-xhttp 3
       - 联通-SJC-443-xhttp
-      - 联通-LAX-443-xhttp
-      - 联通-LAX-443-xhttp 2
       - 联通-SJC-443-xhttp 2
       - 联通-SJC-443-xhttp 3
+      - 联通-SJC-443-xhttp 4
+      - 联通-SJC-443-xhttp 5
       - 电信-SIN-443-xhttp
       - 电信-SIN-443-xhttp 2
       - 电信-SIN-443-xhttp 3
@@ -677,16 +677,16 @@ proxy-groups:
       - cdn.tzpro.xyz-443-xhttp
       - cf.877771.xyz-443-xhttp
       - xn--b6gac.eu.org-443-xhttp
+      - 移动-SJC-443-WS-TLS
+      - 移动-LAX-443-WS-TLS
+      - 移动-SJC-443-WS-TLS 2
       - 移动-SEA-443-WS-TLS
-      - 移动-SEA-443-WS-TLS 2
-      - 移动-SEA-443-WS-TLS 3
-      - 移动-SEA-443-WS-TLS 4
-      - 移动-SEA-443-WS-TLS 5
+      - 移动-SJC-443-WS-TLS 3
       - 联通-SJC-443-WS-TLS
-      - 联通-LAX-443-WS-TLS
-      - 联通-LAX-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 3
+      - 联通-SJC-443-WS-TLS 4
+      - 联通-SJC-443-WS-TLS 5
       - 电信-SIN-443-WS-TLS
       - 电信-SIN-443-WS-TLS 2
       - 电信-SIN-443-WS-TLS 3
@@ -702,16 +702,16 @@ proxy-groups:
       - 电信-SIN-443-WS-TLS 8
       - 电信-SIN-443-WS-TLS 9
       - 电信-SIN-443-WS-TLS 10
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-SJC-443-Trojan-WS-TLS 2
       - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 3
-      - 移动-SEA-443-Trojan-WS-TLS 4
-      - 移动-SEA-443-Trojan-WS-TLS 5
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
@@ -727,16 +727,16 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 移动-SJC-443-xhttp
+      - 移动-LAX-443-xhttp
+      - 移动-SJC-443-xhttp 2
       - 移动-SEA-443-xhttp
-      - 移动-SEA-443-xhttp 2
-      - 移动-SEA-443-xhttp 3
-      - 移动-SEA-443-xhttp 4
-      - 移动-SEA-443-xhttp 5
+      - 移动-SJC-443-xhttp 3
       - 联通-SJC-443-xhttp
-      - 联通-LAX-443-xhttp
-      - 联通-LAX-443-xhttp 2
       - 联通-SJC-443-xhttp 2
       - 联通-SJC-443-xhttp 3
+      - 联通-SJC-443-xhttp 4
+      - 联通-SJC-443-xhttp 5
       - 电信-SIN-443-xhttp
       - 电信-SIN-443-xhttp 2
       - 电信-SIN-443-xhttp 3
@@ -831,16 +831,16 @@ proxy-groups:
       - cdn.tzpro.xyz-443-xhttp
       - cf.877771.xyz-443-xhttp
       - xn--b6gac.eu.org-443-xhttp
+      - 移动-SJC-443-WS-TLS
+      - 移动-LAX-443-WS-TLS
+      - 移动-SJC-443-WS-TLS 2
       - 移动-SEA-443-WS-TLS
-      - 移动-SEA-443-WS-TLS 2
-      - 移动-SEA-443-WS-TLS 3
-      - 移动-SEA-443-WS-TLS 4
-      - 移动-SEA-443-WS-TLS 5
+      - 移动-SJC-443-WS-TLS 3
       - 联通-SJC-443-WS-TLS
-      - 联通-LAX-443-WS-TLS
-      - 联通-LAX-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 3
+      - 联通-SJC-443-WS-TLS 4
+      - 联通-SJC-443-WS-TLS 5
       - 电信-SIN-443-WS-TLS
       - 电信-SIN-443-WS-TLS 2
       - 电信-SIN-443-WS-TLS 3
@@ -856,16 +856,16 @@ proxy-groups:
       - 电信-SIN-443-WS-TLS 8
       - 电信-SIN-443-WS-TLS 9
       - 电信-SIN-443-WS-TLS 10
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-SJC-443-Trojan-WS-TLS 2
       - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 3
-      - 移动-SEA-443-Trojan-WS-TLS 4
-      - 移动-SEA-443-Trojan-WS-TLS 5
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
@@ -881,16 +881,16 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 移动-SJC-443-xhttp
+      - 移动-LAX-443-xhttp
+      - 移动-SJC-443-xhttp 2
       - 移动-SEA-443-xhttp
-      - 移动-SEA-443-xhttp 2
-      - 移动-SEA-443-xhttp 3
-      - 移动-SEA-443-xhttp 4
-      - 移动-SEA-443-xhttp 5
+      - 移动-SJC-443-xhttp 3
       - 联通-SJC-443-xhttp
-      - 联通-LAX-443-xhttp
-      - 联通-LAX-443-xhttp 2
       - 联通-SJC-443-xhttp 2
       - 联通-SJC-443-xhttp 3
+      - 联通-SJC-443-xhttp 4
+      - 联通-SJC-443-xhttp 5
       - 电信-SIN-443-xhttp
       - 电信-SIN-443-xhttp 2
       - 电信-SIN-443-xhttp 3
@@ -977,16 +977,16 @@ proxy-groups:
       - cdn.tzpro.xyz-443-xhttp
       - cf.877771.xyz-443-xhttp
       - xn--b6gac.eu.org-443-xhttp
+      - 移动-SJC-443-WS-TLS
+      - 移动-LAX-443-WS-TLS
+      - 移动-SJC-443-WS-TLS 2
       - 移动-SEA-443-WS-TLS
-      - 移动-SEA-443-WS-TLS 2
-      - 移动-SEA-443-WS-TLS 3
-      - 移动-SEA-443-WS-TLS 4
-      - 移动-SEA-443-WS-TLS 5
+      - 移动-SJC-443-WS-TLS 3
       - 联通-SJC-443-WS-TLS
-      - 联通-LAX-443-WS-TLS
-      - 联通-LAX-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 3
+      - 联通-SJC-443-WS-TLS 4
+      - 联通-SJC-443-WS-TLS 5
       - 电信-SIN-443-WS-TLS
       - 电信-SIN-443-WS-TLS 2
       - 电信-SIN-443-WS-TLS 3
@@ -1002,16 +1002,16 @@ proxy-groups:
       - 电信-SIN-443-WS-TLS 8
       - 电信-SIN-443-WS-TLS 9
       - 电信-SIN-443-WS-TLS 10
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-SJC-443-Trojan-WS-TLS 2
       - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 3
-      - 移动-SEA-443-Trojan-WS-TLS 4
-      - 移动-SEA-443-Trojan-WS-TLS 5
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
@@ -1027,16 +1027,16 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 移动-SJC-443-xhttp
+      - 移动-LAX-443-xhttp
+      - 移动-SJC-443-xhttp 2
       - 移动-SEA-443-xhttp
-      - 移动-SEA-443-xhttp 2
-      - 移动-SEA-443-xhttp 3
-      - 移动-SEA-443-xhttp 4
-      - 移动-SEA-443-xhttp 5
+      - 移动-SJC-443-xhttp 3
       - 联通-SJC-443-xhttp
-      - 联通-LAX-443-xhttp
-      - 联通-LAX-443-xhttp 2
       - 联通-SJC-443-xhttp 2
       - 联通-SJC-443-xhttp 3
+      - 联通-SJC-443-xhttp 4
+      - 联通-SJC-443-xhttp 5
       - 电信-SIN-443-xhttp
       - 电信-SIN-443-xhttp 2
       - 电信-SIN-443-xhttp 3
@@ -1124,16 +1124,16 @@ proxy-groups:
       - cdn.tzpro.xyz-443-xhttp
       - cf.877771.xyz-443-xhttp
       - xn--b6gac.eu.org-443-xhttp
+      - 移动-SJC-443-WS-TLS
+      - 移动-LAX-443-WS-TLS
+      - 移动-SJC-443-WS-TLS 2
       - 移动-SEA-443-WS-TLS
-      - 移动-SEA-443-WS-TLS 2
-      - 移动-SEA-443-WS-TLS 3
-      - 移动-SEA-443-WS-TLS 4
-      - 移动-SEA-443-WS-TLS 5
+      - 移动-SJC-443-WS-TLS 3
       - 联通-SJC-443-WS-TLS
-      - 联通-LAX-443-WS-TLS
-      - 联通-LAX-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 3
+      - 联通-SJC-443-WS-TLS 4
+      - 联通-SJC-443-WS-TLS 5
       - 电信-SIN-443-WS-TLS
       - 电信-SIN-443-WS-TLS 2
       - 电信-SIN-443-WS-TLS 3
@@ -1149,16 +1149,16 @@ proxy-groups:
       - 电信-SIN-443-WS-TLS 8
       - 电信-SIN-443-WS-TLS 9
       - 电信-SIN-443-WS-TLS 10
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-SJC-443-Trojan-WS-TLS 2
       - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 3
-      - 移动-SEA-443-Trojan-WS-TLS 4
-      - 移动-SEA-443-Trojan-WS-TLS 5
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
@@ -1174,16 +1174,16 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 移动-SJC-443-xhttp
+      - 移动-LAX-443-xhttp
+      - 移动-SJC-443-xhttp 2
       - 移动-SEA-443-xhttp
-      - 移动-SEA-443-xhttp 2
-      - 移动-SEA-443-xhttp 3
-      - 移动-SEA-443-xhttp 4
-      - 移动-SEA-443-xhttp 5
+      - 移动-SJC-443-xhttp 3
       - 联通-SJC-443-xhttp
-      - 联通-LAX-443-xhttp
-      - 联通-LAX-443-xhttp 2
       - 联通-SJC-443-xhttp 2
       - 联通-SJC-443-xhttp 3
+      - 联通-SJC-443-xhttp 4
+      - 联通-SJC-443-xhttp 5
       - 电信-SIN-443-xhttp
       - 电信-SIN-443-xhttp 2
       - 电信-SIN-443-xhttp 3
@@ -1287,16 +1287,16 @@ proxy-groups:
       - cdn.tzpro.xyz-443-xhttp
       - cf.877771.xyz-443-xhttp
       - xn--b6gac.eu.org-443-xhttp
+      - 移动-SJC-443-WS-TLS
+      - 移动-LAX-443-WS-TLS
+      - 移动-SJC-443-WS-TLS 2
       - 移动-SEA-443-WS-TLS
-      - 移动-SEA-443-WS-TLS 2
-      - 移动-SEA-443-WS-TLS 3
-      - 移动-SEA-443-WS-TLS 4
-      - 移动-SEA-443-WS-TLS 5
+      - 移动-SJC-443-WS-TLS 3
       - 联通-SJC-443-WS-TLS
-      - 联通-LAX-443-WS-TLS
-      - 联通-LAX-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 3
+      - 联通-SJC-443-WS-TLS 4
+      - 联通-SJC-443-WS-TLS 5
       - 电信-SIN-443-WS-TLS
       - 电信-SIN-443-WS-TLS 2
       - 电信-SIN-443-WS-TLS 3
@@ -1312,16 +1312,16 @@ proxy-groups:
       - 电信-SIN-443-WS-TLS 8
       - 电信-SIN-443-WS-TLS 9
       - 电信-SIN-443-WS-TLS 10
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-SJC-443-Trojan-WS-TLS 2
       - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 3
-      - 移动-SEA-443-Trojan-WS-TLS 4
-      - 移动-SEA-443-Trojan-WS-TLS 5
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
@@ -1337,16 +1337,16 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 移动-SJC-443-xhttp
+      - 移动-LAX-443-xhttp
+      - 移动-SJC-443-xhttp 2
       - 移动-SEA-443-xhttp
-      - 移动-SEA-443-xhttp 2
-      - 移动-SEA-443-xhttp 3
-      - 移动-SEA-443-xhttp 4
-      - 移动-SEA-443-xhttp 5
+      - 移动-SJC-443-xhttp 3
       - 联通-SJC-443-xhttp
-      - 联通-LAX-443-xhttp
-      - 联通-LAX-443-xhttp 2
       - 联通-SJC-443-xhttp 2
       - 联通-SJC-443-xhttp 3
+      - 联通-SJC-443-xhttp 4
+      - 联通-SJC-443-xhttp 5
       - 电信-SIN-443-xhttp
       - 电信-SIN-443-xhttp 2
       - 电信-SIN-443-xhttp 3
@@ -1375,36 +1375,36 @@ proxy-groups:
     url: https://captive.apple.com/hotspot-detect.html
     interval: 86400
     proxies:
+      - 移动-SJC-443-WS-TLS
+      - 移动-LAX-443-WS-TLS
+      - 移动-SJC-443-WS-TLS 2
       - 移动-SEA-443-WS-TLS
-      - 移动-SEA-443-WS-TLS 2
-      - 移动-SEA-443-WS-TLS 3
-      - 移动-SEA-443-WS-TLS 4
-      - 移动-SEA-443-WS-TLS 5
+      - 移动-SJC-443-WS-TLS 3
       - 联通-SJC-443-WS-TLS
-      - 联通-LAX-443-WS-TLS
-      - 联通-LAX-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 2
       - 联通-SJC-443-WS-TLS 3
+      - 联通-SJC-443-WS-TLS 4
+      - 联通-SJC-443-WS-TLS 5
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-SJC-443-Trojan-WS-TLS 2
       - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 3
-      - 移动-SEA-443-Trojan-WS-TLS 4
-      - 移动-SEA-443-Trojan-WS-TLS 5
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS
-      - 联通-LAX-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-443-Trojan-WS-TLS 5
+      - 移动-SJC-443-xhttp
+      - 移动-LAX-443-xhttp
+      - 移动-SJC-443-xhttp 2
       - 移动-SEA-443-xhttp
-      - 移动-SEA-443-xhttp 2
-      - 移动-SEA-443-xhttp 3
-      - 移动-SEA-443-xhttp 4
-      - 移动-SEA-443-xhttp 5
+      - 移动-SJC-443-xhttp 3
       - 联通-SJC-443-xhttp
-      - 联通-LAX-443-xhttp
-      - 联通-LAX-443-xhttp 2
       - 联通-SJC-443-xhttp 2
       - 联通-SJC-443-xhttp 3
+      - 联通-SJC-443-xhttp 4
+      - 联通-SJC-443-xhttp 5
 rules:
   - PROCESS-NAME,cfnat-android-arm64,🎯 全球直连
   - PROCESS-NAME,cfnat-darwin-amd64,🎯 全球直连
@@ -1483,6 +1483,7 @@ rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
+  - DOMAIN-SUFFIX,internal,🎯 全球直连
   - DOMAIN-SUFFIX,lan,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,localhost,🎯 全球直连
@@ -1490,6 +1491,7 @@ rules:
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
+  - IP-CIDR,169.254.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
@@ -1863,7 +1865,6 @@ rules:
   - DOMAIN-SUFFIX,scupio.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuiguo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuzilm.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,similarweb.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitemeter.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitescout.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitetag.us,🛑 全球拦截
@@ -2715,9 +2716,7 @@ rules:
   - DOMAIN-SUFFIX,log.mix.sina.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,mobileads.dx.cn,🍃 应用净化
   - DOMAIN-SUFFIX,newspush.sinajs.cn,🍃 应用净化
-  - DOMAIN-SUFFIX,pay.mobile.sina.cn,🍃 应用净化
   - DOMAIN-SUFFIX,sax.mobile.sina.cn,🍃 应用净化
-  - DOMAIN-SUFFIX,sax.sina.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,saxd.sina.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,sdkapp.mobile.sina.cn,🍃 应用净化
   - DOMAIN-SUFFIX,sdkapp.uve.weibo.com,🍃 应用净化
@@ -3118,7 +3117,6 @@ rules:
   - DOMAIN-SUFFIX,dol.tianyaui.cn,🍃 应用净化
   - DOMAIN-SUFFIX,dw.xcar.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,e.nexac.com,🍃 应用净化
-  - DOMAIN-SUFFIX,eq.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,exp.17wo.cn,🍃 应用净化
   - DOMAIN-SUFFIX,game.51yund.com,🍃 应用净化
   - DOMAIN-SUFFIX,ganjituiguang.ganji.com,🍃 应用净化
@@ -3135,7 +3133,6 @@ rules:
   - DOMAIN-SUFFIX,mobileads.msn.com,🍃 应用净化
   - DOMAIN-SUFFIX,n.cosbot.cn,🍃 应用净化
   - DOMAIN-SUFFIX,newton-api.ele.me,🍃 应用净化
-  - DOMAIN-SUFFIX,ozone.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,pdl.gionee.com,🍃 应用净化
   - DOMAIN-SUFFIX,pica-juicy.picacomic.com,🍃 应用净化
   - DOMAIN-SUFFIX,pixel.wp.com,🍃 应用净化
@@ -3148,7 +3145,6 @@ rules:
   - DOMAIN-SUFFIX,res.gwifi.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,ssp.kssws.ks-cdn.com,🍃 应用净化
   - DOMAIN-SUFFIX,sta.ganji.com,🍃 应用净化
-  - DOMAIN-SUFFIX,stat.10jqka.com.cn,🍃 应用净化
   - DOMAIN-SUFFIX,stat.it168.com,🍃 应用净化
   - DOMAIN-SUFFIX,stats.chinaz.com,🍃 应用净化
   - DOMAIN-SUFFIX,stats.developingperspective.com,🍃 应用净化
@@ -3156,7 +3152,6 @@ rules:
   - DOMAIN-SUFFIX,tracker.yhd.com,🍃 应用净化
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
-  - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
   - DOMAIN,ic.adobe.io,🍃 应用净化
   - DOMAIN,cc-api-data.adobe.io,🍃 应用净化
   - DOMAIN,fp.adobestats.io,🍃 应用净化
@@ -6740,6 +6735,7 @@ rules:
   - DOMAIN,copilot-proxy.githubusercontent.com,🌍 国外媒体
   - DOMAIN,gemini.google.com,🌍 国外媒体
   - DOMAIN,generativelanguage.googleapis.com,🌍 国外媒体
+  - DOMAIN,notebooklm.google.com,🌍 国外媒体
   - DOMAIN,sydney.bing.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ai.azure.com,🌍 国外媒体
   - DOMAIN-SUFFIX,anthropic.com,🌍 国外媒体
@@ -6747,6 +6743,7 @@ rules:
   - DOMAIN-SUFFIX,bard.google.com,🌍 国外媒体
   - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
   - DOMAIN-SUFFIX,claude.ai,🌍 国外媒体
+  - DOMAIN-SUFFIX,claude.com,🌍 国外媒体
   - DOMAIN-SUFFIX,claudeusercontent.com,🌍 国外媒体
   - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
   - DOMAIN-SUFFIX,copilot.cloud.microsoft,🌍 国外媒体
@@ -6761,6 +6758,7 @@ rules:
   - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
   - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
   - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,jetbrains.ai,🌍 国外媒体
   - DOMAIN-SUFFIX,makersuite.google.com,🌍 国外媒体
   - DOMAIN-SUFFIX,meta.ai,🌍 国外媒体
   - DOMAIN-SUFFIX,mistral.ai,🌍 国外媒体
@@ -6770,6 +6768,7 @@ rules:
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
   - DOMAIN-SUFFIX,perplexity.ai,🌍 国外媒体
   - DOMAIN-SUFFIX,sora.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,x.ai,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
@@ -7333,6 +7332,7 @@ rules:
   - DOMAIN-SUFFIX,1e100.net,🚀 节点选择
   - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
   - DOMAIN-SUFFIX,app-measurement.net,🚀 节点选择
+  - DOMAIN-SUFFIX,c.gle,🚀 节点选择
   - DOMAIN-SUFFIX,g.co,🚀 节点选择
   - DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
   - DOMAIN-SUFFIX,goo.gl,🚀 节点选择
@@ -7412,6 +7412,7 @@ rules:
   - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🚀 节点选择
   - DOMAIN-SUFFIX,storage.live.com,🚀 节点选择
   - DOMAIN-SUFFIX,storage.msn.com,🚀 节点选择
+  - DOMAIN-SUFFIX,microsoftpersonalcontent.com,🚀 节点选择
   - DOMAIN-KEYWORD,porn,🚀 节点选择
   - DOMAIN-SUFFIX,8teenxxx.com,🚀 节点选择
   - DOMAIN-SUFFIX,ahcdn.com,🚀 节点选择
@@ -7581,6 +7582,7 @@ rules:
   - DOMAIN-SUFFIX,aliapp.org,🎯 全球直连
   - DOMAIN-SUFFIX,alibaba.com,🎯 全球直连
   - DOMAIN-SUFFIX,alibabacloud.com,🎯 全球直连
+  - DOMAIN-SUFFIX,alibabachengdun.com,🎯 全球直连
   - DOMAIN-SUFFIX,alibabausercontent.com,🎯 全球直连
   - DOMAIN-SUFFIX,alicdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,alicloudccp.com,🎯 全球直连
@@ -7599,6 +7601,7 @@ rules:
   - DOMAIN-SUFFIX,autonavi.com,🎯 全球直连
   - DOMAIN-SUFFIX,dingtalk.com,🎯 全球直连
   - DOMAIN-SUFFIX,ele.me,🎯 全球直连
+  - DOMAIN-SUFFIX,elemecdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hichina.com,🎯 全球直连
   - DOMAIN-SUFFIX,mmstat.com,🎯 全球直连
   - DOMAIN-SUFFIX,mxhichina.com,🎯 全球直连
@@ -7606,6 +7609,7 @@ rules:
   - DOMAIN-SUFFIX,taobao.com,🎯 全球直连
   - DOMAIN-SUFFIX,taobaocdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,tbcache.com,🎯 全球直连
+  - DOMAIN-SUFFIX,tbcdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,tbcdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,tmall.com,🎯 全球直连
   - DOMAIN-SUFFIX,tmall.hk,🎯 全球直连
@@ -7935,6 +7939,7 @@ rules:
   - DOMAIN-SUFFIX,air-matters.io,🎯 全球直连
   - DOMAIN-SUFFIX,aixifan.com,🎯 全球直连
   - DOMAIN-SUFFIX,algocasts.io,🎯 全球直连
+  - DOMAIN-SUFFIX,asklink.com,🎯 全球直连
   - DOMAIN-SUFFIX,babytree.com,🎯 全球直连
   - DOMAIN-SUFFIX,babytreeimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,baicizhan.com,🎯 全球直连

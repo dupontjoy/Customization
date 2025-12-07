@@ -20,16 +20,16 @@ proxies:
   - {name: cf.008500.xyz, server: cf.008500.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
   - {name: cf.zhetengsha.eu.org, server: cf.zhetengsha.eu.org, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
   - {name: bestcf.030101.xyz, server: bestcf.030101.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF-71.23MB/s, server: 162.159.45.37, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF-70.88MB/s, server: 172.64.52.38, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF-70.77MB/s, server: 108.162.198.71, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF-70.38MB/s, server: 172.64.229.144, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF-69.41MB/s, server: 162.159.39.205, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF-66.69MB/s, server: 162.159.38.49, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF-66.51MB/s, server: 172.64.53.74, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF-65.03MB/s, server: 162.159.44.122, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF-60.36MB/s, server: 104.18.45.102, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF-59.21MB/s, server: 162.159.49.227, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF-70.94MB/s, server: 162.159.45.241, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF-70.15MB/s, server: 172.64.52.226, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF-69.91MB/s, server: 172.64.53.83, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF-69.88MB/s, server: 162.159.44.9, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF-69.0MB/s, server: 108.162.198.55, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF-67.63MB/s, server: 172.64.229.139, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF-67.15MB/s, server: 162.159.38.115, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF-56.59MB/s, server: 172.64.38.39, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF-53.69MB/s, server: 172.64.150.231, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF-52.16MB/s, server: 172.64.152.25, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
   - {name: 198.41.223.170, server: 198.41.223.170, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
   - {name: 172.64.150.105, server: 172.64.150.105, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
   - {name: 162.159.32.164, server: 162.159.32.164, port: 443, type: vless, uuid: 761de185-8b90-407c-29ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
@@ -63,16 +63,16 @@ proxy-groups:
       - cf.008500.xyz
       - cf.zhetengsha.eu.org
       - bestcf.030101.xyz
-      - CF-71.23MB/s
-      - CF-70.88MB/s
-      - CF-70.77MB/s
-      - CF-70.38MB/s
-      - CF-69.41MB/s
-      - CF-66.69MB/s
-      - CF-66.51MB/s
-      - CF-65.03MB/s
-      - CF-60.36MB/s
-      - CF-59.21MB/s
+      - CF-70.94MB/s
+      - CF-70.15MB/s
+      - CF-69.91MB/s
+      - CF-69.88MB/s
+      - CF-69.0MB/s
+      - CF-67.63MB/s
+      - CF-67.15MB/s
+      - CF-56.59MB/s
+      - CF-53.69MB/s
+      - CF-52.16MB/s
       - 198.41.223.170
       - 172.64.150.105
       - 162.159.32.164
@@ -104,16 +104,16 @@ proxy-groups:
       - cf.008500.xyz
       - cf.zhetengsha.eu.org
       - bestcf.030101.xyz
-      - CF-71.23MB/s
-      - CF-70.88MB/s
-      - CF-70.77MB/s
-      - CF-70.38MB/s
-      - CF-69.41MB/s
-      - CF-66.69MB/s
-      - CF-66.51MB/s
-      - CF-65.03MB/s
-      - CF-60.36MB/s
-      - CF-59.21MB/s
+      - CF-70.94MB/s
+      - CF-70.15MB/s
+      - CF-69.91MB/s
+      - CF-69.88MB/s
+      - CF-69.0MB/s
+      - CF-67.63MB/s
+      - CF-67.15MB/s
+      - CF-56.59MB/s
+      - CF-53.69MB/s
+      - CF-52.16MB/s
       - 198.41.223.170
       - 172.64.150.105
       - 162.159.32.164
@@ -144,16 +144,16 @@ proxy-groups:
       - cf.008500.xyz
       - cf.zhetengsha.eu.org
       - bestcf.030101.xyz
-      - CF-71.23MB/s
-      - CF-70.88MB/s
-      - CF-70.77MB/s
-      - CF-70.38MB/s
-      - CF-69.41MB/s
-      - CF-66.69MB/s
-      - CF-66.51MB/s
-      - CF-65.03MB/s
-      - CF-60.36MB/s
-      - CF-59.21MB/s
+      - CF-70.94MB/s
+      - CF-70.15MB/s
+      - CF-69.91MB/s
+      - CF-69.88MB/s
+      - CF-69.0MB/s
+      - CF-67.63MB/s
+      - CF-67.15MB/s
+      - CF-56.59MB/s
+      - CF-53.69MB/s
+      - CF-52.16MB/s
       - 198.41.223.170
       - 172.64.150.105
       - 162.159.32.164
@@ -185,16 +185,16 @@ proxy-groups:
       - cf.008500.xyz
       - cf.zhetengsha.eu.org
       - bestcf.030101.xyz
-      - CF-71.23MB/s
-      - CF-70.88MB/s
-      - CF-70.77MB/s
-      - CF-70.38MB/s
-      - CF-69.41MB/s
-      - CF-66.69MB/s
-      - CF-66.51MB/s
-      - CF-65.03MB/s
-      - CF-60.36MB/s
-      - CF-59.21MB/s
+      - CF-70.94MB/s
+      - CF-70.15MB/s
+      - CF-69.91MB/s
+      - CF-69.88MB/s
+      - CF-69.0MB/s
+      - CF-67.63MB/s
+      - CF-67.15MB/s
+      - CF-56.59MB/s
+      - CF-53.69MB/s
+      - CF-52.16MB/s
       - 198.41.223.170
       - 172.64.150.105
       - 162.159.32.164
@@ -239,16 +239,16 @@ proxy-groups:
       - cf.008500.xyz
       - cf.zhetengsha.eu.org
       - bestcf.030101.xyz
-      - CF-71.23MB/s
-      - CF-70.88MB/s
-      - CF-70.77MB/s
-      - CF-70.38MB/s
-      - CF-69.41MB/s
-      - CF-66.69MB/s
-      - CF-66.51MB/s
-      - CF-65.03MB/s
-      - CF-60.36MB/s
-      - CF-59.21MB/s
+      - CF-70.94MB/s
+      - CF-70.15MB/s
+      - CF-69.91MB/s
+      - CF-69.88MB/s
+      - CF-69.0MB/s
+      - CF-67.63MB/s
+      - CF-67.15MB/s
+      - CF-56.59MB/s
+      - CF-53.69MB/s
+      - CF-52.16MB/s
       - 198.41.223.170
       - 172.64.150.105
       - 162.159.32.164
@@ -263,6 +263,7 @@ rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
+  - DOMAIN-SUFFIX,internal,🎯 全球直连
   - DOMAIN-SUFFIX,lan,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,localhost,🎯 全球直连
@@ -270,6 +271,7 @@ rules:
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
+  - IP-CIDR,169.254.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
   - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
@@ -643,7 +645,6 @@ rules:
   - DOMAIN-SUFFIX,scupio.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuiguo.com,🛑 全球拦截
   - DOMAIN-SUFFIX,shuzilm.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,similarweb.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitemeter.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitescout.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sitetag.us,🛑 全球拦截
@@ -1495,9 +1496,7 @@ rules:
   - DOMAIN-SUFFIX,log.mix.sina.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,mobileads.dx.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,newspush.sinajs.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,pay.mobile.sina.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,sax.mobile.sina.cn,🛑 全球拦截
-  - DOMAIN-SUFFIX,sax.sina.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,saxd.sina.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,sdkapp.mobile.sina.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,sdkapp.uve.weibo.com,🛑 全球拦截
@@ -1898,7 +1897,6 @@ rules:
   - DOMAIN-SUFFIX,dol.tianyaui.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,dw.xcar.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,e.nexac.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,eq.10jqka.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,exp.17wo.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,game.51yund.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ganjituiguang.ganji.com,🛑 全球拦截
@@ -1915,7 +1913,6 @@ rules:
   - DOMAIN-SUFFIX,mobileads.msn.com,🛑 全球拦截
   - DOMAIN-SUFFIX,n.cosbot.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,newton-api.ele.me,🛑 全球拦截
-  - DOMAIN-SUFFIX,ozone.10jqka.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,pdl.gionee.com,🛑 全球拦截
   - DOMAIN-SUFFIX,pica-juicy.picacomic.com,🛑 全球拦截
   - DOMAIN-SUFFIX,pixel.wp.com,🛑 全球拦截
@@ -1928,7 +1925,6 @@ rules:
   - DOMAIN-SUFFIX,res.gwifi.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,ssp.kssws.ks-cdn.com,🛑 全球拦截
   - DOMAIN-SUFFIX,sta.ganji.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,stat.10jqka.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,stat.it168.com,🛑 全球拦截
   - DOMAIN-SUFFIX,stats.chinaz.com,🛑 全球拦截
   - DOMAIN-SUFFIX,stats.developingperspective.com,🛑 全球拦截
@@ -1936,7 +1932,6 @@ rules:
   - DOMAIN-SUFFIX,tracker.yhd.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tralog.ganji.com,🛑 全球拦截
   - DOMAIN-SUFFIX,up.qingdaonews.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,265.com,🎯 全球直连
   - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -2010,6 +2005,7 @@ rules:
   - DOMAIN,copilot-proxy.githubusercontent.com,🚀 节点选择
   - DOMAIN,gemini.google.com,🚀 节点选择
   - DOMAIN,generativelanguage.googleapis.com,🚀 节点选择
+  - DOMAIN,notebooklm.google.com,🚀 节点选择
   - DOMAIN,sydney.bing.com,🚀 节点选择
   - DOMAIN-SUFFIX,ai.azure.com,🚀 节点选择
   - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
@@ -2017,6 +2013,7 @@ rules:
   - DOMAIN-SUFFIX,bard.google.com,🚀 节点选择
   - DOMAIN-SUFFIX,chatgpt.com,🚀 节点选择
   - DOMAIN-SUFFIX,claude.ai,🚀 节点选择
+  - DOMAIN-SUFFIX,claude.com,🚀 节点选择
   - DOMAIN-SUFFIX,claudeusercontent.com,🚀 节点选择
   - DOMAIN-SUFFIX,client-api.arkoselabs.com,🚀 节点选择
   - DOMAIN-SUFFIX,copilot.cloud.microsoft,🚀 节点选择
@@ -2031,6 +2028,7 @@ rules:
   - DOMAIN-SUFFIX,identrust.com,🚀 节点选择
   - DOMAIN-SUFFIX,intercom.io,🚀 节点选择
   - DOMAIN-SUFFIX,intercomcdn.com,🚀 节点选择
+  - DOMAIN-SUFFIX,jetbrains.ai,🚀 节点选择
   - DOMAIN-SUFFIX,makersuite.google.com,🚀 节点选择
   - DOMAIN-SUFFIX,meta.ai,🚀 节点选择
   - DOMAIN-SUFFIX,mistral.ai,🚀 节点选择
@@ -2040,6 +2038,7 @@ rules:
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🚀 节点选择
   - DOMAIN-SUFFIX,perplexity.ai,🚀 节点选择
   - DOMAIN-SUFFIX,sora.com,🚀 节点选择
+  - DOMAIN-SUFFIX,x.ai,🚀 节点选择
   - DOMAIN-KEYWORD,abematv.akamaized.net,🚀 节点选择
   - DOMAIN-SUFFIX,abema.io,🚀 节点选择
   - DOMAIN-SUFFIX,abema.tv,🚀 节点选择
@@ -2602,6 +2601,7 @@ rules:
   - DOMAIN-SUFFIX,1e100.net,🚀 节点选择
   - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
   - DOMAIN-SUFFIX,app-measurement.net,🚀 节点选择
+  - DOMAIN-SUFFIX,c.gle,🚀 节点选择
   - DOMAIN-SUFFIX,g.co,🚀 节点选择
   - DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
   - DOMAIN-SUFFIX,goo.gl,🚀 节点选择
@@ -2681,6 +2681,7 @@ rules:
   - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🚀 节点选择
   - DOMAIN-SUFFIX,storage.live.com,🚀 节点选择
   - DOMAIN-SUFFIX,storage.msn.com,🚀 节点选择
+  - DOMAIN-SUFFIX,microsoftpersonalcontent.com,🚀 节点选择
   - DOMAIN-KEYWORD,porn,🚀 节点选择
   - DOMAIN-SUFFIX,8teenxxx.com,🚀 节点选择
   - DOMAIN-SUFFIX,ahcdn.com,🚀 节点选择
@@ -2844,6 +2845,7 @@ rules:
   - DOMAIN-SUFFIX,aliapp.org,🎯 全球直连
   - DOMAIN-SUFFIX,alibaba.com,🎯 全球直连
   - DOMAIN-SUFFIX,alibabacloud.com,🎯 全球直连
+  - DOMAIN-SUFFIX,alibabachengdun.com,🎯 全球直连
   - DOMAIN-SUFFIX,alibabausercontent.com,🎯 全球直连
   - DOMAIN-SUFFIX,alicdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,alicloudccp.com,🎯 全球直连
@@ -2862,6 +2864,7 @@ rules:
   - DOMAIN-SUFFIX,autonavi.com,🎯 全球直连
   - DOMAIN-SUFFIX,dingtalk.com,🎯 全球直连
   - DOMAIN-SUFFIX,ele.me,🎯 全球直连
+  - DOMAIN-SUFFIX,elemecdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hichina.com,🎯 全球直连
   - DOMAIN-SUFFIX,mmstat.com,🎯 全球直连
   - DOMAIN-SUFFIX,mxhichina.com,🎯 全球直连
@@ -2869,6 +2872,7 @@ rules:
   - DOMAIN-SUFFIX,taobao.com,🎯 全球直连
   - DOMAIN-SUFFIX,taobaocdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,tbcache.com,🎯 全球直连
+  - DOMAIN-SUFFIX,tbcdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,tbcdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,tmall.com,🎯 全球直连
   - DOMAIN-SUFFIX,tmall.hk,🎯 全球直连
@@ -3198,6 +3202,7 @@ rules:
   - DOMAIN-SUFFIX,air-matters.io,🎯 全球直连
   - DOMAIN-SUFFIX,aixifan.com,🎯 全球直连
   - DOMAIN-SUFFIX,algocasts.io,🎯 全球直连
+  - DOMAIN-SUFFIX,asklink.com,🎯 全球直连
   - DOMAIN-SUFFIX,babytree.com,🎯 全球直连
   - DOMAIN-SUFFIX,babytreeimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,baicizhan.com,🎯 全球直连

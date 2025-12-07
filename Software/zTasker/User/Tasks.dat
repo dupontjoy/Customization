@@ -3,7 +3,7 @@
 	<TaskItem>
 		<ID>103</ID>
 		<TaskType>ttMultiTasker</TaskType>
-		<Stopped>0</Stopped>
+		<Stopped>1</Stopped>
 		<HKStopped>1</HKStopped>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
@@ -338,7 +338,7 @@ env2=value2</edtAppEnv>
 	<TaskItem>
 		<ID>183</ID>
 		<TaskType>ttMultiTasker</TaskType>
-		<Stopped>0</Stopped>
+		<Stopped>1</Stopped>
 		<HKStopped>1</HKStopped>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
@@ -673,7 +673,7 @@ env2=value2</edtAppEnv>
 	<TaskItem>
 		<ID>271</ID>
 		<TaskType>ttMultiTasker</TaskType>
-		<Stopped>0</Stopped>
+		<Stopped>1</Stopped>
 		<HKStopped>1</HKStopped>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
@@ -1013,9 +1013,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-12-05 23:21:36</EndDateTime>
-		<NextRunDateTime>2035-12-04 07:57:18</NextRunDateTime>
+		<NextRunDateTime>2125-11-12 23:01:49</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-12-05 21:54:46</LastRunTime>
+		<LastRunTime>2025-12-06 23:01:49</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1345,9 +1345,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 08:00:00</StartDateTime>
 		<EndDateTime>2025-11-23 07:02:24</EndDateTime>
-		<NextRunDateTime>2025-12-07 08:00:00</NextRunDateTime>
-		<NextRunTime>2025-12-07 08:00:00</NextRunTime>
-		<LastRunTime>2025-12-06 08:00:00</LastRunTime>
+		<NextRunDateTime>2025-12-08 08:00:00</NextRunDateTime>
+		<NextRunTime>2025-12-08 08:00:00</NextRunTime>
+		<LastRunTime>2025-12-07 08:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1538,6 +1538,198 @@ env2=value2</edtAppEnv>
 				</Param>
 				<Name>软件设置Sync</Name>
 				<ID>63</ID>
+				<Stat>1</Stat>
+			</Tasker>
+		</Actions>
+	</TaskItem>
+	<TaskItem>
+		<ID>325-ZC56T05KQI</ID>
+		<TaskType>ttMultiTasker</TaskType>
+		<Stopped>0</Stopped>
+		<HKStopped>1</HKStopped>
+		<QukPhzStopped>1</QukPhzStopped>
+		<HasEndDateTime>0</HasEndDateTime>
+		<SchType>2</SchType>
+		<StartDateTime>2024-12-26 23:00:00</StartDateTime>
+		<EndDateTime>2025-12-06 14:04:48</EndDateTime>
+		<NextRunDateTime>2025-12-07 23:00:00</NextRunDateTime>
+		<NextRunTime>2025-12-07 23:00:00</NextRunTime>
+		<LastRunTime>2025-12-06 23:00:00</LastRunTime>
+		<Fav>0</Fav>
+		<Ver>7</Ver>
+		<Param>
+			<CountDownHour>1</CountDownHour>
+			<CountDownMin>0</CountDownMin>
+			<CountDownSec>0</CountDownSec>
+			<DTOnce>2024-12-26 20:34:03</DTOnce>
+			<EveryMonthDay>0</EveryMonthDay>
+			<EveryWeek>7</EveryWeek>
+			<Name>清理</Name>
+			<TitleShow>弹窗提醒</TitleShow>
+			<TypeShow>提醒</TypeShow>
+			<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
+			<chkAutoClose>0</chkAutoClose>
+			<chkAutoCloseHK>0</chkAutoCloseHK>
+			<chkDayLimit1>0</chkDayLimit1>
+			<chkDayLimit2>0</chkDayLimit2>
+			<chkDayLimit3>0</chkDayLimit3>
+			<chkDayLimit4>0</chkDayLimit4>
+			<chkDayLimit5>0</chkDayLimit5>
+			<chkDayLimit6>0</chkDayLimit6>
+			<chkDayLimit7>0</chkDayLimit7>
+			<chkDayLimitTime>0</chkDayLimitTime>
+			<chkDayLimitTimeRev>0</chkDayLimitTimeRev>
+			<chkEndDateSel>0</chkEndDateSel>
+			<chkExecDlg>0</chkExecDlg>
+			<chkExecDlgHK>0</chkExecDlgHK>
+			<chkExecExitFocus>0</chkExecExitFocus>
+			<chkExecExitFullScr>0</chkExecExitFullScr>
+			<chkExecExitPre>1</chkExecExitPre>
+			<chkHKMouseCorner>0</chkHKMouseCorner>
+			<chkHKMouseCorner1>0</chkHKMouseCorner1>
+			<chkHKMouseCorner2>0</chkHKMouseCorner2>
+			<chkHKMouseCorner3>0</chkHKMouseCorner3>
+			<chkHKMouseCorner4>0</chkHKMouseCorner4>
+			<chkHKMouseEdge>0</chkHKMouseEdge>
+			<chkHKMouseEdge1>0</chkHKMouseEdge1>
+			<chkHKMouseEdge2>0</chkHKMouseEdge2>
+			<chkHKMouseEdge3>0</chkHKMouseEdge3>
+			<chkHKMouseEdge4>0</chkHKMouseEdge4>
+			<chkHotkey>0</chkHotkey>
+			<chkHotkeyAlt>0</chkHotkeyAlt>
+			<chkHotkeyAltM>0</chkHotkeyAltM>
+			<chkHotkeyCtrl>0</chkHotkeyCtrl>
+			<chkHotkeyCtrlM>0</chkHotkeyCtrlM>
+			<chkHotkeyLeft>0</chkHotkeyLeft>
+			<chkHotkeyMiddle>0</chkHotkeyMiddle>
+			<chkHotkeyMouseMod>0</chkHotkeyMouseMod>
+			<chkHotkeyRight>0</chkHotkeyRight>
+			<chkHotkeyShift>0</chkHotkeyShift>
+			<chkHotkeyShiftM>0</chkHotkeyShiftM>
+			<chkHotkeyWheel>0</chkHotkeyWheel>
+			<chkHotkeyWin>0</chkHotkeyWin>
+			<chkHotkeyWinM>0</chkHotkeyWinM>
+			<chkHotkeyX1>0</chkHotkeyX1>
+			<chkHotkeyX2>0</chkHotkeyX2>
+			<chkQukPhz>0</chkQukPhz>
+			<chkQukPhzProc>0</chkQukPhzProc>
+			<chkQukPhzTip>1</chkQukPhzTip>
+			<chkRunMiss>0</chkRunMiss>
+			<chkSKPartMatch>0</chkSKPartMatch>
+			<chkSKProcActiveWnd>0</chkSKProcActiveWnd>
+			<chkSKProcExists>0</chkSKProcExists>
+			<chkSKWinExists>0</chkSKWinExists>
+			<chkSKWinFore>0</chkSKWinFore>
+			<chkSKWinMouseIn>0</chkSKWinMouseIn>
+			<chkSKWinSub>0</chkSKWinSub>
+			<chkSchLimitCount>0</chkSchLimitCount>
+			<chkSelfDelete>0</chkSelfDelete>
+			<chkTimer>1</chkTimer>
+			<chkUseStartDT>1</chkUseStartDT>
+			<chkWakeRunMiss>0</chkWakeRunMiss>
+			<cmbAutoCloseAction>0</cmbAutoCloseAction>
+			<cmbAutoCloseActionHK>0</cmbAutoCloseActionHK>
+			<cmbAutoCloseActionHK_text>执行</cmbAutoCloseActionHK_text>
+			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
+			<cmbClass>无</cmbClass>
+			<cmbClass_text>无</cmbClass_text>
+			<cmbExecExitType>0</cmbExecExitType>
+			<cmbExecExitType_text>跳过执行</cmbExecExitType_text>
+			<cmbHKMouse>0</cmbHKMouse>
+			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
+			<cmbHotkey>0</cmbHotkey>
+			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
+			<edtDelayBoot>0</edtDelayBoot>
+			<edtEveryDay>1</edtEveryDay>
+			<edtExecExitWaitTime>60</edtExecExitWaitTime>
+			<edtExecSec>30</edtExecSec>
+			<edtExecSecHK>5</edtExecSecHK>
+			<edtExecTimeout>0</edtExecTimeout>
+			<edtHKMouseCorner>50</edtHKMouseCorner>
+			<edtHKMouseEdge>50</edtHKMouseEdge>
+			<edtSchLimitCount>1</edtSchLimitCount>
+			<edtTaskName>清理</edtTaskName>
+			<edtWakeDelayBoot>0</edtWakeDelayBoot>
+			<optHKKey>1</optHKKey>
+			<optHKMouse>0</optHKMouse>
+		</Param>
+		<Actions>
+			<Tasker>
+				<ID>11</ID>
+				<TaskType>ttExec</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<QukPhzStopped>0</QukPhzStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
+				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
+				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>7</Ver>
+				<Param>
+					<BackClr>-12500671</BackClr>
+					<IsExitRest>0</IsExitRest>
+					<IsPassExitRest>0</IsPassExitRest>
+					<Name>Glary清理</Name>
+					<PlayTime>10</PlayTime>
+					<RestAlpha>0</RestAlpha>
+					<RestClr>-1</RestClr>
+					<RestMin>10</RestMin>
+					<RmdClr>-1</RmdClr>
+					<SnapFormat>png</SnapFormat>
+					<SnapSaveDay>10</SnapSaveDay>
+					<SnapSaveMode>optSaveAll</SnapSaveMode>
+					<SnapSaveNum>100</SnapSaveNum>
+					<TitleShow>执行程序</TitleShow>
+					<TypeShow>程序</TypeShow>
+					<chkAppAdmin>0</chkAppAdmin>
+					<chkAppClip>0</chkAppClip>
+					<chkAppEnv>0</chkAppEnv>
+					<chkAppVar>0</chkAppVar>
+					<chkBackDateSub>0</chkBackDateSub>
+					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
+					<chkBackFileRecyle>0</chkBackFileRecyle>
+					<chkBackZipMulti>0</chkBackZipMulti>
+					<chkBackZipPass>0</chkBackZipPass>
+					<chkExecWait>1</chkExecWait>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<chkQukPhz>0</chkQukPhz>
+					<cmbAppShowCmd>1</cmbAppShowCmd>
+					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
+					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
+					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
+					<cmbBackType>zip</cmbBackType>
+					<cmbBackType_text>压缩</cmbBackType_text>
+					<cmbHotkey>0</cmbHotkey>
+					<edtAppEnv>env1=value1
+env2=value2</edtAppEnv>
+					<edtAppParam>/schedulestart</edtAppParam>
+					<edtAppPath>D:\Program Files\CingFox\Software\GlaryUtilities\App\Glary Utilities\OneClickMaintenance.exe</edtAppPath>
+					<edtBackZipCount>10</edtBackZipCount>
+					<edtExecWaitTime>0</edtExecWaitTime>
+					<edtTaskName>Glary清理</edtTaskName>
+					<edtTaskSubName>Glary清理</edtTaskSubName>
+					<edtVolAdd>10</edtVolAdd>
+					<edtVolDec>10</edtVolDec>
+					<edtVolSet>10</edtVolSet>
+					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
+					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
+					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
+					<optPlaySnd>0</optPlaySnd>
+					<optRmdSnd>0</optRmdSnd>
+					<optRptSnd>0</optRptSnd>
+					<sldZipLevel>3</sldZipLevel>
+					<tabBtnTask>1</tabBtnTask>
+				</Param>
+				<Name>Glary清理</Name>
+				<ID>11</ID>
 				<Stat>1</Stat>
 			</Tasker>
 		</Actions>
@@ -2550,222 +2742,6 @@ env2=value2</edtAppEnv>
 				</Param>
 				<Name>Fx配置打包</Name>
 				<ID>50</ID>
-				<Stat>1</Stat>
-			</Tasker>
-		</Actions>
-	</TaskItem>
-	<TaskItem>
-		<ID>325-ZC56T05KQI</ID>
-		<TaskType>ttMultiTasker</TaskType>
-		<Stopped>0</Stopped>
-		<HKStopped>1</HKStopped>
-		<QukPhzStopped>1</QukPhzStopped>
-		<HasEndDateTime>0</HasEndDateTime>
-		<SchType>3</SchType>
-		<StartDateTime>2024-12-26 23:00:00</StartDateTime>
-		<EndDateTime>2025-11-23 07:02:24</EndDateTime>
-		<NextRunDateTime>2025-12-07 23:00:00</NextRunDateTime>
-		<NextRunTime>2025-12-07 23:00:00</NextRunTime>
-		<LastRunTime>2025-11-30 23:00:00</LastRunTime>
-		<Fav>0</Fav>
-		<Ver>7</Ver>
-		<Param>
-			<CountDownHour>1</CountDownHour>
-			<CountDownMin>0</CountDownMin>
-			<CountDownSec>0</CountDownSec>
-			<DTOnce>2024-12-26 20:34:03</DTOnce>
-			<EveryMonthDay>0</EveryMonthDay>
-			<EveryWeek>7</EveryWeek>
-			<Name>清理</Name>
-			<StopHotkey>Ctrl+Alt+P</StopHotkey>
-			<TitleShow>弹窗提醒</TitleShow>
-			<TypeShow>提醒</TypeShow>
-			<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
-			<chk1>0</chk1>
-			<chk2>0</chk2>
-			<chk3>0</chk3>
-			<chk4>0</chk4>
-			<chk5>0</chk5>
-			<chk6>0</chk6>
-			<chk7>1</chk7>
-			<chkAutoClose>0</chkAutoClose>
-			<chkAutoCloseHK>0</chkAutoCloseHK>
-			<chkDayLimit1>0</chkDayLimit1>
-			<chkDayLimit2>0</chkDayLimit2>
-			<chkDayLimit3>0</chkDayLimit3>
-			<chkDayLimit4>0</chkDayLimit4>
-			<chkDayLimit5>0</chkDayLimit5>
-			<chkDayLimit6>0</chkDayLimit6>
-			<chkDayLimit7>0</chkDayLimit7>
-			<chkDayLimitTime>0</chkDayLimitTime>
-			<chkDayLimitTimeRev>0</chkDayLimitTimeRev>
-			<chkEndDateSel>0</chkEndDateSel>
-			<chkExecDlg>0</chkExecDlg>
-			<chkExecDlgHK>0</chkExecDlgHK>
-			<chkExecExitFocus>0</chkExecExitFocus>
-			<chkExecExitFullScr>0</chkExecExitFullScr>
-			<chkExecExitPre>1</chkExecExitPre>
-			<chkHKMouseCorner>0</chkHKMouseCorner>
-			<chkHKMouseCorner1>0</chkHKMouseCorner1>
-			<chkHKMouseCorner2>0</chkHKMouseCorner2>
-			<chkHKMouseCorner3>0</chkHKMouseCorner3>
-			<chkHKMouseCorner4>0</chkHKMouseCorner4>
-			<chkHKMouseEdge>0</chkHKMouseEdge>
-			<chkHKMouseEdge1>0</chkHKMouseEdge1>
-			<chkHKMouseEdge2>0</chkHKMouseEdge2>
-			<chkHKMouseEdge3>0</chkHKMouseEdge3>
-			<chkHKMouseEdge4>0</chkHKMouseEdge4>
-			<chkHotkey>0</chkHotkey>
-			<chkHotkeyAlt>0</chkHotkeyAlt>
-			<chkHotkeyAltM>0</chkHotkeyAltM>
-			<chkHotkeyCtrl>0</chkHotkeyCtrl>
-			<chkHotkeyCtrlM>0</chkHotkeyCtrlM>
-			<chkHotkeyLeft>0</chkHotkeyLeft>
-			<chkHotkeyMiddle>0</chkHotkeyMiddle>
-			<chkHotkeyMouseMod>0</chkHotkeyMouseMod>
-			<chkHotkeyRight>0</chkHotkeyRight>
-			<chkHotkeyShift>0</chkHotkeyShift>
-			<chkHotkeyShiftM>0</chkHotkeyShiftM>
-			<chkHotkeyWheel>0</chkHotkeyWheel>
-			<chkHotkeyWin>0</chkHotkeyWin>
-			<chkHotkeyWinM>0</chkHotkeyWinM>
-			<chkHotkeyX1>0</chkHotkeyX1>
-			<chkHotkeyX2>0</chkHotkeyX2>
-			<chkQukPhz>0</chkQukPhz>
-			<chkQukPhzProc>0</chkQukPhzProc>
-			<chkQukPhzTip>1</chkQukPhzTip>
-			<chkRunMiss>0</chkRunMiss>
-			<chkSKPartMatch>0</chkSKPartMatch>
-			<chkSKProcActiveWnd>0</chkSKProcActiveWnd>
-			<chkSKProcExists>0</chkSKProcExists>
-			<chkSKWinExists>0</chkSKWinExists>
-			<chkSKWinFore>0</chkSKWinFore>
-			<chkSKWinMouseIn>0</chkSKWinMouseIn>
-			<chkSKWinSub>0</chkSKWinSub>
-			<chkSchLimitCount>0</chkSchLimitCount>
-			<chkSelfDelete>0</chkSelfDelete>
-			<chkTimer>1</chkTimer>
-			<chkUseStartDT>1</chkUseStartDT>
-			<chkWakeRunMiss>0</chkWakeRunMiss>
-			<cmbAutoCloseAction>0</cmbAutoCloseAction>
-			<cmbAutoCloseActionHK>0</cmbAutoCloseActionHK>
-			<cmbAutoCloseActionHK_text>执行</cmbAutoCloseActionHK_text>
-			<cmbAutoCloseAction_text>执行</cmbAutoCloseAction_text>
-			<cmbClass>无</cmbClass>
-			<cmbClass_text>无</cmbClass_text>
-			<cmbExecExitType>0</cmbExecExitType>
-			<cmbExecExitType_text>跳过执行</cmbExecExitType_text>
-			<cmbHKMouse>0</cmbHKMouse>
-			<cmbHKMouseType>0</cmbHKMouseType>
-			<cmbHKMouseType_text>按下时</cmbHKMouseType_text>
-			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
-			<cmbHKType>0</cmbHKType>
-			<cmbHKType_text>按下时</cmbHKType_text>
-			<cmbHotKeySolo>0</cmbHotKeySolo>
-			<cmbHotkey>0</cmbHotkey>
-			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
-			<edtDelayBoot>0</edtDelayBoot>
-			<edtEveryWeek>1</edtEveryWeek>
-			<edtExecExitWaitTime>60</edtExecExitWaitTime>
-			<edtExecSec>30</edtExecSec>
-			<edtExecSecHK>5</edtExecSecHK>
-			<edtExecTimeout>0</edtExecTimeout>
-			<edtHKMouseCorner>50</edtHKMouseCorner>
-			<edtHKMouseEdge>50</edtHKMouseEdge>
-			<edtSchLimitCount>1</edtSchLimitCount>
-			<edtTaskName>清理</edtTaskName>
-			<edtWakeDelayBoot>0</edtWakeDelayBoot>
-			<optHKKey>1</optHKKey>
-			<optHKMouse>0</optHKMouse>
-			<optHotAlt>0</optHotAlt>
-			<optHotCtrl>1</optHotCtrl>
-			<optHotKey>0</optHotKey>
-			<optHotShift>0</optHotShift>
-			<optHotWin>0</optHotWin>
-			<optHotkeyLeft>1</optHotkeyLeft>
-			<optHotkeyMiddle>0</optHotkeyMiddle>
-			<optHotkeyRight>0</optHotkeyRight>
-			<optHotkeyWheel>0</optHotkeyWheel>
-			<optHotkeyX1>0</optHotkeyX1>
-			<optHotkeyX2>0</optHotkeyX2>
-		</Param>
-		<Actions>
-			<Tasker>
-				<ID>11</ID>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<QukPhzStopped>0</QukPhzStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
-				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
-				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>7</Ver>
-				<Param>
-					<BackClr>-12500671</BackClr>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>Glary清理</Name>
-					<PlayTime>10</PlayTime>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<TitleShow>执行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppVar>0</chkAppVar>
-					<chkBackDateSub>0</chkBackDateSub>
-					<chkBackFileEmptyDir>0</chkBackFileEmptyDir>
-					<chkBackFileRecyle>0</chkBackFileRecyle>
-					<chkBackZipMulti>0</chkBackZipMulti>
-					<chkBackZipPass>0</chkBackZipPass>
-					<chkExecWait>1</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<chkQukPhz>0</chkQukPhz>
-					<cmbAppShowCmd>1</cmbAppShowCmd>
-					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull>0</cmbBackFileRecyleFull>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType>zip</cmbBackType>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbHotkey>0</cmbHotkey>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppParam>/schedulestart</edtAppParam>
-					<edtAppPath>D:\Program Files\CingFox\Software\GlaryUtilities\App\Glary Utilities\OneClickMaintenance.exe</edtAppPath>
-					<edtBackZipCount>10</edtBackZipCount>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>Glary清理</edtTaskName>
-					<edtTaskSubName>Glary清理</edtTaskSubName>
-					<edtVolAdd>10</edtVolAdd>
-					<edtVolDec>10</edtVolDec>
-					<edtVolSet>10</edtVolSet>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optBackFileEmpDirAny>0</optBackFileEmpDirAny>
-					<optBackFileEmpDirSrc>1</optBackFileEmpDirSrc>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<sldZipLevel>3</sldZipLevel>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>Glary清理</Name>
-				<ID>11</ID>
 				<Stat>1</Stat>
 			</Tasker>
 		</Actions>
