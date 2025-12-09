@@ -44,6 +44,16 @@ if "!res!"=="" (
     set "format_res=--format-sort res:%res%"
 )
 
+::设置代理
+:set_proxy
+set "px="
+set /p "px=是否启用代理（y或空）： "
+if "!px!"=="" (
+    set "format_px="
+) else (
+    set "format_px=--proxy 127.0.0.1:7897"
+)
+
 
 ::---------------设置部分---------------
 :setting_path
@@ -61,7 +71,7 @@ goto :eof
 :setting_yt-dlp_params
 ::设置yt-dlp下载参数
 set "title=%%(title)s@%%(uploader)s.%%(ext)s"
-set yt-dlp_params=--cookies-from-browser firefox:"%firefox_profile%" %format_res% --ffmpeg-location %ffmpeg% -o "%title%"
+set yt-dlp_params=--cookies-from-browser firefox:"%firefox_profile%" %format_res% %format_px% --ffmpeg-location %ffmpeg% -o "%title%"
 ::下载视频转换成mp4（用--merge-output-format参数）
 set yt-dlp_download=yt-dlp --merge-output-format mp4 %yt-dlp_params% -P %SaveDir% "%link%"
 goto :eof

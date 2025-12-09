@@ -59,7 +59,7 @@
  
 }
 
-@-moz-document regexp("https://.*(xwnewtv).*.(dev|app|shop|xyz)\/play.*") {
+@-moz-document regexp("https://.*(xwnewtv|moontvp).*.(dev|app|shop|xyz)\/play.*") {
 
 /*播放区 上移和缩小*/
  div.space-y-2:nth-child(2) {

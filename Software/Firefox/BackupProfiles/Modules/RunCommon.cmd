@@ -23,7 +23,6 @@ rd /s /q "%cd%\N_m3u8DL-RE\Logs"
 rd /s /q "%cd%\zTasker\User\Backup"
 rd /s /q "%cd%\zTasker\User\Custom"
 rd /s /q "%cd%\zTasker\User\Logs"
-rd /s /q "%cd%\zTasker\User\pinyin.db"
 rd /s /q "%cd%\zTasker\User\TasksBackup"
 rd /s /q "%cd%\zTasker\User\Temp"
 
@@ -32,7 +31,6 @@ rd /s /q "%cd%\..\..\Tencent\Foxmail\FoxmailUpdate"
 
 ::清空文件夹，但不会删除文件夹本身
 del /s /q /f "C:\Users\%USERNAME%\Downloads\*"
-del /s /q /f "C:\Users\%USERNAME%\AppData\Local\Temp\*"
 
 :run
 ::普通啟動，start 会启动一个新窗口并在其中运行命令

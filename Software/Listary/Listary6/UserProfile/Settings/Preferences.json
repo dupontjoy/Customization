@@ -1,9 +1,6 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
-      "DirectoryOpus": {
-        "EnableMouseMiddleClick": false
-      },
       "WindowsExplorer": {
         "EnableMouseMiddleClick": false
       },
@@ -15,6 +12,9 @@
         "EnableMouseMiddleClick": false
       },
       "TotalCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "DirectoryOpus": {
         "EnableMouseMiddleClick": false
       },
       "FreeCommander": {
@@ -315,7 +315,7 @@
           "Id": "dd896809-2af4-405b-834f-45816615e3e3",
           "UpdatedProperties": {
             "Keyword": "bi",
-            "Url": "https://cn.bing.com/search?q={query}&FORM=ANAB01"
+            "Url": "https://cn.bing.com/search?pc=MOZI&form=MOZLBR&q={query}"
           }
         },
         {
