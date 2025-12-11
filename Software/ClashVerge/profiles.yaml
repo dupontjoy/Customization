@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RPCQGeAoLnyE
+current: RZMwOHf9XhCv
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1765257412
+  updated: 1765410463
   option:
     with_proxy: false
     self_proxy: false
@@ -89,11 +89,11 @@ items:
   - name: 🚀 节点选择
     now: ♻️ 自动选择
   extra:
-    upload: 2627932968110
-    download: 2627932968110
+    upload: 13084713998176
+    download: 13084713998176
     total: 26388279066624
     expire: 4102329600
-  updated: 1765255612
+  updated: 1765410486
   option:
     update_interval: 60
     allow_auto_update: true
@@ -140,11 +140,11 @@ items:
   - name: 🚀 节点选择
     now: bestcf.030101.xyz
   extra:
-    upload: 2627891431004
-    download: 2627891431004
+    upload: 13081485404449
+    download: 13081485404449
     total: 26388279066624
     expire: 4102329600
-  updated: 1765255611
+  updated: 1765410464
   option:
     update_interval: 60
     allow_auto_update: true
@@ -185,7 +185,7 @@ items:
   file: RUkEKBpwWGFO.yaml
   desc: 88邮箱-cfnew项目
   url: https://api.asailor.org/sub?target=clash&url=https://dp88bj.dupontjoy.shop/dp88bj/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1765255610
+  updated: 1765410463
   option:
     update_interval: 60
     allow_auto_update: true
@@ -225,7 +225,7 @@ items:
   file: RZMwOHf9XhCv.yaml
   desc: 163邮箱-cfnew项目
   url: https://api.asailor.org/sub?target=clash&url=https://163cfn.232885.xyz/163cfn/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1765255612
+  updated: 1765410463
   option:
     update_interval: 60
     allow_auto_update: true
@@ -265,7 +265,7 @@ items:
   file: RmNCzEs2xYTb.yaml
   desc: 88邮箱-cfnew项目-ops转换
   url: https://s.ops.ci/YdShjdL
-  updated: 1765258374
+  updated: 1765410488
   option:
     update_interval: 59
     allow_auto_update: true
@@ -305,7 +305,7 @@ items:
   file: Ry0fXYTU2GbC.yaml
   desc: 163邮箱-cfnew项目-ops转换
   url: https://s.ops.ci/bFJFfEd
-  updated: 1765255456
+  updated: 1765410490
   option:
     update_interval: 60
     allow_auto_update: true

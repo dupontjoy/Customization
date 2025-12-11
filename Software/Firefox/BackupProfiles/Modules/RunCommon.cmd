@@ -35,12 +35,12 @@ del /s /q /f "C:\Users\%USERNAME%\Downloads\*"
 :run
 ::普通啟動，start 会启动一个新窗口并在其中运行命令
 start "" "%cd%\RimeIMEPortable\weasel\WeaselServer.exe"
-::start  "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
+start "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
 start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
-start  "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
-start  "" "%cd%\Ditto\Ditto.exe"
-start  "" "%cd%\PixPin\PixPin.exe"
-::start  "" "%cd%\Snipaste\Snipaste.exe"
+start "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
+start "" "%cd%\Ditto\Ditto.exe"
+start "" "%cd%\PixPin\PixPin.exe"
+::start "" "%cd%\Snipaste\Snipaste.exe"
 
 :listary
 ::Listary5代
