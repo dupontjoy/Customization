@@ -237,7 +237,7 @@
       <string>CommitDialog.splitLeft_Distance</string>
     </key>
     <value>
-      <string>263</string>
+      <string>268</string>
     </value>
   </item>
   <item>
@@ -277,7 +277,7 @@
       <string>CommitDialog.splitLeft_Size</string>
     </key>
     <value>
-      <string>599</string>
+      <string>610</string>
     </value>
   </item>
   <item>
@@ -333,7 +333,7 @@
       <string>CommitDialog.splitRight_Distance</string>
     </key>
     <value>
-      <string>409</string>
+      <string>420</string>
     </value>
   </item>
   <item>
@@ -373,7 +373,7 @@
       <string>CommitDialog.splitRight_Size</string>
     </key>
     <value>
-      <string>599</string>
+      <string>610</string>
     </value>
   </item>
   <item>
@@ -997,7 +997,7 @@
       <string>FormBrowse.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>412</string>
+      <string>428</string>
     </value>
   </item>
   <item>
@@ -1333,7 +1333,7 @@
       <string>FormBrowse.RevisionsSplitContainer_Distance</string>
     </key>
     <value>
-      <string>433</string>
+      <string>445</string>
     </value>
   </item>
   <item>
@@ -1885,30 +1885,21 @@
   &lt;HotkeySettings Name="Commit"&gt;
     &lt;Commands&gt;
       &lt;HotkeyCommand CommandCode="16" Name="AddSelectionToCommitMessage" KeyData="C" /&gt;
-      &lt;HotkeyCommand CommandCode="0" Name="AddToGitIgnore" KeyData="None" /&gt;
       &lt;HotkeyCommand CommandCode="25" Name="ConventionalCommit_PrefixMessage" KeyData="MButton ShiftKey Capital CapsLock D P T Control" /&gt;
       &lt;HotkeyCommand CommandCode="26" Name="ConventionalCommit_PrefixMessageWithScope" KeyData="MButton ShiftKey Capital CapsLock D P T Shift Control" /&gt;
       &lt;HotkeyCommand CommandCode="17" Name="CreateBranch" KeyData="RButton B Control" /&gt;
-      &lt;HotkeyCommand CommandCode="1" Name="DeleteSelectedFiles" KeyData="Delete" /&gt;
-      &lt;HotkeyCommand CommandCode="15" Name="EditFile" KeyData="F4" /&gt;
       &lt;HotkeyCommand CommandCode="2" Name="FocusUnstagedFiles" KeyData="LButton ShiftKey ControlKey Space Prior PageUp D0 D1 Control" /&gt;
       &lt;HotkeyCommand CommandCode="3" Name="FocusSelectedDiff" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 Control" /&gt;
       &lt;HotkeyCommand CommandCode="4" Name="FocusStagedFiles" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause Space Prior PageUp Next PageDown End D0 D1 D2 D3 Control" /&gt;
       &lt;HotkeyCommand CommandCode="5" Name="FocusCommitMessage" KeyData="MButton ShiftKey Capital CapsLock Space Home D0 D4 Control" /&gt;
-      &lt;HotkeyCommand CommandCode="13" Name="OpenFile" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause Space Prior PageUp Next PageDown End D0 D1 D2 D3 A B C P Q R S NumPad0 NumPad1 NumPad2 NumPad3 F1 F2 F3 F4 Shift" /&gt;
-      &lt;HotkeyCommand CommandCode="14" Name="OpenFileWith" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause Space Prior PageUp Next PageDown End D0 D1 D2 D3 A B C P Q R S NumPad0 NumPad1 NumPad2 NumPad3 F1 F2 F3 F4 Shift Control" /&gt;
       &lt;HotkeyCommand CommandCode="12" Name="OpenWithDifftool" KeyData="F3" /&gt;
       &lt;HotkeyCommand CommandCode="18" Name="Refresh" KeyData="F5" /&gt;
-      &lt;HotkeyCommand CommandCode="6" Name="ResetSelectedFiles" KeyData="R" /&gt;
       &lt;HotkeyCommand CommandCode="19" Name="SelectNext" KeyData="RButton MButton XButton2 Back LineFeed Clear B D F H J L N Control" /&gt;
       &lt;HotkeyCommand CommandCode="20" Name="SelectNext_AlternativeHotkey1" KeyData="Back Space Down Alt" /&gt;
       &lt;HotkeyCommand CommandCode="21" Name="SelectNext_AlternativeHotkey2" KeyData="LButton RButton Cancel MButton XButton1 XButton2 Space Prior PageUp Next PageDown End Home Left Up Right Alt" /&gt;
       &lt;HotkeyCommand CommandCode="22" Name="SelectPrevious" KeyData="ShiftKey P Control" /&gt;
       &lt;HotkeyCommand CommandCode="23" Name="SelectPrevious_AlternativeHotkey1" KeyData="RButton MButton XButton2 Space Next PageDown Home Up Alt" /&gt;
       &lt;HotkeyCommand CommandCode="24" Name="SelectPrevious_AlternativeHotkey2" KeyData="LButton MButton XButton1 Space Prior PageUp Home Left Alt" /&gt;
-      &lt;HotkeyCommand CommandCode="7" Name="StageSelectedFile" KeyData="S" /&gt;
-      &lt;HotkeyCommand CommandCode="8" Name="UnStageSelectedFile" KeyData="U" /&gt;
-      &lt;HotkeyCommand CommandCode="9" Name="ShowHistory" KeyData="H" /&gt;
       &lt;HotkeyCommand CommandCode="11" Name="StageAll" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause A B C P Q R S Control" /&gt;
       &lt;HotkeyCommand CommandCode="10" Name="ToggleSelectionFilter" KeyData="RButton MButton XButton2 B D F Control" /&gt;
     &lt;/Commands&gt;
@@ -1942,6 +1933,7 @@
       &lt;HotkeyCommand CommandCode="38" Name="GoToParent" KeyData="ShiftKey P Control" /&gt;
       &lt;HotkeyCommand CommandCode="28" Name="GoToSubmodule" KeyData="None" /&gt;
       &lt;HotkeyCommand CommandCode="27" Name="GoToSuperproject" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="49" Name="ManageWorkTrees" KeyData="LButton RButton Cancel MButton XButton1 XButton2 ShiftKey ControlKey Menu Pause Capital CapsLock KanaMode HanguelMode HangulMode JunjaMode A B C D E F G P Q R S T U V W Control Alt" /&gt;
       &lt;HotkeyCommand CommandCode="42" Name="MergeBranches" KeyData="LButton MButton XButton1 Back Tab Clear Return Enter A D E H I L M Control" /&gt;
       &lt;HotkeyCommand CommandCode="23" Name="OpenAsTempFile" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Control" /&gt;
       &lt;HotkeyCommand CommandCode="24" Name="OpenAsTempFileWith" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Shift Control" /&gt;
@@ -1961,7 +1953,7 @@
       &lt;HotkeyCommand CommandCode="16" Name="Stash" KeyData="RButton MButton XButton2 Space Next PageDown Home Up Control Alt" /&gt;
       &lt;HotkeyCommand CommandCode="17" Name="StashPop" KeyData="Back Space Down Control Alt" /&gt;
       &lt;HotkeyCommand CommandCode="46" Name="StashStaged" KeyData="RButton MButton XButton2 Space Next PageDown Home Up Shift Control Alt" /&gt;
-      &lt;HotkeyCommand CommandCode="36" Name="ToggleBetweenArtificialAndHeadCommits" KeyData="RButton Space Next PageDown B NumPad0 NumPad2 F17 F19 LShiftKey LControlKey Oemtilde Oem3 OemBackslash Oem102 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="36" Name="ToggleBetweenArtificialAndHeadCommits" KeyData="RButton Space Next PageDown B NumPad0 NumPad2 F17 F19 LShiftKey LControlKey Oem3 Oemtilde Oem102 OemBackslash Control" /&gt;
       &lt;HotkeyCommand CommandCode="21" Name="ToggleLeftPanel" KeyData="LButton RButton Cancel A B C Control Alt" /&gt;
     &lt;/Commands&gt;
   &lt;/HotkeySettings&gt;
@@ -2012,7 +2004,7 @@
       &lt;HotkeyCommand CommandCode="34" Name="ShowReflogReferences" KeyData="MButton Back Clear D H L Shift Control" /&gt;
       &lt;HotkeyCommand CommandCode="12" Name="ShowRemoteBranches" KeyData="RButton ShiftKey Menu B P R Shift Control" /&gt;
       &lt;HotkeyCommand CommandCode="2" Name="ToggleAuthorDateCommitDate" KeyData="None" /&gt;
-      &lt;HotkeyCommand CommandCode="33" Name="ToggleBetweenArtificialAndHeadCommits" KeyData="RButton Space Next PageDown B NumPad0 NumPad2 F17 F19 LShiftKey LControlKey Oemtilde Oem3 OemBackslash Oem102 Control" /&gt;
+      &lt;HotkeyCommand CommandCode="33" Name="ToggleBetweenArtificialAndHeadCommits" KeyData="RButton Space Next PageDown B NumPad0 NumPad2 F17 F19 LShiftKey LControlKey Oem3 Oemtilde Oem102 OemBackslash Control" /&gt;
       &lt;HotkeyCommand CommandCode="5" Name="ToggleDrawNonRelativesGray" KeyData="None" /&gt;
       &lt;HotkeyCommand CommandCode="16" Name="ToggleHighlightSelectedBranch" KeyData="RButton B Shift Control" /&gt;
       &lt;HotkeyCommand CommandCode="3" Name="ToggleOrderRevisionsByDate" KeyData="None" /&gt;
@@ -2058,6 +2050,7 @@
   &lt;/HotkeySettings&gt;
   &lt;HotkeySettings Name="BrowseDiff"&gt;
     &lt;Commands&gt;
+      &lt;HotkeyCommand CommandCode="22" Name="AddFileToGitIgnore" KeyData="None" /&gt;
       &lt;HotkeyCommand CommandCode="2" Name="Blame" KeyData="B" /&gt;
       &lt;HotkeyCommand CommandCode="0" Name="DeleteSelectedFiles" KeyData="Delete" /&gt;
       &lt;HotkeyCommand CommandCode="4" Name="EditFile" KeyData="F4" /&gt;
@@ -2067,30 +2060,20 @@
       &lt;HotkeyCommand CommandCode="19" Name="GoToLastParent" KeyData="None" /&gt;
       &lt;HotkeyCommand CommandCode="5" Name="OpenAsTempFile" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Control" /&gt;
       &lt;HotkeyCommand CommandCode="6" Name="OpenAsTempFileWith" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="21" Name="OpenInVisualStudio" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause A B C P Q R S Shift Control" /&gt;
       &lt;HotkeyCommand CommandCode="3" Name="OpenWithDifftool" KeyData="F3" /&gt;
       &lt;HotkeyCommand CommandCode="7" Name="OpenWithDifftoolFirstToLocal" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Alt" /&gt;
       &lt;HotkeyCommand CommandCode="8" Name="OpenWithDifftoolSelectedToLocal" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Shift Alt" /&gt;
+      &lt;HotkeyCommand CommandCode="20" Name="OpenWorkingDirectoryFile" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause Space Prior PageUp Next PageDown End D0 D1 D2 D3 A B C P Q R S NumPad0 NumPad1 NumPad2 NumPad3 F1 F2 F3 F4 Shift" /&gt;
       &lt;HotkeyCommand CommandCode="16" Name="OpenWorkingDirectoryFileWith" KeyData="LButton RButton Cancel MButton XButton1 XButton2 Back Tab LineFeed Clear Return Enter A B C D E F G H I J K L M N O Control" /&gt;
       &lt;HotkeyCommand CommandCode="9" Name="ResetSelectedFiles" KeyData="R" /&gt;
       &lt;HotkeyCommand CommandCode="17" Name="FindInCommitFilesUsingGitGrep" KeyData="RButton MButton XButton2 B D F Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="23" Name="RenameMove" KeyData="F2" /&gt;
       &lt;HotkeyCommand CommandCode="14" Name="SelectFirstGroupChanges" KeyData="LButton A Control" /&gt;
       &lt;HotkeyCommand CommandCode="12" Name="ShowFileTree" KeyData="T" /&gt;
       &lt;HotkeyCommand CommandCode="1" Name="ShowHistory" KeyData="H" /&gt;
       &lt;HotkeyCommand CommandCode="10" Name="StageSelectedFile" KeyData="S" /&gt;
       &lt;HotkeyCommand CommandCode="11" Name="UnStageSelectedFile" KeyData="U" /&gt;
-    &lt;/Commands&gt;
-  &lt;/HotkeySettings&gt;
-  &lt;HotkeySettings Name="RevisionFileTree"&gt;
-    &lt;Commands&gt;
-      &lt;HotkeyCommand CommandCode="1" Name="Blame" KeyData="B" /&gt;
-      &lt;HotkeyCommand CommandCode="5" Name="EditFile" KeyData="F4" /&gt;
-      &lt;HotkeyCommand CommandCode="6" Name="FilterFileInGrid" KeyData="F" /&gt;
-      &lt;HotkeyCommand CommandCode="7" Name="FindFile" KeyData="RButton MButton XButton2 B D F Control" /&gt;
-      &lt;HotkeyCommand CommandCode="3" Name="OpenAsTempFile" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Control" /&gt;
-      &lt;HotkeyCommand CommandCode="4" Name="OpenAsTempFileWith" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Shift Control" /&gt;
-      &lt;HotkeyCommand CommandCode="2" Name="OpenWithDifftool" KeyData="F3" /&gt;
-      &lt;HotkeyCommand CommandCode="8" Name="OpenWorkingDirectoryFileWith" KeyData="LButton RButton Cancel MButton XButton1 XButton2 Back Tab LineFeed Clear Return Enter A B C D E F G H I J K L M N O Control" /&gt;
-      &lt;HotkeyCommand CommandCode="0" Name="ShowHistory" KeyData="H" /&gt;
     &lt;/Commands&gt;
   &lt;/HotkeySettings&gt;
   &lt;HotkeySettings Name="Stash"&gt;

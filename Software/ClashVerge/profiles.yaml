@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RZMwOHf9XhCv
+current: RUkEKBpwWGFO
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1765410463
+  updated: 1765954119
   option:
     with_proxy: false
     self_proxy: false
@@ -84,17 +84,19 @@ items:
   name: xrqj
   file: RPCQGeAoLnyE.yaml
   desc: xrqj邮箱-cmliu项目
-  url: https://xrqj.pages.dev/sub?token=f826b4c6974acb9a10d4d84a45603a04
+  url: https://xrqj.pages.dev/sub?token=7861ff9c5fb7ab85e740b07639cc3f9b
   selected:
   - name: 🚀 节点选择
     now: ♻️ 自动选择
   extra:
-    upload: 13084713998176
-    download: 13084713998176
+    upload: 3469269186828
+    download: 3469269186828
     total: 26388279066624
     expire: 4102329600
-  updated: 1765410486
+  updated: 1765952322
   option:
+    with_proxy: false
+    self_proxy: false
     update_interval: 60
     allow_auto_update: true
     merge: mMcRTtDq8U0c
@@ -133,19 +135,21 @@ items:
   name: dp88
   file: R6dfsAL7TSgZ.yaml
   desc: 88邮箱-cmliu项目
-  url: https://dp88.dupontjoy.shop/sub?token=124b230a5d60b2df863a4dddb836b47c
+  url: https://dp88.dupontjoy.shop/sub?token=67f57a485b7ec464ba3eb735f54b82f9
   selected:
   - name: ♻️ 自动选择
     now: mfa.gov.ua
   - name: 🚀 节点选择
     now: bestcf.030101.xyz
   extra:
-    upload: 13081485404449
-    download: 13081485404449
+    upload: 3469229940371
+    download: 3469229940371
     total: 26388279066624
     expire: 4102329600
-  updated: 1765410464
+  updated: 1765952322
   option:
+    with_proxy: false
+    self_proxy: false
     update_interval: 60
     allow_auto_update: true
     merge: m2pPN2puQ2A5
@@ -185,7 +189,7 @@ items:
   file: RUkEKBpwWGFO.yaml
   desc: 88邮箱-cfnew项目
   url: https://api.asailor.org/sub?target=clash&url=https://dp88bj.dupontjoy.shop/dp88bj/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1765410463
+  updated: 1765952319
   option:
     update_interval: 60
     allow_auto_update: true
@@ -225,7 +229,7 @@ items:
   file: RZMwOHf9XhCv.yaml
   desc: 163邮箱-cfnew项目
   url: https://api.asailor.org/sub?target=clash&url=https://163cfn.232885.xyz/163cfn/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1765410463
+  updated: 1765952319
   option:
     update_interval: 60
     allow_auto_update: true
@@ -265,7 +269,7 @@ items:
   file: RmNCzEs2xYTb.yaml
   desc: 88邮箱-cfnew项目-ops转换
   url: https://s.ops.ci/YdShjdL
-  updated: 1765410488
+  updated: 1765955504
   option:
     update_interval: 59
     allow_auto_update: true
@@ -305,7 +309,7 @@ items:
   file: Ry0fXYTU2GbC.yaml
   desc: 163邮箱-cfnew项目-ops转换
   url: https://s.ops.ci/bFJFfEd
-  updated: 1765410490
+  updated: 1765952324
   option:
     update_interval: 60
     allow_auto_update: true

@@ -1,7 +1,7 @@
 ﻿{
   "_Metadata": {
     "Description": "ImageGlass configuration file",
-    "Version": 9.3
+    "Version": 9.4
   },
   "EnableSlideshow": false,
   "HideMainWindowInSlideshow": true,
@@ -68,9 +68,10 @@
   "GalleryCacheSizeInMb": 400,
   "GalleryColumns": 3,
   "ImageBoosterCacheCount": 1,
+  "MinDimensionToUseWIC": 16000,
   "ImageBoosterCacheMaxDimension": 8000,
   "ImageBoosterCacheMaxFileSizeInMb": 100,
-  "ZoomLockValue": 100,
+  "ZoomLockValue": 80.89431,
   "ToolbarIconHeight": 18,
   "ImageEditQuality": 80,
   "InAppMessageDuration": 2000,
@@ -87,7 +88,7 @@
   "WindowBackdrop": "Mica",
   "ColorProfile": "None",
   "AutoUpdate": "2025-07-03T15:08:01.3763292Z",
-  "LastSeenImagePath": "C:\\Users\\Cing\\Desktop\\PixPin_2025-11-18_10-34-33.png",
+  "LastSeenImagePath": "E:\\Cing@Pic\\红楼梦 主要人物关系图.png",
   "LastOpenedSetting": "gallery",
   "DarkTheme": "Kobe",
   "LightTheme": "Kobe-Light",
@@ -96,7 +97,7 @@
   "Language": "Chinese Simplified.iglang.json",
   "ZoomLevels": [],
   "EditApps": {},
-  "FileFormats": ".3fr;.apng;.ari;.arw;.avif;.b64;.bay;.bmp;.cap;.cr2;.cr3;.crw;.cur;.cut;.dcr;.dcs;.dds;.dib;.dng;.drf;.eip;.emf;.erf;.exif;.exr;.fff;.fits;.flif;.gif;.gifv;.gpr;.hdp;.hdr;.heic;.heif;.ico;.iiq;.jfif;.jp2;.jpe;.jpeg;.jpg;.jxl;.jxr;.k25;.kdc;.mdc;.mef;.mjpeg;.mos;.mrw;.nef;.nrw;.obm;.orf;.pbm;.pcx;.pef;.pgm;.png;.ppm;.psb;.psd;.ptx;.pxn;.qoi;.r3d;.raf;.raw;.rw2;.rwl;.rwz;.sr2;.srf;.srw;.svg;.tga;.tif;.tiff;.viff;.wdp;.webp;.wmf;.wpg;.x3f;.xbm;.xpm;.xv;",
+  "FileFormats": ".3fr;.apng;.ari;.arw;.avif;.b64;.bay;.bmp;.cap;.cr2;.cr3;.crw;.cur;.cut;.dcr;.dcs;.dds;.dib;.dng;.drf;.eip;.emf;.erf;.exif;.exr;.fff;.fits;.flif;.gif;.gifv;.gpr;.hdp;.hdr;.heic;.heif;.ico;.iiq;.jfif;.jp2;.jpe;.jpeg;.jpg;.jxl;.jxr;.k25;.kdc;.mdc;.mef;.mjpeg;.mos;.mrw;.nef;.nrw;.obm;.orf;.pbm;.pcx;.pef;.pgm;.png;.ppm;.psb;.psd;.ptx;.pxn;.qoi;.r3d;.raf;.raw;.rw2;.rwl;.rwz;.sr2;.srf;.srw;.svg;.tga;.tif;.tiff;.viff;.wdp;.webp;.wmf;.wpg;.x3f;.xbm;.xpm;.xv;.hif;",
   "SingleFrameFormats": ".avif;.heic;.heif;.psd;.jxl;",
   "ImageInfoTags": [
     "Name",

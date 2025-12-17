@@ -27,31 +27,31 @@ proxies:
   - {name: cdn.tzpro.xyz-443-Trojan-WS-TLS, server: cdn.tzpro.xyz, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
   - {name: cf.877771.xyz-443-Trojan-WS-TLS, server: cf.877771.xyz, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
   - {name: xn--b6gac.eu.org-443-Trojan-WS-TLS, server: xn--b6gac.eu.org, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS, server: 104.16.45.135, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS 2, server: 104.21.239.204, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS 3, server: 172.67.159.28, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS 4, server: 104.18.63.161, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS 5, server: 104.18.37.187, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS, server: 104.17.63.202, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 2, server: 104.17.222.128, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 3, server: 104.16.14.7, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 4, server: 104.18.157.115, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 5, server: 104.16.174.42, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS, server: 172.64.149.55, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 2, server: 104.18.39.84, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 3, server: 104.18.47.58, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 4, server: 172.64.40.133, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 5, server: 172.64.157.70, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SIN-443-Trojan-WS-TLS, server: "[2606:4700:90cf::b68:1c65]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SIN-443-Trojan-WS-TLS 2, server: "[2606:4700:8dea::73e8:42d0]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SIN-443-Trojan-WS-TLS 3, server: "[2606:4700:976e::25f3:274f]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SIN-443-Trojan-WS-TLS 4, server: "[2606:4700:8def::40f1:6b29]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SIN-443-Trojan-WS-TLS 5, server: "[2606:4700:99ef::45ba:388e]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 6, server: "[2606:4700:4409::79c8:208b]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 7, server: "[2606:4700:4404::2b53:30d0]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 8, server: "[2606:4700:5c::d0f:3ca3]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 9, server: "[2606:4700:4403::3a3f:69d3]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 10, server: "[2606:4700:4402::16bf:27fc]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SEA-443-Trojan-WS-TLS, server: 104.18.77.242, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SEA-443-Trojan-WS-TLS 2, server: 104.21.239.100, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SEA-443-Trojan-WS-TLS 3, server: 104.19.174.1, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SEA-443-Trojan-WS-TLS 4, server: 172.67.158.51, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SEA-443-Trojan-WS-TLS 5, server: 104.17.237.221, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS, server: 104.18.206.196, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 2, server: 104.17.109.197, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 3, server: 104.18.175.59, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 4, server: 104.17.15.23, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 5, server: 104.18.110.63, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS, server: 104.18.41.66, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 2, server: 172.64.157.99, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 3, server: 104.18.43.141, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 4, server: 172.64.150.210, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 5, server: 172.64.38.157, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SEA-443-Trojan-WS-TLS 6, server: "[2606:4700:2d::3186:2332]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SJC-443-Trojan-WS-TLS, server: "[2606:4700:a9::6127:4e2c]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SEA-443-Trojan-WS-TLS 7, server: "[2606:4700:2d::155a:5a68]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SEA-443-Trojan-WS-TLS 8, server: "[2606:4700:3037::4da4:536d]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SEA-443-Trojan-WS-TLS 9, server: "[2606:4700:2f::2513:4bfd]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 6, server: "[2606:4700:440e::665f:1e19]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 7, server: "[2606:4700:4407::2e63:65ef]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 8, server: "[2606:4700:4408::3455:1159]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 9, server: "[2606:4700:440a::f63:73ca]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 10, server: "[2606:4700:4403::269:c1f]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -95,11 +95,11 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-SIN-443-Trojan-WS-TLS
-      - 移动-SIN-443-Trojan-WS-TLS 2
-      - 移动-SIN-443-Trojan-WS-TLS 3
-      - 移动-SIN-443-Trojan-WS-TLS 4
-      - 移动-SIN-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 6
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS 7
+      - 移动-SEA-443-Trojan-WS-TLS 8
+      - 移动-SEA-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
@@ -148,11 +148,11 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-SIN-443-Trojan-WS-TLS
-      - 移动-SIN-443-Trojan-WS-TLS 2
-      - 移动-SIN-443-Trojan-WS-TLS 3
-      - 移动-SIN-443-Trojan-WS-TLS 4
-      - 移动-SIN-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 6
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS 7
+      - 移动-SEA-443-Trojan-WS-TLS 8
+      - 移动-SEA-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
@@ -201,11 +201,11 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-SIN-443-Trojan-WS-TLS
-      - 移动-SIN-443-Trojan-WS-TLS 2
-      - 移动-SIN-443-Trojan-WS-TLS 3
-      - 移动-SIN-443-Trojan-WS-TLS 4
-      - 移动-SIN-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 6
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS 7
+      - 移动-SEA-443-Trojan-WS-TLS 8
+      - 移动-SEA-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
@@ -253,11 +253,11 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-SIN-443-Trojan-WS-TLS
-      - 移动-SIN-443-Trojan-WS-TLS 2
-      - 移动-SIN-443-Trojan-WS-TLS 3
-      - 移动-SIN-443-Trojan-WS-TLS 4
-      - 移动-SIN-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 6
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS 7
+      - 移动-SEA-443-Trojan-WS-TLS 8
+      - 移动-SEA-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
@@ -305,11 +305,11 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-SIN-443-Trojan-WS-TLS
-      - 移动-SIN-443-Trojan-WS-TLS 2
-      - 移动-SIN-443-Trojan-WS-TLS 3
-      - 移动-SIN-443-Trojan-WS-TLS 4
-      - 移动-SIN-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 6
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS 7
+      - 移动-SEA-443-Trojan-WS-TLS 8
+      - 移动-SEA-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
@@ -357,11 +357,11 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-SIN-443-Trojan-WS-TLS
-      - 移动-SIN-443-Trojan-WS-TLS 2
-      - 移动-SIN-443-Trojan-WS-TLS 3
-      - 移动-SIN-443-Trojan-WS-TLS 4
-      - 移动-SIN-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 6
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS 7
+      - 移动-SEA-443-Trojan-WS-TLS 8
+      - 移动-SEA-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
@@ -410,11 +410,11 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-SIN-443-Trojan-WS-TLS
-      - 移动-SIN-443-Trojan-WS-TLS 2
-      - 移动-SIN-443-Trojan-WS-TLS 3
-      - 移动-SIN-443-Trojan-WS-TLS 4
-      - 移动-SIN-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 6
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS 7
+      - 移动-SEA-443-Trojan-WS-TLS 8
+      - 移动-SEA-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
@@ -479,11 +479,11 @@ proxy-groups:
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-SIN-443-Trojan-WS-TLS
-      - 移动-SIN-443-Trojan-WS-TLS 2
-      - 移动-SIN-443-Trojan-WS-TLS 3
-      - 移动-SIN-443-Trojan-WS-TLS 4
-      - 移动-SIN-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 6
+      - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS 7
+      - 移动-SEA-443-Trojan-WS-TLS 8
+      - 移动-SEA-443-Trojan-WS-TLS 9
       - 电信-SIN-443-Trojan-WS-TLS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
