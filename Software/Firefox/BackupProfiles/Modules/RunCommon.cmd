@@ -1,4 +1,4 @@
-::2025.08.18
+::2025.12.20
 
 @echo off
 Title 批量启动程序
@@ -14,6 +14,12 @@ cd ..\..\..\Software
 :delete
 ::删除firefox配置文件夹误生成的cache2文件夹
 rd /s /q "%cd%\..\Profiles\FxProfiles\cache2"
+
+::删除docbox的缓存数据
+rd /s /q "C:\Users\%USERNAME%\AppData\Roaming\DocBox"
+
+::删除calibre的缓存数据
+rd /s /q "C:\Users\%USERNAME%\Calibre 书库\.caltrash"
 
 ::删除N_m3u8DL-RE下载失败的缓存和日志
 rd /s /q "%cd%\N_m3u8DL-RE\cache"

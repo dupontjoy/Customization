@@ -16,6 +16,13 @@ set "BackupDir=..\..\FxProfiles"
 set "softDir=E:\Cing@Soft"
 set "OutputDir=E:\My Documents\Nutstore\NutStoreSync"
 
+:delete_cache
+::删除docbox的缓存数据
+rd /s /q "C:\Users\%USERNAME%\AppData\Roaming\DocBox"
+
+::删除calibre的缓存数据
+rd /s /q "C:\Users\%USERNAME%\Calibre 书库\.caltrash"
+
 :abdm
 robocopy "C:\Users\Cing\.abdm\config" "%OutputDir%\Customization\Software\ABDM\config" /MIR /ZB /R:3 /W:5
 

@@ -1,9 +1,8 @@
 {
   "author": "文件作者",
   "description": "文件描述",
-  "id": 1761882220538041,
+  "id": 1766022160220603,
   "title": "文件标题",
-  "buildingType": 243,
   "planTimes": "3班",
   "plans": [
     {
@@ -391,8 +390,8 @@
         "order": "pre"
       },
       "drones": {
-        "room": "trading",
-        "index": 1,
+        "room": "manufacture",
+        "index": 3,
         "enable": true,
         "order": "post"
       },
@@ -538,7 +537,7 @@
             "skip": false,
             "operators": [
               "信仰搅拌机",
-              "红"
+              "谜图"
             ],
             "sort": false,
             "autofill": false
