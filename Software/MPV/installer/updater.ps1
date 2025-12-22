@@ -115,7 +115,7 @@ function Get-Latest-Mpv($Arch) {
     $filename = ""
     $download_link = ""
     $api_gh = "https://api.github.com/repos/zhongfly/mpv-winbuild/releases/latest"
-    $json = Invoke-WebRequest $api_gh -MaximumRedirection 0 -ErrorAction Ignore -UseBasicParsing | ConvertFrom-Json
+    $json = Invoke-WebRequest $api_gh -MaximumRedirection 0 -ErrorAction Ignore -UseBasicParsing -UserAgent $useragent | ConvertFrom-Json
     $filename = $json.assets | where { $_.name -Match "mpv-$Arch-[0-9]{8}" } | Select-Object -ExpandProperty name
     $download_link = $json.assets | where { $_.name -Match "mpv-$Arch-[0-9]{8}" } | Select-Object -ExpandProperty browser_download_url
     if ($filename -is [array]) {
@@ -159,7 +159,7 @@ function Get-Latest-Ytplugin ($plugin) {
 
 function Get-Latest-FFmpeg ($Arch) {
     $api_gh = "https://api.github.com/repos/zhongfly/mpv-winbuild/releases/latest"
-    $json = Invoke-WebRequest $api_gh -MaximumRedirection 0 -ErrorAction Ignore -UseBasicParsing | ConvertFrom-Json
+    $json = Invoke-WebRequest $api_gh -MaximumRedirection 0 -ErrorAction Ignore -UseBasicParsing -UserAgent $useragent | ConvertFrom-Json
     $filename = $json.assets | where { $_.name -Match "ffmpeg-$Arch-git-" } | Select-Object -ExpandProperty name
     $download_link = $json.assets | where { $_.name -Match "ffmpeg-$Arch-git-" } | Select-Object -ExpandProperty browser_download_url
     if ($filename -is [array]) {
@@ -224,6 +224,67 @@ function ExtractDateFromURL($filename) {
     $pattern = "mpv-[xi864_].*-([0-9]{8})-git-([a-z0-9-]{7})"
     $bool = $filename -match $pattern
     return $matches[1]
+}
+
+function Ensure-Deno([string]$Context = "update") {
+    $deno_exe = Join-Path (Get-Location) "deno.exe"
+    if (Test-Path $deno_exe) {
+        # Only fetch remote tag when Deno exists and we need to compare
+        $remote_name = (Invoke-WebRequest "https://dl.deno.land/release-latest.txt" -UseBasicParsing -UserAgent $useragent).Content.Trim()
+        try {
+            $current_version = (& $deno_exe --version | Select-String "deno" | Select-Object -First 1).ToString()
+            $pattern = "deno\s+(?<ver>[0-9a-zA-Z\.-]+)"
+            $m = [Regex]::Match($current_version, $pattern)
+            if ($m.Success) {
+                $current_tag = $m.Groups['ver'].Value
+                $latest_norm = $remote_name.TrimStart('v')
+                if ($current_tag -eq $latest_norm) {
+                    Write-Host "You are already using latest Deno -- $remote_name" -ForegroundColor Green
+                    return
+                }
+                else {
+                    Write-Host "Newer Deno build available" -ForegroundColor Green
+                }
+            }
+        }
+        catch {
+            Write-Host "Error checking current Deno version: $($_.Exception.Message)" -ForegroundColor Yellow
+        }
+        $upgradePrompt = "Upgrade local Deno to latest stable now? [Y/n] (default=y)"
+        $upgradeResp = Read-KeyOrTimeout $upgradePrompt "Y"
+        Write-Host ""
+        if ($upgradeResp -eq 'Y') {
+            & $deno_exe upgrade
+        }
+        return
+    }
+
+    # No local deno: only offer install during initial yt-dlp install flow
+    if ($Context -ne 'install') {
+        return
+    }
+    # Deno provides only x86_64 builds for Windows. Skip on 32-bit systems.
+    if (-Not (Test-Path (Join-Path $env:windir "SysWow64"))) {
+        Write-Host "Deno isn't available for 32-bit Windows (x86). Skipping." -ForegroundColor Yellow
+        return
+    }
+    # Fetch remote tag only if we are going to download
+    Write-Host "Deno is optional, but recommended for yt-dlp." -ForegroundColor Yellow
+    Write-Host "yt-dlp uses external JS runtimes (EJS) to solve YouTube challenges; Deno is the default recommended runtime." -ForegroundColor Yellow
+    Write-Host "You may skip this and configure Node, Bun, or QuickJS later (see: https://github.com/yt-dlp/yt-dlp/wiki/EJS)." -ForegroundColor Yellow
+    Write-Host ""
+    Write-Host "Deno doesn't exist. " -ForegroundColor Green -NoNewline
+    $resp = Read-KeyOrTimeout "Proceed with downloading Deno now? [Y/n] (default=y)" "Y"
+    Write-Host ""
+    if ($resp -ne 'Y') { return }
+    $remote_name = (Invoke-WebRequest "https://dl.deno.land/release-latest.txt" -UseBasicParsing -UserAgent $useragent).Content.Trim()
+    $download_link = "https://dl.deno.land/release/$remote_name/deno-x86_64-pc-windows-msvc.zip"
+    $archive = "deno-x86_64-pc-windows-msvc.zip"
+    Write-Host "Downloading Deno (stable) $remote_name" -ForegroundColor Green
+    Download-Archive $archive $download_link
+    Check-7z
+    Extract-Archive $archive
+    Check-Autodelete $archive
 }
 
 function Test-Admin
@@ -491,12 +552,17 @@ function Upgrade-Ytplugin {
         $latest_release = Get-Latest-Ytplugin((Get-Item $yt).BaseName)
         if ((& $yt --version) -match ($latest_release)) {
             Write-Host "You are already using latest" (Get-Item $yt).BaseName "-- $latest_release" -ForegroundColor Green
+            if ((Get-Item $yt).BaseName -Match "yt-dlp*") {
+                # Even if yt-dlp is up-to-date, ensure Deno runtime is updated
+                Ensure-Deno "update"
+            }
         }
         else {
             Write-Host "Newer" (Get-Item $yt).BaseName "build available" -ForegroundColor Green
             if ((Get-Item $yt).BaseName -Match "yt-dlp*") {
                 $ytdlp_channel = Check-Ytdlp-Channel
                 & $yt --update-to $ytdlp_channel
+                Ensure-Deno "update"
             }
             else {
                 & $yt --update
@@ -505,10 +571,12 @@ function Upgrade-Ytplugin {
     }
     else {
         Write-Host "ytdlp or youtube-dl doesn't exist. " -ForegroundColor Green -NoNewline
+        # Use persisted setting to decide which plugin to install
         $ytdl = Check-GetYTDL
         if ($ytdl -eq 'ytdlp') {
             $latest_release = Get-Latest-Ytplugin "yt-dlp"
             Download-Ytplugin "yt-dlp" $latest_release
+            Ensure-Deno "install"
         }
         elseif ($ytdl -eq 'youtubedl') {
             $latest_release = Get-Latest-Ytplugin "youtube-dl"

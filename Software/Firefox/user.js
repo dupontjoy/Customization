@@ -72,9 +72,6 @@ user_pref("security.insecure_field_warning.contextual.enabled", false);//未连�
 user_pref("security.certerrors.permanentOverride", false);//未连接：有潜在的安全问题
 user_pref("network.stricttransportsecurity.preloadlist", false);//未连接：有潜在的安全问题
 
-//缓存
-user_pref("browser.cache.disk.enable", false);//禁止硬盘缓存
-
 //*==========FX其它类==========*//
 //去除附加组中的"推荐扩展"
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);

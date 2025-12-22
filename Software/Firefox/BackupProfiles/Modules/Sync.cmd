@@ -63,6 +63,8 @@ robocopy "%BackupDir%\chrome" "%OutputDir%\Customization\Software\Firefox\chrome
 robocopy "%BackupDir%\..\BackupProfiles" "%OutputDir%\Customization\Software\Firefox\BackupProfiles" /MIR /ZB /R:3 /W:5
 
 :foobar
+robocopy "%BackupDir%\..\..\..\foobar2000\profile\foobox\config" "%OutputDir%\Customization\Software\foobar2000\profile\foobox\config" /MIR /ZB /R:3 /W:5
+robocopy "%BackupDir%\..\..\..\foobar2000\profile\playlists-v2.0" "%OutputDir%\Customization\Software\foobar2000\profile\playlists-v2.0" /MIR /ZB /R:3 /W:5
 xcopy "%BackupDir%\..\..\..\foobar2000\profile\config.sqlite" "%OutputDir%\Customization\Software\foobar2000\profile\" /y
 
 :GitExtensions

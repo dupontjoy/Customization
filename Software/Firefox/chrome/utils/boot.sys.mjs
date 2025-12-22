@@ -18,7 +18,18 @@ try {
 
     UserChrome_js.prototype = {
         observe: function (aSubject, aTopic, aData) {
-            aSubject.addEventListener('load', this, true);
+            // aSubject.addEventListener('load', this, true);
+            if (aSubject.document.isUncommittedInitialDocument) {
+                //Bug 543435
+                const parent = aSubject.parent;
+                aSubject.addEventListener("DOMContentLoaded", () => {
+                    //Library windowとかSidebrではDOMContentLoadedだと早すぎる
+                    parent.addEventListener("load", this, { once: true, capture: true })
+                }, { once: true })
+            } else {
+                //Library windowとかSidebrではDOMContentLoadedだと早すぎる
+                aSubject.addEventListener('load', this, { once: true, capture: true });
+            }
         },
 
         messageListener: function (msg) {
@@ -95,4 +106,9 @@ try {
 
 try {
     pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+    //Don't enable this! Very dangerous if set to "true".
+    lockPref("security.allow_eval_with_system_principal", false);
+    //Don't enable this! Very dangerous if set to "true".
+    //lockPref("security.allow_unsafe_dangerous_privileged_evil_eval", false);
+
 } catch (e) { }

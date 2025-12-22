@@ -27,31 +27,24 @@ proxies:
   - {name: cdn.tzpro.xyz-443-Trojan-WS-TLS, server: cdn.tzpro.xyz, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
   - {name: cf.877771.xyz-443-Trojan-WS-TLS, server: cf.877771.xyz, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
   - {name: xn--b6gac.eu.org-443-Trojan-WS-TLS, server: xn--b6gac.eu.org, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SJC-443-Trojan-WS-TLS, server: 104.17.95.26, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SJC-443-Trojan-WS-TLS 2, server: 104.27.30.61, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-LAX-443-Trojan-WS-TLS, server: 104.21.62.100, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS, server: 104.16.15.170, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-LAX-443-Trojan-WS-TLS 2, server: 172.67.126.7, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 联通-LAX-443-Trojan-WS-TLS, server: 104.24.93.86, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 联通-LAX-443-Trojan-WS-TLS 2, server: 172.64.40.140, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS, server: 104.18.141.67, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 联通-LAX-443-Trojan-WS-TLS 3, server: 172.66.1.137, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 2, server: 104.18.173.87, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS, server: 172.64.40.156, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 2, server: 104.18.46.224, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 3, server: 172.64.147.198, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 4, server: 172.64.154.234, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 5, server: 172.64.34.15, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-MAA-443-Trojan-WS-TLS, server: "[2606:4700:83b2::63b3:18d0]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-MAA-443-Trojan-WS-TLS 2, server: "[2606:4700:83b2::22a2:7f61]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS 2, server: "[2606:4700:2d::7d8a:596d]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-LAX-443-Trojan-WS-TLS 3, server: "[2606:4700:4402::3699:6b3e]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 移动-LAX-443-Trojan-WS-TLS 4, server: "[2606:4700:21::7f0d:333f]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 6, server: "[2606:4700:440d::39a7:617]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 7, server: "[2606:4700:4409::460d:74fc]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SJC-443-Trojan-WS-TLS, server: "[2606:4700:3110::2517:7bdc]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 8, server: "[2606:4700:4401::6ea9:161d]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 9, server: "[2606:4700:4409::195a:4fc7]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SEA-443-Trojan-WS-TLS, server: 104.17.253.190, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SJC-443-Trojan-WS-TLS, server: 104.21.79.42, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SJC-443-Trojan-WS-TLS 2, server: 104.16.189.81, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SJC-443-Trojan-WS-TLS 3, server: 104.17.14.84, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-LAX-443-Trojan-WS-TLS, server: 104.25.46.71, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 联通-LAX-443-Trojan-WS-TLS, server: 104.18.30.123, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 联通-LAX-443-Trojan-WS-TLS 2, server: 172.64.38.8, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 联通-LAX-443-Trojan-WS-TLS 3, server: 172.64.229.77, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 联通-LAX-443-Trojan-WS-TLS 4, server: 104.19.207.195, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 联通-LAX-443-Trojan-WS-TLS 5, server: 172.64.40.204, port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-LAX-443-Trojan-WS-TLS 2, server: "[2606:4700:7000::3f97:134e]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-LAX-443-Trojan-WS-TLS 3, server: "[2606:4700:49::f8a:40b4]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-LAX-443-Trojan-WS-TLS 4, server: "[2606:4700:3000::f75:1d2]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-LAX-443-Trojan-WS-TLS 5, server: "[2606:4700:3005::69f0:25ac]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 移动-SEA-443-Trojan-WS-TLS 2, server: "[2606:4700:3033::6cb6:38be]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS, server: "[2606:4700:4700::35dc:6e78]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 2, server: "[2606:4700:56::3a38:7bab]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
+  - {name: 电信-SJC-443-Trojan-WS-TLS, server: "[2606:4700:3055::1a0d:1295]", port: 443, type: trojan, password: 6b5988f6-952b-4a41-b57c-8573d40d3695, sni: dp88bj.dupontjoy.shop, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dp88bj.dupontjoy.shop}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -80,31 +73,24 @@ proxy-groups:
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 2
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-LAX-443-Trojan-WS-TLS 2
       - 联通-LAX-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 2
-      - 联通-SJC-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 3
-      - 联通-SJC-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS 3
-      - 电信-SIN-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-MAA-443-Trojan-WS-TLS
-      - 移动-MAA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 联通-LAX-443-Trojan-WS-TLS 4
+      - 联通-LAX-443-Trojan-WS-TLS 5
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-LAX-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
+      - 移动-LAX-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SJC-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -133,31 +119,24 @@ proxy-groups:
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 2
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-LAX-443-Trojan-WS-TLS 2
       - 联通-LAX-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 2
-      - 联通-SJC-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 3
-      - 联通-SJC-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS 3
-      - 电信-SIN-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-MAA-443-Trojan-WS-TLS
-      - 移动-MAA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 联通-LAX-443-Trojan-WS-TLS 4
+      - 联通-LAX-443-Trojan-WS-TLS 5
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-LAX-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
+      - 移动-LAX-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SJC-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -186,31 +165,24 @@ proxy-groups:
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 2
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-LAX-443-Trojan-WS-TLS 2
       - 联通-LAX-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 2
-      - 联通-SJC-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 3
-      - 联通-SJC-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS 3
-      - 电信-SIN-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-MAA-443-Trojan-WS-TLS
-      - 移动-MAA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 联通-LAX-443-Trojan-WS-TLS 4
+      - 联通-LAX-443-Trojan-WS-TLS 5
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-LAX-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
+      - 移动-LAX-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SJC-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
   - name: 📲 电报信息
     type: select
     proxies:
@@ -238,31 +210,24 @@ proxy-groups:
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 2
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-LAX-443-Trojan-WS-TLS 2
       - 联通-LAX-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 2
-      - 联通-SJC-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 3
-      - 联通-SJC-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS 3
-      - 电信-SIN-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-MAA-443-Trojan-WS-TLS
-      - 移动-MAA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 联通-LAX-443-Trojan-WS-TLS 4
+      - 联通-LAX-443-Trojan-WS-TLS 5
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-LAX-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
+      - 移动-LAX-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SJC-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -290,31 +255,24 @@ proxy-groups:
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 2
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-LAX-443-Trojan-WS-TLS 2
       - 联通-LAX-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 2
-      - 联通-SJC-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 3
-      - 联通-SJC-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS 3
-      - 电信-SIN-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-MAA-443-Trojan-WS-TLS
-      - 移动-MAA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 联通-LAX-443-Trojan-WS-TLS 4
+      - 联通-LAX-443-Trojan-WS-TLS 5
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-LAX-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
+      - 移动-LAX-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SJC-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -342,31 +300,24 @@ proxy-groups:
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 2
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-LAX-443-Trojan-WS-TLS 2
       - 联通-LAX-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 2
-      - 联通-SJC-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 3
-      - 联通-SJC-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS 3
-      - 电信-SIN-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-MAA-443-Trojan-WS-TLS
-      - 移动-MAA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 联通-LAX-443-Trojan-WS-TLS 4
+      - 联通-LAX-443-Trojan-WS-TLS 5
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-LAX-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
+      - 移动-LAX-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SJC-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -395,31 +346,24 @@ proxy-groups:
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 2
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-LAX-443-Trojan-WS-TLS 2
       - 联通-LAX-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 2
-      - 联通-SJC-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 3
-      - 联通-SJC-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS 3
-      - 电信-SIN-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-MAA-443-Trojan-WS-TLS
-      - 移动-MAA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 联通-LAX-443-Trojan-WS-TLS 4
+      - 联通-LAX-443-Trojan-WS-TLS 5
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-LAX-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
+      - 移动-LAX-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SJC-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -464,31 +408,24 @@ proxy-groups:
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 2
+      - 移动-SJC-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS
-      - 移动-SEA-443-Trojan-WS-TLS
-      - 移动-LAX-443-Trojan-WS-TLS 2
       - 联通-LAX-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 2
-      - 联通-SJC-443-Trojan-WS-TLS
       - 联通-LAX-443-Trojan-WS-TLS 3
-      - 联通-SJC-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 2
-      - 电信-SIN-443-Trojan-WS-TLS 3
-      - 电信-SIN-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-MAA-443-Trojan-WS-TLS
-      - 移动-MAA-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 联通-LAX-443-Trojan-WS-TLS 4
+      - 联通-LAX-443-Trojan-WS-TLS 5
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-LAX-443-Trojan-WS-TLS 3
       - 移动-LAX-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
+      - 移动-LAX-443-Trojan-WS-TLS 5
+      - 移动-SEA-443-Trojan-WS-TLS 2
+      - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SJC-443-Trojan-WS-TLS
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
