@@ -1013,9 +1013,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2025-12-05 23:21:36</EndDateTime>
-		<NextRunDateTime>2125-11-28 08:33:46</NextRunDateTime>
+		<NextRunDateTime>2125-12-03 18:35:03</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2025-12-22 08:33:46</LastRunTime>
+		<LastRunTime>2025-12-27 18:35:03</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1345,9 +1345,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 08:00:00</StartDateTime>
 		<EndDateTime>2025-11-23 07:02:24</EndDateTime>
-		<NextRunDateTime>2025-12-23 08:00:00</NextRunDateTime>
-		<NextRunTime>2025-12-23 08:00:00</NextRunTime>
-		<LastRunTime>2025-12-21 08:00:00</LastRunTime>
+		<NextRunDateTime>2025-12-28 08:00:00</NextRunDateTime>
+		<NextRunTime>2025-12-28 08:00:00</NextRunTime>
+		<LastRunTime>2025-12-26 08:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1552,9 +1552,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2024-12-26 23:00:00</StartDateTime>
 		<EndDateTime>2025-12-06 14:04:48</EndDateTime>
-		<NextRunDateTime>2025-12-22 23:00:00</NextRunDateTime>
-		<NextRunTime>2025-12-22 23:00:00</NextRunTime>
-		<LastRunTime>2025-12-19 23:00:00</LastRunTime>
+		<NextRunDateTime>2025-12-27 23:00:00</NextRunDateTime>
+		<NextRunTime>2025-12-27 23:00:00</NextRunTime>
+		<LastRunTime>2025-12-24 23:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1743,7 +1743,7 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 12:00:00</StartDateTime>
-		<EndDateTime>2025-11-30 01:08:16</EndDateTime>
+		<EndDateTime>2025-12-23 02:16:32</EndDateTime>
 		<NextRunDateTime>2025-12-28 12:00:00</NextRunDateTime>
 		<NextRunTime>2025-12-28 12:00:00</NextRunTime>
 		<LastRunTime>2025-12-21 12:00:00</LastRunTime>
@@ -2539,6 +2539,74 @@ env2=value2</edtAppEnv>
 				</Param>
 				<Name>更新LXmusicDesktop</Name>
 				<ID>44</ID>
+				<Stat>1</Stat>
+			</Tasker>
+			<Tasker>
+				<ID>76</ID>
+				<TaskType>ttExec</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<QukPhzStopped>0</QukPhzStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
+				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
+				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>7</Ver>
+				<Param>
+					<BackClr>-12500671</BackClr>
+					<IsExitRest>0</IsExitRest>
+					<IsPassExitRest>0</IsPassExitRest>
+					<Name>更新GitExtensions</Name>
+					<PlayTime>10</PlayTime>
+					<RestAlpha>0</RestAlpha>
+					<RestClr>-1</RestClr>
+					<RestMin>10</RestMin>
+					<RmdClr>-1</RmdClr>
+					<SnapFormat>png</SnapFormat>
+					<SnapSaveDay>10</SnapSaveDay>
+					<SnapSaveMode>optSaveAll</SnapSaveMode>
+					<SnapSaveNum>100</SnapSaveNum>
+					<TitleShow>运行程序</TitleShow>
+					<TypeShow>程序</TypeShow>
+					<chkAppAdmin>0</chkAppAdmin>
+					<chkAppClip>0</chkAppClip>
+					<chkAppEnv>0</chkAppEnv>
+					<chkAppVar>0</chkAppVar>
+					<chkExecWait>1</chkExecWait>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<chkQukPhz>0</chkQukPhz>
+					<cmbAppShowCmd>1</cmbAppShowCmd>
+					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
+					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
+					<cmbBackType_text>压缩</cmbBackType_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
+					<cmbHotkey>0</cmbHotkey>
+					<edtAppEnv>env1=value1
+env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
+					<edtAppPath>D:\Program Files\GitExtensions\updateGitExtensions.cmd</edtAppPath>
+					<edtAppVar>exec</edtAppVar>
+					<edtExecWaitTime>0</edtExecWaitTime>
+					<edtTaskName>更新LXmusicDesktop</edtTaskName>
+					<edtTaskSubName>更新GitExtensions</edtTaskSubName>
+					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
+					<optPlaySnd>0</optPlaySnd>
+					<optRmdSnd>0</optRmdSnd>
+					<optRptSnd>0</optRptSnd>
+					<tabBtnTask>1</tabBtnTask>
+				</Param>
+				<Name>更新GitExtensions</Name>
+				<ID>76</ID>
 				<Stat>1</Stat>
 			</Tasker>
 		</Actions>

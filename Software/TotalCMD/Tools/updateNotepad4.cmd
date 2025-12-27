@@ -110,7 +110,7 @@ setlocal enabledelayedexpansion
 ::先终止运行中的notepad4程序
 taskkill /f /t /im notepad4*
 
-::解压, 跳過压缩包的第一层目录(兼容无顶层目录的 ZIP 文件)
+::解压, 跳過压缩包的第一层目录
 set "zipfile=notepad4-latest.zip"
 set "tempdir=%cd%\unzip_temp"
 

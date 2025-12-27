@@ -7,42 +7,44 @@ external-controller: 127.0.0.1:9090
 proxies:
   - {name: 加入我的频道t.me/CMLiussss解锁更多优选节点, server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
   - {name: CFnat, server: 127.0.0.1, port: 1234, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: US, server: 38.49.45.29, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: DE, server: 94.131.109.36, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: SG, server: 91.192.81.154, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CH, server: 94.131.12.24, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: US 2, server: 62.60.176.122, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: DE 2, server: 94.228.162.91, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: FR, server: 94.228.162.192, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: GB, server: 84.8.145.58, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: US 3, server: 91.149.239.122, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: US 4, server: 45.56.83.116, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: NL, server: 77.110.102.75, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: NL 2, server: 89.35.131.5, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: NL 3, server: 95.179.189.0, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: US 5, server: 77.110.127.36, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: NL 4, server: 89.110.120.197, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: SE, server: 79.76.56.219, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: FI, server: 37.27.17.144, port: 22222, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: KR, server: 118.130.187.163, port: 50001, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: US 6, server: 38.247.8.232, port: 10101, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: KR 2, server: 119.65.139.101, port: 60001, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: KR 3, server: 116.93.199.28, port: 30012, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: KR 4, server: 116.36.163.131, port: 50001, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: KR 5, server: 61.247.94.91, port: 50001, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: JP, server: 217.142.250.195, port: 587, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF优选-电信, server: 8.39.125.242, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF优选-电信 2, server: 8.35.211.72, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF优选-电信 3, server: 173.245.59.243, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF优选-电信 4, server: 173.245.58.51, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF优选-联通, server: 172.67.78.47, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF优选-联通 2, server: 172.67.65.40, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF优选-联通 3, server: 104.26.15.104, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF优选-联通 4, server: 172.67.74.155, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF优选-移动, server: 162.159.152.228, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF优选-移动 2, server: 162.159.152.170, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF优选-移动 3, server: 104.19.40.171, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
-  - {name: CF优选-移动 4, server: 162.159.152.201, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: HK, server: 38.180.189.220, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: HK 2, server: 47.79.16.131, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: US, server: 67.205.141.228, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: GB, server: 57.128.176.82, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: FR, server: 94.23.167.32, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: DE, server: 94.131.111.203, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: DE 2, server: 87.251.87.36, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: NL, server: 89.110.78.173, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: GB 2, server: 57.129.137.61, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: US 2, server: 64.227.9.213, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: FR 2, server: 51.178.57.233, port: 2096, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: SE, server: 77.221.139.14, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: DE 3, server: 89.208.107.154, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: DE 4, server: 92.246.139.74, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: SE 2, server: 94.242.59.81, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: US 3, server: 207.246.92.49, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: FI, server: 91.108.241.188, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: NL 2, server: 89.110.120.197, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: KR, server: 115.91.235.58, port: 30019, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: KR 2, server: 116.36.163.131, port: 50001, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CA, server: 172.93.32.131, port: 23077, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: KR 3, server: 112.218.194.82, port: 50001, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: US 4, server: 45.77.0.161, port: 9443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: KR 4, server: 124.53.232.44, port: 50001, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: DE 5, server: 91.107.157.253, port: 20531, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: KR 5, server: 58.77.175.58, port: 27015, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF优选-电信, server: 198.41.223.130, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF优选-电信 2, server: 173.245.58.135, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF优选-电信 3, server: 198.41.223.183, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF优选-电信 4, server: 198.41.223.43, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF优选-联通, server: 172.67.77.119, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF优选-联通 2, server: 104.26.14.204, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF优选-联通 3, server: 172.67.79.200, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF优选-联通 4, server: 172.67.74.190, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF优选-移动, server: 162.159.153.197, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF优选-移动 2, server: 162.159.152.41, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF优选-移动 3, server: 104.19.49.237, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
+  - {name: CF优选-移动 4, server: 104.19.48.19, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: dp88.dupontjoy.shop, network: ws, ws-opts: {path: /, headers: {Host: dp88.dupontjoy.shop}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -53,30 +55,32 @@ proxy-groups:
       - DIRECT
       - 加入我的频道t.me/CMLiussss解锁更多优选节点
       - CFnat
+      - HK
+      - HK 2
       - US
-      - DE
-      - SG
-      - CH
-      - US 2
-      - DE 2
-      - FR
       - GB
-      - US 3
-      - US 4
+      - FR
+      - DE
+      - DE 2
       - NL
-      - NL 2
-      - NL 3
-      - US 5
-      - NL 4
+      - GB 2
+      - US 2
+      - FR 2
       - SE
+      - DE 3
+      - DE 4
+      - SE 2
+      - US 3
       - FI
+      - NL 2
       - KR
-      - US 6
       - KR 2
+      - CA
       - KR 3
+      - US 4
       - KR 4
+      - DE 5
       - KR 5
-      - JP
       - CF优选-电信
       - CF优选-电信 2
       - CF优选-电信 3
@@ -97,30 +101,32 @@ proxy-groups:
     proxies:
       - 加入我的频道t.me/CMLiussss解锁更多优选节点
       - CFnat
+      - HK
+      - HK 2
       - US
-      - DE
-      - SG
-      - CH
-      - US 2
-      - DE 2
-      - FR
       - GB
-      - US 3
-      - US 4
+      - FR
+      - DE
+      - DE 2
       - NL
-      - NL 2
-      - NL 3
-      - US 5
-      - NL 4
+      - GB 2
+      - US 2
+      - FR 2
       - SE
+      - DE 3
+      - DE 4
+      - SE 2
+      - US 3
       - FI
+      - NL 2
       - KR
-      - US 6
       - KR 2
+      - CA
       - KR 3
+      - US 4
       - KR 4
+      - DE 5
       - KR 5
-      - JP
       - CF优选-电信
       - CF优选-电信 2
       - CF优选-电信 3
@@ -140,30 +146,32 @@ proxy-groups:
     proxies:
       - 加入我的频道t.me/CMLiussss解锁更多优选节点
       - CFnat
+      - HK
+      - HK 2
       - US
-      - DE
-      - SG
-      - CH
-      - US 2
-      - DE 2
-      - FR
       - GB
-      - US 3
-      - US 4
+      - FR
+      - DE
+      - DE 2
       - NL
-      - NL 2
-      - NL 3
-      - US 5
-      - NL 4
+      - GB 2
+      - US 2
+      - FR 2
       - SE
+      - DE 3
+      - DE 4
+      - SE 2
+      - US 3
       - FI
+      - NL 2
       - KR
-      - US 6
       - KR 2
+      - CA
       - KR 3
+      - US 4
       - KR 4
+      - DE 5
       - KR 5
-      - JP
       - CF优选-电信
       - CF优选-电信 2
       - CF优选-电信 3
@@ -184,30 +192,32 @@ proxy-groups:
     proxies:
       - 加入我的频道t.me/CMLiussss解锁更多优选节点
       - CFnat
+      - HK
+      - HK 2
       - US
-      - DE
-      - SG
-      - CH
-      - US 2
-      - DE 2
-      - FR
       - GB
-      - US 3
-      - US 4
+      - FR
+      - DE
+      - DE 2
       - NL
-      - NL 2
-      - NL 3
-      - US 5
-      - NL 4
+      - GB 2
+      - US 2
+      - FR 2
       - SE
+      - DE 3
+      - DE 4
+      - SE 2
+      - US 3
       - FI
+      - NL 2
       - KR
-      - US 6
       - KR 2
+      - CA
       - KR 3
+      - US 4
       - KR 4
+      - DE 5
       - KR 5
-      - JP
       - CF优选-电信
       - CF优选-电信 2
       - CF优选-电信 3
@@ -241,30 +251,32 @@ proxy-groups:
       - 🔮 负载均衡
       - 加入我的频道t.me/CMLiussss解锁更多优选节点
       - CFnat
+      - HK
+      - HK 2
       - US
-      - DE
-      - SG
-      - CH
-      - US 2
-      - DE 2
-      - FR
       - GB
-      - US 3
-      - US 4
+      - FR
+      - DE
+      - DE 2
       - NL
-      - NL 2
-      - NL 3
-      - US 5
-      - NL 4
+      - GB 2
+      - US 2
+      - FR 2
       - SE
+      - DE 3
+      - DE 4
+      - SE 2
+      - US 3
       - FI
+      - NL 2
       - KR
-      - US 6
       - KR 2
+      - CA
       - KR 3
+      - US 4
       - KR 4
+      - DE 5
       - KR 5
-      - JP
       - CF优选-电信
       - CF优选-电信 2
       - CF优选-电信 3

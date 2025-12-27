@@ -109,7 +109,7 @@ goto :eof
 :unzip_imageglass
 setlocal enabledelayedexpansion
 
-:: 解压imageglass，跳过压缩包的第一层目录(兼容无顶层目录的ZIP文件)
+:: 解压imageglass，跳过压缩包的第一层目录
 set "zipfile=imageglass-latest.zip"
 set "tempdir=%cd%\unzip_temp"
 
