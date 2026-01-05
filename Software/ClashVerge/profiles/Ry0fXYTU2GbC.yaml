@@ -27,31 +27,26 @@ proxies:
   - {name: cdn.tzpro.xyz-443-Trojan-WS-TLS, server: cdn.tzpro.xyz, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
   - {name: cf.877771.xyz-443-Trojan-WS-TLS, server: cf.877771.xyz, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
   - {name: xn--b6gac.eu.org-443-Trojan-WS-TLS, server: xn--b6gac.eu.org, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SJC-443-Trojan-WS-TLS, server: 104.16.111.252, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SJC-443-Trojan-WS-TLS 2, server: 104.16.142.117, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SEA-443-Trojan-WS-TLS, server: 104.18.14.154, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SJC-443-Trojan-WS-TLS 3, server: 104.18.254.56, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-SJC-443-Trojan-WS-TLS 4, server: 104.18.109.12, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS, server: 104.17.94.11, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 2, server: 104.16.30.222, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 3, server: 104.16.207.232, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 4, server: 104.17.206.46, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 5, server: 104.16.221.117, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS, server: 172.64.146.108, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 2, server: 172.64.149.158, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 3, server: 172.64.38.138, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 4, server: 172.64.156.245, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 5, server: 172.64.145.22, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-CDG-443-Trojan-WS-TLS, server: "[2606:4700:8d96::3d1b:39af]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-CDG-443-Trojan-WS-TLS 2, server: "[2606:4700:8dde::6869:19c7]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-MRS-443-Trojan-WS-TLS, server: "[2606:4700:8d91::4de0:1a18]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-CDG-443-Trojan-WS-TLS 3, server: "[2606:4700:8d9d::585:4845]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-CDG-443-Trojan-WS-TLS 4, server: "[2606:4700:8de6::7653:1567]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 6, server: "[2606:4700:4400::6b2b:ca8]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 7, server: "[2606:4700:440a::25a9:bad]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 8, server: "[2606:4700:4407::245e:2113]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 9, server: "[2606:4700:4402::2dd3:3206]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 10, server: "[2606:4700:440d::ac2:1161]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SJC-443-Trojan-WS-TLS, server: 104.16.207.124, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-LAX-443-Trojan-WS-TLS, server: 172.64.69.50, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-LAX-443-Trojan-WS-TLS 2, server: 104.20.46.109, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SJC-443-Trojan-WS-TLS 2, server: 104.21.77.29, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-SJC-443-Trojan-WS-TLS 3, server: 104.21.94.201, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS, server: 104.16.31.42, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 2, server: 104.17.238.58, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 3, server: 104.16.143.89, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 4, server: 104.16.127.5, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 5, server: 104.17.111.239, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-MAA-443-Trojan-WS-TLS, server: "[2606:4700:83b0::2c8a:66da]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-MAA-443-Trojan-WS-TLS 2, server: "[2606:4700:83b7::46c2:9ff]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-MAA-443-Trojan-WS-TLS 3, server: "[2606:4700:83b5::4bed:6d73]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-MAA-443-Trojan-WS-TLS 4, server: "[2606:4700:83b2::5e4b:8df]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-MAA-443-Trojan-WS-TLS 5, server: "[2606:4700:83bb::7a42:726c]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS, server: "[2606:4700:4407::4a88:6ccb]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 2, server: "[2606:4700:4404::2216:3e04]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 3, server: "[2606:4700:4400::4479:9dc]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 4, server: "[2606:4700:4405::764f:52d4]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 5, server: "[2606:4700:4403::3050:26d4]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -81,30 +76,25 @@ proxy-groups:
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-SJC-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 3
-      - 移动-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-CDG-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 2
-      - 移动-MRS-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 3
-      - 移动-CDG-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
-      - 电信-SIN-443-Trojan-WS-TLS 10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -134,30 +124,25 @@ proxy-groups:
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-SJC-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 3
-      - 移动-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-CDG-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 2
-      - 移动-MRS-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 3
-      - 移动-CDG-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
-      - 电信-SIN-443-Trojan-WS-TLS 10
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -187,30 +172,25 @@ proxy-groups:
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-SJC-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 3
-      - 移动-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-CDG-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 2
-      - 移动-MRS-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 3
-      - 移动-CDG-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
-      - 电信-SIN-443-Trojan-WS-TLS 10
   - name: 📲 电报信息
     type: select
     proxies:
@@ -239,30 +219,25 @@ proxy-groups:
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-SJC-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 3
-      - 移动-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-CDG-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 2
-      - 移动-MRS-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 3
-      - 移动-CDG-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
-      - 电信-SIN-443-Trojan-WS-TLS 10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -291,30 +266,25 @@ proxy-groups:
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-SJC-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 3
-      - 移动-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-CDG-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 2
-      - 移动-MRS-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 3
-      - 移动-CDG-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
-      - 电信-SIN-443-Trojan-WS-TLS 10
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -343,30 +313,25 @@ proxy-groups:
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-SJC-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 3
-      - 移动-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-CDG-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 2
-      - 移动-MRS-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 3
-      - 移动-CDG-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
-      - 电信-SIN-443-Trojan-WS-TLS 10
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -396,30 +361,25 @@ proxy-groups:
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-SJC-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 3
-      - 移动-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-CDG-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 2
-      - 移动-MRS-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 3
-      - 移动-CDG-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
-      - 电信-SIN-443-Trojan-WS-TLS 10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -465,30 +425,25 @@ proxy-groups:
       - cf.877771.xyz-443-Trojan-WS-TLS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS
+      - 移动-LAX-443-Trojan-WS-TLS 2
       - 移动-SJC-443-Trojan-WS-TLS 2
-      - 移动-SEA-443-Trojan-WS-TLS
       - 移动-SJC-443-Trojan-WS-TLS 3
-      - 移动-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS
       - 联通-SJC-443-Trojan-WS-TLS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-443-Trojan-WS-TLS 5
       - 电信-SIN-443-Trojan-WS-TLS
       - 电信-SIN-443-Trojan-WS-TLS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
-      - 移动-CDG-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 2
-      - 移动-MRS-443-Trojan-WS-TLS
-      - 移动-CDG-443-Trojan-WS-TLS 3
-      - 移动-CDG-443-Trojan-WS-TLS 4
-      - 电信-SIN-443-Trojan-WS-TLS 6
-      - 电信-SIN-443-Trojan-WS-TLS 7
-      - 电信-SIN-443-Trojan-WS-TLS 8
-      - 电信-SIN-443-Trojan-WS-TLS 9
-      - 电信-SIN-443-Trojan-WS-TLS 10
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连

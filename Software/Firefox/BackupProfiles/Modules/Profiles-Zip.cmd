@@ -48,10 +48,7 @@ move /Y "%TargetFolder%\!Name!" "%TargetFolder1%\!Name!" >nul 2>&1
 
 :: 清理临时文件夹
 :end
-if exist "%TempFolder%" (
-    rd /s /q "%TempFolder%" 2>nul
-    echo 临时文件夹已清理
-)
+rd /s /q "%TempFolder%"
 
 @echo 備份完成！保留最近%keep%個版本，新包位置: "%TargetFolder1%\!Name!"
 endlocal

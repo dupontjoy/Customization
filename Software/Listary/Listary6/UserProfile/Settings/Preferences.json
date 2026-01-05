@@ -295,6 +295,21 @@
             "SuggestionProvider": "Custom",
             "SuggestionUrl": "https://xwnewtv.232885.xyz/search?q={query}"
           }
+        },
+        {
+          "Index": -1,
+          "Info": null,
+          "Item": {
+            "Keyword": "tvp",
+            "Url": "https://moontvp.232885.xyz/search?q={query}",
+            "Title": "moontvp",
+            "Icon": {
+              "Path": "{user}\\72f9ec93-ffc8-4421-a1aa-589544216f32.png",
+              "TypeName": "Path"
+            },
+            "SuggestionProvider": "Custom",
+            "SuggestionUrl": "https://moontvp.232885.xyz/search?q={query}"
+          }
         }
       ],
       "Updates": [

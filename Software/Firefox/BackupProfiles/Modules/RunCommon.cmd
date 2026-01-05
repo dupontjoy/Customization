@@ -38,16 +38,6 @@ rd /s /q "%cd%\..\..\Tencent\Foxmail\FoxmailUpdate"
 ::清空文件夹，但不会删除文件夹本身
 del /s /q /f "C:\Users\%USERNAME%\Downloads\*"
 
-:run
-::普通啟動，start 会启动一个新窗口并在其中运行命令
-start "" "%cd%\RimeIMEPortable\weasel\WeaselServer.exe"
-start "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
-start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
-start "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
-start "" "%cd%\Ditto\Ditto.exe"
-start "" "%cd%\PixPin\PixPin.exe"
-::start "" "%cd%\Snipaste\Snipaste.exe"
-
 :listary
 ::Listary5代
 ::start  "" "%cd%\Listary5\UserData\Runlistary5.cmd"
@@ -56,6 +46,17 @@ start "" "%cd%\PixPin\PixPin.exe"
 ::需要获取完整路径才行
 set "listary6_dir=%cd%\Listary6"
 start "" /D "%listary6_dir%" "%listary6_dir%\UserProfile\Settings\RunListary6.cmd"
+
+:run
+::普通啟動，start 会启动一个新窗口并在其中运行命令
+start "" "%cd%\RimeIMEPortable\weasel\WeaselServer.exe"
+start "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
+start "" "%cd%\WINtp\wInstall.bat"
+start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
+start "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
+start "" "%cd%\Ditto\Ditto.exe"
+start "" "%cd%\PixPin\PixPin.exe"
+::start "" "%cd%\Snipaste\Snipaste.exe"
 
 :capslock
 ::需要获取完整路径才行

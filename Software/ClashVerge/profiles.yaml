@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RUkEKBpwWGFO
+current: R6dfsAL7TSgZ
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1766908818
+  updated: 1767561490
   option:
     with_proxy: false
     self_proxy: false
@@ -89,11 +89,11 @@ items:
   - name: 🚀 节点选择
     now: ♻️ 自动选择
   extra:
-    upload: 4125557751301
-    download: 4125557751301
+    upload: 11436712674693
+    download: 11436712674693
     total: 26388279066624
     expire: 4102329600
-  updated: 1766907019
+  updated: 1767559693
   option:
     with_proxy: false
     self_proxy: false
@@ -142,11 +142,11 @@ items:
   - name: 🚀 节点选择
     now: bestcf.030101.xyz
   extra:
-    upload: 4125899821585
-    download: 4125899821585
+    upload: 11436413668615
+    download: 11436413668615
     total: 26388279066624
     expire: 4102329600
-  updated: 1766907022
+  updated: 1767559693
   option:
     with_proxy: false
     self_proxy: false
@@ -189,7 +189,7 @@ items:
   file: RUkEKBpwWGFO.yaml
   desc: 88邮箱-cfnew项目
   url: https://api.asailor.org/sub?target=clash&url=https://dp88bj.dupontjoy.shop/dp88bj/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1766899819
+  updated: 1767556090
   option:
     update_interval: 60
     allow_auto_update: true
@@ -229,7 +229,7 @@ items:
   file: RZMwOHf9XhCv.yaml
   desc: 163邮箱-cfnew项目
   url: https://api.asailor.org/sub?target=clash&url=https://163cfn.232885.xyz/163cfn/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1766907020
+  updated: 1767559690
   option:
     update_interval: 60
     allow_auto_update: true
@@ -272,7 +272,7 @@ items:
   selected:
   - name: ♻️ 自动选择
     now: cf.090227.xyz-443-Trojan-WS-TLS
-  updated: 1766906548
+  updated: 1767562574
   option:
     update_interval: 59
     allow_auto_update: true
@@ -312,7 +312,7 @@ items:
   file: Ry0fXYTU2GbC.yaml
   desc: 163邮箱-cfnew项目-ops转换
   url: https://s.ops.ci/bFJFfEd
-  updated: 1766907033
+  updated: 1767559694
   option:
     update_interval: 60
     allow_auto_update: true
