@@ -15,6 +15,7 @@
 | <kbd>W</kbd> <kbd>R</kbd> | 向后/向前删除 |
 | <kbd>[</kbd> <kbd>/</kbd> | 删除至行首/行尾 |
 | <kbd>Backspace</kbd> | 删除当前行 |
+| <kbd>Enter</kbd> | 直接换行，向下插一行 |
 | | |
 | <kbd>F1</kbd> | 打开说明文档 |
 | <kbd>F2</kbd> | 单出计算板窗口 |

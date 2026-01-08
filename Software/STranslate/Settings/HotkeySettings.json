@@ -1,0 +1,62 @@
+{
+  "OpenWindowHotkey": {
+    "Key": "Alt + G"
+  },
+  "InputTranslateHotkey": {
+    "Key": "None"
+  },
+  "CrosswordTranslateHotkey": {
+    "Key": "Alt + F"
+  },
+  "ScreenshotTranslateHotkey": {
+    "Key": "Alt + S"
+  },
+  "ReplaceTranslateHotkey": {
+    "Key": "None"
+  },
+  "MouseHookTranslateHotkey": {
+    "Key": "None"
+  },
+  "SilentOcrHotkey": {
+    "Key": "None"
+  },
+  "SilentTtsHotkey": {
+    "Key": "None"
+  },
+  "OcrHotkey": {
+    "Key": "Alt + Shift + S"
+  },
+  "OpenSettingsHotkey": {
+    "Key": "Ctrl + OemComma"
+  },
+  "OpenHistoryHotkey": {
+    "Key": "Ctrl + OemQuestion"
+  },
+  "HideInputHotkey": {
+    "Key": "Ctrl + Shift + A"
+  },
+  "ToggleColorThemeHotkey": {
+    "Key": "Ctrl + Shift + R"
+  },
+  "ToggleTopmostHotkey": {
+    "Key": "Ctrl + Shift + T"
+  },
+  "SaveToVocabularyHotkey": {
+    "Key": "Ctrl + Shift + S"
+  },
+  "HistoryNavigePreviousHotkey": {
+    "Key": "Ctrl + P"
+  },
+  "HistoryNavigeNextHotkey": {
+    "Key": "Ctrl + N"
+  },
+  "ReExecuteOcrHotkey": {
+    "Key": "Ctrl + R"
+  },
+  "QrCodeHotkey": {
+    "Key": "Ctrl + Shift + R"
+  },
+  "SwitchImageHotkey": {
+    "Key": "Ctrl + OemQuestion"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "ReplaceSvcID": "",
+  "ImageTranslateSvcID": "",
+  "TranSvcDatas": [
+    {
+      "SvcID": "4b08deb4d9b74d3fb5783589814e099e",
+      "Name": "Yandex（内置）",
+      "IsEnabled": true,
+      "Options": null
+    },
+    {
+      "SvcID": "ff6eff1683f84cf19e2714f0cddd483a",
+      "Name": "微软翻译（内置）",
+      "IsEnabled": true,
+      "Options": null
+    },
+    {
+      "SvcID": "2ffae73045664f99a057b249c3058d4e",
+      "Name": "腾讯交互式翻译（内置）",
+      "IsEnabled": true,
+      "Options": null
+    },
+    {
+      "SvcID": "1e8ec29617ad41d0a504759efba9d608",
+      "Name": "谷歌翻译（内置）",
+      "IsEnabled": true,
+      "Options": null
+    },
+    {
+      "SvcID": "ac968496f9394133945ee6d2462b8b08",
+      "Name": "金山词霸（内置）",
+      "IsEnabled": true,
+      "Options": null
+    }
+  ],
+  "TtsSvcDatas": [
+    {
+      "SvcID": "c833dd3273494d99b3744db2fe3c5b3b",
+      "Name": "Edge TTS",
+      "IsEnabled": false,
+      "Options": null
+    }
+  ],
+  "OcrSvcDatas": [
+    {
+      "SvcID": "eaf00dfeb0614bc795b3e46ad910428d",
+      "Name": "微信OCR (内置)",
+      "IsEnabled": true,
+      "Options": null
+    }
+  ],
+  "VocabularySvcDatas": []
+}

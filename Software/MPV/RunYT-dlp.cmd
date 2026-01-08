@@ -47,7 +47,7 @@ if "!res!"=="" (
 ::设置代理
 :set_proxy
 set "px="
-set /p "px=是否启用代理（y或空）： "
+set /p "px=是否启用代理7897（y或空）： "
 if "!px!"=="" (
     set "format_px="
 ) else (

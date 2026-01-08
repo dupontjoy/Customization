@@ -146,6 +146,8 @@ xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%OutputDir%\Customizatio
 :steamcommunity_302
 xcopy "%BackupDir%\..\..\Software\steamcommunity_302\S302.ini" "%OutputDir%\Customization\Software\steamcommunity_302\" /y
 
+:stranslate
+robocopy "%BackupDir%\..\..\..\STranslate-win-Portable\current\PortableConfig\Settings" "%OutputDir%\Customization\Software\STranslate\Settings" /MIR /ZB /R:3 /W:5
 
 :tc
 ::Ç‰∑›Total Commander‘O÷√
