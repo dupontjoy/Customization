@@ -21,10 +21,6 @@ rd /s /q "C:\Users\%USERNAME%\AppData\Roaming\DocBox"
 ::删除calibre的缓存数据
 rd /s /q "C:\Users\%USERNAME%\Calibre 书库\.caltrash"
 
-::删除N_m3u8DL-RE下载失败的缓存和日志
-rd /s /q "%cd%\N_m3u8DL-RE\cache"
-rd /s /q "%cd%\N_m3u8DL-RE\Logs"
-
 ::删除ztasker User文件夹中的无用文件
 rd /s /q "%cd%\zTasker\User\Backup"
 rd /s /q "%cd%\zTasker\User\Custom"

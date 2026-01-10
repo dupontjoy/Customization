@@ -23,6 +23,10 @@ rd /s /q "C:\Users\%USERNAME%\AppData\Roaming\DocBox"
 ::删除calibre的缓存数据
 rd /s /q "C:\Users\%USERNAME%\Calibre 书库\.caltrash"
 
+::删除N_m3u8DL-RE下载失败的缓存和日志
+rd /s /q "%BackupDir%\..\..\Software\N_m3u8DL-RE\cache"
+rd /s /q "%BackupDir%\..\..\Software\N_m3u8DL-RE\Logs"
+
 :abdm
 robocopy "C:\Users\Cing\.abdm\config" "%OutputDir%\Customization\Software\ABDM\config" /MIR /ZB /R:3 /W:5
 
