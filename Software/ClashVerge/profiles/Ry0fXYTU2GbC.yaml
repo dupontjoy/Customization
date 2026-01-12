@@ -6,52 +6,99 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 原生地址-443-Trojan-WS-TLS, server: 163cfn.232885.xyz, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 原生地址-80-Trojan-WS, server: 163cfn.232885.xyz, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cloudflare.182682.xyz-443-Trojan-WS-TLS, server: cloudflare.182682.xyz, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cloudflare.182682.xyz-80-Trojan-WS, server: cloudflare.182682.xyz, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: speed.marisalnc.com-443-Trojan-WS-TLS, server: speed.marisalnc.com, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: speed.marisalnc.com-80-Trojan-WS, server: speed.marisalnc.com, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: freeyx.cloudflare88.eu.org-443-Trojan-WS-TLS, server: freeyx.cloudflare88.eu.org, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: freeyx.cloudflare88.eu.org-80-Trojan-WS, server: freeyx.cloudflare88.eu.org, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: bestcf.top-443-Trojan-WS-TLS, server: bestcf.top, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: bestcf.top-80-Trojan-WS, server: bestcf.top, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cdn.2020111.xyz-443-Trojan-WS-TLS, server: cdn.2020111.xyz, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cdn.2020111.xyz-80-Trojan-WS, server: cdn.2020111.xyz, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cfip.cfcdn.vip-443-Trojan-WS-TLS, server: cfip.cfcdn.vip, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cfip.cfcdn.vip-80-Trojan-WS, server: cfip.cfcdn.vip, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cf.0sm.com-443-Trojan-WS-TLS, server: cf.0sm.com, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cf.0sm.com-80-Trojan-WS, server: cf.0sm.com, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cf.090227.xyz-443-Trojan-WS-TLS, server: cf.090227.xyz, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cf.090227.xyz-80-Trojan-WS, server: cf.090227.xyz, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cf.zhetengsha.eu.org-443-Trojan-WS-TLS, server: cf.zhetengsha.eu.org, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cf.zhetengsha.eu.org-80-Trojan-WS, server: cf.zhetengsha.eu.org, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cloudflare.9jy.cc-443-Trojan-WS-TLS, server: cloudflare.9jy.cc, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cloudflare.9jy.cc-80-Trojan-WS, server: cloudflare.9jy.cc, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cf.zerone-cdn.pp.ua-443-Trojan-WS-TLS, server: cf.zerone-cdn.pp.ua, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cf.zerone-cdn.pp.ua-80-Trojan-WS, server: cf.zerone-cdn.pp.ua, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cfip.1323123.xyz-443-Trojan-WS-TLS, server: cfip.1323123.xyz, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cfip.1323123.xyz-80-Trojan-WS, server: cfip.1323123.xyz, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS, server: cnamefuckxxs.yuchen.icu, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cnamefuckxxs.yuchen.icu-80-Trojan-WS, server: cnamefuckxxs.yuchen.icu, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS, server: cloudflare-ip.mofashi.ltd, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cloudflare-ip.mofashi.ltd-80-Trojan-WS, server: cloudflare-ip.mofashi.ltd, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: 115155.xyz-443-Trojan-WS-TLS, server: 115155.xyz, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 115155.xyz-80-Trojan-WS, server: 115155.xyz, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: 🇺🇸 cname.xirancdn.us-443-Trojan-WS-TLS, server: cname.xirancdn.us, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 🇺🇸 cname.xirancdn.us-80-Trojan-WS, server: cname.xirancdn.us, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: f3058171cad.002404.xyz-443-Trojan-WS-TLS, server: f3058171cad.002404.xyz, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: f3058171cad.002404.xyz-80-Trojan-WS, server: f3058171cad.002404.xyz, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: 8.889288.xyz-443-Trojan-WS-TLS, server: 8.889288.xyz, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 8.889288.xyz-80-Trojan-WS, server: 8.889288.xyz, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cdn.tzpro.xyz-443-Trojan-WS-TLS, server: cdn.tzpro.xyz, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cdn.tzpro.xyz-80-Trojan-WS, server: cdn.tzpro.xyz, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: cf.877771.xyz-443-Trojan-WS-TLS, server: cf.877771.xyz, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: cf.877771.xyz-80-Trojan-WS, server: cf.877771.xyz, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
   - {name: xn--b6gac.eu.org-443-Trojan-WS-TLS, server: xn--b6gac.eu.org, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-LHR-443-Trojan-WS-TLS, server: 104.19.237.124, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-LHR-443-Trojan-WS-TLS 2, server: 104.18.126.244, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-LHR-443-Trojan-WS-TLS 3, server: 104.18.30.187, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-LHR-443-Trojan-WS-TLS 4, server: 104.18.34.74, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-LHR-443-Trojan-WS-TLS 5, server: 104.18.31.158, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS, server: 104.17.109.153, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 2, server: 104.19.191.166, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 3, server: 104.17.254.114, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 4, server: 104.18.142.136, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 联通-SJC-443-Trojan-WS-TLS 5, server: 104.17.173.98, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS, server: 172.64.38.80, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 2, server: 172.64.149.153, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 3, server: 104.18.47.42, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 4, server: 104.18.32.94, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 5, server: 104.18.46.108, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-MAA-443-Trojan-WS-TLS, server: "[2606:4700:83b0::3e87:cc1]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-MAA-443-Trojan-WS-TLS 2, server: "[2606:4700:83ba::286:2a3a]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-MAA-443-Trojan-WS-TLS 3, server: "[2606:4700:83b9::1fd4:73f6]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-MAA-443-Trojan-WS-TLS 4, server: "[2606:4700:83ba::554b:2a4c]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 移动-MAA-443-Trojan-WS-TLS 5, server: "[2606:4700:83b5::7b4b:399b]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 6, server: "[2606:4700:440a::23bc:1c04]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 7, server: "[2606:4700:4406::26d3:6f84]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 8, server: "[2606:4700:4407::5fa9:70da]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 9, server: "[2606:4700:5c::5a50:427]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
-  - {name: 电信-SIN-443-Trojan-WS-TLS 10, server: "[2606:4700:440a::7354:58e1]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: xn--b6gac.eu.org-80-Trojan-WS, server: xn--b6gac.eu.org, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 移动-LHR-443-Trojan-WS-TLS, server: 104.19.239.228, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-LHR-80-Trojan-WS, server: 104.19.239.228, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 移动-LHR-443-Trojan-WS-TLS 2, server: 104.18.127.172, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-LHR-80-Trojan-WS 2, server: 104.18.127.172, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 移动-LHR-443-Trojan-WS-TLS 3, server: 104.18.127.110, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-LHR-80-Trojan-WS 3, server: 104.18.127.110, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 移动-LHR-443-Trojan-WS-TLS 4, server: 104.18.34.204, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-LHR-80-Trojan-WS 4, server: 104.18.34.204, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 移动-LHR-443-Trojan-WS-TLS 5, server: 104.18.29.5, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-LHR-80-Trojan-WS 5, server: 104.18.29.5, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS, server: 104.19.173.175, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-80-Trojan-WS, server: 104.19.173.175, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 2, server: 104.17.207.47, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-80-Trojan-WS 2, server: 104.17.207.47, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 3, server: 104.17.111.171, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-80-Trojan-WS 3, server: 104.17.111.171, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 4, server: 104.18.78.1, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-80-Trojan-WS 4, server: 104.18.78.1, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 联通-SJC-443-Trojan-WS-TLS 5, server: 104.17.159.28, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 联通-SJC-80-Trojan-WS 5, server: 104.17.159.28, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS, server: 172.64.34.199, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-80-Trojan-WS, server: 172.64.34.199, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 2, server: 172.64.147.211, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-80-Trojan-WS 2, server: 172.64.147.211, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 3, server: 172.64.159.112, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-80-Trojan-WS 3, server: 172.64.159.112, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 4, server: 104.18.43.147, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-80-Trojan-WS 4, server: 104.18.43.147, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 5, server: 172.64.35.7, port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-80-Trojan-WS 5, server: 172.64.35.7, port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 移动-MAA-443-Trojan-WS-TLS, server: "[2606:4700:83b3::287b:7f52]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-MAA-80-Trojan-WS, server: "[2606:4700:83b3::287b:7f52]", port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 移动-MAA-443-Trojan-WS-TLS 2, server: "[2606:4700:83ba::42ed:1661]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-MAA-80-Trojan-WS 2, server: "[2606:4700:83ba::42ed:1661]", port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 移动-MAA-443-Trojan-WS-TLS 3, server: "[2606:4700:83bb::ba7:68ce]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-MAA-80-Trojan-WS 3, server: "[2606:4700:83bb::ba7:68ce]", port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 移动-MAA-443-Trojan-WS-TLS 4, server: "[2606:4700:83bb::58f7:3f72]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-MAA-80-Trojan-WS 4, server: "[2606:4700:83bb::58f7:3f72]", port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 移动-MAA-443-Trojan-WS-TLS 5, server: "[2606:4700:83bb::e62:6363]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 移动-MAA-80-Trojan-WS 5, server: "[2606:4700:83bb::e62:6363]", port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 6, server: "[2606:4700:4406::3123:5574]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-80-Trojan-WS 6, server: "[2606:4700:4406::3123:5574]", port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 7, server: "[2606:4700:4400::6ba7:4e10]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-80-Trojan-WS 7, server: "[2606:4700:4400::6ba7:4e10]", port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 8, server: "[2606:4700:4405::183d:1ab2]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-80-Trojan-WS 8, server: "[2606:4700:4405::183d:1ab2]", port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 9, server: "[2606:4700:440a::5f67:1aa6]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-80-Trojan-WS 9, server: "[2606:4700:440a::5f67:1aa6]", port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 电信-SIN-443-Trojan-WS-TLS 10, server: "[2606:4700:440d::1f75:6436]", port: 443, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, sni: 163cfn.232885.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}}
+  - {name: 电信-SIN-80-Trojan-WS 10, server: "[2606:4700:440d::1f75:6436]", port: 80, type: trojan, password: f5b3178d-7b9a-4f7b-b88e-eb3ff488a537, network: ws, ws-opts: {path: "/?ed=2048"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -59,52 +106,99 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 原生地址-443-Trojan-WS-TLS
+      - 原生地址-80-Trojan-WS
       - cloudflare.182682.xyz-443-Trojan-WS-TLS
+      - cloudflare.182682.xyz-80-Trojan-WS
       - speed.marisalnc.com-443-Trojan-WS-TLS
+      - speed.marisalnc.com-80-Trojan-WS
       - freeyx.cloudflare88.eu.org-443-Trojan-WS-TLS
+      - freeyx.cloudflare88.eu.org-80-Trojan-WS
       - bestcf.top-443-Trojan-WS-TLS
+      - bestcf.top-80-Trojan-WS
       - cdn.2020111.xyz-443-Trojan-WS-TLS
+      - cdn.2020111.xyz-80-Trojan-WS
       - cfip.cfcdn.vip-443-Trojan-WS-TLS
+      - cfip.cfcdn.vip-80-Trojan-WS
       - cf.0sm.com-443-Trojan-WS-TLS
+      - cf.0sm.com-80-Trojan-WS
       - cf.090227.xyz-443-Trojan-WS-TLS
+      - cf.090227.xyz-80-Trojan-WS
       - cf.zhetengsha.eu.org-443-Trojan-WS-TLS
+      - cf.zhetengsha.eu.org-80-Trojan-WS
       - cloudflare.9jy.cc-443-Trojan-WS-TLS
+      - cloudflare.9jy.cc-80-Trojan-WS
       - cf.zerone-cdn.pp.ua-443-Trojan-WS-TLS
+      - cf.zerone-cdn.pp.ua-80-Trojan-WS
       - cfip.1323123.xyz-443-Trojan-WS-TLS
+      - cfip.1323123.xyz-80-Trojan-WS
       - cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS
+      - cnamefuckxxs.yuchen.icu-80-Trojan-WS
       - cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS
+      - cloudflare-ip.mofashi.ltd-80-Trojan-WS
       - 115155.xyz-443-Trojan-WS-TLS
+      - 115155.xyz-80-Trojan-WS
       - 🇺🇸 cname.xirancdn.us-443-Trojan-WS-TLS
+      - 🇺🇸 cname.xirancdn.us-80-Trojan-WS
       - f3058171cad.002404.xyz-443-Trojan-WS-TLS
+      - f3058171cad.002404.xyz-80-Trojan-WS
       - 8.889288.xyz-443-Trojan-WS-TLS
+      - 8.889288.xyz-80-Trojan-WS
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
+      - cdn.tzpro.xyz-80-Trojan-WS
       - cf.877771.xyz-443-Trojan-WS-TLS
+      - cf.877771.xyz-80-Trojan-WS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - xn--b6gac.eu.org-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS
+      - 移动-LHR-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS 2
+      - 移动-LHR-80-Trojan-WS 2
       - 移动-LHR-443-Trojan-WS-TLS 3
+      - 移动-LHR-80-Trojan-WS 3
       - 移动-LHR-443-Trojan-WS-TLS 4
+      - 移动-LHR-80-Trojan-WS 4
       - 移动-LHR-443-Trojan-WS-TLS 5
+      - 移动-LHR-80-Trojan-WS 5
       - 联通-SJC-443-Trojan-WS-TLS
+      - 联通-SJC-80-Trojan-WS
       - 联通-SJC-443-Trojan-WS-TLS 2
+      - 联通-SJC-80-Trojan-WS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-80-Trojan-WS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-80-Trojan-WS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 联通-SJC-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-80-Trojan-WS
       - 电信-SIN-443-Trojan-WS-TLS 2
+      - 电信-SIN-80-Trojan-WS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
+      - 电信-SIN-80-Trojan-WS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
+      - 电信-SIN-80-Trojan-WS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
+      - 电信-SIN-80-Trojan-WS 5
       - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-80-Trojan-WS
       - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-80-Trojan-WS 2
       - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-80-Trojan-WS 3
       - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-80-Trojan-WS 4
       - 移动-MAA-443-Trojan-WS-TLS 5
+      - 移动-MAA-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS 6
+      - 电信-SIN-80-Trojan-WS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
+      - 电信-SIN-80-Trojan-WS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
+      - 电信-SIN-80-Trojan-WS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
+      - 电信-SIN-80-Trojan-WS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 电信-SIN-80-Trojan-WS 10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -112,52 +206,99 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 原生地址-443-Trojan-WS-TLS
+      - 原生地址-80-Trojan-WS
       - cloudflare.182682.xyz-443-Trojan-WS-TLS
+      - cloudflare.182682.xyz-80-Trojan-WS
       - speed.marisalnc.com-443-Trojan-WS-TLS
+      - speed.marisalnc.com-80-Trojan-WS
       - freeyx.cloudflare88.eu.org-443-Trojan-WS-TLS
+      - freeyx.cloudflare88.eu.org-80-Trojan-WS
       - bestcf.top-443-Trojan-WS-TLS
+      - bestcf.top-80-Trojan-WS
       - cdn.2020111.xyz-443-Trojan-WS-TLS
+      - cdn.2020111.xyz-80-Trojan-WS
       - cfip.cfcdn.vip-443-Trojan-WS-TLS
+      - cfip.cfcdn.vip-80-Trojan-WS
       - cf.0sm.com-443-Trojan-WS-TLS
+      - cf.0sm.com-80-Trojan-WS
       - cf.090227.xyz-443-Trojan-WS-TLS
+      - cf.090227.xyz-80-Trojan-WS
       - cf.zhetengsha.eu.org-443-Trojan-WS-TLS
+      - cf.zhetengsha.eu.org-80-Trojan-WS
       - cloudflare.9jy.cc-443-Trojan-WS-TLS
+      - cloudflare.9jy.cc-80-Trojan-WS
       - cf.zerone-cdn.pp.ua-443-Trojan-WS-TLS
+      - cf.zerone-cdn.pp.ua-80-Trojan-WS
       - cfip.1323123.xyz-443-Trojan-WS-TLS
+      - cfip.1323123.xyz-80-Trojan-WS
       - cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS
+      - cnamefuckxxs.yuchen.icu-80-Trojan-WS
       - cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS
+      - cloudflare-ip.mofashi.ltd-80-Trojan-WS
       - 115155.xyz-443-Trojan-WS-TLS
+      - 115155.xyz-80-Trojan-WS
       - 🇺🇸 cname.xirancdn.us-443-Trojan-WS-TLS
+      - 🇺🇸 cname.xirancdn.us-80-Trojan-WS
       - f3058171cad.002404.xyz-443-Trojan-WS-TLS
+      - f3058171cad.002404.xyz-80-Trojan-WS
       - 8.889288.xyz-443-Trojan-WS-TLS
+      - 8.889288.xyz-80-Trojan-WS
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
+      - cdn.tzpro.xyz-80-Trojan-WS
       - cf.877771.xyz-443-Trojan-WS-TLS
+      - cf.877771.xyz-80-Trojan-WS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - xn--b6gac.eu.org-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS
+      - 移动-LHR-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS 2
+      - 移动-LHR-80-Trojan-WS 2
       - 移动-LHR-443-Trojan-WS-TLS 3
+      - 移动-LHR-80-Trojan-WS 3
       - 移动-LHR-443-Trojan-WS-TLS 4
+      - 移动-LHR-80-Trojan-WS 4
       - 移动-LHR-443-Trojan-WS-TLS 5
+      - 移动-LHR-80-Trojan-WS 5
       - 联通-SJC-443-Trojan-WS-TLS
+      - 联通-SJC-80-Trojan-WS
       - 联通-SJC-443-Trojan-WS-TLS 2
+      - 联通-SJC-80-Trojan-WS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-80-Trojan-WS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-80-Trojan-WS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 联通-SJC-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-80-Trojan-WS
       - 电信-SIN-443-Trojan-WS-TLS 2
+      - 电信-SIN-80-Trojan-WS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
+      - 电信-SIN-80-Trojan-WS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
+      - 电信-SIN-80-Trojan-WS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
+      - 电信-SIN-80-Trojan-WS 5
       - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-80-Trojan-WS
       - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-80-Trojan-WS 2
       - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-80-Trojan-WS 3
       - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-80-Trojan-WS 4
       - 移动-MAA-443-Trojan-WS-TLS 5
+      - 移动-MAA-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS 6
+      - 电信-SIN-80-Trojan-WS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
+      - 电信-SIN-80-Trojan-WS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
+      - 电信-SIN-80-Trojan-WS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
+      - 电信-SIN-80-Trojan-WS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 电信-SIN-80-Trojan-WS 10
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -165,208 +306,396 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 原生地址-443-Trojan-WS-TLS
+      - 原生地址-80-Trojan-WS
       - cloudflare.182682.xyz-443-Trojan-WS-TLS
+      - cloudflare.182682.xyz-80-Trojan-WS
       - speed.marisalnc.com-443-Trojan-WS-TLS
+      - speed.marisalnc.com-80-Trojan-WS
       - freeyx.cloudflare88.eu.org-443-Trojan-WS-TLS
+      - freeyx.cloudflare88.eu.org-80-Trojan-WS
       - bestcf.top-443-Trojan-WS-TLS
+      - bestcf.top-80-Trojan-WS
       - cdn.2020111.xyz-443-Trojan-WS-TLS
+      - cdn.2020111.xyz-80-Trojan-WS
       - cfip.cfcdn.vip-443-Trojan-WS-TLS
+      - cfip.cfcdn.vip-80-Trojan-WS
       - cf.0sm.com-443-Trojan-WS-TLS
+      - cf.0sm.com-80-Trojan-WS
       - cf.090227.xyz-443-Trojan-WS-TLS
+      - cf.090227.xyz-80-Trojan-WS
       - cf.zhetengsha.eu.org-443-Trojan-WS-TLS
+      - cf.zhetengsha.eu.org-80-Trojan-WS
       - cloudflare.9jy.cc-443-Trojan-WS-TLS
+      - cloudflare.9jy.cc-80-Trojan-WS
       - cf.zerone-cdn.pp.ua-443-Trojan-WS-TLS
+      - cf.zerone-cdn.pp.ua-80-Trojan-WS
       - cfip.1323123.xyz-443-Trojan-WS-TLS
+      - cfip.1323123.xyz-80-Trojan-WS
       - cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS
+      - cnamefuckxxs.yuchen.icu-80-Trojan-WS
       - cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS
+      - cloudflare-ip.mofashi.ltd-80-Trojan-WS
       - 115155.xyz-443-Trojan-WS-TLS
+      - 115155.xyz-80-Trojan-WS
       - 🇺🇸 cname.xirancdn.us-443-Trojan-WS-TLS
+      - 🇺🇸 cname.xirancdn.us-80-Trojan-WS
       - f3058171cad.002404.xyz-443-Trojan-WS-TLS
+      - f3058171cad.002404.xyz-80-Trojan-WS
       - 8.889288.xyz-443-Trojan-WS-TLS
+      - 8.889288.xyz-80-Trojan-WS
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
+      - cdn.tzpro.xyz-80-Trojan-WS
       - cf.877771.xyz-443-Trojan-WS-TLS
+      - cf.877771.xyz-80-Trojan-WS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - xn--b6gac.eu.org-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS
+      - 移动-LHR-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS 2
+      - 移动-LHR-80-Trojan-WS 2
       - 移动-LHR-443-Trojan-WS-TLS 3
+      - 移动-LHR-80-Trojan-WS 3
       - 移动-LHR-443-Trojan-WS-TLS 4
+      - 移动-LHR-80-Trojan-WS 4
       - 移动-LHR-443-Trojan-WS-TLS 5
+      - 移动-LHR-80-Trojan-WS 5
       - 联通-SJC-443-Trojan-WS-TLS
+      - 联通-SJC-80-Trojan-WS
       - 联通-SJC-443-Trojan-WS-TLS 2
+      - 联通-SJC-80-Trojan-WS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-80-Trojan-WS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-80-Trojan-WS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 联通-SJC-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-80-Trojan-WS
       - 电信-SIN-443-Trojan-WS-TLS 2
+      - 电信-SIN-80-Trojan-WS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
+      - 电信-SIN-80-Trojan-WS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
+      - 电信-SIN-80-Trojan-WS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
+      - 电信-SIN-80-Trojan-WS 5
       - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-80-Trojan-WS
       - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-80-Trojan-WS 2
       - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-80-Trojan-WS 3
       - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-80-Trojan-WS 4
       - 移动-MAA-443-Trojan-WS-TLS 5
+      - 移动-MAA-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS 6
+      - 电信-SIN-80-Trojan-WS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
+      - 电信-SIN-80-Trojan-WS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
+      - 电信-SIN-80-Trojan-WS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
+      - 电信-SIN-80-Trojan-WS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 电信-SIN-80-Trojan-WS 10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 原生地址-443-Trojan-WS-TLS
+      - 原生地址-80-Trojan-WS
       - cloudflare.182682.xyz-443-Trojan-WS-TLS
+      - cloudflare.182682.xyz-80-Trojan-WS
       - speed.marisalnc.com-443-Trojan-WS-TLS
+      - speed.marisalnc.com-80-Trojan-WS
       - freeyx.cloudflare88.eu.org-443-Trojan-WS-TLS
+      - freeyx.cloudflare88.eu.org-80-Trojan-WS
       - bestcf.top-443-Trojan-WS-TLS
+      - bestcf.top-80-Trojan-WS
       - cdn.2020111.xyz-443-Trojan-WS-TLS
+      - cdn.2020111.xyz-80-Trojan-WS
       - cfip.cfcdn.vip-443-Trojan-WS-TLS
+      - cfip.cfcdn.vip-80-Trojan-WS
       - cf.0sm.com-443-Trojan-WS-TLS
+      - cf.0sm.com-80-Trojan-WS
       - cf.090227.xyz-443-Trojan-WS-TLS
+      - cf.090227.xyz-80-Trojan-WS
       - cf.zhetengsha.eu.org-443-Trojan-WS-TLS
+      - cf.zhetengsha.eu.org-80-Trojan-WS
       - cloudflare.9jy.cc-443-Trojan-WS-TLS
+      - cloudflare.9jy.cc-80-Trojan-WS
       - cf.zerone-cdn.pp.ua-443-Trojan-WS-TLS
+      - cf.zerone-cdn.pp.ua-80-Trojan-WS
       - cfip.1323123.xyz-443-Trojan-WS-TLS
+      - cfip.1323123.xyz-80-Trojan-WS
       - cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS
+      - cnamefuckxxs.yuchen.icu-80-Trojan-WS
       - cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS
+      - cloudflare-ip.mofashi.ltd-80-Trojan-WS
       - 115155.xyz-443-Trojan-WS-TLS
+      - 115155.xyz-80-Trojan-WS
       - 🇺🇸 cname.xirancdn.us-443-Trojan-WS-TLS
+      - 🇺🇸 cname.xirancdn.us-80-Trojan-WS
       - f3058171cad.002404.xyz-443-Trojan-WS-TLS
+      - f3058171cad.002404.xyz-80-Trojan-WS
       - 8.889288.xyz-443-Trojan-WS-TLS
+      - 8.889288.xyz-80-Trojan-WS
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
+      - cdn.tzpro.xyz-80-Trojan-WS
       - cf.877771.xyz-443-Trojan-WS-TLS
+      - cf.877771.xyz-80-Trojan-WS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - xn--b6gac.eu.org-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS
+      - 移动-LHR-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS 2
+      - 移动-LHR-80-Trojan-WS 2
       - 移动-LHR-443-Trojan-WS-TLS 3
+      - 移动-LHR-80-Trojan-WS 3
       - 移动-LHR-443-Trojan-WS-TLS 4
+      - 移动-LHR-80-Trojan-WS 4
       - 移动-LHR-443-Trojan-WS-TLS 5
+      - 移动-LHR-80-Trojan-WS 5
       - 联通-SJC-443-Trojan-WS-TLS
+      - 联通-SJC-80-Trojan-WS
       - 联通-SJC-443-Trojan-WS-TLS 2
+      - 联通-SJC-80-Trojan-WS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-80-Trojan-WS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-80-Trojan-WS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 联通-SJC-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-80-Trojan-WS
       - 电信-SIN-443-Trojan-WS-TLS 2
+      - 电信-SIN-80-Trojan-WS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
+      - 电信-SIN-80-Trojan-WS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
+      - 电信-SIN-80-Trojan-WS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
+      - 电信-SIN-80-Trojan-WS 5
       - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-80-Trojan-WS
       - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-80-Trojan-WS 2
       - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-80-Trojan-WS 3
       - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-80-Trojan-WS 4
       - 移动-MAA-443-Trojan-WS-TLS 5
+      - 移动-MAA-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS 6
+      - 电信-SIN-80-Trojan-WS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
+      - 电信-SIN-80-Trojan-WS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
+      - 电信-SIN-80-Trojan-WS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
+      - 电信-SIN-80-Trojan-WS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 电信-SIN-80-Trojan-WS 10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 原生地址-443-Trojan-WS-TLS
+      - 原生地址-80-Trojan-WS
       - cloudflare.182682.xyz-443-Trojan-WS-TLS
+      - cloudflare.182682.xyz-80-Trojan-WS
       - speed.marisalnc.com-443-Trojan-WS-TLS
+      - speed.marisalnc.com-80-Trojan-WS
       - freeyx.cloudflare88.eu.org-443-Trojan-WS-TLS
+      - freeyx.cloudflare88.eu.org-80-Trojan-WS
       - bestcf.top-443-Trojan-WS-TLS
+      - bestcf.top-80-Trojan-WS
       - cdn.2020111.xyz-443-Trojan-WS-TLS
+      - cdn.2020111.xyz-80-Trojan-WS
       - cfip.cfcdn.vip-443-Trojan-WS-TLS
+      - cfip.cfcdn.vip-80-Trojan-WS
       - cf.0sm.com-443-Trojan-WS-TLS
+      - cf.0sm.com-80-Trojan-WS
       - cf.090227.xyz-443-Trojan-WS-TLS
+      - cf.090227.xyz-80-Trojan-WS
       - cf.zhetengsha.eu.org-443-Trojan-WS-TLS
+      - cf.zhetengsha.eu.org-80-Trojan-WS
       - cloudflare.9jy.cc-443-Trojan-WS-TLS
+      - cloudflare.9jy.cc-80-Trojan-WS
       - cf.zerone-cdn.pp.ua-443-Trojan-WS-TLS
+      - cf.zerone-cdn.pp.ua-80-Trojan-WS
       - cfip.1323123.xyz-443-Trojan-WS-TLS
+      - cfip.1323123.xyz-80-Trojan-WS
       - cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS
+      - cnamefuckxxs.yuchen.icu-80-Trojan-WS
       - cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS
+      - cloudflare-ip.mofashi.ltd-80-Trojan-WS
       - 115155.xyz-443-Trojan-WS-TLS
+      - 115155.xyz-80-Trojan-WS
       - 🇺🇸 cname.xirancdn.us-443-Trojan-WS-TLS
+      - 🇺🇸 cname.xirancdn.us-80-Trojan-WS
       - f3058171cad.002404.xyz-443-Trojan-WS-TLS
+      - f3058171cad.002404.xyz-80-Trojan-WS
       - 8.889288.xyz-443-Trojan-WS-TLS
+      - 8.889288.xyz-80-Trojan-WS
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
+      - cdn.tzpro.xyz-80-Trojan-WS
       - cf.877771.xyz-443-Trojan-WS-TLS
+      - cf.877771.xyz-80-Trojan-WS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - xn--b6gac.eu.org-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS
+      - 移动-LHR-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS 2
+      - 移动-LHR-80-Trojan-WS 2
       - 移动-LHR-443-Trojan-WS-TLS 3
+      - 移动-LHR-80-Trojan-WS 3
       - 移动-LHR-443-Trojan-WS-TLS 4
+      - 移动-LHR-80-Trojan-WS 4
       - 移动-LHR-443-Trojan-WS-TLS 5
+      - 移动-LHR-80-Trojan-WS 5
       - 联通-SJC-443-Trojan-WS-TLS
+      - 联通-SJC-80-Trojan-WS
       - 联通-SJC-443-Trojan-WS-TLS 2
+      - 联通-SJC-80-Trojan-WS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-80-Trojan-WS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-80-Trojan-WS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 联通-SJC-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-80-Trojan-WS
       - 电信-SIN-443-Trojan-WS-TLS 2
+      - 电信-SIN-80-Trojan-WS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
+      - 电信-SIN-80-Trojan-WS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
+      - 电信-SIN-80-Trojan-WS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
+      - 电信-SIN-80-Trojan-WS 5
       - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-80-Trojan-WS
       - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-80-Trojan-WS 2
       - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-80-Trojan-WS 3
       - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-80-Trojan-WS 4
       - 移动-MAA-443-Trojan-WS-TLS 5
+      - 移动-MAA-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS 6
+      - 电信-SIN-80-Trojan-WS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
+      - 电信-SIN-80-Trojan-WS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
+      - 电信-SIN-80-Trojan-WS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
+      - 电信-SIN-80-Trojan-WS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 电信-SIN-80-Trojan-WS 10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 原生地址-443-Trojan-WS-TLS
+      - 原生地址-80-Trojan-WS
       - cloudflare.182682.xyz-443-Trojan-WS-TLS
+      - cloudflare.182682.xyz-80-Trojan-WS
       - speed.marisalnc.com-443-Trojan-WS-TLS
+      - speed.marisalnc.com-80-Trojan-WS
       - freeyx.cloudflare88.eu.org-443-Trojan-WS-TLS
+      - freeyx.cloudflare88.eu.org-80-Trojan-WS
       - bestcf.top-443-Trojan-WS-TLS
+      - bestcf.top-80-Trojan-WS
       - cdn.2020111.xyz-443-Trojan-WS-TLS
+      - cdn.2020111.xyz-80-Trojan-WS
       - cfip.cfcdn.vip-443-Trojan-WS-TLS
+      - cfip.cfcdn.vip-80-Trojan-WS
       - cf.0sm.com-443-Trojan-WS-TLS
+      - cf.0sm.com-80-Trojan-WS
       - cf.090227.xyz-443-Trojan-WS-TLS
+      - cf.090227.xyz-80-Trojan-WS
       - cf.zhetengsha.eu.org-443-Trojan-WS-TLS
+      - cf.zhetengsha.eu.org-80-Trojan-WS
       - cloudflare.9jy.cc-443-Trojan-WS-TLS
+      - cloudflare.9jy.cc-80-Trojan-WS
       - cf.zerone-cdn.pp.ua-443-Trojan-WS-TLS
+      - cf.zerone-cdn.pp.ua-80-Trojan-WS
       - cfip.1323123.xyz-443-Trojan-WS-TLS
+      - cfip.1323123.xyz-80-Trojan-WS
       - cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS
+      - cnamefuckxxs.yuchen.icu-80-Trojan-WS
       - cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS
+      - cloudflare-ip.mofashi.ltd-80-Trojan-WS
       - 115155.xyz-443-Trojan-WS-TLS
+      - 115155.xyz-80-Trojan-WS
       - 🇺🇸 cname.xirancdn.us-443-Trojan-WS-TLS
+      - 🇺🇸 cname.xirancdn.us-80-Trojan-WS
       - f3058171cad.002404.xyz-443-Trojan-WS-TLS
+      - f3058171cad.002404.xyz-80-Trojan-WS
       - 8.889288.xyz-443-Trojan-WS-TLS
+      - 8.889288.xyz-80-Trojan-WS
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
+      - cdn.tzpro.xyz-80-Trojan-WS
       - cf.877771.xyz-443-Trojan-WS-TLS
+      - cf.877771.xyz-80-Trojan-WS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - xn--b6gac.eu.org-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS
+      - 移动-LHR-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS 2
+      - 移动-LHR-80-Trojan-WS 2
       - 移动-LHR-443-Trojan-WS-TLS 3
+      - 移动-LHR-80-Trojan-WS 3
       - 移动-LHR-443-Trojan-WS-TLS 4
+      - 移动-LHR-80-Trojan-WS 4
       - 移动-LHR-443-Trojan-WS-TLS 5
+      - 移动-LHR-80-Trojan-WS 5
       - 联通-SJC-443-Trojan-WS-TLS
+      - 联通-SJC-80-Trojan-WS
       - 联通-SJC-443-Trojan-WS-TLS 2
+      - 联通-SJC-80-Trojan-WS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-80-Trojan-WS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-80-Trojan-WS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 联通-SJC-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-80-Trojan-WS
       - 电信-SIN-443-Trojan-WS-TLS 2
+      - 电信-SIN-80-Trojan-WS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
+      - 电信-SIN-80-Trojan-WS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
+      - 电信-SIN-80-Trojan-WS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
+      - 电信-SIN-80-Trojan-WS 5
       - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-80-Trojan-WS
       - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-80-Trojan-WS 2
       - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-80-Trojan-WS 3
       - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-80-Trojan-WS 4
       - 移动-MAA-443-Trojan-WS-TLS 5
+      - 移动-MAA-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS 6
+      - 电信-SIN-80-Trojan-WS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
+      - 电信-SIN-80-Trojan-WS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
+      - 电信-SIN-80-Trojan-WS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
+      - 电信-SIN-80-Trojan-WS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 电信-SIN-80-Trojan-WS 10
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -374,52 +703,99 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 原生地址-443-Trojan-WS-TLS
+      - 原生地址-80-Trojan-WS
       - cloudflare.182682.xyz-443-Trojan-WS-TLS
+      - cloudflare.182682.xyz-80-Trojan-WS
       - speed.marisalnc.com-443-Trojan-WS-TLS
+      - speed.marisalnc.com-80-Trojan-WS
       - freeyx.cloudflare88.eu.org-443-Trojan-WS-TLS
+      - freeyx.cloudflare88.eu.org-80-Trojan-WS
       - bestcf.top-443-Trojan-WS-TLS
+      - bestcf.top-80-Trojan-WS
       - cdn.2020111.xyz-443-Trojan-WS-TLS
+      - cdn.2020111.xyz-80-Trojan-WS
       - cfip.cfcdn.vip-443-Trojan-WS-TLS
+      - cfip.cfcdn.vip-80-Trojan-WS
       - cf.0sm.com-443-Trojan-WS-TLS
+      - cf.0sm.com-80-Trojan-WS
       - cf.090227.xyz-443-Trojan-WS-TLS
+      - cf.090227.xyz-80-Trojan-WS
       - cf.zhetengsha.eu.org-443-Trojan-WS-TLS
+      - cf.zhetengsha.eu.org-80-Trojan-WS
       - cloudflare.9jy.cc-443-Trojan-WS-TLS
+      - cloudflare.9jy.cc-80-Trojan-WS
       - cf.zerone-cdn.pp.ua-443-Trojan-WS-TLS
+      - cf.zerone-cdn.pp.ua-80-Trojan-WS
       - cfip.1323123.xyz-443-Trojan-WS-TLS
+      - cfip.1323123.xyz-80-Trojan-WS
       - cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS
+      - cnamefuckxxs.yuchen.icu-80-Trojan-WS
       - cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS
+      - cloudflare-ip.mofashi.ltd-80-Trojan-WS
       - 115155.xyz-443-Trojan-WS-TLS
+      - 115155.xyz-80-Trojan-WS
       - 🇺🇸 cname.xirancdn.us-443-Trojan-WS-TLS
+      - 🇺🇸 cname.xirancdn.us-80-Trojan-WS
       - f3058171cad.002404.xyz-443-Trojan-WS-TLS
+      - f3058171cad.002404.xyz-80-Trojan-WS
       - 8.889288.xyz-443-Trojan-WS-TLS
+      - 8.889288.xyz-80-Trojan-WS
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
+      - cdn.tzpro.xyz-80-Trojan-WS
       - cf.877771.xyz-443-Trojan-WS-TLS
+      - cf.877771.xyz-80-Trojan-WS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - xn--b6gac.eu.org-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS
+      - 移动-LHR-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS 2
+      - 移动-LHR-80-Trojan-WS 2
       - 移动-LHR-443-Trojan-WS-TLS 3
+      - 移动-LHR-80-Trojan-WS 3
       - 移动-LHR-443-Trojan-WS-TLS 4
+      - 移动-LHR-80-Trojan-WS 4
       - 移动-LHR-443-Trojan-WS-TLS 5
+      - 移动-LHR-80-Trojan-WS 5
       - 联通-SJC-443-Trojan-WS-TLS
+      - 联通-SJC-80-Trojan-WS
       - 联通-SJC-443-Trojan-WS-TLS 2
+      - 联通-SJC-80-Trojan-WS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-80-Trojan-WS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-80-Trojan-WS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 联通-SJC-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-80-Trojan-WS
       - 电信-SIN-443-Trojan-WS-TLS 2
+      - 电信-SIN-80-Trojan-WS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
+      - 电信-SIN-80-Trojan-WS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
+      - 电信-SIN-80-Trojan-WS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
+      - 电信-SIN-80-Trojan-WS 5
       - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-80-Trojan-WS
       - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-80-Trojan-WS 2
       - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-80-Trojan-WS 3
       - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-80-Trojan-WS 4
       - 移动-MAA-443-Trojan-WS-TLS 5
+      - 移动-MAA-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS 6
+      - 电信-SIN-80-Trojan-WS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
+      - 电信-SIN-80-Trojan-WS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
+      - 电信-SIN-80-Trojan-WS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
+      - 电信-SIN-80-Trojan-WS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 电信-SIN-80-Trojan-WS 10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -443,52 +819,99 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 原生地址-443-Trojan-WS-TLS
+      - 原生地址-80-Trojan-WS
       - cloudflare.182682.xyz-443-Trojan-WS-TLS
+      - cloudflare.182682.xyz-80-Trojan-WS
       - speed.marisalnc.com-443-Trojan-WS-TLS
+      - speed.marisalnc.com-80-Trojan-WS
       - freeyx.cloudflare88.eu.org-443-Trojan-WS-TLS
+      - freeyx.cloudflare88.eu.org-80-Trojan-WS
       - bestcf.top-443-Trojan-WS-TLS
+      - bestcf.top-80-Trojan-WS
       - cdn.2020111.xyz-443-Trojan-WS-TLS
+      - cdn.2020111.xyz-80-Trojan-WS
       - cfip.cfcdn.vip-443-Trojan-WS-TLS
+      - cfip.cfcdn.vip-80-Trojan-WS
       - cf.0sm.com-443-Trojan-WS-TLS
+      - cf.0sm.com-80-Trojan-WS
       - cf.090227.xyz-443-Trojan-WS-TLS
+      - cf.090227.xyz-80-Trojan-WS
       - cf.zhetengsha.eu.org-443-Trojan-WS-TLS
+      - cf.zhetengsha.eu.org-80-Trojan-WS
       - cloudflare.9jy.cc-443-Trojan-WS-TLS
+      - cloudflare.9jy.cc-80-Trojan-WS
       - cf.zerone-cdn.pp.ua-443-Trojan-WS-TLS
+      - cf.zerone-cdn.pp.ua-80-Trojan-WS
       - cfip.1323123.xyz-443-Trojan-WS-TLS
+      - cfip.1323123.xyz-80-Trojan-WS
       - cnamefuckxxs.yuchen.icu-443-Trojan-WS-TLS
+      - cnamefuckxxs.yuchen.icu-80-Trojan-WS
       - cloudflare-ip.mofashi.ltd-443-Trojan-WS-TLS
+      - cloudflare-ip.mofashi.ltd-80-Trojan-WS
       - 115155.xyz-443-Trojan-WS-TLS
+      - 115155.xyz-80-Trojan-WS
       - 🇺🇸 cname.xirancdn.us-443-Trojan-WS-TLS
+      - 🇺🇸 cname.xirancdn.us-80-Trojan-WS
       - f3058171cad.002404.xyz-443-Trojan-WS-TLS
+      - f3058171cad.002404.xyz-80-Trojan-WS
       - 8.889288.xyz-443-Trojan-WS-TLS
+      - 8.889288.xyz-80-Trojan-WS
       - cdn.tzpro.xyz-443-Trojan-WS-TLS
+      - cdn.tzpro.xyz-80-Trojan-WS
       - cf.877771.xyz-443-Trojan-WS-TLS
+      - cf.877771.xyz-80-Trojan-WS
       - xn--b6gac.eu.org-443-Trojan-WS-TLS
+      - xn--b6gac.eu.org-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS
+      - 移动-LHR-80-Trojan-WS
       - 移动-LHR-443-Trojan-WS-TLS 2
+      - 移动-LHR-80-Trojan-WS 2
       - 移动-LHR-443-Trojan-WS-TLS 3
+      - 移动-LHR-80-Trojan-WS 3
       - 移动-LHR-443-Trojan-WS-TLS 4
+      - 移动-LHR-80-Trojan-WS 4
       - 移动-LHR-443-Trojan-WS-TLS 5
+      - 移动-LHR-80-Trojan-WS 5
       - 联通-SJC-443-Trojan-WS-TLS
+      - 联通-SJC-80-Trojan-WS
       - 联通-SJC-443-Trojan-WS-TLS 2
+      - 联通-SJC-80-Trojan-WS 2
       - 联通-SJC-443-Trojan-WS-TLS 3
+      - 联通-SJC-80-Trojan-WS 3
       - 联通-SJC-443-Trojan-WS-TLS 4
+      - 联通-SJC-80-Trojan-WS 4
       - 联通-SJC-443-Trojan-WS-TLS 5
+      - 联通-SJC-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS
+      - 电信-SIN-80-Trojan-WS
       - 电信-SIN-443-Trojan-WS-TLS 2
+      - 电信-SIN-80-Trojan-WS 2
       - 电信-SIN-443-Trojan-WS-TLS 3
+      - 电信-SIN-80-Trojan-WS 3
       - 电信-SIN-443-Trojan-WS-TLS 4
+      - 电信-SIN-80-Trojan-WS 4
       - 电信-SIN-443-Trojan-WS-TLS 5
+      - 电信-SIN-80-Trojan-WS 5
       - 移动-MAA-443-Trojan-WS-TLS
+      - 移动-MAA-80-Trojan-WS
       - 移动-MAA-443-Trojan-WS-TLS 2
+      - 移动-MAA-80-Trojan-WS 2
       - 移动-MAA-443-Trojan-WS-TLS 3
+      - 移动-MAA-80-Trojan-WS 3
       - 移动-MAA-443-Trojan-WS-TLS 4
+      - 移动-MAA-80-Trojan-WS 4
       - 移动-MAA-443-Trojan-WS-TLS 5
+      - 移动-MAA-80-Trojan-WS 5
       - 电信-SIN-443-Trojan-WS-TLS 6
+      - 电信-SIN-80-Trojan-WS 6
       - 电信-SIN-443-Trojan-WS-TLS 7
+      - 电信-SIN-80-Trojan-WS 7
       - 电信-SIN-443-Trojan-WS-TLS 8
+      - 电信-SIN-80-Trojan-WS 8
       - 电信-SIN-443-Trojan-WS-TLS 9
+      - 电信-SIN-80-Trojan-WS 9
       - 电信-SIN-443-Trojan-WS-TLS 10
+      - 电信-SIN-80-Trojan-WS 10
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
