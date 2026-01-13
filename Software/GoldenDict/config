@@ -97,6 +97,7 @@
   <hideSingleTab>0</hideSingleTab>
   <mruTabOrder>0</mruTabOrder>
   <hideMenubar>0</hideMenubar>
+  <panelsLocked>0</panelsLocked>
   <enableTrayIcon>1</enableTrayIcon>
   <startToTray>0</startToTray>
   <closeToTray>0</closeToTray>
@@ -128,7 +129,6 @@
   <audioPlaybackProgram></audioPlaybackProgram>
   <alwaysOnTop>0</alwaysOnTop>
   <searchInDock>0</searchInDock>
-  <historyStoreInterval>0</historyStoreInterval>
   <favoritesStoreInterval>0</favoritesStoreInterval>
   <confirmFavoritesDeletion>1</confirmFavoritesDeletion>
   <proxyserver enabled="0" useSystemProxy="0">
@@ -155,6 +155,7 @@
   <removeInvalidIndexOnExit>1</removeInvalidIndexOnExit>
   <enableApplicationLog>0</enableApplicationLog>
   <openWebsiteInNewTab>0</openWebsiteInNewTab>
+  <suppressWebDialogs>0</suppressWebDialogs>
   <maxStringsInHistory>20</maxStringsInHistory>
   <storeHistory>1</storeHistory>
   <alwaysExpandOptionalParts>1</alwaysExpandOptionalParts>
@@ -182,7 +183,7 @@
  <popupWindowGeometry2>AdnQywADAAAAAAABAAAAIAAAAPcAAAGvAAAAAQAAACAAAAD3AAABrwAAAAAAAAAABVYAAAABAAAAIAAAAPcAAAGv</popupWindowGeometry2>
  <pinPopupWindow>0</pinPopupWindow>
  <popupWindowAlwaysOnTop>0</popupWindowAlwaysOnTop>
- <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAABNAAACivwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAANwAAAooAAACFAP///wAAAAEAAADMAAACivwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAADcAAAE5AAAAZAD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAAAAARIAAADVAAAAYgD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAABdAAAAU0AAABkAP///wAABIYAAAKKAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAIZ/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowState>AAAA/wAAAAD9AAAAAgAAAAAAAABNAAACivwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAANwAAAooAAACFAP///wAAAAEAAADMAAACivwCAAAAA/sAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAADcAAAE5AAAAZAD////7AAAAGgBmAGEAdgBvAHIAaQB0AGUAcwBQAGEAbgBlAAAAARIAAADVAAAAYgD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAABdAAAAU0AAABkAP///wAABIYAAAKKAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAH+/////wAAAAAAAAAA</mainWindowState>
  <mainWindowGeometry>AdnQywADAAAAAAAA////+AAABVUAAALXAAAAxgAAAF8AAANSAAACeAAAAAACAAAABVYAAAAAAAAAFwAABVUAAALX</mainWindowGeometry>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>

@@ -7,44 +7,44 @@ external-controller: 127.0.0.1:9090
 proxies:
   - {name: 加入我的频道t.me/CMLiussss解锁更多优选节点, server: Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
   - {name: CFnat, server: 127.0.0.1, port: 1234, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: HK, server: 202.81.230.146, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: HK 2, server: 47.76.218.163, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: LV, server: 217.60.4.19, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: US, server: 45.76.30.107, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: PL, server: 147.135.209.171, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: GB, server: 57.128.165.222, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: DE, server: 207.154.253.77, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: NL, server: 91.242.229.153, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: GB 2, server: 57.128.181.14, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: DE 2, server: 82.117.245.125, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: DE 3, server: 188.245.165.71, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: FI, server: 188.215.31.178, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: DE 4, server: 89.208.107.154, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: FR, server: 5.196.147.24, port: 2096, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: FI 2, server: 31.56.204.252, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: FI 3, server: 31.56.227.30, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: FR 2, server: 54.36.98.4, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: KR, server: 146.56.167.171, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: US 2, server: 66.135.23.133, port: 1443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: US 3, server: 129.146.114.239, port: 44039, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: US 4, server: 154.12.53.125, port: 54321, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: KR 2, server: 112.146.85.54, port: 50000, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: DE 5, server: 194.26.192.125, port: 5001, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: KR 3, server: 112.219.241.2, port: 50001, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: KR 4, server: 182.228.236.90, port: 50001, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: US 5, server: 47.90.140.40, port: 15624, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: CF优选-电信, server: 198.41.223.9, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: CF优选-电信 2, server: 8.39.125.180, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: CF优选-电信 3, server: 8.39.125.157, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: CF优选-电信 4, server: 173.245.59.73, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: CF优选-联通, server: 104.26.1.185, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: CF优选-联通 2, server: 104.26.13.205, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: CF优选-联通 3, server: 104.26.7.183, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: CF优选-联通 4, server: 172.67.71.106, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: CF优选-移动, server: 104.19.32.11, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: CF优选-移动 2, server: 104.19.41.164, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: CF优选-移动 3, server: 162.159.153.98, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
-  - {name: CF优选-移动 4, server: 104.19.52.151, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: HK, server: 103.219.194.43, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: HK 2, server: 38.180.189.220, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: FI, server: 31.57.61.21, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: SE, server: 212.113.100.133, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: FI 2, server: 45.38.139.58, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: DE, server: 5.178.106.130, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: FI 3, server: 31.58.171.46, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: FR, server: 51.91.206.226, port: 2096, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: DE 2, server: 46.226.165.169, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: GB, server: 57.129.137.242, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: DE 3, server: 164.132.45.105, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: FR 2, server: 141.94.221.241, port: 2053, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: FR 3, server: 51.77.183.237, port: 2096, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: FI 4, server: 46.8.232.114, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: DE 4, server: 46.226.165.34, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: FR 4, server: 193.176.153.126, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: FR 5, server: 141.94.221.230, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: FR 6, server: 57.128.78.142, port: 2096, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: KR, server: 106.248.57.44, port: 50001, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: NL, server: 194.54.159.209, port: 444, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: KR 2, server: 115.139.183.243, port: 50001, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: US, server: 104.234.36.27, port: 33388, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: JP, server: 140.83.59.158, port: 15805, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: HK 3, server: 202.85.53.54, port: 7000, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: SG, server: 89.28.239.43, port: 50000, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CA, server: 172.93.32.131, port: 23077, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CF优选-电信, server: 173.245.59.90, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CF优选-电信 2, server: 173.245.58.186, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CF优选-电信 3, server: 8.39.125.92, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CF优选-电信 4, server: 8.35.211.177, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CF优选-联通, server: 172.67.70.121, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CF优选-联通 2, server: 104.26.15.116, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CF优选-联通 3, server: 104.26.12.133, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CF优选-联通 4, server: 172.67.71.204, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CF优选-移动, server: 104.19.62.117, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CF优选-移动 2, server: 104.19.47.220, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CF优选-移动 3, server: 104.19.53.197, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
+  - {name: CF优选-移动 4, server: 162.159.152.217, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: xrqj.pages.dev, network: ws, ws-opts: {path: /, headers: {Host: xrqj.pages.dev}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -57,30 +57,30 @@ proxy-groups:
       - CFnat
       - HK
       - HK 2
-      - LV
-      - US
-      - PL
-      - GB
-      - DE
-      - NL
-      - GB 2
-      - DE 2
-      - DE 3
       - FI
-      - DE 4
-      - FR
+      - SE
       - FI 2
+      - DE
       - FI 3
+      - FR
+      - DE 2
+      - GB
+      - DE 3
       - FR 2
+      - FR 3
+      - FI 4
+      - DE 4
+      - FR 4
+      - FR 5
+      - FR 6
       - KR
-      - US 2
-      - US 3
-      - US 4
+      - NL
       - KR 2
-      - DE 5
-      - KR 3
-      - KR 4
-      - US 5
+      - US
+      - JP
+      - HK 3
+      - SG
+      - CA
       - CF优选-电信
       - CF优选-电信 2
       - CF优选-电信 3
@@ -103,30 +103,30 @@ proxy-groups:
       - CFnat
       - HK
       - HK 2
-      - LV
-      - US
-      - PL
-      - GB
-      - DE
-      - NL
-      - GB 2
-      - DE 2
-      - DE 3
       - FI
-      - DE 4
-      - FR
+      - SE
       - FI 2
+      - DE
       - FI 3
+      - FR
+      - DE 2
+      - GB
+      - DE 3
       - FR 2
+      - FR 3
+      - FI 4
+      - DE 4
+      - FR 4
+      - FR 5
+      - FR 6
       - KR
-      - US 2
-      - US 3
-      - US 4
+      - NL
       - KR 2
-      - DE 5
-      - KR 3
-      - KR 4
-      - US 5
+      - US
+      - JP
+      - HK 3
+      - SG
+      - CA
       - CF优选-电信
       - CF优选-电信 2
       - CF优选-电信 3
@@ -148,30 +148,30 @@ proxy-groups:
       - CFnat
       - HK
       - HK 2
-      - LV
-      - US
-      - PL
-      - GB
-      - DE
-      - NL
-      - GB 2
-      - DE 2
-      - DE 3
       - FI
-      - DE 4
-      - FR
+      - SE
       - FI 2
+      - DE
       - FI 3
+      - FR
+      - DE 2
+      - GB
+      - DE 3
       - FR 2
+      - FR 3
+      - FI 4
+      - DE 4
+      - FR 4
+      - FR 5
+      - FR 6
       - KR
-      - US 2
-      - US 3
-      - US 4
+      - NL
       - KR 2
-      - DE 5
-      - KR 3
-      - KR 4
-      - US 5
+      - US
+      - JP
+      - HK 3
+      - SG
+      - CA
       - CF优选-电信
       - CF优选-电信 2
       - CF优选-电信 3
@@ -194,30 +194,30 @@ proxy-groups:
       - CFnat
       - HK
       - HK 2
-      - LV
-      - US
-      - PL
-      - GB
-      - DE
-      - NL
-      - GB 2
-      - DE 2
-      - DE 3
       - FI
-      - DE 4
-      - FR
+      - SE
       - FI 2
+      - DE
       - FI 3
+      - FR
+      - DE 2
+      - GB
+      - DE 3
       - FR 2
+      - FR 3
+      - FI 4
+      - DE 4
+      - FR 4
+      - FR 5
+      - FR 6
       - KR
-      - US 2
-      - US 3
-      - US 4
+      - NL
       - KR 2
-      - DE 5
-      - KR 3
-      - KR 4
-      - US 5
+      - US
+      - JP
+      - HK 3
+      - SG
+      - CA
       - CF优选-电信
       - CF优选-电信 2
       - CF优选-电信 3
@@ -253,30 +253,30 @@ proxy-groups:
       - CFnat
       - HK
       - HK 2
-      - LV
-      - US
-      - PL
-      - GB
-      - DE
-      - NL
-      - GB 2
-      - DE 2
-      - DE 3
       - FI
-      - DE 4
-      - FR
+      - SE
       - FI 2
+      - DE
       - FI 3
+      - FR
+      - DE 2
+      - GB
+      - DE 3
       - FR 2
+      - FR 3
+      - FI 4
+      - DE 4
+      - FR 4
+      - FR 5
+      - FR 6
       - KR
-      - US 2
-      - US 3
-      - US 4
+      - NL
       - KR 2
-      - DE 5
-      - KR 3
-      - KR 4
-      - US 5
+      - US
+      - JP
+      - HK 3
+      - SG
+      - CA
       - CF优选-电信
       - CF优选-电信 2
       - CF优选-电信 3
