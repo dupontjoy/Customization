@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RZMwOHf9XhCv
+current: RPCQGeAoLnyE
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RFmE0U5jwt1F.yaml
   desc: ''
   url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1768272902
+  updated: 1768359407
   option:
     with_proxy: false
     self_proxy: false
@@ -89,11 +89,11 @@ items:
   - name: 🚀 节点选择
     now: ♻️ 自动选择
   extra:
-    upload: 1603793167838
-    download: 1603793167838
+    upload: 1619901776735
+    download: 1619901776735
     total: 26388279066624
     expire: 4102329600
-  updated: 1768272903
+  updated: 1768359411
   option:
     with_proxy: false
     self_proxy: false
@@ -142,11 +142,11 @@ items:
   - name: 🚀 节点选择
     now: bestcf.030101.xyz
   extra:
-    upload: 1603738803097
-    download: 1603738803097
+    upload: 1619860086919
+    download: 1619860086919
     total: 26388279066624
     expire: 4102329600
-  updated: 1768272903
+  updated: 1768359412
   option:
     with_proxy: false
     self_proxy: false
@@ -189,7 +189,7 @@ items:
   file: RUkEKBpwWGFO.yaml
   desc: 88邮箱-cfnew项目
   url: https://api.asailor.org/sub?target=clash&url=https://dp88bj.dupontjoy.shop/dp88bj/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1768272900
+  updated: 1768359406
   option:
     update_interval: 60
     allow_auto_update: true
@@ -229,7 +229,7 @@ items:
   file: RZMwOHf9XhCv.yaml
   desc: 163邮箱-cfnew项目
   url: https://api.asailor.org/sub?target=clash&url=https://163cfn.232885.xyz/163cfn/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1768272901
+  updated: 1768359406
   option:
     update_interval: 60
     allow_auto_update: true
@@ -238,86 +238,3 @@ items:
     rules: rzXP2YGFUA59
     proxies: pT2exACH8gIk
     groups: gvk56mBopFu0
-- uid: mMmSW77x6R97
-  type: merge
-  name: null
-  file: mMmSW77x6R97.yaml
-  updated: 1764940655
-- uid: s2QAgsJOZoqW
-  type: script
-  name: null
-  file: s2QAgsJOZoqW.js
-  updated: 1764940655
-- uid: r6RcsyLYlxSL
-  type: rules
-  name: null
-  file: r6RcsyLYlxSL.yaml
-  updated: 1764940655
-- uid: pPZQS5PDBjKn
-  type: proxies
-  name: null
-  file: pPZQS5PDBjKn.yaml
-  updated: 1764940655
-- uid: glSQjtdq78I1
-  type: groups
-  name: null
-  file: glSQjtdq78I1.yaml
-  updated: 1764940655
-- uid: RmNCzEs2xYTb
-  type: remote
-  name: dp88bj-ops转换
-  file: RmNCzEs2xYTb.yaml
-  desc: 88邮箱-cfnew项目-ops转换
-  url: https://s.ops.ci/YdShjdL
-  selected:
-  - name: ♻️ 自动选择
-    now: cf.090227.xyz-443-Trojan-WS-TLS
-  updated: 1768272926
-  option:
-    update_interval: 59
-    allow_auto_update: true
-    merge: mMmSW77x6R97
-    script: s2QAgsJOZoqW
-    rules: r6RcsyLYlxSL
-    proxies: pPZQS5PDBjKn
-    groups: glSQjtdq78I1
-- uid: miryPXyNW8OX
-  type: merge
-  name: null
-  file: miryPXyNW8OX.yaml
-  updated: 1764940707
-- uid: sdLEPvnQQBJq
-  type: script
-  name: null
-  file: sdLEPvnQQBJq.js
-  updated: 1764940707
-- uid: rH62DXUODQJP
-  type: rules
-  name: null
-  file: rH62DXUODQJP.yaml
-  updated: 1764940707
-- uid: pmGFPSnuDdqq
-  type: proxies
-  name: null
-  file: pmGFPSnuDdqq.yaml
-  updated: 1764940707
-- uid: g07yeHTmdvDN
-  type: groups
-  name: null
-  file: g07yeHTmdvDN.yaml
-  updated: 1764940707
-- uid: Ry0fXYTU2GbC
-  type: remote
-  name: 163cfn-ops转换
-  file: Ry0fXYTU2GbC.yaml
-  desc: 163邮箱-cfnew项目-ops转换
-  url: https://s.ops.ci/bFJFfEd
-  updated: 1768272908
-  option:
-    update_interval: 60
-    allow_auto_update: true
-    merge: miryPXyNW8OX
-    script: sdLEPvnQQBJq
-    rules: rH62DXUODQJP
-    proxies: pmGFPSnuDdqq
-    groups: g07yeHTmdvDN
