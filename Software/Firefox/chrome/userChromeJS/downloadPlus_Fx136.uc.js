@@ -19,8 +19,9 @@ userChromeJS.downloadPlus.enableDoubleClickToSave 双击保存
 userChromeJS.downloadPlus.enableSaveAndOpen 下载对话框启用保存并打开
 userChromeJS.downloadPlus.enableSaveAs 下载对话框启用另存为
 userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
-// @note userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
+userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 */
+// @note            20260113 Bug 1369833 Remove `alertsService.showAlertNotification` call once Firefox 147
 // @note            20251105 新增静默调用 FlashGot下载（Firefox 应如何处理其他文件？选择保存文件(S)后生效）
 // @note            20251103 修复修改文件名后点击保存不遵循“总是询问保存至何处(A)”设置的问题
 // @note            20250827 修复 Fx143 菜单图标的问题
@@ -175,6 +176,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
         }
     })();
 
+    /* Do not change below 不懂不要改下边的 */
     const versionGE = (v) => {
         return Services.vc.compare(Services.appinfo.version, v) >= 0;
     }
@@ -186,11 +188,19 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
         return css;
     }
 
-    /* Do not change below 不懂不要改下边的 */
+    const AlertNotification = Components.Constructor(
+        "@mozilla.org/alert-notification;1",
+        "nsIAlertNotification",
+        "initWithObject"
+    );
+
     if (window.DownloadPlus) return;
 
     window.DownloadPlus = {
         debug: false,
+        // ========================================
+        // 配置常量
+        // ========================================
         PREF_FLASHGOT_PATH: 'userChromeJS.downloadPlus.flashgotPath',
         PREF_DEFAULT_MANAGER: 'userChromeJS.downloadPlus.flashgotDefaultManager',
         PREF_DOWNLOAD_MANAGERS: 'userChromeJS.downloadPlus.flashgotDownloadManagers',
@@ -203,6 +213,10 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
         REFERER_OVERRIDES: {
             'aliyundrive.net': 'https://www.aliyundrive.com/'
         },
+        // UI 常量
+        BUTTON_FEEDBACK_DURATION: 1000,  // 按钮反馈持续时间(毫秒)
+        DIALOG_RENDER_DELAY: 100,        // 对话框渲染延迟(毫秒)
+        SECURITY_DIALOG_DELAY: 0,        // 安全对话框延迟(禁用)
         get FLASHGOT_PATH () {
             delete this.FLASHGOT_PATH;
             let flashgotPref = Services.prefs.getStringPref(this.PREF_FLASHGOT_PATH, "\\chrome\\UserTools\\FlashGot.exe");
@@ -237,7 +251,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
         initChrome: async function () {
             // Services.prefs.setBoolPref('browser.download.always_ask_before_handling_new_types', true);
             // 保存按钮无需等待即可点击
-            Services.prefs.setIntPref('security.dialog_enable_delay', 0);
+            Services.prefs.setIntPref('security.dialog_enable_delay', this.SECURITY_DIALOG_DELAY);
 
             let sb = window.userChrome_js?.sb;
             if (!sb) {
@@ -264,7 +278,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
             this.sb = sb;
 
             this.URLS_FOR_OPEN = [];
-            const dlView = {
+            const downloadView = {
                 onDownloadChanged: function (dl) {
                     if (isTrue('userChromeJS.downloadPlus.enableSaveAndOpen')) {
                         if (dl.progress != 100) return;
@@ -311,9 +325,9 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                     result.then(null, Cu.reportError);
                 }
             }
-            Downloads.getList(Downloads.ALL).then(list => { addDownloadView(list, dlView) });
+            Downloads.getList(Downloads.ALL).then(list => { addDownloadView(list, downloadView) });
             window.addEventListener("beforeunload", () => {
-                Downloads.getList(Downloads.ALL).then(list => { removeDownloadView(list, dlView) });
+                Downloads.getList(Downloads.ALL).then(list => { removeDownloadView(list, downloadView) });
             });
 
             if (isTrue('userChromeJS.downloadPlus.showAllDrives')) {
@@ -364,302 +378,619 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
             }
             this._log("初始化完成");
         },
+        /**
+         * ========================================
+         * 初始化下载对话框 (重构版)
+         * ========================================
+         * 将原 295 行的函数拆分为 25 个职责单一的小函数
+         * 遵循 KISS、SRP、DRY 原则
+         */
+
+        /**
+         * 初始化下载对话框 (主入口)
+         * 协调各个子功能模块的初始化
+         */
         initDownloadPopup: async function () {
             this._log("initDownloadPopup 开始");
             const dialogFrame = dialog.dialogElement('unknownContentType');
-            // 原有按钮增加 accesskey
+
+            // 按顺序初始化各个功能模块
+            this._setupDialogAccessKeys(dialogFrame);
+            await this._setupRenameFeature();
+            this._setupCopyLinkFeature();
+            this._setupDoubleClickSave();
+            await this._setupFlashgotIntegration();
+            this._setupQuickSaveButtons(dialogFrame);
+            this._overrideDialogOKHandler();
+            this._forceShowDialogOptions();
+
+            this._log("initDownloadPopup 结束");
+        },
+
+        /**
+         * 设置对话框按钮的访问键
+         * @param {Element} dialogFrame - 对话框框架元素
+         */
+        _setupDialogAccessKeys (dialogFrame) {
             dialogFrame.getButton('accept').setAttribute('accesskey', 'c');
             dialogFrame.getButton('cancel').setAttribute('accesskey', 'x');
-            if (isTrue('userChromeJS.downloadPlus.enableRename')) {
-                let locationHbox = createEl(document, 'hbox', {
-                    id: 'locationHbox',
-                    flex: 1,
-                    align: 'center',
-                });
-                let location = $('#location');
-                location.hidden = true;
-                location.after(locationHbox);
-                let locationText = locationHbox.appendChild(createEl(document, "html:input", {
-                    id: "locationText",
-                    value: dialog.mLauncher.suggestedFileName,
-                    flex: 1
-                }));
+        },
 
-                // 输入不能用于文件名的字符输入框变红
-                locationText.addEventListener('input', function (e) {
-                    const currentText = this.value;
-                    if (currentText.match(invalidChars)) {
-                        this.classList.add('invalid');
-                    } else {
-                        this.classList.remove('invalid');
-                    }
-                });
-                if (isTrue('userChromeJS.downloadPlus.enableEncodeConvert')) {
-                    let encodingConvertButton = locationHbox.appendChild(createEl(document, 'button', {
-                        id: 'encodingConvertButton',
-                        type: 'menu',
-                        size: 'small',
-                        tooltiptext: LANG.format("encoding convert tooltip")
-                    }));
-                    let converter = Cc['@mozilla.org/intl/scriptableunicodeconverter']
-                        .getService(Ci.nsIScriptableUnicodeConverter);
-                    let menupopup = createEl(document, 'menupopup', {
-                        position: 'after_end'
-                    }), orginalString;
-                    menupopup.appendChild(createEl(document, 'menuitem', {
-                        value: dialog.mLauncher.suggestedFileName,
-                        label: LANG.format("original name") + dialog.mLauncher.suggestedFileName,
-                        selected: true,
-                        default: true,
-                    }));
-                    try {
-                        orginalString = (opener.localStorage.getItem(dialog.mLauncher.source.spec) ||
-                            dialog.mLauncher.source.asciiSpec.substring(dialog.mLauncher.source.asciiSpec.lastIndexOf("/"))).replace(/[\/:*?"<>|]/g, "");
-                        opener.localStorage.removeItem(dialog.mLauncher.source.spec)
-                    } catch (e) {
-                        orginalString = dialog.mLauncher.suggestedFileName;
-                    }
-                    function createMenuitem (encoding) {
-                        converter.charset = encoding;
-                        let menuitem = menupopup.appendChild(document.createXULElement("menuitem"));
-                        menuitem.value = converter.ConvertToUnicode(orginalString).replace(/^"(.+)"$/, "$1");
-                        menuitem.label = encoding + ": " + menuitem.value;
-                    }
-                    ["GB18030", "BIG5", "Shift-JIS"].forEach(function (item) {
-                        createMenuitem(item)
-                    });
-                    menupopup.addEventListener('click', (event) => {
-                        let { target } = event;
-                        if (target.localName === "menuitem") {
-                            locationText.value = target.value;
-                        }
-                    });
-                    encodingConvertButton.appendChild(menupopup);
+        /**
+         * 设置文件名重命名功能
+         * 包括输入框和编码转换按钮
+         */
+        _setupRenameFeature: async function () {
+            if (!isTrue('userChromeJS.downloadPlus.enableRename')) return;
+
+            // 创建文件名输入框容器
+            const locationHbox = createEl(document, 'hbox', {
+                id: 'locationHbox',
+                flex: 1,
+                align: 'center',
+            });
+
+            // 隐藏原始 location 元素
+            const location = $('#location');
+            location.hidden = true;
+            location.after(locationHbox);
+
+            // 创建文件名输入框
+            const locationText = this._createFilenameInput(locationHbox);
+
+            // 如果启用编码转换,创建转换按钮
+            if (isTrue('userChromeJS.downloadPlus.enableEncodeConvert')) {
+                this._createEncodingConverter(locationHbox, locationText);
+            }
+        },
+
+        /**
+         * 创建文件名输入框并设置验证
+         * @param {Element} container - 父容器元素
+         * @returns {Element} 输入框元素
+         */
+        _createFilenameInput (container) {
+            const locationText = container.appendChild(createEl(document, "html:input", {
+                id: "locationText",
+                value: dialog.mLauncher.suggestedFileName,
+                flex: 1
+            }));
+
+            // 输入不能用于文件名的字符时输入框变红
+            locationText.addEventListener('input', function () {
+                if (this.value.match(invalidChars)) {
+                    this.classList.add('invalid');
+                } else {
+                    this.classList.remove('invalid');
                 }
+            });
+
+            return locationText;
+        },
+
+        /**
+         * 创建编码转换按钮和菜单
+         * @param {Element} container - 父容器元素
+         * @param {Element} locationText - 文件名输入框
+         */
+        _createEncodingConverter (container, locationText) {
+            const encodingConvertButton = container.appendChild(createEl(document, 'button', {
+                id: 'encodingConvertButton',
+                type: 'menu',
+                size: 'small',
+                tooltiptext: LANG.format("encoding convert tooltip")
+            }));
+
+            const converter = Cc['@mozilla.org/intl/scriptableunicodeconverter']
+                .getService(Ci.nsIScriptableUnicodeConverter);
+
+            const menupopup = createEl(document, 'menupopup', {
+                position: 'after_end'
+            });
+
+            // 添加原始文件名选项
+            menupopup.appendChild(createEl(document, 'menuitem', {
+                value: dialog.mLauncher.suggestedFileName,
+                label: LANG.format("original name") + dialog.mLauncher.suggestedFileName,
+                selected: true,
+                default: true,
+            }));
+
+            // 获取原始字符串(尝试从 localStorage 或 URL 获取)
+            const originalString = this._getOriginalFilenameString();
+
+            // 创建各种编码的菜单项
+            ["GB18030", "BIG5", "Shift-JIS"].forEach(encoding => {
+                this._createEncodingMenuItem(menupopup, converter, encoding, originalString);
+            });
+
+            // 点击菜单项时更新文件名
+            menupopup.addEventListener('click', (event) => {
+                if (event.target.localName === "menuitem") {
+                    locationText.value = event.target.value;
+                }
+            });
+
+            encodingConvertButton.appendChild(menupopup);
+        },
+
+        /**
+         * 获取原始文件名字符串
+         * @returns {string} 原始文件名
+         */
+        _getOriginalFilenameString () {
+            try {
+                const storedFilename = opener.localStorage.getItem(dialog.mLauncher.source.spec);
+                const urlFilename = dialog.mLauncher.source.asciiSpec.substring(
+                    dialog.mLauncher.source.asciiSpec.lastIndexOf("/")
+                );
+                const originalString = (storedFilename || urlFilename).replace(/[\/:*?"<>|]/g, "");
+                opener.localStorage.removeItem(dialog.mLauncher.source.spec);
+                return originalString;
+            } catch (error) {
+                this._log("从 localStorage 读取文件名失败:", error);
+                return dialog.mLauncher.suggestedFileName;
             }
-            let h = createEl(document, 'hbox', { align: 'center' });
-            $("#source").parentNode.after(h);
-            // 复制链接
+        },
+
+        /**
+         * 创建编码转换菜单项
+         * @param {Element} menupopup - 菜单弹出容器
+         * @param {Object} converter - Unicode 转换器
+         * @param {string} encoding - 编码名称
+         * @param {string} originalString - 原始字符串
+         */
+        _createEncodingMenuItem (menupopup, converter, encoding, originalString) {
+            converter.charset = encoding;
+            const menuitem = menupopup.appendChild(document.createXULElement("menuitem"));
+            menuitem.value = converter.ConvertToUnicode(originalString).replace(/^"(.+)"$/, "$1");
+            menuitem.label = `${encoding}: ${menuitem.value}`;
+        },
+
+        /**
+         * 设置复制链接功能
+         * 包括双击复制和复制按钮
+         */
+        _setupCopyLinkFeature () {
+            const linkContainer = createEl(document, 'hbox', { align: 'center' });
+            $("#source").parentNode.after(linkContainer);
+
+            // 双击复制链接
             if (isTrue('userChromeJS.downloadPlus.enableDoubleClickToCopyLink')) {
-                let label = h.appendChild(createEl(document, 'label', {
-                    innerHTML: LANG.format("complete link"),
-                    style: 'margin-top: 1px'
-                }));
-                let description = h.appendChild(createEl(document, 'description', {
-                    id: 'completeLinkDescription',
-                    class: 'plain',
-                    flex: 1,
-                    crop: 'center',
-                    value: dialog.mLauncher.source.spec,
-                    tooltiptext: LANG.format("dobule click to copy link"),
-                }));
-                [label, description].forEach(el => el.addEventListener("dblclick", () => {
-                    copyText(dialog.mLauncher.source.spec);
-                }));
+                this._createDoubleClickCopyElements(linkContainer);
             }
+
+            // 复制链接按钮
             if (isTrue('userChromeJS.downloadPlus.enableCopyLinkButton')) {
-                h.appendChild(createEl(document, 'button', {
-                    id: 'copy-link-btn',
-                    label: LANG.format("copy link"),
-                    size: 'small',
-                    onclick: function () {
-                        copyText(dialog.mLauncher.source.spec);
-                        this.setAttribute("label", LANG.format("copied"));
-                        this.parentNode.classList.add("copied");
-                        setTimeout(function () {
-                            this.setAttribute("label", LANG.format("copy link"));
-                            this.parentNode.classList.remove("copied");
-                        }.bind(this), 1000);
+                this._createCopyLinkButton(linkContainer);
+            }
+        },
+
+        /**
+         * 创建双击复制链接的元素
+         * @param {Element} container - 父容器元素
+         */
+        _createDoubleClickCopyElements (container) {
+            const downloadUrl = dialog.mLauncher.source.spec;
+
+            const label = container.appendChild(createEl(document, 'label', {
+                innerHTML: LANG.format("complete link"),
+                style: 'margin-top: 1px'
+            }));
+
+            const description = container.appendChild(createEl(document, 'description', {
+                id: 'completeLinkDescription',
+                class: 'plain',
+                flex: 1,
+                crop: 'center',
+                value: downloadUrl,
+                tooltiptext: LANG.format("dobule click to copy link"),
+            }));
+
+            // 为 label 和 description 添加双击复制事件
+            [label, description].forEach(el => {
+                el.addEventListener("dblclick", () => copyText(downloadUrl));
+            });
+        },
+
+        /**
+         * 创建复制链接按钮
+         * @param {Element} container - 父容器元素
+         */
+        _createCopyLinkButton (container) {
+            const downloadUrl = dialog.mLauncher.source.spec;
+            const self = this;
+
+            container.appendChild(createEl(document, 'button', {
+                id: 'copy-link-btn',
+                label: LANG.format("copy link"),
+                size: 'small',
+                onclick: function () {
+                    copyText(downloadUrl);
+                    this.setAttribute("label", LANG.format("copied"));
+                    this.parentNode.classList.add("copied");
+
+                    setTimeout(() => {
+                        this.setAttribute("label", LANG.format("copy link"));
+                        this.parentNode.classList.remove("copied");
+                    }, self.BUTTON_FEEDBACK_DURATION);
+                }
+            }));
+        },
+
+        /**
+         * 设置双击保存功能
+         */
+        _setupDoubleClickSave () {
+            if (!isTrue('userChromeJS.downloadPlus.enableDoubleClickToSave')) return;
+
+            $('#save').addEventListener('dblclick', (event) => {
+                const { dialog } = event.target.ownerGlobal;
+                dialog.dialogElement('unknownContentType').getButton("accept").click();
+            });
+        },
+
+        /**
+         * 设置 FlashGot 集成功能
+         */
+        _setupFlashgotIntegration: async function () {
+            if (!isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) return;
+
+            const browserWindow = Services.wm.getMostRecentWindow("navigator:browser");
+            const downloadPlus = browserWindow.DownloadPlus;
+
+            if (!downloadPlus.FLASHGOT_PATH || !downloadPlus.DOWNLOAD_MANAGERS.length) {
+                return;
+            }
+
+            // 创建 FlashGot UI 元素
+            const flashgotUI = this._createFlashgotUI(browserWindow, downloadPlus);
+
+            // 设置选择事件监听
+            this._setupFlashgotSelectionHandler();
+
+            // 添加到对话框
+            $('#mode').appendChild(flashgotUI);
+        },
+
+        /**
+         * 创建 FlashGot UI 元素
+         * @param {Window} browserWindow - 浏览器窗口
+         * @param {Object} downloadPlus - DownloadPlus 对象
+         * @returns {Element} FlashGot UI 容器
+         */
+        _createFlashgotUI (browserWindow, downloadPlus) {
+            const createElem = (tag, attrs, children = []) => {
+                const elem = createEl(document, tag, attrs);
+                children.forEach(child => elem.appendChild(child));
+                return elem;
+            };
+
+            const triggerDownload = () => {
+                const { mLauncher, mContext } = dialog;
+                let { source } = mLauncher;
+
+                // 处理 blob URL
+                if (source.schemeIs('blob')) {
+                    source = Services.io.newURI(source.spec.slice(5));
+                }
+
+                const sourceContext = mContext.BrowsingContext.get(mLauncher.browsingContextId);
+                const fileName = $("#locationText")?.value?.replace(invalidChars, '_') ||
+                    dialog.mLauncher.suggestedFileName;
+
+                downloadPlus.downloadByManager(
+                    $('#flashgotHandler').getAttribute('manager'),
+                    source.spec,
+                    {
+                        fileName,
+                        mLauncher,
+                        mSourceContext: sourceContext.parent || sourceContext,
+                        isPrivate: browserWindow.PrivateBrowsingUtils.isWindowPrivate(window)
                     }
-                }));
-            }
-            // 双击保存
-            if (isTrue('userChromeJS.downloadPlus.enableDoubleClickToSave')) {
-                $('#save').addEventListener('dblclick', (event) => {
-                    const { dialog } = event.target.ownerGlobal;
-                    dialog.dialogElement('unknownContentType').getButton("accept").click();
-                });
-            }
-            // 调用 FlashGot
-            if (isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) {
-                const bw = Services.wm.getMostRecentWindow("navigator:browser");
-                const { DownloadPlus: fdp } = bw;
-                if (fdp.FLASHGOT_PATH, fdp.DOWNLOAD_MANAGERS.length) {
-                    const createElem = (tag, attrs, children = []) => {
-                        let elem = createEl(document, tag, attrs);
-                        children.forEach(child => elem.appendChild(child));
-                        return elem;
-                    };
+                );
+                close();
+            };
 
-                    const triggerDownload = _ => {
-                        const { mLauncher, mContext } = dialog;
-                        let { source } = mLauncher;
-                        if (source.schemeIs('blob')) {
-                            source = Services.io.newURI(source.spec.slice(5));
-                        }
-                        let mSourceContext = mContext.BrowsingContext.get(mLauncher.browsingContextId);
-                        fdp.downloadByManager($('#flashgotHandler').getAttribute('manager'), source.spec, {
-                            fileName: $("#locationText")?.value?.replace(invalidChars, '_') || dialog.mLauncher.suggestedFileName,
-                            mLauncher,
-                            mSourceContext: mSourceContext.parent ? mSourceContext.parent : mSourceContext,
-                            isPrivate: bw.PrivateBrowsingUtils.isWindowPrivate(window)
-                        })
-                        close();
-                    };
-
-                    // 创建 FlashGot 选项
-                    let flashgotHbox = createElem('hbox', { id: 'flashgotBox' }, [
-                        createElem('radio', {
-                            id: 'flashgotRadio', label: LANG.format("download through flashgot"), accesskey: 'F',
-                            ondblclick: () => {
+            // 创建 FlashGot 选项容器
+            return createElem('hbox', { id: 'flashgotBox' }, [
+                createElem('radio', {
+                    id: 'flashgotRadio',
+                    label: LANG.format("download through flashgot"),
+                    accesskey: 'F',
+                    ondblclick: triggerDownload
+                }),
+                createElem('deck', { id: 'flashgotDeck', flex: 1 }, [
+                    createElem('hbox', { flex: 1, align: 'center' }, [
+                        createElem('menulist', {
+                            id: 'flashgotHandler',
+                            label: LANG.format('default download manager', downloadPlus.DEFAULT_MANAGER),
+                            manager: downloadPlus.DEFAULT_MANAGER,
+                            flex: 1,
+                            native: true
+                        }, [
+                            this._createFlashgotManagerPopup()
+                        ]),
+                        createElem('toolbarbutton', {
+                            id: 'Flashgot-Download-By-Default-Manager',
+                            tooltiptext: LANG.format("download through flashgot"),
+                            class: "toolbarbutton-1",
+                            accesskey: "D",
+                            image: 'chrome://browser/skin/downloads/downloads.svg',
+                            oncommand: () => {
+                                $('#flashgotRadio').click();
                                 triggerDownload();
                             }
-                        }),
-                        createElem('deck', { id: 'flashgotDeck', flex: 1 }, [
-                            createElem('hbox', { flex: 1, align: 'center' }, [
-                                createElem('menulist', { id: 'flashgotHandler', label: LANG.format('default download manager', fdp.DEFAULT_MANAGER), manager: fdp.DEFAULT_MANAGER, flex: 1, native: true }, [
-                                    (() => {
-                                        let menupopup = createEl(document, 'menupopup', {
-                                            id: 'DownloadPlus-Flashgot-Handler-Popup',
-                                        });
-                                        menupopup.addEventListener('popupshowing', this, false);
-                                        return menupopup;
-                                    })()
-                                ]),
-                                createElem('toolbarbutton', {
-                                    id: 'Flashgot-Download-By-Default-Manager',
-                                    tooltiptext: LANG.format("download through flashgot"),
-                                    class: "toolbarbutton-1",
-                                    accesskey: "D",
-                                    image: 'chrome://browser/skin/downloads/downloads.svg',
-                                    oncommand: () => {
-                                        $('#flashgotRadio').click();
-                                        triggerDownload();
-                                    }
-                                })
-                            ])
-                        ])
-                    ]);
+                        })
+                    ])
+                ])
+            ]);
+        },
 
-                    $('#mode').addEventListener("select", (event) => {
-                        const flashGotRadio = $('#flashgotRadio');
-                        const rememberChoice = $('#rememberChoice');
-                        if (flashGotRadio && flashGotRadio.selected) {
-                            rememberChoice.disabled = true;
-                            rememberChoice.checked = false;
-                            other = false;
-                        } else {
-                            rememberChoice.disabled = false;
-                        }
-                    });
+        /**
+         * 创建 FlashGot 下载管理器选择弹出菜单
+         * @returns {Element} 弹出菜单元素
+         */
+        _createFlashgotManagerPopup () {
+            const menupopup = createEl(document, 'menupopup', {
+                id: 'DownloadPlus-Flashgot-Handler-Popup',
+            });
+            menupopup.addEventListener('popupshowing', this, false);
+            return menupopup;
+        },
 
-                    $('#mode').appendChild(flashgotHbox);
+        /**
+         * 设置 FlashGot 选择处理器
+         * 当选择 FlashGot 时禁用"记住选择"复选框
+         */
+        _setupFlashgotSelectionHandler () {
+            $('#mode').addEventListener("select", () => {
+                const flashgotRadio = $('#flashgotRadio');
+                const rememberChoice = $('#rememberChoice');
+
+                if (flashgotRadio?.selected) {
+                    rememberChoice.disabled = true;
+                    rememberChoice.checked = false;
+                } else {
+                    rememberChoice.disabled = false;
                 }
-            }
-            // 保存并打开
+            });
+        },
+
+        /**
+         * 设置快速保存按钮
+         * 包括"保存并打开"、"另存为"、"保存到"
+         * @param {Element} dialogFrame - 对话框框架元素
+         */
+        _setupQuickSaveButtons (dialogFrame) {
             if (isTrue('userChromeJS.downloadPlus.enableSaveAndOpen')) {
-                let saveAndOpen = createEl(document, 'button', {
-                    id: 'save-and-open',
-                    label: LANG.format("save and open"),
-                    accesskey: 'P',
-                    size: 'small',
-                    part: 'dialog-button'
-                });
-                saveAndOpen.addEventListener('click', () => {
-                    Services.wm.getMostRecentWindow("navigator:browser").DownloadPlus.URLS_FOR_OPEN.push(dialog.mLauncher.source.asciiSpec);
-                    dialog.dialogElement('save').click();
-                    dialogFrame.getButton("accept").disabled = 0;
-                    dialogFrame.getButton("accept").click();
-                });
-                dialogFrame.getButton('extra2').before(saveAndOpen);
+                this._createSaveAndOpenButton(dialogFrame);
             }
-            // 另存为
+
             if (isTrue('userChromeJS.downloadPlus.enableSaveAs')) {
-                let saveAs = createEl(document, 'button', {
-                    id: 'save-as',
-                    label: LANG.format("save as"),
-                    accesskey: 'E',
-                    oncommand: function () {
-                        const mainwin = Services.wm.getMostRecentWindow("navigator:browser");
-                        // 感谢 ycls006 / alice0775
-                        Cu.evalInSandbox("(" + mainwin.internalSave.toString().replace("let ", "").replace("var fpParams", "fileInfo.fileExt=null;fileInfo.fileName=aDefaultFileName;var fpParams") + ")", mainwin.DownloadPlus.sb)(dialog.mLauncher.source.asciiSpec, null, null, ($("#locationText")?.value?.replace(invalidChars, '_') || dialog.mLauncher.suggestedFileName), null, null, false, null, null, null, null, null, false, null, mainwin.PrivateBrowsingUtils.isBrowserPrivate(mainwin.gBrowser.selectedBrowser), Services.scriptSecurityManager.getSystemPrincipal());
-                        close();
-                    }
-                });
-                dialogFrame.getButton('extra2').before(saveAs);
+                this._createSaveAsButton(dialogFrame);
             }
-            // 快速保存
+
             if (isTrue('userChromeJS.downloadPlus.enableSaveTo')) {
-                let saveTo = createEl(document, 'button', {
-                    id: 'save-to',
-                    part: 'dialog-button',
-                    size: 'small',
-                    label: LANG.format("save to"),
-                    type: 'menu',
-                    accesskey: 'T'
-                });
-                let saveToMenu = createEl(document, 'menupopup');
-                saveToMenu.appendChild(createEl(document, "html:link", {
-                    rel: "stylesheet",
-                    href: "chrome://global/skin/global.css"
-                }));
-                saveToMenu.appendChild(createEl(document, "html:link", {
-                    rel: "stylesheet",
-                    href: "chrome://global/content/elements/menupopup.css"
-                }));
-                saveTo.appendChild(saveToMenu);
-                Services.wm.getMostRecentWindow("navigator:browser").DownloadPlus.SAVE_DIRS.forEach(item => {
-                    let [name, dir] = [item[1], item[0]];
-                    saveToMenu.appendChild(createEl(document, "menuitem", {
-                        label: name || (dir.match(/[^\\/]+$/) || [dir])[0],
-                        dir: dir,
-                        image: "moz-icon:file:///" + dir + "\\",
-                        class: "menuitem-iconic",
-                        onclick: function () {
-                            let dir = this.getAttribute('dir');
-                            let file = Cc["@mozilla.org/file/local;1"].createInstance(Ci.nsIFile);
-                            let path = dir.replace(/^\./, Cc["@mozilla.org/file/directory_service;1"].getService(Ci.nsIProperties).get("ProfD", Ci.nsIFile).path);
-                            path = path.endsWith("\\") ? path : path + "\\";
-                            file.initWithPath(path + ($("#locationText")?.value?.replace(invalidChars, '_') || dialog.mLauncher.suggestedFileName));
-                            if (dialog.mLauncher.MIMEInfo) {
-                                dialog.mLauncher.MIMEInfo.preferredAction = Ci.nsIMIMEInfo.saveToDisk;
-                                dialog.mLauncher.MIMEInfo.alwaysAskBeforeHandling = false;
-                            }
-                            dialog.mLauncher.saveDestinationAvailable(file);
-                            dialog.onCancel = function () { };
-                            close();
-                        }
-                    }));
-                })
-                dialogFrame.getButton('cancel').before(saveTo);
+                this._createSaveToButton(dialogFrame);
             }
-            dialog.onOK = (() => {
-                var cached_function = dialog.onOK;
-                return async function (...args) {
-                    if ($('#flashgotRadio')?.selected)
-                        return $('#Flashgot-Download-By-Default-Manager').click();
-                    else if ($('#locationText')?.value && $('#locationText')?.value != dialog.mLauncher.suggestedFileName) {
-                        if (isTrue('browser.download.useDownloadDir')) {
-                            dialog.onCancel = function () { };
-                            let file = await IOUtils.getFile(await Downloads.getPreferredDownloadsDirectory(), $('#locationText').value);
-                            return dialog.mLauncher.saveDestinationAvailable(file);
-                        } else {
-                            const mainwin = Services.wm.getMostRecentWindow("navigator:browser");
-                            // 感谢 ycls006 / alice0775
-                            Cu.evalInSandbox("(" + mainwin.internalSave.toString().replace("let ", "").replace("var fpParams", "fileInfo.fileExt=null;fileInfo.fileName=aDefaultFileName;var fpParams") + ")", mainwin.DownloadPlus.sb)(dialog.mLauncher.source.asciiSpec, null, null, ($("#locationText")?.value?.replace(invalidChars, '_') || dialog.mLauncher.suggestedFileName), null, null, false, null, null, null, null, null, false, null, mainwin.PrivateBrowsingUtils.isBrowserPrivate(mainwin.gBrowser.selectedBrowser), Services.scriptSecurityManager.getSystemPrincipal());
-                            close();
-                        }
-                    } else {
-                        return cached_function.apply(this, ...args);
+        },
+
+        /**
+         * 创建"保存并打开"按钮
+         * @param {Element} dialogFrame - 对话框框架元素
+         */
+        _createSaveAndOpenButton (dialogFrame) {
+            const saveAndOpen = createEl(document, 'button', {
+                id: 'save-and-open',
+                label: LANG.format("save and open"),
+                accesskey: 'P',
+                size: 'small',
+                part: 'dialog-button'
+            });
+
+            saveAndOpen.addEventListener('click', () => {
+                const browserWindow = Services.wm.getMostRecentWindow("navigator:browser");
+                browserWindow.DownloadPlus.URLS_FOR_OPEN.push(dialog.mLauncher.source.asciiSpec);
+                dialog.dialogElement('save').click();
+                dialogFrame.getButton("accept").disabled = 0;
+                dialogFrame.getButton("accept").click();
+            });
+
+            dialogFrame.getButton('extra2').before(saveAndOpen);
+        },
+
+        /**
+         * 创建"另存为"按钮
+         * @param {Element} dialogFrame - 对话框框架元素
+         */
+        _createSaveAsButton (dialogFrame) {
+            const self = this;
+            const saveAs = createEl(document, 'button', {
+                id: 'save-as',
+                label: LANG.format("save as"),
+                accesskey: 'E',
+                oncommand: function () {
+                    self._triggerSaveAsDialog();
+                    close();
+                }
+            });
+
+            dialogFrame.getButton('extra2').before(saveAs);
+        },
+
+        /**
+         * 触发"另存为"对话框
+         */
+        _triggerSaveAsDialog () {
+            const mainWindow = Services.wm.getMostRecentWindow("navigator:browser");
+            const fileName = $("#locationText")?.value?.replace(invalidChars, '_') ||
+                dialog.mLauncher.suggestedFileName;
+
+            // 感谢 ycls006 / alice0775
+            Cu.evalInSandbox(
+                "(" + mainWindow.internalSave.toString()
+                    .replace("let ", "")
+                    .replace("var fpParams", "fileInfo.fileExt=null;fileInfo.fileName=aDefaultFileName;var fpParams") + ")",
+                mainWindow.DownloadPlus.sb
+            )(
+                dialog.mLauncher.source.asciiSpec, null, null, fileName,
+                null, null, false, null, null, null, null, null, false, null,
+                mainWindow.PrivateBrowsingUtils.isBrowserPrivate(mainWindow.gBrowser.selectedBrowser),
+                Services.scriptSecurityManager.getSystemPrincipal()
+            );
+        },
+
+        /**
+         * 创建"保存到"按钮及菜单
+         * @param {Element} dialogFrame - 对话框框架元素
+         */
+        _createSaveToButton (dialogFrame) {
+            const saveTo = createEl(document, 'button', {
+                id: 'save-to',
+                part: 'dialog-button',
+                size: 'small',
+                label: LANG.format("save to"),
+                type: 'menu',
+                accesskey: 'T'
+            });
+
+            const saveToMenu = this._createSaveToMenu();
+            saveTo.appendChild(saveToMenu);
+            dialogFrame.getButton('cancel').before(saveTo);
+        },
+
+        /**
+         * 创建"保存到"菜单
+         * @returns {Element} 菜单元素
+         */
+        _createSaveToMenu () {
+            const saveToMenu = createEl(document, 'menupopup');
+
+            // 添加样式表
+            saveToMenu.appendChild(createEl(document, "html:link", {
+                rel: "stylesheet",
+                href: "chrome://global/skin/global.css"
+            }));
+            saveToMenu.appendChild(createEl(document, "html:link", {
+                rel: "stylesheet",
+                href: "chrome://global/content/elements/menupopup.css"
+            }));
+
+            // 为每个保存目录创建菜单项
+            const browserWindow = Services.wm.getMostRecentWindow("navigator:browser");
+            browserWindow.DownloadPlus.SAVE_DIRS.forEach(([dirPath, dirName]) => {
+                this._createSaveToMenuItem(saveToMenu, dirPath, dirName);
+            });
+
+            return saveToMenu;
+        },
+
+        /**
+         * 创建"保存到"菜单项
+         * @param {Element} menu - 菜单容器
+         * @param {string} dirPath - 目录路径
+         * @param {string} dirName - 目录名称
+         */
+        _createSaveToMenuItem (menu, dirPath, dirName) {
+            const menuitem = createEl(document, "menuitem", {
+                label: dirName || (dirPath.match(/[^\\/]+$/) || [dirPath])[0],
+                dir: dirPath,
+                image: "moz-icon:file:///" + dirPath + "\\",
+                class: "menuitem-iconic",
+                onclick: function () {
+                    const targetDir = this.getAttribute('dir');
+                    const file = Cc["@mozilla.org/file/local;1"].createInstance(Ci.nsIFile);
+
+                    // 处理相对路径
+                    let fullPath = targetDir.replace(/^\./,
+                        Cc["@mozilla.org/file/directory_service;1"]
+                            .getService(Ci.nsIProperties)
+                            .get("ProfD", Ci.nsIFile).path
+                    );
+
+                    // 确保路径以反斜杠结尾
+                    fullPath = fullPath.endsWith("\\") ? fullPath : fullPath + "\\";
+
+                    // 获取文件名
+                    const fileName = $("#locationText")?.value?.replace(invalidChars, '_') ||
+                        dialog.mLauncher.suggestedFileName;
+
+                    file.initWithPath(fullPath + fileName);
+
+                    // 设置 MIME 信息
+                    if (dialog.mLauncher.MIMEInfo) {
+                        dialog.mLauncher.MIMEInfo.preferredAction = Ci.nsIMIMEInfo.saveToDisk;
+                        dialog.mLauncher.MIMEInfo.alwaysAskBeforeHandling = false;
                     }
-                };
-            })();
+
+                    dialog.mLauncher.saveDestinationAvailable(file);
+                    dialog.onCancel = function () { };
+                    close();
+                }
+            });
+
+            menu.appendChild(menuitem);
+        },
+
+        /**
+         * 重写对话框 OK 处理器
+         * 支持 FlashGot 下载和自定义文件名
+         */
+        _overrideDialogOKHandler () {
+            const originalOKHandler = dialog.onOK;
+            const self = this;
+
+            dialog.onOK = async function (...args) {
+                const flashgotRadio = $('#flashgotRadio');
+                const locationText = $('#locationText');
+
+                // 如果选择了 FlashGot,触发 FlashGot 下载
+                if (flashgotRadio?.selected) {
+                    return $('#Flashgot-Download-By-Default-Manager').click();
+                }
+
+                // 如果修改了文件名
+                const hasCustomFilename = locationText?.value &&
+                    locationText.value !== dialog.mLauncher.suggestedFileName;
+
+                if (hasCustomFilename) {
+                    return await self._handleCustomFilename(locationText.value);
+                }
+
+                // 使用原始处理器
+                return originalOKHandler.apply(this, args);
+            };
+        },
+
+        /**
+         * 处理自定义文件名的保存
+         * @param {string} customFilename - 自定义文件名
+         */
+        _handleCustomFilename: async function (customFilename) {
+            // 如果使用默认下载目录
+            if (isTrue('browser.download.useDownloadDir')) {
+                dialog.onCancel = function () { };
+                const downloadDir = await Downloads.getPreferredDownloadsDirectory();
+                const file = await IOUtils.getFile(downloadDir, customFilename);
+                return dialog.mLauncher.saveDestinationAvailable(file);
+            }
+
+            // 否则显示另存为对话框
+            this._triggerSaveAsDialog();
+            close();
+        },
+
+        /**
+         * 强制显示对话框选项
+         * 确保打开/保存/FlashGot 选项可见
+         */
+        _forceShowDialogOptions () {
+            const self = this;
             setTimeout(() => {
-                // 强制显示打开/保存/FlashGot选项
-                document.getElementById("normalBox").removeAttribute("collapsed");
+                document.getElementById("normalBox")?.removeAttribute("collapsed");
                 window.sizeToContent();
-            }, 100);
-            this._log("initDownloadPopup 结束");
+            }, self.DIALOG_RENDER_DELAY);
         },
         handleEvent: async function (event) {
             this._log("handleEvent", event.type, event.target.id);
@@ -668,10 +999,10 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                 if (target.id === "DownloadPlus-Btn-Popup" || target.id === "DownloadPlus-ContextMenu-Popup") {
                     this.populateDynamicItems(target);
                 } else if (target.id === "DownloadPlus-Flashgot-Handler-Popup") {
-                    let dropdown = event.target;
-                    let bw = Services.wm.getMostRecentWindow("navigator:browser");
+                    const dropdown = event.target;
+                    const browserWindow = Services.wm.getMostRecentWindow("navigator:browser");
                     dropdown.querySelectorAll('menuitem[manager]').forEach(e => e.remove());
-                    bw.DownloadPlus.DOWNLOAD_MANAGERS.forEach(manager => {
+                    browserWindow.DownloadPlus.DOWNLOAD_MANAGERS.forEach(manager => {
                         const menuitemManager = createEl(dropdown.ownerDocument, 'menuitem', {
                             label: this.DEFAULT_MANAGER === manager ? LANG.format('default download manager', manager) : manager,
                             manager,
@@ -692,12 +1023,12 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                     })
                 }
             } else if (type === "mouseover") {
-                const btn = target.ownerDocument.querySelector('#DownloadPlus-Btn');
-                if (!btn) return;
-                const mp = btn.querySelector("#DownloadPlus-Btn-Popup");
-                if (!mp) return;
+                const button = target.ownerDocument.querySelector('#DownloadPlus-Btn');
+                if (!button) return;
+                const menuPopup = button.querySelector("#DownloadPlus-Btn-Popup");
+                if (!menuPopup) return;
                 // 获取按钮的位置信息
-                const rect = btn.getBoundingClientRect();
+                const rect = button.getBoundingClientRect();
                 // 获取窗口的宽度和高度
                 const windowWidth = target.ownerGlobal.innerWidth;
                 const windowHeight = target.ownerGlobal.innerHeight;
@@ -706,13 +1037,13 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                 const y = rect.top + rect.height / 2;  // 按钮的垂直中心点
 
                 if (x < windowWidth / 2 && y < windowHeight / 2) {
-                    mp.removeAttribute("position");
+                    menuPopup.removeAttribute("position");
                 } else if (x >= windowWidth / 2 && y < windowHeight / 2) {
-                    mp.setAttribute("position", "after_end");
+                    menuPopup.setAttribute("position", "after_end");
                 } else if (x >= windowWidth / 2 && y >= windowHeight / 2) {
-                    mp.setAttribute("position", "before_end");
+                    menuPopup.setAttribute("position", "before_end");
                 } else {
-                    mp.setAttribute("position", "before_start");
+                    menuPopup.setAttribute("position", "before_start");
                 }
             }
         },
@@ -837,6 +1168,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                 this._log("读取 prefs 失败，强制重新扫描", e);
             }
             if (force) {
+                let self = this;
                 const resultPath = handlePath('{TmpD}\\.flashgot.dm.' + Math.random().toString(36).slice(2) + '.txt');
                 this._log("强制刷新，生成临时文件", resultPath);
                 await new Promise((resolve, reject) => {
@@ -846,7 +1178,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                             observe (subject, topic) {
                                 switch (topic) {
                                     case "process-finished":
-                                        this._log("FlashGot.exe 执行完毕，准备读取结果");
+                                        self._log("FlashGot.exe 执行完毕，准备读取结果");
                                         try {
                                             // Wait 1s after process to resolve
                                             setTimeout(resolve, 1000);
@@ -855,7 +1187,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
                                         }
                                         break;
                                     default:
-                                        this._log("FlashGot.exe 异常结束", topic);
+                                        self._log("FlashGot.exe 异常结束", topic);
                                         reject(topic);
                                         break;
                                 }
@@ -901,7 +1233,7 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
             const uri = Services.io.newURI(url);
             const { FLASHGOT_PATH, DL_FILE_STRUCTURE, REFERER_OVERRIDES, USERAGENT_OVERRIDES } = this;
             const { description, mBrowser, isPrivate } = options;
-            const userAgent = (function (o, u, m, c) {
+            let userAgent = (function (o, u, m, c) {
                 for (let d of Object.keys(o)) {
                     // need to implement regex / subdomain process
                     if (u.host.endsWith(d)) return o[d];
@@ -998,27 +1330,27 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 
     /**
      * 获取所有盘符，用到 dll 调用，只能在 windows 下使用
-     * 
+     *
      * @system windows
-     * @returns {array} 所有盘符数组
+     * @returns {Array<string>} 所有盘符数组
      */
     function getAllDrives () {
-        let lib = ctypes.open("kernel32.dll");
-        let GetLogicalDriveStringsW = lib.declare('GetLogicalDriveStringsW', ctypes.winapi_abi, ctypes.unsigned_long, ctypes.uint32_t, ctypes.char16_t.ptr);
-        let buffer = new (ctypes.ArrayType(ctypes.char16_t, 1024))();
-        let rv = GetLogicalDriveStringsW(buffer.length, buffer);
-        let resultLen = parseInt(rv.toString() || "0");
-        let arr = [];
+        const lib = ctypes.open("kernel32.dll");
+        const GetLogicalDriveStringsW = lib.declare('GetLogicalDriveStringsW', ctypes.winapi_abi, ctypes.unsigned_long, ctypes.uint32_t, ctypes.char16_t.ptr);
+        const buffer = new (ctypes.ArrayType(ctypes.char16_t, 1024))();
+        const returnValue = GetLogicalDriveStringsW(buffer.length, buffer);
+        const resultLen = parseInt(returnValue.toString() || "0");
+        let driveArray = [];
         if (!resultLen) {
             lib.close();
-            return arr;
+            return driveArray;
         }
         for (let i = 0; i < resultLen; i++) {
-            arr[i] = buffer.addressOfElement(i).contents;
+            driveArray[i] = buffer.addressOfElement(i).contents;
         }
-        arr = arr.join('').split('\0').filter(el => el.length);
+        driveArray = driveArray.join('').split('\0').filter(item => item.length);
         lib.close();
-        return arr;
+        return driveArray;
     }
 
     /**
@@ -1033,62 +1365,62 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 
     /**
      * 创建 DOM 元素
-     * 
-     * @param {Document} doc 
-     * @param {string} type 
-     * @param {Object} attrs 
-     * @returns 
+     *
+     * @param {Document} doc
+     * @param {string} type
+     * @param {Object} attrs
+     * @returns {Element}
      */
     function createEl (doc, type, attrs = {}) {
-        let el = type.startsWith('html:') ? doc.createElementNS('http://www.w3.org/1999/xhtml', type) : doc.createXULElement(type);
-        for (let key of Object.keys(attrs)) {
+        const element = type.startsWith('html:') ? doc.createElementNS('http://www.w3.org/1999/xhtml', type) : doc.createXULElement(type);
+        for (const key of Object.keys(attrs)) {
             if (key === 'innerHTML') {
-                el.innerHTML = attrs[key];
+                element.innerHTML = attrs[key];
             } else if (key.startsWith('on')) {
-                el.addEventListener(key.slice(2).toLocaleLowerCase(), attrs[key]);
+                element.addEventListener(key.slice(2).toLocaleLowerCase(), attrs[key]);
             } else {
-                el.setAttribute(key, attrs[key]);
+                element.setAttribute(key, attrs[key]);
             }
         }
-        return el;
+        return element;
     }
 
     /**
      * 复制文本到剪贴板
-     * 
-     * @param {string} aText 需要复制的文本
+     *
+     * @param {string} text 需要复制的文本
      */
-    function copyText (aText) {
-        Cc["@mozilla.org/widget/clipboardhelper;1"].getService(Ci.nsIClipboardHelper).copyString(aText);
+    function copyText (text) {
+        Cc["@mozilla.org/widget/clipboardhelper;1"].getService(Ci.nsIClipboardHelper).copyString(text);
     }
 
     /**
      * 从文件读取内容
-     * 
-     * @param {Ci.nsIFile|string} aFileOrPath 文件实例或路径
+     *
+     * @param {Ci.nsIFile|string} fileOrPath 文件实例或路径
      * @param {string} encoding 编码
-     * @returns 
+     * @returns {string} 文件内容
      */
-    function readText (aFileOrPath, encoding = "UTF-8") {
+    function readText (fileOrPath, encoding = "UTF-8") {
         encoding || (encoding = "UTF-8");
-        var aFile;
-        if (typeof aFileOrPath == "string") {
-            aFile = Cc['@mozilla.org/file/local;1'].createInstance(Ci.nsIFile);
-            aFile.initWithPath(aFileOrPath);
+        let file;
+        if (typeof fileOrPath == "string") {
+            file = Cc['@mozilla.org/file/local;1'].createInstance(Ci.nsIFile);
+            file.initWithPath(fileOrPath);
         } else {
-            aFile = aFileOrPath;
+            file = fileOrPath;
         }
-        if (aFile.exists()) {
-            let stream = Cc['@mozilla.org/network/file-input-stream;1'].createInstance(Ci.nsIFileInputStream);
-            stream.init(aFile, 0x01, 0, 0);
-            let cvstream = Cc['@mozilla.org/intl/converter-input-stream;1'].createInstance(Ci.nsIConverterInputStream);
-            cvstream.init(stream, encoding, 1024, Ci.nsIConverterInputStream.DEFAULT_REPLACEMENT_CHARACTER);
-            let content = '',
-                data = {};
-            while (cvstream.readString(4096, data)) {
+        if (file.exists()) {
+            const stream = Cc['@mozilla.org/network/file-input-stream;1'].createInstance(Ci.nsIFileInputStream);
+            stream.init(file, 0x01, 0, 0);
+            const converterStream = Cc['@mozilla.org/intl/converter-input-stream;1'].createInstance(Ci.nsIConverterInputStream);
+            converterStream.init(stream, encoding, 1024, Ci.nsIConverterInputStream.DEFAULT_REPLACEMENT_CHARACTER);
+            let content = '';
+            const data = {};
+            while (converterStream.readString(4096, data)) {
                 content += data.value;
             }
-            cvstream.close();
+            converterStream.close();
             return content.replace(/\r\n?/g, '\n');
         } else {
             return "";
@@ -1097,23 +1429,35 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 
     /**
      * 弹出右下角提示
-     * 
-     * @param {string} aMsg 提示信息
-     * @param {string} aTitle 提示标题
-     * @param {Function} aCallback 提示回调，可以不提供
+     *
+     * @param {string} message 提示信息
+     * @param {string} title 提示标题
+     * @param {Function} callback 提示回调，可以不提供
      */
-    function alerts (aMsg, aTitle, aCallback) {
-        var callback = aCallback ? {
+    function alerts (message, title, callback) {
+        const alertsService = Cc["@mozilla.org/alerts-service;1"].getService(Ci.nsIAlertsService);
+        const mTitle = title || "DownloadPlus";
+        const mMessage = message + "";
+        const callbackObject = callback ? {
             observe: function (subject, topic, data) {
                 if ("alertclickcallback" != topic)
                     return;
-                aCallback.call(null);
+                callback.call(null);
             }
         } : null;
-        var alertsService = Cc["@mozilla.org/alerts-service;1"].getService(Ci.nsIAlertsService);
-        alertsService.showAlertNotification(
-            "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSJjb250ZXh0LWZpbGwiIGZpbGwtb3BhY2l0eT0iY29udGV4dC1maWxsLW9wYWNpdHkiPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48cGF0aCBkPSJNMTIgMjJDNi40NzcgMjIgMiAxNy41MjMgMiAxMlM2LjQ3NyAyIDEyIDJzMTAgNC40NzcgMTAgMTAtNC40NzcgMTAtMTAgMTB6bTAtMmE4IDggMCAxIDAgMC0xNiA4IDggMCAwIDAgMCAxNnpNMTEgN2gydjJoLTJWN3ptMCA0aDJ2NmgtMnYtNnoiLz48L3N2Zz4=", aTitle || "DownloadPlus",
-            aMsg + "", !!callback, "", callback);
+        if (versionGE('147a1')) {
+            let alert = new AlertNotification({
+                imageURL: 'chrome://global/skin/icons/info.svg',
+                title: mTitle,
+                text: mMessage,
+                textClickable: !!callbackObject,
+            });
+            alertsService.showAlert(alert, callbackObject?.observe);
+        } else {
+            alertsService.show(
+                "chrome://global/skin/icons/info.svg", mTitle,
+                mMessage, !!callbackObject, "", callbackObject);
+        }
     }
 
     function handlePath (path) {
@@ -1147,40 +1491,31 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 
     /**
      * 计算文本的哈希值
-     * 
+     *
      * @param {string} text 需要计算的文本
      * @param {string} type 哈希类型
-     * @returns 
+     * @returns {string} 哈希值
      */
     function hashText (text, type) {
         if (!(typeof text == 'string' || text instanceof String)) {
             text = "";
         }
 
-        // var converter = Cc["@mozilla.org/intl/scriptableunicodeconverter"]
-        //     .createInstance(Ci.nsIScriptableUnicodeConverter);
-
-        // converter.charset = "UTF-8";
-        // var result = {};
-        // var data = converter.convertToByteArray(text, result);
-
         // Bug 1851797 - Remove nsIScriptableUnicodeConverter convertToByteArray and convertToInputStream
-        let data = new TextEncoder("utf-8").encode(text);
+        const data = new TextEncoder("utf-8").encode(text);
 
         if (Ci.nsICryptoHash[type]) {
             type = Ci.nsICryptoHash[type]
         } else {
             type = 2;
         }
-        var hasher = Cc["@mozilla.org/security/hash;1"].createInstance(
+        const hasher = Cc["@mozilla.org/security/hash;1"].createInstance(
             Ci.nsICryptoHash
         );
 
-        text = null;
         hasher.init(type);
         hasher.update(data, data.length);
-        var hash = hasher.finish(false);
-        str = data = hasher = null;
+        const hash = hasher.finish(false);
 
         function toHexString (charCode) {
             return ("0" + charCode.toString(16)).slice(-2);
@@ -1191,16 +1526,15 @@ userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 
     /**
      * 文本串替换
-     * 
+     *
      * @param {string} replaceString 需要处理的文本串
      * @param {Array} find 需要被替换的文本串
      * @param {Array} replace 替换的文本串
-     * @returns string
+     * @returns {string} 替换后的文本串
      */
     function replaceArray (replaceString, find, replace) {
-        var regex;
-        for (var i = 0; i < find.length; i++) {
-            regex = new RegExp(find[i], "g");
+        for (let i = 0; i < find.length; i++) {
+            const regex = new RegExp(find[i], "g");
             replaceString = replaceString.replace(regex, replace[i]);
         }
         return replaceString;

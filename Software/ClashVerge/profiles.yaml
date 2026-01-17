@@ -1,240 +1,194 @@
 # Profiles Config for Clash Verge
 
-current: RPCQGeAoLnyE
+current: R1mXxj5uJFzg
 items:
 - uid: Merge
   type: merge
   name: null
   file: Merge.yaml
-  updated: 1753157405
+  updated: 1768609763
 - uid: Script
   type: script
   name: null
   file: Script.js
-  updated: 1753157405
-- uid: mdSsUrAK6z5A
+  updated: 1768609763
+- uid: mQ65tQOB0HLw
   type: merge
   name: null
-  file: mdSsUrAK6z5A.yaml
-  updated: 1753325988
-- uid: s4q0xUnl9M3m
+  file: mQ65tQOB0HLw.yaml
+  updated: 1768609826
+- uid: sHrEZEATmNHd
   type: script
   name: null
-  file: s4q0xUnl9M3m.js
-  updated: 1753325988
-- uid: r9Slro1qLQSJ
+  file: sHrEZEATmNHd.js
+  updated: 1768609826
+- uid: rvoGjw9lDo1O
   type: rules
   name: null
-  file: r9Slro1qLQSJ.yaml
-  updated: 1753325988
-- uid: pZ09ZpiaNjkY
+  file: rvoGjw9lDo1O.yaml
+  updated: 1768609826
+- uid: pyqCKl0B2Byk
   type: proxies
   name: null
-  file: pZ09ZpiaNjkY.yaml
-  updated: 1753325988
-- uid: gftjOaFHRwML
+  file: pyqCKl0B2Byk.yaml
+  updated: 1768609826
+- uid: gbKzlXk9CziP
   type: groups
   name: null
-  file: gftjOaFHRwML.yaml
-  updated: 1753325988
-- uid: RFmE0U5jwt1F
-  type: remote
-  name: puddincat
-  file: RFmE0U5jwt1F.yaml
-  desc: ''
-  url: https://gcore.jsdelivr.net/gh/PuddinCat/BestClash/proxies.yaml
-  updated: 1768450004
-  option:
-    with_proxy: false
-    self_proxy: false
-    update_interval: 30
-    allow_auto_update: true
-    merge: mdSsUrAK6z5A
-    script: s4q0xUnl9M3m
-    rules: r9Slro1qLQSJ
-    proxies: pZ09ZpiaNjkY
-    groups: gftjOaFHRwML
-- uid: mMcRTtDq8U0c
-  type: merge
-  name: null
-  file: mMcRTtDq8U0c.yaml
-  updated: 1764940467
-- uid: sVNOAFXhrBYA
-  type: script
-  name: null
-  file: sVNOAFXhrBYA.js
-  updated: 1764940467
-- uid: raUXqTRF2OEd
-  type: rules
-  name: null
-  file: raUXqTRF2OEd.yaml
-  updated: 1764940467
-- uid: p2xad9Vbnu5P
-  type: proxies
-  name: null
-  file: p2xad9Vbnu5P.yaml
-  updated: 1764940467
-- uid: gUESsIyp5gwF
-  type: groups
-  name: null
-  file: gUESsIyp5gwF.yaml
-  updated: 1764940467
-- uid: RPCQGeAoLnyE
-  type: remote
-  name: xrqj
-  file: RPCQGeAoLnyE.yaml
-  desc: xrqj邮箱-cmliu项目
-  url: https://xrqj.pages.dev/sub?token=7861ff9c5fb7ab85e740b07639cc3f9b
-  selected:
-  - name: 🚀 节点选择
-    now: ♻️ 自动选择
-  extra:
-    upload: 2261018302424
-    download: 2261018302424
-    total: 26388279066624
-    expire: 4102329600
-  updated: 1768450008
-  option:
-    with_proxy: false
-    self_proxy: false
-    update_interval: 60
-    allow_auto_update: true
-    merge: mMcRTtDq8U0c
-    script: sVNOAFXhrBYA
-    rules: raUXqTRF2OEd
-    proxies: p2xad9Vbnu5P
-    groups: gUESsIyp5gwF
-  home: https://xrqj.pages.dev/admin
-- uid: m2pPN2puQ2A5
-  type: merge
-  name: null
-  file: m2pPN2puQ2A5.yaml
-  updated: 1764940505
-- uid: srHOGryHMtbP
-  type: script
-  name: null
-  file: srHOGryHMtbP.js
-  updated: 1764940505
-- uid: rXoUuZOhQmuh
-  type: rules
-  name: null
-  file: rXoUuZOhQmuh.yaml
-  updated: 1764940505
-- uid: pS1cl7usYdDb
-  type: proxies
-  name: null
-  file: pS1cl7usYdDb.yaml
-  updated: 1764940505
-- uid: gCClPran3bXH
-  type: groups
-  name: null
-  file: gCClPran3bXH.yaml
-  updated: 1764940505
-- uid: R6dfsAL7TSgZ
-  type: remote
-  name: dp88
-  file: R6dfsAL7TSgZ.yaml
-  desc: 88邮箱-cmliu项目
-  url: https://dp88.dupontjoy.shop/sub?token=67f57a485b7ec464ba3eb735f54b82f9
-  selected:
-  - name: ♻️ 自动选择
-    now: mfa.gov.ua
-  - name: 🚀 节点选择
-    now: bestcf.030101.xyz
-  extra:
-    upload: 2260974474669
-    download: 2260974474669
-    total: 26388279066624
-    expire: 4102329600
-  updated: 1768450007
-  option:
-    with_proxy: false
-    self_proxy: false
-    update_interval: 60
-    allow_auto_update: true
-    merge: m2pPN2puQ2A5
-    script: srHOGryHMtbP
-    rules: rXoUuZOhQmuh
-    proxies: pS1cl7usYdDb
-    groups: gCClPran3bXH
-  home: https://dp88.dupontjoy.shop/admin
-- uid: m4CfthHvnE5H
-  type: merge
-  name: null
-  file: m4CfthHvnE5H.yaml
-  updated: 1764940559
-- uid: sdJhSCTjhv0p
-  type: script
-  name: null
-  file: sdJhSCTjhv0p.js
-  updated: 1764940559
-- uid: rU2012b1E1AE
-  type: rules
-  name: null
-  file: rU2012b1E1AE.yaml
-  updated: 1764940559
-- uid: pLXwSLHgFQ0N
-  type: proxies
-  name: null
-  file: pLXwSLHgFQ0N.yaml
-  updated: 1764940559
-- uid: gj8YvGcm6HNk
-  type: groups
-  name: null
-  file: gj8YvGcm6HNk.yaml
-  updated: 1764940559
-- uid: RUkEKBpwWGFO
-  type: remote
-  name: dp88bj
-  file: RUkEKBpwWGFO.yaml
-  desc: 88邮箱-cfnew项目
-  url: https://api.asailor.org/sub?target=clash&url=https://dp88bj.dupontjoy.shop/dp88bj/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1768450004
-  option:
-    update_interval: 60
-    allow_auto_update: true
-    merge: m4CfthHvnE5H
-    script: sdJhSCTjhv0p
-    rules: rU2012b1E1AE
-    proxies: pLXwSLHgFQ0N
-    groups: gj8YvGcm6HNk
-- uid: mUDlInZqFjkk
-  type: merge
-  name: null
-  file: mUDlInZqFjkk.yaml
-  updated: 1764940596
-- uid: sgjhzbgsKIrT
-  type: script
-  name: null
-  file: sgjhzbgsKIrT.js
-  updated: 1764940596
-- uid: rzXP2YGFUA59
-  type: rules
-  name: null
-  file: rzXP2YGFUA59.yaml
-  updated: 1764940596
-- uid: pT2exACH8gIk
-  type: proxies
-  name: null
-  file: pT2exACH8gIk.yaml
-  updated: 1764940596
-- uid: gvk56mBopFu0
-  type: groups
-  name: null
-  file: gvk56mBopFu0.yaml
-  updated: 1764940596
-- uid: RZMwOHf9XhCv
+  file: gbKzlXk9CziP.yaml
+  updated: 1768609826
+- uid: RzKJ34RrWjNV
   type: remote
   name: 163cfn
-  file: RZMwOHf9XhCv.yaml
-  desc: 163邮箱-cfnew项目
+  file: RzKJ34RrWjNV.yaml
+  desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https://163cfn.232885.xyz/163cfn/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1768450004
+  updated: 1768613454
   option:
+    with_proxy: false
+    self_proxy: false
     update_interval: 60
     allow_auto_update: true
-    merge: mUDlInZqFjkk
-    script: sgjhzbgsKIrT
-    rules: rzXP2YGFUA59
-    proxies: pT2exACH8gIk
-    groups: gvk56mBopFu0
+    merge: mQ65tQOB0HLw
+    script: sHrEZEATmNHd
+    rules: rvoGjw9lDo1O
+    proxies: pyqCKl0B2Byk
+    groups: gbKzlXk9CziP
+- uid: mSbivow0g7K3
+  type: merge
+  name: null
+  file: mSbivow0g7K3.yaml
+  updated: 1768609861
+- uid: sVDw9jWjaXif
+  type: script
+  name: null
+  file: sVDw9jWjaXif.js
+  updated: 1768609861
+- uid: roOyUC6l3tLV
+  type: rules
+  name: null
+  file: roOyUC6l3tLV.yaml
+  updated: 1768609861
+- uid: pFKtlMMTCxjK
+  type: proxies
+  name: null
+  file: pFKtlMMTCxjK.yaml
+  updated: 1768609861
+- uid: gJM94Az4JbJq
+  type: groups
+  name: null
+  file: gJM94Az4JbJq.yaml
+  updated: 1768609861
+- uid: RwWmv60H3j0A
+  type: remote
+  name: dp88bj
+  file: RwWmv60H3j0A.yaml
+  desc: ''
+  url: https://api.asailor.org/sub?target=clash&url=https://dp88bj.dupontjoy.shop/dp88bj/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
+  updated: 1768613475
+  option:
+    with_proxy: false
+    self_proxy: false
+    update_interval: 60
+    allow_auto_update: true
+    merge: mSbivow0g7K3
+    script: sVDw9jWjaXif
+    rules: roOyUC6l3tLV
+    proxies: pFKtlMMTCxjK
+    groups: gJM94Az4JbJq
+- uid: mdGxnSKEKjUn
+  type: merge
+  name: null
+  file: mdGxnSKEKjUn.yaml
+  updated: 1768609920
+- uid: s4sNF3Pn0FC9
+  type: script
+  name: null
+  file: s4sNF3Pn0FC9.js
+  updated: 1768609920
+- uid: rmRf7fFWR3bT
+  type: rules
+  name: null
+  file: rmRf7fFWR3bT.yaml
+  updated: 1768609920
+- uid: pFkHTiZHcalR
+  type: proxies
+  name: null
+  file: pFkHTiZHcalR.yaml
+  updated: 1768609920
+- uid: gJ9TeWSCxhZh
+  type: groups
+  name: null
+  file: gJ9TeWSCxhZh.yaml
+  updated: 1768609920
+- uid: RSylbZsV69Jd
+  type: remote
+  name: dp88
+  file: RSylbZsV69Jd.yaml
+  desc: ''
+  url: https://dp88.dupontjoy.shop/sub?token=67f57a485b7ec464ba3eb735f54b82f9
+  extra:
+    upload: 872960005651
+    download: 872960005651
+    total: 26388279066624
+    expire: 4102329600
+  updated: 1768613720
+  option:
+    with_proxy: false
+    self_proxy: false
+    update_interval: 60
+    allow_auto_update: true
+    merge: mdGxnSKEKjUn
+    script: s4sNF3Pn0FC9
+    rules: rmRf7fFWR3bT
+    proxies: pFkHTiZHcalR
+    groups: gJ9TeWSCxhZh
+  home: https://dp88.dupontjoy.shop/admin
+- uid: mCwMAmsa9Tfw
+  type: merge
+  name: null
+  file: mCwMAmsa9Tfw.yaml
+  updated: 1768609969
+- uid: sBQkhM9LIXzn
+  type: script
+  name: null
+  file: sBQkhM9LIXzn.js
+  updated: 1768609969
+- uid: rVBQZaAI7dna
+  type: rules
+  name: null
+  file: rVBQZaAI7dna.yaml
+  updated: 1768609969
+- uid: pITwuSvbv03f
+  type: proxies
+  name: null
+  file: pITwuSvbv03f.yaml
+  updated: 1768609969
+- uid: ghZ9kUzXAIiM
+  type: groups
+  name: null
+  file: ghZ9kUzXAIiM.yaml
+  updated: 1768609969
+- uid: R1mXxj5uJFzg
+  type: remote
+  name: xrqj
+  file: R1mXxj5uJFzg.yaml
+  desc: ''
+  url: https://xrqj.232885.xyz/sub?token=6a4ea620288c3476b8c4dfc7b97378f6
+  extra:
+    upload: 872962296301
+    download: 872962296301
+    total: 26388279066624
+    expire: 4102329600
+  updated: 1768613720
+  option:
+    with_proxy: false
+    self_proxy: false
+    update_interval: 60
+    allow_auto_update: true
+    merge: mCwMAmsa9Tfw
+    script: sBQkhM9LIXzn
+    rules: rVBQZaAI7dna
+    proxies: pITwuSvbv03f
+    groups: ghZ9kUzXAIiM
+  home: https://xrqj.232885.xyz/admin

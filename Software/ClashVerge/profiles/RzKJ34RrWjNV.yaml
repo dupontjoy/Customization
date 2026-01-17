@@ -1,0 +1,516 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+proxy-providers:
+  Provider_1D8B7B:
+    type: http
+    url: https://163cfn.232885.xyz/163cfn/sub
+    interval: 3600
+    proxy: DIRECT
+    path: ./providers/Provider_1D8B7B.yaml
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com/generate_204
+      interval: 300
+    override:
+      skip-cert-verify: false
+      udp: false
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇲 美国节点
+      - ☑️ 手动切换
+      - DIRECT
+  - name: ☑️ 手动切换
+    type: select
+    use:
+      - Provider_1D8B7B
+    filter: .*
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 86400
+    use:
+      - Provider_1D8B7B
+    filter: .*
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☑️ 手动切换
+      - DIRECT
+  - name: 🎥 奈飞视频
+    type: select
+    use:
+      - Provider_1D8B7B
+    filter: (NF|奈飞|解锁|Netflix|NETFLIX|Media|MITM)
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☑️ 手动切换
+      - DIRECT
+  - name: 🌍 国外媒体
+    type: select
+    use:
+      - Provider_1D8B7B
+    filter: .*
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+  - name: 📲 电报信息
+    type: select
+    use:
+      - Provider_1D8B7B
+    filter: .*
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+  - name: 🤖 OpenAi
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇺🇲 美国节点
+      - ☑️ 手动切换
+      - DIRECT
+  - name: Ⓜ️ 微软服务
+    type: select
+    use:
+      - Provider_1D8B7B
+    filter: .*
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+  - name: 🍎 苹果服务
+    type: select
+    use:
+      - Provider_1D8B7B
+    filter: .*
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+  - name: 📢 谷歌FCM
+    type: select
+    use:
+      - Provider_1D8B7B
+    filter: .*
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    use:
+      - Provider_1D8B7B
+    filter: .*
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+  - name: 🇭🇰 香港节点
+    type: load-balance
+    strategy: consistent-hashing
+    url: https://captive.apple.com/hotspot-detect.html
+    interval: 86400
+    use:
+      - Provider_1D8B7B
+    filter: (港|HK|hk|Hong Kong|HongKong|hongkong|HKG)
+  - name: 🇺🇲 美国节点
+    type: load-balance
+    strategy: consistent-hashing
+    url: https://captive.apple.com/hotspot-detect.html
+    interval: 86400
+    use:
+      - Provider_1D8B7B
+    filter: (美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|ATL|BUF|DFW|EWR|IAD|LAX|MCI|MIA|ORD|PHX|PDX|SEA|SJC)
+rules:
+  - RULE-SET,CFnat,🎯 全球直连
+  - RULE-SET,LocalAreaNetwork (Domain),🎯 全球直连
+  - RULE-SET,LocalAreaNetwork (IP-CIDR),🎯 全球直连,no-resolve
+  - RULE-SET,UnBan (Domain),🎯 全球直连
+  - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
+  - DOMAIN-KEYWORD,admaster,🛑 全球拦截
+  - DOMAIN-KEYWORD,adsage,🛑 全球拦截
+  - DOMAIN-KEYWORD,adsensor,🛑 全球拦截
+  - DOMAIN-KEYWORD,adsmogo,🛑 全球拦截
+  - DOMAIN-KEYWORD,adsrvmedia,🛑 全球拦截
+  - DOMAIN-KEYWORD,adsserving,🛑 全球拦截
+  - DOMAIN-KEYWORD,adsystem,🛑 全球拦截
+  - DOMAIN-KEYWORD,adwords,🛑 全球拦截
+  - DOMAIN-KEYWORD,applovin,🛑 全球拦截
+  - DOMAIN-KEYWORD,appsflyer,🛑 全球拦截
+  - DOMAIN-KEYWORD,domob,🛑 全球拦截
+  - DOMAIN-KEYWORD,duomeng,🛑 全球拦截
+  - DOMAIN-KEYWORD,dwtrack,🛑 全球拦截
+  - DOMAIN-KEYWORD,guanggao,🛑 全球拦截
+  - DOMAIN-KEYWORD,omgmta,🛑 全球拦截
+  - DOMAIN-KEYWORD,omniture,🛑 全球拦截
+  - DOMAIN-KEYWORD,openx,🛑 全球拦截
+  - DOMAIN-KEYWORD,partnerad,🛑 全球拦截
+  - DOMAIN-KEYWORD,pingfore,🛑 全球拦截
+  - DOMAIN-KEYWORD,socdm,🛑 全球拦截
+  - DOMAIN-KEYWORD,supersonicads,🛑 全球拦截
+  - DOMAIN-KEYWORD,wlmonitor,🛑 全球拦截
+  - DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截
+  - RULE-SET,BanAD (Domain),🛑 全球拦截
+  - DOMAIN-KEYWORD,omgmtaw,🍃 应用净化
+  - RULE-SET,BanProgramAD (Domain),🍃 应用净化
+  - RULE-SET,BanProgramAD (IP-CIDR),🍃 应用净化,no-resolve
+  - RULE-SET,adobe (Domain),🍃 应用净化
+  - RULE-SET,IDM (Domain),🍃 应用净化
+  - RULE-SET,GoogleFCM (Domain),📢 谷歌FCM
+  - RULE-SET,GoogleFCM (IP-CIDR),📢 谷歌FCM,no-resolve
+  - RULE-SET,GoogleCN (Domain),🎯 全球直连
+  - RULE-SET,SteamCN (Domain),🎯 全球直连
+  - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
+  - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Microsoft (Domain),Ⓜ️ 微软服务
+  - RULE-SET,Apple (Domain),🍎 苹果服务
+  - RULE-SET,Apple (IP-CIDR),🍎 苹果服务,no-resolve
+  - RULE-SET,Telegram (Domain),📲 电报信息
+  - RULE-SET,Telegram (IP-CIDR),📲 电报信息,no-resolve
+  - DOMAIN-KEYWORD,openai,🤖 OpenAi
+  - RULE-SET,OpenAi (Domain),🤖 OpenAi
+  - DOMAIN-KEYWORD,openai,🤖 OpenAi
+  - DOMAIN-KEYWORD,chatgpt,🤖 OpenAi
+  - RULE-SET,ai (Domain),🤖 OpenAi
+  - DOMAIN-KEYWORD,openaicom-api,🤖 OpenAi
+  - RULE-SET,Copilot (Domain),🤖 OpenAi
+  - RULE-SET,Copilot (IP-CIDR),🤖 OpenAi,no-resolve
+  - DOMAIN-KEYWORD,cocopilot,🤖 OpenAi
+  - RULE-SET,GithubCopilot (Domain),🤖 OpenAi
+  - RULE-SET,Claude (Domain),🤖 OpenAi
+  - DOMAIN-KEYWORD,youtube,📹 油管视频
+  - RULE-SET,YouTube (Domain),📹 油管视频
+  - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🎥 奈飞视频
+  - DOMAIN-KEYWORD,dualstack.apiproxy-,🎥 奈飞视频
+  - DOMAIN-KEYWORD,netflixdnstest,🎥 奈飞视频
+  - RULE-SET,Netflix (Domain),🎥 奈飞视频
+  - RULE-SET,Netflix (IP-CIDR),🎥 奈飞视频,no-resolve
+  - DOMAIN-KEYWORD,anthropic,🌍 国外媒体
+  - DOMAIN-KEYWORD,claude,🌍 国外媒体
+  - DOMAIN-KEYWORD,openai,🌍 国外媒体
+  - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
+  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
+  - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
+  - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
+  - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
+  - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
+  - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
+  - DOMAIN-KEYWORD,japonx,🌍 国外媒体
+  - DOMAIN-KEYWORD,japronx,🌍 国外媒体
+  - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
+  - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
+  - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
+  - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
+  - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
+  - DOMAIN-KEYWORD,nivod,🌍 国外媒体
+  - DOMAIN-KEYWORD,olevod,🌍 国外媒体
+  - DOMAIN-KEYWORD,openai,🌍 国外媒体
+  - DOMAIN-KEYWORD,-spotify-,🌍 国外媒体
+  - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
+  - DOMAIN-KEYWORD,tiktokcdn,🌍 国外媒体
+  - DOMAIN-KEYWORD,ttvnw,🌍 国外媒体
+  - DOMAIN-KEYWORD,youtube,🌍 国外媒体
+  - RULE-SET,ProxyMedia (Domain),🌍 国外媒体
+  - RULE-SET,ProxyMedia (IP-CIDR),🌍 国外媒体,no-resolve
+  - DOMAIN-KEYWORD,emby,🌍 国外媒体
+  - RULE-SET,Emby,🌍 国外媒体
+  - DOMAIN-KEYWORD,1e100,🚀 节点选择
+  - DOMAIN-KEYWORD,abema,🚀 节点选择
+  - DOMAIN-KEYWORD,appledaily,🚀 节点选择
+  - DOMAIN-KEYWORD,avtb,🚀 节点选择
+  - DOMAIN-KEYWORD,beetalk,🚀 节点选择
+  - DOMAIN-KEYWORD,blogspot,🚀 节点选择
+  - DOMAIN-KEYWORD,dropbox,🚀 节点选择
+  - DOMAIN-KEYWORD,facebook,🚀 节点选择
+  - DOMAIN-KEYWORD,fbcdn,🚀 节点选择
+  - DOMAIN-KEYWORD,github,🚀 节点选择
+  - DOMAIN-KEYWORD,gmail,🚀 节点选择
+  - DOMAIN-KEYWORD,google,🚀 节点选择
+  - DOMAIN-KEYWORD,instagram,🚀 节点选择
+  - DOMAIN-KEYWORD,porn,🚀 节点选择
+  - DOMAIN-KEYWORD,sci-hub,🚀 节点选择
+  - DOMAIN-KEYWORD,spotify,🚀 节点选择
+  - DOMAIN-KEYWORD,telegram,🚀 节点选择
+  - DOMAIN-KEYWORD,twitter,🚀 节点选择
+  - DOMAIN-KEYWORD,whatsapp,🚀 节点选择
+  - DOMAIN-KEYWORD,youtube,🚀 节点选择
+  - DOMAIN-KEYWORD,uk-live,🚀 节点选择
+  - DOMAIN-KEYWORD,1drv,🚀 节点选择
+  - DOMAIN-KEYWORD,onedrive,🚀 节点选择
+  - DOMAIN-KEYWORD,skydrive,🚀 节点选择
+  - DOMAIN-KEYWORD,porn,🚀 节点选择
+  - DOMAIN-KEYWORD,ttvnw,🚀 节点选择
+  - RULE-SET,ProxyLite (Domain),🚀 节点选择
+  - RULE-SET,ProxyLite (IP-CIDR),🚀 节点选择,no-resolve
+  - RULE-SET,CMBlog (Domain),🚀 节点选择
+  - RULE-SET,CMBlog (IP-CIDR),🚀 节点选择,no-resolve
+  - DOMAIN-KEYWORD,360buy,🎯 全球直连
+  - DOMAIN-KEYWORD,alicdn,🎯 全球直连
+  - DOMAIN-KEYWORD,alimama,🎯 全球直连
+  - DOMAIN-KEYWORD,alipay,🎯 全球直连
+  - DOMAIN-KEYWORD,appzapp,🎯 全球直连
+  - DOMAIN-KEYWORD,baidupcs,🎯 全球直连
+  - DOMAIN-KEYWORD,bilibili,🎯 全球直连
+  - DOMAIN-KEYWORD,ccgslb,🎯 全球直连
+  - DOMAIN-KEYWORD,chinacache,🎯 全球直连
+  - DOMAIN-KEYWORD,duobao,🎯 全球直连
+  - DOMAIN-KEYWORD,jdpay,🎯 全球直连
+  - DOMAIN-KEYWORD,moke,🎯 全球直连
+  - DOMAIN-KEYWORD,qhimg,🎯 全球直连
+  - DOMAIN-KEYWORD,vpimg,🎯 全球直连
+  - DOMAIN-KEYWORD,xiami,🎯 全球直连
+  - DOMAIN-KEYWORD,xiaomi,🎯 全球直连
+  - RULE-SET,ChinaDomain (Domain),🎯 全球直连
+  - RULE-SET,ChinaDomain (IP-CIDR),🎯 全球直连,no-resolve
+  - RULE-SET,ChinaCompanyIp (IP-CIDR),🎯 全球直连,no-resolve
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
+rule-providers:
+  CFnat:
+    type: http
+    behavior: classical
+    url: "https://api.asailor.org/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvcmVmcy9oZWFkcy9tYWluL0NsYXNoL0NGbmF0Lmxpc3Q"
+    path: ./providers/17226001126569245472.yaml
+    interval: 86400
+  LocalAreaNetwork (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTG9jYWxBcmVhTmV0d29yay5saXN0"
+    path: ./providers/7156953299935574564_domain.yaml
+    interval: 86400
+  LocalAreaNetwork (IP-CIDR):
+    type: http
+    behavior: ipcidr
+    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTG9jYWxBcmVhTmV0d29yay5saXN0"
+    path: ./providers/7156953299935574564_ipcidr.yaml
+    interval: 86400
+  UnBan (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVW5CYW4ubGlzdA"
+    path: ./providers/7573362162235439048_domain.yaml
+    interval: 86400
+  BanAD (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuQUQubGlzdA"
+    path: ./providers/5345470858595246832_domain.yaml
+    interval: 86400
+  BanProgramAD (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q"
+    path: ./providers/12627286518854712958_domain.yaml
+    interval: 86400
+  BanProgramAD (IP-CIDR):
+    type: http
+    behavior: ipcidr
+    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q"
+    path: ./providers/12627286518854712958_ipcidr.yaml
+    interval: 86400
+  adobe (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9hZG9iZS5saXN0"
+    path: ./providers/10980425190736881570_domain.yaml
+    interval: 86400
+  IDM (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9JRE0ubGlzdA"
+    path: ./providers/11222536517939013447_domain.yaml
+    interval: 86400
+  GoogleFCM (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Hb29nbGVGQ00ubGlzdA"
+    path: ./providers/13526767378282193442_domain.yaml
+    interval: 86400
+  GoogleFCM (IP-CIDR):
+    type: http
+    behavior: ipcidr
+    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Hb29nbGVGQ00ubGlzdA"
+    path: ./providers/13526767378282193442_ipcidr.yaml
+    interval: 86400
+  GoogleCN (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvR29vZ2xlQ04ubGlzdA"
+    path: ./providers/18094093153187793194_domain.yaml
+    interval: 86400
+  SteamCN (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9TdGVhbUNOLmxpc3Q"
+    path: ./providers/9218514496462299588_domain.yaml
+    interval: 86400
+  Microsoft (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTWljcm9zb2Z0Lmxpc3Q"
+    path: ./providers/10538434793549721944_domain.yaml
+    interval: 86400
+  Apple (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQXBwbGUubGlzdA"
+    path: ./providers/14560487744959213540_domain.yaml
+    interval: 86400
+  Apple (IP-CIDR):
+    type: http
+    behavior: ipcidr
+    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQXBwbGUubGlzdA"
+    path: ./providers/14560487744959213540_ipcidr.yaml
+    interval: 86400
+  Telegram (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVGVsZWdyYW0ubGlzdA"
+    path: ./providers/6502624741183612233_domain.yaml
+    interval: 86400
+  Telegram (IP-CIDR):
+    type: http
+    behavior: ipcidr
+    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVGVsZWdyYW0ubGlzdA"
+    path: ./providers/6502624741183612233_ipcidr.yaml
+    interval: 86400
+  OpenAi (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9PcGVuQWkubGlzdA"
+    path: ./providers/3258957679647165343_domain.yaml
+    interval: 86400
+  ai (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2p1ZXd1eS9TaGVsbENsYXNoL21hc3Rlci9ydWxlcy9haS5saXN0"
+    path: ./providers/4242704792742108848_domain.yaml
+    interval: 86400
+  Copilot (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9Db3BpbG90Lmxpc3Q"
+    path: ./providers/12381674039074208355_domain.yaml
+    interval: 86400
+  Copilot (IP-CIDR):
+    type: http
+    behavior: ipcidr
+    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9Db3BpbG90Lmxpc3Q"
+    path: ./providers/12381674039074208355_ipcidr.yaml
+    interval: 86400
+  GithubCopilot (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9HaXRodWJDb3BpbG90Lmxpc3Q"
+    path: ./providers/13435859620885478808_domain.yaml
+    interval: 86400
+  Claude (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9DbGF1ZGUubGlzdA"
+    path: ./providers/10056933422044789247_domain.yaml
+    interval: 86400
+  YouTube (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Zb3VUdWJlLmxpc3Q"
+    path: ./providers/6665783339279527800_domain.yaml
+    interval: 86400
+  Netflix (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9OZXRmbGl4Lmxpc3Q"
+    path: ./providers/6953567076524950087_domain.yaml
+    interval: 86400
+  Netflix (IP-CIDR):
+    type: http
+    behavior: ipcidr
+    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9OZXRmbGl4Lmxpc3Q"
+    path: ./providers/6953567076524950087_ipcidr.yaml
+    interval: 86400
+  ProxyMedia (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlNZWRpYS5saXN0"
+    path: ./providers/11865208451954205364_domain.yaml
+    interval: 86400
+  ProxyMedia (IP-CIDR):
+    type: http
+    behavior: ipcidr
+    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlNZWRpYS5saXN0"
+    path: ./providers/11865208451954205364_ipcidr.yaml
+    interval: 86400
+  Emby:
+    type: http
+    behavior: classical
+    url: "https://api.asailor.org/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9FbWJ5Lmxpc3Q"
+    path: ./providers/13025806312274722168.yaml
+    interval: 86400
+  ProxyLite (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlMaXRlLmxpc3Q"
+    path: ./providers/2797519971897865672_domain.yaml
+    interval: 86400
+  ProxyLite (IP-CIDR):
+    type: http
+    behavior: ipcidr
+    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlMaXRlLmxpc3Q"
+    path: ./providers/2797519971897865672_ipcidr.yaml
+    interval: 86400
+  CMBlog (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9DTUJsb2cubGlzdA"
+    path: ./providers/139342281480392317_domain.yaml
+    interval: 86400
+  CMBlog (IP-CIDR):
+    type: http
+    behavior: ipcidr
+    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9DTUJsb2cubGlzdA"
+    path: ./providers/139342281480392317_ipcidr.yaml
+    interval: 86400
+  ChinaDomain (Domain):
+    type: http
+    behavior: domain
+    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFEb21haW4ubGlzdA"
+    path: ./providers/4162648423616508953_domain.yaml
+    interval: 86400
+  ChinaDomain (IP-CIDR):
+    type: http
+    behavior: ipcidr
+    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFEb21haW4ubGlzdA"
+    path: ./providers/4162648423616508953_ipcidr.yaml
+    interval: 86400
+  ChinaCompanyIp (IP-CIDR):
+    type: http
+    behavior: ipcidr
+    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFDb21wYW55SXAubGlzdA"
+    path: ./providers/2560834305431378741_ipcidr.yaml
+    interval: 86400
