@@ -1,4 +1,4 @@
-::2025.12.20
+::2026.01.17
 
 @echo off
 Title 批量启动程序
@@ -20,6 +20,12 @@ rd /s /q "C:\Users\%USERNAME%\AppData\Roaming\DocBox"
 
 ::删除calibre的缓存数据
 rd /s /q "C:\Users\%USERNAME%\Calibre 书库\.caltrash"
+
+::删除一些软件的log文件
+rd /s /q "C:\ProgramData\Anytxt\log"
+rd /s /q "C:\ProgramData\Winhance\Logs"
+rd /s /q "C:\ProgramData\Thunder Network\Logs"
+rd /s /q "C:\ProgramData\Nutstore\logs"
 
 ::删除ztasker User文件夹中的无用文件
 rd /s /q "%cd%\zTasker\User\Backup"
