@@ -1,4 +1,4 @@
-::2025.12.06
+::2026.01.17
 ::注意換行符必须是：windows（CR+LF）
 
 Title 备份文件到托管网站
@@ -17,15 +17,23 @@ set "softDir=E:\Cing@Soft"
 set "OutputDir=E:\My Documents\Nutstore\NutStoreSync"
 
 :delete_cache
+::删除N_m3u8DL-RE下载失败的缓存和日志
+rd /s /q "%BackupDir%\..\..\Software\N_m3u8DL-RE\cache"
+rd /s /q "%BackupDir%\..\..\Software\N_m3u8DL-RE\Logs"
+
 ::删除docbox的缓存数据
 rd /s /q "C:\Users\%USERNAME%\AppData\Roaming\DocBox"
 
 ::删除calibre的缓存数据
 rd /s /q "C:\Users\%USERNAME%\Calibre 书库\.caltrash"
 
-::删除N_m3u8DL-RE下载失败的缓存和日志
-rd /s /q "%BackupDir%\..\..\Software\N_m3u8DL-RE\cache"
-rd /s /q "%BackupDir%\..\..\Software\N_m3u8DL-RE\Logs"
+
+:delete_log
+::删除一些软件的log文件
+rd /s /q "C:\ProgramData\Anytxt\log"
+rd /s /q "C:\ProgramData\Winhance\Logs"
+rd /s /q "C:\ProgramData\Thunder Network\Logs"
+rd /s /q "C:\ProgramData\Nutstore\logs"
 
 :abdm
 robocopy "C:\Users\Cing\.abdm\config" "%OutputDir%\Customization\Software\ABDM\config" /MIR /ZB /R:3 /W:5

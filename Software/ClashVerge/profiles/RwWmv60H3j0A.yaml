@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxy-providers:
-  Provider_4D8480:
+  Provider_3EFD97:
     type: http
-    url: https://dp88bj.dupontjoy.shop/dp88bj/sub
+    url: https://88cfn.dupontjoy.shop/88cfn/sub
     interval: 3600
     proxy: DIRECT
-    path: ./providers/Provider_4D8480.yaml
+    path: ./providers/Provider_3EFD97.yaml
     health-check:
       enable: true
       url: https://cp.cloudflare.com/generate_204
@@ -30,14 +30,14 @@ proxy-groups:
   - name: ☑️ 手动切换
     type: select
     use:
-      - Provider_4D8480
+      - Provider_3EFD97
     filter: .*
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 86400
     use:
-      - Provider_4D8480
+      - Provider_3EFD97
     filter: .*
   - name: 📹 油管视频
     type: select
@@ -49,7 +49,7 @@ proxy-groups:
   - name: 🎥 奈飞视频
     type: select
     use:
-      - Provider_4D8480
+      - Provider_3EFD97
     filter: (NF|奈飞|解锁|Netflix|NETFLIX|Media|MITM)
     proxies:
       - 🚀 节点选择
@@ -59,7 +59,7 @@ proxy-groups:
   - name: 🌍 国外媒体
     type: select
     use:
-      - Provider_4D8480
+      - Provider_3EFD97
     filter: .*
     proxies:
       - 🚀 节点选择
@@ -68,7 +68,7 @@ proxy-groups:
   - name: 📲 电报信息
     type: select
     use:
-      - Provider_4D8480
+      - Provider_3EFD97
     filter: .*
     proxies:
       - 🚀 节点选择
@@ -84,7 +84,7 @@ proxy-groups:
   - name: Ⓜ️ 微软服务
     type: select
     use:
-      - Provider_4D8480
+      - Provider_3EFD97
     filter: .*
     proxies:
       - 🎯 全球直连
@@ -92,7 +92,7 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     use:
-      - Provider_4D8480
+      - Provider_3EFD97
     filter: .*
     proxies:
       - 🚀 节点选择
@@ -100,7 +100,7 @@ proxy-groups:
   - name: 📢 谷歌FCM
     type: select
     use:
-      - Provider_4D8480
+      - Provider_3EFD97
     filter: .*
     proxies:
       - 🚀 节点选择
@@ -125,7 +125,7 @@ proxy-groups:
   - name: 🐟 漏网之鱼
     type: select
     use:
-      - Provider_4D8480
+      - Provider_3EFD97
     filter: .*
     proxies:
       - 🚀 节点选择
@@ -137,7 +137,7 @@ proxy-groups:
     url: https://captive.apple.com/hotspot-detect.html
     interval: 86400
     use:
-      - Provider_4D8480
+      - Provider_3EFD97
     filter: (港|HK|hk|Hong Kong|HongKong|hongkong|HKG)
   - name: 🇺🇲 美国节点
     type: load-balance
@@ -145,7 +145,7 @@ proxy-groups:
     url: https://captive.apple.com/hotspot-detect.html
     interval: 86400
     use:
-      - Provider_4D8480
+      - Provider_3EFD97
     filter: (美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|ATL|BUF|DFW|EWR|IAD|LAX|MCI|MIA|ORD|PHX|PDX|SEA|SJC)
 rules:
   - RULE-SET,CFnat,🎯 全球直连
