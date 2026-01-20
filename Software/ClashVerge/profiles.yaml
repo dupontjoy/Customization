@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RzKJ34RrWjNV
+current: RwWmv60H3j0A
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RzKJ34RrWjNV.yaml
   desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https://163cfn.232885.xyz/163cfn/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1768786770
+  updated: 1768873959
   option:
     with_proxy: false
     self_proxy: false
@@ -85,7 +85,7 @@ items:
   file: RwWmv60H3j0A.yaml
   desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https%3A%2F%2F88cfn.dupontjoy.shop%2F88cfn%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1768786771
+  updated: 1768873959
   option:
     with_proxy: false
     self_proxy: false
@@ -128,11 +128,11 @@ items:
   desc: ''
   url: https://88cml.dupontjoy.shop/sub?token=357f2b398d0c3591b7e12bd97d8bea18
   extra:
-    upload: 911815983027
-    download: 911815983027
+    upload: 1031998559631
+    download: 1031998559631
     total: 26388279066624
     expire: 4102329600
-  updated: 1768786775
+  updated: 1768873962
   option:
     with_proxy: false
     self_proxy: false
@@ -171,16 +171,16 @@ items:
   updated: 1768609969
 - uid: R1mXxj5uJFzg
   type: remote
-  name: xrqj
+  name: xrcml
   file: R1mXxj5uJFzg.yaml
   desc: ''
-  url: https://xrqj.232885.xyz/sub?token=6a4ea620288c3476b8c4dfc7b97378f6
+  url: https://xrcml.232885.xyz/sub?token=8447d1839119fe249d42874c15597f34
   extra:
-    upload: 911831864862
-    download: 911831864862
+    upload: 1032081175713
+    download: 1032081175713
     total: 26388279066624
     expire: 4102329600
-  updated: 1768786775
+  updated: 1768873963
   option:
     with_proxy: false
     self_proxy: false
@@ -191,4 +191,4 @@ items:
     rules: rVBQZaAI7dna
     proxies: pITwuSvbv03f
     groups: ghZ9kUzXAIiM
-  home: https://xrqj.232885.xyz/admin
+  home: https://xrcml.232885.xyz/admin
