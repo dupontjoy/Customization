@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RwWmv60H3j0A
+current: RSylbZsV69Jd
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RzKJ34RrWjNV.yaml
   desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https://163cfn.232885.xyz/163cfn/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1768873959
+  updated: 1768960940
   option:
     with_proxy: false
     self_proxy: false
@@ -85,7 +85,7 @@ items:
   file: RwWmv60H3j0A.yaml
   desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https%3A%2F%2F88cfn.dupontjoy.shop%2F88cfn%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1768873959
+  updated: 1768960940
   option:
     with_proxy: false
     self_proxy: false
@@ -128,11 +128,11 @@ items:
   desc: ''
   url: https://88cml.dupontjoy.shop/sub?token=357f2b398d0c3591b7e12bd97d8bea18
   extra:
-    upload: 1031998559631
-    download: 1031998559631
+    upload: 1124206811645
+    download: 1124206811645
     total: 26388279066624
     expire: 4102329600
-  updated: 1768873962
+  updated: 1768960963
   option:
     with_proxy: false
     self_proxy: false
@@ -176,11 +176,11 @@ items:
   desc: ''
   url: https://xrcml.232885.xyz/sub?token=8447d1839119fe249d42874c15597f34
   extra:
-    upload: 1032081175713
-    download: 1032081175713
+    upload: 1121034720599
+    download: 1121034720599
     total: 26388279066624
     expire: 4102329600
-  updated: 1768873963
+  updated: 1768960945
   option:
     with_proxy: false
     self_proxy: false
