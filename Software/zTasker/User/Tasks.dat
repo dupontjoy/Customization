@@ -1012,10 +1012,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2025-12-05 23:21:36</EndDateTime>
-		<NextRunDateTime>2125-12-28 08:02:26</NextRunDateTime>
+		<EndDateTime>2026-01-23 22:43:12</EndDateTime>
+		<NextRunDateTime>2125-12-30 12:13:33</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-01-21 08:02:26</LastRunTime>
+		<LastRunTime>2026-01-23 12:13:33</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1025,6 +1025,7 @@ env2=value2</edtAppEnv>
 			<DTOnce>2024-12-26 20:34:03</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
 			<Name>开机运行</Name>
+			<StopHotkey>Ctrl+Alt+P</StopHotkey>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
 			<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
@@ -1063,6 +1064,7 @@ env2=value2</edtAppEnv>
 			<chkHotkeyLeft>0</chkHotkeyLeft>
 			<chkHotkeyMiddle>0</chkHotkeyMiddle>
 			<chkHotkeyMouseMod>0</chkHotkeyMouseMod>
+			<chkHotkeyRelay>0</chkHotkeyRelay>
 			<chkHotkeyRight>0</chkHotkeyRight>
 			<chkHotkeyShift>0</chkHotkeyShift>
 			<chkHotkeyShiftM>0</chkHotkeyShiftM>
@@ -1096,7 +1098,12 @@ env2=value2</edtAppEnv>
 			<cmbExecExitType>0</cmbExecExitType>
 			<cmbExecExitType_text>跳过执行</cmbExecExitType_text>
 			<cmbHKMouse>0</cmbHKMouse>
+			<cmbHKMouseType>0</cmbHKMouseType>
+			<cmbHKMouseType_text>按下时</cmbHKMouseType_text>
 			<cmbHKMouse_text>滚轮向上</cmbHKMouse_text>
+			<cmbHKType>0</cmbHKType>
+			<cmbHKType_text>按下时</cmbHKType_text>
+			<cmbHotKeySolo>0</cmbHotKeySolo>
 			<cmbHotkey>0</cmbHotkey>
 			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
 			<edtDelayBoot>0</edtDelayBoot>
@@ -1111,6 +1118,17 @@ env2=value2</edtAppEnv>
 			<edtWakeDelayBoot>0</edtWakeDelayBoot>
 			<optHKKey>1</optHKKey>
 			<optHKMouse>0</optHKMouse>
+			<optHotAlt>0</optHotAlt>
+			<optHotCtrl>1</optHotCtrl>
+			<optHotKey>0</optHotKey>
+			<optHotShift>0</optHotShift>
+			<optHotWin>0</optHotWin>
+			<optHotkeyLeft>1</optHotkeyLeft>
+			<optHotkeyMiddle>0</optHotkeyMiddle>
+			<optHotkeyRight>0</optHotkeyRight>
+			<optHotkeyWheel>0</optHotkeyWheel>
+			<optHotkeyX1>0</optHotkeyX1>
+			<optHotkeyX2>0</optHotkeyX2>
 		</Param>
 		<Actions>
 			<Tasker>
@@ -1345,9 +1363,9 @@ env2=value2</edtAppEnv>
 		<SchType>36</SchType>
 		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
 		<EndDateTime>2026-01-19 08:19:12</EndDateTime>
-		<NextRunDateTime>2026-01-21 12:00:00</NextRunDateTime>
-		<NextRunTime>2026-01-21 12:00:00</NextRunTime>
-		<LastRunTime>2026-01-20 20:00:00</LastRunTime>
+		<NextRunDateTime>2026-01-23 16:00:00</NextRunDateTime>
+		<NextRunTime>2026-01-23 16:00:00</NextRunTime>
+		<LastRunTime>2026-01-23 12:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
