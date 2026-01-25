@@ -1012,10 +1012,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2026-01-23 22:43:12</EndDateTime>
-		<NextRunDateTime>2125-12-30 12:13:33</NextRunDateTime>
+		<EndDateTime>2026-01-26 21:26:24</EndDateTime>
+		<NextRunDateTime>2036-01-23 11:46:22</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-01-23 12:13:33</LastRunTime>
+		<LastRunTime>2026-01-25 08:06:27</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1132,7 +1132,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>23</ID>
+				<ID>887-CIFQAHLXAY</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1208,7 +1208,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Delay>
 			<Tasker>
-				<ID>8</ID>
+				<ID>866-K7I67L6LKP</ID>
 				<TaskType>ttMouseClick</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1295,7 +1295,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Delay>
 			<Tasker>
-				<ID>98</ID>
+				<ID>269-92SH1Y72LQ</ID>
 				<TaskType>ttVolumeSet</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1363,9 +1363,9 @@ env2=value2</edtAppEnv>
 		<SchType>36</SchType>
 		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
 		<EndDateTime>2026-01-19 08:19:12</EndDateTime>
-		<NextRunDateTime>2026-01-23 16:00:00</NextRunDateTime>
-		<NextRunTime>2026-01-23 16:00:00</NextRunTime>
-		<LastRunTime>2026-01-23 12:00:00</LastRunTime>
+		<NextRunDateTime>2026-01-25 16:00:00</NextRunDateTime>
+		<NextRunTime>2026-01-25 16:00:00</NextRunTime>
+		<LastRunTime>2026-01-25 12:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1638,11 +1638,11 @@ env2=value2</edtAppEnv>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
-		<StartDateTime>2024-12-26 12:00:00</StartDateTime>
-		<EndDateTime>2025-12-23 02:16:32</EndDateTime>
-		<NextRunDateTime>2026-01-25 12:00:00</NextRunDateTime>
-		<NextRunTime>2026-01-25 12:00:00</NextRunTime>
-		<LastRunTime>2026-01-18 12:00:00</LastRunTime>
+		<StartDateTime>2024-12-26 11:00:00</StartDateTime>
+		<EndDateTime>2026-01-25 04:33:04</EndDateTime>
+		<NextRunDateTime>2026-02-01 11:00:00</NextRunDateTime>
+		<NextRunTime>2026-02-01 11:00:00</NextRunTime>
+		<LastRunTime>2026-01-25 12:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1699,6 +1699,7 @@ env2=value2</edtAppEnv>
 			<chkHotkeyLeft>0</chkHotkeyLeft>
 			<chkHotkeyMiddle>0</chkHotkeyMiddle>
 			<chkHotkeyMouseMod>0</chkHotkeyMouseMod>
+			<chkHotkeyRelay>0</chkHotkeyRelay>
 			<chkHotkeyRight>0</chkHotkeyRight>
 			<chkHotkeyShift>0</chkHotkeyShift>
 			<chkHotkeyShiftM>0</chkHotkeyShiftM>
@@ -1767,7 +1768,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>78</ID>
+				<ID>354-G76RUWXED6</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1834,7 +1835,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>70</ID>
+				<ID>135-TAAEY6S4PM</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1901,7 +1902,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>31</ID>
+				<ID>214-WEMRTUV7O6</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1968,7 +1969,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>29</ID>
+				<ID>169-U20GZPB2KT</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2035,7 +2036,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>11</ID>
+				<ID>53-W26XSG94WU</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2103,7 +2104,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>26</ID>
+				<ID>332-7KCW02G19O</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2170,7 +2171,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>46</ID>
+				<ID>509-C47EN687BL</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2237,7 +2238,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>17</ID>
+				<ID>728-08TWFZCNVN</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2304,7 +2305,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>54</ID>
+				<ID>345-XUVGCQHUXL</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2371,7 +2372,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>44</ID>
+				<ID>857-VOBOPWEXMH</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2438,7 +2439,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>76</ID>
+				<ID>688-JIGWDQNO6O</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2515,10 +2516,10 @@ env2=value2</edtAppEnv>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
-		<StartDateTime>2025-05-28 13:00:00</StartDateTime>
-		<EndDateTime>2025-11-29 10:50:56</EndDateTime>
-		<NextRunDateTime>2026-01-25 13:00:00</NextRunDateTime>
-		<NextRunTime>2026-01-25 13:00:00</NextRunTime>
+		<StartDateTime>2025-05-28 11:30:00</StartDateTime>
+		<EndDateTime>2026-01-25 21:41:52</EndDateTime>
+		<NextRunDateTime>2026-02-01 11:30:00</NextRunDateTime>
+		<NextRunTime>2026-02-01 11:30:00</NextRunTime>
 		<LastRunTime>2026-01-18 13:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -2576,6 +2577,7 @@ env2=value2</edtAppEnv>
 			<chkHotkeyLeft>0</chkHotkeyLeft>
 			<chkHotkeyMiddle>0</chkHotkeyMiddle>
 			<chkHotkeyMouseMod>0</chkHotkeyMouseMod>
+			<chkHotkeyRelay>0</chkHotkeyRelay>
 			<chkHotkeyRight>0</chkHotkeyRight>
 			<chkHotkeyShift>0</chkHotkeyShift>
 			<chkHotkeyShiftM>0</chkHotkeyShiftM>
@@ -2643,7 +2645,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>50</ID>
+				<ID>690-9AELFNILCB</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>

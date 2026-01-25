@@ -17,6 +17,9 @@ set "softDir=E:\Cing@Soft"
 set "OutputDir=E:\My Documents\Nutstore\NutStoreSync"
 
 :delete_cache
+::删除D:\Temp文件夹
+rd /s /q "D:\Temp"
+
 ::删除N_m3u8DL-RE下载失败的缓存和日志
 rd /s /q "%BackupDir%\..\..\Software\N_m3u8DL-RE\cache"
 rd /s /q "%BackupDir%\..\..\Software\N_m3u8DL-RE\Logs"
