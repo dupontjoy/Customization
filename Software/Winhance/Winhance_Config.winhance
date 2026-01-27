@@ -1,6 +1,6 @@
 {
   "Version": "2.0",
-  "CreatedAt": "2026-01-15T01:49:35.5169878Z",
+  "CreatedAt": "2026-01-26T15:41:17.3285364Z",
   "WindowsApps": {
     "IsIncluded": true,
     "Items": []
@@ -464,7 +464,7 @@
           {
             "Id": "gaming-nvidia-sharpening",
             "Name": "Legacy NVIDIA Sharpening",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
@@ -512,7 +512,7 @@
           {
             "Id": "gaming-performance-background-services",
             "Name": "Optimize Background Services",
-            "IsSelected": false,
+            "IsSelected": true,
             "InputType": 0
           },
           {
@@ -1009,7 +1009,7 @@
           {
             "Id": "notifications-system-setting-engagement",
             "Name": "Suggest ways to get the most out of Windows and finish setting up this device",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
@@ -1051,7 +1051,7 @@
           {
             "Id": "notifications-windows-security",
             "Name": "Windows Security Notifications",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
@@ -1173,7 +1173,7 @@
             "Name": "USB Hub Selective Suspend Timeout",
             "InputType": 2,
             "PowerSettings": {
-              "ACValue": 50,
+              "ACValue": 0,
               "DCValue": 50
             }
           },
@@ -1503,7 +1503,7 @@
           {
             "Id": "privacy-language-list",
             "Name": "Let websites show me locally relevant content by accessing my language list",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
@@ -1521,7 +1521,7 @@
           {
             "Id": "privacy-settings-notifications",
             "Name": "Settings App Notifications",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
@@ -1575,7 +1575,7 @@
           {
             "Id": "privacy-activity-history",
             "Name": "Activity History",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
@@ -1587,13 +1587,13 @@
           {
             "Id": "privacy-search-history",
             "Name": "Search history on this device",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
             "Id": "privacy-search-highlights",
             "Name": "Show search highlights",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
@@ -1617,31 +1617,31 @@
           {
             "Id": "privacy-location-services",
             "Name": "Location Services",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
             "Id": "privacy-camera-access",
             "Name": "Camera Access",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
             "Id": "privacy-microphone-access",
             "Name": "Microphone Access",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
             "Id": "privacy-account-info-access",
             "Name": "Account Info Access",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
             "Id": "privacy-app-diagnostic-access",
             "Name": "App Diagnostic Access",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
@@ -1658,7 +1658,7 @@
           {
             "Id": "sound-startup",
             "Name": "Startup Sound During Boot",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
@@ -1670,31 +1670,31 @@
           {
             "Id": "sound-narrator-audio-ducking",
             "Name": "Narrator Audio Ducking",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
             "Id": "sound-voice-activation",
             "Name": "Voice Activation for Apps",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
             "Id": "sound-voice-activation-last-used",
             "Name": "Last Used Voice Activation Setting",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
             "Id": "sound-accessibility-activation",
             "Name": "Accessibility Activation Sounds",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           },
           {
             "Id": "sound-accessibility-warnings",
             "Name": "Accessibility Warning Sounds",
-            "IsSelected": true,
+            "IsSelected": false,
             "InputType": 0
           }
         ]

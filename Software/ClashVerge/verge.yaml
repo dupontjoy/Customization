@@ -14,6 +14,7 @@ enable_memory_usage: true
 enable_group_icon: true
 common_tray_icon: false
 menu_icon: monochrome
+collapse_navbar: null
 sysproxy_tray_icon: false
 tun_tray_icon: false
 enable_tun_mode: false
@@ -21,6 +22,7 @@ enable_auto_launch: true
 enable_silent_start: true
 enable_system_proxy: false
 enable_proxy_guard: false
+enable_bypass_check: null
 enable_dns_settings: false
 use_default_bypass: true
 system_proxy_bypass: null
@@ -78,7 +80,7 @@ verge_socks_port: 7898
 verge_socks_enabled: false
 verge_port: 7899
 verge_http_enabled: false
-tray_inline_proxy_groups: null
+tray_inline_outbound_modes: null
 enable_auto_light_weight_mode: false
 auto_light_weight_minutes: 10
 enable_hover_jump_navigator: true
