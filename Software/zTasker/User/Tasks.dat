@@ -1012,10 +1012,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2026-01-26 21:26:24</EndDateTime>
-		<NextRunDateTime>2126-01-03 08:04:21</NextRunDateTime>
+		<EndDateTime>2026-01-31 18:52:48</EndDateTime>
+		<NextRunDateTime>2126-01-07 08:14:30</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-01-27 08:04:21</LastRunTime>
+		<LastRunTime>2026-01-31 08:14:30</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1200,7 +1200,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Delay>
-				<Sec>30000</Sec>
+				<Sec>20000</Sec>
 				<Sec2>99000</Sec2>
 				<Random>0</Random>
 				<Name>延迟</Name>
@@ -1363,9 +1363,9 @@ env2=value2</edtAppEnv>
 		<SchType>36</SchType>
 		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
 		<EndDateTime>2026-01-26 16:38:24</EndDateTime>
-		<NextRunDateTime>2026-01-27 16:00:00</NextRunDateTime>
-		<NextRunTime>2026-01-27 16:00:00</NextRunTime>
-		<LastRunTime>2026-01-27 12:00:00</LastRunTime>
+		<NextRunDateTime>2026-01-31 12:00:00</NextRunDateTime>
+		<NextRunTime>2026-01-31 12:00:00</NextRunTime>
+		<LastRunTime>2026-01-30 20:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1639,9 +1639,9 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 11:00:00</StartDateTime>
-		<EndDateTime>2026-01-25 04:33:04</EndDateTime>
-		<NextRunDateTime>2026-02-01 11:00:00</NextRunDateTime>
-		<NextRunTime>2026-02-01 11:00:00</NextRunTime>
+		<EndDateTime>2026-01-31 09:06:08</EndDateTime>
+		<NextRunDateTime>2026-01-31 11:00:00</NextRunDateTime>
+		<NextRunTime>2026-01-31 11:00:00</NextRunTime>
 		<LastRunTime>2026-01-25 12:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -1651,7 +1651,7 @@ env2=value2</edtAppEnv>
 			<CountDownSec>0</CountDownSec>
 			<DTOnce>2024-12-26 20:42:53</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
-			<EveryWeek>7</EveryWeek>
+			<EveryWeek>6</EveryWeek>
 			<Name>更新软件</Name>
 			<StopHotkey>Ctrl+Alt+P</StopHotkey>
 			<TitleShow>弹窗提醒</TitleShow>
@@ -1662,8 +1662,8 @@ env2=value2</edtAppEnv>
 			<chk3>0</chk3>
 			<chk4>0</chk4>
 			<chk5>0</chk5>
-			<chk6>0</chk6>
-			<chk7>1</chk7>
+			<chk6>1</chk6>
+			<chk7>0</chk7>
 			<chkAutoClose>0</chkAutoClose>
 			<chkAutoCloseHK>0</chkAutoCloseHK>
 			<chkDayLimit1>0</chkDayLimit1>
@@ -1768,7 +1768,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>78</ID>
+				<ID>756-8U1I6LUGP0</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1835,7 +1835,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>70</ID>
+				<ID>839-KVXOZDZ0IC</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1902,7 +1902,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>31</ID>
+				<ID>984-9QJJSH70NN</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1969,7 +1969,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>29</ID>
+				<ID>402-LRAS2HYV1U</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2036,7 +2036,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>11</ID>
+				<ID>568-RTPMF8III2</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2104,7 +2104,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>26</ID>
+				<ID>872-OEYWWW6M9I</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2171,7 +2171,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>46</ID>
+				<ID>276-HBQ5ZVHI4U</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2238,7 +2238,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>17</ID>
+				<ID>905-BQ27DRTWLR</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2305,7 +2305,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>54</ID>
+				<ID>671-ZDSPP7Z6GB</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2372,7 +2372,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>44</ID>
+				<ID>389-B7EXZFOMIM</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2439,7 +2439,7 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>76</ID>
+				<ID>635-BID70HXRNI</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2517,9 +2517,9 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
 		<StartDateTime>2025-05-28 11:30:00</StartDateTime>
-		<EndDateTime>2026-01-25 21:41:52</EndDateTime>
-		<NextRunDateTime>2026-02-01 11:30:00</NextRunDateTime>
-		<NextRunTime>2026-02-01 11:30:00</NextRunTime>
+		<EndDateTime>2026-02-01 19:23:44</EndDateTime>
+		<NextRunDateTime>2026-01-31 11:30:00</NextRunDateTime>
+		<NextRunTime>2026-01-31 11:30:00</NextRunTime>
 		<LastRunTime>2026-01-18 13:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -2529,7 +2529,7 @@ env2=value2</edtAppEnv>
 			<CountDownSec>0</CountDownSec>
 			<DTOnce>2025-05-28 16:21:22</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
-			<EveryWeek>7</EveryWeek>
+			<EveryWeek>6</EveryWeek>
 			<Name>备份Fx配置</Name>
 			<StopHotkey>Ctrl+Alt+P</StopHotkey>
 			<TitleShow>弹窗提醒</TitleShow>
@@ -2540,8 +2540,8 @@ env2=value2</edtAppEnv>
 			<chk3>0</chk3>
 			<chk4>0</chk4>
 			<chk5>0</chk5>
-			<chk6>0</chk6>
-			<chk7>1</chk7>
+			<chk6>1</chk6>
+			<chk7>0</chk7>
 			<chkAutoClose>0</chkAutoClose>
 			<chkAutoCloseHK>0</chkAutoCloseHK>
 			<chkDayLimit1>0</chkDayLimit1>
@@ -2645,7 +2645,7 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>50</ID>
+				<ID>47-44N345WHYA</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>

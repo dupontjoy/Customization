@@ -43,7 +43,7 @@ items:
   file: RzKJ34RrWjNV.yaml
   desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https://163cfn.232885.xyz/163cfn/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1769486652
+  updated: 1769818463
   option:
     with_proxy: false
     self_proxy: false
@@ -85,7 +85,7 @@ items:
   file: RwWmv60H3j0A.yaml
   desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https%3A%2F%2F88cfn.dupontjoy.shop%2F88cfn%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1769486653
+  updated: 1769783604
   option:
     with_proxy: false
     self_proxy: false
@@ -130,12 +130,14 @@ items:
   selected:
   - name: ♻️ 自动选择
     now: 2026-01-23_00:58:55_ip.164746.xyz 4
+  - name: 🚀 节点选择
+    now: ♻️ 自动选择
   extra:
-    upload: 2237826089865
-    download: 2237826089865
+    upload: 131819074664
+    download: 131819074664
     total: 26388279066624
     expire: 4102329600
-  updated: 1769486656
+  updated: 1769818468
   option:
     with_proxy: false
     self_proxy: false
@@ -182,11 +184,11 @@ items:
   - name: ♻️ 自动选择
     now: CF-55.83MB/s
   extra:
-    upload: 1688091197240
-    download: 1688091197240
+    upload: 131824419512
+    download: 131824419512
     total: 26388279066624
     expire: 4102329600
-  updated: 1769483055
+  updated: 1769818466
   option:
     with_proxy: false
     self_proxy: false

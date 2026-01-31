@@ -301,14 +301,14 @@
           "Info": null,
           "Item": {
             "Keyword": "tvp",
-            "Url": "https://moontvp.232885.xyz/search?q={query}",
+            "Url": "https://moontvp.232885.xyz/search?q={query}&type=video",
             "Title": "moontvp",
             "Icon": {
               "Path": "{user}\\72f9ec93-ffc8-4421-a1aa-589544216f32.png",
               "TypeName": "Path"
             },
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://moontvp.232885.xyz/search?q={query}"
+            "SuggestionUrl": "https://moontvp.232885.xyz/search?q={query}&type=video"
           }
         }
       ],
