@@ -1013,9 +1013,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-01-31 18:52:48</EndDateTime>
-		<NextRunDateTime>2126-01-09 16:33:15</NextRunDateTime>
+		<NextRunDateTime>2126-01-12 10:56:12</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-02-02 16:33:15</LastRunTime>
+		<LastRunTime>2026-02-05 10:56:12</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1362,10 +1362,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>36</SchType>
 		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
-		<EndDateTime>2026-01-26 16:38:24</EndDateTime>
-		<NextRunDateTime>2026-02-02 20:00:00</NextRunDateTime>
-		<NextRunTime>2026-02-02 20:00:00</NextRunTime>
-		<LastRunTime>2026-02-02 16:00:00</LastRunTime>
+		<EndDateTime>2026-02-05 09:16:48</EndDateTime>
+		<NextRunDateTime>2026-02-05 18:00:00</NextRunDateTime>
+		<NextRunTime>2026-02-05 18:00:00</NextRunTime>
+		<LastRunTime>2026-02-05 12:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1456,7 +1456,7 @@ env2=value2</edtAppEnv>
 			<cmbHKType_text>按下时</cmbHKType_text>
 			<cmbHotKeySolo>0</cmbHotKeySolo>
 			<cmbHotkey>0</cmbHotkey>
-			<edtCron>0 0 0/4 * * ? </edtCron>
+			<edtCron>0 0 0/6 * * ? </edtCron>
 			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtExecExitWaitTime>60</edtExecExitWaitTime>

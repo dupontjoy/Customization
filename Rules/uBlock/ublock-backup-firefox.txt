@@ -1,23 +1,23 @@
 {
-  "timeStamp": 1761630460259,
-  "version": "1.67.0",
+  "timeStamp": 1770107453738,
+  "version": "1.69.0",
   "userSettings": {
     "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
     "cnameUncloakEnabled": false,
     "contextMenuEnabled": false,
-    "externalLists": "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt\nhttps://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt\nhttps://github.com/uBlockOrigin/uAssets/raw/refs/heads/master/filters/resource-abuse.txt\nhttps://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt\nhttps://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
+    "externalLists": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt\nhttps://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt\nhttps://github.com/uBlockOrigin/uAssets/raw/refs/heads/master/filters/resource-abuse.txt\nhttps://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt\nhttps://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt\nhttps://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt",
     "firewallPaneMinimized": false,
     "importedLists": [
-      "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
+      "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
       "https://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt",
       "https://github.com/uBlockOrigin/uAssets/raw/refs/heads/master/filters/resource-abuse.txt",
       "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt",
       "https://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt",
       "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
+      "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt",
       "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt",
-      "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt",
-      "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt"
+      "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt"
     ],
     "popupPanelSections": 63,
     "webrtcIPAddressHidden": true
@@ -25,11 +25,8 @@
   "selectedFilterLists": [
     "user-filters",
     "ublock-filters",
-    "ublock-badware",
-    "ublock-privacy",
     "ublock-quick-fixes",
     "ublock-unbreak",
-    "ublock-experimental",
     "easylist",
     "adguard-generic",
     "easyprivacy",
@@ -38,11 +35,11 @@
     "urlhaus-1",
     "plowe-0",
     "CHN-0",
-    "https://cdn.jsdelivr.net/gh/Silentely/AdBlock-Acceleration/Xinggsf_rule.txt",
-    "https://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/antiadblockfilters.txt",
+    "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
     "https://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt",
     "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
-    "https://github.com/uBlockOrigin/uAssets/raw/refs/heads/master/filters/resource-abuse.txt"
+    "https://github.com/uBlockOrigin/uAssets/raw/refs/heads/master/filters/resource-abuse.txt",
+    "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt"
   ],
   "hiddenSettings": {
     "allowGenericProceduralFilters": true,
