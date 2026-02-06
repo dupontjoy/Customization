@@ -12,48 +12,6 @@ items:
   name: null
   file: Script.js
   updated: 1768609763
-- uid: mQ65tQOB0HLw
-  type: merge
-  name: null
-  file: mQ65tQOB0HLw.yaml
-  updated: 1768609826
-- uid: sHrEZEATmNHd
-  type: script
-  name: null
-  file: sHrEZEATmNHd.js
-  updated: 1768609826
-- uid: rvoGjw9lDo1O
-  type: rules
-  name: null
-  file: rvoGjw9lDo1O.yaml
-  updated: 1768609826
-- uid: pyqCKl0B2Byk
-  type: proxies
-  name: null
-  file: pyqCKl0B2Byk.yaml
-  updated: 1768609826
-- uid: gbKzlXk9CziP
-  type: groups
-  name: null
-  file: gbKzlXk9CziP.yaml
-  updated: 1768609826
-- uid: RzKJ34RrWjNV
-  type: remote
-  name: 163cfn
-  file: RzKJ34RrWjNV.yaml
-  desc: ''
-  url: https://api.asailor.org/sub?target=clash&url=https://163cfn.232885.xyz/163cfn/sub&insert=false&config=https://raw.githubusercontent.com/byJoey/test/refs/heads/main/tist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1770267365
-  option:
-    with_proxy: false
-    self_proxy: false
-    update_interval: 60
-    allow_auto_update: true
-    merge: mQ65tQOB0HLw
-    script: sHrEZEATmNHd
-    rules: rvoGjw9lDo1O
-    proxies: pyqCKl0B2Byk
-    groups: gbKzlXk9CziP
 - uid: mSbivow0g7K3
   type: merge
   name: null
@@ -85,7 +43,7 @@ items:
   file: RwWmv60H3j0A.yaml
   desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https%3A%2F%2F88cfn.dupontjoy.shop%2F88cfn%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1770267365
+  updated: 1770348956
   option:
     with_proxy: false
     self_proxy: false
