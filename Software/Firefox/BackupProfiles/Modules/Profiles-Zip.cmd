@@ -44,11 +44,12 @@ for /f "delims=" %%F in ('dir /b /o-d "%TargetFolder1%\FxProfiles_*.7z" 2^>nul')
 )
 
 :: 移动新压缩包（修复路径拼接）
-move /Y "%TargetFolder%\!Name!" "%TargetFolder1%\!Name!" >nul 2>&1
+:: move /Y "%TargetFolder%\!Name!" "%TargetFolder1%\!Name!" >nul 2>&1
 
 :: 清理临时文件夹
 timeout /t 3 /nobreak
 rd /s /q "%TempFolder%"
+Remove-Item -Path $env:TempFolder -Recurse -Force -ErrorAction SilentlyContinue
 
 @echo 備份完成！保留最近%keep%個版本，新包位置: "%TargetFolder1%\!Name!"
 endlocal
