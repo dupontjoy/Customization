@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: R1mXxj5uJFzg
+current: RwWmv60H3j0A
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RwWmv60H3j0A.yaml
   desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https%3A%2F%2F88cfn.dupontjoy.shop%2F88cfn%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1770526180
+  updated: 1770683239
   option:
     with_proxy: false
     self_proxy: false
