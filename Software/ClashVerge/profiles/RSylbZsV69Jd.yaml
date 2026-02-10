@@ -22,10 +22,6 @@ dns:
       - '+.google.com'
       - '+.facebook.com'
       - '+.youtube.com'
-  nameserver-policy:
-    "88cml.dupontjoy.shop":
-      - https://doh.cmliussss.net/CMLiussss
-      - https://doh.cm.edu.kg/CMLiussss
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -33,119 +29,119 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: youxuan.cf.090227.xyz, server: youxuan.cf.090227.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/tv?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: www.visa.cn, server: www.visa.cn, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/mag/setting?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: bestcf.030101.xyz, server: bestcf.030101.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/html?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 香港-19.87MB/s, server: 104.20.22.99, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/favourites/clip?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 香港-19.81MB/s, server: 104.26.5.225, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/html/seasons?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 香港-19.81MB/s 2, server: 172.67.66.245, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/music?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 香港-19.77MB/s, server: 172.67.69.76, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/uploads?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 香港-19.71MB/s, server: 104.20.20.37, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/manhua/photo/mall?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 香港-17.18MB/s, server: 104.26.13.191, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/channels?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:09_ip.164746.xyz, server: 108.162.192.183, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/club/groups?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:09_ip.164746.xyz 2, server: 108.162.198.192, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/groups?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:09_ip.164746.xyz 3, server: 162.159.38.65, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/forums/read?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:09_ip.164746.xyz 4, server: 162.159.39.9, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/settings/ja/ajax?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:09_ip.164746.xyz 5, server: 162.159.44.152, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/redirect?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:09_ip.164746.xyz 6, server: 162.159.45.36, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/sale/apps?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:11_addressesapi.090227.xyz_ct, server: 162.159.152.31, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/out.html/contact?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 2, server: 162.159.152.155, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/mobile/articles/bd?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 3, server: 162.159.153.144, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/products?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 4, server: 162.159.153.184, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/avatar?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 5, server: 162.159.153.194, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/groups/category?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 6, server: 162.159.153.217, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/archive?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:09_ip.164746.xyz 7, server: 172.64.52.219, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/project/messages/pages?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:09_ip.164746.xyz 8, server: 172.64.53.89, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/detail/mall?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:09_ip.164746.xyz 9, server: 172.64.145.212, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/go.html?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 2026-01-28_00:58:09_ip.164746.xyz 10, server: 172.64.229.192, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/picture/post?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: wetest.vip, server: WeTest.Vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/services/type/group?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: wetest.vip 2, server: WeTest.vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/seller/category?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: wetest.vip 3, server: aliesa.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ja?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: wetest.vip 4, server: cachefly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/question?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: wetest.vip 5, server: cloudfront.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/m/play?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: wetest.vip 6, server: edgeone.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/lib/page?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: wetest.vip 7, server: fastly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/v?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: wetest.vip 8, server: gcore.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/image/online/products?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: wetest.vip 9, server: lightcdn.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/mag/bd/acg?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: wetest.vip 10, server: netlify.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/jp/pay?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: wetest.vip 11, server: vercel.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/jump/ads?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 圣何塞-23.62MB/s, server: 104.16.70.165, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/map/bbs?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 圣何塞-23.58MB/s, server: 104.17.48.169, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/site?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 圣何塞-23.52MB/s, server: 104.16.119.40, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/tv/new?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 圣何塞-23.47MB/s, server: 104.16.228.190, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/search/programs/member?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 圣何塞-23.28MB/s, server: 104.18.157.26, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/products?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 圣何塞-23.10MB/s, server: 104.17.61.216, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/txt?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 圣何塞-23.06MB/s, server: 104.17.5.144, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/redirect.php/discount/comics?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 圣何塞-22.62MB/s, server: 104.18.203.41, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/thread/seller/mobile?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 圣何塞-22.57MB/s, server: 104.17.190.19, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/music/clip/clips?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 圣何塞-22.39MB/s, server: 104.16.47.180, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/player/htm?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 108.162.198.74, server: 108.162.198.74, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/f/zip/student?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.152.69, server: 162.159.152.69, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/en/setting/category?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.153.144, server: 162.159.153.144, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/wenku?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.153.170, server: 162.159.153.170, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/shows/movie/online?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.153.194, server: 162.159.153.194, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/app/clip/stars?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.153.209, server: 162.159.153.209, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/image/doc?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.153.72, server: 162.159.153.72, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/comic?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.16.217, server: 162.159.16.217, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/playlist/library/item?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.38.19, server: 162.159.38.19, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/chat?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.39.170, server: 162.159.39.170, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/clips/class/map?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.44.49, server: 162.159.44.49, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/episode/reg/news?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.45.15, server: 162.159.45.15, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/map?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 172.64.229.106, server: 172.64.229.106, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/bt/www/home?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 172.64.33.101, server: 172.64.33.101, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/res/bt?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 172.64.52.124, server: 172.64.52.124, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/redirect.html/bbs/item?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 172.64.53.130, server: 172.64.53.130, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/news?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: WeTest.Vip, server: WeTest.Vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/clip/out.php?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: WeTest.vip, server: WeTest.vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/doujin?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: aliesa.182682.xyz, server: aliesa.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/archive/film?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: cachefly.182682.xyz, server: cachefly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/wiki?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: cloudflare.182682.xyz, server: cloudflare.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/store/anime/films?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: cloudfront.182682.xyz, server: cloudfront.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/intro/bbs?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: edgeone.182682.xyz, server: edgeone.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/categories/document?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: fastly.182682.xyz, server: fastly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/stars/event?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: gcore.182682.xyz, server: gcore.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/act/images?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: lightcdn.182682.xyz, server: lightcdn.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/redirect.html/archive?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: netlify.182682.xyz, server: netlify.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/clips/archive/contact?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: vercel.182682.xyz, server: vercel.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/en/tech/course?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.16.145.171, server: 104.16.145.171, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/dh/files/forums?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.16.145.54, server: 104.16.145.54, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/course/article?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.16.245.96, server: 104.16.245.96, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/channels/forum?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.16.5.246, server: 104.16.5.246, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/go/seller/file?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.17.179.206, server: 104.17.179.206, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/download/new?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.18.118.85, server: 104.18.118.85, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/redirect.php/map/read?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.18.180.4, server: 104.18.180.4, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/section?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.18.46.36, server: 104.18.46.36, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/channels?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.18.46.76, server: 104.18.46.76, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/u/torrent?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.19.61.250, server: 104.19.61.250, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/contact?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 108.162.193.24, server: 108.162.193.24, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/event/setting/member?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.16.69, server: 162.159.16.69, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/setting?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.62.215, server: 162.159.62.215, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/study/games/forum?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 172.64.144.139, server: 172.64.144.139, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/pages?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 172.64.154.68, server: 172.64.154.68, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/document/note/account?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 172.64.229.11, server: 172.64.229.11, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/register/lib?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 172.64.34.196, server: 172.64.34.196, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vod?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 198.41.223.23, server: 198.41.223.23, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/users/news/post?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 198.41.223.252, server: 198.41.223.252, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/temp/resource?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.16.111.6, server: 104.16.111.6, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/info/code/doujin?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.16.65.88, server: 104.16.65.88, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/m?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.16.94.173, server: 104.16.94.173, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/about/picture/torrent?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 173.245.49.175, server: 173.245.49.175, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/pictures/apps/act?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 173.245.49.246, server: 173.245.49.246, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/documents?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 198.41.208.186, server: 198.41.208.186, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/program/article?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 198.41.208.203, server: 198.41.208.203, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/reg/playlist?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 198.41.208.210, server: 198.41.208.210, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/collect?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 198.41.208.22, server: 198.41.208.22, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/downloads/my/www?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 198.41.209.210, server: 198.41.209.210, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/acg/upload?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 172.64.52.209, server: 172.64.52.209, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/products/setting/torrent?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 104.18.45.140, server: 104.18.45.140, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/activity/read/photo?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 108.162.198.181, server: 108.162.198.181, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/cart?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.33.175, server: 162.159.33.175, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/mag?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 172.64.53.13, server: 172.64.53.13, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/store/members?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.44.142, server: 162.159.44.142, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/cn/reg/u?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.38.82, server: 162.159.38.82, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/series?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.39.123, server: 162.159.39.123, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/torrent?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 162.159.45.235, server: 162.159.45.235, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/categories?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
-  - {name: 172.64.151.61, server: 172.64.151.61, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: true, servername: 88cml.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/episodes/about?ed=2560", headers: {Host: 88cml.dupontjoy.shop}}, ech-opts: {enable: true}}
+  - {name: youxuan.cf.090227.xyz, server: youxuan.cf.090227.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/articles/static?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: www.visa.cn, server: www.visa.cn, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/read?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: bestcf.030101.xyz, server: bestcf.030101.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/shows/question/map?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: CF-4, server: 108.162.198.60, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/lang?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: CF-4 2, server: 162.159.39.162, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/groups/favourites/doujin?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: CF-4 3, server: 162.159.45.197, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/image?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: CF-4 4, server: 162.159.44.207, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/wenku/p/pictures?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: CF-4 5, server: 162.159.38.68, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/pay?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: CF-4 6, server: 172.64.53.58, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/lesson/categories/tools?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: CF-4 7, server: 172.64.52.184, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/streams/books?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: CF-4 8, server: 104.18.37.59, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/auth?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: CF-4 9, server: 172.64.32.78, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/sale/app/go.html?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 圣何塞-23.76MB/s, server: 104.18.93.178, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/archives/tv/lessons?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 圣何塞-23.15MB/s, server: 104.16.81.225, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/note?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 圣何塞-23.06MB/s, server: 104.16.236.46, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/download?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 圣何塞-22.97MB/s, server: 104.18.157.26, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/retrieve/jp/favorite?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 圣何塞-22.82MB/s, server: 104.16.61.97, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/channels?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:39_ip.164746.xyz, server: 108.162.192.148, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/clips/read?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:39_ip.164746.xyz 2, server: 108.162.194.88, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/pdf/collection/student?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:39_ip.164746.xyz 3, server: 108.162.198.23, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/shows/urls/streaming?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:39_ip.164746.xyz 4, server: 162.159.38.71, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/images/album/apps?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:39_ip.164746.xyz 5, server: 162.159.39.202, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/order/comic/ads?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:39_ip.164746.xyz 6, server: 162.159.40.163, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/games/zh-cn?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:39_ip.164746.xyz 7, server: 162.159.44.105, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/comics/source/gif?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:39_ip.164746.xyz 8, server: 162.159.45.236, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/clips/go?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:40_addressesapi.090227.xyz_ct, server: 162.159.152.11, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/go.php/magnet/note?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 2, server: 162.159.152.205, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/help/torrent?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 3, server: 162.159.153.72, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/manhua/activity?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 4, server: 162.159.153.170, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/feedback?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 5, server: 162.159.153.216, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/version?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 6, server: 162.159.153.239, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/wiki?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:39_ip.164746.xyz 9, server: 172.64.52.224, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/photos/china/m?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 2026-02-08_12:58:39_ip.164746.xyz 10, server: 172.64.53.4, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/download?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: wetest.vip, server: WeTest.Vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/redirect.php?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: wetest.vip 2, server: WeTest.vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/service?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: wetest.vip 3, server: aliesa.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/info/stock?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: wetest.vip 4, server: cachefly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/comics/info/feedback?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: wetest.vip 5, server: cloudfront.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/travel/members?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: wetest.vip 6, server: edgeone.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/comic?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: wetest.vip 7, server: fastly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/season/community/photos?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: wetest.vip 8, server: gcore.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/about/static/ja?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: wetest.vip 9, server: lightcdn.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/sale?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: wetest.vip 10, server: netlify.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/torrent/jp?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: wetest.vip 11, server: vercel.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/series?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 圣何塞-22.75MB/s, server: 104.17.95.234, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/api?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 108.162.192.254, server: 108.162.192.254, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/torrent?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 108.162.198.32, server: 108.162.198.32, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/stars?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.152.205, server: 162.159.152.205, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/tv?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.152.31, server: 162.159.152.31, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/game/groups?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.152.69, server: 162.159.152.69, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/channels/p?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.153.144, server: 162.159.153.144, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/question?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.153.209, server: 162.159.153.209, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/files/home?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.153.239, server: 162.159.153.239, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/urls?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.26.97, server: 162.159.26.97, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/messages?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.38.191, server: 162.159.38.191, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/jump.php/retrieve?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.39.244, server: 162.159.39.244, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/share?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.44.5, server: 162.159.44.5, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/study/help?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.45.214, server: 162.159.45.214, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/api/courses/www?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 172.64.159.81, server: 172.64.159.81, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/download/seller?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 172.64.52.124, server: 172.64.52.124, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ja/cn/blogs?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 172.64.53.141, server: 172.64.53.141, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/pictures?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: WeTest.Vip, server: WeTest.Vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/edu/images?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: WeTest.vip, server: WeTest.vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/setting/dh/lessons?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: aliesa.182682.xyz, server: aliesa.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/resource/groups/classify?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: cachefly.182682.xyz, server: cachefly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/f/html/sale?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: cloudflare.182682.xyz, server: cloudflare.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/city?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: cloudfront.182682.xyz, server: cloudfront.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/rank?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: edgeone.182682.xyz, server: edgeone.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/rank/m/edu?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: fastly.182682.xyz, server: fastly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/img/avatar?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: gcore.182682.xyz, server: gcore.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/list/album?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: lightcdn.182682.xyz, server: lightcdn.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/clips/clip/ads?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: netlify.182682.xyz, server: netlify.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/company?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: vercel.182682.xyz, server: vercel.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/playlist?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.16.151.14, server: 104.16.151.14, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/city/articles/archives?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.16.159.138, server: 104.16.159.138, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/data/products/torrent?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.17.154.145, server: 104.17.154.145, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/go/bt/api?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.17.161.198, server: 104.17.161.198, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/acg/faq?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.17.205.132, server: 104.17.205.132, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/bbs/mall/student?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.17.211.77, server: 104.17.211.77, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/txt/season/products?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.17.219.93, server: 104.17.219.93, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/page/games/ajax?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.18.169.227, server: 104.18.169.227, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ad/info/china?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.18.47.242, server: 104.18.47.242, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/setting/friend?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.18.66.51, server: 104.18.66.51, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/m?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.18.76.241, server: 104.18.76.241, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/show/archive?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.18.88.148, server: 104.18.88.148, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/photos/collect?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.20.158, server: 162.159.20.158, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/mag/users/soft?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.20.3, server: 162.159.20.3, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/p/upload?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.20.32, server: 162.159.20.32, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/photos/v/manhua?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 172.64.148.218, server: 172.64.148.218, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/china/tv/mobile?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 172.64.154.26, server: 172.64.154.26, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/torrent/special/static?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 172.64.154.38, server: 172.64.154.38, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/mall?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 172.64.157.221, server: 172.64.157.221, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/drama?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 172.64.42.219, server: 172.64.42.219, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/films/dl/app?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.16.149.41, server: 104.16.149.41, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/lives/ajax?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.17.11.179, server: 104.17.11.179, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/movies/episode?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.18.210.117, server: 104.18.210.117, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/zh-tw/archive?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 104.19.42.22, server: 104.19.42.22, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/lives?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 190.93.246.188, server: 190.93.246.188, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/event/stars/item?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 198.41.208.113, server: 198.41.208.113, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ad/document?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 198.41.208.203, server: 198.41.208.203, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/study/cart/order?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 198.41.209.132, server: 198.41.209.132, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/redirect.html/posts/outbound?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 198.41.211.171, server: 198.41.211.171, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/qa/apps/m?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 198.41.222.72, server: 198.41.222.72, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/collection/magnet?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 172.64.52.237, server: 172.64.52.237, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/link/data?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.45.177, server: 162.159.45.177, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/dload?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.39.185, server: 162.159.39.185, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/groups?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.39.116, server: 162.159.39.116, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ad/jump.html/item?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.44.193, server: 162.159.44.193, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/news?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 108.162.198.41, server: 108.162.198.41, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/map?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.45.127, server: 162.159.45.127, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/posts/collect/go.html?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 172.64.53.239, server: 172.64.53.239, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/mall?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.38.216, server: 162.159.38.216, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/document/clip?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
+  - {name: 162.159.38.181, server: 162.159.38.181, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: cml88.dupontjoy.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: "/document/temp/payment?ed=2560", headers: {Host: cml88.dupontjoy.shop}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -157,28 +153,36 @@ proxy-groups:
       - youxuan.cf.090227.xyz
       - www.visa.cn
       - bestcf.030101.xyz
-      - 香港-19.87MB/s
-      - 香港-19.81MB/s
-      - 香港-19.81MB/s 2
-      - 香港-19.77MB/s
-      - 香港-19.71MB/s
-      - 香港-17.18MB/s
-      - 2026-01-28_00:58:09_ip.164746.xyz
-      - 2026-01-28_00:58:09_ip.164746.xyz 2
-      - 2026-01-28_00:58:09_ip.164746.xyz 3
-      - 2026-01-28_00:58:09_ip.164746.xyz 4
-      - 2026-01-28_00:58:09_ip.164746.xyz 5
-      - 2026-01-28_00:58:09_ip.164746.xyz 6
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 2
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 3
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 4
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 5
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 6
-      - 2026-01-28_00:58:09_ip.164746.xyz 7
-      - 2026-01-28_00:58:09_ip.164746.xyz 8
-      - 2026-01-28_00:58:09_ip.164746.xyz 9
-      - 2026-01-28_00:58:09_ip.164746.xyz 10
+      - CF-4
+      - CF-4 2
+      - CF-4 3
+      - CF-4 4
+      - CF-4 5
+      - CF-4 6
+      - CF-4 7
+      - CF-4 8
+      - CF-4 9
+      - 圣何塞-23.76MB/s
+      - 圣何塞-23.15MB/s
+      - 圣何塞-23.06MB/s
+      - 圣何塞-22.97MB/s
+      - 圣何塞-22.82MB/s
+      - 2026-02-08_12:58:39_ip.164746.xyz
+      - 2026-02-08_12:58:39_ip.164746.xyz 2
+      - 2026-02-08_12:58:39_ip.164746.xyz 3
+      - 2026-02-08_12:58:39_ip.164746.xyz 4
+      - 2026-02-08_12:58:39_ip.164746.xyz 5
+      - 2026-02-08_12:58:39_ip.164746.xyz 6
+      - 2026-02-08_12:58:39_ip.164746.xyz 7
+      - 2026-02-08_12:58:39_ip.164746.xyz 8
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 2
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 3
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 4
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 5
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 6
+      - 2026-02-08_12:58:39_ip.164746.xyz 9
+      - 2026-02-08_12:58:39_ip.164746.xyz 10
       - wetest.vip
       - wetest.vip 2
       - wetest.vip 3
@@ -190,32 +194,23 @@ proxy-groups:
       - wetest.vip 9
       - wetest.vip 10
       - wetest.vip 11
-      - 圣何塞-23.62MB/s
-      - 圣何塞-23.58MB/s
-      - 圣何塞-23.52MB/s
-      - 圣何塞-23.47MB/s
-      - 圣何塞-23.28MB/s
-      - 圣何塞-23.10MB/s
-      - 圣何塞-23.06MB/s
-      - 圣何塞-22.62MB/s
-      - 圣何塞-22.57MB/s
-      - 圣何塞-22.39MB/s
-      - 108.162.198.74
+      - 圣何塞-22.75MB/s
+      - 108.162.192.254
+      - 108.162.198.32
+      - 162.159.152.205
+      - 162.159.152.31
       - 162.159.152.69
       - 162.159.153.144
-      - 162.159.153.170
-      - 162.159.153.194
       - 162.159.153.209
-      - 162.159.153.72
-      - 162.159.16.217
-      - 162.159.38.19
-      - 162.159.39.170
-      - 162.159.44.49
-      - 162.159.45.15
-      - 172.64.229.106
-      - 172.64.33.101
+      - 162.159.153.239
+      - 162.159.26.97
+      - 162.159.38.191
+      - 162.159.39.244
+      - 162.159.44.5
+      - 162.159.45.214
+      - 172.64.159.81
       - 172.64.52.124
-      - 172.64.53.130
+      - 172.64.53.141
       - WeTest.Vip
       - WeTest.vip
       - aliesa.182682.xyz
@@ -228,45 +223,46 @@ proxy-groups:
       - lightcdn.182682.xyz
       - netlify.182682.xyz
       - vercel.182682.xyz
-      - 104.16.145.171
-      - 104.16.145.54
-      - 104.16.245.96
-      - 104.16.5.246
-      - 104.17.179.206
-      - 104.18.118.85
-      - 104.18.180.4
-      - 104.18.46.36
-      - 104.18.46.76
-      - 104.19.61.250
-      - 108.162.193.24
-      - 162.159.16.69
-      - 162.159.62.215
-      - 172.64.144.139
-      - 172.64.154.68
-      - 172.64.229.11
-      - 172.64.34.196
-      - 198.41.223.23
-      - 198.41.223.252
-      - 104.16.111.6
-      - 104.16.65.88
-      - 104.16.94.173
-      - 173.245.49.175
-      - 173.245.49.246
-      - 198.41.208.186
+      - 104.16.151.14
+      - 104.16.159.138
+      - 104.17.154.145
+      - 104.17.161.198
+      - 104.17.205.132
+      - 104.17.211.77
+      - 104.17.219.93
+      - 104.18.169.227
+      - 104.18.47.242
+      - 104.18.66.51
+      - 104.18.76.241
+      - 104.18.88.148
+      - 162.159.20.158
+      - 162.159.20.3
+      - 162.159.20.32
+      - 172.64.148.218
+      - 172.64.154.26
+      - 172.64.154.38
+      - 172.64.157.221
+      - 172.64.42.219
+      - 104.16.149.41
+      - 104.17.11.179
+      - 104.18.210.117
+      - 104.19.42.22
+      - 190.93.246.188
+      - 198.41.208.113
       - 198.41.208.203
-      - 198.41.208.210
-      - 198.41.208.22
-      - 198.41.209.210
-      - 172.64.52.209
-      - 104.18.45.140
-      - 108.162.198.181
-      - 162.159.33.175
-      - 172.64.53.13
-      - 162.159.44.142
-      - 162.159.38.82
-      - 162.159.39.123
-      - 162.159.45.235
-      - 172.64.151.61
+      - 198.41.209.132
+      - 198.41.211.171
+      - 198.41.222.72
+      - 172.64.52.237
+      - 162.159.45.177
+      - 162.159.39.185
+      - 162.159.39.116
+      - 162.159.44.193
+      - 108.162.198.41
+      - 162.159.45.127
+      - 172.64.53.239
+      - 162.159.38.216
+      - 162.159.38.181
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -276,28 +272,36 @@ proxy-groups:
       - youxuan.cf.090227.xyz
       - www.visa.cn
       - bestcf.030101.xyz
-      - 香港-19.87MB/s
-      - 香港-19.81MB/s
-      - 香港-19.81MB/s 2
-      - 香港-19.77MB/s
-      - 香港-19.71MB/s
-      - 香港-17.18MB/s
-      - 2026-01-28_00:58:09_ip.164746.xyz
-      - 2026-01-28_00:58:09_ip.164746.xyz 2
-      - 2026-01-28_00:58:09_ip.164746.xyz 3
-      - 2026-01-28_00:58:09_ip.164746.xyz 4
-      - 2026-01-28_00:58:09_ip.164746.xyz 5
-      - 2026-01-28_00:58:09_ip.164746.xyz 6
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 2
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 3
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 4
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 5
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 6
-      - 2026-01-28_00:58:09_ip.164746.xyz 7
-      - 2026-01-28_00:58:09_ip.164746.xyz 8
-      - 2026-01-28_00:58:09_ip.164746.xyz 9
-      - 2026-01-28_00:58:09_ip.164746.xyz 10
+      - CF-4
+      - CF-4 2
+      - CF-4 3
+      - CF-4 4
+      - CF-4 5
+      - CF-4 6
+      - CF-4 7
+      - CF-4 8
+      - CF-4 9
+      - 圣何塞-23.76MB/s
+      - 圣何塞-23.15MB/s
+      - 圣何塞-23.06MB/s
+      - 圣何塞-22.97MB/s
+      - 圣何塞-22.82MB/s
+      - 2026-02-08_12:58:39_ip.164746.xyz
+      - 2026-02-08_12:58:39_ip.164746.xyz 2
+      - 2026-02-08_12:58:39_ip.164746.xyz 3
+      - 2026-02-08_12:58:39_ip.164746.xyz 4
+      - 2026-02-08_12:58:39_ip.164746.xyz 5
+      - 2026-02-08_12:58:39_ip.164746.xyz 6
+      - 2026-02-08_12:58:39_ip.164746.xyz 7
+      - 2026-02-08_12:58:39_ip.164746.xyz 8
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 2
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 3
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 4
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 5
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 6
+      - 2026-02-08_12:58:39_ip.164746.xyz 9
+      - 2026-02-08_12:58:39_ip.164746.xyz 10
       - wetest.vip
       - wetest.vip 2
       - wetest.vip 3
@@ -309,32 +313,23 @@ proxy-groups:
       - wetest.vip 9
       - wetest.vip 10
       - wetest.vip 11
-      - 圣何塞-23.62MB/s
-      - 圣何塞-23.58MB/s
-      - 圣何塞-23.52MB/s
-      - 圣何塞-23.47MB/s
-      - 圣何塞-23.28MB/s
-      - 圣何塞-23.10MB/s
-      - 圣何塞-23.06MB/s
-      - 圣何塞-22.62MB/s
-      - 圣何塞-22.57MB/s
-      - 圣何塞-22.39MB/s
-      - 108.162.198.74
+      - 圣何塞-22.75MB/s
+      - 108.162.192.254
+      - 108.162.198.32
+      - 162.159.152.205
+      - 162.159.152.31
       - 162.159.152.69
       - 162.159.153.144
-      - 162.159.153.170
-      - 162.159.153.194
       - 162.159.153.209
-      - 162.159.153.72
-      - 162.159.16.217
-      - 162.159.38.19
-      - 162.159.39.170
-      - 162.159.44.49
-      - 162.159.45.15
-      - 172.64.229.106
-      - 172.64.33.101
+      - 162.159.153.239
+      - 162.159.26.97
+      - 162.159.38.191
+      - 162.159.39.244
+      - 162.159.44.5
+      - 162.159.45.214
+      - 172.64.159.81
       - 172.64.52.124
-      - 172.64.53.130
+      - 172.64.53.141
       - WeTest.Vip
       - WeTest.vip
       - aliesa.182682.xyz
@@ -347,45 +342,46 @@ proxy-groups:
       - lightcdn.182682.xyz
       - netlify.182682.xyz
       - vercel.182682.xyz
-      - 104.16.145.171
-      - 104.16.145.54
-      - 104.16.245.96
-      - 104.16.5.246
-      - 104.17.179.206
-      - 104.18.118.85
-      - 104.18.180.4
-      - 104.18.46.36
-      - 104.18.46.76
-      - 104.19.61.250
-      - 108.162.193.24
-      - 162.159.16.69
-      - 162.159.62.215
-      - 172.64.144.139
-      - 172.64.154.68
-      - 172.64.229.11
-      - 172.64.34.196
-      - 198.41.223.23
-      - 198.41.223.252
-      - 104.16.111.6
-      - 104.16.65.88
-      - 104.16.94.173
-      - 173.245.49.175
-      - 173.245.49.246
-      - 198.41.208.186
+      - 104.16.151.14
+      - 104.16.159.138
+      - 104.17.154.145
+      - 104.17.161.198
+      - 104.17.205.132
+      - 104.17.211.77
+      - 104.17.219.93
+      - 104.18.169.227
+      - 104.18.47.242
+      - 104.18.66.51
+      - 104.18.76.241
+      - 104.18.88.148
+      - 162.159.20.158
+      - 162.159.20.3
+      - 162.159.20.32
+      - 172.64.148.218
+      - 172.64.154.26
+      - 172.64.154.38
+      - 172.64.157.221
+      - 172.64.42.219
+      - 104.16.149.41
+      - 104.17.11.179
+      - 104.18.210.117
+      - 104.19.42.22
+      - 190.93.246.188
+      - 198.41.208.113
       - 198.41.208.203
-      - 198.41.208.210
-      - 198.41.208.22
-      - 198.41.209.210
-      - 172.64.52.209
-      - 104.18.45.140
-      - 108.162.198.181
-      - 162.159.33.175
-      - 172.64.53.13
-      - 162.159.44.142
-      - 162.159.38.82
-      - 162.159.39.123
-      - 162.159.45.235
-      - 172.64.151.61
+      - 198.41.209.132
+      - 198.41.211.171
+      - 198.41.222.72
+      - 172.64.52.237
+      - 162.159.45.177
+      - 162.159.39.185
+      - 162.159.39.116
+      - 162.159.44.193
+      - 108.162.198.41
+      - 162.159.45.127
+      - 172.64.53.239
+      - 162.159.38.216
+      - 162.159.38.181
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -394,28 +390,36 @@ proxy-groups:
       - youxuan.cf.090227.xyz
       - www.visa.cn
       - bestcf.030101.xyz
-      - 香港-19.87MB/s
-      - 香港-19.81MB/s
-      - 香港-19.81MB/s 2
-      - 香港-19.77MB/s
-      - 香港-19.71MB/s
-      - 香港-17.18MB/s
-      - 2026-01-28_00:58:09_ip.164746.xyz
-      - 2026-01-28_00:58:09_ip.164746.xyz 2
-      - 2026-01-28_00:58:09_ip.164746.xyz 3
-      - 2026-01-28_00:58:09_ip.164746.xyz 4
-      - 2026-01-28_00:58:09_ip.164746.xyz 5
-      - 2026-01-28_00:58:09_ip.164746.xyz 6
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 2
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 3
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 4
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 5
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 6
-      - 2026-01-28_00:58:09_ip.164746.xyz 7
-      - 2026-01-28_00:58:09_ip.164746.xyz 8
-      - 2026-01-28_00:58:09_ip.164746.xyz 9
-      - 2026-01-28_00:58:09_ip.164746.xyz 10
+      - CF-4
+      - CF-4 2
+      - CF-4 3
+      - CF-4 4
+      - CF-4 5
+      - CF-4 6
+      - CF-4 7
+      - CF-4 8
+      - CF-4 9
+      - 圣何塞-23.76MB/s
+      - 圣何塞-23.15MB/s
+      - 圣何塞-23.06MB/s
+      - 圣何塞-22.97MB/s
+      - 圣何塞-22.82MB/s
+      - 2026-02-08_12:58:39_ip.164746.xyz
+      - 2026-02-08_12:58:39_ip.164746.xyz 2
+      - 2026-02-08_12:58:39_ip.164746.xyz 3
+      - 2026-02-08_12:58:39_ip.164746.xyz 4
+      - 2026-02-08_12:58:39_ip.164746.xyz 5
+      - 2026-02-08_12:58:39_ip.164746.xyz 6
+      - 2026-02-08_12:58:39_ip.164746.xyz 7
+      - 2026-02-08_12:58:39_ip.164746.xyz 8
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 2
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 3
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 4
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 5
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 6
+      - 2026-02-08_12:58:39_ip.164746.xyz 9
+      - 2026-02-08_12:58:39_ip.164746.xyz 10
       - wetest.vip
       - wetest.vip 2
       - wetest.vip 3
@@ -427,32 +431,23 @@ proxy-groups:
       - wetest.vip 9
       - wetest.vip 10
       - wetest.vip 11
-      - 圣何塞-23.62MB/s
-      - 圣何塞-23.58MB/s
-      - 圣何塞-23.52MB/s
-      - 圣何塞-23.47MB/s
-      - 圣何塞-23.28MB/s
-      - 圣何塞-23.10MB/s
-      - 圣何塞-23.06MB/s
-      - 圣何塞-22.62MB/s
-      - 圣何塞-22.57MB/s
-      - 圣何塞-22.39MB/s
-      - 108.162.198.74
+      - 圣何塞-22.75MB/s
+      - 108.162.192.254
+      - 108.162.198.32
+      - 162.159.152.205
+      - 162.159.152.31
       - 162.159.152.69
       - 162.159.153.144
-      - 162.159.153.170
-      - 162.159.153.194
       - 162.159.153.209
-      - 162.159.153.72
-      - 162.159.16.217
-      - 162.159.38.19
-      - 162.159.39.170
-      - 162.159.44.49
-      - 162.159.45.15
-      - 172.64.229.106
-      - 172.64.33.101
+      - 162.159.153.239
+      - 162.159.26.97
+      - 162.159.38.191
+      - 162.159.39.244
+      - 162.159.44.5
+      - 162.159.45.214
+      - 172.64.159.81
       - 172.64.52.124
-      - 172.64.53.130
+      - 172.64.53.141
       - WeTest.Vip
       - WeTest.vip
       - aliesa.182682.xyz
@@ -465,45 +460,46 @@ proxy-groups:
       - lightcdn.182682.xyz
       - netlify.182682.xyz
       - vercel.182682.xyz
-      - 104.16.145.171
-      - 104.16.145.54
-      - 104.16.245.96
-      - 104.16.5.246
-      - 104.17.179.206
-      - 104.18.118.85
-      - 104.18.180.4
-      - 104.18.46.36
-      - 104.18.46.76
-      - 104.19.61.250
-      - 108.162.193.24
-      - 162.159.16.69
-      - 162.159.62.215
-      - 172.64.144.139
-      - 172.64.154.68
-      - 172.64.229.11
-      - 172.64.34.196
-      - 198.41.223.23
-      - 198.41.223.252
-      - 104.16.111.6
-      - 104.16.65.88
-      - 104.16.94.173
-      - 173.245.49.175
-      - 173.245.49.246
-      - 198.41.208.186
+      - 104.16.151.14
+      - 104.16.159.138
+      - 104.17.154.145
+      - 104.17.161.198
+      - 104.17.205.132
+      - 104.17.211.77
+      - 104.17.219.93
+      - 104.18.169.227
+      - 104.18.47.242
+      - 104.18.66.51
+      - 104.18.76.241
+      - 104.18.88.148
+      - 162.159.20.158
+      - 162.159.20.3
+      - 162.159.20.32
+      - 172.64.148.218
+      - 172.64.154.26
+      - 172.64.154.38
+      - 172.64.157.221
+      - 172.64.42.219
+      - 104.16.149.41
+      - 104.17.11.179
+      - 104.18.210.117
+      - 104.19.42.22
+      - 190.93.246.188
+      - 198.41.208.113
       - 198.41.208.203
-      - 198.41.208.210
-      - 198.41.208.22
-      - 198.41.209.210
-      - 172.64.52.209
-      - 104.18.45.140
-      - 108.162.198.181
-      - 162.159.33.175
-      - 172.64.53.13
-      - 162.159.44.142
-      - 162.159.38.82
-      - 162.159.39.123
-      - 162.159.45.235
-      - 172.64.151.61
+      - 198.41.209.132
+      - 198.41.211.171
+      - 198.41.222.72
+      - 172.64.52.237
+      - 162.159.45.177
+      - 162.159.39.185
+      - 162.159.39.116
+      - 162.159.44.193
+      - 108.162.198.41
+      - 162.159.45.127
+      - 172.64.53.239
+      - 162.159.38.216
+      - 162.159.38.181
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -513,28 +509,36 @@ proxy-groups:
       - youxuan.cf.090227.xyz
       - www.visa.cn
       - bestcf.030101.xyz
-      - 香港-19.87MB/s
-      - 香港-19.81MB/s
-      - 香港-19.81MB/s 2
-      - 香港-19.77MB/s
-      - 香港-19.71MB/s
-      - 香港-17.18MB/s
-      - 2026-01-28_00:58:09_ip.164746.xyz
-      - 2026-01-28_00:58:09_ip.164746.xyz 2
-      - 2026-01-28_00:58:09_ip.164746.xyz 3
-      - 2026-01-28_00:58:09_ip.164746.xyz 4
-      - 2026-01-28_00:58:09_ip.164746.xyz 5
-      - 2026-01-28_00:58:09_ip.164746.xyz 6
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 2
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 3
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 4
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 5
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 6
-      - 2026-01-28_00:58:09_ip.164746.xyz 7
-      - 2026-01-28_00:58:09_ip.164746.xyz 8
-      - 2026-01-28_00:58:09_ip.164746.xyz 9
-      - 2026-01-28_00:58:09_ip.164746.xyz 10
+      - CF-4
+      - CF-4 2
+      - CF-4 3
+      - CF-4 4
+      - CF-4 5
+      - CF-4 6
+      - CF-4 7
+      - CF-4 8
+      - CF-4 9
+      - 圣何塞-23.76MB/s
+      - 圣何塞-23.15MB/s
+      - 圣何塞-23.06MB/s
+      - 圣何塞-22.97MB/s
+      - 圣何塞-22.82MB/s
+      - 2026-02-08_12:58:39_ip.164746.xyz
+      - 2026-02-08_12:58:39_ip.164746.xyz 2
+      - 2026-02-08_12:58:39_ip.164746.xyz 3
+      - 2026-02-08_12:58:39_ip.164746.xyz 4
+      - 2026-02-08_12:58:39_ip.164746.xyz 5
+      - 2026-02-08_12:58:39_ip.164746.xyz 6
+      - 2026-02-08_12:58:39_ip.164746.xyz 7
+      - 2026-02-08_12:58:39_ip.164746.xyz 8
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 2
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 3
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 4
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 5
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 6
+      - 2026-02-08_12:58:39_ip.164746.xyz 9
+      - 2026-02-08_12:58:39_ip.164746.xyz 10
       - wetest.vip
       - wetest.vip 2
       - wetest.vip 3
@@ -546,32 +550,23 @@ proxy-groups:
       - wetest.vip 9
       - wetest.vip 10
       - wetest.vip 11
-      - 圣何塞-23.62MB/s
-      - 圣何塞-23.58MB/s
-      - 圣何塞-23.52MB/s
-      - 圣何塞-23.47MB/s
-      - 圣何塞-23.28MB/s
-      - 圣何塞-23.10MB/s
-      - 圣何塞-23.06MB/s
-      - 圣何塞-22.62MB/s
-      - 圣何塞-22.57MB/s
-      - 圣何塞-22.39MB/s
-      - 108.162.198.74
+      - 圣何塞-22.75MB/s
+      - 108.162.192.254
+      - 108.162.198.32
+      - 162.159.152.205
+      - 162.159.152.31
       - 162.159.152.69
       - 162.159.153.144
-      - 162.159.153.170
-      - 162.159.153.194
       - 162.159.153.209
-      - 162.159.153.72
-      - 162.159.16.217
-      - 162.159.38.19
-      - 162.159.39.170
-      - 162.159.44.49
-      - 162.159.45.15
-      - 172.64.229.106
-      - 172.64.33.101
+      - 162.159.153.239
+      - 162.159.26.97
+      - 162.159.38.191
+      - 162.159.39.244
+      - 162.159.44.5
+      - 162.159.45.214
+      - 172.64.159.81
       - 172.64.52.124
-      - 172.64.53.130
+      - 172.64.53.141
       - WeTest.Vip
       - WeTest.vip
       - aliesa.182682.xyz
@@ -584,45 +579,46 @@ proxy-groups:
       - lightcdn.182682.xyz
       - netlify.182682.xyz
       - vercel.182682.xyz
-      - 104.16.145.171
-      - 104.16.145.54
-      - 104.16.245.96
-      - 104.16.5.246
-      - 104.17.179.206
-      - 104.18.118.85
-      - 104.18.180.4
-      - 104.18.46.36
-      - 104.18.46.76
-      - 104.19.61.250
-      - 108.162.193.24
-      - 162.159.16.69
-      - 162.159.62.215
-      - 172.64.144.139
-      - 172.64.154.68
-      - 172.64.229.11
-      - 172.64.34.196
-      - 198.41.223.23
-      - 198.41.223.252
-      - 104.16.111.6
-      - 104.16.65.88
-      - 104.16.94.173
-      - 173.245.49.175
-      - 173.245.49.246
-      - 198.41.208.186
+      - 104.16.151.14
+      - 104.16.159.138
+      - 104.17.154.145
+      - 104.17.161.198
+      - 104.17.205.132
+      - 104.17.211.77
+      - 104.17.219.93
+      - 104.18.169.227
+      - 104.18.47.242
+      - 104.18.66.51
+      - 104.18.76.241
+      - 104.18.88.148
+      - 162.159.20.158
+      - 162.159.20.3
+      - 162.159.20.32
+      - 172.64.148.218
+      - 172.64.154.26
+      - 172.64.154.38
+      - 172.64.157.221
+      - 172.64.42.219
+      - 104.16.149.41
+      - 104.17.11.179
+      - 104.18.210.117
+      - 104.19.42.22
+      - 190.93.246.188
+      - 198.41.208.113
       - 198.41.208.203
-      - 198.41.208.210
-      - 198.41.208.22
-      - 198.41.209.210
-      - 172.64.52.209
-      - 104.18.45.140
-      - 108.162.198.181
-      - 162.159.33.175
-      - 172.64.53.13
-      - 162.159.44.142
-      - 162.159.38.82
-      - 162.159.39.123
-      - 162.159.45.235
-      - 172.64.151.61
+      - 198.41.209.132
+      - 198.41.211.171
+      - 198.41.222.72
+      - 172.64.52.237
+      - 162.159.45.177
+      - 162.159.39.185
+      - 162.159.39.116
+      - 162.159.44.193
+      - 108.162.198.41
+      - 162.159.45.127
+      - 172.64.53.239
+      - 162.159.38.216
+      - 162.159.38.181
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -645,28 +641,36 @@ proxy-groups:
       - youxuan.cf.090227.xyz
       - www.visa.cn
       - bestcf.030101.xyz
-      - 香港-19.87MB/s
-      - 香港-19.81MB/s
-      - 香港-19.81MB/s 2
-      - 香港-19.77MB/s
-      - 香港-19.71MB/s
-      - 香港-17.18MB/s
-      - 2026-01-28_00:58:09_ip.164746.xyz
-      - 2026-01-28_00:58:09_ip.164746.xyz 2
-      - 2026-01-28_00:58:09_ip.164746.xyz 3
-      - 2026-01-28_00:58:09_ip.164746.xyz 4
-      - 2026-01-28_00:58:09_ip.164746.xyz 5
-      - 2026-01-28_00:58:09_ip.164746.xyz 6
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 2
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 3
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 4
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 5
-      - 2026-01-28_00:58:11_addressesapi.090227.xyz_ct 6
-      - 2026-01-28_00:58:09_ip.164746.xyz 7
-      - 2026-01-28_00:58:09_ip.164746.xyz 8
-      - 2026-01-28_00:58:09_ip.164746.xyz 9
-      - 2026-01-28_00:58:09_ip.164746.xyz 10
+      - CF-4
+      - CF-4 2
+      - CF-4 3
+      - CF-4 4
+      - CF-4 5
+      - CF-4 6
+      - CF-4 7
+      - CF-4 8
+      - CF-4 9
+      - 圣何塞-23.76MB/s
+      - 圣何塞-23.15MB/s
+      - 圣何塞-23.06MB/s
+      - 圣何塞-22.97MB/s
+      - 圣何塞-22.82MB/s
+      - 2026-02-08_12:58:39_ip.164746.xyz
+      - 2026-02-08_12:58:39_ip.164746.xyz 2
+      - 2026-02-08_12:58:39_ip.164746.xyz 3
+      - 2026-02-08_12:58:39_ip.164746.xyz 4
+      - 2026-02-08_12:58:39_ip.164746.xyz 5
+      - 2026-02-08_12:58:39_ip.164746.xyz 6
+      - 2026-02-08_12:58:39_ip.164746.xyz 7
+      - 2026-02-08_12:58:39_ip.164746.xyz 8
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 2
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 3
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 4
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 5
+      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 6
+      - 2026-02-08_12:58:39_ip.164746.xyz 9
+      - 2026-02-08_12:58:39_ip.164746.xyz 10
       - wetest.vip
       - wetest.vip 2
       - wetest.vip 3
@@ -678,32 +682,23 @@ proxy-groups:
       - wetest.vip 9
       - wetest.vip 10
       - wetest.vip 11
-      - 圣何塞-23.62MB/s
-      - 圣何塞-23.58MB/s
-      - 圣何塞-23.52MB/s
-      - 圣何塞-23.47MB/s
-      - 圣何塞-23.28MB/s
-      - 圣何塞-23.10MB/s
-      - 圣何塞-23.06MB/s
-      - 圣何塞-22.62MB/s
-      - 圣何塞-22.57MB/s
-      - 圣何塞-22.39MB/s
-      - 108.162.198.74
+      - 圣何塞-22.75MB/s
+      - 108.162.192.254
+      - 108.162.198.32
+      - 162.159.152.205
+      - 162.159.152.31
       - 162.159.152.69
       - 162.159.153.144
-      - 162.159.153.170
-      - 162.159.153.194
       - 162.159.153.209
-      - 162.159.153.72
-      - 162.159.16.217
-      - 162.159.38.19
-      - 162.159.39.170
-      - 162.159.44.49
-      - 162.159.45.15
-      - 172.64.229.106
-      - 172.64.33.101
+      - 162.159.153.239
+      - 162.159.26.97
+      - 162.159.38.191
+      - 162.159.39.244
+      - 162.159.44.5
+      - 162.159.45.214
+      - 172.64.159.81
       - 172.64.52.124
-      - 172.64.53.130
+      - 172.64.53.141
       - WeTest.Vip
       - WeTest.vip
       - aliesa.182682.xyz
@@ -716,45 +711,46 @@ proxy-groups:
       - lightcdn.182682.xyz
       - netlify.182682.xyz
       - vercel.182682.xyz
-      - 104.16.145.171
-      - 104.16.145.54
-      - 104.16.245.96
-      - 104.16.5.246
-      - 104.17.179.206
-      - 104.18.118.85
-      - 104.18.180.4
-      - 104.18.46.36
-      - 104.18.46.76
-      - 104.19.61.250
-      - 108.162.193.24
-      - 162.159.16.69
-      - 162.159.62.215
-      - 172.64.144.139
-      - 172.64.154.68
-      - 172.64.229.11
-      - 172.64.34.196
-      - 198.41.223.23
-      - 198.41.223.252
-      - 104.16.111.6
-      - 104.16.65.88
-      - 104.16.94.173
-      - 173.245.49.175
-      - 173.245.49.246
-      - 198.41.208.186
+      - 104.16.151.14
+      - 104.16.159.138
+      - 104.17.154.145
+      - 104.17.161.198
+      - 104.17.205.132
+      - 104.17.211.77
+      - 104.17.219.93
+      - 104.18.169.227
+      - 104.18.47.242
+      - 104.18.66.51
+      - 104.18.76.241
+      - 104.18.88.148
+      - 162.159.20.158
+      - 162.159.20.3
+      - 162.159.20.32
+      - 172.64.148.218
+      - 172.64.154.26
+      - 172.64.154.38
+      - 172.64.157.221
+      - 172.64.42.219
+      - 104.16.149.41
+      - 104.17.11.179
+      - 104.18.210.117
+      - 104.19.42.22
+      - 190.93.246.188
+      - 198.41.208.113
       - 198.41.208.203
-      - 198.41.208.210
-      - 198.41.208.22
-      - 198.41.209.210
-      - 172.64.52.209
-      - 104.18.45.140
-      - 108.162.198.181
-      - 162.159.33.175
-      - 172.64.53.13
-      - 162.159.44.142
-      - 162.159.38.82
-      - 162.159.39.123
-      - 162.159.45.235
-      - 172.64.151.61
+      - 198.41.209.132
+      - 198.41.211.171
+      - 198.41.222.72
+      - 172.64.52.237
+      - 162.159.45.177
+      - 162.159.39.185
+      - 162.159.39.116
+      - 162.159.44.193
+      - 108.162.198.41
+      - 162.159.45.127
+      - 172.64.53.239
+      - 162.159.38.216
+      - 162.159.38.181
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
