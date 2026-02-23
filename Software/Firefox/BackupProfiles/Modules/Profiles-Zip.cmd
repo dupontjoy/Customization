@@ -44,7 +44,7 @@ for /f "delims=" %%F in ('dir /b /o-d "%TargetFolder1%\FxProfiles_*.7z" 2^>nul')
 )
 
 :: 移动新压缩包（修复路径拼接）
-:: move /Y "%TargetFolder%\!Name!" "%TargetFolder1%\!Name!" >nul 2>&1
+move /Y "%TargetFolder%\!Name!" "%TargetFolder1%\!Name!" >nul 2>&1
 
 :: 清理临时文件夹
 timeout /t 3 /nobreak
