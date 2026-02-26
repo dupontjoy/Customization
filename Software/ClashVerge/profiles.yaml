@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RSylbZsV69Jd
+current: Rk4BHCN5hCO1
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RwWmv60H3j0A.yaml
   desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https%3A%2F%2F88cfn.dupontjoy.shop%2F88cfn%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1772005147
+  updated: 1772108249
   option:
     with_proxy: false
     self_proxy: false
@@ -91,11 +91,11 @@ items:
   - name: 🚀 节点选择
     now: ♻️ 自动选择
   extra:
-    upload: 3757103005786
-    download: 3757103005786
+    upload: 6757648400464
+    download: 6757648400464
     total: 26388279066624
     expire: 4102329600
-  updated: 1772002209
+  updated: 1772108259
   option:
     with_proxy: false
     self_proxy: false
@@ -142,11 +142,11 @@ items:
   - name: ♻️ 自动选择
     now: CF-55.83MB/s
   extra:
-    upload: 4207386766259
-    download: 4207386766259
+    upload: 6937823080258
+    download: 6937823080258
     total: 26388279066624
     expire: 4102329600
-  updated: 1772005155
+  updated: 1772109436
   option:
     with_proxy: false
     self_proxy: false
@@ -158,3 +158,45 @@ items:
     proxies: pITwuSvbv03f
     groups: ghZ9kUzXAIiM
   home: https://xrcml.232885.xyz/admin
+- uid: mQYxOygRhiw3
+  type: merge
+  name: null
+  file: mQYxOygRhiw3.yaml
+  updated: 1772033325
+- uid: s9lfeAcA65xh
+  type: script
+  name: null
+  file: s9lfeAcA65xh.js
+  updated: 1772033325
+- uid: rs97FHiqe2FR
+  type: rules
+  name: null
+  file: rs97FHiqe2FR.yaml
+  updated: 1772033325
+- uid: pmBr2fPwpWzp
+  type: proxies
+  name: null
+  file: pmBr2fPwpWzp.yaml
+  updated: 1772033325
+- uid: gffKbjFIxipH
+  type: groups
+  name: null
+  file: gffKbjFIxipH.yaml
+  updated: 1772033325
+- uid: Rk4BHCN5hCO1
+  type: remote
+  name: Quick
+  file: Rk4BHCN5hCO1.yaml
+  desc: ''
+  url: https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/quick/1/config.yaml
+  updated: 1772108247
+  option:
+    with_proxy: false
+    self_proxy: false
+    update_interval: 60
+    allow_auto_update: true
+    merge: mQYxOygRhiw3
+    script: s9lfeAcA65xh
+    rules: rs97FHiqe2FR
+    proxies: pmBr2fPwpWzp
+    groups: gffKbjFIxipH

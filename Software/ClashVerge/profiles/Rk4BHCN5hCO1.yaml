@@ -1,0 +1,206 @@
+secret: alvin9999.com
+mixed-port: 7890
+allow-lan: false
+log-level: info
+dns:
+  enabled: true
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+proxies:
+  - name: alvin9999.com  
+    server: ip1.758733.xyz
+    port: 10088
+    type: tuic
+    uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+    password: dongtaiwang.com
+    sni: apple.com
+    alpn: [h3]
+    request-timeout: 8000
+    udp-relay-mode: native
+    skip-cert-verify: true
+    congestion-controller: bbr
+  - name: alvin9999.com_1                     
+    type: hysteria  
+    server: ip1.758733.xyz
+    port: 23008
+    auth-str: alvin9999.com
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+    protocol: udp
+    up: "11 Mbps"
+    down: "55 Mbps"
+  - name: alvin9999.com_2                     
+    type: vless
+    server: 2001:bc8:32d7:181::3
+    port: 17401
+    uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+    network: tcp
+    udp: true
+    tls: true
+    flow: 
+    servername: itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+      short-id: 8ef4455ba637425b
+    smux:
+      enabled: true
+      protocol: h2mux
+      max-connections: 1
+      min-streams: 4
+      padding: true
+      brutal-opts:
+        enabled: true
+        up: 50
+        down: 100
+  - name: alvin9999.com_3                     
+    type: vless
+    server: 2001:bc8:32d7:181::4
+    port: 17401
+    uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+    network: tcp
+    udp: true
+    tls: true
+    flow: 
+    servername: itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+      short-id: 8ef4455ba637425b
+    smux:
+      enabled: true
+      protocol: h2mux
+      max-connections: 1
+      min-streams: 4
+      padding: true
+      brutal-opts:
+        enabled: true
+        up: 50
+        down: 100
+  - name: alvin9999.com_4                     
+    type: vless
+    server: 2001:bc8:32d7:181::5
+    port: 17401
+    uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+    network: tcp
+    udp: true
+    tls: true
+    flow: 
+    servername: itunes.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+      short-id: 8ef4455ba637425b
+    smux:
+      enabled: true
+      protocol: h2mux
+      max-connections: 1
+      min-streams: 4
+      padding: true
+      brutal-opts:
+        enabled: true
+        up: 50
+        down: 100
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - alvin9999.com
+      - alvin9999.com_1
+      - alvin9999.com_2
+      - alvin9999.com_3
+      - alvin9999.com_4
+  - name: ♻️ 自动选择
+    type: fallback              
+    url: "https://www.gstatic.com/generate_204"
+    interval: 5
+    proxies:
+      - alvin9999.com
+      - alvin9999.com_1
+      - alvin9999.com_2
+      - alvin9999.com_3
+      - alvin9999.com_4
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - alvin9999.com
+      - alvin9999.com_1
+      - alvin9999.com_2
+      - alvin9999.com_3
+      - alvin9999.com_4
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - alvin9999.com
+      - alvin9999.com_1
+      - alvin9999.com_2
+      - alvin9999.com_3
+      - alvin9999.com_4
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - alvin9999.com
+      - alvin9999.com_1
+      - alvin9999.com_2
+      - alvin9999.com_3
+      - alvin9999.com_4
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - alvin9999.com
+      - alvin9999.com_1
+      - alvin9999.com_2
+      - alvin9999.com_3
+      - alvin9999.com_4
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - alvin9999.com
+      - alvin9999.com_1
+      - alvin9999.com_2
+      - alvin9999.com_3
+      - alvin9999.com_4
+rules:
+  - MATCH,🚀 节点选择
+
+
+
+
