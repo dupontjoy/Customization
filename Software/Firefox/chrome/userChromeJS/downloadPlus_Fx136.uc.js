@@ -21,6 +21,7 @@ userChromeJS.downloadPlus.enableSaveAs 下载对话框启用另存为
 userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 */
+// @note            20260226 修复下载器名称读取存在\r导致可能出现问题
 // @note            20260118 改进文件操作大部分使用 IOUtils, 增加链接黑名单防止错误调用外部下载器，完成部分兼容新版 FlashGot 的代码（功能暂时无效）
 // @note            20260113 Bug 1369833 Remove `alertsService.showAlertNotification` call once Firefox 147
 // @note            20251105 新增静默调用 FlashGot下载（Firefox 应如何处理其他文件？选择保存文件(S)后生效）
@@ -326,7 +327,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
     if (window.DownloadPlus) return;
 
     window.DownloadPlus = {
-        debug: false,
+        debug: true,
         // ========================================
         // 配置常量
         // ========================================
@@ -1259,7 +1260,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 if (name.trim() === '') continue;
                 let obj = {
                     label: name,
-                    managerId: name.trim().replace(/\s+/g, '-'),
+                    manager: name.trim().replace(/\s+/g, '-'),
                     dynamic: true,
                 };
                 if (popup.id === "DownloadPlus-Btn-Popup") {
@@ -1377,7 +1378,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                         this.DOWNLOAD_MANAGERS = resultJson.filter(m => m.available).map(m => m.name);
                     } else {
                         this._log("读取到下载器列表结果", resultString);
-                        this.DOWNLOAD_MANAGERS = resultString.split("\n").filter(l => l.includes("|OK")).map(l => l.replace("|OK", ""));
+                        this.DOWNLOAD_MANAGERS = resultString.split("\n").filter(l => l.includes("|OK")).map(l => l.replace("|OK", "").replace(/\r$/, '').trim());
                     }
                     await IOUtils.remove(resultPath, { ignoreAbsent: true });
                     this._log("解析后下载器列表", this.DOWNLOAD_MANAGERS);

@@ -146,6 +146,7 @@ user_pref("browser.newtabpage.pinned", "[{\"url\":\"https://t.bilibili.com/\"},{
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 2);//常用网站2行展示
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);//不展示只言片语
 user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);//不展示集锦
+user_pref("browser.newtabpage.activity-stream.showSponsoredCheckboxes", false);//取消支持Firefox勾选框
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);//不展示赞助商网站
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);//在您浏览时推荐扩展(否)
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);//在您浏览时推荐新功能(否)
