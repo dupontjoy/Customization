@@ -1,4 +1,4 @@
-::2025.10.23
+::2026.03.12
 ::注意換行符必须是：windows（CR+LF）
 
 Title 安装系统后恢复一些软件的设置
@@ -14,7 +14,7 @@ pushd %~dp0
 set "SettingsDir=E:\My Documents\Nutstore\NutStoreSync"
 
 :abdm
-robocopy "%SettingsDir%\Customization\Software\ABDM\config" "C:\Users\Cing\.abdm\config" /MIR /ZB /R:3 /W:5
+robocopy "%SettingsDir%\Customization\Software\ABDM\config" "C:\Users\%USERNAME%\.abdm\config" /MIR /ZB /R:3 /W:5
 
 :anytxt
 robocopy "%SettingsDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt\config" /MIR /ZB /R:3 /W:5

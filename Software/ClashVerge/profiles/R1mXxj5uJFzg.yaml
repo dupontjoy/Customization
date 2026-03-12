@@ -29,119 +29,92 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: youxuan.cf.090227.xyz, server: youxuan.cf.090227.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/activity/data/city?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 🇨🇳 www.visa.cn, server: www.visa.cn, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/library?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: bestcf.030101.xyz, server: bestcf.030101.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/apps?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: CF-4, server: 172.64.52.35, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/images/downloads?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: CF-4 2, server: 162.159.38.97, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/channels/forum?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: CF-4 3, server: 162.159.45.148, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/zh/about?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: CF-4 4, server: 162.159.44.185, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/txt?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: CF-4 5, server: 108.162.198.0, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ad?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: CF-4 6, server: 162.159.49.155, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ajax/archive/lives?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: CF-4 7, server: 172.64.32.35, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/blog/f/groups?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: CF-4 8, server: 162.159.39.220, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/categories/tv/ads?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: CF-4 9, server: 172.64.53.93, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/pay/company/ad?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 🇺🇸 圣何塞-23.76MB/s, server: 104.18.93.178, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/downloads/www?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 🇺🇸 圣何塞-23.15MB/s, server: 104.16.81.225, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/photo/watch/zh-tw?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 🇺🇸 圣何塞-23.06MB/s, server: 104.16.236.46, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/view?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 🇺🇸 圣何塞-22.97MB/s, server: 104.18.157.26, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/web/act?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 🇺🇸 圣何塞-22.82MB/s, server: 104.16.61.97, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/urls/act?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 🇺🇸 圣何塞-22.75MB/s, server: 104.17.95.234, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/favorite/act?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 108.162.198.96, server: 108.162.198.96, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/out?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 162.159.152.205, server: 162.159.152.205, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/categories/comic?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.152.69, server: 162.159.152.69, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/gif?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 162.159.153.144, server: 162.159.153.144, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/u?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.153.194, server: 162.159.153.194, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/episode?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 162.159.153.212, server: 162.159.153.212, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/config/rank?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.153.216, server: 162.159.153.216, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/programs?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 162.159.38.116, server: 162.159.38.116, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/mall/torrent/setting?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.39.215, server: 162.159.39.215, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/www?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 162.159.44.105, server: 162.159.44.105, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/groups/dload/act?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.45.34, server: 162.159.45.34, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/tags?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 162.159.58.115, server: 162.159.58.115, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/show/acg/clips?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.61.180, server: 162.159.61.180, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/uploads/read?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 172.64.229.247, server: 172.64.229.247, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/payment/categories?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 172.64.52.90, server: 172.64.52.90, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/groups/search?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 172.64.53.130, server: 172.64.53.130, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/edu?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: WeTest.Vip, server: WeTest.Vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/community/torrent?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: WeTest.vip, server: WeTest.vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/uploads?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: aliesa.182682.xyz, server: aliesa.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/share/document/dload?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: cachefly.182682.xyz, server: cachefly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/course/library/mag?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: cloudflare.182682.xyz, server: cloudflare.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/lives/go.html/films?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: cloudfront.182682.xyz, server: cloudfront.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/collection?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: edgeone.182682.xyz, server: edgeone.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/movie/payment?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: fastly.182682.xyz, server: fastly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/list?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: gcore.182682.xyz, server: gcore.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/details/trade/episode?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: lightcdn.182682.xyz, server: lightcdn.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/groups?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: netlify.182682.xyz, server: netlify.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/topics/category/clips?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: vercel.182682.xyz, server: vercel.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/zh-tw/bt?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 104.17.143.129, server: 104.17.143.129, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/image?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 104.17.150.164, server: 104.17.150.164, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/en?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 104.17.153.119, server: 104.17.153.119, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/movies?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 104.17.156.200, server: 104.17.156.200, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/settings/post?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 104.17.157.125, server: 104.17.157.125, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/albums?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 104.17.241.98, server: 104.17.241.98, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/out.php/go?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 104.18.15.22, server: 104.18.15.22, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/setting/url?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 104.18.15.232, server: 104.18.15.232, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/uploads?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 104.26.15.122, server: 104.26.15.122, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/share?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 104.26.15.240, server: 104.26.15.240, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/pages/act/ep?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 108.162.198.152, server: 108.162.198.152, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/jump/trade?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 108.162.198.33, server: 108.162.198.33, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/zh-cn/img?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.1.8, server: 162.159.1.8, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/item/star?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 162.159.24.233, server: 162.159.24.233, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/images/go.php/edu?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.39.194, server: 162.159.39.194, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/document/avatar/activity?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 162.159.60.169, server: 162.159.60.169, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/static?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.60.234, server: 162.159.60.234, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/cn?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 172.64.229.112, server: 172.64.229.112, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/community/clips?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 172.64.229.236, server: 172.64.229.236, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/album/lib/course?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 172.64.229.50, server: 172.64.229.50, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/f?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.39.66, server: 162.159.39.66, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/static/china/clip?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 172.64.53.195, server: 172.64.53.195, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/books/manhua?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.45.26, server: 162.159.45.26, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/setting/document/groups?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 108.162.198.80, server: 108.162.198.80, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/jp/courses/image?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.38.251, server: 162.159.38.251, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/photo/map/soft?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 162.159.44.216, server: 162.159.44.216, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/intro?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.38.186, server: 162.159.38.186, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/register/movies/mobile?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 172.64.53.119, server: 172.64.53.119, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/drama/channels?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.38.5, server: 162.159.38.5, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/sort/streams/tech?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 172.64.53.217, server: 172.64.53.217, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/content/discuss?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 104.16.72.220, server: 104.16.72.220, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/event/discuss?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 104.18.236.228, server: 104.18.236.228, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/chat/mall?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 104.19.124.151, server: 104.19.124.151, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/stars?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 104.19.180.71, server: 104.19.180.71, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/pic/archive?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 104.19.59.119, server: 104.19.59.119, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/channels/book?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 162.159.134.176, server: 162.159.134.176, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/team/channels?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 162.159.137.49, server: 162.159.137.49, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/share?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 162.159.251.245, server: 162.159.251.245, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/store/channels/link?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 172.64.68.254, server: 172.64.68.254, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/list/documents?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 198.41.209.211, server: 198.41.209.211, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/sale/streams?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 2026-02-08_12:58:39_ip.164746.xyz, server: 108.162.192.148, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/qa/friends?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 2026-02-08_12:58:39_ip.164746.xyz 2, server: 108.162.194.88, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/share/dl?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 2026-02-08_12:58:39_ip.164746.xyz 3, server: 108.162.198.23, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/videos/playlist/photos?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 2026-02-08_12:58:39_ip.164746.xyz 4, server: 162.159.38.71, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/gif/tv?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 2026-02-08_12:58:39_ip.164746.xyz 5, server: 162.159.39.202, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/note?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 2026-02-08_12:58:39_ip.164746.xyz 6, server: 162.159.40.163, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/tv/order/page?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 2026-02-08_12:58:39_ip.164746.xyz 7, server: 162.159.44.105, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ads?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 2026-02-08_12:58:39_ip.164746.xyz 8, server: 162.159.45.236, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/discuss/intro/app?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 2026-02-08_12:58:40_addressesapi.090227.xyz_ct, server: 162.159.152.11, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/p?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 2, server: 162.159.152.205, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/mall/clips/albums?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 3, server: 162.159.153.72, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/api/topic?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 4, server: 162.159.153.170, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/zh?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 5, server: 162.159.153.216, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/acg/html/show?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 6, server: 162.159.153.239, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/tags/download?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: 2026-02-08_12:58:39_ip.164746.xyz 9, server: 172.64.52.224, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/book?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: 2026-02-08_12:58:39_ip.164746.xyz 10, server: 172.64.53.4, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/uploads/rank/member?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: wetest.vip, server: WeTest.Vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/html/wenku/link?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: wetest.vip 2, server: WeTest.vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/watch/club?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: wetest.vip 3, server: aliesa.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/trade/faq?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: wetest.vip 4, server: cachefly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/movies/collection/episode?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: wetest.vip 5, server: cloudfront.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/photo/outbound?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: wetest.vip 6, server: edgeone.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/anime/about/act?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: wetest.vip 7, server: fastly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/share/go.html/item?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: wetest.vip 8, server: gcore.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/act/programs/documents?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: wetest.vip 9, server: lightcdn.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/about/bd?ed=2560", headers: {Host: xrcml.232885.xyz}}}
-  - {name: wetest.vip 10, server: netlify.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/data/event/hot?ed=2560", headers: {Host: xrqj.pages.dev}}}
-  - {name: wetest.vip 11, server: vercel.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/photos/act?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: youxuan.cf.090227.xyz, server: youxuan.cf.090227.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/items/img?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 🇨🇳 www.visa.cn, server: www.visa.cn, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/txt/library?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: bestcf.030101.xyz, server: bestcf.030101.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/document/seasons/downloads?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: CF-4, server: 108.162.198.55, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/favs/auth?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: CF-4 2, server: 162.159.38.125, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/source?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: CF-4 3, server: 162.159.44.151, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/messages/files/html?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: CF-4 4, server: 172.64.52.44, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/detail/zh-tw/en?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: CF-4 5, server: 162.159.39.31, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/library/img?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: CF-4 6, server: 162.159.45.102, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/album/url?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: CF-4 7, server: 172.64.53.249, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/tags/readme/sale?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: CF-4 8, server: 172.64.156.252, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/share/episode?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: CF-4 9, server: 172.64.145.164, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/playlist/store/player?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: CF-4 10, server: 162.159.23.235, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/account/tag?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 🇺🇸 圣何塞-23.76MB/s, server: 104.18.93.178, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/pages/ajax/jump?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 🇺🇸 圣何塞-23.15MB/s, server: 104.16.81.225, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/torrent?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 🇺🇸 圣何塞-23.06MB/s, server: 104.16.236.46, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/activity/classify/ads?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 🇺🇸 圣何塞-22.97MB/s, server: 104.18.157.26, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/group/playlist?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 🇺🇸 圣何塞-22.82MB/s, server: 104.16.61.97, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/map/type?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 🇺🇸 圣何塞-22.75MB/s, server: 104.17.95.234, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/jump.html/jump?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 108.162.198.142, server: 108.162.198.142, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/streams?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.152.11, server: 162.159.152.11, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/product/act?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.152.155, server: 162.159.152.155, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/message?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.152.205, server: 162.159.152.205, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/store?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.153.170, server: 162.159.153.170, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/city?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.153.217, server: 162.159.153.217, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/version?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.153.239, server: 162.159.153.239, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/page?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.38.180, server: 162.159.38.180, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/go.html?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.39.252, server: 162.159.39.252, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/setting/info/document?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.44.22, server: 162.159.44.22, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/archive/ads/categories?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.45.58, server: 162.159.45.58, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/comic/ja/anime?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 172.64.158.39, server: 172.64.158.39, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/intro?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 172.64.48.204, server: 172.64.48.204, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/blog?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 172.64.52.243, server: 172.64.52.243, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/album/acg?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 172.64.53.201, server: 172.64.53.201, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/magnet?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: WeTest.Vip, server: WeTest.Vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/seller/wenku/pay?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: WeTest.vip, server: WeTest.vip, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/en/image/classify?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: aliesa.182682.xyz, server: aliesa.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/content/shop?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: cachefly.182682.xyz, server: cachefly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/site?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: cloudflare.182682.xyz, server: cloudflare.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/category/image?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: cloudfront.182682.xyz, server: cloudfront.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/archive/site/discuss?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: edgeone.182682.xyz, server: edgeone.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/download/setting?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: fastly.182682.xyz, server: fastly.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/intro/out?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: gcore.182682.xyz, server: gcore.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ads/acg/album?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: lightcdn.182682.xyz, server: lightcdn.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/mall/mobile/novel?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: netlify.182682.xyz, server: netlify.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/url?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: vercel.182682.xyz, server: vercel.182682.xyz, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/store?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.39.66, server: 162.159.39.66, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/download/register?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 172.64.53.195, server: 172.64.53.195, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/resource?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.45.26, server: 162.159.45.26, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/watch/bd?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.38.251, server: 162.159.38.251, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/films?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.44.216, server: 162.159.44.216, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/items/ad/apps?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.38.186, server: 162.159.38.186, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/config/section/mall?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 172.64.53.119, server: 172.64.53.119, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/work?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.38.5, server: 162.159.38.5, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/directory/activity/ajax?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 172.64.53.217, server: 172.64.53.217, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/cp?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.39.3, server: 162.159.39.3, port: 443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/gif?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 104.17.32.198, server: 104.17.32.198, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/out.html/movies/photo?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 104.19.126.75, server: 104.19.126.75, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/streaming/links?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 104.19.38.146, server: 104.19.38.146, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/clips/out.html/cn?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.36.235, server: 162.159.36.235, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/programs/online?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 172.64.69.218, server: 172.64.69.218, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/episodes?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 172.64.80.128, server: 172.64.80.128, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/seller/city?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 172.64.91.108, server: 172.64.91.108, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/directory?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 172.67.186.102, server: 172.67.186.102, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/tags?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 172.67.237.144, server: 172.67.237.144, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/downloads?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 198.41.223.245, server: 198.41.223.245, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ja?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 104.17.231.192, server: 104.17.231.192, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/register/archives/ad?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 104.19.219.105, server: 104.19.219.105, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/upload/groups/img?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 104.20.52.155, server: 104.20.52.155, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/books?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 104.20.55.180, server: 104.20.55.180, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/out.php?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 104.20.59.35, server: 104.20.59.35, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/outbound/documents?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 108.162.198.106, server: 108.162.198.106, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/sort/music?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 108.162.198.245, server: 108.162.198.245, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/player/events?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.16.91, server: 162.159.16.91, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/ja/stock?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.19.89, server: 162.159.19.89, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/read/bt/ajax?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.24.58, server: 162.159.24.58, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/user/feedback/list?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.24.61, server: 162.159.24.61, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/outbound/code/video?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.25.42, server: 162.159.25.42, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/members/index?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.33.90, server: 162.159.33.90, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/chat/version?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.39.101, server: 162.159.39.101, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/clips?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.44.1, server: 162.159.44.1, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/comics/library/en?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 162.159.48.153, server: 162.159.48.153, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/sort?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 162.159.48.38, server: 162.159.48.38, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/qa/sort?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 172.64.152.140, server: 172.64.152.140, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/online?ed=2560", headers: {Host: xrqj.pages.dev}}}
+  - {name: 172.67.76.236, server: 172.67.76.236, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrcml.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/clip/go.html?ed=2560", headers: {Host: xrcml.232885.xyz}}}
+  - {name: 198.41.222.140, server: 198.41.222.140, port: 8443, type: vless, uuid: 761de185-8b90-407c-89ad-6be8d880f6f8, tls: true, skip-cert-verify: false, servername: xrqj.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/contact?ed=2560", headers: {Host: xrqj.pages.dev}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -162,28 +135,28 @@ proxy-groups:
       - CF-4 7
       - CF-4 8
       - CF-4 9
+      - CF-4 10
       - 🇺🇸 圣何塞-23.76MB/s
       - 🇺🇸 圣何塞-23.15MB/s
       - 🇺🇸 圣何塞-23.06MB/s
       - 🇺🇸 圣何塞-22.97MB/s
       - 🇺🇸 圣何塞-22.82MB/s
       - 🇺🇸 圣何塞-22.75MB/s
-      - 108.162.198.96
+      - 108.162.198.142
+      - 162.159.152.11
+      - 162.159.152.155
       - 162.159.152.205
-      - 162.159.152.69
-      - 162.159.153.144
-      - 162.159.153.194
-      - 162.159.153.212
-      - 162.159.153.216
-      - 162.159.38.116
-      - 162.159.39.215
-      - 162.159.44.105
-      - 162.159.45.34
-      - 162.159.58.115
-      - 162.159.61.180
-      - 172.64.229.247
-      - 172.64.52.90
-      - 172.64.53.130
+      - 162.159.153.170
+      - 162.159.153.217
+      - 162.159.153.239
+      - 162.159.38.180
+      - 162.159.39.252
+      - 162.159.44.22
+      - 162.159.45.58
+      - 172.64.158.39
+      - 172.64.48.204
+      - 172.64.52.243
+      - 172.64.53.201
       - WeTest.Vip
       - WeTest.vip
       - aliesa.182682.xyz
@@ -196,73 +169,46 @@ proxy-groups:
       - lightcdn.182682.xyz
       - netlify.182682.xyz
       - vercel.182682.xyz
-      - 104.17.143.129
-      - 104.17.150.164
-      - 104.17.153.119
-      - 104.17.156.200
-      - 104.17.157.125
-      - 104.17.241.98
-      - 104.18.15.22
-      - 104.18.15.232
-      - 104.26.15.122
-      - 104.26.15.240
-      - 108.162.198.152
-      - 108.162.198.33
-      - 162.159.1.8
-      - 162.159.24.233
-      - 162.159.39.194
-      - 162.159.60.169
-      - 162.159.60.234
-      - 172.64.229.112
-      - 172.64.229.236
-      - 172.64.229.50
       - 162.159.39.66
       - 172.64.53.195
       - 162.159.45.26
-      - 108.162.198.80
       - 162.159.38.251
       - 162.159.44.216
       - 162.159.38.186
       - 172.64.53.119
       - 162.159.38.5
       - 172.64.53.217
-      - 104.16.72.220
-      - 104.18.236.228
-      - 104.19.124.151
-      - 104.19.180.71
-      - 104.19.59.119
-      - 162.159.134.176
-      - 162.159.137.49
-      - 162.159.251.245
-      - 172.64.68.254
-      - 198.41.209.211
-      - 2026-02-08_12:58:39_ip.164746.xyz
-      - 2026-02-08_12:58:39_ip.164746.xyz 2
-      - 2026-02-08_12:58:39_ip.164746.xyz 3
-      - 2026-02-08_12:58:39_ip.164746.xyz 4
-      - 2026-02-08_12:58:39_ip.164746.xyz 5
-      - 2026-02-08_12:58:39_ip.164746.xyz 6
-      - 2026-02-08_12:58:39_ip.164746.xyz 7
-      - 2026-02-08_12:58:39_ip.164746.xyz 8
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 2
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 3
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 4
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 5
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 6
-      - 2026-02-08_12:58:39_ip.164746.xyz 9
-      - 2026-02-08_12:58:39_ip.164746.xyz 10
-      - wetest.vip
-      - wetest.vip 2
-      - wetest.vip 3
-      - wetest.vip 4
-      - wetest.vip 5
-      - wetest.vip 6
-      - wetest.vip 7
-      - wetest.vip 8
-      - wetest.vip 9
-      - wetest.vip 10
-      - wetest.vip 11
+      - 162.159.39.3
+      - 104.17.32.198
+      - 104.19.126.75
+      - 104.19.38.146
+      - 162.159.36.235
+      - 172.64.69.218
+      - 172.64.80.128
+      - 172.64.91.108
+      - 172.67.186.102
+      - 172.67.237.144
+      - 198.41.223.245
+      - 104.17.231.192
+      - 104.19.219.105
+      - 104.20.52.155
+      - 104.20.55.180
+      - 104.20.59.35
+      - 108.162.198.106
+      - 108.162.198.245
+      - 162.159.16.91
+      - 162.159.19.89
+      - 162.159.24.58
+      - 162.159.24.61
+      - 162.159.25.42
+      - 162.159.33.90
+      - 162.159.39.101
+      - 162.159.44.1
+      - 162.159.48.153
+      - 162.159.48.38
+      - 172.64.152.140
+      - 172.67.76.236
+      - 198.41.222.140
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -281,28 +227,28 @@ proxy-groups:
       - CF-4 7
       - CF-4 8
       - CF-4 9
+      - CF-4 10
       - 🇺🇸 圣何塞-23.76MB/s
       - 🇺🇸 圣何塞-23.15MB/s
       - 🇺🇸 圣何塞-23.06MB/s
       - 🇺🇸 圣何塞-22.97MB/s
       - 🇺🇸 圣何塞-22.82MB/s
       - 🇺🇸 圣何塞-22.75MB/s
-      - 108.162.198.96
+      - 108.162.198.142
+      - 162.159.152.11
+      - 162.159.152.155
       - 162.159.152.205
-      - 162.159.152.69
-      - 162.159.153.144
-      - 162.159.153.194
-      - 162.159.153.212
-      - 162.159.153.216
-      - 162.159.38.116
-      - 162.159.39.215
-      - 162.159.44.105
-      - 162.159.45.34
-      - 162.159.58.115
-      - 162.159.61.180
-      - 172.64.229.247
-      - 172.64.52.90
-      - 172.64.53.130
+      - 162.159.153.170
+      - 162.159.153.217
+      - 162.159.153.239
+      - 162.159.38.180
+      - 162.159.39.252
+      - 162.159.44.22
+      - 162.159.45.58
+      - 172.64.158.39
+      - 172.64.48.204
+      - 172.64.52.243
+      - 172.64.53.201
       - WeTest.Vip
       - WeTest.vip
       - aliesa.182682.xyz
@@ -315,73 +261,46 @@ proxy-groups:
       - lightcdn.182682.xyz
       - netlify.182682.xyz
       - vercel.182682.xyz
-      - 104.17.143.129
-      - 104.17.150.164
-      - 104.17.153.119
-      - 104.17.156.200
-      - 104.17.157.125
-      - 104.17.241.98
-      - 104.18.15.22
-      - 104.18.15.232
-      - 104.26.15.122
-      - 104.26.15.240
-      - 108.162.198.152
-      - 108.162.198.33
-      - 162.159.1.8
-      - 162.159.24.233
-      - 162.159.39.194
-      - 162.159.60.169
-      - 162.159.60.234
-      - 172.64.229.112
-      - 172.64.229.236
-      - 172.64.229.50
       - 162.159.39.66
       - 172.64.53.195
       - 162.159.45.26
-      - 108.162.198.80
       - 162.159.38.251
       - 162.159.44.216
       - 162.159.38.186
       - 172.64.53.119
       - 162.159.38.5
       - 172.64.53.217
-      - 104.16.72.220
-      - 104.18.236.228
-      - 104.19.124.151
-      - 104.19.180.71
-      - 104.19.59.119
-      - 162.159.134.176
-      - 162.159.137.49
-      - 162.159.251.245
-      - 172.64.68.254
-      - 198.41.209.211
-      - 2026-02-08_12:58:39_ip.164746.xyz
-      - 2026-02-08_12:58:39_ip.164746.xyz 2
-      - 2026-02-08_12:58:39_ip.164746.xyz 3
-      - 2026-02-08_12:58:39_ip.164746.xyz 4
-      - 2026-02-08_12:58:39_ip.164746.xyz 5
-      - 2026-02-08_12:58:39_ip.164746.xyz 6
-      - 2026-02-08_12:58:39_ip.164746.xyz 7
-      - 2026-02-08_12:58:39_ip.164746.xyz 8
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 2
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 3
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 4
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 5
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 6
-      - 2026-02-08_12:58:39_ip.164746.xyz 9
-      - 2026-02-08_12:58:39_ip.164746.xyz 10
-      - wetest.vip
-      - wetest.vip 2
-      - wetest.vip 3
-      - wetest.vip 4
-      - wetest.vip 5
-      - wetest.vip 6
-      - wetest.vip 7
-      - wetest.vip 8
-      - wetest.vip 9
-      - wetest.vip 10
-      - wetest.vip 11
+      - 162.159.39.3
+      - 104.17.32.198
+      - 104.19.126.75
+      - 104.19.38.146
+      - 162.159.36.235
+      - 172.64.69.218
+      - 172.64.80.128
+      - 172.64.91.108
+      - 172.67.186.102
+      - 172.67.237.144
+      - 198.41.223.245
+      - 104.17.231.192
+      - 104.19.219.105
+      - 104.20.52.155
+      - 104.20.55.180
+      - 104.20.59.35
+      - 108.162.198.106
+      - 108.162.198.245
+      - 162.159.16.91
+      - 162.159.19.89
+      - 162.159.24.58
+      - 162.159.24.61
+      - 162.159.25.42
+      - 162.159.33.90
+      - 162.159.39.101
+      - 162.159.44.1
+      - 162.159.48.153
+      - 162.159.48.38
+      - 172.64.152.140
+      - 172.67.76.236
+      - 198.41.222.140
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -399,28 +318,28 @@ proxy-groups:
       - CF-4 7
       - CF-4 8
       - CF-4 9
+      - CF-4 10
       - 🇺🇸 圣何塞-23.76MB/s
       - 🇺🇸 圣何塞-23.15MB/s
       - 🇺🇸 圣何塞-23.06MB/s
       - 🇺🇸 圣何塞-22.97MB/s
       - 🇺🇸 圣何塞-22.82MB/s
       - 🇺🇸 圣何塞-22.75MB/s
-      - 108.162.198.96
+      - 108.162.198.142
+      - 162.159.152.11
+      - 162.159.152.155
       - 162.159.152.205
-      - 162.159.152.69
-      - 162.159.153.144
-      - 162.159.153.194
-      - 162.159.153.212
-      - 162.159.153.216
-      - 162.159.38.116
-      - 162.159.39.215
-      - 162.159.44.105
-      - 162.159.45.34
-      - 162.159.58.115
-      - 162.159.61.180
-      - 172.64.229.247
-      - 172.64.52.90
-      - 172.64.53.130
+      - 162.159.153.170
+      - 162.159.153.217
+      - 162.159.153.239
+      - 162.159.38.180
+      - 162.159.39.252
+      - 162.159.44.22
+      - 162.159.45.58
+      - 172.64.158.39
+      - 172.64.48.204
+      - 172.64.52.243
+      - 172.64.53.201
       - WeTest.Vip
       - WeTest.vip
       - aliesa.182682.xyz
@@ -433,73 +352,46 @@ proxy-groups:
       - lightcdn.182682.xyz
       - netlify.182682.xyz
       - vercel.182682.xyz
-      - 104.17.143.129
-      - 104.17.150.164
-      - 104.17.153.119
-      - 104.17.156.200
-      - 104.17.157.125
-      - 104.17.241.98
-      - 104.18.15.22
-      - 104.18.15.232
-      - 104.26.15.122
-      - 104.26.15.240
-      - 108.162.198.152
-      - 108.162.198.33
-      - 162.159.1.8
-      - 162.159.24.233
-      - 162.159.39.194
-      - 162.159.60.169
-      - 162.159.60.234
-      - 172.64.229.112
-      - 172.64.229.236
-      - 172.64.229.50
       - 162.159.39.66
       - 172.64.53.195
       - 162.159.45.26
-      - 108.162.198.80
       - 162.159.38.251
       - 162.159.44.216
       - 162.159.38.186
       - 172.64.53.119
       - 162.159.38.5
       - 172.64.53.217
-      - 104.16.72.220
-      - 104.18.236.228
-      - 104.19.124.151
-      - 104.19.180.71
-      - 104.19.59.119
-      - 162.159.134.176
-      - 162.159.137.49
-      - 162.159.251.245
-      - 172.64.68.254
-      - 198.41.209.211
-      - 2026-02-08_12:58:39_ip.164746.xyz
-      - 2026-02-08_12:58:39_ip.164746.xyz 2
-      - 2026-02-08_12:58:39_ip.164746.xyz 3
-      - 2026-02-08_12:58:39_ip.164746.xyz 4
-      - 2026-02-08_12:58:39_ip.164746.xyz 5
-      - 2026-02-08_12:58:39_ip.164746.xyz 6
-      - 2026-02-08_12:58:39_ip.164746.xyz 7
-      - 2026-02-08_12:58:39_ip.164746.xyz 8
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 2
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 3
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 4
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 5
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 6
-      - 2026-02-08_12:58:39_ip.164746.xyz 9
-      - 2026-02-08_12:58:39_ip.164746.xyz 10
-      - wetest.vip
-      - wetest.vip 2
-      - wetest.vip 3
-      - wetest.vip 4
-      - wetest.vip 5
-      - wetest.vip 6
-      - wetest.vip 7
-      - wetest.vip 8
-      - wetest.vip 9
-      - wetest.vip 10
-      - wetest.vip 11
+      - 162.159.39.3
+      - 104.17.32.198
+      - 104.19.126.75
+      - 104.19.38.146
+      - 162.159.36.235
+      - 172.64.69.218
+      - 172.64.80.128
+      - 172.64.91.108
+      - 172.67.186.102
+      - 172.67.237.144
+      - 198.41.223.245
+      - 104.17.231.192
+      - 104.19.219.105
+      - 104.20.52.155
+      - 104.20.55.180
+      - 104.20.59.35
+      - 108.162.198.106
+      - 108.162.198.245
+      - 162.159.16.91
+      - 162.159.19.89
+      - 162.159.24.58
+      - 162.159.24.61
+      - 162.159.25.42
+      - 162.159.33.90
+      - 162.159.39.101
+      - 162.159.44.1
+      - 162.159.48.153
+      - 162.159.48.38
+      - 172.64.152.140
+      - 172.67.76.236
+      - 198.41.222.140
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -518,28 +410,28 @@ proxy-groups:
       - CF-4 7
       - CF-4 8
       - CF-4 9
+      - CF-4 10
       - 🇺🇸 圣何塞-23.76MB/s
       - 🇺🇸 圣何塞-23.15MB/s
       - 🇺🇸 圣何塞-23.06MB/s
       - 🇺🇸 圣何塞-22.97MB/s
       - 🇺🇸 圣何塞-22.82MB/s
       - 🇺🇸 圣何塞-22.75MB/s
-      - 108.162.198.96
+      - 108.162.198.142
+      - 162.159.152.11
+      - 162.159.152.155
       - 162.159.152.205
-      - 162.159.152.69
-      - 162.159.153.144
-      - 162.159.153.194
-      - 162.159.153.212
-      - 162.159.153.216
-      - 162.159.38.116
-      - 162.159.39.215
-      - 162.159.44.105
-      - 162.159.45.34
-      - 162.159.58.115
-      - 162.159.61.180
-      - 172.64.229.247
-      - 172.64.52.90
-      - 172.64.53.130
+      - 162.159.153.170
+      - 162.159.153.217
+      - 162.159.153.239
+      - 162.159.38.180
+      - 162.159.39.252
+      - 162.159.44.22
+      - 162.159.45.58
+      - 172.64.158.39
+      - 172.64.48.204
+      - 172.64.52.243
+      - 172.64.53.201
       - WeTest.Vip
       - WeTest.vip
       - aliesa.182682.xyz
@@ -552,73 +444,46 @@ proxy-groups:
       - lightcdn.182682.xyz
       - netlify.182682.xyz
       - vercel.182682.xyz
-      - 104.17.143.129
-      - 104.17.150.164
-      - 104.17.153.119
-      - 104.17.156.200
-      - 104.17.157.125
-      - 104.17.241.98
-      - 104.18.15.22
-      - 104.18.15.232
-      - 104.26.15.122
-      - 104.26.15.240
-      - 108.162.198.152
-      - 108.162.198.33
-      - 162.159.1.8
-      - 162.159.24.233
-      - 162.159.39.194
-      - 162.159.60.169
-      - 162.159.60.234
-      - 172.64.229.112
-      - 172.64.229.236
-      - 172.64.229.50
       - 162.159.39.66
       - 172.64.53.195
       - 162.159.45.26
-      - 108.162.198.80
       - 162.159.38.251
       - 162.159.44.216
       - 162.159.38.186
       - 172.64.53.119
       - 162.159.38.5
       - 172.64.53.217
-      - 104.16.72.220
-      - 104.18.236.228
-      - 104.19.124.151
-      - 104.19.180.71
-      - 104.19.59.119
-      - 162.159.134.176
-      - 162.159.137.49
-      - 162.159.251.245
-      - 172.64.68.254
-      - 198.41.209.211
-      - 2026-02-08_12:58:39_ip.164746.xyz
-      - 2026-02-08_12:58:39_ip.164746.xyz 2
-      - 2026-02-08_12:58:39_ip.164746.xyz 3
-      - 2026-02-08_12:58:39_ip.164746.xyz 4
-      - 2026-02-08_12:58:39_ip.164746.xyz 5
-      - 2026-02-08_12:58:39_ip.164746.xyz 6
-      - 2026-02-08_12:58:39_ip.164746.xyz 7
-      - 2026-02-08_12:58:39_ip.164746.xyz 8
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 2
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 3
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 4
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 5
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 6
-      - 2026-02-08_12:58:39_ip.164746.xyz 9
-      - 2026-02-08_12:58:39_ip.164746.xyz 10
-      - wetest.vip
-      - wetest.vip 2
-      - wetest.vip 3
-      - wetest.vip 4
-      - wetest.vip 5
-      - wetest.vip 6
-      - wetest.vip 7
-      - wetest.vip 8
-      - wetest.vip 9
-      - wetest.vip 10
-      - wetest.vip 11
+      - 162.159.39.3
+      - 104.17.32.198
+      - 104.19.126.75
+      - 104.19.38.146
+      - 162.159.36.235
+      - 172.64.69.218
+      - 172.64.80.128
+      - 172.64.91.108
+      - 172.67.186.102
+      - 172.67.237.144
+      - 198.41.223.245
+      - 104.17.231.192
+      - 104.19.219.105
+      - 104.20.52.155
+      - 104.20.55.180
+      - 104.20.59.35
+      - 108.162.198.106
+      - 108.162.198.245
+      - 162.159.16.91
+      - 162.159.19.89
+      - 162.159.24.58
+      - 162.159.24.61
+      - 162.159.25.42
+      - 162.159.33.90
+      - 162.159.39.101
+      - 162.159.44.1
+      - 162.159.48.153
+      - 162.159.48.38
+      - 172.64.152.140
+      - 172.67.76.236
+      - 198.41.222.140
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -650,28 +515,28 @@ proxy-groups:
       - CF-4 7
       - CF-4 8
       - CF-4 9
+      - CF-4 10
       - 🇺🇸 圣何塞-23.76MB/s
       - 🇺🇸 圣何塞-23.15MB/s
       - 🇺🇸 圣何塞-23.06MB/s
       - 🇺🇸 圣何塞-22.97MB/s
       - 🇺🇸 圣何塞-22.82MB/s
       - 🇺🇸 圣何塞-22.75MB/s
-      - 108.162.198.96
+      - 108.162.198.142
+      - 162.159.152.11
+      - 162.159.152.155
       - 162.159.152.205
-      - 162.159.152.69
-      - 162.159.153.144
-      - 162.159.153.194
-      - 162.159.153.212
-      - 162.159.153.216
-      - 162.159.38.116
-      - 162.159.39.215
-      - 162.159.44.105
-      - 162.159.45.34
-      - 162.159.58.115
-      - 162.159.61.180
-      - 172.64.229.247
-      - 172.64.52.90
-      - 172.64.53.130
+      - 162.159.153.170
+      - 162.159.153.217
+      - 162.159.153.239
+      - 162.159.38.180
+      - 162.159.39.252
+      - 162.159.44.22
+      - 162.159.45.58
+      - 172.64.158.39
+      - 172.64.48.204
+      - 172.64.52.243
+      - 172.64.53.201
       - WeTest.Vip
       - WeTest.vip
       - aliesa.182682.xyz
@@ -684,73 +549,46 @@ proxy-groups:
       - lightcdn.182682.xyz
       - netlify.182682.xyz
       - vercel.182682.xyz
-      - 104.17.143.129
-      - 104.17.150.164
-      - 104.17.153.119
-      - 104.17.156.200
-      - 104.17.157.125
-      - 104.17.241.98
-      - 104.18.15.22
-      - 104.18.15.232
-      - 104.26.15.122
-      - 104.26.15.240
-      - 108.162.198.152
-      - 108.162.198.33
-      - 162.159.1.8
-      - 162.159.24.233
-      - 162.159.39.194
-      - 162.159.60.169
-      - 162.159.60.234
-      - 172.64.229.112
-      - 172.64.229.236
-      - 172.64.229.50
       - 162.159.39.66
       - 172.64.53.195
       - 162.159.45.26
-      - 108.162.198.80
       - 162.159.38.251
       - 162.159.44.216
       - 162.159.38.186
       - 172.64.53.119
       - 162.159.38.5
       - 172.64.53.217
-      - 104.16.72.220
-      - 104.18.236.228
-      - 104.19.124.151
-      - 104.19.180.71
-      - 104.19.59.119
-      - 162.159.134.176
-      - 162.159.137.49
-      - 162.159.251.245
-      - 172.64.68.254
-      - 198.41.209.211
-      - 2026-02-08_12:58:39_ip.164746.xyz
-      - 2026-02-08_12:58:39_ip.164746.xyz 2
-      - 2026-02-08_12:58:39_ip.164746.xyz 3
-      - 2026-02-08_12:58:39_ip.164746.xyz 4
-      - 2026-02-08_12:58:39_ip.164746.xyz 5
-      - 2026-02-08_12:58:39_ip.164746.xyz 6
-      - 2026-02-08_12:58:39_ip.164746.xyz 7
-      - 2026-02-08_12:58:39_ip.164746.xyz 8
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 2
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 3
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 4
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 5
-      - 2026-02-08_12:58:40_addressesapi.090227.xyz_ct 6
-      - 2026-02-08_12:58:39_ip.164746.xyz 9
-      - 2026-02-08_12:58:39_ip.164746.xyz 10
-      - wetest.vip
-      - wetest.vip 2
-      - wetest.vip 3
-      - wetest.vip 4
-      - wetest.vip 5
-      - wetest.vip 6
-      - wetest.vip 7
-      - wetest.vip 8
-      - wetest.vip 9
-      - wetest.vip 10
-      - wetest.vip 11
+      - 162.159.39.3
+      - 104.17.32.198
+      - 104.19.126.75
+      - 104.19.38.146
+      - 162.159.36.235
+      - 172.64.69.218
+      - 172.64.80.128
+      - 172.64.91.108
+      - 172.67.186.102
+      - 172.67.237.144
+      - 198.41.223.245
+      - 104.17.231.192
+      - 104.19.219.105
+      - 104.20.52.155
+      - 104.20.55.180
+      - 104.20.59.35
+      - 108.162.198.106
+      - 108.162.198.245
+      - 162.159.16.91
+      - 162.159.19.89
+      - 162.159.24.58
+      - 162.159.24.61
+      - 162.159.25.42
+      - 162.159.33.90
+      - 162.159.39.101
+      - 162.159.44.1
+      - 162.159.48.153
+      - 162.159.48.38
+      - 172.64.152.140
+      - 172.67.76.236
+      - 198.41.222.140
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
