@@ -4,6 +4,9 @@
 title 一键更新MPV和脚本
 color 0a
 
+:: 最小化当前窗口
+if not "%1"=="min" start /min "" "%~f0" min & exit /b
+
 
 pushd %~dp0
 
@@ -197,3 +200,4 @@ goto :eof
 
 :end
 timeout /t 3 /nobreak
+exit

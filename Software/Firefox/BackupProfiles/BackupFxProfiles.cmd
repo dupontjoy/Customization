@@ -35,8 +35,7 @@ Goto eof
 
 :when_done
 ::下载完成暂停一段时间关闭窗口，防止运行报错时直接关闭窗口。
-:when_done
 timeout /t 3 /nobreak
-
+exit
 
 goto :eof

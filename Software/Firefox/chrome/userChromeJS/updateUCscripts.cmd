@@ -6,6 +6,9 @@ title 一键更新Firefox uc脚本 和 customCSS样式
 COLOR 0A
 cls
 
+:: 最小化当前窗口
+if not "%1"=="min" start /min "" "%~f0" min & exit /b
+
 
 ::=======================================
 :: 初始化配置
