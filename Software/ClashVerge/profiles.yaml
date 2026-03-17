@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RwWmv60H3j0A
+current: RkC6ZKw3xEgi
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RwWmv60H3j0A.yaml
   desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https%3A%2F%2F88cfn.dupontjoy.shop%2F88cfn%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1773409012
+  updated: 1773705028
   option:
     with_proxy: false
     self_proxy: false
@@ -91,11 +91,11 @@ items:
   - name: 🚀 节点选择
     now: ♻️ 自动选择
   extra:
-    upload: 7484649306498
-    download: 7484649306498
+    upload: 13106655668968
+    download: 13106655668968
     total: 26388279066624
     expire: 4102329600
-  updated: 1773409018
+  updated: 1773705033
   option:
     with_proxy: false
     self_proxy: false
@@ -107,96 +107,85 @@ items:
     proxies: pFkHTiZHcalR
     groups: gJ9TeWSCxhZh
   home: https://cml88.dupontjoy.shop/admin
-- uid: mCwMAmsa9Tfw
+- uid: m5FlUYCHmOcV
   type: merge
   name: null
-  file: mCwMAmsa9Tfw.yaml
-  updated: 1768609969
-- uid: sBQkhM9LIXzn
+  file: m5FlUYCHmOcV.yaml
+  updated: 1773662019
+- uid: sTmWGNwlZBB0
   type: script
   name: null
-  file: sBQkhM9LIXzn.js
-  updated: 1768609969
-- uid: rVBQZaAI7dna
+  file: sTmWGNwlZBB0.js
+  updated: 1773662019
+- uid: rSSoCTvToOXh
   type: rules
   name: null
-  file: rVBQZaAI7dna.yaml
-  updated: 1768609969
-- uid: pITwuSvbv03f
+  file: rSSoCTvToOXh.yaml
+  updated: 1773662019
+- uid: pItuzE1EwU0U
   type: proxies
   name: null
-  file: pITwuSvbv03f.yaml
-  updated: 1768609969
-- uid: ghZ9kUzXAIiM
+  file: pItuzE1EwU0U.yaml
+  updated: 1773662019
+- uid: gGpEGYKXGKtE
   type: groups
   name: null
-  file: ghZ9kUzXAIiM.yaml
-  updated: 1768609969
-- uid: R1mXxj5uJFzg
+  file: gGpEGYKXGKtE.yaml
+  updated: 1773662019
+- uid: RwtvUmvfZOzw
   type: remote
-  name: xrcml
-  file: R1mXxj5uJFzg.yaml
+  name: 163cfn
+  file: RwtvUmvfZOzw.yaml
   desc: ''
-  url: https://xrcml.232885.xyz/sub?token=8447d1839119fe249d42874c15597f34
-  selected:
-  - name: ♻️ 自动选择
-    now: CF-55.83MB/s
-  extra:
-    upload: 6164953145182
-    download: 6164953145182
-    total: 26388279066624
-    expire: 4102329600
-  updated: 1773400373
+  url: https://163cfn.232885.xyz/163cfn/sub?target=clash
+  updated: 1773705028
   option:
-    with_proxy: false
-    self_proxy: false
-    update_interval: 60
+    update_interval: 59
     allow_auto_update: true
-    merge: mCwMAmsa9Tfw
-    script: sBQkhM9LIXzn
-    rules: rVBQZaAI7dna
-    proxies: pITwuSvbv03f
-    groups: ghZ9kUzXAIiM
-  home: https://xrcml.232885.xyz/admin
-- uid: mQYxOygRhiw3
+    merge: m5FlUYCHmOcV
+    script: sTmWGNwlZBB0
+    rules: rSSoCTvToOXh
+    proxies: pItuzE1EwU0U
+    groups: gGpEGYKXGKtE
+- uid: m3cUum4y0W8g
   type: merge
   name: null
-  file: mQYxOygRhiw3.yaml
-  updated: 1772033325
-- uid: s9lfeAcA65xh
+  file: m3cUum4y0W8g.yaml
+  updated: 1773674809
+- uid: s2asxW92rVfS
   type: script
   name: null
-  file: s9lfeAcA65xh.js
-  updated: 1772033325
-- uid: rs97FHiqe2FR
+  file: s2asxW92rVfS.js
+  updated: 1773674809
+- uid: rzJas4BP5Tcr
   type: rules
   name: null
-  file: rs97FHiqe2FR.yaml
-  updated: 1772033325
-- uid: pmBr2fPwpWzp
+  file: rzJas4BP5Tcr.yaml
+  updated: 1773674809
+- uid: plJL5Ds6FSw5
   type: proxies
   name: null
-  file: pmBr2fPwpWzp.yaml
-  updated: 1772033325
-- uid: gffKbjFIxipH
+  file: plJL5Ds6FSw5.yaml
+  updated: 1773674809
+- uid: g2J9gFVeWcA1
   type: groups
   name: null
-  file: gffKbjFIxipH.yaml
-  updated: 1772033325
-- uid: Rk4BHCN5hCO1
+  file: g2J9gFVeWcA1.yaml
+  updated: 1773674809
+- uid: RkC6ZKw3xEgi
   type: remote
-  name: Quick
-  file: Rk4BHCN5hCO1.yaml
+  name: Quic
+  file: RkC6ZKw3xEgi.yaml
   desc: ''
   url: https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/quick/1/config.yaml
-  updated: 1773409010
+  updated: 1773705027
   option:
     with_proxy: false
     self_proxy: false
     update_interval: 60
     allow_auto_update: true
-    merge: mQYxOygRhiw3
-    script: s9lfeAcA65xh
-    rules: rs97FHiqe2FR
-    proxies: pmBr2fPwpWzp
-    groups: gffKbjFIxipH
+    merge: m3cUum4y0W8g
+    script: s2asxW92rVfS
+    rules: rzJas4BP5Tcr
+    proxies: plJL5Ds6FSw5
+    groups: g2J9gFVeWcA1

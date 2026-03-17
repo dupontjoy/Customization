@@ -1013,9 +1013,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-01-31 18:52:48</EndDateTime>
-		<NextRunDateTime>2126-02-17 19:36:48</NextRunDateTime>
+		<NextRunDateTime>2126-02-21 08:45:56</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-03-13 19:36:48</LastRunTime>
+		<LastRunTime>2026-03-17 08:45:56</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1363,9 +1363,9 @@ env2=value2</edtAppEnv>
 		<SchType>36</SchType>
 		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
 		<EndDateTime>2026-02-05 09:16:48</EndDateTime>
-		<NextRunDateTime>2026-03-14 00:00:00</NextRunDateTime>
-		<NextRunTime>2026-03-14 00:00:00</NextRunTime>
-		<LastRunTime>2026-03-12 00:00:00</LastRunTime>
+		<NextRunDateTime>2026-03-17 12:00:00</NextRunDateTime>
+		<NextRunTime>2026-03-17 12:00:00</NextRunTime>
+		<LastRunTime>2026-03-17 00:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1639,9 +1639,9 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 11:00:00</StartDateTime>
-		<EndDateTime>2026-01-31 09:06:08</EndDateTime>
-		<NextRunDateTime>2026-03-14 11:00:00</NextRunDateTime>
-		<NextRunTime>2026-03-14 11:00:00</NextRunTime>
+		<EndDateTime>2026-03-15 18:12:16</EndDateTime>
+		<NextRunDateTime>2026-03-22 11:00:00</NextRunDateTime>
+		<NextRunTime>2026-03-22 11:00:00</NextRunTime>
 		<LastRunTime>2026-03-07 11:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -1651,7 +1651,7 @@ env2=value2</edtAppEnv>
 			<CountDownSec>0</CountDownSec>
 			<DTOnce>2024-12-26 20:42:53</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
-			<EveryWeek>6</EveryWeek>
+			<EveryWeek>7</EveryWeek>
 			<Name>更新软件</Name>
 			<StopHotkey>Ctrl+Alt+P</StopHotkey>
 			<TitleShow>弹窗提醒</TitleShow>
@@ -1662,8 +1662,8 @@ env2=value2</edtAppEnv>
 			<chk3>0</chk3>
 			<chk4>0</chk4>
 			<chk5>0</chk5>
-			<chk6>1</chk6>
-			<chk7>0</chk7>
+			<chk6>0</chk6>
+			<chk7>1</chk7>
 			<chkAutoClose>0</chkAutoClose>
 			<chkAutoCloseHK>0</chkAutoCloseHK>
 			<chkDayLimit1>0</chkDayLimit1>
@@ -2517,9 +2517,9 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
 		<StartDateTime>2025-05-28 11:30:00</StartDateTime>
-		<EndDateTime>2026-02-01 19:23:44</EndDateTime>
-		<NextRunDateTime>2026-03-14 11:30:00</NextRunDateTime>
-		<NextRunTime>2026-03-14 11:30:00</NextRunTime>
+		<EndDateTime>2026-03-16 14:47:28</EndDateTime>
+		<NextRunDateTime>2026-03-22 11:30:00</NextRunDateTime>
+		<NextRunTime>2026-03-22 11:30:00</NextRunTime>
 		<LastRunTime>2026-03-07 11:30:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -2529,7 +2529,7 @@ env2=value2</edtAppEnv>
 			<CountDownSec>0</CountDownSec>
 			<DTOnce>2025-05-28 16:21:22</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
-			<EveryWeek>6</EveryWeek>
+			<EveryWeek>7</EveryWeek>
 			<Name>备份Fx配置</Name>
 			<StopHotkey>Ctrl+Alt+P</StopHotkey>
 			<TitleShow>弹窗提醒</TitleShow>
@@ -2540,8 +2540,8 @@ env2=value2</edtAppEnv>
 			<chk3>0</chk3>
 			<chk4>0</chk4>
 			<chk5>0</chk5>
-			<chk6>1</chk6>
-			<chk7>0</chk7>
+			<chk6>0</chk6>
+			<chk7>1</chk7>
 			<chkAutoClose>0</chkAutoClose>
 			<chkAutoCloseHK>0</chkAutoCloseHK>
 			<chkDayLimit1>0</chkDayLimit1>
