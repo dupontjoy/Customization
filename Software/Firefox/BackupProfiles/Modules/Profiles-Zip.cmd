@@ -1,5 +1,5 @@
 @echo off
-Title 打包Firefox配置(仅必要文件) by Cing
+Title 打包Firefox配置(仅必要文件)
 color 0a
 cls
 setlocal enabledelayedexpansion

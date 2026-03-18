@@ -1,6 +1,6 @@
 ::2024.03.20
 
-Title 备份Firefox配置(仅必要文件) by Cing
+Title 备份Firefox配置(仅必要文件)
 color 0a
 cls
 

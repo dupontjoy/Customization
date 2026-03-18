@@ -7,7 +7,7 @@
 ::%1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
 
 ::备份部分开始
-Title Win_WiFi 備份批處理整合版 by Cing
+Title Win_WiFi 備份批處理整合版
 ::界面大小，Cols为宽，Lines为高
 COLOR 0a
 MODE con: COLS=77 LINES=20
