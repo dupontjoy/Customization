@@ -100,6 +100,10 @@ xcopy "%BackupDir%\..\..\..\IDM\!)—°œÓ≈‰÷√.reg" "%OutputDir%\Customization\Softw
 xcopy "%BackupDir%\..\..\Software\ImageGlass\igconfig.json" "%OutputDir%\Customization\Software\ImageGlass\" /y
 xcopy "%BackupDir%\..\..\Software\ImageGlass\updateImageGlass.cmd" "%OutputDir%\Customization\Software\ImageGlass\" /y
 
+:imFile
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\user.json" "%OutputDir%\Customization\Software\imFile\" /y
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\system.json" "%OutputDir%\Customization\Software\imFile\" /y
+
 :listary5
 ::Ç‰∑›Listary 5‘O÷√
 xcopy "%BackupDir%\..\..\Software\Listary5\UserData\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
