@@ -26,7 +26,7 @@
   "CopyAfterOcr": false,
   "HttpTimeout": 30,
   "SourceLang": "japanese",
-  "TargetLang": "auto",
+  "TargetLang": "chineseSimplified",
   "LanguageDetector": "local",
   "LocalDetectorRate": 0.8,
   "SourceLangIfAuto": "english",

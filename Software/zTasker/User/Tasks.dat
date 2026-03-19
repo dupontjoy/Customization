@@ -1075,9 +1075,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-03-18 13:45:36</EndDateTime>
-		<NextRunDateTime>2126-02-22 16:46:56</NextRunDateTime>
+		<NextRunDateTime>2126-02-23 10:47:30</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-03-18 16:46:56</LastRunTime>
+		<LastRunTime>2026-03-19 10:47:30</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1420,15 +1420,15 @@ env2=value2</edtAppEnv>
 		<ID>325-ZC56T05KQI</ID>
 		<TaskType>ttMultiTasker</TaskType>
 		<Stopped>0</Stopped>
-		<HKStopped>1</HKStopped>
+		<HKStopped>0</HKStopped>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>36</SchType>
 		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
 		<EndDateTime>2026-03-17 18:33:36</EndDateTime>
-		<NextRunDateTime>2026-03-18 18:00:00</NextRunDateTime>
-		<NextRunTime>2026-03-18 18:00:00</NextRunTime>
-		<LastRunTime>2026-03-18 12:00:00</LastRunTime>
+		<NextRunDateTime>2026-03-19 18:00:00</NextRunDateTime>
+		<NextRunTime>2026-03-19 18:00:00</NextRunTime>
+		<LastRunTime>2026-03-19 12:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1470,10 +1470,10 @@ env2=value2</edtAppEnv>
 			<chkHKMouseEdge2>0</chkHKMouseEdge2>
 			<chkHKMouseEdge3>0</chkHKMouseEdge3>
 			<chkHKMouseEdge4>0</chkHKMouseEdge4>
-			<chkHotkey>0</chkHotkey>
+			<chkHotkey>1</chkHotkey>
 			<chkHotkeyAlt>0</chkHotkeyAlt>
 			<chkHotkeyAltM>0</chkHotkeyAltM>
-			<chkHotkeyCtrl>0</chkHotkeyCtrl>
+			<chkHotkeyCtrl>1</chkHotkeyCtrl>
 			<chkHotkeyCtrlM>0</chkHotkeyCtrlM>
 			<chkHotkeyLeft>0</chkHotkeyLeft>
 			<chkHotkeyMiddle>0</chkHotkeyMiddle>
@@ -1518,7 +1518,7 @@ env2=value2</edtAppEnv>
 			<cmbHKType>0</cmbHKType>
 			<cmbHKType_text>按下时</cmbHKType_text>
 			<cmbHotKeySolo>0</cmbHotKeySolo>
-			<cmbHotkey>0</cmbHotkey>
+			<cmbHotkey>81</cmbHotkey>
 			<edtCron>0 0 0/6 * * ? </edtCron>
 			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
 			<edtDelayBoot>0</edtDelayBoot>

@@ -112,3 +112,4 @@ goto :eof
 ::=======================================
 :end
 timeout /t 3 /nobreak
+exit

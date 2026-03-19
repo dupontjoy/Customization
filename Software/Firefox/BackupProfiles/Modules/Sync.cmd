@@ -40,8 +40,6 @@ rd /s /q "C:\ProgramData\Winhance\Logs"
 rd /s /q "C:\ProgramData\Thunder Network\Logs"
 rd /s /q "C:\ProgramData\Nutstore\logs"
 
-:abdm
-robocopy "C:\Users\%USERNAME%\.abdm\config" "%OutputDir%\Customization\Software\ABDM\config" /MIR /ZB /R:3 /W:5
 
 :anytxt
 robocopy "C:\ProgramData\Anytxt\config" "%OutputDir%\Customization\Software\Anytxt\config" /MIR /ZB /R:3 /W:5

@@ -13,8 +13,6 @@ pushd %~dp0
 ::設置文件所在位置
 set "SettingsDir=E:\My Documents\Nutstore\NutStoreSync"
 
-:abdm
-robocopy "%SettingsDir%\Customization\Software\ABDM\config" "C:\Users\%USERNAME%\.abdm\config" /MIR /ZB /R:3 /W:5
 
 :anytxt
 robocopy "%SettingsDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt\config" /MIR /ZB /R:3 /W:5
