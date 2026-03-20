@@ -12,8 +12,15 @@ dns:
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
-proxies:                    
-  - name: dongtaiwang.com_0                     
+proxies:
+  - name: dongtaiwang.com_0  
+    type: mieru
+    server: 151.242.183.103
+    port: 23014
+    transport: TCP
+    username: tcp_3flnfpno
+    password: A4Hv3H5yb8meP1MN                 
+  - name: dongtaiwang.com_1                     
     server: 5.178.101.117
     port: 30006
     type: tuic
@@ -32,6 +39,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - dongtaiwang.com_0
+      - dongtaiwang.com_1
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.gstatic.com/generate_204
@@ -39,6 +47,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - dongtaiwang.com_0
+      - dongtaiwang.com_1
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -46,24 +55,28 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - dongtaiwang.com_0
+      - dongtaiwang.com_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - dongtaiwang.com_0
+      - dongtaiwang.com_1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - dongtaiwang.com_0
+      - dongtaiwang.com_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - dongtaiwang.com_0
+      - dongtaiwang.com_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -87,6 +100,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - dongtaiwang.com_0
+      - dongtaiwang.com_1
 rules:
   - MATCH,🚀 节点选择
 
