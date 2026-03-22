@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RLHqlxbWXUMt
+current: RSylbZsV69Jd
 items:
 - uid: Merge
   type: merge
@@ -43,7 +43,7 @@ items:
   file: RwtvUmvfZOzw.yaml
   desc: ''
   url: https://163cfn.232885.xyz/163cfn/sub?target=clash
-  updated: 1774064902
+  updated: 1774183669
   option:
     update_interval: 59
     allow_auto_update: true
@@ -58,7 +58,7 @@ items:
   file: RwWmv60H3j0A.yaml
   desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https%3A%2F%2F88cfn.dupontjoy.shop%2F88cfn%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1774065082
+  updated: 1774183671
   option:
     with_proxy: false
     self_proxy: false
@@ -106,11 +106,11 @@ items:
   - name: 🚀 节点选择
     now: ♻️ 自动选择
   extra:
-    upload: 2120217286730
-    download: 2120217286730
+    upload: 7035155209168
+    download: 7035155209168
     total: 26388279066624
     expire: 4102329600
-  updated: 1774065088
+  updated: 1774183674
   option:
     with_proxy: false
     self_proxy: false
@@ -172,36 +172,13 @@ items:
   name: null
   file: g2J9gFVeWcA1.yaml
   updated: 1773674809
-- uid: RLHqlxbWXUMt
-  type: remote
-  name: xrcml
-  file: RLHqlxbWXUMt.yaml
-  desc: ''
-  url: https://xrcml.xuancj.workers.dev/sub?token=9e54be93e8622c5a6bc6e33980a08ff5
-  extra:
-    upload: 2122929720832
-    download: 2122929720832
-    total: 26388279066624
-    expire: 4102329600
-  updated: 1774065104
-  option:
-    with_proxy: false
-    self_proxy: false
-    update_interval: 60
-    allow_auto_update: true
-    merge: mfwXsXu0VLp0
-    script: srOQDwH0AaTp
-    rules: r6OiieKPqD90
-    proxies: p3YWF9DeVKfK
-    groups: gfLNsSzm15FM
-  home: https://xrcml.xuancj.workers.dev/admin
 - uid: RkC6ZKw3xEgi
   type: remote
   name: Quic
   file: RkC6ZKw3xEgi.yaml
   desc: ''
   url: https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/quick/1/config.yaml
-  updated: 1774065080
+  updated: 1774183669
   option:
     with_proxy: false
     self_proxy: false
@@ -212,28 +189,3 @@ items:
     rules: rzJas4BP5Tcr
     proxies: plJL5Ds6FSw5
     groups: g2J9gFVeWcA1
-- uid: mfwXsXu0VLp0
-  type: merge
-  name: null
-  file: mfwXsXu0VLp0.yaml
-  updated: 1773901800
-- uid: srOQDwH0AaTp
-  type: script
-  name: null
-  file: srOQDwH0AaTp.js
-  updated: 1773901800
-- uid: r6OiieKPqD90
-  type: rules
-  name: null
-  file: r6OiieKPqD90.yaml
-  updated: 1773901800
-- uid: p3YWF9DeVKfK
-  type: proxies
-  name: null
-  file: p3YWF9DeVKfK.yaml
-  updated: 1773901800
-- uid: gfLNsSzm15FM
-  type: groups
-  name: null
-  file: gfLNsSzm15FM.yaml
-  updated: 1773901800

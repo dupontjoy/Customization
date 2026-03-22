@@ -12,6 +12,7 @@ startup_script: null
 traffic_graph: true
 enable_memory_usage: true
 enable_group_icon: true
+pause_render_traffic_stats_on_blur: null
 common_tray_icon: false
 menu_icon: monochrome
 collapse_navbar: null
@@ -81,9 +82,9 @@ verge_socks_port: 7898
 verge_socks_enabled: false
 verge_port: 7899
 verge_http_enabled: false
-webdav_url: w4PlDr/tlH9rOeWrNN6cVB3dbeECtkEM3ari+aL8nz4rd+5vl5dYJ5Wz3VnXQg6KABzpKS8BxgTKgGquFQ==
-webdav_username: 37MRr20IjbaKnDoVjF7sCuxaoNW7PNvpw9vkG61TYpi0OyIBWntdQ/q8klDo7p0=
-webdav_password: QnfJtcS6RV1KenthuBbHqTC4nf0W7du9m/djvUaMFk8Le9n8QHSBF1GVfeZaNg==
+webdav_url: 57xRcyQfl3BnhBriji8/7N1VmOQwpH6d1pLZI1ZcicpdmCgFgi98Y0Wbfvl1P6atIFRxB0yynMNwdTgFew==
+webdav_username: lcHYuUhrm0Ka1vx0MGxyola5dsucHj4fLqRIf5QwY0/wPzvYHkL0YYTjPKiPZQw=
+webdav_password: IrYc+5SiiMAxEqChopeFhD0GCCcJE/NfObdyg2dxYLHo6vi/QxuPX8x9w6sgkw==
 tray_inline_outbound_modes: null
 enable_auto_light_weight_mode: false
 auto_light_weight_minutes: 10
