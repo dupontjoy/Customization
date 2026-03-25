@@ -1,4 +1,4 @@
-::2025.04.10
+::2026.03.25
 
 @echo off
 title 一键更新MPV和脚本
@@ -24,6 +24,7 @@ call :testGHmirror
 call :updating_scripts
 call :updating_uosc
 call :updating_yt-dlp
+call :updating_deno
 call :updating_mpv
 call :updating_ffmpeg
 call :unzip_mpv_ffmpeg
@@ -117,6 +118,37 @@ echo. [下载] %GH_PROXY%/https://github.com/yt-dlp/yt-dlp/releases/latest/downloa
 %Curl_Download% -o "%cd%\..\yt-dlp.exe" %GH_PROXY%/https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
 goto :eof
 
+:updating_deno
+setlocal enabledelayedexpansion
+
+:: GitHub API 地址和文件名匹配模式
+set "api_url=https://api.github.com/repos/denoland/deno/releases/latest"
+set "deno_file_pattern=deno-x86_64-pc-windows-msvc.zip"
+
+:: 使用 PowerShell 解析下载链接
+powershell -Command "$response = Invoke-WebRequest -Uri '%api_url%' -UseBasicParsing | ConvertFrom-Json; $asset = $response.assets | Where-Object { $_.name -match '%deno_file_pattern%' } | Select-Object -First 1; if ($asset) { $asset.browser_download_url } else { exit 1 }" > deno_download_url.tmp
+
+:: 检查是否获取到下载链接
+if %errorlevel% neq 0 (
+    echo 未找到匹配的文件
+    del deno_download_url.tmp 2>nul
+    exit /b 1
+)
+
+:: 读取下载链接并添加镜像代理
+set /p deno_original_url=<deno_download_url.tmp
+set "deno_download_url=%GH_PROXY%/%deno_original_url%"
+
+:: 下载文件
+echo 正在下载: %deno_download_url%
+powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%deno_download_url%' -OutFile '%cd%\..\deno-x86_64-pc-windows-msvc.zip' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
+
+
+:: 清理临时文件
+del deno_download_url.tmp 2>nul
+endlocal
+goto :eof
+
 :updating_mpv
 setlocal enabledelayedexpansion
 
@@ -185,10 +217,16 @@ goto :eof
 pushd %~dp0
 cd ..\
 set "zip=..\..\..\7-Zip\7z.exe"
+
+:: 解压新版deno文件
+%zip% x -y -aoa -sccUTF-8 -scsWIN .\deno-x86_64-pc-windows-msvc.zip
 :: 解压新版mpv文件
 %zip% x -y -aoa -sccUTF-8 -scsWIN .\mpv-x86_64_Latest.7z
 :: 解压新版ffmpeg文件
 %zip% x -y -aoa -sccUTF-8 -scsWIN .\ffmpeg-x86_64-git_Latest.7z
+
+:: 删除压缩包
+del /s /q .\deno-x86_64-pc-windows-msvc.zip
 del /s /q .\mpv-x86_64_Latest.7z
 del /s /q .\ffmpeg-x86_64-git_Latest.7z
 
