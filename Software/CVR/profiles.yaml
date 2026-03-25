@@ -43,7 +43,7 @@ items:
   file: RwtvUmvfZOzw.yaml
   desc: ''
   url: https://163cfn.232885.xyz/163cfn/sub?target=clash
-  updated: 1774183669
+  updated: 1774436758
   option:
     update_interval: 59
     allow_auto_update: true
@@ -52,13 +52,36 @@ items:
     rules: rSSoCTvToOXh
     proxies: pItuzE1EwU0U
     groups: gGpEGYKXGKtE
+- uid: RT2I9eXxrIV0
+  type: remote
+  name: 163cml
+  file: RT2I9eXxrIV0.yaml
+  desc: ''
+  url: https://163cml.232885.xyz/sub?token=c29f123519010e0895bf91e6b6abefba
+  extra:
+    upload: 6120274337478
+    download: 6120274337478
+    total: 26388279066624
+    expire: 4102329600
+  updated: 1774436885
+  option:
+    with_proxy: false
+    self_proxy: false
+    update_interval: 60
+    allow_auto_update: true
+    merge: mDB8CvPwNY8Q
+    script: slAr2g0kOyN4
+    rules: rR9cnyWKB2T9
+    proxies: pAD9QFlY6A28
+    groups: g5j0K6CWYqEI
+  home: https://163cml.232885.xyz/admin
 - uid: RwWmv60H3j0A
   type: remote
   name: 88cfn
   file: RwWmv60H3j0A.yaml
   desc: ''
   url: https://api.asailor.org/sub?target=clash&url=https%3A%2F%2F88cfn.dupontjoy.shop%2F88cfn%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FbyJoey%2Ftest%2Frefs%2Fheads%2Fmain%2Ftist.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true
-  updated: 1774183671
+  updated: 1774436877
   option:
     with_proxy: false
     self_proxy: false
@@ -106,11 +129,11 @@ items:
   - name: 🚀 节点选择
     now: ♻️ 自动选择
   extra:
-    upload: 7035155209168
-    download: 7035155209168
+    upload: 6120111854093
+    download: 6120111854093
     total: 26388279066624
     expire: 4102329600
-  updated: 1774183674
+  updated: 1774436879
   option:
     with_proxy: false
     self_proxy: false
@@ -178,7 +201,7 @@ items:
   file: RkC6ZKw3xEgi.yaml
   desc: ''
   url: https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/quick/1/config.yaml
-  updated: 1774183669
+  updated: 1774436876
   option:
     with_proxy: false
     self_proxy: false
@@ -189,3 +212,28 @@ items:
     rules: rzJas4BP5Tcr
     proxies: plJL5Ds6FSw5
     groups: g2J9gFVeWcA1
+- uid: mDB8CvPwNY8Q
+  type: merge
+  name: null
+  file: mDB8CvPwNY8Q.yaml
+  updated: 1774324017
+- uid: slAr2g0kOyN4
+  type: script
+  name: null
+  file: slAr2g0kOyN4.js
+  updated: 1774324017
+- uid: rR9cnyWKB2T9
+  type: rules
+  name: null
+  file: rR9cnyWKB2T9.yaml
+  updated: 1774324017
+- uid: pAD9QFlY6A28
+  type: proxies
+  name: null
+  file: pAD9QFlY6A28.yaml
+  updated: 1774324017
+- uid: g5j0K6CWYqEI
+  type: groups
+  name: null
+  file: g5j0K6CWYqEI.yaml
+  updated: 1774324017
