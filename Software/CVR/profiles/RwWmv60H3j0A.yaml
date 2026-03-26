@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxy-providers:
-  Provider_3EFD97:
+  Provider_79D932:
     type: http
-    url: https://88cfn.dupontjoy.shop/88cfn/sub
+    url: https://88cfn.dupontjoy.shop/88cfn/sub?target=base64
     interval: 3600
     proxy: DIRECT
-    path: ./providers/Provider_3EFD97.yaml
+    path: ./providers/Provider_79D932.yaml
     health-check:
       enable: true
       url: https://cp.cloudflare.com/generate_204
@@ -19,498 +19,513 @@ proxy-providers:
       skip-cert-verify: false
       udp: false
 proxy-groups:
-  - name: 🚀 节点选择
+  - name: 🚀 手动选择
     type: select
+    use:
+      - Provider_79D932
+    filter: .*
     proxies:
       - ♻️ 自动选择
       - 🇭🇰 香港节点
-      - 🇺🇲 美国节点
-      - ☑️ 手动切换
-      - DIRECT
-  - name: ☑️ 手动切换
-    type: select
-    use:
-      - Provider_3EFD97
-    filter: .*
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 86400
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
     use:
-      - Provider_3EFD97
+      - Provider_79D932
     filter: .*
-  - name: 📹 油管视频
+  - name: 💬 即时通讯
     type: select
     proxies:
-      - 🚀 节点选择
+      - 🚀 手动选择
       - ♻️ 自动选择
-      - ☑️ 手动切换
-      - DIRECT
-  - name: 🎥 奈飞视频
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+      - 🎯 全球直连
+  - name: 🌐 社交媒体
     type: select
     use:
-      - Provider_3EFD97
-    filter: (NF|奈飞|解锁|Netflix|NETFLIX|Media|MITM)
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - ☑️ 手动切换
-      - DIRECT
-  - name: 🌍 国外媒体
-    type: select
-    use:
-      - Provider_3EFD97
+      - Provider_79D932
     filter: .*
     proxies:
-      - 🚀 节点选择
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+      - 🎯 全球直连
+  - name: 🚀 GitHub
+    type: select
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+      - 🎯 全球直连
+  - name: 🤖 ChatGPT
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🤖 AI服务
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🎶 TikTok
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 📹 YouTube
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🎥 Netflix
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🎥 DisneyPlus
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🎥 HBO
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🎥 PrimeVideo
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🎥 AppleTV+
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇸🇬 新加坡节点
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+      - 🎯 全球直连
+  - name: 🎥 Emby
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
       - ♻️ 自动选择
       - 🎯 全球直连
-  - name: 📲 电报信息
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🎻 Spotify
     type: select
     use:
-      - Provider_3EFD97
+      - Provider_79D932
     filter: .*
     proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-  - name: 🤖 OpenAi
-    type: select
-    proxies:
-      - 🚀 节点选择
+      - 🚀 手动选择
       - ♻️ 自动选择
-      - 🇺🇲 美国节点
-      - ☑️ 手动切换
-      - DIRECT
-  - name: Ⓜ️ 微软服务
+      - 🎯 全球直连
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 📺 Bahamut
     type: select
     use:
-      - Provider_3EFD97
+      - Provider_79D932
     filter: .*
     proxies:
+      - 🇼🇸 台湾节点
+      - 🚀 手动选择
       - 🎯 全球直连
-      - 🚀 节点选择
+  - name: 🌎 国外媒体
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🛒 国外电商
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🇬 谷歌服务
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
   - name: 🍎 苹果服务
     type: select
     use:
-      - Provider_3EFD97
+      - Provider_79D932
     filter: .*
     proxies:
-      - 🚀 节点选择
       - 🎯 全球直连
-  - name: 📢 谷歌FCM
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: Ⓜ️ 微软服务
     type: select
     use:
-      - Provider_3EFD97
+      - Provider_79D932
     filter: .*
     proxies:
-      - 🚀 节点选择
       - 🎯 全球直连
+      - 🚀 手动选择
       - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🎮 游戏平台
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🎯 全球直连
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🎮 Steam
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🎯 全球直连
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🚀 测速工具
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🎯 全球直连
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🐟 漏网之鱼
+    type: select
+    use:
+      - Provider_79D932
+    filter: .*
+    proxies:
+      - 🚀 手动选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 🇭🇰 香港节点
+      - 🇺🇸 美国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇼🇸 台湾节点
+      - 🇰🇷 韩国节点
+  - name: 🔀 非标端口
+    type: select
+    proxies:
+      - 🐟 漏网之鱼
+      - 🎯 全球直连
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - Provider_79D932
+    filter: (🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong Kong|HongKong|hongkong|HONG KONG|HONGKONG|深港|HKG|九龙|Kowloon|新界|沙田|荃湾|葵涌)
+  - name: 🇺🇸 美国节点
+    type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - Provider_79D932
+    filter: (🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|纽约|纽纽|亚特兰大|迈阿密|华盛顿|\bUS(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC)
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - Provider_79D932
+    filter: (🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI)
+  - name: 🇸🇬 新加坡节点
+    type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - Provider_79D932
+    filter: (🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN)
+  - name: 🇼🇸 台湾节点
+    type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - Provider_79D932
+    filter: (🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC)
+  - name: 🇰🇷 韩国节点
+    type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - Provider_79D932
+    filter: (🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
-      - ♻️ 自动选择
-  - name: 🛑 全球拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🍃 应用净化
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🐟 漏网之鱼
-    type: select
-    use:
-      - Provider_3EFD97
-    filter: .*
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-  - name: 🇭🇰 香港节点
-    type: load-balance
-    strategy: consistent-hashing
-    url: https://captive.apple.com/hotspot-detect.html
-    interval: 86400
-    use:
-      - Provider_3EFD97
-    filter: (港|HK|hk|Hong Kong|HongKong|hongkong|HKG)
-  - name: 🇺🇲 美国节点
-    type: load-balance
-    strategy: consistent-hashing
-    url: https://captive.apple.com/hotspot-detect.html
-    interval: 86400
-    use:
-      - Provider_3EFD97
-    filter: (美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|ATL|BUF|DFW|EWR|IAD|LAX|MCI|MIA|ORD|PHX|PDX|SEA|SJC)
 rules:
-  - RULE-SET,CFnat,🎯 全球直连
-  - RULE-SET,LocalAreaNetwork (Domain),🎯 全球直连
-  - RULE-SET,LocalAreaNetwork (IP-CIDR),🎯 全球直连,no-resolve
-  - RULE-SET,UnBan (Domain),🎯 全球直连
-  - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
-  - DOMAIN-KEYWORD,admaster,🛑 全球拦截
-  - DOMAIN-KEYWORD,adsage,🛑 全球拦截
-  - DOMAIN-KEYWORD,adsensor,🛑 全球拦截
-  - DOMAIN-KEYWORD,adsmogo,🛑 全球拦截
-  - DOMAIN-KEYWORD,adsrvmedia,🛑 全球拦截
-  - DOMAIN-KEYWORD,adsserving,🛑 全球拦截
-  - DOMAIN-KEYWORD,adsystem,🛑 全球拦截
-  - DOMAIN-KEYWORD,adwords,🛑 全球拦截
-  - DOMAIN-KEYWORD,applovin,🛑 全球拦截
-  - DOMAIN-KEYWORD,appsflyer,🛑 全球拦截
-  - DOMAIN-KEYWORD,domob,🛑 全球拦截
-  - DOMAIN-KEYWORD,duomeng,🛑 全球拦截
-  - DOMAIN-KEYWORD,dwtrack,🛑 全球拦截
-  - DOMAIN-KEYWORD,guanggao,🛑 全球拦截
-  - DOMAIN-KEYWORD,omgmta,🛑 全球拦截
-  - DOMAIN-KEYWORD,omniture,🛑 全球拦截
-  - DOMAIN-KEYWORD,openx,🛑 全球拦截
-  - DOMAIN-KEYWORD,partnerad,🛑 全球拦截
-  - DOMAIN-KEYWORD,pingfore,🛑 全球拦截
-  - DOMAIN-KEYWORD,socdm,🛑 全球拦截
-  - DOMAIN-KEYWORD,supersonicads,🛑 全球拦截
-  - DOMAIN-KEYWORD,wlmonitor,🛑 全球拦截
-  - DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截
-  - RULE-SET,BanAD (Domain),🛑 全球拦截
-  - DOMAIN-KEYWORD,omgmtaw,🍃 应用净化
-  - RULE-SET,BanProgramAD (Domain),🍃 应用净化
-  - RULE-SET,BanProgramAD (IP-CIDR),🍃 应用净化,no-resolve
-  - RULE-SET,adobe (Domain),🍃 应用净化
-  - RULE-SET,IDM (Domain),🍃 应用净化
-  - RULE-SET,GoogleFCM (Domain),📢 谷歌FCM
-  - RULE-SET,GoogleFCM (IP-CIDR),📢 谷歌FCM,no-resolve
-  - RULE-SET,GoogleCN (Domain),🎯 全球直连
-  - RULE-SET,SteamCN (Domain),🎯 全球直连
-  - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
-  - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
-  - RULE-SET,Microsoft (Domain),Ⓜ️ 微软服务
-  - RULE-SET,Apple (Domain),🍎 苹果服务
-  - RULE-SET,Apple (IP-CIDR),🍎 苹果服务,no-resolve
-  - RULE-SET,Telegram (Domain),📲 电报信息
-  - RULE-SET,Telegram (IP-CIDR),📲 电报信息,no-resolve
-  - DOMAIN-KEYWORD,openai,🤖 OpenAi
-  - RULE-SET,OpenAi (Domain),🤖 OpenAi
-  - DOMAIN-KEYWORD,openai,🤖 OpenAi
-  - DOMAIN-KEYWORD,chatgpt,🤖 OpenAi
-  - RULE-SET,ai (Domain),🤖 OpenAi
-  - DOMAIN-KEYWORD,openaicom-api,🤖 OpenAi
-  - RULE-SET,Copilot (Domain),🤖 OpenAi
-  - RULE-SET,Copilot (IP-CIDR),🤖 OpenAi,no-resolve
-  - DOMAIN-KEYWORD,cocopilot,🤖 OpenAi
-  - RULE-SET,GithubCopilot (Domain),🤖 OpenAi
-  - RULE-SET,Claude (Domain),🤖 OpenAi
-  - DOMAIN-KEYWORD,youtube,📹 油管视频
-  - RULE-SET,YouTube (Domain),📹 油管视频
-  - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🎥 奈飞视频
-  - DOMAIN-KEYWORD,dualstack.apiproxy-,🎥 奈飞视频
-  - DOMAIN-KEYWORD,netflixdnstest,🎥 奈飞视频
-  - RULE-SET,Netflix (Domain),🎥 奈飞视频
-  - RULE-SET,Netflix (IP-CIDR),🎥 奈飞视频,no-resolve
-  - DOMAIN-KEYWORD,anthropic,🌍 国外媒体
-  - DOMAIN-KEYWORD,claude,🌍 国外媒体
-  - DOMAIN-KEYWORD,openai,🌍 国外媒体
-  - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
-  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
-  - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
-  - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
-  - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
-  - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
-  - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
-  - DOMAIN-KEYWORD,japonx,🌍 国外媒体
-  - DOMAIN-KEYWORD,japronx,🌍 国外媒体
-  - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
-  - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
-  - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
-  - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
-  - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
-  - DOMAIN-KEYWORD,nivod,🌍 国外媒体
-  - DOMAIN-KEYWORD,olevod,🌍 国外媒体
-  - DOMAIN-KEYWORD,openai,🌍 国外媒体
-  - DOMAIN-KEYWORD,-spotify-,🌍 国外媒体
-  - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,tiktokcdn,🌍 国外媒体
-  - DOMAIN-KEYWORD,ttvnw,🌍 国外媒体
-  - DOMAIN-KEYWORD,youtube,🌍 国外媒体
-  - RULE-SET,ProxyMedia (Domain),🌍 国外媒体
-  - RULE-SET,ProxyMedia (IP-CIDR),🌍 国外媒体,no-resolve
-  - DOMAIN-KEYWORD,emby,🌍 国外媒体
-  - RULE-SET,Emby,🌍 国外媒体
-  - DOMAIN-KEYWORD,1e100,🚀 节点选择
-  - DOMAIN-KEYWORD,abema,🚀 节点选择
-  - DOMAIN-KEYWORD,appledaily,🚀 节点选择
-  - DOMAIN-KEYWORD,avtb,🚀 节点选择
-  - DOMAIN-KEYWORD,beetalk,🚀 节点选择
-  - DOMAIN-KEYWORD,blogspot,🚀 节点选择
-  - DOMAIN-KEYWORD,dropbox,🚀 节点选择
-  - DOMAIN-KEYWORD,facebook,🚀 节点选择
-  - DOMAIN-KEYWORD,fbcdn,🚀 节点选择
-  - DOMAIN-KEYWORD,github,🚀 节点选择
-  - DOMAIN-KEYWORD,gmail,🚀 节点选择
-  - DOMAIN-KEYWORD,google,🚀 节点选择
-  - DOMAIN-KEYWORD,instagram,🚀 节点选择
-  - DOMAIN-KEYWORD,porn,🚀 节点选择
-  - DOMAIN-KEYWORD,sci-hub,🚀 节点选择
-  - DOMAIN-KEYWORD,spotify,🚀 节点选择
-  - DOMAIN-KEYWORD,telegram,🚀 节点选择
-  - DOMAIN-KEYWORD,twitter,🚀 节点选择
-  - DOMAIN-KEYWORD,whatsapp,🚀 节点选择
-  - DOMAIN-KEYWORD,youtube,🚀 节点选择
-  - DOMAIN-KEYWORD,uk-live,🚀 节点选择
-  - DOMAIN-KEYWORD,1drv,🚀 节点选择
-  - DOMAIN-KEYWORD,onedrive,🚀 节点选择
-  - DOMAIN-KEYWORD,skydrive,🚀 节点选择
-  - DOMAIN-KEYWORD,porn,🚀 节点选择
-  - DOMAIN-KEYWORD,ttvnw,🚀 节点选择
-  - RULE-SET,ProxyLite (Domain),🚀 节点选择
-  - RULE-SET,ProxyLite (IP-CIDR),🚀 节点选择,no-resolve
-  - RULE-SET,CMBlog (Domain),🚀 节点选择
-  - RULE-SET,CMBlog (IP-CIDR),🚀 节点选择,no-resolve
-  - DOMAIN-KEYWORD,360buy,🎯 全球直连
-  - DOMAIN-KEYWORD,alicdn,🎯 全球直连
-  - DOMAIN-KEYWORD,alimama,🎯 全球直连
-  - DOMAIN-KEYWORD,alipay,🎯 全球直连
-  - DOMAIN-KEYWORD,appzapp,🎯 全球直连
-  - DOMAIN-KEYWORD,baidupcs,🎯 全球直连
-  - DOMAIN-KEYWORD,bilibili,🎯 全球直连
-  - DOMAIN-KEYWORD,ccgslb,🎯 全球直连
-  - DOMAIN-KEYWORD,chinacache,🎯 全球直连
-  - DOMAIN-KEYWORD,duobao,🎯 全球直连
-  - DOMAIN-KEYWORD,jdpay,🎯 全球直连
-  - DOMAIN-KEYWORD,moke,🎯 全球直连
-  - DOMAIN-KEYWORD,qhimg,🎯 全球直连
-  - DOMAIN-KEYWORD,vpimg,🎯 全球直连
-  - DOMAIN-KEYWORD,xiami,🎯 全球直连
-  - DOMAIN-KEYWORD,xiaomi,🎯 全球直连
-  - RULE-SET,ChinaDomain (Domain),🎯 全球直连
-  - RULE-SET,ChinaDomain (IP-CIDR),🎯 全球直连,no-resolve
-  - RULE-SET,ChinaCompanyIp (IP-CIDR),🎯 全球直连,no-resolve
-  - GEOIP,CN,🎯 全球直连
+  - GEOSITE,private,🎯 全球直连
+  - GEOIP,private,🎯 全球直连,no-resolve
+  - RULE-SET,Custom_Direct_Domain,🎯 全球直连
+  - RULE-SET,Custom_Direct_Classical_IP,🎯 全球直连
+  - RULE-SET,Custom_Proxy_Domain,🚀 手动选择
+  - RULE-SET,Custom_Proxy_Classical_IP,🚀 手动选择
+  - GEOSITE,google-cn,🎯 全球直连
+  - GEOSITE,category-games@cn,🎯 全球直连
+  - RULE-SET,Steam_CDN_Classical,🎯 全球直连
+  - GEOSITE,category-game-platforms-download,🎯 全球直连
+  - GEOSITE,category-public-tracker,🎯 全球直连
+  - GEOSITE,category-communication,💬 即时通讯
+  - GEOSITE,category-social-media-!cn,🌐 社交媒体
+  - GEOSITE,openai,🤖 ChatGPT
+  - GEOSITE,category-ai-!cn,🤖 AI服务
+  - GEOSITE,github,🚀 GitHub
+  - GEOSITE,category-speedtest,🚀 测速工具
+  - GEOSITE,steam,🎮 Steam
+  - GEOSITE,youtube,📹 YouTube
+  - GEOSITE,apple-tvplus,🎥 AppleTV+
+  - GEOSITE,apple,🍎 苹果服务
+  - GEOSITE,microsoft,Ⓜ️ 微软服务
+  - GEOSITE,googlefcm,📢 谷歌FCM
+  - GEOSITE,google,🇬 谷歌服务
+  - GEOSITE,tiktok,🎶 TikTok
+  - GEOSITE,netflix,🎥 Netflix
+  - GEOSITE,disney,🎥 DisneyPlus
+  - GEOSITE,hbo,🎥 HBO
+  - GEOSITE,primevideo,🎥 PrimeVideo
+  - GEOSITE,category-emby,🎥 Emby
+  - GEOSITE,spotify,🎻 Spotify
+  - GEOSITE,bahamut,📺 Bahamut
+  - GEOSITE,category-games,🎮 游戏平台
+  - GEOSITE,category-entertainment,🌎 国外媒体
+  - GEOSITE,category-ecommerce,🛒 国外电商
+  - GEOSITE,gfw,🚀 手动选择
+  - GEOIP,telegram,💬 即时通讯,no-resolve
+  - GEOIP,twitter,🌐 社交媒体,no-resolve
+  - GEOIP,facebook,🌐 社交媒体,no-resolve
+  - GEOIP,google,🇬 谷歌服务,no-resolve
+  - GEOIP,netflix,🎥 Netflix,no-resolve
+  - GEOSITE,cn,🎯 全球直连
+  - GEOIP,cn,🎯 全球直连,no-resolve
+  - RULE-SET,Custom_Port_Direct,🔀 非标端口
   - MATCH,🐟 漏网之鱼
 rule-providers:
-  CFnat:
+  Custom_Direct_Domain:
+    type: http
+    behavior: domain
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.yaml
+    path: ./providers/2305457515016618925_domain.yaml
+    interval: 28800
+  Custom_Direct_Classical_IP:
     type: http
     behavior: classical
-    url: "https://api.asailor.org/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvcmVmcy9oZWFkcy9tYWluL0NsYXNoL0NGbmF0Lmxpc3Q"
-    path: ./providers/17226001126569245472.yaml
-    interval: 86400
-  LocalAreaNetwork (Domain):
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_IP.yaml
+    path: ./providers/15204165614954008964.yaml
+    interval: 28800
+  Custom_Proxy_Domain:
     type: http
     behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTG9jYWxBcmVhTmV0d29yay5saXN0"
-    path: ./providers/7156953299935574564_domain.yaml
-    interval: 86400
-  LocalAreaNetwork (IP-CIDR):
-    type: http
-    behavior: ipcidr
-    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTG9jYWxBcmVhTmV0d29yay5saXN0"
-    path: ./providers/7156953299935574564_ipcidr.yaml
-    interval: 86400
-  UnBan (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVW5CYW4ubGlzdA"
-    path: ./providers/7573362162235439048_domain.yaml
-    interval: 86400
-  BanAD (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuQUQubGlzdA"
-    path: ./providers/5345470858595246832_domain.yaml
-    interval: 86400
-  BanProgramAD (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q"
-    path: ./providers/12627286518854712958_domain.yaml
-    interval: 86400
-  BanProgramAD (IP-CIDR):
-    type: http
-    behavior: ipcidr
-    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q"
-    path: ./providers/12627286518854712958_ipcidr.yaml
-    interval: 86400
-  adobe (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9hZG9iZS5saXN0"
-    path: ./providers/10980425190736881570_domain.yaml
-    interval: 86400
-  IDM (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9JRE0ubGlzdA"
-    path: ./providers/11222536517939013447_domain.yaml
-    interval: 86400
-  GoogleFCM (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Hb29nbGVGQ00ubGlzdA"
-    path: ./providers/13526767378282193442_domain.yaml
-    interval: 86400
-  GoogleFCM (IP-CIDR):
-    type: http
-    behavior: ipcidr
-    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Hb29nbGVGQ00ubGlzdA"
-    path: ./providers/13526767378282193442_ipcidr.yaml
-    interval: 86400
-  GoogleCN (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvR29vZ2xlQ04ubGlzdA"
-    path: ./providers/18094093153187793194_domain.yaml
-    interval: 86400
-  SteamCN (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9TdGVhbUNOLmxpc3Q"
-    path: ./providers/9218514496462299588_domain.yaml
-    interval: 86400
-  Microsoft (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTWljcm9zb2Z0Lmxpc3Q"
-    path: ./providers/10538434793549721944_domain.yaml
-    interval: 86400
-  Apple (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQXBwbGUubGlzdA"
-    path: ./providers/14560487744959213540_domain.yaml
-    interval: 86400
-  Apple (IP-CIDR):
-    type: http
-    behavior: ipcidr
-    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQXBwbGUubGlzdA"
-    path: ./providers/14560487744959213540_ipcidr.yaml
-    interval: 86400
-  Telegram (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVGVsZWdyYW0ubGlzdA"
-    path: ./providers/6502624741183612233_domain.yaml
-    interval: 86400
-  Telegram (IP-CIDR):
-    type: http
-    behavior: ipcidr
-    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVGVsZWdyYW0ubGlzdA"
-    path: ./providers/6502624741183612233_ipcidr.yaml
-    interval: 86400
-  OpenAi (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9PcGVuQWkubGlzdA"
-    path: ./providers/3258957679647165343_domain.yaml
-    interval: 86400
-  ai (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2p1ZXd1eS9TaGVsbENsYXNoL21hc3Rlci9ydWxlcy9haS5saXN0"
-    path: ./providers/4242704792742108848_domain.yaml
-    interval: 86400
-  Copilot (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9Db3BpbG90Lmxpc3Q"
-    path: ./providers/12381674039074208355_domain.yaml
-    interval: 86400
-  Copilot (IP-CIDR):
-    type: http
-    behavior: ipcidr
-    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9Db3BpbG90Lmxpc3Q"
-    path: ./providers/12381674039074208355_ipcidr.yaml
-    interval: 86400
-  GithubCopilot (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9HaXRodWJDb3BpbG90Lmxpc3Q"
-    path: ./providers/13435859620885478808_domain.yaml
-    interval: 86400
-  Claude (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9DbGF1ZGUubGlzdA"
-    path: ./providers/10056933422044789247_domain.yaml
-    interval: 86400
-  YouTube (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Zb3VUdWJlLmxpc3Q"
-    path: ./providers/6665783339279527800_domain.yaml
-    interval: 86400
-  Netflix (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9OZXRmbGl4Lmxpc3Q"
-    path: ./providers/6953567076524950087_domain.yaml
-    interval: 86400
-  Netflix (IP-CIDR):
-    type: http
-    behavior: ipcidr
-    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9OZXRmbGl4Lmxpc3Q"
-    path: ./providers/6953567076524950087_ipcidr.yaml
-    interval: 86400
-  ProxyMedia (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlNZWRpYS5saXN0"
-    path: ./providers/11865208451954205364_domain.yaml
-    interval: 86400
-  ProxyMedia (IP-CIDR):
-    type: http
-    behavior: ipcidr
-    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlNZWRpYS5saXN0"
-    path: ./providers/11865208451954205364_ipcidr.yaml
-    interval: 86400
-  Emby:
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Domain.yaml
+    path: ./providers/10543794580940256312_domain.yaml
+    interval: 28800
+  Custom_Proxy_Classical_IP:
     type: http
     behavior: classical
-    url: "https://api.asailor.org/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9FbWJ5Lmxpc3Q"
-    path: ./providers/13025806312274722168.yaml
-    interval: 86400
-  ProxyLite (Domain):
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Classical_IP.yaml
+    path: ./providers/3673053372641237649.yaml
+    interval: 28800
+  Steam_CDN_Classical:
     type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlMaXRlLmxpc3Q"
-    path: ./providers/2797519971897865672_domain.yaml
-    interval: 86400
-  ProxyLite (IP-CIDR):
+    behavior: classical
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Steam_CDN_Classical.yaml
+    path: ./providers/13268481674871578153.yaml
+    interval: 28800
+  Custom_Port_Direct:
     type: http
-    behavior: ipcidr
-    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlMaXRlLmxpc3Q"
-    path: ./providers/2797519971897865672_ipcidr.yaml
-    interval: 86400
-  CMBlog (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9DTUJsb2cubGlzdA"
-    path: ./providers/139342281480392317_domain.yaml
-    interval: 86400
-  CMBlog (IP-CIDR):
-    type: http
-    behavior: ipcidr
-    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9DTUJsb2cubGlzdA"
-    path: ./providers/139342281480392317_ipcidr.yaml
-    interval: 86400
-  ChinaDomain (Domain):
-    type: http
-    behavior: domain
-    url: "https://api.asailor.org/getruleset?type=3&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFEb21haW4ubGlzdA"
-    path: ./providers/4162648423616508953_domain.yaml
-    interval: 86400
-  ChinaDomain (IP-CIDR):
-    type: http
-    behavior: ipcidr
-    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFEb21haW4ubGlzdA"
-    path: ./providers/4162648423616508953_ipcidr.yaml
-    interval: 86400
-  ChinaCompanyIp (IP-CIDR):
-    type: http
-    behavior: ipcidr
-    url: "https://api.asailor.org/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFDb21wYW55SXAubGlzdA"
-    path: ./providers/2560834305431378741_ipcidr.yaml
-    interval: 86400
+    behavior: classical
+    url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml
+    path: ./providers/2451647452112462632.yaml
+    interval: 28800
