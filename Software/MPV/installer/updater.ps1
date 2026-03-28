@@ -199,17 +199,52 @@ function Get-Arch {
     $result
 }
 
+function Get-RegexGroupValue($Text, [string[]]$Patterns, $GroupName) {
+    if ([string]::IsNullOrEmpty([string]$Text)) {
+        return $null
+    }
+
+    foreach ($pattern in $Patterns) {
+        $match = [regex]::Match([string]$Text, $pattern)
+        if ($match.Success) {
+            $group = $match.Groups[$GroupName]
+            if ($group -and -not [string]::IsNullOrEmpty($group.Value)) {
+                return $group.Value
+            }
+        }
+    }
+
+    return $null
+}
+
+function Test-CommitEquivalent($Left, $Right) {
+    if ([string]::IsNullOrEmpty($Left) -or [string]::IsNullOrEmpty($Right)) {
+        return $false
+    }
+
+    $shorter = [string]$Left
+    $longer = [string]$Right
+    if ($shorter.Length -gt $longer.Length) {
+        $shorter = [string]$Right
+        $longer = [string]$Left
+    }
+
+    return $longer.StartsWith($shorter, [System.StringComparison]::OrdinalIgnoreCase)
+}
+
 function ExtractGitFromFile {
     $stripped = .\mpv --no-config | select-string "mpv" | select-object -First 1
-    $pattern = "-g([a-z0-9-]{7})"
-    $bool = $stripped -match $pattern
-    return $matches[1]
+    $patterns = @(
+        "-g(?<commit>[0-9A-Fa-f]{7,40})(?=[^0-9A-Fa-f]|$)"
+    )
+    return Get-RegexGroupValue $stripped $patterns "commit"
 }
 
 function ExtractGitFromURL($filename) {
-    $pattern = "-git-([a-z0-9-]{7})"
-    $bool = $filename -match $pattern
-    return $matches[1]
+    $patterns = @(
+        "-git-(?<commit>[0-9A-Fa-f]{7,40})(?=[^0-9A-Fa-f]|$)"
+    )
+    return Get-RegexGroupValue $filename $patterns "commit"
 }
 
 function ExtractDateFromFile {
@@ -221,9 +256,10 @@ function ExtractDateFromFile {
 }
 
 function ExtractDateFromURL($filename) {
-    $pattern = "mpv-[xi864_].*-([0-9]{8})-git-([a-z0-9-]{7})"
-    $bool = $filename -match $pattern
-    return $matches[1]
+    $patterns = @(
+        "-(?<date>[0-9]{8})-git-[0-9A-Fa-f]{7,40}(?=[^0-9A-Fa-f]|$)"
+    )
+    return Get-RegexGroupValue $filename $patterns "date"
 }
 
 function Ensure-Deno([string]$Context = "update") {
@@ -491,10 +527,12 @@ function Upgrade-Mpv {
         $localdate = ExtractDateFromFile
         $remotegit = ExtractGitFromURL $remoteName
         $remotedate = ExtractDateFromURL $remoteName
-        if ($localgit -match $remotegit)
-        {
-            if ($localdate -match $remotedate)
-            {
+        if ([string]::IsNullOrEmpty($localgit) -or [string]::IsNullOrEmpty($remotegit) -or [string]::IsNullOrEmpty($localdate) -or [string]::IsNullOrEmpty($remotedate)) {
+            Write-Host "Unable to compare local and remote mpv build metadata. Downloading latest build." -ForegroundColor Yellow
+            $need_download = $true
+        }
+        elseif (Test-CommitEquivalent $localgit $remotegit) {
+            if ($localdate -eq $remotedate) {
                 Write-Host "You are already using latest mpv build -- $remoteName" -ForegroundColor Green
                 $need_download = $false
             }
@@ -609,16 +647,21 @@ function Upgrade-FFmpeg {
 
     if ($ffmpeg_exist) {
         $ffmpeg_file = .\ffmpeg -version | select-string "ffmpeg" | select-object -First 1
-        $file_pattern_1 = "git-[0-9]{4}-[0-9]{2}-[0-9]{2}-(?<commit>[a-z0-9]+)" # git-2023-01-02-cc2b1a325
-        $file_pattern_2 = "N-\d+-g(?<commit>[a-z0-9]+)"                         # N-109751-g9a820ec8b
-        $file_pattern = $file_pattern_1, $file_pattern_2 -join '|'
-        $url_pattern = "git-([a-z0-9]+)"
-        $file_match= [Regex]::Matches($ffmpeg_file, $file_pattern)
-        $remote_match = [Regex]::Matches($remote_name, $url_pattern)
-        $local_git = $file_match[0].groups['commit'].value
-        $remote_git = $remote_match[0].groups[1].value
+        $file_patterns = @(
+            "git-[0-9]{4}-[0-9]{2}-[0-9]{2}-(?<commit>[0-9A-Fa-f]{7,40})(?=[^0-9A-Fa-f]|$)",
+            "N-\d+-g(?<commit>[0-9A-Fa-f]{7,40})(?=[^0-9A-Fa-f]|$)"
+        )
+        $url_patterns = @(
+            "-git-(?<commit>[0-9A-Fa-f]{7,40})(?=[^0-9A-Fa-f]|$)"
+        )
+        $local_git = Get-RegexGroupValue $ffmpeg_file $file_patterns "commit"
+        $remote_git = Get-RegexGroupValue $remote_name $url_patterns "commit"
 
-        if ($local_git -match $remote_git) {
+        if ([string]::IsNullOrEmpty($local_git) -or [string]::IsNullOrEmpty($remote_git)) {
+            Write-Host "Unable to compare local and remote ffmpeg build metadata. Downloading latest build." -ForegroundColor Yellow
+            $need_download = $true
+        }
+        elseif (Test-CommitEquivalent $local_git $remote_git) {
             Write-Host "You are already using latest ffmpeg build -- $remote_name" -ForegroundColor Green
             $need_download = $false
         }

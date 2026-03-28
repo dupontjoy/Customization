@@ -25,7 +25,7 @@ set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 call :testGHmirror
 call :updating_uc
 call :updating_flashgot
-call :updating_customCSS
+:: call :updating_customCSS
 call :updating_runfirefox
 call :end
 goto :eof
