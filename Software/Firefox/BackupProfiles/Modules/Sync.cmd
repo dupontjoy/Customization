@@ -44,6 +44,9 @@ rd /s /q "C:\ProgramData\Nutstore\logs"
 :anytxt
 robocopy "C:\ProgramData\Anytxt\config" "%OutputDir%\Customization\Software\Anytxt\config" /MIR /ZB /R:3 /W:5
 
+:bleachbit
+xcopy "%BackupDir%\..\..\Software\BleachBit-Portable\BleachBit.ini" "%OutputDir%\Customization\Software\BleachBit\" /y
+
 :cangjie5
 ::复制文件夹時，源文件夹不要带斜杠，目标文件夹带斜杠。末尾写/s /y /i
 ::复制文件時，末尾写/y
