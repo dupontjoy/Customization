@@ -14,6 +14,7 @@
 // 4.Support window.userChrome_js.loadOverlay(overlay [,observer]) <--- not work in recent Firefox
 // Modified by Alice0775
 //
+// @version       2026/03/01 Bug 2017957 - Add freezeBuiltins option to Cu.Sandbox
 // @version       2025/08/30 Fallback to only load mjs with chrome://
 // @version       2025/06/16 Bug 1968479 - Only allow eval (with system principal / in the parent) when an explicit pref is set
 // @version       2025/05/11 fix extended property flag(enumerable)
@@ -605,6 +606,7 @@
             target = new Cu.Sandbox(win, {
                 sandboxPrototype: win,
                 sameZoneAs: win,
+                freezeBuiltins: false,
             });
 
             // 兼容 ucf setUnloadMap

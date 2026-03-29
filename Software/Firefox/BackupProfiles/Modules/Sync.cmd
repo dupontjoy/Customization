@@ -124,6 +124,7 @@ xcopy "%BackupDir%\..\..\..\LocalSend\updateLocalSend.cmd" "%OutputDir%\Customiz
 
 :LXmusicDesktop
 xcopy "%BackupDir%\..\..\..\lx-music-desktop\updateLXmusicDesktop.cmd" "%OutputDir%\Customization\Software\LXmusic\" /y
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas\config_v2.json" "%OutputDir%\Customization\Software\LXmusic\LxDatas\" /y
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas\lx.data.db" "%OutputDir%\Customization\Software\LXmusic\LxDatas\" /y
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas\user_api.json" "%OutputDir%\Customization\Software\LXmusic\LxDatas\" /y
 
