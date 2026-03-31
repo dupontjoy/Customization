@@ -1,4 +1,4 @@
-::2026.01.17
+::2026.03.31
 ::注意換行符必须是：windows（CR+LF）
 
 Title 备份文件到托管网站
@@ -39,13 +39,15 @@ rd /s /q "C:\ProgramData\Anytxt\log"
 rd /s /q "C:\ProgramData\Winhance\Logs"
 rd /s /q "C:\ProgramData\Thunder Network\Logs"
 rd /s /q "C:\ProgramData\Nutstore\logs"
+rd /s /q "%BackupDir%\..\..\Software\v2rayN\guiLogs"
+rd /s /q "%BackupDir%\..\..\Software\ImageGlass\ThumbnailsCache"
+
+::删除pixpin自动保存的贴图
+rd /s /q "%BackupDir%\..\..\Software\PixPin\Data"
 
 
 :anytxt
 robocopy "C:\ProgramData\Anytxt\config" "%OutputDir%\Customization\Software\Anytxt\config" /MIR /ZB /R:3 /W:5
-
-:bleachbit
-xcopy "%BackupDir%\..\..\Software\BleachBit-Portable\BleachBit.ini" "%OutputDir%\Customization\Software\BleachBit\" /y
 
 :cangjie5
 ::复制文件夹時，源文件夹不要带斜杠，目标文件夹带斜杠。末尾写/s /y /i
@@ -187,7 +189,7 @@ xcopy "%BackupDir%\..\..\Software\TrafficMonitor\config.json" "%OutputDir%\Custo
 xcopy "%BackupDir%\..\..\Software\TrafficMonitor\global_cfg.ini" "%OutputDir%\Customization\Software\TrafficMonitor\" /y
 
 :v2rayN（VRN）
-robocopy "%BackupDir%\..\..\Software\v2rayN\binConfigs" "%OutputDir%\Customization\Software\VRN\binConfigs" /MIR /ZB /R:3 /W:5
+robocopy "%BackupDir%\..\..\Software\v2rayN\guiConfigs" "%OutputDir%\Customization\Software\VRN\guiConfigs" /MIR /ZB /R:3 /W:5
 
 :Win设置
 xcopy "%SoftDir%\Microsoft\NewPC-Tools\SoftSettingsRecover.cmd" "%OutputDir%\Customization\Software\Win系统设置\" /y

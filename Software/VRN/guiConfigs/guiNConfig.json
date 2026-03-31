@@ -1,0 +1,340 @@
+{
+  "IndexId": "5219191116531772010",
+  "SubIndexId": "5752818030347987204",
+  "CoreBasicItem": {
+    "LogEnabled": false,
+    "Loglevel": "warning",
+    "MuxEnabled": false,
+    "DefAllowInsecure": false,
+    "DefFingerprint": "chrome",
+    "DefUserAgent": null,
+    "EnableFragment": true,
+    "EnableCacheFile4Sbox": true
+  },
+  "TunModeItem": {
+    "EnableTun": false,
+    "AutoRoute": true,
+    "StrictRoute": true,
+    "Stack": null,
+    "Mtu": 9000,
+    "EnableIPv6Address": false
+  },
+  "KcpItem": {
+    "Mtu": 1350,
+    "Tti": 50,
+    "UplinkCapacity": 12,
+    "DownlinkCapacity": 100,
+    "Congestion": false,
+    "ReadBufferSize": 2,
+    "WriteBufferSize": 2
+  },
+  "GrpcItem": {
+    "IdleTimeout": 60,
+    "HealthCheckTimeout": 20,
+    "PermitWithoutStream": false,
+    "InitialWindowsSize": 0
+  },
+  "RoutingBasicItem": {
+    "DomainStrategy": "AsIs",
+    "DomainStrategy4Singbox": null,
+    "RoutingIndexId": null
+  },
+  "GuiItem": {
+    "AutoRun": false,
+    "EnableStatistics": false,
+    "DisplayRealTimeSpeed": false,
+    "KeepOlderDedupl": false,
+    "AutoUpdateInterval": 0,
+    "TrayMenuServersLimit": 20,
+    "EnableHWA": false,
+    "EnableLog": true
+  },
+  "MsgUIItem": {
+    "MainMsgFilter": "",
+    "AutoRefresh": true
+  },
+  "UiItem": {
+    "EnableAutoAdjustMainLvColWidth": false,
+    "MainGirdHeight1": 231,
+    "MainGirdHeight2": 230,
+    "MainGirdOrientation": 1,
+    "ColorPrimaryName": null,
+    "CurrentTheme": null,
+    "CurrentLanguage": "zh-Hans",
+    "CurrentFontFamily": null,
+    "CurrentFontSize": 0,
+    "EnableDragDropSort": false,
+    "DoubleClick2Activate": false,
+    "AutoHideStartup": false,
+    "Hide2TrayWhenClose": false,
+    "MacOSShowInDock": false,
+    "MainColumnItem": [
+      {
+        "Name": "ConfigType",
+        "Width": 80,
+        "Index": 0
+      },
+      {
+        "Name": "Remarks",
+        "Width": 150,
+        "Index": 1
+      },
+      {
+        "Name": "Address",
+        "Width": 120,
+        "Index": 2
+      },
+      {
+        "Name": "Port",
+        "Width": 60,
+        "Index": 3
+      },
+      {
+        "Name": "Network",
+        "Width": 100,
+        "Index": 4
+      },
+      {
+        "Name": "StreamSecurity",
+        "Width": 100,
+        "Index": 5
+      },
+      {
+        "Name": "SubRemarks",
+        "Width": 100,
+        "Index": 6
+      },
+      {
+        "Name": "DelayVal",
+        "Width": 100,
+        "Index": 7
+      },
+      {
+        "Name": "SpeedVal",
+        "Width": 100,
+        "Index": 8
+      },
+      {
+        "Name": "TodayUp",
+        "Width": -1,
+        "Index": 9
+      },
+      {
+        "Name": "TodayDown",
+        "Width": -1,
+        "Index": 10
+      },
+      {
+        "Name": "TotalUp",
+        "Width": -1,
+        "Index": 11
+      },
+      {
+        "Name": "TotalDown",
+        "Width": -1,
+        "Index": 12
+      }
+    ],
+    "WindowSizeItem": [
+      {
+        "TypeName": "SubEditWindow",
+        "Width": 700,
+        "Height": 650
+      },
+      {
+        "TypeName": "SubSettingWindow",
+        "Width": 1000,
+        "Height": 645
+      },
+      {
+        "TypeName": "MainWindow",
+        "Width": 1050,
+        "Height": 583
+      },
+      {
+        "TypeName": "AddServerWindow",
+        "Width": 900,
+        "Height": 700
+      },
+      {
+        "TypeName": "OptionSettingWindow",
+        "Width": 1000,
+        "Height": 600
+      },
+      {
+        "TypeName": "AddGroupServerWindow",
+        "Width": 900,
+        "Height": 700
+      },
+      {
+        "TypeName": "FullConfigTemplateWindow",
+        "Width": 900,
+        "Height": 600
+      },
+      {
+        "TypeName": "ProfilesSelectWindow",
+        "Width": 800,
+        "Height": 450
+      },
+      {
+        "TypeName": "DNSSettingWindow",
+        "Width": 900,
+        "Height": 600
+      }
+    ]
+  },
+  "ConstItem": {
+    "SubConvertUrl": null,
+    "GeoSourceUrl": null,
+    "SrsSourceUrl": null,
+    "RouteRulesTemplateSourceUrl": null
+  },
+  "SpeedTestItem": {
+    "SpeedTestTimeout": 10,
+    "SpeedTestUrl": "https://cachefly.cachefly.net/50mb.test",
+    "SpeedPingTestUrl": "https://www.google.com/generate_204",
+    "MixedConcurrencyCount": 5,
+    "IPAPIUrl": null
+  },
+  "Mux4RayItem": {
+    "Concurrency": 8,
+    "XudpConcurrency": 16,
+    "XudpProxyUDP443": "reject"
+  },
+  "Mux4SboxItem": {
+    "Protocol": "h2mux",
+    "MaxConnections": 8,
+    "Padding": null
+  },
+  "HysteriaItem": {
+    "UpMbps": 100,
+    "DownMbps": 100,
+    "HopInterval": 30
+  },
+  "ClashUIItem": {
+    "RuleMode": 0,
+    "EnableIPv6": false,
+    "EnableMixinContent": false,
+    "ProxiesSorting": 0,
+    "ProxiesAutoRefresh": false,
+    "ProxiesAutoDelayTestInterval": 10,
+    "ConnectionsAutoRefresh": false,
+    "ConnectionsRefreshInterval": 2,
+    "ConnectionsColumnItem": []
+  },
+  "SystemProxyItem": {
+    "SysProxyType": 0,
+    "SystemProxyExceptions": "localhost;127.*;10.*;172.16.*;172.17.*;172.18.*;172.19.*;172.20.*;172.21.*;172.22.*;172.23.*;172.24.*;172.25.*;172.26.*;172.27.*;172.28.*;172.29.*;172.30.*;172.31.*;192.168.*",
+    "NotProxyLocalAddress": true,
+    "SystemProxyAdvancedProtocol": null,
+    "CustomSystemProxyPacPath": null,
+    "CustomSystemProxyScriptPath": null
+  },
+  "WebDavItem": {
+    "Url": null,
+    "UserName": null,
+    "Password": null,
+    "DirName": null
+  },
+  "CheckUpdateItem": {
+    "CheckPreReleaseUpdate": false,
+    "SelectedCoreTypes": [
+      "v2rayN",
+      "Xray"
+    ]
+  },
+  "Fragment4RayItem": {
+    "Packets": "tlshello",
+    "Length": "100-200",
+    "Interval": "10-20"
+  },
+  "Inbound": [
+    {
+      "LocalPort": 10808,
+      "Protocol": "socks",
+      "UdpEnabled": true,
+      "SniffingEnabled": true,
+      "DestOverride": [
+        "http",
+        "tls"
+      ],
+      "RouteOnly": false,
+      "AllowLANConn": false,
+      "NewPort4LAN": false,
+      "User": null,
+      "Pass": null,
+      "SecondLocalPortEnabled": false
+    }
+  ],
+  "GlobalHotkeys": [],
+  "CoreTypeItem": [
+    {
+      "ConfigType": 1,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 2,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 3,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 4,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 5,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 6,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 7,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 8,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 9,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 10,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 11,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 101,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 102,
+      "CoreType": 2
+    }
+  ],
+  "SimpleDNSItem": {
+    "UseSystemHosts": false,
+    "AddCommonHosts": true,
+    "FakeIP": false,
+    "GlobalFakeIp": true,
+    "BlockBindingQuery": true,
+    "DirectDNS": "https://dns.alidns.com/dns-query",
+    "RemoteDNS": "https://cloudflare-dns.com/dns-query",
+    "BootstrapDNS": "223.5.5.5",
+    "Strategy4Freedom": null,
+    "Strategy4Proxy": null,
+    "ServeStale": false,
+    "ParallelQuery": false,
+    "Hosts": null,
+    "DirectExpectedIPs": null
+  }
+}
