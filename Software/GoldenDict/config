@@ -87,7 +87,7 @@
  <dictionariesToReindex/>
  <preferences>
   <interfaceLanguage>zh_CN</interfaceLanguage>
-  <interfaceFont>Microsoft YaHei</interfaceFont>
+  <interfaceFont>微软雅黑</interfaceFont>
   <interfaceFontSize_0>12</interfaceFontSize_0>
   <enableInterfaceFont>0</enableInterfaceFont>
   <customFonts monospace="Courier New" sans-serif="Arial" serif="Arial" standard="Arial"/>
@@ -156,7 +156,7 @@
   <maxStringsInHistory>20</maxStringsInHistory>
   <storeHistory>1</storeHistory>
   <alwaysExpandOptionalParts>1</alwaysExpandOptionalParts>
-  <addonStyle></addonStyle>
+  <addonStyle>无</addonStyle>
   <collapseBigArticles>0</collapseBigArticles>
   <articleSizeLimit>2000</articleSizeLimit>
   <limitInputPhraseLength>0</limitInputPhraseLength>

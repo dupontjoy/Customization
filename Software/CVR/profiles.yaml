@@ -43,9 +43,11 @@ items:
   file: RwtvUmvfZOzw.yaml
   desc: ''
   url: https://163cfn.232885.xyz/163cfn/sub?target=clash
-  updated: 1774964693
+  updated: 1775087855
   option:
-    update_interval: 59
+    with_proxy: false
+    self_proxy: false
+    update_interval: 480
     allow_auto_update: true
     merge: m5FlUYCHmOcV
     script: sTmWGNwlZBB0
@@ -59,15 +61,15 @@ items:
   desc: ''
   url: https://163cml.232885.xyz/sub?token=c29f123519010e0895bf91e6b6abefba
   extra:
-    upload: 7585673351118
-    download: 7585673351118
+    upload: 13172217714813
+    download: 13172217714813
     total: 26388279066624
     expire: 4102329600
-  updated: 1774964880
+  updated: 1775087861
   option:
     with_proxy: false
     self_proxy: false
-    update_interval: 60
+    update_interval: 480
     allow_auto_update: true
     merge: mDB8CvPwNY8Q
     script: slAr2g0kOyN4
@@ -81,11 +83,11 @@ items:
   file: RwWmv60H3j0A.yaml
   desc: ''
   url: https://88cfn.dupontjoy.shop/88cfn/sub?target=clash
-  updated: 1774964874
+  updated: 1775087856
   option:
     with_proxy: false
     self_proxy: false
-    update_interval: 60
+    update_interval: 480
     allow_auto_update: true
     merge: mSbivow0g7K3
     script: sVDw9jWjaXif
@@ -127,17 +129,17 @@ items:
   - name: ♻️ 自动选择
     now: 2026-01-23_00:58:55_ip.164746.xyz 4
   - name: 🚀 节点选择
-    now: ♻️ 自动选择
+    now: 172.64.151.21
   extra:
-    upload: 7585596538014
-    download: 7585596538014
+    upload: 13172117384377
+    download: 13172117384377
     total: 26388279066624
     expire: 4102329600
-  updated: 1774964877
+  updated: 1775087859
   option:
     with_proxy: false
     self_proxy: false
-    update_interval: 60
+    update_interval: 480
     allow_auto_update: true
     merge: mdGxnSKEKjUn
     script: s4sNF3Pn0FC9
@@ -201,7 +203,7 @@ items:
   file: RkC6ZKw3xEgi.yaml
   desc: ''
   url: https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/quick/1/config.yaml
-  updated: 1774964871
+  updated: 1775095636
   option:
     with_proxy: false
     self_proxy: false
