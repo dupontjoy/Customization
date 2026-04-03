@@ -25,12 +25,12 @@ xcopy "%SettingsDir%\Customization\Software\CVR\verge.yaml" "C:\Users\%USERNAME%
 :gitextension
 xcopy "%SettingsDir%\Customization\Software\GitExtensions\.gitconfig" "C:\Users\%USERNAME%\" /y
 
-:imFile
-xcopy "%OutputDir%\Customization\Software\imFile\user.json" "C:\Users\%USERNAME%\AppData\Roaming\imFile\" /y
-xcopy "%OutputDir%\Customization\Software\imFile\system.json" "C:\Users\%USERNAME%\AppData\Roaming\imFile\" /y
-
 :LXmusicDesktop
 robocopy "%SettingsDir%\Customization\Software\LXmusic\LxDatas" "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" /MIR /ZB /R:3 /W:5
+
+:MotrixNext
+xcopy "%OutputDir%\Customization\Software\MotrixNext\config.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
+xcopy "%OutputDir%\Customization\Software\MotrixNext\system.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
 
 :zlib
 ::zlibø…”√”Ú√˚

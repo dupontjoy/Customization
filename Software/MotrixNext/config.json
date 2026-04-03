@@ -51,7 +51,7 @@
     "maxOverallDownloadLimit": "0",
     "maxOverallUploadLimit": "0",
     "maxUploadLimit": "",
-    "minimizeToTrayOnClose": false,
+    "minimizeToTrayOnClose": true,
     "newTaskShowDownloading": true,
     "noConfirmBeforeDeleteTask": false,
     "openAtLogin": false,
@@ -62,7 +62,7 @@
     },
     "proxy": {
       "bypass": "",
-      "enable": true,
+      "enable": false,
       "scope": [
         "download",
         "update-app",
