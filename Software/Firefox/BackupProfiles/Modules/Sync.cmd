@@ -135,6 +135,10 @@ xcopy "%BackupDir%\..\..\..\MAA\RunMAA.cmd" "%OutputDir%\Customization\Software\
 xcopy "%BackupDir%\..\..\..\MAA\updateMaaResource.cmd" "%OutputDir%\Customization\Software\MAA\" /y
 xcopy "%BackupDir%\..\..\..\MAA\config\gui.json" "%OutputDir%\Customization\Software\MAA\" /y
 
+:MotrixNext
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\config.json" "%OutputDir%\Customization\Software\MotrixNext\" /y
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\system.json" "%OutputDir%\Customization\Software\MotrixNext\" /y
+
 :MPV
 robocopy "%BackupDir%\..\..\Software\MPV\installer" "%OutputDir%\Customization\Software\MPV\installer" /MIR /ZB /R:3 /W:5
 robocopy "%BackupDir%\..\..\Software\MPV\portable_config" "%OutputDir%\Customization\Software\MPV\portable_config" /MIR /ZB /R:3 /W:5

@@ -1,0 +1,105 @@
+{
+  "preferences": {
+    "autoCheckUpdate": true,
+    "autoCheckUpdateInterval": 24,
+    "autoDeleteStaleRecords": false,
+    "autoHideWindow": false,
+    "autoSyncTracker": true,
+    "btForceEncryption": false,
+    "btLoadSavedMetadata": true,
+    "btMaxPeers": 128,
+    "btSaveMetadata": true,
+    "btTracker": "udp://tracker.opentrackr.org:1337/announce,udp://open.stealth.si:80/announce,udp://utracker.ghostchu-services.top:6969/announce,udp://tracker.tryhackx.org:6969/announce,udp://tracker.theoks.net:6969/announce,udp://tracker.srv00.com:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.gmi.gd:6969/announce,udp://tracker.filemail.com:6969/announce,udp://tracker.darkness.services:6969/announce,udp://tracker.004430.xyz:1337/announce,udp://tracker-udp.gbitt.info:80/announce,udp://tr4ck3r.duckdns.org:6969/announce,udp://seedpeer.net:6969/announce,udp://martin-gebhardt.eu:25/announce,udp://ipv4announce.sktorrent.eu:6969/announce,udp://exodus.desync.com:6969/announce,udp://evan.im:6969/announce,udp://d40969.acod.regrucolo.ru:6969/announce,udp://bittorrent-tracker.e-n-c-r-y-p-t.net:1337/announce,udp://93.158.213.92:1337/announce,udp://185.243.218.213:80/announce,udp://135.125.236.64:6969/announce,udp://209.141.59.16:6969/announce,udp://91.186.213.204:6969/announce,udp://43.250.54.137:6969/announce,udp://209.141.59.25:6969/announce,udp://52.58.128.163:6969/announce,udp://185.146.233.150:6969/announce,udp://2.57.214.218:6969/announce,udp://185.216.179.62:25/announce,udp://94.23.207.177:6969/announce,udp://208.83.20.20:6969/announce,udp://74.119.149.136:6969/announce,udp://176.99.7.59:6969/announce,udp://103.251.166.126:6969/announce,http://44.30.4.4:6969/announce,http://216.144.239.90:6969/announce,http://167.253.78.20:8080/announce,http://95.217.167.10:6969/announce",
+    "clearCompletedOnExit": false,
+    "clipboard": {
+      "btHash": true,
+      "enable": true,
+      "ftp": true,
+      "http": true,
+      "magnet": true,
+      "thunder": true
+    },
+    "colorScheme": "amber",
+    "configVersion": 2,
+    "continue": true,
+    "cookie": "",
+    "customTrackerUrls": [],
+    "dbSchemaVersion": 2,
+    "deleteTorrentAfterComplete": false,
+    "dhtListenPort": 26701,
+    "dir": "E:\\Download",
+    "dockBadgeSpeed": true,
+    "enableUpnp": true,
+    "engineBinPath": "",
+    "favoriteDirectories": [],
+    "followMetalink": false,
+    "followTorrent": false,
+    "forceSave": true,
+    "hardwareRendering": true,
+    "hideDockOnMinimize": false,
+    "historyDirectories": [],
+    "keepSeeding": false,
+    "keepWindowState": false,
+    "lastCheckUpdateTime": 1775207659900,
+    "lastSyncTrackerTime": 1775207658105,
+    "listenPort": 21301,
+    "locale": "zh-CN",
+    "logLevel": "debug",
+    "maxConcurrentDownloads": 5,
+    "maxConnectionPerServer": 64,
+    "maxDownloadLimit": "",
+    "maxOverallDownloadLimit": "0",
+    "maxOverallUploadLimit": "0",
+    "maxUploadLimit": "",
+    "minimizeToTrayOnClose": false,
+    "newTaskShowDownloading": true,
+    "noConfirmBeforeDeleteTask": false,
+    "openAtLogin": false,
+    "pauseMetadata": true,
+    "protocols": {
+      "magnet": false,
+      "thunder": false
+    },
+    "proxy": {
+      "bypass": "",
+      "enable": true,
+      "scope": [
+        "download",
+        "update-app",
+        "update-trackers"
+      ],
+      "server": "http://127.0.0.1:7897"
+    },
+    "resumeAllWhenAppLaunched": false,
+    "rpcListenPort": 16800,
+    "rpcSecret": "",
+    "runMode": "",
+    "seedRatio": 2,
+    "seedTime": 2880,
+    "showProgressBar": true,
+    "split": 64,
+    "taskNotification": true,
+    "taskSort": {
+      "active": {
+        "direction": "desc",
+        "field": "added-at"
+      },
+      "all": {
+        "direction": "desc",
+        "field": "added-at"
+      },
+      "stopped": {
+        "direction": "desc",
+        "field": "added-at"
+      }
+    },
+    "theme": "auto",
+    "trackerSource": [
+      "https://cdn.jsdelivr.net/gh/ngosang/trackerslist/trackers_best.txt",
+      "https://cdn.jsdelivr.net/gh/ngosang/trackerslist/trackers_best_ip.txt"
+    ],
+    "traySpeedometer": false,
+    "updateChannel": "stable",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+  }
+}
