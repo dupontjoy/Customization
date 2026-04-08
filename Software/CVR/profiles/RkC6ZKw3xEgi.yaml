@@ -14,12 +14,17 @@ dns:
       - 0.0.0.0/32
 proxies:
   - name: github.com/Alvin9999-newpac/fanqiang  
-    type: mieru
     server: 151.242.183.103
-    port: 23014
-    transport: TCP
-    username: tcp_3flnfpno
-    password: A4Hv3H5yb8meP1MN                 
+    port: 1188
+    type: tuic
+    uuid: e473c549-4737-4236-8f6b-6840fd22a9d9
+    password: dongtaiwang.com
+    sni: www.microsoft.com
+    alpn: [h3]
+    request-timeout: 8000
+    udp-relay-mode: native
+    skip-cert-verify: true
+    congestion-controller: bbr             
   - name: github.com/Alvin9999-newpac/fanqiang/wiki                     
     server: 5.178.101.117
     port: 30006

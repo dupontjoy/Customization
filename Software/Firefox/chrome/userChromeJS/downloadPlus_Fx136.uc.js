@@ -12,7 +12,7 @@ FlashGot.exe 下载：https://github.com/benzBrake/Firefox-downloadPlus.uc.js/re
 userChromeJS.downloadPlus.flashgotDownloadManagers 下载器列表缓存（一般不需要修改)
 userChromeJS.downloadPlus.flashgotDefaultManager 默认第三方下载器（一般不需要修改）
 userChromeJS.downloadPlus.enableRename 下载对话框启用改名功能
-userChromeJS.downloadPlus.enableEncodeConvert 启用编码转换，如果userChromeJS.lus.enableRename没开启，这个选项无效
+userChromeJS.downloadPlus.enableEncodeConvert 启用编码转换，如果userChromeJS.downloadPlus.enableRename没开启，这个选项无效
 userChromeJS.downloadPlus.enableDoubleClickToCopyLink 下载对话框双击复制链接
 userChromeJS.downloadPlus.enableCopyLinkButton 下载对话框启用复制链接按钮
 userChromeJS.downloadPlus.enableDoubleClickToSave 双击保存
@@ -21,6 +21,7 @@ userChromeJS.downloadPlus.enableSaveAs 下载对话框启用另存为
 userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 */
+// @note            20260406 新增 hook promptForSaveToFileAsync 自动转交 FlashGot，修复 FlashGot/Grabby cookie 格式错误并按请求过滤可用 cookie，补充 cookie 收集调试日志
 // @note            20260330 修复 createEl 对布尔属性处理不正确导致 selected/default/checked 等状态异常，并关闭默认调试日志，修复右键菜单图标异常
 // @note            20260226 修复下载器名称读取存在\r导致可能出现问题
 // @note            20260118 改进文件操作大部分使用 IOUtils, 增加链接黑名单防止错误调用外部下载器，完成部分兼容新版 FlashGot 的代码（功能暂时无效）
@@ -46,6 +47,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 // @include         about:downloads
 // @version         1.0.5
 // @compatibility   Firefox 139
+// @icon            data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABd0lEQVQ4T5WTv0/CQBzFXy22Axh+NHXqYJjAYggd2JTYNrK5OTg5GTf/Dv0jHEjUzdnEUHbD1KQaEwYTnAwlhiiIxub0jvCjFCjeeN/3Pn33eschZFWrVZJOpxGPxyFJEjctD2xMCqjZMIzRluu6kGXZ5wkAqIk6kskkNE3zfZAC6JqE+ADUXCqVwPM8E3JcMCAhBO12ewQZKai5UCgglUotbGUIGCZhgOmzhhXreR4sy0K5XB5kpABd18N8vnmtVoNpmmNAPp//F8C27TGgXq+z5judzlKQSCQCVVVZkb6aHxyHCKKIt/MDH+jn2cF334N7coGsVmQzNZdj3sB/sg6zRFeaTETWFHitBj5egNezR2QymfCb2DJBEtkV8OuDEA2bYOOqD1EUZ97awGav1yPvR1HIO38Jvjh8OgTN03tsasXlALdGjOzud7EaA+6uo9iqPEFRlLlvJjCggL3jLtwbIHE5P/qw5Zkl0uF2xYYgCAtfK9X9AmZ+hRG+dHY+AAAAAElFTkSuQmCC
 // @homepageURL     https://github.com/benzBrake/FirefoxCustomize
 // ==/UserScript==
 (async function (globalCSS, placesCSS, unknownContentCSS) {
@@ -76,6 +78,13 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             // URL 类型相关
             "unsupported url for external downloader": "此 URL 类型不支持外部下载器",
             "url not supported reason": "此 URL 不支持外部下载器：%s",
+            "unsupported reason blob url": "Blob URL（浏览器内存数据）",
+            "unsupported reason data url": "Data URL（内联数据）",
+            "unsupported reason internal page": "浏览器内部页面",
+            "unsupported reason local file": "本地文件",
+            "unsupported reason special protocol": "特殊协议链接",
+            "unsupported reason xpi file": "XPI 扩展文件（需浏览器安装）",
+            "unsupported reason xpinstall": "扩展安装链接",
 
             // 文件操作
             "file not found": "文件不存在：%s",
@@ -105,6 +114,40 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             // 通用
             "app name": "DownloadPlus",
             "error": "错误",
+
+            // 日志
+            "log init flashgot integration": "DownloadPlus: 尝试初始化 FlashGot 集成",
+            "log initialization completed": "初始化完成",
+            "log helperappdlg import failed": "导入 HelperAppDlg.sys.mjs 失败，尝试从组件实例读取",
+            "log helperappdlg read failed": "读取 helperAppLauncherDialog 组件失败",
+            "log prompt hook missing": "未找到 promptForSaveToFileAsync，跳过 hook",
+            "log prompt already handled": "promptForSaveToFileAsync 已处理过当前 launcher，回退原始逻辑",
+            "log cannot build flashgot options": "无法构建 FlashGot 参数，回退原始保存流程",
+            "log launcher source missing": "launcher.source 不存在，回退原始保存流程",
+            "log prompt delegated to flashgot": "拦截 promptForSaveToFileAsync，转交 FlashGot",
+            "log flashgot handled": "FlashGot 接管成功，取消 Firefox 原始保存流程",
+            "log flashgot failed": "FlashGot 接管失败，回退原始保存流程",
+            "log prompt hooked": "已 hook promptForSaveToFileAsync",
+            "log helper context browsingcontext failed": "从 helper context 获取 BrowsingContext 失败",
+            "log browsingcontextid failed": "通过 browsingContextId 获取 BrowsingContext 失败",
+            "log init download popup start": "initDownloadPopup 开始",
+            "log init download popup end": "initDownloadPopup 结束",
+            "log localstorage filename read failed": "从 localStorage 读取文件名失败:",
+            "log unsupported url skip flashgot": "URL 不支持外部下载器，跳过 FlashGot 集成",
+            "log exec called": "exec 调用",
+            "log async process observer": "使用异步 processObserver",
+            "log sync execute": "同步执行",
+            "log launch non executable": "非可执行文件，直接 launch",
+            "log reload managers called": "reloadSupportedManagers 调用",
+            "log managers loaded from prefs": "从 prefs 读取下载器列表",
+            "log prefs read failed force rescan": "读取 prefs 失败，强制重新扫描",
+            "log force refresh temp file": "强制刷新，生成临时文件",
+            "log flashgot process finished": "FlashGot.exe 执行完毕，准备读取结果",
+            "log flashgot process failed": "FlashGot.exe 异常结束",
+            "log managers raw result": "读取到下载器列表结果",
+            "log managers parsed": "解析后下载器列表",
+            "log generate dl properties": "生成 .dl.properties 内容",
+            "log write temp file": "写入临时文件",
         },
         format (...args) {
             if (!args.length) {
@@ -215,31 +258,31 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
     const URL_PATTERNS_NOT_SUPPORTED = [
         {
             pattern: /^blob:/i,
-            reason: "Blob URL（浏览器内存数据）"
+            reasonKey: "unsupported reason blob url"
         },
         {
             pattern: /^data:/i,
-            reason: "Data URL（内联数据）"
+            reasonKey: "unsupported reason data url"
         },
         {
             pattern: /^(about|chrome|resource):/i,
-            reason: "浏览器内部页面"
+            reasonKey: "unsupported reason internal page"
         },
         {
             pattern: /^file:/i,
-            reason: "本地文件"
+            reasonKey: "unsupported reason local file"
         },
         {
             pattern: /^(mailto|javascript|view-source):/i,
-            reason: "特殊协议链接"
+            reasonKey: "unsupported reason special protocol"
         },
         {
-            pattern: /\.xpi$/i,
-            reason: "XPI 扩展文件（需浏览器安装）"
+            pattern: /\.xpi(?:$|[?#])/i,
+            reasonKey: "unsupported reason xpi file"
         },
         {
             pattern: /xpinstall/i,
-            reason: "扩展安装链接"
+            reasonKey: "unsupported reason xpinstall"
         }
     ];
 
@@ -298,9 +341,9 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
         const spec = uri.spec;
 
         // 检查是否匹配不支持的 URL 模式
-        for (const { pattern, reason } of URL_PATTERNS_NOT_SUPPORTED) {
+        for (const { pattern, reasonKey } of URL_PATTERNS_NOT_SUPPORTED) {
             if (pattern.test(spec)) {
-                return LANG.format("url not supported reason", reason);
+                return LANG.format("url not supported reason", LANG.format(reasonKey));
             }
         }
 
@@ -335,7 +378,6 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
         PREF_FLASHGOT_PATH: 'userChromeJS.downloadPlus.flashgotPath',
         PREF_DEFAULT_MANAGER: 'userChromeJS.downloadPlus.flashgotDefaultManager',
         PREF_DOWNLOAD_MANAGERS: 'userChromeJS.downloadPlus.flashgotDownloadManagers',
-        PREF_ALWAYS_OPEN_PANEL: 'browser.download.alwaysOpenPanel',
         SAVE_DIRS: [[Services.dirsvc.get('Desk', Ci.nsIFile).path, LANG.format("desktop")], [
             Services.dirsvc.get('DfltDwnld', Ci.nsIFile).path, LANG.format("downloads folder")
         ]],
@@ -398,6 +440,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 sb = Cu.Sandbox(window, {
                     sandboxPrototype: window,
                     sameZoneAs: window,
+                    freezeBuiltins: false
                 });
 
                 /* toSource() is not available in sandbox */
@@ -418,8 +461,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             this.sb = sb;
 
             this.URLS_FOR_OPEN = [];
-            const { PREF_ALWAYS_OPEN_PANEL } = this;
-            const alwaysOpenPanel = getBool(PREF_ALWAYS_OPEN_PANEL, true);
+            this._hookPromptForSaveToFileAsync();
             const downloadView = {
                 onDownloadChanged: function (dl) {
                     if (isTrue('userChromeJS.downloadPlus.enableSaveAndOpen')) {
@@ -433,32 +475,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                             window.DownloadPlus.URLS_FOR_OPEN.splice(index, 1);
                         }
                     }
-                },
-                onDownloadAdded: async function (dl) {
-                    const { DownloadPlus: dp, DownloadsCommon: dc } = window;
-                    if (!isTrue('browser.download.always_ask_before_handling_new_types') && isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention') && dp.FLASHGOT_PATH && dp.DEFAULT_MANAGER && isLinkSupportedByFlashgot(dl.source.url)) {
-                        if (alwaysOpenPanel) {
-                            setBool(PREF_ALWAYS_OPEN_PANEL, false);
-                        }
-                        dp._log("尝试使用 flashgot 下载 " + dl.source.url);
-                        const url = dl.source.url;
-                        const options = {
-                            isPrivate: true
-                        };
-                        const refererUrl = dl.source.referrerInfo.originalReferrer.spec;
-                        if (refererUrl) options.referer = refererUrl;
-                        dp.downloadByManager("", url, options).then(_ => {
-                            dp._log("downloadByManager 成功，准备删除下载任务");
-                            dc.deleteDownloadFiles(dl, 2);
-                            dp._log("deleteDownloadFiles 执行完成");
-                        }).catch((ex) => {
-                            dp._log("flashgot 下载失败: " + ex);
-                        });
-                    }
-                },
-                onDownloadRemoved: function (dl) {
-                    setBool(PREF_ALWAYS_OPEN_PANEL, alwaysOpenPanel);
-                },
+                }
             }
             function addDownloadView (list, view) {
                 const result = list.addView(view);
@@ -483,7 +500,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 });
             }
             if (isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) {
-                console.log("DownloadPlus: 尝试初始化 FlashGot 集成");
+                console.log(LANG.format("log init flashgot integration"));
                 if (!this.FLASHGOT_PATH) return; // flashgot.exe not found
                 this.reloadSupportedManagers();
                 try {
@@ -524,7 +541,187 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 }));
                 contextMenu.insertBefore(downloadPlusMenu, contextMenu.querySelector('#context-media-eme-learnmore ~ menuseparator'));
             }
-            this._log("初始化完成");
+            this._log(LANG.format("log initialization completed"));
+        },
+        _hookPromptForSaveToFileAsync () {
+            if (!isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) return;
+
+            let helperDialogCtor = null;
+            try {
+                helperDialogCtor = ChromeUtils.importESModule(
+                    "resource://gre/modules/HelperAppDlg.sys.mjs"
+                ).nsUnknownContentTypeDialog;
+            } catch (ex) {
+                this._log(LANG.format("log helperappdlg import failed"), ex);
+                try {
+                    helperDialogCtor = Cc["@mozilla.org/helperapplauncherdialog;1"]
+                        .createInstance(Ci.nsIHelperAppLauncherDialog)
+                        .wrappedJSObject?.constructor;
+                } catch (innerEx) {
+                    this._log(LANG.format("log helperappdlg read failed"), innerEx);
+                }
+            }
+
+            const prototype = helperDialogCtor?.prototype;
+            if (!prototype?.promptForSaveToFileAsync) {
+                this._log(LANG.format("log prompt hook missing"));
+                return;
+            }
+
+            if (prototype._downloadPlusOriginalPromptForSaveToFileAsync) {
+                return;
+            }
+
+            prototype._downloadPlusOriginalPromptForSaveToFileAsync = prototype.promptForSaveToFileAsync;
+            prototype.promptForSaveToFileAsync = function (...args) {
+                const [aLauncher, aContext, aDefaultFileName, , aForcePrompt] = args;
+                this.mLauncher = aLauncher;
+                this.mContext = aContext;
+
+                const activeWindow = Services.wm.getMostRecentWindow("navigator:browser");
+                const browserWindow = activeWindow?.DownloadPlus?._getBrowserWindowFromHelperContext?.(aContext)
+                    || activeWindow;
+                const downloadPlus = browserWindow?.DownloadPlus || activeWindow?.DownloadPlus;
+                const original = prototype._downloadPlusOriginalPromptForSaveToFileAsync;
+
+                if (!downloadPlus || !downloadPlus._shouldAutoUseFlashgotForPrompt(aLauncher, aForcePrompt, this)) {
+                    return original.apply(this, args);
+                }
+
+                if (!downloadPlus.AUTO_FLASHGOT_PROMPTS) {
+                    downloadPlus.AUTO_FLASHGOT_PROMPTS = new WeakSet();
+                }
+                if (downloadPlus.AUTO_FLASHGOT_PROMPTS.has(aLauncher)) {
+                    downloadPlus._log(LANG.format("log prompt already handled"));
+                    return original.apply(this, args);
+                }
+
+                const fileName = (aDefaultFileName || aLauncher?.suggestedFileName || '').replace(invalidChars, '_');
+                const options = downloadPlus._buildFlashgotOptionsFromLauncher(aLauncher, aContext, browserWindow, fileName);
+                if (!options) {
+                    downloadPlus._log(LANG.format("log cannot build flashgot options"));
+                    return original.apply(this, args);
+                }
+
+                const sourceSpec = aLauncher?.source?.spec;
+                if (!sourceSpec) {
+                    downloadPlus._log(LANG.format("log launcher source missing"));
+                    return original.apply(this, args);
+                }
+
+                downloadPlus.AUTO_FLASHGOT_PROMPTS.add(aLauncher);
+                downloadPlus._log(LANG.format("log prompt delegated to flashgot"), {
+                    url: sourceSpec,
+                    fileName,
+                    aForcePrompt,
+                });
+
+                Promise.resolve(downloadPlus.downloadByManager("", sourceSpec, options)).then(() => {
+                    downloadPlus._log(LANG.format("log flashgot handled"));
+                    aLauncher.saveDestinationAvailable(null);
+                }).catch((ex) => {
+                    downloadPlus.AUTO_FLASHGOT_PROMPTS.delete(aLauncher);
+                    downloadPlus._log(LANG.format("log flashgot failed"), ex);
+                    original.apply(this, args);
+                });
+            };
+            this._log(LANG.format("log prompt hooked"));
+        },
+        _shouldAutoUseFlashgotForPrompt (aLauncher, aForcePrompt, helperDialog) {
+            if (helperDialog?.mDialog || aForcePrompt) {
+                return false;
+            }
+            if (!isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) {
+                return false;
+            }
+            if (!this.FLASHGOT_PATH || !this.DEFAULT_MANAGER) {
+                return false;
+            }
+            if (this._shouldPreserveInternalHandlingForLauncher(aLauncher)) {
+                return false;
+            }
+            return Boolean(aLauncher?.source?.spec) && isLinkSupportedByFlashgot(aLauncher.source);
+        },
+        _shouldPreserveInternalHandlingForLauncher (aLauncher) {
+            if (!aLauncher) {
+                return false;
+            }
+
+            const sourceSpec = aLauncher?.source?.spec || "";
+            if (sourceSpec && !isLinkSupportedByFlashgot(sourceSpec)) {
+                return true;
+            }
+
+            const fileName = [
+                aLauncher?.suggestedFileName,
+                aLauncher?.targetFile?.leafName,
+            ].find(Boolean) || "";
+            if (/\.xpi$/i.test(fileName)) {
+                return true;
+            }
+
+            const mimeInfo = aLauncher?.MIMEInfo;
+            const mimeType = (mimeInfo?.MIMEType || mimeInfo?.type || "").toLowerCase();
+            if (mimeType.includes("x-xpinstall") || mimeType.includes("xpinstall")) {
+                return true;
+            }
+
+            const primaryExtension = (mimeInfo?.primaryExtension || "").toLowerCase();
+            return primaryExtension === "xpi";
+        },
+        _getBrowserWindowFromHelperContext (aContext) {
+            try {
+                const docShell = aContext?.getInterface(Ci.nsIDocShell);
+                const topChromeWindow = docShell?.browsingContext?.topChromeWindow;
+                if (topChromeWindow) {
+                    return topChromeWindow;
+                }
+            } catch (ex) { }
+
+            try {
+                const sourceWindow = aContext?.getInterface(Ci.nsIDOMWindow);
+                const topChromeWindow = sourceWindow?.browsingContext?.topChromeWindow;
+                if (topChromeWindow) {
+                    return topChromeWindow;
+                }
+            } catch (ex) { }
+
+            return Services.wm.getMostRecentWindow("navigator:browser");
+        },
+        _getSourceBrowsingContext (aContext, aLauncher) {
+            try {
+                const sourceWindow = aContext?.getInterface(Ci.nsIDOMWindow);
+                if (sourceWindow?.browsingContext) {
+                    return sourceWindow.browsingContext.parent || sourceWindow.browsingContext;
+                }
+            } catch (ex) {
+                this._log(LANG.format("log helper context browsingcontext failed"), ex);
+            }
+
+            try {
+                const sourceContext = globalThis.BrowsingContext?.get?.(aLauncher?.browsingContextId);
+                if (sourceContext) {
+                    return sourceContext.parent || sourceContext;
+                }
+            } catch (ex) {
+                this._log(LANG.format("log browsingcontextid failed"), ex);
+            }
+
+            return null;
+        },
+        _buildFlashgotOptionsFromLauncher (aLauncher, aContext, browserWindow, fileName = '') {
+            const sourceContext = this._getSourceBrowsingContext(aContext, aLauncher);
+            let sourceBrowser = null;
+            try {
+                sourceBrowser = aContext?.getInterface(Ci.nsIDOMWindow)?.docShell?.chromeEventHandler || null;
+            } catch (ex) { }
+            return {
+                fileName: fileName || aLauncher?.suggestedFileName || '',
+                mLauncher: aLauncher,
+                mSourceContext: sourceContext,
+                isPrivate: Boolean(aLauncher?.channel?.loadInfo?.originAttributes?.privateBrowsingId),
+                mBrowser: sourceBrowser || browserWindow?.gBrowser?.selectedBrowser || null,
+            };
         },
         /**
          * ========================================
@@ -539,7 +736,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
          * 协调各个子功能模块的初始化
          */
         initDownloadPopup: async function () {
-            this._log("initDownloadPopup 开始");
+            this._log(LANG.format("log init download popup start"));
             const dialogFrame = dialog.dialogElement('unknownContentType');
 
             // 按顺序初始化各个功能模块
@@ -552,7 +749,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             this._overrideDialogOKHandler();
             this._forceShowDialogOptions();
 
-            this._log("initDownloadPopup 结束");
+            this._log(LANG.format("log init download popup end"));
         },
 
         /**
@@ -684,7 +881,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 opener.localStorage.removeItem(dialog.mLauncher.source.spec);
                 return originalString;
             } catch (error) {
-                this._log("从 localStorage 读取文件名失败:", error);
+                this._log(LANG.format("log localstorage filename read failed"), error);
                 return dialog.mLauncher.suggestedFileName;
             }
         },
@@ -801,7 +998,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 
             // 检查当前下载 URL 是否支持外部下载器
             if (!isLinkSupportedByFlashgot(dialog.mLauncher.source)) {
-                this._log("URL 不支持外部下载器，跳过 FlashGot 集成");
+                this._log(LANG.format("log unsupported url skip flashgot"));
                 return;
             }
 
@@ -839,19 +1036,13 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                     return;
                 }
 
-                const sourceContext = mContext.BrowsingContext.get(mLauncher.browsingContextId);
                 const fileName = $("#locationText")?.value?.replace(invalidChars, '_') ||
                     dialog.mLauncher.suggestedFileName;
 
                 downloadPlus.downloadByManager(
                     $('#flashgotHandler').getAttribute('manager'),
                     source.spec,
-                    {
-                        fileName,
-                        mLauncher,
-                        mSourceContext: sourceContext.parent || sourceContext,
-                        isPrivate: browserWindow.PrivateBrowsingUtils.isWindowPrivate(window)
-                    }
+                    downloadPlus._buildFlashgotOptionsFromLauncher(mLauncher, mContext, browserWindow, fileName)
                 );
                 close();
             };
@@ -1285,7 +1476,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             return this.DEFAULT_MANAGER === name;
         },
         exec: async function (path, args, options = { startHidden: false }) {
-            this._log("exec 调用", { path, args, options });
+            this._log(LANG.format("log exec called"), { path, args, options });
             switch (typeof args) {
                 case 'string':
                     args = args.split(/\s+/);
@@ -1307,15 +1498,15 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 if (file.isExecutable()) {
                     process.init(file);
                     if (typeof options.processObserver === "object") {
-                        this._log("使用异步 processObserver");
+                        this._log(LANG.format("log async process observer"));
                         process.runwAsync(args, args.length, options.processObserver);
                     } else {
-                        this._log("同步执行");
+                        this._log(LANG.format("log sync execute"));
                         process.runw(false, args, args.length);
                     }
 
                 } else {
-                    this._log("非可执行文件，直接 launch");
+                    this._log(LANG.format("log launch non executable"));
                     file.launch();
                 }
             } catch (e) {
@@ -1323,21 +1514,21 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             }
         },
         reloadSupportedManagers: async function (force = false, alert = false, callback) {
-            this._log("reloadSupportedManagers 调用", { force, alert, current: this.DOWNLOAD_MANAGERS });
+            this._log(LANG.format("log reload managers called"), { force, alert, current: this.DOWNLOAD_MANAGERS });
             try {
                 let prefVal = Services.prefs.getStringPref('userChromeJS.downloadPlus.flashgotDownloadManagers');
                 this.DOWNLOAD_MANAGERS = prefVal.split(",");
-                this._log("从 prefs 读取下载器列表", this.DOWNLOAD_MANAGERS);
+                this._log(LANG.format("log managers loaded from prefs"), this.DOWNLOAD_MANAGERS);
             } catch (e) {
                 force = true;
-                this._log("读取 prefs 失败，强制重新扫描", e);
+                this._log(LANG.format("log prefs read failed force rescan"), e);
             }
             if (force) {
                 let self = this;
                 const resultPath = handlePath('{TmpD}\\.flashgot.dm.' + Math.random().toString(36).slice(2) + '.txt');
                 const args = this.NEWER_FLASHGOT ? ["--silent", "-f", "txt", "-o", resultPath] : ["-o", resultPath];
                 if (this.debug) args.push("--debug");
-                this._log("强制刷新，生成临时文件", resultPath);
+                this._log(LANG.format("log force refresh temp file"), resultPath);
                 await new Promise((resolve, reject) => {
                     // read download managers list from flashgot.exe
                     this.exec(this.FLASHGOT_PATH, this.NEWER_FLASHGOT ? ["--silent", "-f", "txt", "-o", resultPath] : ["-o", resultPath], {
@@ -1345,7 +1536,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                             observe (subject, topic) {
                                 switch (topic) {
                                     case "process-finished":
-                                        self._log("FlashGot.exe 执行完毕，准备读取结果");
+                                        self._log(LANG.format("log flashgot process finished"));
                                         try {
                                             // Wait 1s after process to resolve
                                             setTimeout(resolve, 1000);
@@ -1354,7 +1545,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                                         }
                                         break;
                                     default:
-                                        self._log("FlashGot.exe 异常结束", topic);
+                                        self._log(LANG.format("log flashgot process failed"), topic);
                                         reject(topic);
                                         break;
                                 }
@@ -1373,16 +1564,16 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                         if (lastBracket !== -1) {
                             resultString = resultString.slice(0, lastBracket + 1);
                         }
-                        this._log("读取到下载器列表结果", resultString);
+                        this._log(LANG.format("log managers raw result"), resultString);
                         let resultJson = JSON.parse(resultString);
                         this.NEWER_FLASHGOT = true;
                         this.DOWNLOAD_MANAGERS = resultJson.filter(m => m.available).map(m => m.name);
                     } else {
-                        this._log("读取到下载器列表结果", resultString);
+                        this._log(LANG.format("log managers raw result"), resultString);
                         this.DOWNLOAD_MANAGERS = resultString.split("\n").filter(l => l.includes("|OK")).map(l => l.replace("|OK", "").replace(/\r$/, '').trim());
                     }
                     await IOUtils.remove(resultPath, { ignoreAbsent: true });
-                    this._log("解析后下载器列表", this.DOWNLOAD_MANAGERS);
+                    this._log(LANG.format("log managers parsed"), this.DOWNLOAD_MANAGERS);
                     Services.prefs.setStringPref(this.PREF_DOWNLOAD_MANAGERS, this.DOWNLOAD_MANAGERS.join(","));
                 }
             }
@@ -1424,7 +1615,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 
             const uri = Services.io.newURI(url);
             const { FLASHGOT_PATH, DL_FILE_STRUCTURE, REFERER_OVERRIDES, USERAGENT_OVERRIDES } = this;
-            const { description, mBrowser, isPrivate } = options;
+            const { description, mBrowser, isPrivate = false } = options;
             let userAgent = (function (o, u, m, c) {
                 for (let d of Object.keys(o)) {
                     // need to implement regex / subdomain process
@@ -1438,16 +1629,27 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             } else if (options.mBrowser) {
                 const { mBrowser, mContentData } = options;
                 referer = mBrowser.currentURI.spec;
-                downloadPageReferer = mContentData.referrerInfo.originalReferrer.spec
+                downloadPageReferer = mContentData?.referrerInfo?.originalReferrer?.spec || '';
             } else if (options.mLauncher) {
                 const { mLauncher, mSourceContext } = options;
-                downloadPageReferer = mSourceContext.currentURI.spec;
-                downloadPageCookies = await gatherCookies(downloadPageReferer);
+                downloadPageReferer = mSourceContext?.currentURI?.spec || '';
+                referer = mLauncher?.source?.referrerInfo?.originalReferrer?.spec || referer;
                 fileName = options.fileName || mLauncher.suggestedFileName;
                 try { extension = mLauncher.MIMEInfo.primaryExtension; } catch (e) { }
             }
             if (downloadPageReferer) {
-                downloadPageCookies = await gatherCookies(downloadPageReferer);
+                downloadPageCookies = await gatherCookies(downloadPageReferer, false, undefined, {
+                    logger: (...args) => this._log(...args),
+                    options,
+                    manager,
+                    targetURL: uri.spec,
+                    referer,
+                    downloadPageReferer,
+                    phase: "download-page"
+                });
+            }
+            if (!referer && downloadPageReferer) {
+                referer = downloadPageReferer;
             }
             let refMatched = domainMatch(uri.host, REFERER_OVERRIDES);
             if (refMatched) {
@@ -1457,6 +1659,18 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             if (uaMatched) {
                 userAgent = uaMatched;
             }
+            const cookieContext = {
+                logger: (...args) => this._log(...args),
+                options,
+                manager,
+                targetURL: uri.spec,
+                referer,
+                downloadPageReferer
+            };
+            const targetCookies = await gatherCookies(uri.spec, false, undefined, {
+                ...cookieContext,
+                phase: "target"
+            });
             let initData, initArgs = [];
             if (this.NEWER_FLASHGOT) {
                 // 新版的 JSON 格式，还没做完
@@ -1472,7 +1686,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                         {
                             url: uri.spec,
                             desc: description || '',
-                            cookies: await gatherCookies(uri.spec),
+                            cookies: targetCookies,
                             postData: postData,
                             filename: fileName,
                             extension: extension
@@ -1486,13 +1700,13 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                     '{num}', '{download-manager}', '{is-private}', '{referer}', '{url}', '{description}', '{cookies}', '{post-data}',
                     '{filename}', '{extension}', '{download-page-referer}', '{download-page-cookies}', '{user-agent}'
                 ], [
-                    1, manager, isPrivate, referer, uri.spec, description || '', await gatherCookies(uri.spec), postData,
+                    1, manager, isPrivate, referer, uri.spec, description || '', targetCookies, postData,
                     fileName, extension, downloadPageReferer, downloadPageCookies, userAgent
                 ]);
             }
-            this._log("生成 .dl.properties 内容", initData);
+            this._log(LANG.format("log generate dl properties"), initData);
             const initFilePath = handlePath(`{TmpD}\\${hashText(uri.spec)}.dl.properties`);
-            this._log("写入临时文件", initFilePath);
+            this._log(LANG.format("log write temp file"), initFilePath);
             await IOUtils.writeUTF8(initFilePath, initData);
             initArgs = [initFilePath];
 
@@ -1547,14 +1761,6 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 
     function isTrue (pref, defaultValue = true) {
         return Services.prefs.getBoolPref(pref, defaultValue) === true;
-    }
-
-    function getBool (pref, defaultValue = false) {
-        return Services.prefs.getBoolPref(pref, defaultValue);
-    }
-
-    function setBool (pref, value) {
-        Services.prefs.setBoolPref(pref, value);
     }
 
     /**
@@ -1837,44 +2043,304 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
         return replaceString;
     }
 
+    function getCookieBaseDomain (uri) {
+        const host = uri?.asciiHost || uri?.host || "";
+        if (!host) {
+            return "";
+        }
+        try {
+            return Services.eTLD.getBaseDomainFromHost(host);
+        } catch (e) {
+            return host;
+        }
+    }
+
+    function cloneOriginAttributes (originAttributes) {
+        if (!originAttributes || typeof originAttributes !== "object") {
+            return {};
+        }
+        const clone = {};
+        for (const key of Object.keys(originAttributes)) {
+            const value = originAttributes[key];
+            if (value !== undefined && value !== null && value !== "") {
+                clone[key] = value;
+            }
+        }
+        return clone;
+    }
+
+    function normalizeOriginAttributes (originAttributes, options = {}) {
+        const normalized = cloneOriginAttributes(originAttributes);
+        const browserUserContextId = Number(options.mBrowser?.getAttribute?.("usercontextid") || 0);
+
+        if (options.isPrivate && !normalized.privateBrowsingId) {
+            normalized.privateBrowsingId = 1;
+        }
+        if (browserUserContextId && !normalized.userContextId) {
+            normalized.userContextId = browserUserContextId;
+        }
+        return normalized;
+    }
+
+    function getCookieContextCandidates (options = {}) {
+        return [
+            ["browser.contentPrincipal", options.mBrowser?.contentPrincipal?.originAttributes],
+            ["browser.documentPrincipal", options.mBrowser?.browsingContext?.currentWindowGlobal?.documentPrincipal?.originAttributes],
+            ["sourceContext.documentPrincipal", options.mSourceContext?.currentWindowGlobal?.documentPrincipal?.originAttributes],
+            ["launcher.channel", options.mLauncher?.channel?.loadInfo?.originAttributes],
+            ["launcher.source", options.mLauncher?.source?.loadInfo?.originAttributes],
+            ["selectedBrowser.contentPrincipal", !options.mBrowser ? globalThis.gBrowser?.selectedBrowser?.contentPrincipal?.originAttributes : null],
+            ["fallback", {}]
+        ];
+    }
+
+    function buildCookieLookupPlans (uri, options = {}) {
+        const plans = [];
+        const seen = new Set();
+        const baseDomain = getCookieBaseDomain(uri);
+
+        function addPlan (label, originAttributes) {
+            const normalized = normalizeOriginAttributes(originAttributes, options);
+            const key = `${baseDomain}\n${JSON.stringify(normalized, Object.keys(normalized).sort())}`;
+            if (seen.has(key)) {
+                return;
+            }
+            seen.add(key);
+            plans.push({
+                label,
+                baseDomain,
+                originAttributes: normalized
+            });
+
+            if (normalized.partitionKey) {
+                const unpartitioned = { ...normalized };
+                delete unpartitioned.partitionKey;
+                const fallbackKey = `${baseDomain}\n${JSON.stringify(unpartitioned, Object.keys(unpartitioned).sort())}`;
+                if (!seen.has(fallbackKey)) {
+                    seen.add(fallbackKey);
+                    plans.push({
+                        label: `${label} (without partitionKey)`,
+                        baseDomain,
+                        originAttributes: unpartitioned
+                    });
+                }
+            }
+        }
+
+        for (const [label, originAttributes] of getCookieContextCandidates(options)) {
+            addPlan(label, originAttributes);
+        }
+
+        return plans;
+    }
+
+    function mergeCookies (cookies) {
+        const merged = [];
+        const seen = new Set();
+
+        for (const cookie of cookies) {
+            if (!cookie || !cookie.name) {
+                continue;
+            }
+            const key = [
+                cookie.host,
+                cookie.path,
+                cookie.name,
+                cookie.value,
+                cookie.expires,
+                cookie.isSecure,
+                cookie.isHttpOnly
+            ].join("\u0001");
+            if (!seen.has(key)) {
+                seen.add(key);
+                merged.push(cookie);
+            }
+        }
+
+        return merged;
+    }
+
+    function stripLeadingDot (host) {
+        return String(host || "").replace(/^\./, "");
+    }
+
+    function doesCookieHostMatch (cookie, host) {
+        const requestHost = String(host || "").toLowerCase();
+        const cookieHost = stripLeadingDot(cookie?.host).toLowerCase();
+
+        if (!requestHost || !cookieHost) {
+            return false;
+        }
+        if (cookie.isDomain) {
+            return requestHost === cookieHost || requestHost.endsWith(`.${cookieHost}`);
+        }
+        return requestHost === cookieHost;
+    }
+
+    function doesCookiePathMatch (cookiePath, requestPath) {
+        const normalizedCookiePath = cookiePath || "/";
+        const normalizedRequestPath = requestPath || "/";
+
+        if (normalizedRequestPath === normalizedCookiePath) {
+            return true;
+        }
+        if (!normalizedRequestPath.startsWith(normalizedCookiePath)) {
+            return false;
+        }
+        if (normalizedCookiePath.endsWith("/")) {
+            return true;
+        }
+        return normalizedRequestPath.charAt(normalizedCookiePath.length) === "/";
+    }
+
+    function isCookieExpired (cookie) {
+        return Number(cookie?.expires) > 0 && Number(cookie.expires) * 1000 <= Date.now();
+    }
+
+    function filterApplicableCookies (cookies, uri) {
+        const host = uri?.asciiHost || uri?.host || "";
+        const path = uri?.filePath || uri?.pathQueryRef || "/";
+        const isHttps = uri?.schemeIs?.("https") || uri?.scheme === "https";
+
+        return cookies.filter(cookie => {
+            if (!cookie || !cookie.name) {
+                return false;
+            }
+            if (isCookieExpired(cookie)) {
+                return false;
+            }
+            if (!doesCookieHostMatch(cookie, host)) {
+                return false;
+            }
+            if (!doesCookiePathMatch(cookie.path, path)) {
+                return false;
+            }
+            if (cookie.isSecure && !isHttps) {
+                return false;
+            }
+            return true;
+        });
+    }
+
+    function formatCookieOutput (cookies) {
+        return cookies.map(cookie => `${cookie.name}=${cookie.value}`).join("; ");
+    }
+
+    function formatStandardCookieHeader (cookies) {
+        return cookies.map(cookie => `${cookie.name}=${cookie.value}`).join("; ");
+    }
+
+    function describeCookieOptions (options = {}) {
+        return {
+            isPrivate: Boolean(options.isPrivate),
+            hasBrowser: Boolean(options.mBrowser),
+            hasLauncher: Boolean(options.mLauncher),
+            hasSourceContext: Boolean(options.mSourceContext),
+            hasReferer: Boolean(options.referer),
+            browserUserContextId: Number(options.mBrowser?.getAttribute?.("usercontextid") || 0)
+        };
+    }
+
+    function summarizeLookupPlans (lookupPlans) {
+        return lookupPlans.map(plan => {
+            const detail = plan.error ? `error=${plan.error}` : `count=${plan.count}`;
+            return `${plan.label}[${detail}]`;
+        }).join(", ");
+    }
+
     /**
      * 收集 cookie 并保存到文件（使用 IOUtils）
      *
      * @param {string} link 链接
      * @param {boolean} saveToFile 是否保存到文件
      * @param {Function|string|undefined} filter Cookie 过滤器
+     * @param {Object} context 附加上下文与调试配置
      * @returns {Promise<string>} Cookie 字符串或文件路径
      */
-    async function gatherCookies (link, saveToFile = false, filter) {
-        if (!link || !/^https?:\/\//.test(link)) return "";
+    async function gatherCookies (link, saveToFile = false, filter, context = {}) {
+        if (!link || !/^https?:\/\//.test(link)) {
+            return "";
+        }
 
+        const logger = typeof context.logger === "function" ? context.logger : () => { };
+        const options = context.options || {};
         const uri = Services.io.newURI(link, null, null);
-        let cookies = Services.cookies.getCookiesFromHost(uri.host, {});
+        const host = uri.asciiHost || uri.host || "";
+        const lookupPlans = buildCookieLookupPlans(uri, options);
+        const lookupDebug = [];
+        let cookies = [];
 
-        // Apply filter if specified and valid
+        for (const plan of lookupPlans) {
+            let planCookies = [];
+            try {
+                planCookies = Array.from(Services.cookies.getCookiesFromHost(plan.baseDomain, plan.originAttributes));
+                cookies = mergeCookies(cookies.concat(planCookies));
+                lookupDebug.push({
+                    label: plan.label,
+                    baseDomain: plan.baseDomain,
+                    originAttributes: plan.originAttributes,
+                    count: planCookies.length
+                });
+            } catch (e) {
+                lookupDebug.push({
+                    label: plan.label,
+                    baseDomain: plan.baseDomain,
+                    originAttributes: plan.originAttributes,
+                    error: String(e)
+                });
+            }
+        }
+
+        cookies = filterApplicableCookies(cookies, uri);
+
         if (Array.isArray(filter) && filter.length > 0) {
             cookies = cookies.filter(cookie => cookie && cookie.name && filter.includes(cookie.name));
         }
 
+        const outputString = formatCookieOutput(cookies);
+        logger("Cookie 收集调试", {
+            phase: context.phase || "default",
+            link,
+            host,
+            baseDomain: getCookieBaseDomain(uri),
+            manager: context.manager || "",
+            targetURL: context.targetURL || "",
+            referer: context.referer || "",
+            downloadPageReferer: context.downloadPageReferer || "",
+            sourceOptions: describeCookieOptions(options),
+            lookupPlanSummary: summarizeLookupPlans(lookupDebug),
+            cookieNames: cookies.map(cookie => cookie.name),
+            cookieCount: cookies.length,
+            cookieHeaderLength: outputString.length
+        });
+
         if (saveToFile) {
             const cookieSavePath = handlePath("{TmpD}");
             const cookieString = cookies.map(formatCookie).join('');
-            const filePath = `${cookieSavePath}\\${uri.host}.txt`;
+            const filePath = `${cookieSavePath}\\${host || "cookies"}.txt`;
 
             try {
-                // 使用 IOUtils 写入文件，自动处理文件创建和覆盖
                 await IOUtils.writeUTF8(filePath, cookieString);
+                logger("Cookie 文件已保存", {
+                    phase: context.phase || "default",
+                    filePath,
+                    cookieCount: cookies.length
+                });
                 return filePath;
             } catch (e) {
                 console.error("保存 Cookie 文件失败:", e);
+                logger("Cookie 文件保存失败", {
+                    phase: context.phase || "default",
+                    filePath,
+                    error: String(e)
+                });
                 return "";
             }
-        } else {
-            return cookies.map(cookie => `${cookie.name}:${cookie.value}`).join("; ");
         }
 
+        return outputString;
+
         function formatCookie (co) {
-            // Format to Netscape type cookie format
             return [
                 `${co.isHttpOnly ? '#HttpOnly_' : ''}${co.host}`,
                 co.isDomain ? 'TRUE' : 'FALSE',

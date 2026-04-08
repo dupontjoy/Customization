@@ -94,6 +94,15 @@
     var { AppConstants } = AppConstants || ChromeUtils.importESModule(
         "resource://gre/modules/AppConstants.sys.mjs"
     );
+    const {
+        SHARED_ACTOR_NAME,
+        getSharedActorOptions,
+        hasActorRegistration,
+        markActorRegistered,
+        registerChromeWindow,
+        registerSharedChromeHandler,
+        registerSharedScript,
+    } = ChromeUtils.importESModule("chrome://userchromejs/content/utils/UcActorRegistry.sys.mjs");
     const lazy = {}
     ChromeUtils.defineLazyGetter(lazy, "console", () => console.createInstance({
         prefix: "userChrome.js"
@@ -288,7 +297,7 @@
             function getScriptData (aContent, aFile) {
                 const header = extractHeader(aContent);
                 const { include, exclude } = buildRegexRules(header, mainWindowURL, findNextRe);
-                const { description, fullDescription } = extractDescription(header, aFile);
+                const { description, fullDescription, longDescription } = extractDescription(header, aFile);
 
                 const charset = extractSingleMeta(header, /\/\/ @charset\b(.+)\s*/i);
                 const asyncMatch = extractSingleMeta(header, /\/\/ @async\b(.+)\s*/i);
@@ -299,7 +308,10 @@
                 const skipFlag = skipMatch === "true";
                 const url = fph.getURLSpecFromActualFile(aFile);
                 const actor = extractSingleMeta(header, /\/\/ @actor\b(.+)\s*/i);
+                const content = extractSingleMeta(header, /\/\/ @content\b(.+)\s*/i);
                 const exportedModule = extractSingleMeta(header, /\/\/ @export\b(.+)\s*/i);
+                const notes = extractMultiMeta(header, /\/\/ @note\s+(.+)\s*$/gim);
+                const icon = extractSingleMeta(header, /\/\/ @icon\s+(.+)\s*$/im);
                 const s = {
                     filename: aFile.leafName,
                     file: aFile,
@@ -311,7 +323,10 @@
                     sandbox: sandboxFlag,
                     skip: skipFlag,
                     exportedModule: exportedModule.trim(),
-                    icon: extractSingleMeta(header, /\/\/ @icon\s+(.+)\s*$/im),
+                    icon,
+                    iconURL: icon,
+                    note: notes.join("\n"),
+                    notes,
                     regex: new RegExp(`^${exclude}(${include.join("|") || ".*"})$`, "i"),
                     onlyonce: /\/\/ @onlyonce\b/.test(header),
                     homepageURL: extractSingleMeta(header, /\/\/ @homepage(URL)?\s+(.+)\s*$/im, 2),
@@ -319,32 +334,30 @@
                     optionsURL: extractSingleMeta(header, /\/\/ @optionsURL\s+(.+)\s*$/im),
                     startup: extractSingleMeta(header, /\/\/ @startup\s+(.+)\s*$/im),
                     license: extractSingleMeta(header, /\/\/ @license\s+(.+)\s*$/im),
+                    longDescription,
                     fullDescription
                 }
 
                 if (typeof actor === "string" && actor.length) {
                     s.isActor = true;
-                    const match = extractSingleMeta(header, /\/\/ @actor:match\s+(.+)\s*$/im)
+                    const match = extractSingleMeta(header, /\/\/ @actor:matches?\s+(.+)\s*$/im)
                     const actorParams = {};
                     if (match) {
-                        actorParams.matches = match.split(",").map(m => m.trim());
+                        actorParams.matches = splitMetaList(match);
                     }
 
                     const kindStr = extractSingleMeta(header, /\/\/ @actor:kind\s+(.+)\s*$/im);
-                    if (kindStr) actorParams.kind = kind.trim();
+                    if (kindStr) actorParams.kind = kindStr.trim();
                     const includeChromeStr = extractSingleMeta(header, /\/\/ @actor:includeChrome\s+(.+)\s*$/im);
                     if (includeChromeStr) actorParams.includeChrome = includeChromeStr.trim() === 'true';
                     const groupsStr = extractSingleMeta(header, /\/\/ @actor:groups\s+(.+)\s*$/im);
-                    if (groupsStr) actorParams.messageManagerGroups = groupsStr.trim().split(/\s+,\s+/).map(g => g.trim());
+                    if (groupsStr) actorParams.messageManagerGroups = splitMetaList(groupsStr);
 
                     // 处理 events 字段，转换为对象形式
                     const events = extractSingleMeta(header, /\/\/ @actor:events\s+(.+)\s*$/im);
                     actorParams.events = events
-                        ? events.split(",").reduce((obj, e) => {
-                            const eventName = e.trim();
-                            if (eventName) {
-                                obj[eventName] = { capture: true };
-                            }
+                        ? splitMetaList(events).reduce((obj, eventName) => {
+                            obj[eventName] = { capture: true };
                             return obj;
                         }, {})
                         : {};
@@ -359,6 +372,45 @@
                     });
                 }
 
+                const contentEnabled = content === "true";
+                if (contentEnabled) {
+                    const contentParams = {};
+                    const match = extractSingleMeta(header, /\/\/ @content:matches?\s+(.+)\s*$/im);
+                    if (match) {
+                        contentParams.matches = splitMetaList(match);
+                    }
+                    const groupsStr = extractSingleMeta(header, /\/\/ @content:groups\s+(.+)\s*$/im);
+                    if (groupsStr) {
+                        contentParams.messageManagerGroups = splitMetaList(groupsStr);
+                    }
+                    const events = extractSingleMeta(header, /\/\/ @content:events\s+(.+)\s*$/im);
+                    contentParams.events = events
+                        ? splitMetaList(events).reduce((obj, eventName) => {
+                            obj[eventName] = { capture: true };
+                            return obj;
+                        }, {})
+                        : {
+                            DOMContentLoaded: {}
+                        };
+                    const allFrames = extractSingleMeta(header, /\/\/ @content:allframes\s+(.+)\s*$/im);
+                    if (allFrames) contentParams.allFrames = allFrames === 'true';
+                    const contentSandbox = extractSingleMeta(header, /\/\/ @content:sandbox\s+(.+)\s*$/im);
+                    if (contentSandbox) contentParams.sandbox = contentSandbox === 'true';
+
+                    Object.assign(s, {
+                        isContentScript: true,
+                        contentParams
+                    });
+                }
+
+                if (s.isActor && s.isContentScript) {
+                    s.isContentScript = false;
+                    s.contentParams = null;
+                    lazy.console.warn(`script "${aFile.leafName}" declared both @actor and @content, using @actor`);
+                }
+
+                s.executionMode = s.isActor ? "custom-actor" : s.isContentScript ? "shared-actor" : "chrome-only";
+
                 return s;
 
                 function extractHeader (content) {
@@ -368,6 +420,27 @@
                 function extractSingleMeta (header, pattern, matchedGroup = 1) {
                     const match = header.match(pattern);
                     return match?.[matchedGroup]?.trim() || "";
+                }
+
+                function extractMultiMeta (header, pattern, matchedGroup = 1) {
+                    const values = [];
+                    let match;
+                    pattern.lastIndex = 0;
+                    while ((match = pattern.exec(header))) {
+                        const value = match?.[matchedGroup]?.trim();
+                        if (value) {
+                            values.push(value);
+                        }
+                    }
+                    pattern.lastIndex = 0;
+                    return values;
+                }
+
+                function splitMetaList (value) {
+                    return value
+                        .split(/\s*,\s*/)
+                        .map(item => item.trim())
+                        .filter(Boolean);
                 }
 
                 function buildRegexRules (header, mainWindowURL, findNextRe) {
@@ -389,16 +462,30 @@
                 };
 
                 function extractDescription (header, file) {
-                    const hasLongDescription = /^\/\/\ @long-description/im.test(header);
-                    let description = hasLongDescription
-                        ? header.match(/\/\/ @description\s+.*?\/\*\s*(.+?)\s*\*\//is)?.[1]
-                        : header.match(/\/\/ @description\s+(.+)\s*$/im)?.[1];
+                    const longDescription = header.match(/\/\/ @long-description\b\s*[\r\n]+\/\/ @description\b\s*[\r\n]+\/\*\s*(.+?)\s*\*\//is)?.[1]?.trim() || "";
+                    const inlineDescription = header.match(/^\/\/ @description[ \t]+(.+)\s*$/im)?.[1]?.trim() || "";
+                    let description = inlineDescription || (longDescription ? getFirstLine(longDescription) : "");
                     if (!description) {
                         description = file.leafName;
                     }
-                    const fullDescription = description;
-                    description = getFirstLine(description);
-                    return { description, fullDescription };
+                    description = getFirstLine(description).trim();
+                    const fullDescription = buildFullDescription(description, longDescription);
+                    return { description, fullDescription, longDescription };
+                }
+
+                function buildFullDescription (description, longDescription) {
+                    if (!longDescription) {
+                        return description;
+                    }
+                    const normalizedDescription = (description || "").trim();
+                    const normalizedLongDescription = longDescription.trim();
+                    const firstLine = getFirstLine(normalizedLongDescription).trim();
+                    if (!normalizedDescription || firstLine !== normalizedDescription) {
+                        return normalizedLongDescription;
+                    }
+
+                    const remaining = normalizedLongDescription.split(/\r\n|\r|\n/).slice(1).join("\n").trim();
+                    return remaining || normalizedLongDescription;
                 }
 
                 function getFirstLine (text) {
@@ -487,6 +574,161 @@
                 return aScriptFile.lastModifiedTime;
             }
             return "";
+        },
+
+        ensureScriptMetadata: function (script) {
+            script.moduleURI = script.chromedir
+                ? `${script.chromedir}?${this.getLastModifiedTime(script.file)}`
+                : "";
+            script.scriptId ||= `${script.dir || "root"}/${script.filename}`;
+            script.executionMode ||= script.isActor ? "custom-actor" : script.isContentScript ? "shared-actor" : "chrome-only";
+            script.isContentScript ||= script.executionMode === "shared-actor";
+            return script;
+        },
+
+        ensureSharedActorRegistration: function () {
+            let hasSharedScript = false;
+            for (let script of this.scripts) {
+                this.ensureScriptMetadata(script);
+                if (script.executionMode !== "shared-actor") {
+                    continue;
+                }
+                hasSharedScript = true;
+                registerSharedScript({
+                    id: script.scriptId,
+                    moduleURI: script.moduleURI,
+                    exportedModule: script.exportedModule,
+                    matches: script.contentParams?.matches || [],
+                    messageManagerGroups: script.contentParams?.messageManagerGroups || [],
+                    events: script.contentParams?.events || { DOMContentLoaded: {} },
+                    allFrames: script.contentParams?.allFrames !== false,
+                    sandbox: !!script.contentParams?.sandbox,
+                });
+            }
+            if (!hasSharedScript) {
+                return;
+            }
+            if (hasActorRegistration(SHARED_ACTOR_NAME)) {
+                if (this.INFO) {
+                    this.debug(`[actor] skip shared actor "${SHARED_ACTOR_NAME}" because it is already registered`);
+                }
+                return;
+            }
+            try {
+                ChromeUtils.registerWindowActor(SHARED_ACTOR_NAME, getSharedActorOptions());
+                markActorRegistered(SHARED_ACTOR_NAME);
+                if (this.INFO) {
+                    this.debug(`[actor] registered shared actor "${SHARED_ACTOR_NAME}" for ${this.scripts.filter(script => script.executionMode === "shared-actor").length} script(s)`);
+                }
+            } catch (ex) {
+                this.error(`@ ${SHARED_ACTOR_NAME}: actor couldn't be registered because:`, ex);
+            }
+        },
+
+        registerScriptActor: function (script) {
+            this.ensureScriptMetadata(script);
+            if (script.executionMode !== "custom-actor" || !script.actor) {
+                return;
+            }
+            if (hasActorRegistration(script.actor)) {
+                if (this.INFO) {
+                    this.debug(`[actor] skip custom actor "${script.actor}" from ${script.filename} because it is already registered`);
+                }
+                return;
+            }
+            try {
+                if (!script.actorParams) {
+                    script.actorParams = {};
+                }
+                script.actorParams.parent = {
+                    esModuleURI: script.chromedir
+                };
+                script.actorParams.child = {
+                    esModuleURI: script.chromedir,
+                    events: {}
+                };
+                for (let [key, value] of Object.entries(script.actorParams.events || {})) {
+                    script.actorParams.child.events[key] = value;
+                }
+                delete script.actorParams.events;
+                ChromeUtils.registerWindowActor(script.actor, script.actorParams);
+                markActorRegistered(script.actor);
+                if (this.INFO) {
+                    this.debug(`[actor] registered custom actor "${script.actor}" from ${script.filename}`);
+                }
+            } catch (ex) {
+                this.error(`@ ${script.filename}: actor couldn't be registered because:`, ex);
+            }
+        },
+
+        resolveModuleNamespace: function (script) {
+            this.ensureScriptMetadata(script);
+            const moduleNS = ChromeUtils.importESModule(script.moduleURI);
+            const moduleName = script.exportedModule ? script.exportedModule : script.filename.replace(/\.(sys|uc)\.mjs$/, "");
+            return {
+                moduleNS,
+                exportedModule: moduleNS[moduleName] || null,
+            };
+        },
+
+        attachSharedChromeBridge: function (script, win, moduleNS, exportedModule) {
+            if (script.executionMode !== "shared-actor") {
+                return;
+            }
+            const handler =
+                typeof moduleNS?.onContentMessage === "function"
+                    ? moduleNS.onContentMessage.bind(moduleNS)
+                    : typeof exportedModule?.onContentMessage === "function"
+                        ? exportedModule.onContentMessage.bind(exportedModule)
+                        : null;
+            if (typeof handler === "function") {
+                registerSharedChromeHandler(win, script.scriptId, handler);
+            }
+        },
+
+        runModuleScript: function (script, win, targetWin) {
+            this.ensureScriptMetadata(script);
+            let importFailed = false;
+            try {
+                const { moduleNS, exportedModule } = this.resolveModuleNamespace(script);
+                this.attachSharedChromeBridge(script, win, moduleNS, exportedModule);
+                const windowLoadHandler =
+                    typeof moduleNS?.onWindowLoad === "function"
+                        ? moduleNS.onWindowLoad
+                        : typeof exportedModule?.onWindowLoad === "function"
+                            ? exportedModule.onWindowLoad
+                            : null;
+                const windowLoadContext =
+                    typeof moduleNS?.onWindowLoad === "function"
+                        ? moduleNS
+                        : exportedModule;
+                if (typeof windowLoadHandler === "function") {
+                    windowLoadHandler.call(windowLoadContext, win);
+                    script.isRunning = true;
+                    return true;
+                }
+            } catch (ex) {
+                this.error(`@ ${script.file}: module couldn't be load because:`, ex);
+                importFailed = true;
+            }
+
+            if (script.executionMode === "shared-actor") {
+                return importFailed;
+            }
+
+            if (/\.uc\.mjs$/.test(script.filename)) {
+                ChromeUtils.compileScript(`data:,"use strict";import("${script.moduleURI}").catch(console.error)`).then((r) => {
+                    if (r) {
+                        r.executeInGlobal(/*global*/ script.onlyonce ? { window: targetWin } : targetWin, { reportExceptions: true });
+                        script.isRunning = true;
+                    }
+                }).catch((ex) => {
+                    this.error(`@ ${script.filename}: script couldn't be compiled because:`, ex);
+                })
+                return true;
+            }
+
+            return false;
         },
 
         //window.userChrome_js.loadOverlay
@@ -631,15 +873,21 @@
                 }, 0);
             }, { once: true });
             this.sb = target;
+            registerChromeWindow(win);
+            this.ensureSharedActorRegistration();
 
             for (var m = 0, len = this.scripts.length; m < len; m++) {
                 script = this.scripts[m];
+                this.ensureScriptMetadata(script);
                 if (this.ALWAYSEXECUTE.indexOf(script.filename) < 0
                     && (!!this.dirDisable['*']
                         || !!this.dirDisable[script.dir]
                         || !!this.scriptDisable[script.filename])) continue;
                 if (script.skip) continue;
-                if (!script.isActor && !script.regex.test(dochref)) continue;
+                if (script.executionMode === "custom-actor") {
+                    this.registerScriptActor(script);
+                }
+                if (!script.regex.test(dochref)) continue;
                 if (script.onlyonce && script.isRunning) {
                     if (script.startup) {
                         Cu.evalInSandbox(`(function(script, win){${script.startup}})`, target)(script, win);
@@ -704,48 +952,7 @@
                             })
                         }
                     } else {
-                        if (script.isActor && !script.isRunning) {
-                            if (!script.actorParams) {
-                                script.actorParams = {};
-                            }
-                            script.actorParams.parent = {
-                                esModuleURI: script.chromedir
-                            };
-                            script.actorParams.child = {
-                                esModuleURI: script.chromedir,
-                                events: {}
-                            };
-                            for (let [key, value] of Object.entries(script.actorParams.events)) {
-                                script.actorParams.child.events[key] = value;
-                            }
-                            delete script.actorParams.events;
-                            ChromeUtils.registerWindowActor(script.actor, script.actorParams);
-                            script.isRunning = true;
-                        } else {
-                            try {
-                                let moduleName = script.exportedModule ? script.exportedModule : script.filename.replace(/\.(sys|uc)\.mjs$/, "");
-                                let exportedModule = ChromeUtils.importESModule(script.chromedir + "?" + this.getLastModifiedTime(script.file))[moduleName];
-                                if (exportedModule) {
-                                    let handler = exportedModule?.onWindowLoad;
-                                    if (typeof handler === "function") handler.call(exportedModule, win);
-                                    script.isRunning = true;
-                                    continue;
-                                }
-                            } catch (ex) {
-                                this.error(`@ ${script.file}: module couldn't be load because:`, ex);
-                            }
-                            if (/\.uc\.mjs$/.test(script.filename)) {
-                                // only for .uc.mjs
-                                ChromeUtils.compileScript(`data:,"use strict";import("${script.chromedir}").catch(console.error)`).then((r) => {
-                                    if (r) {
-                                        r.executeInGlobal(/*global*/ script.onlyonce ? { window: targetWin } : targetWin, { reportExceptions: true });
-                                        script.isRunning = true;
-                                    }
-                                }).catch((ex) => {
-                                    this.error(`@ ${script.filename}: script couldn't be compiled because:`, ex);
-                                })
-                            }
-                        }
+                        this.runModuleScript(script, win, targetWin);
                     }
                 }
             }
