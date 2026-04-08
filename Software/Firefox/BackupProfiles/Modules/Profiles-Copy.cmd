@@ -40,12 +40,6 @@ rd /s /q "%BackDir%\extensions\trash"
 rd /s /q "%BackDir%\storage\permanent"
 rd /s /q "%BackDir%\storage\to-be-removed"
 
-::storage文件夹特殊处理
-Set fn="%BackDir%\storage\default"
-
-::删除网站缓存信息
-For /f "tokens=*" %%i in ('dir /ad /b /s "%fn%"^|findstr /c:"http"') do (rd /s /q "%%i\cache" "%%i\idb")
-
 
 rem 复制目标文件到臨時文件夾
 
@@ -85,6 +79,16 @@ xcopy "%BackDir%\prefs.js" %TempFolder%\Profiles\FxProfiles\  /y
 ::其它文件
 ::storage-sync-v2必要,保存了一些扩展的设置（如HeaderEditor，BypassWalls等）
 xcopy "%BackDir%\storage*.sqlite*" %TempFolder%\Profiles\FxProfiles\  /y
+
+
+::storage文件夹特殊处理
+Set sf="%TempFolder%\Profiles\FxProfiles\storage\default"
+
+::删除网站缓存信息
+For /f "tokens=*" %%i in ('dir /ad /b /s "%sf%"^|findstr /c:"http"') do (rd /s /q "%%i\cache" "%%i\idb")
+
+::删除以http开头的文件夹
+For /f "tokens=*" %%i in ('dir /ad /b /s "%sf%"^|findstr /c:"http"') do (rd /s /q "%%i")
 
 
 ::讀取版本號和日期及時間
