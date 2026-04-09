@@ -15,7 +15,7 @@ dns:
 proxies:
   - name: github.com/Alvin9999-newpac/fanqiang  
     server: 151.242.183.103
-    port: 1188
+    port: 11882
     type: tuic
     uuid: e473c549-4737-4236-8f6b-6840fd22a9d9
     password: dongtaiwang.com
@@ -24,7 +24,7 @@ proxies:
     request-timeout: 8000
     udp-relay-mode: native
     skip-cert-verify: true
-    congestion-controller: bbr             
+    congestion-controller: bbr         
   - name: github.com/Alvin9999-newpac/fanqiang/wiki                     
     server: 5.178.101.117
     port: 30006

@@ -129,7 +129,6 @@
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>13</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -198,7 +197,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>48</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>1</HKStopped>
@@ -484,7 +482,6 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>57</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -553,7 +550,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>48</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>1</HKStopped>
@@ -839,7 +835,6 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>20</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -908,7 +903,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>48</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>1</HKStopped>
@@ -1075,9 +1069,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-03-18 13:45:36</EndDateTime>
-		<NextRunDateTime>2126-03-15 11:04:32</NextRunDateTime>
+		<NextRunDateTime>2126-03-16 13:51:16</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-04-08 11:04:32</LastRunTime>
+		<LastRunTime>2026-04-09 13:51:16</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1194,7 +1188,6 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>23</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1271,7 +1264,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Delay>
 			<Tasker>
-				<ID>8</ID>
 				<TaskType>ttMouseClick</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1358,7 +1350,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Delay>
 			<Tasker>
-				<ID>98</ID>
 				<TaskType>ttVolumeSet</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1426,9 +1417,9 @@ env2=value2</edtAppEnv>
 		<SchType>36</SchType>
 		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
 		<EndDateTime>2026-04-03 02:14:24</EndDateTime>
-		<NextRunDateTime>2026-04-08 21:00:00</NextRunDateTime>
-		<NextRunTime>2026-04-08 21:00:00</NextRunTime>
-		<LastRunTime>2026-04-08 17:00:00</LastRunTime>
+		<NextRunDateTime>2026-04-09 21:00:00</NextRunDateTime>
+		<NextRunTime>2026-04-09 21:00:00</NextRunTime>
+		<LastRunTime>2026-04-09 17:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1547,7 +1538,6 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>11</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1615,7 +1605,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>37</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1822,7 +1811,6 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>78</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1891,7 +1879,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>70</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -1960,7 +1947,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>31</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2029,7 +2015,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>29</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2098,7 +2083,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>11</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2167,7 +2151,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>26</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2236,7 +2219,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>46</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2305,7 +2287,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>17</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2374,7 +2355,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>54</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2443,7 +2423,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>44</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2512,7 +2491,6 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
-				<ID>76</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
@@ -2719,7 +2697,6 @@ env2=value2</edtAppEnv>
 		</Param>
 		<Actions>
 			<Tasker>
-				<ID>50</ID>
 				<TaskType>ttExec</TaskType>
 				<Stopped>0</Stopped>
 				<HKStopped>0</HKStopped>
