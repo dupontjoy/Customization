@@ -6,6 +6,9 @@ Title 批量启动程序
 color 0a
 cls
 
+:: 最小化当前窗口
+if not "%1"=="min" start /min "" "%~f0" min & exit /b
+
 ::設置程序文件夾位置
 cd /d %~dp0
 ::从批处理所在位置到Software文件夹,共跨了3层

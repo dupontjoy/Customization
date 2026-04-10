@@ -5,6 +5,9 @@ Title 批量启动程序
 color 0a
 cls
 
+:: 最小化当前窗口
+if not "%1"=="min" start /min "" "%~f0" min & exit /b
+
 ::pushd命令，将当前目录的路径保存下来，并且切换到你指定的新目录路径。
 pushd %~dp0
 
