@@ -194,6 +194,38 @@
   </item>
   <item>
     <key>
+      <string>c2a1c7a4-d519-4bd1-859b-6ce7db9325fb.HTTP proxy</string>
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>c2a1c7a4-d519-4bd1-859b-6ce7db9325fb.HTTP proxy port</string>
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>c2a1c7a4-d519-4bd1-859b-6ce7db9325fb.Password</string>
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>c2a1c7a4-d519-4bd1-859b-6ce7db9325fb.Username</string>
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
       <string>CheckForReleaseCandidates</string>
     </key>
     <value>
@@ -997,7 +1029,7 @@
       <string>FormBrowse.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>478</string>
+      <string>418</string>
     </value>
   </item>
   <item>
@@ -1333,7 +1365,7 @@
       <string>FormBrowse.RevisionsSplitContainer_Distance</string>
     </key>
     <value>
-      <string>385</string>
+      <string>397</string>
     </value>
   </item>
   <item>
@@ -1474,11 +1506,11 @@
   &lt;Repositories&gt;
     &lt;Repository&gt;
       &lt;Anchor&gt;None&lt;/Anchor&gt;
-      &lt;Path&gt;E:\My Documents\GitHub\RimeIMEPortable\&lt;/Path&gt;
+      &lt;Path&gt;E:\My Documents\GitHub\Customization\&lt;/Path&gt;
     &lt;/Repository&gt;
     &lt;Repository&gt;
       &lt;Anchor&gt;None&lt;/Anchor&gt;
-      &lt;Path&gt;E:\My Documents\GitHub\Customization\&lt;/Path&gt;
+      &lt;Path&gt;E:\My Documents\GitHub\RimeIMEPortable\&lt;/Path&gt;
     &lt;/Repository&gt;
   &lt;/Repositories&gt;
 &lt;/RepositoryHistory&gt;</string>
@@ -1602,7 +1634,6 @@
     &lt;RunInBackground&gt;false&lt;/RunInBackground&gt;
     &lt;IsPowerShell&gt;false&lt;/IsPowerShell&gt;
     &lt;HotkeyCommandIdentifier&gt;9000&lt;/HotkeyCommandIdentifier&gt;
-    &lt;Icon&gt;bug&lt;/Icon&gt;
   &lt;/ScriptInfo&gt;
   &lt;ScriptInfo&gt;
     &lt;Enabled&gt;false&lt;/Enabled&gt;
@@ -1615,7 +1646,6 @@
     &lt;RunInBackground&gt;false&lt;/RunInBackground&gt;
     &lt;IsPowerShell&gt;false&lt;/IsPowerShell&gt;
     &lt;HotkeyCommandIdentifier&gt;9001&lt;/HotkeyCommandIdentifier&gt;
-    &lt;Icon&gt;bug&lt;/Icon&gt;
   &lt;/ScriptInfo&gt;
   &lt;ScriptInfo&gt;
     &lt;Enabled&gt;false&lt;/Enabled&gt;
@@ -1628,7 +1658,6 @@
     &lt;RunInBackground&gt;false&lt;/RunInBackground&gt;
     &lt;IsPowerShell&gt;false&lt;/IsPowerShell&gt;
     &lt;HotkeyCommandIdentifier&gt;9002&lt;/HotkeyCommandIdentifier&gt;
-    &lt;Icon&gt;bug&lt;/Icon&gt;
   &lt;/ScriptInfo&gt;
   &lt;ScriptInfo&gt;
     &lt;Enabled&gt;false&lt;/Enabled&gt;
@@ -1641,7 +1670,6 @@
     &lt;RunInBackground&gt;false&lt;/RunInBackground&gt;
     &lt;IsPowerShell&gt;false&lt;/IsPowerShell&gt;
     &lt;HotkeyCommandIdentifier&gt;9003&lt;/HotkeyCommandIdentifier&gt;
-    &lt;Icon&gt;bug&lt;/Icon&gt;
   &lt;/ScriptInfo&gt;
   &lt;ScriptInfo&gt;
     &lt;Enabled&gt;false&lt;/Enabled&gt;
@@ -1654,7 +1682,6 @@
     &lt;RunInBackground&gt;false&lt;/RunInBackground&gt;
     &lt;IsPowerShell&gt;false&lt;/IsPowerShell&gt;
     &lt;HotkeyCommandIdentifier&gt;9004&lt;/HotkeyCommandIdentifier&gt;
-    &lt;Icon&gt;bug&lt;/Icon&gt;
   &lt;/ScriptInfo&gt;
 &lt;/ArrayOfScriptInfo&gt;</string>
     </value>
@@ -1712,7 +1739,7 @@
       <string>RecentWorkingDir</string>
     </key>
     <value>
-      <string>E:\My Documents\GitHub\RimeIMEPortable\</string>
+      <string>E:\My Documents\GitHub\Customization\</string>
     </value>
   </item>
   <item>
@@ -2056,6 +2083,8 @@
       &lt;HotkeyCommand CommandCode="4" Name="EditFile" KeyData="F4" /&gt;
       &lt;HotkeyCommand CommandCode="13" Name="FilterFileInGrid" KeyData="F" /&gt;
       &lt;HotkeyCommand CommandCode="15" Name="FindFile" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="17" Name="FindInCommitFilesUsingGitGrep_DiffTab" KeyData="RButton MButton XButton2 B D F Shift Control" /&gt;
+      &lt;HotkeyCommand CommandCode="24" Name="FindInCommitFilesUsingGitGrep_FileTreeTab" KeyData="None" /&gt;
       &lt;HotkeyCommand CommandCode="18" Name="GoToFirstParent" KeyData="None" /&gt;
       &lt;HotkeyCommand CommandCode="19" Name="GoToLastParent" KeyData="None" /&gt;
       &lt;HotkeyCommand CommandCode="5" Name="OpenAsTempFile" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Control" /&gt;
@@ -2066,9 +2095,8 @@
       &lt;HotkeyCommand CommandCode="8" Name="OpenWithDifftoolSelectedToLocal" KeyData="RButton ShiftKey Menu Space Next PageDown D0 D2 B P R NumPad0 NumPad2 F1 F3 Shift Alt" /&gt;
       &lt;HotkeyCommand CommandCode="20" Name="OpenWorkingDirectoryFile" KeyData="LButton RButton Cancel ShiftKey ControlKey Menu Pause Space Prior PageUp Next PageDown End D0 D1 D2 D3 A B C P Q R S NumPad0 NumPad1 NumPad2 NumPad3 F1 F2 F3 F4 Shift" /&gt;
       &lt;HotkeyCommand CommandCode="16" Name="OpenWorkingDirectoryFileWith" KeyData="LButton RButton Cancel MButton XButton1 XButton2 Back Tab LineFeed Clear Return Enter A B C D E F G H I J K L M N O Control" /&gt;
-      &lt;HotkeyCommand CommandCode="9" Name="ResetSelectedFiles" KeyData="R" /&gt;
-      &lt;HotkeyCommand CommandCode="17" Name="FindInCommitFilesUsingGitGrep" KeyData="RButton MButton XButton2 B D F Shift Control" /&gt;
       &lt;HotkeyCommand CommandCode="23" Name="RenameMove" KeyData="F2" /&gt;
+      &lt;HotkeyCommand CommandCode="9" Name="ResetSelectedFiles" KeyData="R" /&gt;
       &lt;HotkeyCommand CommandCode="14" Name="SelectFirstGroupChanges" KeyData="LButton A Control" /&gt;
       &lt;HotkeyCommand CommandCode="12" Name="ShowFileTree" KeyData="T" /&gt;
       &lt;HotkeyCommand CommandCode="1" Name="ShowHistory" KeyData="H" /&gt;
