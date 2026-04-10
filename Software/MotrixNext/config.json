@@ -2,15 +2,15 @@
   "preferences": {
     "autoCheckUpdate": true,
     "autoCheckUpdateInterval": 24,
-    "autoDeleteStaleRecords": false,
+    "autoDeleteStaleRecords": true,
     "autoHideWindow": false,
     "autoSyncTracker": true,
     "btForceEncryption": false,
     "btLoadSavedMetadata": true,
     "btMaxPeers": 128,
     "btSaveMetadata": true,
-    "btTracker": "http://tracker.opentrackr.org:1337/announce,udp://open.stealth.si:80/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.theoks.net:6969/announce,udp://tracker.srv00.com:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.dler.org:6969/announce,udp://tracker.darkness.services:6969/announce,udp://tracker.004430.xyz:1337/announce,udp://tracker-udp.gbitt.info:80/announce,udp://t.overflow.biz:6969/announce,udp://opentracker.io:6969/announce,udp://explodie.org:6969/announce,udp://bittorrent-tracker.e-n-c-r-y-p-t.net:1337/announce,https://tracker.zhuqiy.com:443/announce,https://tracker.pmman.tech:443/announce,https://tracker.nekomi.cn:443/announce,https://tracker.gcrenwp.top:443/announce,https://tracker.cutie.dating:443/announce,https://tracker.bt4g.com:443/announce,http://93.158.213.92:1337/announce,udp://185.243.218.213:80/announce,udp://91.216.110.53:451/announce,udp://147.45.77.75:6969/announce,udp://43.250.54.137:6969/announce,udp://211.75.205.188:6969/announce,udp://138.124.183.78:6969/announce,udp://192.3.130.53:1337/announce,udp://109.201.134.183:80/announce,udp://189.18.126.32:6969/announce,http://34.66.57.33:11450/announce,http://211.75.205.189:80/announce,http://216.144.239.90:6969/announce,http://95.217.167.10:6969/announce,http://140.235.237.23:6969/announce,http://207.211.184.229:6969/announce,udp://23.175.184.30:23333/announce,udp://148.135.112.164:6969/announce,udp://209.50.255.93:3218/announce,udp://135.125.236.64:6969/announce",
-    "clearCompletedOnExit": false,
+    "btTracker": "udp://tracker.opentrackr.org:1337/announce,udp://wepzone.net:6969/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.theoks.net:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.darkness.services:6969/announce,udp://tracker.corpscorp.online:80/announce,udp://tracker.004430.xyz:1337/announce,udp://t.overflow.biz:6969/announce,udp://open.stealth.si:80/announce,udp://bittorrent-tracker.e-n-c-r-y-p-t.net:1337/announce,https://tracker.zhuqiy.com:443/announce,https://tracker.yemekyedim.com:443/announce,https://tracker.pmman.tech:443/announce,https://tracker.nekomi.cn:443/announce,https://tracker.moeking.me:443/announce,https://tracker.gcrenwp.top:443/announce,https://tracker.bt4g.com:443/announce,https://tr.nyacat.pw:443/announce,https://cny.fan:443/announce,udp://44.30.4.4:6969/announce,udp://89.234.156.205:451/announce,udp://209.141.59.16:6969/announce,udp://43.250.54.137:6969/announce,udp://138.124.183.78:6969/announce,udp://34.66.57.33:80/announce,udp://192.3.130.53:1337/announce,udp://189.18.126.32:6969/announce,udp://185.243.218.213:80/announce,http://34.66.57.33:2701/announce,http://34.66.57.33:2710/announce,http://211.75.205.189:80/announce,http://167.253.78.20:8080/announce,http://95.217.167.10:6969/announce,http://140.235.237.23:6969/announce,http://207.211.184.229:6969/announce,http://34.66.57.33:443/announce,udp://132.226.6.145:6969/announce,udp://23.175.184.30:23333/announce,udp://209.50.255.93:3218/announce",
+    "clearCompletedOnExit": true,
     "clipboard": {
       "btHash": true,
       "enable": true,
@@ -26,7 +26,7 @@
     "customTrackerUrls": [],
     "dbSchemaVersion": 2,
     "deleteFilesWhenSkipConfirm": false,
-    "deleteTorrentAfterComplete": false,
+    "deleteTorrentAfterComplete": true,
     "dhtListenPort": 26701,
     "dir": "E:\\Download",
     "dockBadgeSpeed": true,
@@ -41,8 +41,8 @@
     "historyDirectories": [],
     "keepSeeding": false,
     "keepWindowState": false,
-    "lastCheckUpdateTime": 1775705944429,
-    "lastSyncTrackerTime": 1775705940315,
+    "lastCheckUpdateTime": 1775792389308,
+    "lastSyncTrackerTime": 1775792385634,
     "listenPort": 21301,
     "locale": "zh-CN",
     "logLevel": "debug",
@@ -59,6 +59,7 @@
     "pauseMetadata": true,
     "protocols": {
       "magnet": false,
+      "motrixnext": false,
       "thunder": false
     },
     "proxy": {
@@ -77,8 +78,9 @@
     "rpcSecret": "",
     "runMode": "",
     "seedRatio": 2,
-    "seedTime": 2880,
+    "seedTime": 60,
     "showProgressBar": true,
+    "speedLimitEnabled": false,
     "split": 64,
     "taskNotification": true,
     "taskSort": {

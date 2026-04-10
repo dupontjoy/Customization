@@ -34,7 +34,7 @@ xcopy "%OutputDir%\Customization\Software\MotrixNext\system.json" "C:\Users\%USE
 
 :zlib
 ::zlib¿ÉÓÃÓòÃû
-xcopy "%SettingsDir%\Customization\Software\z-library\config.json" "C:\Users\%USERNAME%\AppData\Roaming\z-library\" /y
+::xcopy "%SettingsDir%\Customization\Software\z-library\config.json" "C:\Users\%USERNAME%\AppData\Roaming\z-library\" /y
 
 :end
 timeout /t 3 /nobreak >nul
