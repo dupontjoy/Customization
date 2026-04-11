@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
 ! Title: cinglist自用过滤规则。
 ! Author: Cing
-! Version: 2025
-! Expires: 2 days
+! Version: 2026
+! Expires: 1 days
 !-------------------------------------------------------------------------------------!
 
 ! moontv保存播放记录失败提示
@@ -14,6 +14,7 @@ bilibili.com##.reply-notice
 bilibili.com##.browser-tip > .title
 bilibili.com##.adblock-tips
 bilibili.com##.animated-banner
+bilibili.com###immersive-translatequick-button
 
 ! 防止斗鱼直播切回标签页会重新加载
 douyu.com##+js(aeld,visibilitychange)
