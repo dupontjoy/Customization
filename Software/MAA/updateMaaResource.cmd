@@ -7,8 +7,6 @@ title 一键更新MaaResource
 COLOR 0a
 cls
 
-:: 最小化当前窗口
-if not "%1"=="min" start /min "" "%~f0" min & exit /b
 
 pushd %~dp0
 

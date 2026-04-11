@@ -6,7 +6,7 @@ Title 备份文件到托管网站
 color 0a
 cls
 
-:: 最小化当前窗口
+:: 最小化当前窗口（ztasker复合任务中的脚本不要添加，会同时运行）
 if not "%1"=="min" start /min "" "%~f0" min & exit /b
 
 ::pushd命令，将当前目录的路径保存下来，并且切换到你指定的新目录路径。
