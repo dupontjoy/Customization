@@ -8,7 +8,10 @@
 userChromeJS.downloadPlus.enableFlashgotIntergention 启用 Flashgot 集成
 userChromeJS.downloadPlus.flashgotPath Flashgot可执行文件路径
 FlashGot.exe 下载：https://github.com/benzBrake/Firefox-downloadPlus.uc.js/releases/tag/v2023.05.11
+Aria2 下载：https://cdn.jsdmirror.com/gh/benzBrake/Firefox-downloadPlus.uc.js@main/files/Aria2.zip
 比如 \\chrome\\UserTools\\FlashGot.exe，需要使用\\替代\
+userChromeJS.downloadPlus.aria2Path aria2c 可执行文件路径
+userChromeJS.downloadPlus.enableAria2AutoStart 启动 Firefox 时自动启动 Aria2 RPC
 userChromeJS.downloadPlus.flashgotDownloadManagers 下载器列表缓存（一般不需要修改)
 userChromeJS.downloadPlus.flashgotDefaultManager 默认第三方下载器（一般不需要修改）
 userChromeJS.downloadPlus.enableRename 下载对话框启用改名功能
@@ -21,6 +24,9 @@ userChromeJS.downloadPlus.enableSaveAs 下载对话框启用另存为
 userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 */
+// @note            20260409 alerts 支持右下角自绘非全局 toast 提示，Aria2 RPC 添加成功与相关设置提示改为仅当前窗口显示
+// @note            20260408 Aria2 RPC 自动启动增加 RPC/进程双重检测，避免重复启动并区分自动/手动提示
+// @note            20260407 增加 aria2c 集成，支持启动 Firefox 时自动启动 Aria2 RPC，并在按钮菜单中切换
 // @note            20260406 新增 hook promptForSaveToFileAsync 自动转交 FlashGot，修复 FlashGot/Grabby cookie 格式错误并按请求过滤可用 cookie，补充 cookie 收集调试日志
 // @note            20260330 修复 createEl 对布尔属性处理不正确导致 selected/default/checked 等状态异常，并关闭默认调试日志，修复右键菜单图标异常
 // @note            20260226 修复下载器名称读取存在\r导致可能出现问题
@@ -148,6 +154,35 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             "log managers parsed": "解析后下载器列表",
             "log generate dl properties": "生成 .dl.properties 内容",
             "log write temp file": "写入临时文件",
+            "toggle aria2 autostart": "启动 Firefox 时自动启动 Aria2 RPC",
+            "toggle aria2 success alert": "Aria2 RPC 添加任务成功时显示提示",
+            "aria2 autostart enabled": "已启用 Firefox 启动时自动启动 Aria2 RPC",
+            "aria2 autostart disabled": "已关闭 Firefox 启动时自动启动 Aria2 RPC",
+            "aria2 success alert enabled": "已启用 Aria2 RPC 添加成功提示",
+            "aria2 success alert disabled": "已关闭 Aria2 RPC 添加成功提示",
+            "aria2 already running": "Aria2 RPC 已在运行",
+            "aria2 start failed": "启动 Aria2 RPC 失败",
+            "log start aria2web": "尝试启动 Aria2 RPC",
+            "log aria2 rpc availability check": "检查 aria2 RPC 可用性",
+            "log aria2 rpc unavailable fallback": "aria2 RPC 不可用，回退进程判重",
+            "log aria2 process check": "检查 aria2 进程是否已运行",
+            "log aria2 process match": "发现已运行的 aria2 进程",
+            "log aria2 process check failed": "检查 aria2 进程失败",
+            "log aria2 startup skipped": "aria2 已在运行，跳过启动",
+            "log aria2 start failed": "启动 Aria2 RPC 失败",
+            "log aria2 launch args": "aria2c 启动参数",
+            "more menu": "更多",
+            "open aria2web": "打开 Aria2 RPC web 界面",
+            "aria2 rpc unavailable": "Aria2 RPC 不可用",
+            "aria2 rpc request failed": "提交任务到 Aria2 RPC 失败",
+            "aria2 rpc request success": "已添加任务到 Aria2 RPC",
+            "aria2 rpc request success detail": "已添加任务到 Aria2 RPC：%s",
+            "log aria2 rpc request": "aria2 RPC 请求",
+            "log aria2 rpc response": "aria2 RPC 响应",
+            "log aria2 rpc startup retry": "aria2 RPC 不可用，尝试启动进程并重试",
+            "log aria2 rpc wait ready": "等待 aria2 RPC 就绪",
+            "log aria2 rpc retry": "重试 aria2 RPC 请求",
+            "log aria2 rpc wait timeout": "等待 aria2 RPC 就绪超时",
         },
         format (...args) {
             if (!args.length) {
@@ -367,26 +402,42 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
         "nsIAlertNotification",
         "initWithObject"
     );
+    const LOCAL_ALERT_HOST_ID = "downloadplus-local-alert-host";
+    const LOCAL_ALERT_STYLE_ID = "downloadplus-local-alert-style";
+    const LOCAL_ALERT_TIMEOUT_MS = 3500;
 
     if (window.DownloadPlus) return;
 
     window.DownloadPlus = {
-        debug: false,
+        debug: true,
         // ========================================
         // 配置常量
         // ========================================
         PREF_FLASHGOT_PATH: 'userChromeJS.downloadPlus.flashgotPath',
+        PREF_ARIA2_PATH: 'userChromeJS.downloadPlus.aria2Path',
+        PREF_ARIA2_AUTOSTART: 'userChromeJS.downloadPlus.enableAria2AutoStart',
+        PREF_ARIA2_SUCCESS_ALERT: 'userChromeJS.downloadPlus.enableAria2RpcSuccessAlert',
+        PREF_ARIA2_RPC_URL: 'userChromeJS.downloadPlus.aria2RpcUrl',
+        PREF_ARIA2_RPC_SECRET: 'userChromeJS.downloadPlus.aria2RpcSecret',
         PREF_DEFAULT_MANAGER: 'userChromeJS.downloadPlus.flashgotDefaultManager',
         PREF_DOWNLOAD_MANAGERS: 'userChromeJS.downloadPlus.flashgotDownloadManagers',
+        ARIA2_CLI_MANAGER_NAME: 'Aria2',
+        ARIA2_WEB_MANAGER_NAME: 'Aria2 RPC',
         SAVE_DIRS: [[Services.dirsvc.get('Desk', Ci.nsIFile).path, LANG.format("desktop")], [
             Services.dirsvc.get('DfltDwnld', Ci.nsIFile).path, LANG.format("downloads folder")
         ]],
         DOWNLOAD_MANAGERS: [],
         NEWER_FLASHGOT: false,
         DL_FILE_STRUCTURE: `{num};{download-manager};{is-private};;\n{referer}\n{url}\n{description}\n{cookies}\n{post-data}\n{filename}\n{extension}\n{download-page-referer}\n{download-page-cookies}\n\n\n{user-agent}`,
-        USERAGENT_OVERRIDES: {},
+        USERAGENT_OVERRIDES: {
+            'd.pcs.baidu.com': 'pan.baidu.com'
+        },
+        COOKIELESS_DOWNLOAD_HOSTS: [
+            'd.pcs.baidu.com'
+        ],
         REFERER_OVERRIDES: {
-            'aliyundrive.net': 'https://www.aliyundrive.com/'
+            'aliyundrive.net': 'https://www.aliyundrive.com/',
+            'd.pcs.baidu.com': ''
         },
         // UI 常量
         BUTTON_FEEDBACK_DURATION: 1000,  // 按钮反馈持续时间(毫秒)
@@ -406,6 +457,17 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             } else {
                 return this.FLASHGOT_PATH = false;
             }
+        },
+        getResolvedAria2Path () {
+            let aria2Pref = Services.prefs.getStringPref(this.PREF_ARIA2_PATH, "\\chrome\\UserTools\\Aria2\\aria2c.exe");
+            return handlePath(aria2Pref);
+        },
+        get ARIA2_PATH () {
+            delete this.ARIA2_PATH;
+            const aria2Pref = this.getResolvedAria2Path();
+            const aria2File = Cc['@mozilla.org/file/local;1'].createInstance(Ci.nsIFile);
+            aria2File.initWithPath(aria2Pref);
+            return this.ARIA2_PATH = aria2File.exists() ? aria2File.path : false;
         },
         get DEFAULT_MANAGER () {
             return Services.prefs.getStringPref(this.PREF_DEFAULT_MANAGER, '');
@@ -501,8 +563,16 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             }
             if (isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) {
                 console.log(LANG.format("log init flashgot integration"));
-                if (!this.FLASHGOT_PATH) return; // flashgot.exe not found
+                if (!this.FLASHGOT_PATH && !this.ARIA2_PATH) {
+                    if (Services.prefs.getBoolPref(this.PREF_ARIA2_AUTOSTART, false)) {
+                        this.startAria2Web({ source: "auto" });
+                    }
+                    return;
+                }
                 this.reloadSupportedManagers();
+                if (Services.prefs.getBoolPref(this.PREF_ARIA2_AUTOSTART, false)) {
+                    this.startAria2Web({ source: "auto" });
+                }
                 try {
                     CustomizableUI.createWidget({
                         id: 'DownloadPlus-Btn',
@@ -634,13 +704,414 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             if (!isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) {
                 return false;
             }
-            if (!this.FLASHGOT_PATH || !this.DEFAULT_MANAGER) {
+            if (!this.DEFAULT_MANAGER) {
+                return false;
+            }
+            if (this.isAria2CliManager(this.DEFAULT_MANAGER) || this.isAria2WebManager(this.DEFAULT_MANAGER)) {
+                if (!this.ARIA2_PATH) {
+                    return false;
+                }
+            } else if (!this.FLASHGOT_PATH) {
                 return false;
             }
             if (this._shouldPreserveInternalHandlingForLauncher(aLauncher)) {
                 return false;
             }
             return Boolean(aLauncher?.source?.spec) && isLinkSupportedByFlashgot(aLauncher.source);
+        },
+        getBuiltinDownloadManagers () {
+            const managers = [];
+            if (this.ARIA2_PATH) {
+                managers.push(this.ARIA2_CLI_MANAGER_NAME);
+                managers.push(this.ARIA2_WEB_MANAGER_NAME);
+            }
+            return managers;
+        },
+        _mergeDownloadManagers (...collections) {
+            const merged = [];
+            const seen = new Set();
+            for (const collection of collections) {
+                if (!Array.isArray(collection)) {
+                    continue;
+                }
+                for (const name of collection) {
+                    const trimmed = String(name || '').trim();
+                    if (!trimmed || seen.has(trimmed)) {
+                        continue;
+                    }
+                    seen.add(trimmed);
+                    merged.push(trimmed);
+                }
+            }
+            return merged;
+        },
+        isAria2Manager (manager) {
+            return this.isAria2CliManager(manager) || this.isAria2WebManager(manager);
+        },
+        isAria2CliManager (manager) {
+            return String(manager || '').trim().toLowerCase() === this.ARIA2_CLI_MANAGER_NAME.toLowerCase();
+        },
+        isAria2WebManager (manager) {
+            return String(manager || '').trim().toLowerCase() === this.ARIA2_WEB_MANAGER_NAME.toLowerCase();
+        },
+        getPowerShellPath () {
+            return handlePath('{SysD}\\WindowsPowerShell\\v1.0\\powershell.exe');
+        },
+        normalizeProcessPath (path) {
+            return String(path || '').trim().replace(/\//g, '\\').toLowerCase();
+        },
+        toPowerShellStringLiteral (value) {
+            return `'${String(value || '').replace(/'/g, "''")}'`;
+        },
+        isAria2RpcUnavailableError (error) {
+            return Boolean(error?.isAria2RpcUnavailable);
+        },
+        getAria2StartupFailureMessage (result = {}) {
+            switch (result.reason) {
+                case "invalid-path":
+                case "missing-file":
+                    return LANG.format("file not found", result.path || this.getResolvedAria2Path());
+                default:
+                    return LANG.format("aria2 start failed");
+            }
+        },
+        async requestAria2Rpc (method, params = [], options = {}) {
+            const allowStartupFallback = options.allowStartupFallback !== false;
+            const rpcUrl = this.ARIA2_RPC_URL;
+            const rpcParams = [];
+            if (this.ARIA2_RPC_SECRET) {
+                rpcParams.push(`token:${this.ARIA2_RPC_SECRET}`);
+            }
+            if (Array.isArray(params)) {
+                rpcParams.push(...params);
+            }
+
+            const payload = {
+                jsonrpc: "2.0",
+                id: `downloadplus-${Date.now()}`,
+                method,
+                params: rpcParams,
+            };
+
+            this._log(LANG.format("log aria2 rpc request"), payload);
+            const sendRpcRequest = async () => {
+                let response;
+                let timeoutId = null;
+                let controller = null;
+                try {
+                    if (typeof AbortController === "function") {
+                        controller = new AbortController();
+                        timeoutId = setTimeout(() => controller.abort(), options.timeoutMs || 3000);
+                    }
+                    response = await fetch(rpcUrl, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(payload),
+                        signal: controller?.signal,
+                    });
+                } catch (ex) {
+                    this._log(LANG.format("log aria2 rpc response"), ex);
+                    const unavailableError = new Error(LANG.format("aria2 rpc unavailable"));
+                    unavailableError.isAria2RpcUnavailable = true;
+                    unavailableError.cause = ex;
+                    throw unavailableError;
+                } finally {
+                    if (timeoutId) {
+                        clearTimeout(timeoutId);
+                    }
+                }
+
+                let result;
+                try {
+                    result = await response.json();
+                } catch (ex) {
+                    this._log(LANG.format("log aria2 rpc response"), ex);
+                    throw new Error(LANG.format("aria2 rpc request failed"));
+                }
+                this._log(LANG.format("log aria2 rpc response"), result);
+
+                if (!response.ok || result?.error) {
+                    throw new Error(result?.error?.message || LANG.format("aria2 rpc request failed"));
+                }
+
+                return result?.result;
+            };
+
+            try {
+                return await sendRpcRequest();
+            } catch (ex) {
+                if (!allowStartupFallback || !this.isAria2RpcUnavailableError(ex)) {
+                    throw ex;
+                }
+
+                this._log(LANG.format("log aria2 rpc startup retry"), {
+                    method,
+                    rpcUrl,
+                    error: ex?.message || String(ex),
+                });
+                const startupResult = await this.ensureAria2WebRunning({
+                    source: "manual",
+                    showAlerts: false,
+                });
+                if (startupResult.status === "failed") {
+                    throw new Error(this.getAria2StartupFailureMessage(startupResult));
+                }
+                if (!await this.waitForAria2RpcReady()) {
+                    throw ex;
+                }
+                this._log(LANG.format("log aria2 rpc retry"), { method, rpcUrl });
+                return await sendRpcRequest();
+            }
+        },
+        async isAria2WebAvailable () {
+            this._log(LANG.format("log aria2 rpc availability check"), this.ARIA2_RPC_URL);
+            try {
+                await this.requestAria2Rpc("aria2.getVersion", [], { timeoutMs: 1500, allowStartupFallback: false });
+                return true;
+            } catch (ex) {
+                this._log(LANG.format("log aria2 rpc unavailable fallback"), ex);
+                return false;
+            }
+        },
+        async waitForAria2RpcReady ({ timeoutMs = 5000, intervalMs = 250 } = {}) {
+            this._log(LANG.format("log aria2 rpc wait ready"), {
+                timeoutMs,
+                intervalMs,
+                rpcUrl: this.ARIA2_RPC_URL,
+            });
+            const deadline = Date.now() + timeoutMs;
+            while (Date.now() <= deadline) {
+                if (await this.isAria2WebAvailable()) {
+                    return true;
+                }
+                if (Date.now() >= deadline) {
+                    break;
+                }
+                await new Promise(resolve => setTimeout(resolve, intervalMs));
+            }
+            this._log(LANG.format("log aria2 rpc wait timeout"), {
+                timeoutMs,
+                intervalMs,
+                rpcUrl: this.ARIA2_RPC_URL,
+            });
+            return false;
+        },
+        async isAria2ProcessRunning () {
+            if (AppConstants.platform !== "win") {
+                return false;
+            }
+
+            const powerShellPath = this.getPowerShellPath();
+            const powerShellFile = Cc['@mozilla.org/file/local;1'].createInstance(Ci.nsIFile);
+            try {
+                powerShellFile.initWithPath(powerShellPath);
+            } catch (ex) {
+                this._log(LANG.format("log aria2 process check failed"), ex);
+                return false;
+            }
+            if (!powerShellFile.exists()) {
+                this._log(LANG.format("log aria2 process check failed"), powerShellPath);
+                return false;
+            }
+
+            const resultPath = handlePath('{TmpD}\\.aria2.process.' + Math.random().toString(36).slice(2) + '.json');
+            const normalizedTargetPath = this.normalizeProcessPath(this.ARIA2_PATH || this.getResolvedAria2Path());
+            const script = [
+                "$ErrorActionPreference = 'Stop'",
+                "$processes = @(Get-Process -Name 'aria2c' -ErrorAction SilentlyContinue | Select-Object @{Name='ProcessId';Expression={$_.Id}}, @{Name='ExecutablePath';Expression={$_.Path}})",
+                `$targetPath = ${this.toPowerShellStringLiteral(normalizedTargetPath)}`,
+                "if ($targetPath) {",
+                "    $matches = @($processes | Where-Object { $_.ExecutablePath -and $_.ExecutablePath.ToLowerInvariant() -eq $targetPath })",
+                "    if ($matches.Count -gt 0) { $processes = $matches }",
+                "}",
+                `$processes | ConvertTo-Json -Compress | Out-File -LiteralPath ${this.toPowerShellStringLiteral(resultPath)} -Encoding utf8`,
+            ].join("; ");
+
+            this._log(LANG.format("log aria2 process check"), { powerShellPath, normalizedTargetPath });
+
+            try {
+                await new Promise((resolve, reject) => {
+                    this.exec(powerShellPath, ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", script], {
+                        startHidden: true,
+                        silentErrors: true,
+                        processObserver: {
+                            observe (subject, topic) {
+                                switch (topic) {
+                                    case "process-finished":
+                                        setTimeout(resolve, 200);
+                                        break;
+                                    default:
+                                        reject(topic);
+                                        break;
+                                }
+                            }
+                        },
+                    }).then(started => {
+                        if (!started) {
+                            reject(new Error("failed to launch powershell process"));
+                        }
+                    }, reject);
+                });
+
+                const rawResult = (await readText(resultPath)).trim();
+                if (!rawResult || rawResult === 'null') {
+                    return false;
+                }
+                let processes = JSON.parse(rawResult);
+                if (!Array.isArray(processes)) {
+                    processes = [processes];
+                }
+                const matched = processes.filter(Boolean);
+                if (matched.length) {
+                    this._log(LANG.format("log aria2 process match"), matched);
+                    return true;
+                }
+            } catch (ex) {
+                this._log(LANG.format("log aria2 process check failed"), ex);
+            } finally {
+                await IOUtils.remove(resultPath, { ignoreAbsent: true });
+            }
+
+            return false;
+        },
+        async ensureAria2WebRunning (options = {}) {
+            const { source = "manual" } = options;
+            const showAlerts = Object.prototype.hasOwnProperty.call(options, "showAlerts")
+                ? Boolean(options.showAlerts)
+                : source !== "auto";
+            let aria2Path = this.ARIA2_PATH;
+            const aria2File = Cc['@mozilla.org/file/local;1'].createInstance(Ci.nsIFile);
+
+            try {
+                if (!aria2Path) {
+                    aria2Path = this.getResolvedAria2Path();
+                }
+                aria2File.initWithPath(aria2Path);
+            } catch (ex) {
+                this._log(LANG.format("log aria2 start failed"), ex);
+                if (showAlerts) {
+                    alerts(LANG.format("file not found", aria2Path), LANG.format("error"));
+                }
+                return { status: "failed", reason: "invalid-path", error: ex, path: aria2Path };
+            }
+
+            if (!aria2File.exists()) {
+                this._log(LANG.format("log aria2 start failed"), aria2Path);
+                if (showAlerts) {
+                    alerts(LANG.format("file not found", aria2Path), LANG.format("error"));
+                }
+                return { status: "failed", reason: "missing-file", path: aria2Path };
+            }
+
+            const rpcAvailable = await this.isAria2WebAvailable();
+            const processRunning = rpcAvailable ? false : await this.isAria2ProcessRunning();
+            if (rpcAvailable || processRunning) {
+                const reason = rpcAvailable ? "rpc" : "process";
+                this._log(LANG.format("log aria2 startup skipped"), reason);
+                if (showAlerts) {
+                    alerts(LANG.format("aria2 already running"));
+                }
+                return { status: "already_running", reason };
+            }
+
+            const args = await this.buildAria2BaseArgs();
+            this._log(LANG.format("log start aria2web"));
+            this._log(LANG.format("log aria2 launch args"), args);
+            const started = await this.exec(aria2Path, args, {
+                startHidden: true,
+                silentErrors: !showAlerts,
+            });
+            if (!started) {
+                this._log(LANG.format("log aria2 start failed"), aria2Path);
+                if (showAlerts) {
+                    alerts(LANG.format("aria2 start failed"), LANG.format("error"));
+                }
+                return { status: "failed", reason: "exec-failed", path: aria2Path };
+            }
+            return { status: "started" };
+        },
+        startAria2Web (options) {
+            return this.ensureAria2WebRunning(options);
+        },
+        toggleAria2AutoStart (enabled) {
+            Services.prefs.setBoolPref(this.PREF_ARIA2_AUTOSTART, enabled);
+            alerts(LANG.format(enabled ? "aria2 autostart enabled" : "aria2 autostart disabled"), null, null, false);
+            if (enabled) {
+                this.startAria2Web({
+                    source: "manual",
+                    showAlerts: false,
+                });
+            }
+        },
+        toggleAria2SuccessAlert (enabled) {
+            Services.prefs.setBoolPref(this.PREF_ARIA2_SUCCESS_ALERT, enabled);
+            alerts(LANG.format(enabled ? "aria2 success alert enabled" : "aria2 success alert disabled"), null, null, false);
+        },
+        async openAria2Web () {
+            const startupResult = await this.ensureAria2WebRunning({
+                source: "manual",
+                showAlerts: false,
+            });
+            if (startupResult.status === "failed") {
+                alerts(this.getAria2StartupFailureMessage(startupResult), LANG.format("error"));
+                return false;
+            }
+            if (!await this.waitForAria2RpcReady()) {
+                alerts(LANG.format("aria2 rpc unavailable"), LANG.format("error"));
+                return false;
+            }
+            openTrustedLinkIn("http://127.0.0.1:9990", "tab");
+            return true;
+        },
+        async buildAria2BaseArgs () {
+            const args = [];
+            const downloadDir = await this.getPreferredDownloadDirectory();
+            if (downloadDir) {
+                args.push(`--dir=${downloadDir}`);
+            }
+            return args;
+        },
+        async getPreferredDownloadDirectory () {
+            try {
+                return await Downloads.getPreferredDownloadsDirectory();
+            } catch (ex) {
+                this._log("获取 Firefox 下载目录失败，回退系统默认下载目录", ex);
+            }
+            try {
+                return Services.dirsvc.get('DfltDwnld', Ci.nsIFile).path;
+            } catch (ex) {
+                this._log("获取系统默认下载目录失败", ex);
+            }
+            return "";
+        },
+        get ARIA2_RPC_URL () {
+            return Services.prefs.getStringPref(this.PREF_ARIA2_RPC_URL, "http://127.0.0.1:6800/jsonrpc").trim();
+        },
+        get ARIA2_RPC_SECRET () {
+            return Services.prefs.getStringPref(this.PREF_ARIA2_RPC_SECRET, "").trim();
+        },
+        async addUriToAria2Web (uri, options = {}) {
+            const headers = [
+                options.userAgent ? `User-Agent: ${options.userAgent}` : "",
+                options.referer ? `Referer: ${options.referer}` : "",
+                options.cookies ? `Cookie: ${options.cookies}` : "",
+            ].filter(Boolean);
+            const aria2Options = {};
+
+            if (options.fileName) {
+                aria2Options.out = options.fileName.replace(invalidChars, '_');
+            }
+            const downloadDir = await this.getPreferredDownloadDirectory();
+            if (downloadDir) {
+                aria2Options.dir = downloadDir;
+            }
+            if (headers.length) {
+                aria2Options.header = headers;
+            }
+
+            return await this.requestAria2Rpc("aria2.addUri", [[uri.spec], aria2Options]);
         },
         _shouldPreserveInternalHandlingForLauncher (aLauncher) {
             if (!aLauncher) {
@@ -992,7 +1463,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             const browserWindow = Services.wm.getMostRecentWindow("navigator:browser");
             const downloadPlus = browserWindow.DownloadPlus;
 
-            if (!downloadPlus.FLASHGOT_PATH || !downloadPlus.DOWNLOAD_MANAGERS.length) {
+            if (!downloadPlus.DOWNLOAD_MANAGERS.length) {
                 return;
             }
 
@@ -1024,6 +1495,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 children.forEach(child => elem.appendChild(child));
                 return elem;
             };
+            const initialManager = downloadPlus.DEFAULT_MANAGER || downloadPlus.DOWNLOAD_MANAGERS[0] || '';
 
             const triggerDownload = () => {
                 const { mLauncher, mContext } = dialog;
@@ -1059,8 +1531,8 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                     createElem('hbox', { flex: 1, align: 'center' }, [
                         createElem('menulist', {
                             id: 'flashgotHandler',
-                            label: LANG.format('default download manager', downloadPlus.DEFAULT_MANAGER),
-                            manager: downloadPlus.DEFAULT_MANAGER,
+                            label: initialManager ? LANG.format('default download manager', initialManager) : LANG.format('no download managers'),
+                            manager: initialManager,
                             flex: 1,
                             native: true
                         }, [
@@ -1405,6 +1877,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
         },
         populateMenu (doc, menuObj) {
             const popup = createEl(doc, 'menupopup', menuObj);
+            let aria2Menu = null;
             if (menuObj.id === 'DownloadPlus-ContextMenu-Popup') {
                 popup.appendChild(createEl(doc, 'menuitem', {
                     label: LANG.format('download by default download manager'),
@@ -1415,6 +1888,40 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                     }
                 }));
             } else {
+                aria2Menu = createEl(doc, 'menu', {
+                    id: 'Aria2-Menu',
+                    label: LANG.format('more menu'),
+                    hidden: !this.ARIA2_PATH,
+                });
+                const aria2Popup = createEl(doc, 'menupopup', {
+                    id: 'Aria2-Menu-Popup',
+                });
+                aria2Popup.appendChild(createEl(doc, 'menuitem', {
+                    label: LANG.format('open aria2web'),
+                    id: 'Aria2-open-webui',
+                    oncommand: () => {
+                        this.openAria2Web();
+                    }
+                }));
+                aria2Popup.appendChild(createEl(doc, 'menuitem', {
+                    label: LANG.format('toggle aria2 autostart'),
+                    id: 'Aria2-toggle-autostart',
+                    type: 'checkbox',
+                    checked: Services.prefs.getBoolPref(this.PREF_ARIA2_AUTOSTART, false),
+                    oncommand: () => {
+                        this.toggleAria2AutoStart(!Services.prefs.getBoolPref(this.PREF_ARIA2_AUTOSTART, false));
+                    }
+                }));
+                aria2Popup.appendChild(createEl(doc, 'menuitem', {
+                    label: LANG.format('toggle aria2 success alert'),
+                    id: 'Aria2-toggle-success-alert',
+                    type: 'checkbox',
+                    checked: Services.prefs.getBoolPref(this.PREF_ARIA2_SUCCESS_ALERT, false),
+                    oncommand: () => {
+                        this.toggleAria2SuccessAlert(!Services.prefs.getBoolPref(this.PREF_ARIA2_SUCCESS_ALERT, false));
+                    }
+                }));
+                aria2Menu.appendChild(aria2Popup);
                 popup.appendChild(createEl(doc, 'menuitem', {
                     label: LANG.format('force reload download managers list'),
                     id: 'FlashGot-reload',
@@ -1432,6 +1939,12 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             popup.appendChild(createEl(doc, 'menuseparator', {
                 id: 'FlashGot-DownloadManagers-Separator'
             }));
+            if (menuObj.id !== 'DownloadPlus-ContextMenu-Popup') {
+                popup.appendChild(aria2Menu);
+                popup.appendChild(createEl(doc, 'menuseparator', {
+                    id: 'Aria2-Menu-Separator'
+                }));
+            }
             popup.appendChild(createEl(doc, 'menuitem', {
                 label: LANG.format('about download plus'),
                 id: 'FlashGot-about',
@@ -1446,6 +1959,24 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
         populateDynamicItems (popup) {
             if (popup.hasAttribute("initialized")) return;
             popup.setAttribute("initialized", true);
+            const aria2Toggle = popup.querySelector('#Aria2-toggle-autostart');
+            if (aria2Toggle) {
+                if (Services.prefs.getBoolPref(this.PREF_ARIA2_AUTOSTART, false)) {
+                    aria2Toggle.setAttribute('checked', 'true');
+                } else {
+                    aria2Toggle.removeAttribute('checked');
+                }
+            }
+            const aria2SuccessAlertToggle = popup.querySelector('#Aria2-toggle-success-alert');
+            if (aria2SuccessAlertToggle) {
+                if (Services.prefs.getBoolPref(this.PREF_ARIA2_SUCCESS_ALERT, false)) {
+                    aria2SuccessAlertToggle.setAttribute('checked', 'true');
+                } else {
+                    aria2SuccessAlertToggle.removeAttribute('checked');
+                }
+            }
+            popup.querySelector('#Aria2-Menu')?.toggleAttribute('hidden', !this.ARIA2_PATH);
+            popup.querySelector('#Aria2-Menu-Separator')?.toggleAttribute('hidden', !this.ARIA2_PATH);
             popup.querySelectorAll('menuitem[dynamic]').forEach(item => item.remove());
             const sep = popup.querySelector("#FlashGot-DownloadManagers-Separator")
             for (let name of this.DOWNLOAD_MANAGERS) {
@@ -1475,7 +2006,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
         isManagerEnabled (name) {
             return this.DEFAULT_MANAGER === name;
         },
-        exec: async function (path, args, options = { startHidden: false }) {
+        exec: async function (path, args, options = { startHidden: false, silentErrors: false }) {
             this._log(LANG.format("log exec called"), { path, args, options });
             switch (typeof args) {
                 case 'string':
@@ -1491,8 +2022,10 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             try {
                 file.initWithPath(path);
                 if (!file.exists()) {
-                    alerts(LANG.format("file not found", path), LANG.format("error"));
-                    return;
+                    if (!options.silentErrors) {
+                        alerts(LANG.format("file not found", path), LANG.format("error"));
+                    }
+                    return false;
                 }
 
                 if (file.isExecutable()) {
@@ -1500,30 +2033,35 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                     if (typeof options.processObserver === "object") {
                         this._log(LANG.format("log async process observer"));
                         process.runwAsync(args, args.length, options.processObserver);
+                        return true;
                     } else {
                         this._log(LANG.format("log sync execute"));
                         process.runw(false, args, args.length);
+                        return true;
                     }
 
                 } else {
                     this._log(LANG.format("log launch non executable"));
                     file.launch();
+                    return true;
                 }
             } catch (e) {
                 console.error("Execution error:", e);
+                return false;
             }
         },
         reloadSupportedManagers: async function (force = false, alert = false, callback) {
             this._log(LANG.format("log reload managers called"), { force, alert, current: this.DOWNLOAD_MANAGERS });
+            let managers = [];
             try {
                 let prefVal = Services.prefs.getStringPref('userChromeJS.downloadPlus.flashgotDownloadManagers');
-                this.DOWNLOAD_MANAGERS = prefVal.split(",");
-                this._log(LANG.format("log managers loaded from prefs"), this.DOWNLOAD_MANAGERS);
+                managers = prefVal.split(",");
+                this._log(LANG.format("log managers loaded from prefs"), managers);
             } catch (e) {
-                force = true;
+                force = force || Boolean(this.FLASHGOT_PATH);
                 this._log(LANG.format("log prefs read failed force rescan"), e);
             }
-            if (force) {
+            if (force && this.FLASHGOT_PATH) {
                 let self = this;
                 const resultPath = handlePath('{TmpD}\\.flashgot.dm.' + Math.random().toString(36).slice(2) + '.txt');
                 const args = this.NEWER_FLASHGOT ? ["--silent", "-f", "txt", "-o", resultPath] : ["-o", resultPath];
@@ -1567,16 +2105,17 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                         this._log(LANG.format("log managers raw result"), resultString);
                         let resultJson = JSON.parse(resultString);
                         this.NEWER_FLASHGOT = true;
-                        this.DOWNLOAD_MANAGERS = resultJson.filter(m => m.available).map(m => m.name);
+                        managers = resultJson.filter(m => m.available).map(m => m.name);
                     } else {
                         this._log(LANG.format("log managers raw result"), resultString);
-                        this.DOWNLOAD_MANAGERS = resultString.split("\n").filter(l => l.includes("|OK")).map(l => l.replace("|OK", "").replace(/\r$/, '').trim());
+                        managers = resultString.split("\n").filter(l => l.includes("|OK")).map(l => l.replace("|OK", "").replace(/\r$/, '').trim());
                     }
                     await IOUtils.remove(resultPath, { ignoreAbsent: true });
-                    this._log(LANG.format("log managers parsed"), this.DOWNLOAD_MANAGERS);
-                    Services.prefs.setStringPref(this.PREF_DOWNLOAD_MANAGERS, this.DOWNLOAD_MANAGERS.join(","));
+                    this._log(LANG.format("log managers parsed"), managers);
+                    Services.prefs.setStringPref(this.PREF_DOWNLOAD_MANAGERS, managers.join(","));
                 }
             }
+            this.DOWNLOAD_MANAGERS = this._mergeDownloadManagers(managers, this.getBuiltinDownloadManagers());
             if (alert) {
                 alerts(LANG.format("reload download managers list finish"));
             }
@@ -1586,7 +2125,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
         },
         downloadByManager: async function (manager, url, options = {}) {
             if (!manager) {
-                manager = this.DEFAULT_MANAGER;
+                manager = this.DEFAULT_MANAGER || this.DOWNLOAD_MANAGERS[0] || '';
             }
             if (!url) {
                 if (gContextMenu) {
@@ -1637,6 +2176,12 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 fileName = options.fileName || mLauncher.suggestedFileName;
                 try { extension = mLauncher.MIMEInfo.primaryExtension; } catch (e) { }
             }
+            if (options.downloadPageReferer) {
+                downloadPageReferer = options.downloadPageReferer;
+            }
+            if (!fileName && options.fileName) {
+                fileName = options.fileName;
+            }
             if (downloadPageReferer) {
                 downloadPageCookies = await gatherCookies(downloadPageReferer, false, undefined, {
                     logger: (...args) => this._log(...args),
@@ -1652,13 +2197,14 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 referer = downloadPageReferer;
             }
             let refMatched = domainMatch(uri.host, REFERER_OVERRIDES);
-            if (refMatched) {
+            if (refMatched !== undefined) {
                 referer = refMatched;
             }
             let uaMatched = domainMatch(uri.host, USERAGENT_OVERRIDES);
             if (uaMatched) {
                 userAgent = uaMatched;
             }
+            const skipCookies = Boolean(domainMatch(uri.host, this.COOKIELESS_DOWNLOAD_HOSTS));
             const cookieContext = {
                 logger: (...args) => this._log(...args),
                 options,
@@ -1667,10 +2213,31 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 referer,
                 downloadPageReferer
             };
-            const targetCookies = await gatherCookies(uri.spec, false, undefined, {
+            const targetCookies = skipCookies ? "" : await gatherCookies(uri.spec, false, undefined, {
                 ...cookieContext,
                 phase: "target"
             });
+            if (skipCookies) {
+                downloadPageCookies = "";
+            }
+            if (this.isAria2CliManager(manager)) {
+                return await this.downloadByAria2(uri, {
+                    description,
+                    referer,
+                    userAgent,
+                    cookies: targetCookies,
+                    fileName,
+                });
+            }
+            if (this.isAria2WebManager(manager)) {
+                return await this.downloadByAria2Web(uri, {
+                    description,
+                    referer,
+                    userAgent,
+                    cookies: targetCookies,
+                    fileName,
+                });
+            }
             let initData, initArgs = [];
             if (this.NEWER_FLASHGOT) {
                 // 新版的 JSON 格式，还没做完
@@ -1750,6 +2317,52 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                     }
                     return false;
                 }
+            }
+        },
+        downloadByAria2: async function (uri, options = {}) {
+            const aria2Path = this.ARIA2_PATH;
+            if (!aria2Path) {
+                alerts(LANG.format("file not found", "aria2c.exe"), LANG.format("error"));
+                return;
+            }
+
+            const args = await this.buildAria2BaseArgs();
+            args.push("--no-conf=true");
+            if (options.referer) {
+                args.push(`--referer=${options.referer}`);
+            }
+            if (options.userAgent) {
+                args.push(`--user-agent=${options.userAgent}`);
+            }
+            if (options.cookies) {
+                args.push(`--header=Cookie: ${options.cookies}`);
+            }
+            if (options.fileName) {
+                args.push(`--out=${options.fileName.replace(invalidChars, '_')}`);
+            }
+            args.push(uri.spec);
+
+            this._log(LANG.format("log aria2 launch args"), args);
+            await this.exec(aria2Path, args, { startHidden: false });
+        },
+        downloadByAria2Web: async function (uri, options = {}) {
+            try {
+                const gid = await this.addUriToAria2Web(uri, options);
+                if (Services.prefs.getBoolPref(this.PREF_ARIA2_SUCCESS_ALERT, false)) {
+                    const taskLabel = options.fileName || uri?.fileName || gid || "";
+                    alerts(
+                        taskLabel
+                            ? LANG.format("aria2 rpc request success detail", taskLabel)
+                            : LANG.format("aria2 rpc request success"),
+                        null,
+                        null,
+                        false
+                    );
+                }
+                return gid;
+            } catch (ex) {
+                alerts(ex?.message || LANG.format("aria2 rpc request failed"), LANG.format("error"));
+                throw ex;
             }
         },
         _log (...args) {
@@ -1877,11 +2490,17 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
      * @param {string} message 提示信息
      * @param {string} title 提示标题
      * @param {Function} callback 提示回调，可以不提供
+     * @param {boolean} isGlobal 是否使用全局系统提示，默认 true；false 时在当前浏览器内提示
      */
-    function alerts (message, title, callback) {
-        const alertsService = Cc["@mozilla.org/alerts-service;1"].getService(Ci.nsIAlertsService);
+    function alerts (message, title, callback, isGlobal = true) {
         const mTitle = title || LANG.format("app name");
         const mMessage = message + "";
+        if (!isGlobal) {
+            showBrowserNotification(mMessage, mTitle, callback);
+            return;
+        }
+
+        const alertsService = Cc["@mozilla.org/alerts-service;1"].getService(Ci.nsIAlertsService);
         const callbackObject = callback ? {
             observe: function (subject, topic, data) {
                 if ("alertclickcallback" != topic)
@@ -1902,6 +2521,190 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 "chrome://global/skin/icons/info.svg", mTitle,
                 mMessage, !!callbackObject, "", callbackObject);
         }
+    }
+
+    function showBrowserNotification (message, title, callback) {
+        const browserWindow = Services.wm.getMostRecentWindow("navigator:browser");
+        const host = ensureBrowserToastHost(browserWindow);
+        if (!host) {
+            alerts(message, title, callback, true);
+            return;
+        }
+
+        const doc = browserWindow.document;
+        const toast = doc.createElementNS("http://www.w3.org/1999/xhtml", "div");
+        const content = doc.createElementNS("http://www.w3.org/1999/xhtml", "div");
+        const titleNode = doc.createElementNS("http://www.w3.org/1999/xhtml", "div");
+        const messageNode = doc.createElementNS("http://www.w3.org/1999/xhtml", "div");
+        const actions = doc.createElementNS("http://www.w3.org/1999/xhtml", "div");
+        const closeButton = doc.createElementNS("http://www.w3.org/1999/xhtml", "button");
+
+        let dismissTimer = null;
+        let dismissed = false;
+        const isError = title === LANG.format("error");
+        const dismiss = () => {
+            if (dismissed) {
+                return;
+            }
+            dismissed = true;
+            if (dismissTimer) {
+                browserWindow.clearTimeout(dismissTimer);
+                dismissTimer = null;
+            }
+            toast.classList.remove("show");
+            browserWindow.setTimeout(() => toast.remove(), 180);
+        };
+        const scheduleDismiss = () => {
+            if (dismissTimer) {
+                browserWindow.clearTimeout(dismissTimer);
+            }
+            dismissTimer = browserWindow.setTimeout(dismiss, LOCAL_ALERT_TIMEOUT_MS);
+        };
+
+        toast.className = `downloadplus-local-alert${isError ? " error" : ""}`;
+        content.className = "downloadplus-local-alert-content";
+        titleNode.className = "downloadplus-local-alert-title";
+        messageNode.className = "downloadplus-local-alert-message";
+        actions.className = "downloadplus-local-alert-actions";
+        closeButton.className = "downloadplus-local-alert-close";
+        closeButton.type = "button";
+        closeButton.textContent = "×";
+        closeButton.title = "关闭";
+        closeButton.addEventListener("click", dismiss, { once: true });
+
+        titleNode.textContent = title && title !== LANG.format("app name") ? title : LANG.format("app name");
+        messageNode.textContent = message;
+        content.appendChild(titleNode);
+        content.appendChild(messageNode);
+        toast.appendChild(content);
+
+        if (callback) {
+            const actionButton = doc.createElementNS("http://www.w3.org/1999/xhtml", "button");
+            actionButton.className = "downloadplus-local-alert-action";
+            actionButton.type = "button";
+            actionButton.textContent = "确定";
+            actionButton.addEventListener("click", () => {
+                callback();
+                dismiss();
+            });
+            actions.appendChild(actionButton);
+        }
+        actions.appendChild(closeButton);
+        toast.appendChild(actions);
+
+        toast.addEventListener("mouseenter", () => {
+            if (dismissTimer) {
+                browserWindow.clearTimeout(dismissTimer);
+                dismissTimer = null;
+            }
+        });
+        toast.addEventListener("mouseleave", scheduleDismiss);
+
+        host.appendChild(toast);
+        browserWindow.requestAnimationFrame(() => toast.classList.add("show"));
+        scheduleDismiss();
+    }
+
+    function ensureBrowserToastHost (browserWindow) {
+        const doc = browserWindow?.document;
+        if (!doc) {
+            return null;
+        }
+
+        let style = doc.getElementById(LOCAL_ALERT_STYLE_ID);
+        if (!style) {
+            style = doc.createElementNS("http://www.w3.org/1999/xhtml", "style");
+            style.id = LOCAL_ALERT_STYLE_ID;
+            style.textContent = `
+                #${LOCAL_ALERT_HOST_ID} {
+                    position: fixed;
+                    right: 18px;
+                    bottom: 18px;
+                    z-index: 2147483647;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: flex-end;
+                    pointer-events: none;
+                }
+                #${LOCAL_ALERT_HOST_ID} .downloadplus-local-alert {
+                    width: min(360px, calc(100vw - 32px));
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 12px;
+                    padding: 12px 14px;
+                    border-radius: 12px;
+                    border: 1px solid rgba(255, 255, 255, 0.12);
+                    background: rgba(28, 32, 40, 0.96);
+                    color: #f5f7fa;
+                    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
+                    opacity: 0;
+                    transform: translateY(12px);
+                    transition: opacity 0.18s ease, transform 0.18s ease;
+                    pointer-events: auto;
+                    backdrop-filter: blur(10px);
+                    font: menu;
+                }
+                #${LOCAL_ALERT_HOST_ID} .downloadplus-local-alert.show {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                #${LOCAL_ALERT_HOST_ID} .downloadplus-local-alert.error {
+                    background: rgba(76, 22, 22, 0.96);
+                    border-color: rgba(255, 120, 120, 0.35);
+                }
+                #${LOCAL_ALERT_HOST_ID} .downloadplus-local-alert-content {
+                    flex: 1;
+                    min-width: 0;
+                }
+                #${LOCAL_ALERT_HOST_ID} .downloadplus-local-alert-title {
+                    margin-bottom: 4px;
+                    font-weight: 700;
+                    line-height: 1.25;
+                }
+                #${LOCAL_ALERT_HOST_ID} .downloadplus-local-alert-message {
+                    line-height: 1.45;
+                    word-break: break-word;
+                    opacity: 0.94;
+                }
+                #${LOCAL_ALERT_HOST_ID} .downloadplus-local-alert-actions {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    flex-shrink: 0;
+                }
+                #${LOCAL_ALERT_HOST_ID} .downloadplus-local-alert-action,
+                #${LOCAL_ALERT_HOST_ID} .downloadplus-local-alert-close {
+                    appearance: none;
+                    border: 0;
+                    border-radius: 8px;
+                    padding: 6px 10px;
+                    cursor: pointer;
+                    background: rgba(255, 255, 255, 0.12);
+                    color: inherit;
+                    font: inherit;
+                }
+                #${LOCAL_ALERT_HOST_ID} .downloadplus-local-alert-close {
+                    padding-inline: 9px;
+                    font-size: 16px;
+                    line-height: 1;
+                }
+                #${LOCAL_ALERT_HOST_ID} .downloadplus-local-alert-action:hover,
+                #${LOCAL_ALERT_HOST_ID} .downloadplus-local-alert-close:hover {
+                    background: rgba(255, 255, 255, 0.2);
+                }
+            `;
+            (doc.body || doc.documentElement).appendChild(style);
+        }
+
+        let host = doc.getElementById(LOCAL_ALERT_HOST_ID);
+        if (!host) {
+            host = doc.createElementNS("http://www.w3.org/1999/xhtml", "div");
+            host.id = LOCAL_ALERT_HOST_ID;
+            (doc.body || doc.documentElement).appendChild(host);
+        }
+        return host;
     }
 
     function handlePath (path) {
@@ -2393,6 +3196,12 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 }
 .downloader-item[manager="Thunder"] {
     list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABUUlEQVQ4T2NkAAL/5p9bGRgYvUBs4sH/bRtr2b0ZydMMs+b/NqABv/4Ta6uWPAODpxEzw4sP/xmW7v8H1gY2QFmSgeHuc9zGgDRG2TEz6MgzMTx6/Z8hb+YfuGK4C/SVGBlyfJgZRPkYGebs+sOw5dR/BkZGBobGaGYGPQUmuIYZ2/8w7DiLcDSKF0A2tcWyghXvvfSXwVaLmYGNBdVlSZN+M7z7hBDDCIMNNRADsIG+jX8YDl1GDTKSDJi85Q/D3gsUGABz1dm7/xjWHvvLcO0hNBaQnRvrzMQQbMmM4YPbz/4xnL7zn+Hn7/8M20//Z/gFjQis6SDLh4nBzQBhSNXi32DbsAGcCUlVmoEhxoGZQV+RieHyg38MtUv+kmYATLU2MGpbgVFbsfA3w43HmGYQlZRB6cPHlJmhaw2mK4jOTCBDMMMBmJlAjiIvR0KyMwB0zo+VR+VNTAAAAABJRU5ErkJggg==');
+}
+.downloader-item[manager="Aria2"]{
+    list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABrUlEQVQ4T6WSv+uBURTGn1dSmBlMSla7zYoM/AsGIr+LIiRRlN8Ryr/AhNVmt0qZDMwoyat7bu/NO3xLvs9yz3nuuZ97zn1fyefzyfiHJAYYDAY/IWKxGAjQ7XZ/AiSTSQ5otVoqwOFwwHg8xm63I9/hcCAcDsNms6nqMpkMBzQaDbFxPp+RSCRwvV5VxUajEb1eD2azWfi5XI4DarWaMEejETabDeXBYJDW2WxGq8vlQiQSEbWFQoEDKpWKMFmrt9sNVqsV9Xqd/Hw+j+PxCIPBQKMpKpfLHFAsFsm73+/UPpPf74fb7aZ4vV5jsVhQPJ1OBaBarXIAu0EBZLNZitlhj8dD8Wq1IgjT5ydnHRJAOSRJEkqlEo1gsViQSqXoUKfTwel0ohE+x202mxyQTqdFW8vlEtvtlnKv10sr85icTqfwWN5utzkgHo8LgCzLtMHe41N6vR7sItalon6/zwHRaFSYWq0Wr9cL8/kc+/2efLvdjkAgAI1Gg+fzKWqHwyEHhEIh1W06nQ4mk4lmZmJvcrlc8Hg8VHWTyYQDlB9GtftFwn4wAnxR+2fJGz92unF4K3iuAAAAAElFTkSuQmCC')
+}
+.downloader-item[manager="Aria2-RPC"]{
+    list-style-image: url('data:image/png;base64,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')
 }
 menuseparator:not([hidden=true])+#FlashGot-DownloadManagers-Separator,
 #context-media-eme-learnmore:has(~ #FlashGot-ContextMenu[hide-eme-sep=true]) {

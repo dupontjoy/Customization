@@ -53,7 +53,6 @@ user_pref("browser.tabs.warnOnCloseOtherTabs", false);//关闭其它标签时不
 user_pref("browser.tabs.closeWindowWithLastTab", false);//关闭最后一个标签时不关闭Firefox
 user_pref("browser.link.open_newwindow.restriction", 0);//单窗口模式(弹出窗口用标签打开)
 
-
 //*==========下载相关==========*//
 user_pref("browser.download.useDownloadDir", false);//下载时每次讯问我要存到何处
 user_pref("browser.download.always_ask_before_handling_new_types", true);//Firefox如何处理其他文件：询问要打开还是保存文件
