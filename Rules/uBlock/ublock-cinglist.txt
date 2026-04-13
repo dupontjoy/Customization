@@ -17,9 +17,9 @@ bilibili.com##.animated-banner
 bilibili.com###immersive-translatequick-button
 
 ! 解决B端后台播放冻结及进度回退问题。也可安装 Disable Page Visibility API 扩展。（网页会检测浏览器当前页面是否激活状态，不是的情况下会暂停播放）
-! 阻止页面监听 visibilitychange 事件
+ ! 阻止页面监听 visibilitychange 事件
 bilibili.com##+js(addEventListener-defuser, visibilitychange)
-! 只作用于播放器 iframe（最干净，但复杂）
+ ! 只作用于播放器 iframe（最干净，但复杂）
 player.bilibili.com##+js(set-constant, document.hidden, false)
 player.bilibili.com##+js(addEventListener-defuser, visibilitychange)
 
