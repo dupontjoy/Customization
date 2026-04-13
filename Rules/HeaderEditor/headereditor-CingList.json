@@ -826,7 +826,7 @@
 			}
 		},
 		{
-			"enable": true,
+			"enable": false,
 			"name": "网站UA设置为Edge",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
@@ -842,7 +842,7 @@
 				"user-agent": "Edge/1000"
 			},
 			"condition": {
-				"regex": "^https?:\\/\\/.*(jianshu|youtube|google|bilibili).*"
+				"regex": "^https?:\\/\\/.*(jianshu|youtube|google).*"
 			}
 		}
 	],
