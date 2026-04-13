@@ -842,7 +842,7 @@
 				"user-agent": "Edge/1000"
 			},
 			"condition": {
-				"regex": "^https?:\\/\\/.*(jianshu|youtube|google).*"
+				"regex": "^https?:\\/\\/.*(jianshu|youtube|google|bilibili).*"
 			}
 		}
 	],
