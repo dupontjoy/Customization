@@ -17,7 +17,12 @@ bilibili.com##.animated-banner
 bilibili.com###immersive-translatequick-button
 
 ! 解决B端后台播放冻结及进度回退问题。也可安装 Disable Page Visibility API 扩展。（网页会检测浏览器当前页面是否激活状态，不是的情况下会暂停播放）
-
+! 只针对B站播放器核心，不干扰其他脚本
+bilibili.com##+js(set-constant, window.__INITIAL_STATE__.videoInfo.no_reprint, undefined)
+! 仅拦截播放器的可见性监听器，而非全局属性
+bilibili.com##+js(removeEventListener, visibilitychange, __playbackVisibilityChangeHandler)
+! 覆盖播放器内部的状态检测函数
+bilibili.com##+js(set-constant, window.player.core.playerObserver.isBackground, false)
 
 ! 防止斗鱼直播切回标签页会重新加载
 douyu.com##+js(aeld,visibilitychange)
