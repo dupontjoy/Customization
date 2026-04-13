@@ -2366,6 +2366,92 @@
         "enabled": true,
         "options": {}
       }
+    },
+    "videoCurTime": {
+      "code": "!function(e,t){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define([],t):\"object\"==typeof exports?exports[\"video/player/localtime\"]=t():e[\"video/player/localtime\"]=t()}(globalThis,(()=>(()=>{\"use strict\";var e={d:(t,o)=>{for(var n in o)e.o(o,n)&&!e.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:o[n]})},o:(e,t)=>Object.prototype.hasOwnProperty.call(e,t)},t={};e.d(t,{component:()=>d});const o=coreApis.componentApis.video.playerAgent,n=coreApis.observer,a=coreApis.settings,i=coreApis.utils.urls;let l,r=none;var s=function(e){return e.TR=\"右上角\",e.TL=\"左上角\",e.TC=\"顶部中央\",e.BR=\"右下角\",e.BL=\"左下角\",e.BC=\"底部中央\",e}(s||{});const d={name:\"videoCurTime\",author:{name:\"FoundTheWOUT\",link:\"https://github.com/FoundTheWOUT\"},description:{\"zh-CN\":\"在视频的右上角显示当前时间\"},displayName:\"视频内显示时间\",entry:async e=>{let{settings:{options:t},metadata:i}=e;const d=document.createElement(\"span\");d.id=\"cur-time\";const p={position:\"absolute\",top:\"0\",right:\"0\",zIndex:\"10\",fontFamily:\"Arial\",fontSize:\"24px\",fontWeight:\"bold\",margin:\"1rem\"},m={color:t.color,opacity:t.opacity,fontFamily:t.fontFamily,fontSize:`${t.fontSize}px`};function c(e){let{top:t,left:o,bottom:n,right:a,transform:i}=e;d.style.top=t??\"\",d.style.left=o??\"\",d.style.bottom=n??\"\",d.style.right=a??\"\",d.style.transform=i??\"\"}Object.keys(Object.assign(p,m)).forEach((e=>{d.style[e]=p[e]})),Object.keys(m).forEach((e=>{(0,a.addComponentListener)(`${i.name}.${e}`,(t=>{\"fontSize\"===e?d.style.fontSize=`${t}px`:d.style[e]=t}))})),(0,a.addComponentListener)(`${i.name}.position`,(e=>{e===s.TR?c({top:\"0\",right:\"0\"}):e===s.TL?c({top:\"0\",left:\"0\"}):e===s.TC?c({top:\"0\",left:\"50%\",transform:\"translateX(-50%)\"}):e===s.BR?c({bottom:\"0\",right:\"0\"}):e===s.BL?c({bottom:\"0\",left:\"0\"}):e===s.BC&&c({bottom:\"0\",left:\"50%\",transform:\"translateX(-50%)\"})}),!0),(0,n.videoChange)((async()=>{(await o.playerAgent.query.video.wrap()).appendChild(d)})),r=()=>{const e=new Date;d.innerHTML=((e,t)=>{let o=e.getHours(),n=e.getMinutes().toFixed(),a=e.getSeconds().toFixed();Number(n)<10&&(n=n.padStart(2,\"0\")),Number(a)<10&&(a=a.padStart(2,\"0\")),!t?.TFFormat&&o>12&&(o-=12);const i=`${o}:${n}`;return t?.showSecond?`${i}:${a}`:i})(e,t)},l=setInterval(r,1e3)},reload(){document.getElementById(\"cur-time\").style.visibility=\"\",l=setInterval(r,1e3)},unload(){document.getElementById(\"cur-time\").style.visibility=\"hidden\",clearInterval(l)},tags:[componentsTags.video],options:{opacity:{slider:{max:1,min:0,step:.01},defaultValue:.5,displayName:\"透明度\"},color:{color:!0,defaultValue:\"#d1d5db\",displayName:\"颜色\"},showSecond:{defaultValue:!1,displayName:\"显示秒\"},TFFormat:{defaultValue:!0,displayName:\"24小时制\"},position:{defaultValue:s.TR,displayName:\"位置\",dropdownEnum:s},fontFamily:{defaultValue:\"\",displayName:\"字体\"},fontSize:{defaultValue:24,displayName:\"尺寸\",slider:{min:10,max:100,step:1}}},urlInclude:i.allVideoUrls,commitHash:\"c7bd5b72064a115e8615523dd376f244f7915b36\",coreVersion:\"2.10.4\"};return t=t.component})()));",
+      "metadata": {
+        "name": "videoCurTime",
+        "author": {
+          "name": "FoundTheWOUT",
+          "link": "https://github.com/FoundTheWOUT"
+        },
+        "description": {
+          "zh-CN": "在视频的右上角显示当前时间"
+        },
+        "displayName": "视频内显示时间",
+        "tags": [
+          {
+            "name": "video",
+            "displayName": "视频",
+            "color": "#2196F3",
+            "icon": "mdi-play-circle-outline",
+            "order": 1
+          }
+        ],
+        "options": {
+          "opacity": {
+            "slider": {
+              "max": 1,
+              "min": 0,
+              "step": 0.01
+            },
+            "defaultValue": 0.5,
+            "displayName": "透明度"
+          },
+          "color": {
+            "color": true,
+            "defaultValue": "#d1d5db",
+            "displayName": "颜色"
+          },
+          "showSecond": {
+            "defaultValue": false,
+            "displayName": "显示秒"
+          },
+          "TFFormat": {
+            "defaultValue": true,
+            "displayName": "24小时制"
+          },
+          "position": {
+            "defaultValue": "右上角",
+            "displayName": "位置",
+            "dropdownEnum": {
+              "TR": "右上角",
+              "TL": "左上角",
+              "TC": "顶部中央",
+              "BR": "右下角",
+              "BL": "左下角",
+              "BC": "底部中央"
+            }
+          },
+          "fontFamily": {
+            "defaultValue": "",
+            "displayName": "字体"
+          },
+          "fontSize": {
+            "defaultValue": 24,
+            "displayName": "尺寸",
+            "slider": {
+              "min": 10,
+              "max": 100,
+              "step": 1
+            }
+          }
+        },
+        "commitHash": "c7bd5b72064a115e8615523dd376f244f7915b36",
+        "coreVersion": "2.10.4"
+      },
+      "settings": {
+        "enabled": true,
+        "options": {
+          "opacity": 1,
+          "color": "#FF9900",
+          "showSecond": false,
+          "TFFormat": true,
+          "position": "右上角",
+          "fontFamily": "",
+          "fontSize": 24
+        }
+      }
     }
   },
   "components": {
@@ -2655,6 +2741,12 @@
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/style/hide/video/share.js",
               "lastUpdateCheck": 1776041373893,
               "installTime": 1775898993015,
+              "alwaysUpdate": false
+            },
+            "videoCurTime": {
+              "url": "https://cdn.jsdelivr.net/gh/FoundTheWOUT/Bilibili-Evolved@master/registry/dist/components/video/player/localtime.js",
+              "lastUpdateCheck": 1776072556487,
+              "installTime": 1776072556487,
               "alwaysUpdate": false
             }
           },
