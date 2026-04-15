@@ -1,0 +1,44 @@
+[
+  {
+    "name": "听书精选-230TS",
+    "url": "https://www.230ts.net",
+    "type": "audio",
+    "searchUrl": "https://www.230ts.net/search.html?searchtype=name&searchword={{key}}&page={{page}}",
+    "group": "听书"
+  },
+  {
+    "name": "听书精选-听456",
+    "url": "http://www.ting456.com",
+    "type": "audio",
+    "searchUrl": "http://www.ting456.com/search.php?page={{page}}&searchword={{key}}",
+    "group": "听书"
+  },
+  {
+    "name": "听书精选-听神马",
+    "url": "https://m.tingsm.com",
+    "type": "audio",
+    "searchUrl": "https://m.tingsm.com/search.php",
+    "group": "听书"
+  },
+  {
+    "name": "听书精选-中文听书",
+    "url": "https://www.tingzh.com",
+    "type": "audio",
+    "searchUrl": "https://www.tingzh.com/search.php?page={{page}}&searchword={{key}}",
+    "group": "听书"
+  },
+  {
+    "name": "听书精选-小米听书",
+    "url": "https://mitingshu.com",
+    "type": "audio",
+    "searchUrl": "https://mitingshu.com/search.php?page={{page}}&searchword={{key}}",
+    "group": "听书"
+  },
+  {
+    "name": "听书精选-三五听书",
+    "url": "https://ting35.com",
+    "type": "audio",
+    "searchUrl": "https://ting35.com/search.php?page={{page}}&searchword={{key}}",
+    "group": "听书"
+  }
+]
