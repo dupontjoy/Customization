@@ -8,6 +8,7 @@
     "DefAllowInsecure": false,
     "DefFingerprint": "chrome",
     "DefUserAgent": null,
+    "SendThrough": null,
     "EnableFragment": true,
     "EnableCacheFile4Sbox": true
   },
@@ -17,7 +18,9 @@
     "StrictRoute": true,
     "Stack": null,
     "Mtu": 9000,
-    "EnableIPv6Address": false
+    "EnableIPv6Address": false,
+    "IcmpRouting": null,
+    "EnableLegacyProtect": false
   },
   "KcpItem": {
     "Mtu": 1350,
@@ -240,7 +243,10 @@
     "CheckPreReleaseUpdate": false,
     "SelectedCoreTypes": [
       "v2rayN",
-      "Xray"
+      "Xray",
+      "mihomo",
+      "sing_box",
+      "GeoFiles"
     ]
   },
   "Fragment4RayItem": {

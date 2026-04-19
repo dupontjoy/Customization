@@ -9,7 +9,7 @@
     "btLoadSavedMetadata": true,
     "btMaxPeers": 128,
     "btSaveMetadata": true,
-    "btTracker": "udp://tracker.opentrackr.org:1337/announce,udp://open.demonii.com:1337/announce,udp://open.stealth.si:80/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.theoks.net:6969/announce,udp://tracker.srv00.com:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.filemail.com:6969/announce,udp://tracker.darkness.services:6969/announce,udp://tracker.corpscorp.online:80/announce,udp://tracker.004430.xyz:1337/announce,udp://tracker-udp.gbitt.info:80/announce,udp://opentracker.io:6969/announce,udp://bittorrent-tracker.e-n-c-r-y-p-t.net:1337/announce,udp://6ahddutb1ucc3cp.ru:6969/announce,https://tracker.zhuqiy.com:443/announce,https://tracker.yemekyedim.com:443/announce,https://tracker.pmman.tech:443/announce,https://tracker.nekomi.cn:443/announce,https://tracker.moeblog.cn:443/announce,udp://93.158.213.92:1337/announce,udp://185.121.168.96:1337/announce,udp://89.234.156.205:451/announce,udp://185.243.218.213:80/announce,udp://209.141.59.16:6969/announce,udp://34.66.57.33:1337/announce,udp://192.3.130.53:1337/announce,udp://107.189.2.131:1337/announce,http://34.66.57.33:11450/announce,http://211.75.210.221:80/announce,http://34.66.57.33:6969/announce,http://95.217.167.10:6969/announce,http://60.249.37.20:6969/announce,http://211.75.205.187:6969/announce,http://140.235.237.23:6969/announce,udp://132.226.6.145:6969/announce,udp://23.175.184.30:23333/announce,udp://209.50.255.93:3218/announce,udp://135.125.236.64:6969/announce,udp://144.126.245.19:6969/announce",
+    "btTracker": "udp://tracker.opentrackr.org:1337/announce,udp://open.demonii.com:1337/announce,udp://open.stealth.si:80/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.theoks.net:6969/announce,udp://tracker.srv00.com:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.filemail.com:6969/announce,udp://tracker.darkness.services:6969/announce,udp://tracker.corpscorp.online:80/announce,udp://tracker.004430.xyz:1337/announce,udp://tracker-udp.gbitt.info:80/announce,udp://opentracker.io:6969/announce,udp://bittorrent-tracker.e-n-c-r-y-p-t.net:1337/announce,udp://6ahddutb1ucc3cp.ru:6969/announce,https://tracker.zhuqiy.com:443/announce,https://tracker.yemekyedim.com:443/announce,https://tracker.pmman.tech:443/announce,https://tracker.nekomi.cn:443/announce,https://tracker.moeblog.cn:443/announce",
     "clearCompletedOnExit": true,
     "clipboard": {
       "btHash": true,
@@ -44,7 +44,7 @@
     "keepSeeding": false,
     "keepWindowState": false,
     "lastCheckUpdateTime": 1776438120614,
-    "lastSyncTrackerTime": 1776416053056,
+    "lastSyncTrackerTime": 1776488516161,
     "lightweightMode": false,
     "listenPort": 21301,
     "locale": "zh-CN",

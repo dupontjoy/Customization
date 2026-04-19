@@ -4,14 +4,13 @@
  <dictionaryOrder id="0" name="">
   <dictionary name="王力古汉语字典文字版">af89be4480faae5f78bfa0808700a7f9</dictionary>
   <dictionary name="教育部重編國語辭典(第五版)">3c456c814b4fa541b2cc958599d97039</dictionary>
-  <dictionary name="【新华字典(第12版)】">8c1474083f8cc3ba38c89704dd3c7cd3</dictionary>
   <dictionary name="漢語大字典 (2010)">cf248195de5dc588eee5eab91dbded0d</dictionary>
+  <dictionary name="【新华字典(第12版)】">8c1474083f8cc3ba38c89704dd3c7cd3</dictionary>
   <dictionary name="现代汉语规范词典第4版">4fbfde53a4b3455b7b528cf566a0ea92</dictionary>
   <dictionary name="【现代汉语大词典】">29696be7c8de82ef3cea90c9302a2307</dictionary>
   <dictionary name="漢語大詞典3">f6c40d8357bf7bd667dfe2742ab87a31</dictionary>
   <dictionary name="字源 (2012)">ae9ddb3c5e6d42ef6b06721661a5cab1</dictionary>
   <dictionary name="字海叶典2025">5d117c6c8da0e9dd1849637203572198</dictionary>
-  <dictionary name="千篇汉语词典2021">312d7e7258193f435a773ad615fa5e7d</dictionary>
   <dictionary name="千篇汉语词典2023[繁简通搜]">3f80714750a7c7587e11de90c3acc5ce</dictionary>
   <dictionary name="【成语词典】">5c148c3a333b8526035148f015e6aba2</dictionary>
   <dictionary name="古人名字解詁">53f8ddae541bf57cf8ec0d537a079997</dictionary>
@@ -27,7 +26,7 @@
  <inactiveDictionaries id="0" name="">
   <mutedDictionaries/>
  </inactiveDictionaries>
- <groups nextId="5"/>
+ <groups/>
  <hunspell dictionariesPath=""/>
  <transliteration>
   <enableRussianTransliteration>0</enableRussianTransliteration>
@@ -154,6 +153,7 @@
   <enableApplicationLog>0</enableApplicationLog>
   <openWebsiteInNewTab>0</openWebsiteInNewTab>
   <suppressWebDialogs>0</suppressWebDialogs>
+  <enableJavaScriptClipboardAccess>0</enableJavaScriptClipboardAccess>
   <maxStringsInHistory>20</maxStringsInHistory>
   <storeHistory>1</storeHistory>
   <alwaysExpandOptionalParts>1</alwaysExpandOptionalParts>
