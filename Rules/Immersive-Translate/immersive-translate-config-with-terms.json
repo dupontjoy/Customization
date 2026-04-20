@@ -1,0 +1,110 @@
+{
+  "isChangedAlwaysTranslatedUrls": false,
+  "translationUrlPattern": {
+    "matches": [
+      "twitter.com",
+      "x.com",
+      "www.reddit.com",
+      "www.kadaza.com",
+      "en.wikipedia.org",
+      "*.medium.com",
+      "news.ycombinator.com"
+    ],
+    "excludeMatches": []
+  },
+  "modifiedBySystem": true,
+  "aiAssistantIds": [
+    "paraphrase",
+    "paragraph-summarizer-expert",
+    "plain-english",
+    "twitter",
+    "tech",
+    "reddit",
+    "paper",
+    "news",
+    "music",
+    "medical",
+    "legal",
+    "github",
+    "game",
+    "ecommerce",
+    "financial",
+    "fiction",
+    "ao3",
+    "ebook",
+    "design",
+    "bilingual-mix",
+    "web3"
+  ],
+  "interfaceLanguage": "zh-CN",
+  "targetLanguage": "zh-CN",
+  "translationServiceChangedbyUserAt": "2026-03-11T12:22:06.598Z",
+  "translationService": "siliconcloud",
+  "userTranslationServices": {
+    "translationService": "siliconcloud-free",
+    "subtitleTranslateService": "inherit",
+    "inputTranslationService": "inherit",
+    "mouseHoverTranslationService": "inherit"
+  },
+  "isEnableGuideTips": true,
+  "isEnableNotification": true,
+  "translationTheme": "dividingLine",
+  "translationMode": "translation",
+  "translationThemePatterns": {},
+  "selectTranslationFont": "",
+  "updatedAt": "2026-04-20T02:36:25.357Z",
+  "localUpdatedAt": "2026-04-20T02:36:25.357Z",
+  "protocolAgreeVersion": "1.0.1",
+  "pcFloatBallMainBtnTooltipShownCount": 7,
+  "translationServices": {
+    "siliconcloud-free": {
+      "assistantId": "auto"
+    }
+  },
+  "translationLanguagePattern": {
+    "excludeMatches": [
+      "zh-CN",
+      "zh-TW",
+      "zh-HK"
+    ],
+    "matches": []
+  },
+  "generalRule": {
+    "subtitleRule.add": {
+      "autoEnableSubtitle": false,
+      "youtubeAutoEnableSubtitle": false,
+      "showQuickButton": false
+    },
+    "selectionTranslation.add": {
+      "service": "siliconcloud-free"
+    }
+  },
+  "customAiAssistants": [],
+  "terms": {
+    "version": 1,
+    "exportedAt": "2026-04-20T02:37:19.195Z",
+    "data": [
+      {
+        "id": "default",
+        "name": "默认术语库",
+        "author": "self",
+        "description": "默认常见术语库，包含常见术语",
+        "matches": [
+          "*"
+        ],
+        "glossaries": [
+          {
+            "k": "LLM",
+            "v": ""
+          },
+          {
+            "k": "LLMs",
+            "v": ""
+          }
+        ],
+        "order": 0,
+        "active": true
+      }
+    ]
+  }
+}
