@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxy-providers:
-  Provider_5910B5:
+  Provider_F83387:
     type: http
-    url: https://163cfn.232885.xyz/163cfn/sub?target=base64
+    url: https://163cfn.232885.xyz/cfn/sub?target=base64
     interval: 3600
     proxy: DIRECT
-    path: ./providers/Provider_5910B5.yaml
+    path: ./providers/Provider_F83387.yaml
     health-check:
       enable: true
       url: https://cp.cloudflare.com/generate_204
@@ -22,7 +22,7 @@ proxy-groups:
   - name: 🚀 手动选择
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - ♻️ 自动选择
@@ -38,7 +38,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
   - name: 💬 即时通讯
     type: select
@@ -55,7 +55,7 @@ proxy-groups:
   - name: 🌐 社交媒体
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -82,7 +82,7 @@ proxy-groups:
   - name: 🤖 ChatGPT
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -96,7 +96,7 @@ proxy-groups:
   - name: 🤖 AI服务
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -110,7 +110,7 @@ proxy-groups:
   - name: 🎶 TikTok
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -124,7 +124,7 @@ proxy-groups:
   - name: 📹 YouTube
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -138,7 +138,7 @@ proxy-groups:
   - name: 🎥 Netflix
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -152,7 +152,7 @@ proxy-groups:
   - name: 🎥 DisneyPlus
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -166,7 +166,7 @@ proxy-groups:
   - name: 🎥 HBO
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -180,7 +180,7 @@ proxy-groups:
   - name: 🎥 PrimeVideo
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -194,7 +194,7 @@ proxy-groups:
   - name: 🎥 AppleTV+
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -209,7 +209,7 @@ proxy-groups:
   - name: 🎥 Emby
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -224,7 +224,7 @@ proxy-groups:
   - name: 🎻 Spotify
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -239,7 +239,7 @@ proxy-groups:
   - name: 📺 Bahamut
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🇼🇸 台湾节点
@@ -248,7 +248,7 @@ proxy-groups:
   - name: 🌎 国外媒体
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -262,7 +262,7 @@ proxy-groups:
   - name: 🛒 国外电商
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -288,7 +288,7 @@ proxy-groups:
   - name: 🇬 谷歌服务
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -302,7 +302,7 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🎯 全球直连
@@ -317,7 +317,7 @@ proxy-groups:
   - name: Ⓜ️ 微软服务
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🎯 全球直连
@@ -332,7 +332,7 @@ proxy-groups:
   - name: 🎮 游戏平台
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🎯 全球直连
@@ -347,7 +347,7 @@ proxy-groups:
   - name: 🎮 Steam
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🎯 全球直连
@@ -362,7 +362,7 @@ proxy-groups:
   - name: 🚀 测速工具
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🎯 全球直连
@@ -377,7 +377,7 @@ proxy-groups:
   - name: 🐟 漏网之鱼
     type: select
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: .*
     proxies:
       - 🚀 手动选择
@@ -400,7 +400,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: (🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong Kong|HongKong|hongkong|HONG KONG|HONGKONG|深港|HKG|九龙|Kowloon|新界|沙田|荃湾|葵涌)
   - name: 🇺🇸 美国节点
     type: url-test
@@ -408,7 +408,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: (🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|纽约|纽纽|亚特兰大|迈阿密|华盛顿|\bUS(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC)
   - name: 🇯🇵 日本节点
     type: url-test
@@ -416,7 +416,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: (🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI)
   - name: 🇸🇬 新加坡节点
     type: url-test
@@ -424,7 +424,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: (🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN)
   - name: 🇼🇸 台湾节点
     type: url-test
@@ -432,7 +432,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: (🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC)
   - name: 🇰🇷 韩国节点
     type: url-test
@@ -440,7 +440,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - Provider_5910B5
+      - Provider_F83387
     filter: (🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
   - name: 🎯 全球直连
     type: select
