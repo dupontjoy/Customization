@@ -1,0 +1,1 @@
+不要勾选“Windows Settings”，保存着默认程序关联设置

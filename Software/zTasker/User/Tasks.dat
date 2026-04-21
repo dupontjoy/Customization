@@ -1069,9 +1069,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-03-18 13:45:36</EndDateTime>
-		<NextRunDateTime>2126-03-28 07:51:52</NextRunDateTime>
+		<NextRunDateTime>2036-04-18 21:52:06</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-04-21 07:51:52</LastRunTime>
+		<LastRunTime>2026-04-21 16:40:26</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1416,10 +1416,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>36</SchType>
 		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
-		<EndDateTime>2026-04-03 02:14:24</EndDateTime>
-		<NextRunDateTime>2026-04-21 13:00:00</NextRunDateTime>
-		<NextRunTime>2026-04-21 13:00:00</NextRunTime>
-		<LastRunTime>2026-04-21 09:00:00</LastRunTime>
+		<EndDateTime>2026-04-21 04:28:48</EndDateTime>
+		<NextRunDateTime>2026-04-22 09:00:00</NextRunDateTime>
+		<NextRunTime>2026-04-22 09:00:00</NextRunTime>
+		<LastRunTime>2026-04-21 21:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1429,6 +1429,7 @@ env2=value2</edtAppEnv>
 			<DTOnce>2024-12-26 20:34:03</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
 			<Name>清理</Name>
+			<SchHotkey>Shift+P</SchHotkey>
 			<StopHotkey>Ctrl+Alt+P</StopHotkey>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
@@ -1451,6 +1452,10 @@ env2=value2</edtAppEnv>
 			<chkExecExitFocus>0</chkExecExitFocus>
 			<chkExecExitFullScr>0</chkExecExitFullScr>
 			<chkExecExitPre>1</chkExecExitPre>
+			<chkExecHotkeyType>1</chkExecHotkeyType>
+			<chkExecQuickType>1</chkExecQuickType>
+			<chkExecSchType>1</chkExecSchType>
+			<chkExecSkipTip>0</chkExecSkipTip>
 			<chkHKMouseCorner>0</chkHKMouseCorner>
 			<chkHKMouseCorner1>0</chkHKMouseCorner1>
 			<chkHKMouseCorner2>0</chkHKMouseCorner2>
@@ -1480,6 +1485,8 @@ env2=value2</edtAppEnv>
 			<chkHotkeyX2>0</chkHotkeyX2>
 			<chkQukPhz>0</chkQukPhz>
 			<chkQukPhzProc>0</chkQukPhzProc>
+			<chkQukPhzProcPartMatch>0</chkQukPhzProcPartMatch>
+			<chkQukPhzProcWildMatch>0</chkQukPhzProcWildMatch>
 			<chkQukPhzTip>1</chkQukPhzTip>
 			<chkRunMiss>0</chkRunMiss>
 			<chkSKPartMatch>0</chkSKPartMatch>
@@ -1489,6 +1496,8 @@ env2=value2</edtAppEnv>
 			<chkSKWinFore>0</chkSKWinFore>
 			<chkSKWinMouseIn>0</chkSKWinMouseIn>
 			<chkSKWinSub>0</chkSKWinSub>
+			<chkSchHotkey>0</chkSchHotkey>
+			<chkSchHotkeyRelay>0</chkSchHotkeyRelay>
 			<chkSchLimitCount>0</chkSchLimitCount>
 			<chkSelfDelete>0</chkSelfDelete>
 			<chkTimer>1</chkTimer>
@@ -1510,6 +1519,8 @@ env2=value2</edtAppEnv>
 			<cmbHKType_text>按下时</cmbHKType_text>
 			<cmbHotKeySolo>0</cmbHotKeySolo>
 			<cmbHotkey>81</cmbHotkey>
+			<cmbVarClear>local</cmbVarClear>
+			<cmbVarClear_text>清理局部</cmbVarClear_text>
 			<edtCron>0 0 9/4 * * ? </edtCron>
 			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
 			<edtDelayBoot>0</edtDelayBoot>
