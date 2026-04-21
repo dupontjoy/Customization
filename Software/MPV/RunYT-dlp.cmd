@@ -71,7 +71,7 @@ goto :eof
 :setting_yt-dlp_params
 ::设置yt-dlp下载参数（使用deno运行环境才能下载youtube视频）
 set "title=%%(title)s@%%(uploader)s.%%(ext)s"
-set yt-dlp_params=--remote-components ejs:github --js-runtimes deno --cookies-from-browser firefox:"%firefox_profile%" %format_res% %format_px% --ffmpeg-location %ffmpeg% -o "%title%"
+set yt-dlp_params=--js-runtimes deno --cookies-from-browser firefox:"%firefox_profile%" %format_res% %format_px% --ffmpeg-location %ffmpeg% -o "%title%"
 ::下载视频转换成mp4（用--merge-output-format参数）
 set yt-dlp_download=yt-dlp --merge-output-format mp4 %yt-dlp_params% -P %SaveDir% "%link%"
 goto :eof

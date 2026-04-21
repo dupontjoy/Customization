@@ -46,7 +46,7 @@ items:
   selected:
   - name: 🐟 漏网之鱼
     now: ♻️ 自动选择
-  updated: 1776678506
+  updated: 1776739891
   option:
     with_proxy: false
     self_proxy: false
@@ -64,11 +64,11 @@ items:
   desc: ''
   url: https://163cml.232885.xyz/sub?token=c29f123519010e0895bf91e6b6abefba
   extra:
-    upload: 5391706780084
-    download: 5391706780084
+    upload: 1571463555523
+    download: 1571463555523
     total: 26388279066624
     expire: 4102329600
-  updated: 1776678511
+  updated: 1776739894
   option:
     with_proxy: false
     self_proxy: false
@@ -86,7 +86,10 @@ items:
   file: RwWmv60H3j0A.yaml
   desc: ''
   url: http://88cfn.232885.qzz.io/cfn/sub?target=clash
-  updated: 1776678506
+  selected:
+  - name: 🐟 漏网之鱼
+    now: ♻️ 自动选择
+  updated: 1776739889
   option:
     with_proxy: false
     self_proxy: false
@@ -130,15 +133,17 @@ items:
   url: https://cml88.232885.qzz.io/sub?token=ffe624e47c36175dd091122bd8336801
   selected:
   - name: ♻️ 自动选择
-    now: 2026-01-23_00:58:55_ip.164746.xyz 4
+    now: 108.162.198.56
   - name: 🚀 节点选择
-    now: cloudflare.182682.xyz
+    now: 🔮 负载均衡
+  - name: 🐟 漏网之鱼
+    now: 🔯 故障转移
   extra:
-    upload: 5391711055963
-    download: 5391711055963
+    upload: 1571485240336
+    download: 1571485240336
     total: 26388279066624
     expire: 4102329600
-  updated: 1776678510
+  updated: 1776739893
   option:
     with_proxy: false
     self_proxy: false
@@ -206,7 +211,7 @@ items:
   file: RkC6ZKw3xEgi.yaml
   desc: ''
   url: https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/quick/1/config.yaml
-  updated: 1776678506
+  updated: 1776739890
   option:
     with_proxy: false
     self_proxy: false
