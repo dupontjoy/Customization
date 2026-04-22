@@ -92,6 +92,11 @@ xcopy "%BackupDir%\..\..\..\GitExtensions\GitExtensions.settings" "%OutputDir%\C
 xcopy "%BackupDir%\..\..\..\GitExtensions\updateGitExtensions.cmd" "%OutputDir%\Customization\Software\GitExtensions\" /y
 xcopy "C:\Users\%USERNAME%\.gitconfig" "%OutputDir%\Customization\Software\GitExtensions\" /y
 
+:Glary
+xcopy "%BackupDir%\..\..\Software\GlaryUtilities\Data\settings\Glarysoft.cmd" "%OutputDir%\Customization\Software\Glary\" /y
+xcopy "%BackupDir%\..\..\Software\GlaryUtilities\Data\settings\Glarysoft.reg" "%OutputDir%\Customization\Software\Glary\" /y
+xcopy "%BackupDir%\..\..\Software\GlaryUtilities\Data\settings\GlarysoftW32.reg" "%OutputDir%\Customization\Software\Glary\" /y
+
 :GoldenDict
 xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customization\Software\GoldenDict\" /y
 xcopy "%BackupDir%\..\..\..\GoldenDict\updateGoldenDict.cmd" "%OutputDir%\Customization\Software\GoldenDict\" /y
