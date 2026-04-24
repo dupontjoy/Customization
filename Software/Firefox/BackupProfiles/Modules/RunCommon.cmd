@@ -12,6 +12,9 @@ pushd %~dp0
 cd ..\..\..\Software
 
 :delete
+::清理WinSxS，存储了Windows操作系统更新和补丁后的备份文件
+Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
+
 ::删除D:\Temp文件夹
 rd /s /q "D:\Temp"
 

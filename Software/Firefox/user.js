@@ -47,6 +47,8 @@ user_pref("browser.ai.control.smartTabGroups", "blocked");
 user_pref("browser.ai.control.translations", "blocked");
 
 //*==========标签相关==========*//
+user_pref("browser.tabs.groups.enabled", false);//禁用标签分组功能
+user_pref("browser.tabs.splitView.enabled", false);//禁用分屏功能
 user_pref("browser.tabs.loadBookmarksInTabs", true);//新标签打开书签
 user_pref("browser.tabs.warnOnClose", false);//关闭多个标签时不提示
 user_pref("browser.tabs.warnOnCloseOtherTabs", false);//关闭其它标签时不提示
