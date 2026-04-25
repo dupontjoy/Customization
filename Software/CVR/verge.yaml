@@ -53,7 +53,7 @@ auto_check_update: true
 default_latency_test: ''
 default_latency_timeout: 10000
 enable_auto_delay_detection: true
-auto_delay_detection_interval_minutes: 5
+auto_delay_detection_interval_minutes: 30
 enable_builtin_enhanced: true
 proxy_layout_column: 6
 test_list:
@@ -82,9 +82,9 @@ verge_socks_port: 7898
 verge_socks_enabled: false
 verge_port: 7899
 verge_http_enabled: false
-webdav_url: nsqtvY9B3M8spK3oFHDWmIC4fyj1ygWTnYAepn38yJDS1QPDpFe/sJzB2uHaF8QL/0ZkuytqBwDRUhwMDQ==
-webdav_username: d6/UT6O9RAh2yIYd0+upIyCIq0GVSNCdWzNYlX+O9+0BGm61RW2YGFMMYyGFfA0=
-webdav_password: N065uF4o1VCIPv+Z1VrBn42q45C/po6BWfBXIZO2mS2VH2H7y3xp+sbmuf84gA==
+webdav_url: gxtCPK6kaTjrmFEHP0CE8XdJ7ZrfcYrgnNaHPi02TTWKhKbbDyg1duizR/ibijwsyPteSx99t/hyky+CBA==
+webdav_username: kRjvufHI8dy45dfZHv3AcmDWuaEnJfCbVICWEWN5e7Kw6RWUq9oV/4XzZLqneSg=
+webdav_password: vSvsaspwR/kAOMRxY83ECfmMEpFhbaZrGbmVUKHtYNUHyH4yHE/C8St/Ui+t6w==
 tray_inline_outbound_modes: null
 enable_auto_light_weight_mode: false
 auto_light_weight_minutes: 10

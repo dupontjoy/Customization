@@ -1069,9 +1069,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-03-18 13:45:36</EndDateTime>
-		<NextRunDateTime>2126-03-31 13:41:11</NextRunDateTime>
+		<NextRunDateTime>2126-04-01 13:37:01</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-04-24 13:41:11</LastRunTime>
+		<LastRunTime>2026-04-25 13:37:01</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1415,11 +1415,11 @@ env2=value2</edtAppEnv>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>36</SchType>
-		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
-		<EndDateTime>2026-04-21 04:28:48</EndDateTime>
-		<NextRunDateTime>2026-04-24 17:00:00</NextRunDateTime>
-		<NextRunTime>2026-04-24 17:00:00</NextRunTime>
-		<LastRunTime>2026-04-24 13:00:00</LastRunTime>
+		<StartDateTime>2026-01-19 09:00:00</StartDateTime>
+		<EndDateTime>2026-04-24 08:57:36</EndDateTime>
+		<NextRunDateTime>2026-04-25 21:00:00</NextRunDateTime>
+		<NextRunTime>2026-04-25 21:00:00</NextRunTime>
+		<LastRunTime>2026-04-25 09:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1521,7 +1521,7 @@ env2=value2</edtAppEnv>
 			<cmbHotkey>81</cmbHotkey>
 			<cmbVarClear>local</cmbVarClear>
 			<cmbVarClear_text>清理局部</cmbVarClear_text>
-			<edtCron>0 0 9/4 * * ? </edtCron>
+			<edtCron>0 0 9,21 * * ? </edtCron>
 			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtExecExitWaitTime>60</edtExecExitWaitTime>
@@ -1760,9 +1760,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 09:00:00</StartDateTime>
 		<EndDateTime>2026-04-10 03:16:16</EndDateTime>
-		<NextRunDateTime>2026-04-25 09:00:00</NextRunDateTime>
-		<NextRunTime>2026-04-25 09:00:00</NextRunTime>
-		<LastRunTime>2026-04-18 09:00:00</LastRunTime>
+		<NextRunDateTime>2026-05-02 09:00:00</NextRunDateTime>
+		<NextRunTime>2026-05-02 09:00:00</NextRunTime>
+		<LastRunTime>2026-04-25 09:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2654,8 +2654,8 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2025-05-28 09:30:00</StartDateTime>
 		<EndDateTime>2026-04-11 05:34:56</EndDateTime>
-		<NextRunDateTime>2026-04-25 09:30:00</NextRunDateTime>
-		<NextRunTime>2026-04-25 09:30:00</NextRunTime>
+		<NextRunDateTime>2026-05-02 09:30:00</NextRunDateTime>
+		<NextRunTime>2026-05-02 09:30:00</NextRunTime>
 		<LastRunTime>2026-04-18 09:30:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
