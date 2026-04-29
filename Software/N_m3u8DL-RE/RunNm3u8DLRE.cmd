@@ -62,7 +62,7 @@ set /p "px=是否启用代理7897（y或空）： "
 if "!px!"=="" (
     set "format_px="
 ) else (
-    set "format_px=--custom-proxy 127.0.0.1:7897"
+    set "format_px=--custom-proxy http://127.0.0.1:7897"
 )
 
 :set_filename 
