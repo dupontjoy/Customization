@@ -1069,9 +1069,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-03-18 13:45:36</EndDateTime>
-		<NextRunDateTime>2126-04-05 08:21:04</NextRunDateTime>
+		<NextRunDateTime>2126-04-06 14:47:47</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-04-29 08:21:04</LastRunTime>
+		<LastRunTime>2026-04-30 14:47:47</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1414,12 +1414,12 @@ env2=value2</edtAppEnv>
 		<HKStopped>0</HKStopped>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
-		<SchType>3</SchType>
+		<SchType>2</SchType>
 		<StartDateTime>2026-01-19 21:00:00</StartDateTime>
-		<EndDateTime>2026-04-26 17:55:12</EndDateTime>
-		<NextRunDateTime>2026-05-02 21:00:00</NextRunDateTime>
-		<NextRunTime>2026-05-02 21:00:00</NextRunTime>
-		<LastRunTime>2026-04-26 09:00:00</LastRunTime>
+		<EndDateTime>2026-04-30 11:50:24</EndDateTime>
+		<NextRunDateTime>2026-04-30 21:00:00</NextRunDateTime>
+		<NextRunTime>2026-04-30 21:00:00</NextRunTime>
+		<LastRunTime>2026-04-29 21:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1435,13 +1435,6 @@ env2=value2</edtAppEnv>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
 			<ZeroFulls>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</ZeroFulls>
-			<chk1>0</chk1>
-			<chk2>0</chk2>
-			<chk3>0</chk3>
-			<chk4>0</chk4>
-			<chk5>0</chk5>
-			<chk6>1</chk6>
-			<chk7>0</chk7>
 			<chkAutoClose>0</chkAutoClose>
 			<chkAutoCloseHK>0</chkAutoCloseHK>
 			<chkDayLimit1>0</chkDayLimit1>
@@ -1530,7 +1523,7 @@ env2=value2</edtAppEnv>
 			<cmbVarClear_text>清理局部</cmbVarClear_text>
 			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
 			<edtDelayBoot>0</edtDelayBoot>
-			<edtEveryWeek>1</edtEveryWeek>
+			<edtEveryDay>1</edtEveryDay>
 			<edtExecExitWaitTime>60</edtExecExitWaitTime>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>

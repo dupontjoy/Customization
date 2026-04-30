@@ -10,7 +10,7 @@
     "btLoadSavedMetadata": true,
     "btMaxPeers": 128,
     "btSaveMetadata": true,
-    "btTracker": "udp://tracker.opentrackr.org:1337/announce,udp://open.demonii.com:1337/announce,udp://open.stealth.si:80/announce,udp://wepzone.net:6969/announce,udp://tracker.tryhackx.org:6969/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.srv00.com:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.gmi.gd:6969/announce,udp://tracker.fnix.net:6969/announce,udp://tracker.corpscorp.online:80/announce,udp://tracker.bittor.pw:1337/announce,udp://tracker.004430.xyz:1337/announce,udp://tracker-udp.gbitt.info:80/announce,udp://t.overflow.biz:6969/announce,udp://martin-gebhardt.eu:25/announce,udp://leet-tracker.moe:1337/announce,udp://ipv4announce.sktorrent.eu:6969/announce,udp://evan.im:6969/announce,udp://bittorrent-tracker.e-n-c-r-y-p-t.net:1337/announce,udp://93.158.213.92:1337/announce,udp://185.121.168.96:1337/announce,udp://185.243.218.213:80/announce,udp://44.30.4.4:6969/announce,udp://135.125.236.64:6969/announce,udp://91.216.110.53:451/announce,udp://147.45.77.75:6969/announce,udp://43.250.54.137:6969/announce,udp://5.255.124.190:6969/announce,udp://34.66.57.33:80/announce,udp://34.66.57.33:1337/announce,udp://192.3.130.53:1337/announce,udp://109.201.134.183:80/announce,udp://185.216.179.62:25/announce,udp://94.23.207.177:6969/announce,udp://74.119.149.136:6969/announce,udp://103.251.166.126:6969/announce,udp://185.189.13.108:6969/announce,http://34.66.57.33:2701/announce,http://34.66.57.33:2710/announce",
+    "btTracker": "udp://tracker.opentrackr.org:1337/announce,udp://open.demonii.com:1337/announce,udp://open.stealth.si:80/announce,udp://wepzone.net:6969/announce,udp://tracker.tryhackx.org:6969/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.srv00.com:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.gmi.gd:6969/announce,udp://tracker.fnix.net:6969/announce,udp://tracker.corpscorp.online:80/announce,udp://tracker.bittor.pw:1337/announce,udp://tracker.004430.xyz:1337/announce,udp://tracker-udp.gbitt.info:80/announce,udp://t.overflow.biz:6969/announce,udp://martin-gebhardt.eu:25/announce,udp://leet-tracker.moe:1337/announce,udp://ipv4announce.sktorrent.eu:6969/announce,udp://evan.im:6969/announce,udp://bittorrent-tracker.e-n-c-r-y-p-t.net:1337/announce,udp://185.121.168.96:1337/announce,udp://185.243.218.213:80/announce,udp://44.30.4.4:6969/announce,udp://132.226.6.145:6969/announce,udp://91.216.110.53:451/announce,udp://209.141.59.16:6969/announce,udp://91.186.213.204:6969/announce,udp://43.250.54.137:6969/announce,udp://192.3.130.53:1337/announce,udp://187.56.163.229:6969/announce,http://211.75.205.188:80/announce,http://216.144.239.90:6969/announce,http://95.217.167.10:6969/announce,http://140.235.237.23:6969/announce,http://45.146.254.59:80/announce,http://123.245.62.39:6969/announce,udp://23.175.184.30:23333/announce,udp://209.50.255.93:3218/announce,udp://135.125.236.64:6969/announce,udp://144.126.245.19:6969/announce",
     "clearCompletedOnExit": true,
     "clipboard": {
       "btHash": true,
@@ -38,7 +38,110 @@
     "extensionApiSecret": "",
     "favoriteDirectories": [],
     "fileAllocation": "trunc",
-    "fileCategories": [],
+    "fileCategories": [
+      {
+        "builtIn": true,
+        "directory": "E:/Download/Videos",
+        "extensions": [
+          "mp4",
+          "mkv",
+          "avi",
+          "mov",
+          "wmv",
+          "flv",
+          "webm",
+          "ts",
+          "m4v",
+          "rmvb"
+        ],
+        "label": "file-category-videos"
+      },
+      {
+        "builtIn": true,
+        "directory": "E:/Download/Music",
+        "extensions": [
+          "mp3",
+          "flac",
+          "aac",
+          "ogg",
+          "wav",
+          "wma",
+          "m4a",
+          "opus",
+          "ape"
+        ],
+        "label": "file-category-music"
+      },
+      {
+        "builtIn": true,
+        "directory": "E:/Download/Images",
+        "extensions": [
+          "jpg",
+          "jpeg",
+          "png",
+          "gif",
+          "bmp",
+          "svg",
+          "webp",
+          "ico",
+          "tiff",
+          "psd",
+          "raw"
+        ],
+        "label": "file-category-images"
+      },
+      {
+        "builtIn": true,
+        "directory": "E:/Download/Documents",
+        "extensions": [
+          "pdf",
+          "doc",
+          "docx",
+          "xls",
+          "xlsx",
+          "ppt",
+          "pptx",
+          "txt",
+          "csv",
+          "epub",
+          "md",
+          "rtf"
+        ],
+        "label": "file-category-documents"
+      },
+      {
+        "builtIn": true,
+        "directory": "E:/Download/Archives",
+        "extensions": [
+          "zip",
+          "rar",
+          "7z",
+          "tar",
+          "gz",
+          "bz2",
+          "xz",
+          "dmg",
+          "iso",
+          "zst"
+        ],
+        "label": "file-category-archives"
+      },
+      {
+        "builtIn": true,
+        "directory": "E:/Download/Programs",
+        "extensions": [
+          "exe",
+          "msi",
+          "deb",
+          "rpm",
+          "appimage",
+          "pkg",
+          "apk",
+          "snap"
+        ],
+        "label": "file-category-programs"
+      }
+    ],
     "fileCategoryEnabled": false,
     "followMetalink": false,
     "followTorrent": false,
@@ -51,8 +154,8 @@
     "keepAwake": false,
     "keepSeeding": false,
     "keepWindowState": false,
-    "lastCheckUpdateTime": 1777300524440,
-    "lastSyncTrackerTime": 1777344482490,
+    "lastCheckUpdateTime": 1777435368856,
+    "lastSyncTrackerTime": 1777435367758,
     "lightweightMode": false,
     "listenPort": 21301,
     "locale": "zh-CN",
@@ -72,9 +175,9 @@
     "openAtLogin": false,
     "pauseMetadata": true,
     "protocols": {
-      "magnet": false,
-      "motrixnext": false,
-      "thunder": false
+      "magnet": true,
+      "motrixnext": true,
+      "thunder": true
     },
     "proxy": {
       "bypass": "",

@@ -39,7 +39,7 @@ items:
   updated: 1768609861
 - uid: RwtvUmvfZOzw
   type: remote
-  name: 163cfn
+  name: cfn-163
   file: RwtvUmvfZOzw.yaml
   desc: ''
   url: https://163cfn.232885.xyz/cfn/sub?target=clash
@@ -48,7 +48,7 @@ items:
     now: ♻️ 自动选择
   - name: 🚀 手动选择
     now: ♻️ 自动选择
-  updated: 1777388732
+  updated: 1777538857
   option:
     with_proxy: false
     self_proxy: false
@@ -59,18 +59,56 @@ items:
     rules: rSSoCTvToOXh
     proxies: pItuzE1EwU0U
     groups: gGpEGYKXGKtE
+- uid: RsObJcbon9Kg
+  type: remote
+  name: cfn-88
+  file: RsObJcbon9Kg.yaml
+  desc: ''
+  url: https://cfn88.232885.qzz.io/cfn/sub?target=clash
+  updated: 1777531666
+  option:
+    with_proxy: false
+    self_proxy: false
+    update_interval: 60
+    allow_auto_update: true
+    merge: mrNdgHDYEBNF
+    script: sl2VrhXxK9vj
+    rules: rb7wTx0OciPd
+    proxies: pmjuAKoxXXqk
+    groups: gUN8PBck8f1r
+- uid: RwWmv60H3j0A
+  type: remote
+  name: cfn-xqj
+  file: RwWmv60H3j0A.yaml
+  desc: ''
+  url: https://xqjcfn.xuanqj.qzz.io/cfn/sub?target=clash
+  selected:
+  - name: 🐟 漏网之鱼
+    now: ♻️ 自动选择
+  updated: 1777538855
+  option:
+    with_proxy: false
+    self_proxy: false
+    update_interval: 60
+    timeout_seconds: 60
+    allow_auto_update: true
+    merge: mSbivow0g7K3
+    script: sVDw9jWjaXif
+    rules: roOyUC6l3tLV
+    proxies: pFKtlMMTCxjK
+    groups: gJM94Az4JbJq
 - uid: RT2I9eXxrIV0
   type: remote
-  name: 163cml
+  name: cml-163
   file: RT2I9eXxrIV0.yaml
   desc: ''
   url: https://163cml.232885.xyz/sub?token=c29f123519010e0895bf91e6b6abefba
   extra:
-    upload: 189130660132
-    download: 189130660132
+    upload: 4833538175144
+    download: 4833538175144
     total: 26388279066624
     expire: 4102329600
-  updated: 1777422042
+  updated: 1777538855
   option:
     with_proxy: false
     self_proxy: false
@@ -107,26 +145,9 @@ items:
   name: null
   file: gJ9TeWSCxhZh.yaml
   updated: 1768609920
-- uid: RsObJcbon9Kg
-  type: remote
-  name: cfn88
-  file: RsObJcbon9Kg.yaml
-  desc: ''
-  url: https://cfn88.232885.qzz.io/cfn/sub?target=clash
-  updated: 1777422043
-  option:
-    with_proxy: false
-    self_proxy: false
-    update_interval: 60
-    allow_auto_update: true
-    merge: mrNdgHDYEBNF
-    script: sl2VrhXxK9vj
-    rules: rb7wTx0OciPd
-    proxies: pmjuAKoxXXqk
-    groups: gUN8PBck8f1r
 - uid: RSylbZsV69Jd
   type: remote
-  name: cml88
+  name: cml-88
   file: RSylbZsV69Jd.yaml
   desc: ''
   url: https://cml88.232885.qzz.io/sub?token=ffe624e47c36175dd091122bd8336801
@@ -138,11 +159,11 @@ items:
   - name: 🐟 漏网之鱼
     now: 🔯 故障转移
   extra:
-    upload: 189232059538
-    download: 189232059538
+    upload: 4833529470677
+    download: 4833529470677
     total: 26388279066624
     expire: 4102329600
-  updated: 1777422043
+  updated: 1777538856
   option:
     with_proxy: false
     self_proxy: false
@@ -154,27 +175,6 @@ items:
     proxies: pFkHTiZHcalR
     groups: gJ9TeWSCxhZh
   home: https://cml88.232885.qzz.io/admin
-- uid: RwWmv60H3j0A
-  type: remote
-  name: xqjcfn
-  file: RwWmv60H3j0A.yaml
-  desc: ''
-  url: https://xqjcfn.xuanqj.qzz.io/cfn/sub?target=clash
-  selected:
-  - name: 🐟 漏网之鱼
-    now: ♻️ 自动选择
-  updated: 1777422276
-  option:
-    with_proxy: false
-    self_proxy: false
-    update_interval: 60
-    timeout_seconds: 60
-    allow_auto_update: true
-    merge: mSbivow0g7K3
-    script: sVDw9jWjaXif
-    rules: roOyUC6l3tLV
-    proxies: pFKtlMMTCxjK
-    groups: gJM94Az4JbJq
 - uid: m5FlUYCHmOcV
   type: merge
   name: null
@@ -231,7 +231,7 @@ items:
   file: RkC6ZKw3xEgi.yaml
   desc: ''
   url: https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/quick/1/config.yaml
-  updated: 1777422038
+  updated: 1777542449
   option:
     with_proxy: false
     self_proxy: false
