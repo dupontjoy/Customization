@@ -73,6 +73,62 @@ function Download-Archive ($filename, $link) {
     Invoke-WebRequest -Uri $link -UserAgent $useragent -OutFile $filename
 }
 
+function Get-GitHubToken {
+    $file = "settings.xml"
+
+    if (Test-Path $file) {
+        $filePath = (Resolve-Path $file).Path
+        [xml]$doc = Get-Content $filePath
+        $settings = $doc.SelectSingleNode("/settings")
+        if ($settings) {
+            $githubtoken = $settings.SelectSingleNode("githubtoken")
+        }
+        if ($settings -and ($null -eq $githubtoken)) {
+            $newNode = $doc.CreateElement("githubtoken")
+            $newNode.AppendChild($doc.CreateTextNode("unset")) | out-null
+            $settings.AppendChild($newNode) | out-null
+            $doc.Save($filePath)
+            $githubtoken = $newNode
+        }
+        if ($settings -and ($null -ne $githubtoken)) {
+            $token = ([string]$githubtoken.InnerText).Trim()
+            if (-not [string]::IsNullOrWhiteSpace($token) -and (-not [string]::Equals($token, "unset", [System.StringComparison]::OrdinalIgnoreCase))) {
+                return $token
+            }
+        }
+    }
+
+    $token = ([string]$env:GH_TOKEN).Trim()
+    if (-not [string]::IsNullOrWhiteSpace($token)) {
+        return $token
+    }
+
+    $token = ([string]$env:GITHUB_TOKEN).Trim()
+    if (-not [string]::IsNullOrWhiteSpace($token)) {
+        return $token
+    }
+
+    return $null
+}
+
+function Invoke-GitHubApi($Uri) {
+    $params = @{
+        Uri = $Uri
+        MaximumRedirection = 0
+        ErrorAction = "Ignore"
+        UseBasicParsing = $true
+        UserAgent = $useragent
+    }
+    $token = Get-GitHubToken
+    if (-not [string]::IsNullOrWhiteSpace($token)) {
+        $params.Headers = @{
+            Authorization = "Bearer $token"
+        }
+    }
+
+    Invoke-WebRequest @params
+}
+
 function Download-Ytplugin ($plugin, $version) {
     $link = ""
     $plugin_exe = ""
@@ -115,7 +171,7 @@ function Get-Latest-Mpv($Arch) {
     $filename = ""
     $download_link = ""
     $api_gh = "https://api.github.com/repos/zhongfly/mpv-winbuild/releases/latest"
-    $json = Invoke-WebRequest $api_gh -MaximumRedirection 0 -ErrorAction Ignore -UseBasicParsing -UserAgent $useragent | ConvertFrom-Json
+    $json = Invoke-GitHubApi $api_gh | ConvertFrom-Json
     $filename = $json.assets | where { $_.name -Match "mpv-$Arch-[0-9]{8}" } | Select-Object -ExpandProperty name
     $download_link = $json.assets | where { $_.name -Match "mpv-$Arch-[0-9]{8}" } | Select-Object -ExpandProperty browser_download_url
     if ($filename -is [array]) {
@@ -159,7 +215,7 @@ function Get-Latest-Ytplugin ($plugin) {
 
 function Get-Latest-FFmpeg ($Arch) {
     $api_gh = "https://api.github.com/repos/zhongfly/mpv-winbuild/releases/latest"
-    $json = Invoke-WebRequest $api_gh -MaximumRedirection 0 -ErrorAction Ignore -UseBasicParsing -UserAgent $useragent | ConvertFrom-Json
+    $json = Invoke-GitHubApi $api_gh | ConvertFrom-Json
     $filename = $json.assets | where { $_.name -Match "ffmpeg-$Arch-git-" } | Select-Object -ExpandProperty name
     $download_link = $json.assets | where { $_.name -Match "ffmpeg-$Arch-git-" } | Select-Object -ExpandProperty browser_download_url
     if ($filename -is [array]) {
@@ -337,6 +393,7 @@ function  Create-XML{
   <getffmpeg>unset</getffmpeg>
   <getytdl>unset</getytdl>
   <ytdlpchannel>unset</ytdlpchannel>
+  <githubtoken>unset</githubtoken>
 </settings>
 "@ | Set-Content "settings.xml" -Encoding UTF8
 }
