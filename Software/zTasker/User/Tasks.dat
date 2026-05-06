@@ -1068,19 +1068,20 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2026-03-18 13:45:36</EndDateTime>
-		<NextRunDateTime>2126-04-11 20:47:43</NextRunDateTime>
+		<EndDateTime>2026-05-07 03:31:12</EndDateTime>
+		<NextRunDateTime>2126-04-12 18:33:14</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-05-05 20:47:43</LastRunTime>
+		<LastRunTime>2026-05-06 18:33:14</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
 			<CountDownHour>0</CountDownHour>
 			<CountDownMin>0</CountDownMin>
-			<CountDownSec>10</CountDownSec>
+			<CountDownSec>5</CountDownSec>
 			<DTOnce>2024-12-26 20:34:03</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
 			<Name>开机运行</Name>
+			<SchHotkey>Shift+P</SchHotkey>
 			<StopHotkey>Ctrl+Alt+P</StopHotkey>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
@@ -1102,6 +1103,10 @@ env2=value2</edtAppEnv>
 			<chkExecExitFocus>0</chkExecExitFocus>
 			<chkExecExitFullScr>0</chkExecExitFullScr>
 			<chkExecExitPre>0</chkExecExitPre>
+			<chkExecHotkeyType>1</chkExecHotkeyType>
+			<chkExecQuickType>1</chkExecQuickType>
+			<chkExecSchType>1</chkExecSchType>
+			<chkExecSkipTip>0</chkExecSkipTip>
 			<chkHKMouseCorner>0</chkHKMouseCorner>
 			<chkHKMouseCorner1>0</chkHKMouseCorner1>
 			<chkHKMouseCorner2>0</chkHKMouseCorner2>
@@ -1131,6 +1136,8 @@ env2=value2</edtAppEnv>
 			<chkHotkeyX2>0</chkHotkeyX2>
 			<chkQukPhz>0</chkQukPhz>
 			<chkQukPhzProc>0</chkQukPhzProc>
+			<chkQukPhzProcPartMatch>0</chkQukPhzProcPartMatch>
+			<chkQukPhzProcWildMatch>0</chkQukPhzProcWildMatch>
 			<chkQukPhzTip>1</chkQukPhzTip>
 			<chkRunMiss>0</chkRunMiss>
 			<chkSKPartMatch>0</chkSKPartMatch>
@@ -1140,6 +1147,8 @@ env2=value2</edtAppEnv>
 			<chkSKWinFore>0</chkSKWinFore>
 			<chkSKWinMouseIn>0</chkSKWinMouseIn>
 			<chkSKWinSub>0</chkSKWinSub>
+			<chkSchHotkey>0</chkSchHotkey>
+			<chkSchHotkeyRelay>0</chkSchHotkeyRelay>
 			<chkSchLimitCount>0</chkSchLimitCount>
 			<chkSelfDelete>0</chkSelfDelete>
 			<chkTimer>1</chkTimer>
@@ -1161,6 +1170,8 @@ env2=value2</edtAppEnv>
 			<cmbHKType_text>按下时</cmbHKType_text>
 			<cmbHotKeySolo>0</cmbHotKeySolo>
 			<cmbHotkey>0</cmbHotkey>
+			<cmbVarClear>local</cmbVarClear>
+			<cmbVarClear_text>清理局部</cmbVarClear_text>
 			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtExecExitWaitTime>60</edtExecExitWaitTime>
@@ -1417,9 +1428,9 @@ env2=value2</edtAppEnv>
 		<SchType>36</SchType>
 		<StartDateTime>2026-01-19 21:00:00</StartDateTime>
 		<EndDateTime>2026-04-30 11:50:24</EndDateTime>
-		<NextRunDateTime>2026-05-06 09:00:00</NextRunDateTime>
-		<NextRunTime>2026-05-06 09:00:00</NextRunTime>
-		<LastRunTime>2026-05-05 21:00:00</LastRunTime>
+		<NextRunDateTime>2026-05-06 21:00:00</NextRunDateTime>
+		<NextRunTime>2026-05-06 21:00:00</NextRunTime>
+		<LastRunTime>2026-05-06 09:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
