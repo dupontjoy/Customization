@@ -185,9 +185,11 @@ robocopy "%BackupDir%\..\..\..\STranslate-win-Portable\current\PortableConfig\Se
 
 :tc
 ::Ç‰∑›Total Commander‘O÷√
-xcopy "%BackupDir%\..\..\Software\totalcmd64\WinCMD.ini" "%OutputDir%\Customization\Software\TotalCMD\" /y
+xcopy "%BackupDir%\..\..\Software\totalcmd64\wcx_ftp.ini" "%OutputDir%\Customization\Software\TotalCMD\" /y
+xcopy "%BackupDir%\..\..\Software\totalcmd64\wincmd.ini" "%OutputDir%\Customization\Software\TotalCMD\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\DEFAULT.BAR" "%OutputDir%\Customization\Software\TotalCMD\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\Default.br2" "%OutputDir%\Customization\Software\TotalCMD\" /y
+xcopy "%BackupDir%\..\..\Software\totalcmd64\Default.br144" "%OutputDir%\Customization\Software\TotalCMD\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\user\user.ini" "%OutputDir%\Customization\Software\TotalCMD\user\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\user\TCIgnore.ini" "%OutputDir%\Customization\Software\TotalCMD\user\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\Everything.ini" "%OutputDir%\Customization\Software\TotalCMD\Tools\" /y
