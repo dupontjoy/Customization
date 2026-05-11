@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RT2I9eXxrIV0
+current: RSylbZsV69Jd
 items:
 - uid: Merge
   type: merge
@@ -48,7 +48,7 @@ items:
     now: ♻️ 自动选择
   - name: 🚀 手动选择
     now: ♻️ 自动选择
-  updated: 1778234135
+  updated: 1778469434
   option:
     with_proxy: false
     self_proxy: false
@@ -65,7 +65,7 @@ items:
   file: RsObJcbon9Kg.yaml
   desc: ''
   url: https://cfn88.232885.qzz.io/cfn/sub?target=clash
-  updated: 1778230512
+  updated: 1778469435
   option:
     with_proxy: false
     self_proxy: false
@@ -85,7 +85,7 @@ items:
   selected:
   - name: 🐟 漏网之鱼
     now: ♻️ 自动选择
-  updated: 1778230506
+  updated: 1778469432
   option:
     with_proxy: false
     self_proxy: false
@@ -162,11 +162,11 @@ items:
   - name: 🐟 漏网之鱼
     now: 🔯 故障转移
   extra:
-    upload: 5388702822691
-    download: 5388702822691
+    upload: 6915307678191
+    download: 6915307678191
     total: 26388279066624
     expire: 4102329600
-  updated: 1778233693
+  updated: 1778330086
   option:
     with_proxy: false
     self_proxy: false
@@ -234,7 +234,7 @@ items:
   file: RkC6ZKw3xEgi.yaml
   desc: ''
   url: https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/quick/1/config.yaml
-  updated: 1778234122
+  updated: 1778469427
   option:
     with_proxy: false
     self_proxy: false

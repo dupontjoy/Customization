@@ -15,7 +15,7 @@ enable_group_icon: true
 pause_render_traffic_stats_on_blur: null
 common_tray_icon: false
 menu_icon: monochrome
-collapse_navbar: null
+collapse_navbar: false
 sysproxy_tray_icon: false
 tun_tray_icon: false
 enable_tun_mode: false
@@ -82,9 +82,9 @@ verge_socks_port: 7898
 verge_socks_enabled: false
 verge_port: 7899
 verge_http_enabled: false
-webdav_url: UymXaW/Cy9YqnkR3LqLmJJRUS8jBpmBP7tWIfthL1wHGpxfG/bOWNPhLjAJJfTum2HqWuF1pCcZ2GEtPzA==
-webdav_username: +BbDZxuMqlKXy+N4ZvDRLKb6SrtPvIX4Hsukj1uATPl+PwpAzbkA4gcATn3ktak=
-webdav_password: 2Ap3OqU4Wa0jUNiwHcH1VfxJb0ahIxgVWQ6UWfL1AgAPK/H9kBgHR0hDCVOirQ==
+webdav_url: mCACz8qYoQtw5284vX6pvoQ8oV4vQdh7BzjVfQ47OTi3nDEEMoT5ZJBCb+ugqiK3VAmZtgMC7Vh3s5YpHQ==
+webdav_username: pEL1d2mhDL+XslRGrhlr1wFbkZEN+TpOTUrNn2if1sxp4nGYEJ/h/Do4K9iCQ5M=
+webdav_password: s/LoZy5TUWn/voqEgs3qfJdLyAxqIjrBhJWMckIzFSCdgW6vSEMqqCmbz2ZOeg==
 tray_inline_outbound_modes: null
 enable_auto_light_weight_mode: true
 auto_light_weight_minutes: 5

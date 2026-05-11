@@ -12,7 +12,7 @@ cls
 pushd "%~dp0"
 
 :: 下载工具配置
-set "Curl_Download=curl -C - -LJ --ssl-no-revoke --progress-bar --create-days"
+set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-days"
 
 :: 版本文件
 set "version_file=versions_notepad4.txt"
@@ -110,7 +110,7 @@ setlocal enabledelayedexpansion
 ::先终止运行中的notepad4程序
 taskkill /f /t /im notepad4*
 
-::解压, 跳過压缩包的第一层目录
+::解压, 跳過压缩包的第一层目录(兼容无顶层目录的 ZIP 文件)
 set "zipfile=notepad4-latest.zip"
 set "tempdir=%cd%\unzip_temp"
 
@@ -153,4 +153,3 @@ goto :eof
 ::=======================================
 :end
 timeout /t 3 /nobreak >nul
-exit
