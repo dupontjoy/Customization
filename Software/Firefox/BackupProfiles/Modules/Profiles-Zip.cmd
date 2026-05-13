@@ -49,7 +49,8 @@ move /Y "%TargetFolder%\!Name!" "%TargetFolder1%\!Name!" >nul 2>&1
 :: 清理临时文件夹
 timeout /t 3 /nobreak
 rd /s /q "%TempFolder%"
-Remove-Item -Path $env:TempFolder -Recurse -Force -ErrorAction SilentlyContinue
+:: 用powershell再删除一遍
+powershell -Command "& {Remove-Item -Path '%TempFolder%' -Recurse -Force -ErrorAction SilentlyContinue; New-Item -Path '%TempFolder%' -ItemType Directory -Force | Out-Null}"
 
 @echo 備份完成！保留最近%keep%個版本，新包位置: "%TargetFolder1%\!Name!"
 endlocal
