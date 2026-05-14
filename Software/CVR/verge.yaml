@@ -24,7 +24,7 @@ enable_silent_start: true
 enable_system_proxy: false
 enable_proxy_guard: false
 enable_bypass_check: null
-enable_dns_settings: false
+enable_dns_settings: true
 use_default_bypass: true
 system_proxy_bypass: null
 proxy_guard_duration: 30
@@ -82,9 +82,9 @@ verge_socks_port: 7898
 verge_socks_enabled: false
 verge_port: 7899
 verge_http_enabled: false
-webdav_url: +IeGuZZvXUokUkZIVPaso4mw9WrQKi5NLiLNT7GBbdOJXqi5KQkMPqRj0LuhZ+z2HF3LiEbNNTgLsfBU3w==
-webdav_username: SXY2VvbMTAcxBzPJhdNxE02DOtgEumRpUk7fvh8Hvq38fqoMgg+JdoogvWBCQfE=
-webdav_password: LB3upM5nQ2/tlfdyG/Kk0HO9DvCE2yNu93DxuAgwdftGJcPG3cv0y8gsT0+cxQ==
+webdav_url: /bIpWi05uDQvdA3dV8BPSYwI3n74lGSg2GsVx6eZ2dBdZkNR3z62h7lI/M8sWt6aJMinhQIY50VofieJbQ==
+webdav_username: 5VWtnn00nUGLeE7V8WZKissKoxn7KLSXte0Iu1Y7yTYczxXGB+RxhlOCok9u9M4=
+webdav_password: sisZctyACd+BEvtbFbCtuWRCIAg0WCAM+l4MfdNl/Mpy41tESTgcBJrIwlTi9w==
 tray_inline_outbound_modes: null
 enable_auto_light_weight_mode: true
 auto_light_weight_minutes: 5
