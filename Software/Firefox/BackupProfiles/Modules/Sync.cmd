@@ -193,6 +193,7 @@ xcopy "%BackupDir%\..\..\Software\totalcmd64\Default.br144" "%OutputDir%\Customi
 xcopy "%BackupDir%\..\..\Software\totalcmd64\user\user.ini" "%OutputDir%\Customization\Software\TotalCMD\user\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\user\TCIgnore.ini" "%OutputDir%\Customization\Software\TotalCMD\user\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\Everything.ini" "%OutputDir%\Customization\Software\TotalCMD\Tools\" /y
+xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\Everything-1.5a.ini" "%OutputDir%\Customization\Software\TotalCMD\Tools\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\updateNotepad4.cmd" "%OutputDir%\Customization\Software\TotalCMD\Tools\" /y
 
 :trafficmonitor
