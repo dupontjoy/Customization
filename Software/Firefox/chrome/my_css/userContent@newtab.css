@@ -1,4 +1,7 @@
-/* == 新标签页终极定制 - 兼容Firefox 151== */
+/* == 新标签页终极定制 - 兼容Firefox 151 == */
+
+/* 请将本文件保存为 userContent.css 并放置在 Firefox 配置文件的 chrome 文件夹内 */
+/* 图标图片请放置在 chrome/my_image/newtab_logo/ 目录下，建议使用 128x128 或更高分辨率图片 */
 
 @-moz-document url(about:newtab), url("about:home") {
     
@@ -49,12 +52,15 @@
         width: 100% !important;
     }
     
-    /* ========== 3. 水滴形图标（高清渲染优化） ========== */
+    /* ========== 3. 水滴形图标（圆角精调：三个正圆 + 右下柔和尖角） ==========
+     * 左上、右上、左下：水平/垂直半径均为 50% → 完美圆形
+     * 右下角：水平/垂直半径均为 22% → 介于原版 10% 与过度钝化 35% 之间，形成自然水滴尾
+     * 完全对称半径，避免左下角畸变
+     */
     .tile {
         width: 72px !important;
         height: 72px !important;
-        /* 水滴圆角：左上、右上、左下大圆角，右下小圆角 */
-        border-radius: 50% 50% 10% 50% / 50% 50% 10% 50% !important;
+        border-radius: 50% 50% 22% 50% / 50% 50% 22% 50% !important;
         overflow: hidden !important;
         background-color: #ffffff !important;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
@@ -66,9 +72,9 @@
         /* 防止缩放导致的模糊 - 启用硬件加速 */
         transform: translateZ(0) !important;
         backface-visibility: hidden !important;
-        /* 关键修复：移除会导致锯齿的 crisp-edges，使用高质量平滑缩放 */
+        /* 高质量平滑缩放 */
         image-rendering: auto !important;
-        /* 确保背景图居中且完整显示（统一使用 contain，避免拉伸变形） */
+        /* 确保背景图居中且完整显示 */
         background-size: contain !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
@@ -96,7 +102,7 @@
         height: 0 !important;
         font-size: 0 !important;
     }
-    /* 通过伪元素添加自定义名称（全局默认无内容，具体网站独立定义） */
+    /* 通过伪元素添加自定义名称 */
     .title::before {
         content: "" !important;
         display: block !important;
@@ -113,15 +119,13 @@
         font-weight: normal !important;
     }
     
-    /* ========== 5. 鼠标悬停效果（轻微提升，不影响默认清晰度） ========== */
+    /* ========== 5. 鼠标悬停效果 ========== */
     .top-site-outer:hover .tile {
         transform: translateY(-5px) scale(1.02) !important;
         box-shadow: 0 12px 20px rgba(0,0,0,0.2) !important;
     }
     
-    /* ========== 6. 自定义每个网站的图标和名称（统一使用 contain 缩放，确保清晰） ========== */
-    /* 所有图标背景图统一应用 .tile 基础样式中的 background-size: contain，此处仅需指定图片路径 */
-    
+    /* ========== 6. 自定义每个网站的图标和名称 ========== */
     /* 哈佛商业评论 */
     a[href*="hbr.org"] .tile { background-image: url("../my_image/newtab_logo/hbr.jpg") !important; }
     a[href*="hbr.org"] .title::before { content: "哈佛商业评论" !important; }
@@ -154,7 +158,7 @@
     a[href*="momoyu.cc"] .tile { background-image: url("../my_image/newtab_logo/momoyu.png") !important; }
     a[href*="momoyu.cc"] .title::before { content: "摸摸鱼" !important; }
     
-    /* 今日热榜（统一使用 contain，移除特殊的 80% 缩放避免模糊） */
+    /* 今日热榜 */
     a[href*="tophub.today"] .tile { background-image: url("../my_image/newtab_logo/tophub.png") !important; }
     a[href*="tophub.today"] .title::before { content: "今日热榜" !important; }
     
@@ -186,7 +190,7 @@
     a[href*="ithome.com"] .tile { background-image: url("../my_image/newtab_logo/ithome.png") !important; }
     a[href*="ithome.com"] .title::before { content: "IT之家" !important; }
     
-    /* ========== 7. 响应式适配（保持图标比例，防止缩放模糊） ========== */
+    /* ========== 7. 响应式适配 ========== */
     @media (max-width: 850px) {
         .top-sites-list {
             grid-template-columns: repeat(8, 76px) !important;
