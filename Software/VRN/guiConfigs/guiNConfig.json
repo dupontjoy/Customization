@@ -9,6 +9,7 @@
     "DefFingerprint": "chrome",
     "DefUserAgent": null,
     "SendThrough": null,
+    "BindInterface": null,
     "EnableFragment": true,
     "EnableCacheFile4Sbox": true
   },
@@ -27,9 +28,8 @@
     "Tti": 50,
     "UplinkCapacity": 12,
     "DownlinkCapacity": 100,
-    "Congestion": false,
-    "ReadBufferSize": 2,
-    "WriteBufferSize": 2
+    "CwndMultiplier": 1,
+    "MaxSendingWindow": 2097152
   },
   "GrpcItem": {
     "IdleTimeout": 60,
@@ -197,7 +197,8 @@
     "SpeedTestUrl": "https://cachefly.cachefly.net/50mb.test",
     "SpeedPingTestUrl": "https://www.google.com/generate_204",
     "MixedConcurrencyCount": 5,
-    "IPAPIUrl": null
+    "IPAPIUrl": null,
+    "UdpTestTarget": "ntp:pool.ntp.org"
   },
   "Mux4RayItem": {
     "Concurrency": 8,

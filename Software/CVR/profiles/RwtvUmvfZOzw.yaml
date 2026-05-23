@@ -227,6 +227,18 @@ proxies:
   - {name: 🇸🇬 新加坡-443-WS-TLS 140, server: 162.159.9.98, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
   - {name: 🇸🇬 新加坡-443-WS-TLS 141, server: 162.159.16.227, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
   - {name: 🇸🇬 新加坡-443-WS-TLS 142, server: 172.64.148.240, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: 🇰🇷 KR-443-WS-TLS, server: 129.154.53.255, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: VN-443-WS-TLS, server: 160.22.16.187, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: VN-443-WS-TLS 2, server: 161.248.31.35, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: VN-443-WS-TLS 3, server: 163.61.74.121, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: 🇯🇵 JP-443-WS-TLS 8, server: 216.23.86.62, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: 🇨🇳 CN-443-WS-TLS, server: 43.168.16.112, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: 🇭🇰 HK-443-WS-TLS, server: 47.239.4.246, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: 🇯🇵 JP-443-WS-TLS 9, server: 54.238.157.207, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: 🇯🇵 JP-443-WS-TLS 10, server: 8.219.155.125, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: 🇸🇬 SG-443-WS-TLS, server: 8.219.232.55, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: 🇯🇵 JP-443-WS-TLS 11, server: 8.222.185.236, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: 🇯🇵 JP-443-WS-TLS 12, server: 8.222.193.153, port: 443, type: vless, uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: 163cfn.232885.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: 163cfn.232885.xyz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -455,6 +467,18 @@ proxy-groups:
       - 🇸🇬 新加坡-443-WS-TLS 140
       - 🇸🇬 新加坡-443-WS-TLS 141
       - 🇸🇬 新加坡-443-WS-TLS 142
+      - 🇰🇷 KR-443-WS-TLS
+      - VN-443-WS-TLS
+      - VN-443-WS-TLS 2
+      - VN-443-WS-TLS 3
+      - 🇯🇵 JP-443-WS-TLS 8
+      - 🇨🇳 CN-443-WS-TLS
+      - 🇭🇰 HK-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 9
+      - 🇯🇵 JP-443-WS-TLS 10
+      - 🇸🇬 SG-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 11
+      - 🇯🇵 JP-443-WS-TLS 12
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -682,6 +706,18 @@ proxy-groups:
       - 🇸🇬 新加坡-443-WS-TLS 140
       - 🇸🇬 新加坡-443-WS-TLS 141
       - 🇸🇬 新加坡-443-WS-TLS 142
+      - 🇰🇷 KR-443-WS-TLS
+      - VN-443-WS-TLS
+      - VN-443-WS-TLS 2
+      - VN-443-WS-TLS 3
+      - 🇯🇵 JP-443-WS-TLS 8
+      - 🇨🇳 CN-443-WS-TLS
+      - 🇭🇰 HK-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 9
+      - 🇯🇵 JP-443-WS-TLS 10
+      - 🇸🇬 SG-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 11
+      - 🇯🇵 JP-443-WS-TLS 12
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -910,6 +946,18 @@ proxy-groups:
       - 🇸🇬 新加坡-443-WS-TLS 140
       - 🇸🇬 新加坡-443-WS-TLS 141
       - 🇸🇬 新加坡-443-WS-TLS 142
+      - 🇰🇷 KR-443-WS-TLS
+      - VN-443-WS-TLS
+      - VN-443-WS-TLS 2
+      - VN-443-WS-TLS 3
+      - 🇯🇵 JP-443-WS-TLS 8
+      - 🇨🇳 CN-443-WS-TLS
+      - 🇭🇰 HK-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 9
+      - 🇯🇵 JP-443-WS-TLS 10
+      - 🇸🇬 SG-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 11
+      - 🇯🇵 JP-443-WS-TLS 12
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -1150,6 +1198,18 @@ proxy-groups:
       - 🇸🇬 新加坡-443-WS-TLS 140
       - 🇸🇬 新加坡-443-WS-TLS 141
       - 🇸🇬 新加坡-443-WS-TLS 142
+      - 🇰🇷 KR-443-WS-TLS
+      - VN-443-WS-TLS
+      - VN-443-WS-TLS 2
+      - VN-443-WS-TLS 3
+      - 🇯🇵 JP-443-WS-TLS 8
+      - 🇨🇳 CN-443-WS-TLS
+      - 🇭🇰 HK-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 9
+      - 🇯🇵 JP-443-WS-TLS 10
+      - 🇸🇬 SG-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 11
+      - 🇯🇵 JP-443-WS-TLS 12
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -1384,6 +1444,18 @@ proxy-groups:
       - 🇸🇬 新加坡-443-WS-TLS 140
       - 🇸🇬 新加坡-443-WS-TLS 141
       - 🇸🇬 新加坡-443-WS-TLS 142
+      - 🇰🇷 KR-443-WS-TLS
+      - VN-443-WS-TLS
+      - VN-443-WS-TLS 2
+      - VN-443-WS-TLS 3
+      - 🇯🇵 JP-443-WS-TLS 8
+      - 🇨🇳 CN-443-WS-TLS
+      - 🇭🇰 HK-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 9
+      - 🇯🇵 JP-443-WS-TLS 10
+      - 🇸🇬 SG-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 11
+      - 🇯🇵 JP-443-WS-TLS 12
   - name: 📲 电报信息
     type: select
     proxies:
@@ -1611,6 +1683,18 @@ proxy-groups:
       - 🇸🇬 新加坡-443-WS-TLS 140
       - 🇸🇬 新加坡-443-WS-TLS 141
       - 🇸🇬 新加坡-443-WS-TLS 142
+      - 🇰🇷 KR-443-WS-TLS
+      - VN-443-WS-TLS
+      - VN-443-WS-TLS 2
+      - VN-443-WS-TLS 3
+      - 🇯🇵 JP-443-WS-TLS 8
+      - 🇨🇳 CN-443-WS-TLS
+      - 🇭🇰 HK-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 9
+      - 🇯🇵 JP-443-WS-TLS 10
+      - 🇸🇬 SG-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 11
+      - 🇯🇵 JP-443-WS-TLS 12
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1839,6 +1923,18 @@ proxy-groups:
       - 🇸🇬 新加坡-443-WS-TLS 140
       - 🇸🇬 新加坡-443-WS-TLS 141
       - 🇸🇬 新加坡-443-WS-TLS 142
+      - 🇰🇷 KR-443-WS-TLS
+      - VN-443-WS-TLS
+      - VN-443-WS-TLS 2
+      - VN-443-WS-TLS 3
+      - 🇯🇵 JP-443-WS-TLS 8
+      - 🇨🇳 CN-443-WS-TLS
+      - 🇭🇰 HK-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 9
+      - 🇯🇵 JP-443-WS-TLS 10
+      - 🇸🇬 SG-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 11
+      - 🇯🇵 JP-443-WS-TLS 12
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2076,6 +2172,18 @@ proxy-groups:
       - 🇸🇬 新加坡-443-WS-TLS 140
       - 🇸🇬 新加坡-443-WS-TLS 141
       - 🇸🇬 新加坡-443-WS-TLS 142
+      - 🇰🇷 KR-443-WS-TLS
+      - VN-443-WS-TLS
+      - VN-443-WS-TLS 2
+      - VN-443-WS-TLS 3
+      - 🇯🇵 JP-443-WS-TLS 8
+      - 🇨🇳 CN-443-WS-TLS
+      - 🇭🇰 HK-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 9
+      - 🇯🇵 JP-443-WS-TLS 10
+      - 🇸🇬 SG-443-WS-TLS
+      - 🇯🇵 JP-443-WS-TLS 11
+      - 🇯🇵 JP-443-WS-TLS 12
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
