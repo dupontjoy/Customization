@@ -58,45 +58,9 @@ dns:
       - 240.0.0.0/4
 
 proxies:
-  - name: "TW-01"
-    type: vless
-    server: "125.228.236.138"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "SG-01"
-    type: vless
-    server: "139.180.220.7"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
   - name: "KR-01"
     type: vless
-    server: "158.180.72.60"
+    server: "123.111.169.70"
     port: 443
     uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
     udp: true
@@ -114,42 +78,6 @@ proxies:
       query-server-name: "cloudflare-ech.com"
   - name: "VN-01"
     type: vless
-    server: "160.22.16.187"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "VN-02"
-    type: vless
-    server: "161.248.31.35"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "VN-03"
-    type: vless
     server: "163.61.74.121"
     port: 443
     uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
@@ -166,45 +94,9 @@ proxies:
     ech-opts:
       enable: true
       query-server-name: "cloudflare-ech.com"
-  - name: "SG-02"
+  - name: "SG-01"
     type: vless
-    server: "188.239.9.91"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "SG-03"
-    type: vless
-    server: "207.148.119.176"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "JP-01"
-    type: vless
-    server: "212.135.210.88"
+    server: "43.160.195.223"
     port: 443
     uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
     udp: true
@@ -222,7 +114,43 @@ proxies:
       query-server-name: "cloudflare-ech.com"
   - name: "HK-01"
     type: vless
+    server: "43.168.16.112"
+    port: 443
+    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
+    udp: true
+    tls: true
+    client-fingerprint: "chrome"
+    servername: "163cfn.232885.xyz"
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "163cfn.232885.xyz"
+    ech-opts:
+      enable: true
+      query-server-name: "cloudflare-ech.com"
+  - name: "HK-02"
+    type: vless
     server: "47.239.4.246"
+    port: 443
+    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
+    udp: true
+    tls: true
+    client-fingerprint: "chrome"
+    servername: "163cfn.232885.xyz"
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "163cfn.232885.xyz"
+    ech-opts:
+      enable: true
+      query-server-name: "cloudflare-ech.com"
+  - name: "JP-01"
+    type: vless
+    server: "52.196.133.194"
     port: 443
     uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
     udp: true
@@ -241,24 +169,6 @@ proxies:
   - name: "JP-02"
     type: vless
     server: "54.238.157.207"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "HK-02"
-    type: vless
-    server: "8.210.29.68"
     port: 443
     uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
     udp: true
@@ -4312,18 +4222,13 @@ proxy-groups:
     type: select
     proxies:
       - "🎯 全球直连"
-      - "TW-01"
-      - "SG-01"
       - "KR-01"
       - "VN-01"
-      - "VN-02"
-      - "VN-03"
-      - "SG-02"
-      - "SG-03"
-      - "JP-01"
+      - "SG-01"
       - "HK-01"
-      - "JP-02"
       - "HK-02"
+      - "JP-01"
+      - "JP-02"
       - "JP-03"
       - "JP-04"
       - "新加坡-01"
@@ -4553,18 +4458,13 @@ proxy-groups:
     proxies:
       - "🚀 节点选择"
       - "🎯 全球直连"
-      - "TW-01"
-      - "SG-01"
       - "KR-01"
       - "VN-01"
-      - "VN-02"
-      - "VN-03"
-      - "SG-02"
-      - "SG-03"
-      - "JP-01"
+      - "SG-01"
       - "HK-01"
-      - "JP-02"
       - "HK-02"
+      - "JP-01"
+      - "JP-02"
       - "JP-03"
       - "JP-04"
       - "新加坡-01"
@@ -4794,18 +4694,13 @@ proxy-groups:
     proxies:
       - "🎯 全球直连"
       - "🚀 节点选择"
-      - "TW-01"
-      - "SG-01"
       - "KR-01"
       - "VN-01"
-      - "VN-02"
-      - "VN-03"
-      - "SG-02"
-      - "SG-03"
-      - "JP-01"
+      - "SG-01"
       - "HK-01"
-      - "JP-02"
       - "HK-02"
+      - "JP-01"
+      - "JP-02"
       - "JP-03"
       - "JP-04"
       - "新加坡-01"
@@ -5036,18 +4931,13 @@ proxy-groups:
       - "🚀 节点选择"
       - "🎯 全球直连"
       - "🌍 国外媒体"
-      - "TW-01"
-      - "SG-01"
       - "KR-01"
       - "VN-01"
-      - "VN-02"
-      - "VN-03"
-      - "SG-02"
-      - "SG-03"
-      - "JP-01"
+      - "SG-01"
       - "HK-01"
-      - "JP-02"
       - "HK-02"
+      - "JP-01"
+      - "JP-02"
       - "JP-03"
       - "JP-04"
       - "新加坡-01"
@@ -5278,18 +5168,13 @@ proxy-groups:
       - "🚀 节点选择"
       - "🎯 全球直连"
       - "🌍 国外媒体"
-      - "TW-01"
-      - "SG-01"
       - "KR-01"
       - "VN-01"
-      - "VN-02"
-      - "VN-03"
-      - "SG-02"
-      - "SG-03"
-      - "JP-01"
+      - "SG-01"
       - "HK-01"
-      - "JP-02"
       - "HK-02"
+      - "JP-01"
+      - "JP-02"
       - "JP-03"
       - "JP-04"
       - "新加坡-01"
@@ -5519,18 +5404,13 @@ proxy-groups:
     proxies:
       - "🚀 节点选择"
       - "🎯 全球直连"
-      - "TW-01"
-      - "SG-01"
       - "KR-01"
       - "VN-01"
-      - "VN-02"
-      - "VN-03"
-      - "SG-02"
-      - "SG-03"
-      - "JP-01"
+      - "SG-01"
       - "HK-01"
-      - "JP-02"
       - "HK-02"
+      - "JP-01"
+      - "JP-02"
       - "JP-03"
       - "JP-04"
       - "新加坡-01"
@@ -5760,18 +5640,13 @@ proxy-groups:
     proxies:
       - "🚀 节点选择"
       - "🎯 全球直连"
-      - "TW-01"
-      - "SG-01"
       - "KR-01"
       - "VN-01"
-      - "VN-02"
-      - "VN-03"
-      - "SG-02"
-      - "SG-03"
-      - "JP-01"
+      - "SG-01"
       - "HK-01"
-      - "JP-02"
       - "HK-02"
+      - "JP-01"
+      - "JP-02"
       - "JP-03"
       - "JP-04"
       - "新加坡-01"
@@ -6001,18 +5876,13 @@ proxy-groups:
     proxies:
       - "🚀 节点选择"
       - "🎯 全球直连"
-      - "TW-01"
-      - "SG-01"
       - "KR-01"
       - "VN-01"
-      - "VN-02"
-      - "VN-03"
-      - "SG-02"
-      - "SG-03"
-      - "JP-01"
+      - "SG-01"
       - "HK-01"
-      - "JP-02"
       - "HK-02"
+      - "JP-01"
+      - "JP-02"
       - "JP-03"
       - "JP-04"
       - "新加坡-01"
@@ -6242,18 +6112,13 @@ proxy-groups:
     proxies:
       - "🎯 全球直连"
       - "🚀 节点选择"
-      - "TW-01"
-      - "SG-01"
       - "KR-01"
       - "VN-01"
-      - "VN-02"
-      - "VN-03"
-      - "SG-02"
-      - "SG-03"
-      - "JP-01"
+      - "SG-01"
       - "HK-01"
-      - "JP-02"
       - "HK-02"
+      - "JP-01"
+      - "JP-02"
       - "JP-03"
       - "JP-04"
       - "新加坡-01"
@@ -6483,18 +6348,13 @@ proxy-groups:
     proxies:
       - "🎯 全球直连"
       - "🚀 节点选择"
-      - "TW-01"
-      - "SG-01"
       - "KR-01"
       - "VN-01"
-      - "VN-02"
-      - "VN-03"
-      - "SG-02"
-      - "SG-03"
-      - "JP-01"
+      - "SG-01"
       - "HK-01"
-      - "JP-02"
       - "HK-02"
+      - "JP-01"
+      - "JP-02"
       - "JP-03"
       - "JP-04"
       - "新加坡-01"
@@ -6738,18 +6598,13 @@ proxy-groups:
     proxies:
       - "🚀 节点选择"
       - "🎯 全球直连"
-      - "TW-01"
-      - "SG-01"
       - "KR-01"
       - "VN-01"
-      - "VN-02"
-      - "VN-03"
-      - "SG-02"
-      - "SG-03"
-      - "JP-01"
+      - "SG-01"
       - "HK-01"
-      - "JP-02"
       - "HK-02"
+      - "JP-01"
+      - "JP-02"
       - "JP-03"
       - "JP-04"
       - "新加坡-01"
