@@ -152,13 +152,13 @@ div.grid:nth-child(3) {
 /*播放区 上移和缩小*/
  div.space-y-2:nth-child(2) {
     margin-top: calc(-1 * (6.5vh + 9%)) !important;/*向上移*/
-    transform: scale(0.85) !important;
+    transform: scale(0.9) !important;
  }
  
  /*详情区 上移和缩小*/
  div.grid:nth-child(3) {
     margin-top: calc(-1 * (6.5vh + 5%)) !important;/*向上移*/
-    transform: scale(0.85) !important;
+    transform: scale(0.9) !important;
  }
  
 
