@@ -1068,10 +1068,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2026-05-21 07:02:24</EndDateTime>
-		<NextRunDateTime>2126-05-04 12:24:25</NextRunDateTime>
+		<EndDateTime>2026-05-29 14:04:48</EndDateTime>
+		<NextRunDateTime>2126-05-06 08:52:53</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-05-28 12:24:25</LastRunTime>
+		<LastRunTime>2026-05-30 08:52:53</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1404,7 +1404,7 @@ env2=value2</edtAppEnv>
 					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
 					<edtTaskName>设置系统音量</edtTaskName>
-					<edtVolSet>35</edtVolSet>
+					<edtVolSet>40</edtVolSet>
 					<edtVolSet.max>100</edtVolSet.max>
 					<edtVolSet.min>1</edtVolSet.min>
 					<optPlaySnd>0</optPlaySnd>
@@ -1428,8 +1428,8 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 08:50:00</StartDateTime>
 		<EndDateTime>2026-05-23 06:32:32</EndDateTime>
-		<NextRunDateTime>2026-05-30 08:50:00</NextRunDateTime>
-		<NextRunTime>2026-05-30 08:50:00</NextRunTime>
+		<NextRunDateTime>2026-06-06 08:50:00</NextRunDateTime>
+		<NextRunTime>2026-06-06 08:50:00</NextRunTime>
 		<LastRunTime>2026-05-23 09:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -2326,9 +2326,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2025-05-28 08:55:00</StartDateTime>
 		<EndDateTime>2026-05-23 11:09:52</EndDateTime>
-		<NextRunDateTime>2026-05-30 08:55:00</NextRunDateTime>
-		<NextRunTime>2026-05-30 08:55:00</NextRunTime>
-		<LastRunTime>2026-05-23 09:30:00</LastRunTime>
+		<NextRunDateTime>2026-06-06 08:55:00</NextRunDateTime>
+		<NextRunTime>2026-06-06 08:55:00</NextRunTime>
+		<LastRunTime>2026-05-30 08:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2542,9 +2542,9 @@ env2=value2</edtAppEnv>
 		<SchType>36</SchType>
 		<StartDateTime>2026-01-19 21:00:00</StartDateTime>
 		<EndDateTime>2026-05-26 23:40:48</EndDateTime>
-		<NextRunDateTime>2026-05-28 16:00:00</NextRunDateTime>
-		<NextRunTime>2026-05-28 16:00:00</NextRunTime>
-		<LastRunTime>2026-05-28 10:00:00</LastRunTime>
+		<NextRunDateTime>2026-05-30 10:00:00</NextRunDateTime>
+		<NextRunTime>2026-05-30 10:00:00</NextRunTime>
+		<LastRunTime>2026-05-29 22:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>

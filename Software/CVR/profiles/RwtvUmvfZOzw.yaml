@@ -60,25 +60,7 @@ dns:
 proxies:
   - name: "TW-01"
     type: vless
-    server: "125.228.236.138"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "SG-01"
-    type: vless
-    server: "139.180.220.7"
+    server: "220.135.92.105"
     port: 443
     uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
     udp: true
@@ -96,43 +78,7 @@ proxies:
       query-server-name: "cloudflare-ech.com"
   - name: "JP-01"
     type: vless
-    server: "154.19.187.181"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "HK-01"
-    type: vless
-    server: "154.44.27.15"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "VN-01"
-    type: vless
-    server: "163.61.74.121"
+    server: "23.151.104.198"
     port: 443
     uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
     udp: true
@@ -150,79 +96,7 @@ proxies:
       query-server-name: "cloudflare-ech.com"
   - name: "JP-02"
     type: vless
-    server: "195.245.241.135"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "SG-02"
-    type: vless
-    server: "207.148.119.176"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "HK-02"
-    type: vless
-    server: "43.168.16.112"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "SG-03"
-    type: vless
-    server: "45.76.150.232"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "SG-04"
-    type: vless
-    server: "45.76.185.254"
+    server: "8.209.231.3"
     port: 443
     uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
     udp: true
@@ -240,42 +114,6 @@ proxies:
       query-server-name: "cloudflare-ech.com"
   - name: "JP-03"
     type: vless
-    server: "45.89.232.111"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "JP-04"
-    type: vless
-    server: "8.209.231.3"
-    port: 443
-    uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
-    udp: true
-    tls: true
-    client-fingerprint: "chrome"
-    servername: "163cfn.232885.xyz"
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: "/?ed=2048"
-      headers:
-        Host: "163cfn.232885.xyz"
-    ech-opts:
-      enable: true
-      query-server-name: "cloudflare-ech.com"
-  - name: "JP-05"
-    type: vless
     server: "8.222.185.236"
     port: 443
     uuid: d7ed3efc-b94a-47ab-8fd8-0848e7b7b1d8
@@ -292,7 +130,7 @@ proxies:
     ech-opts:
       enable: true
       query-server-name: "cloudflare-ech.com"
-  - name: "HK-03"
+  - name: "HK-01"
     type: vless
     server: "8.223.63.189"
     port: 443
@@ -1984,7 +1822,7 @@ proxies:
     ech-opts:
       enable: true
       query-server-name: "cloudflare-ech.com"
-  - name: "JP-06"
+  - name: "JP-04"
     type: vless
     server: "191.96.29.172"
     port: 443
@@ -2002,7 +1840,7 @@ proxies:
     ech-opts:
       enable: true
       query-server-name: "cloudflare-ech.com"
-  - name: "JP-07"
+  - name: "JP-05"
     type: vless
     server: "191.96.29.86"
     port: 443
@@ -2020,7 +1858,7 @@ proxies:
     ech-opts:
       enable: true
       query-server-name: "cloudflare-ech.com"
-  - name: "JP-08"
+  - name: "JP-06"
     type: vless
     server: "140.235.37.63"
     port: 443
@@ -2038,7 +1876,7 @@ proxies:
     ech-opts:
       enable: true
       query-server-name: "cloudflare-ech.com"
-  - name: "JP-09"
+  - name: "JP-07"
     type: vless
     server: "35.78.229.176"
     port: 443
@@ -2056,7 +1894,7 @@ proxies:
     ech-opts:
       enable: true
       query-server-name: "cloudflare-ech.com"
-  - name: "JP-10"
+  - name: "JP-08"
     type: vless
     server: "160.191.40.194"
     port: 443
@@ -2074,7 +1912,7 @@ proxies:
     ech-opts:
       enable: true
       query-server-name: "cloudflare-ech.com"
-  - name: "JP-11"
+  - name: "JP-09"
     type: vless
     server: "23.27.11.138"
     port: 8443
@@ -2092,7 +1930,7 @@ proxies:
     ech-opts:
       enable: true
       query-server-name: "cloudflare-ech.com"
-  - name: "JP-12"
+  - name: "JP-10"
     type: vless
     server: "45.78.55.214"
     port: 443
@@ -2110,7 +1948,7 @@ proxies:
     ech-opts:
       enable: true
       query-server-name: "cloudflare-ech.com"
-  - name: "JP-13"
+  - name: "JP-11"
     type: vless
     server: "156.231.140.216"
     port: 8000
@@ -2128,7 +1966,7 @@ proxies:
     ech-opts:
       enable: true
       query-server-name: "cloudflare-ech.com"
-  - name: "JP-14"
+  - name: "JP-12"
     type: vless
     server: "23.106.143.52"
     port: 443
@@ -2146,7 +1984,7 @@ proxies:
     ech-opts:
       enable: true
       query-server-name: "cloudflare-ech.com"
-  - name: "JP-15"
+  - name: "JP-13"
     type: vless
     server: "140.235.37.15"
     port: 50000
@@ -4313,19 +4151,10 @@ proxy-groups:
     proxies:
       - "🎯 全球直连"
       - "TW-01"
-      - "SG-01"
       - "JP-01"
-      - "HK-01"
-      - "VN-01"
       - "JP-02"
-      - "SG-02"
-      - "HK-02"
-      - "SG-03"
-      - "SG-04"
       - "JP-03"
-      - "JP-04"
-      - "JP-05"
-      - "HK-03"
+      - "HK-01"
       - "新加坡-01"
       - "新加坡-02"
       - "新加坡-03"
@@ -4419,6 +4248,8 @@ proxy-groups:
       - "日本-40"
       - "新加坡-29"
       - "日本-41"
+      - "JP-04"
+      - "JP-05"
       - "JP-06"
       - "JP-07"
       - "JP-08"
@@ -4427,8 +4258,6 @@ proxy-groups:
       - "JP-11"
       - "JP-12"
       - "JP-13"
-      - "JP-14"
-      - "JP-15"
       - "新加坡-30"
       - "新加坡-31"
       - "新加坡-32"
@@ -4554,19 +4383,10 @@ proxy-groups:
       - "🚀 节点选择"
       - "🎯 全球直连"
       - "TW-01"
-      - "SG-01"
       - "JP-01"
-      - "HK-01"
-      - "VN-01"
       - "JP-02"
-      - "SG-02"
-      - "HK-02"
-      - "SG-03"
-      - "SG-04"
       - "JP-03"
-      - "JP-04"
-      - "JP-05"
-      - "HK-03"
+      - "HK-01"
       - "新加坡-01"
       - "新加坡-02"
       - "新加坡-03"
@@ -4660,6 +4480,8 @@ proxy-groups:
       - "日本-40"
       - "新加坡-29"
       - "日本-41"
+      - "JP-04"
+      - "JP-05"
       - "JP-06"
       - "JP-07"
       - "JP-08"
@@ -4668,8 +4490,6 @@ proxy-groups:
       - "JP-11"
       - "JP-12"
       - "JP-13"
-      - "JP-14"
-      - "JP-15"
       - "新加坡-30"
       - "新加坡-31"
       - "新加坡-32"
@@ -4795,19 +4615,10 @@ proxy-groups:
       - "🎯 全球直连"
       - "🚀 节点选择"
       - "TW-01"
-      - "SG-01"
       - "JP-01"
-      - "HK-01"
-      - "VN-01"
       - "JP-02"
-      - "SG-02"
-      - "HK-02"
-      - "SG-03"
-      - "SG-04"
       - "JP-03"
-      - "JP-04"
-      - "JP-05"
-      - "HK-03"
+      - "HK-01"
       - "新加坡-01"
       - "新加坡-02"
       - "新加坡-03"
@@ -4901,6 +4712,8 @@ proxy-groups:
       - "日本-40"
       - "新加坡-29"
       - "日本-41"
+      - "JP-04"
+      - "JP-05"
       - "JP-06"
       - "JP-07"
       - "JP-08"
@@ -4909,8 +4722,6 @@ proxy-groups:
       - "JP-11"
       - "JP-12"
       - "JP-13"
-      - "JP-14"
-      - "JP-15"
       - "新加坡-30"
       - "新加坡-31"
       - "新加坡-32"
@@ -5037,19 +4848,10 @@ proxy-groups:
       - "🎯 全球直连"
       - "🌍 国外媒体"
       - "TW-01"
-      - "SG-01"
       - "JP-01"
-      - "HK-01"
-      - "VN-01"
       - "JP-02"
-      - "SG-02"
-      - "HK-02"
-      - "SG-03"
-      - "SG-04"
       - "JP-03"
-      - "JP-04"
-      - "JP-05"
-      - "HK-03"
+      - "HK-01"
       - "新加坡-01"
       - "新加坡-02"
       - "新加坡-03"
@@ -5143,6 +4945,8 @@ proxy-groups:
       - "日本-40"
       - "新加坡-29"
       - "日本-41"
+      - "JP-04"
+      - "JP-05"
       - "JP-06"
       - "JP-07"
       - "JP-08"
@@ -5151,8 +4955,6 @@ proxy-groups:
       - "JP-11"
       - "JP-12"
       - "JP-13"
-      - "JP-14"
-      - "JP-15"
       - "新加坡-30"
       - "新加坡-31"
       - "新加坡-32"
@@ -5279,19 +5081,10 @@ proxy-groups:
       - "🎯 全球直连"
       - "🌍 国外媒体"
       - "TW-01"
-      - "SG-01"
       - "JP-01"
-      - "HK-01"
-      - "VN-01"
       - "JP-02"
-      - "SG-02"
-      - "HK-02"
-      - "SG-03"
-      - "SG-04"
       - "JP-03"
-      - "JP-04"
-      - "JP-05"
-      - "HK-03"
+      - "HK-01"
       - "新加坡-01"
       - "新加坡-02"
       - "新加坡-03"
@@ -5385,6 +5178,8 @@ proxy-groups:
       - "日本-40"
       - "新加坡-29"
       - "日本-41"
+      - "JP-04"
+      - "JP-05"
       - "JP-06"
       - "JP-07"
       - "JP-08"
@@ -5393,8 +5188,6 @@ proxy-groups:
       - "JP-11"
       - "JP-12"
       - "JP-13"
-      - "JP-14"
-      - "JP-15"
       - "新加坡-30"
       - "新加坡-31"
       - "新加坡-32"
@@ -5520,19 +5313,10 @@ proxy-groups:
       - "🚀 节点选择"
       - "🎯 全球直连"
       - "TW-01"
-      - "SG-01"
       - "JP-01"
-      - "HK-01"
-      - "VN-01"
       - "JP-02"
-      - "SG-02"
-      - "HK-02"
-      - "SG-03"
-      - "SG-04"
       - "JP-03"
-      - "JP-04"
-      - "JP-05"
-      - "HK-03"
+      - "HK-01"
       - "新加坡-01"
       - "新加坡-02"
       - "新加坡-03"
@@ -5626,6 +5410,8 @@ proxy-groups:
       - "日本-40"
       - "新加坡-29"
       - "日本-41"
+      - "JP-04"
+      - "JP-05"
       - "JP-06"
       - "JP-07"
       - "JP-08"
@@ -5634,8 +5420,6 @@ proxy-groups:
       - "JP-11"
       - "JP-12"
       - "JP-13"
-      - "JP-14"
-      - "JP-15"
       - "新加坡-30"
       - "新加坡-31"
       - "新加坡-32"
@@ -5761,19 +5545,10 @@ proxy-groups:
       - "🚀 节点选择"
       - "🎯 全球直连"
       - "TW-01"
-      - "SG-01"
       - "JP-01"
-      - "HK-01"
-      - "VN-01"
       - "JP-02"
-      - "SG-02"
-      - "HK-02"
-      - "SG-03"
-      - "SG-04"
       - "JP-03"
-      - "JP-04"
-      - "JP-05"
-      - "HK-03"
+      - "HK-01"
       - "新加坡-01"
       - "新加坡-02"
       - "新加坡-03"
@@ -5867,6 +5642,8 @@ proxy-groups:
       - "日本-40"
       - "新加坡-29"
       - "日本-41"
+      - "JP-04"
+      - "JP-05"
       - "JP-06"
       - "JP-07"
       - "JP-08"
@@ -5875,8 +5652,6 @@ proxy-groups:
       - "JP-11"
       - "JP-12"
       - "JP-13"
-      - "JP-14"
-      - "JP-15"
       - "新加坡-30"
       - "新加坡-31"
       - "新加坡-32"
@@ -6002,19 +5777,10 @@ proxy-groups:
       - "🚀 节点选择"
       - "🎯 全球直连"
       - "TW-01"
-      - "SG-01"
       - "JP-01"
-      - "HK-01"
-      - "VN-01"
       - "JP-02"
-      - "SG-02"
-      - "HK-02"
-      - "SG-03"
-      - "SG-04"
       - "JP-03"
-      - "JP-04"
-      - "JP-05"
-      - "HK-03"
+      - "HK-01"
       - "新加坡-01"
       - "新加坡-02"
       - "新加坡-03"
@@ -6108,6 +5874,8 @@ proxy-groups:
       - "日本-40"
       - "新加坡-29"
       - "日本-41"
+      - "JP-04"
+      - "JP-05"
       - "JP-06"
       - "JP-07"
       - "JP-08"
@@ -6116,8 +5884,6 @@ proxy-groups:
       - "JP-11"
       - "JP-12"
       - "JP-13"
-      - "JP-14"
-      - "JP-15"
       - "新加坡-30"
       - "新加坡-31"
       - "新加坡-32"
@@ -6243,19 +6009,10 @@ proxy-groups:
       - "🎯 全球直连"
       - "🚀 节点选择"
       - "TW-01"
-      - "SG-01"
       - "JP-01"
-      - "HK-01"
-      - "VN-01"
       - "JP-02"
-      - "SG-02"
-      - "HK-02"
-      - "SG-03"
-      - "SG-04"
       - "JP-03"
-      - "JP-04"
-      - "JP-05"
-      - "HK-03"
+      - "HK-01"
       - "新加坡-01"
       - "新加坡-02"
       - "新加坡-03"
@@ -6349,6 +6106,8 @@ proxy-groups:
       - "日本-40"
       - "新加坡-29"
       - "日本-41"
+      - "JP-04"
+      - "JP-05"
       - "JP-06"
       - "JP-07"
       - "JP-08"
@@ -6357,8 +6116,6 @@ proxy-groups:
       - "JP-11"
       - "JP-12"
       - "JP-13"
-      - "JP-14"
-      - "JP-15"
       - "新加坡-30"
       - "新加坡-31"
       - "新加坡-32"
@@ -6484,19 +6241,10 @@ proxy-groups:
       - "🎯 全球直连"
       - "🚀 节点选择"
       - "TW-01"
-      - "SG-01"
       - "JP-01"
-      - "HK-01"
-      - "VN-01"
       - "JP-02"
-      - "SG-02"
-      - "HK-02"
-      - "SG-03"
-      - "SG-04"
       - "JP-03"
-      - "JP-04"
-      - "JP-05"
-      - "HK-03"
+      - "HK-01"
       - "新加坡-01"
       - "新加坡-02"
       - "新加坡-03"
@@ -6590,6 +6338,8 @@ proxy-groups:
       - "日本-40"
       - "新加坡-29"
       - "日本-41"
+      - "JP-04"
+      - "JP-05"
       - "JP-06"
       - "JP-07"
       - "JP-08"
@@ -6598,8 +6348,6 @@ proxy-groups:
       - "JP-11"
       - "JP-12"
       - "JP-13"
-      - "JP-14"
-      - "JP-15"
       - "新加坡-30"
       - "新加坡-31"
       - "新加坡-32"
@@ -6739,19 +6487,10 @@ proxy-groups:
       - "🚀 节点选择"
       - "🎯 全球直连"
       - "TW-01"
-      - "SG-01"
       - "JP-01"
-      - "HK-01"
-      - "VN-01"
       - "JP-02"
-      - "SG-02"
-      - "HK-02"
-      - "SG-03"
-      - "SG-04"
       - "JP-03"
-      - "JP-04"
-      - "JP-05"
-      - "HK-03"
+      - "HK-01"
       - "新加坡-01"
       - "新加坡-02"
       - "新加坡-03"
@@ -6845,6 +6584,8 @@ proxy-groups:
       - "日本-40"
       - "新加坡-29"
       - "日本-41"
+      - "JP-04"
+      - "JP-05"
       - "JP-06"
       - "JP-07"
       - "JP-08"
@@ -6853,8 +6594,6 @@ proxy-groups:
       - "JP-11"
       - "JP-12"
       - "JP-13"
-      - "JP-14"
-      - "JP-15"
       - "新加坡-30"
       - "新加坡-31"
       - "新加坡-32"

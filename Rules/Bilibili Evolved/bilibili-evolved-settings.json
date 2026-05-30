@@ -1,18 +1,6 @@
 {
   "userStyles": {},
   "userPlugins": {
-    "speed.keymap": {
-      "code": "!function(e,t){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define([],t):\"object\"==typeof exports?exports[\"video/player/speed\"]=t():e[\"video/player/speed\"]=t()}(globalThis,(()=>(()=>{\"use strict\";var e={d:(t,n)=>{for(var r in n)e.o(n,r)&&!e.o(t,r)&&Object.defineProperty(t,r,{enumerable:!0,get:n[r]})},o:(e,t)=>Object.prototype.hasOwnProperty.call(e,t)},t={};e.d(t,{plugin:()=>q});const n=coreApis.toast,r=coreApis.componentApis.video.playerAgent,o=coreApis.lifeCycle,s=coreApis.observer,i=coreApis.utils,a=coreApis.utils.sort,l=coreApis.settings,c=e=>\"function\"==typeof e?{next:e}:e,d=e=>function e(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:void 0,r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:void 0,o=!1;const s=[],i=[];let a=!1;const d=()=>{for(;s.length;)s.pop()();i.length=0,a=!0},p=e=>{a||(i.forEach((t=>{t.error?.(e),(0,l.getGeneralSettings)().devMode&&console.error(e)})),d())},u=e=>{a||i.forEach((t=>{try{t.next(e)}catch(e){p(e)}}))},h=()=>{i.forEach((e=>{e.complete?.()})),d()},b=()=>{if(o)return;const e=t?.({next:u,error:p,complete:h});e&&s.push(e),o=!0},m=e=>null==e?null:(i.push(e),()=>{lodash.pull(i,e)}),f=function(){for(var t=arguments.length,n=new Array(t),o=0;o<t;o++)n[o]=arguments[o];return 0===n.length?{subscribe:e=>{const t=m(c(e));return(r?.connect??b)(),t},pipe:f,next:u,error:p,complete:h,...r}:e(n[0],{subscribe:m},r||{connect:b,next:u}).pipe(...n.slice(1))};if(n){const e=t?.({subscribe:e=>n.subscribe({error:p,complete:h,...c(e)}),next:u,error:p,complete:h});e&&s.push(e)}return f()}(e),p=(e,t)=>d((n=>{let{next:r}=n;return e.addEventListener(t,r),()=>e.removeEventListener(t,r)})),u=function(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];return d((t=>{let{next:r}=t;e(...n,r)}))},h=e=>new Promise(((t,n)=>{const r=e.subscribe({next:e=>{t(e),r()},error:()=>{n(),r()},complete:()=>{n(),r()}})})),b=e=>function(){for(var t=arguments.length,n=new Array(t),r=0;r<t;r++)n[r]=arguments[r];Promise.resolve().then((()=>e(...n)))},m=function(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];return d((e=>{let{next:n,error:r,complete:o}=e;return(e=>{const t=new Set;return e((e=>{lodash.castArray(e).forEach((e=>{t.add(e)}))})),()=>{t.forEach((e=>{e()}))}})((e=>{const s=[];let i=0;e(t.map(((e,a)=>{return e.pipe((l=b,e=>{let{subscribe:t,next:n,complete:r,error:o}=e;t(lodash.mapValues({next:n,complete:r,error:o},(e=>l(e))))})).subscribe({next:e=>{s[a]=e,s.reduce((e=>e+1),0)===t.length&&n(s.slice())},complete:()=>{i++,i===t.length&&o()},error:r});var l}))),e((()=>{s.length=0,i=0}))}))}))},f=e=>t=>{let{subscribe:n,next:r,error:o}=t;n(lodash.debounce((e=>{try{r(e)}catch(e){o(e)}}),e))},g=e=>t=>{let{subscribe:n,next:r}=t;n((t=>{e(t)&&r(t)}))},v=function(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];return e=>{let{next:n,subscribe:r}=e,o=!1;r((e=>{o||t.forEach((e=>n(e))),n(e),o=!0}))}},y=coreApis.pluginApis.data,x=e=>e.split(\",\").map((e=>e.trim().replace(/^\\./,\"\"))).join(\",\"),w=(e,t)=>{const n=t=>{(0,y.registerAndGetData)(e,t)[0]=t},r=(0,y.getData)(e);if(r.length)return[r[0],n];if(t){const e=t();return n(e),[e,n]}return[void 0,n]},S=function(e){return arguments.length>1&&void 0!==arguments[1]&&arguments[1]&&1===e?\"倍速\":Math.trunc(e)===e?`${e}.0x`:`${e}x`},E=e=>{if(\"倍速\"===e)return 1;const t=/([0-9]*[.]?[0-9]+)x/.exec(e);if(t)return parseFloat(t[1]);throw new Error(`unknown speed text: ${e}`)};function A(e,t,n){return(t=function(e){var t=function(e,t){if(\"object\"!=typeof e||!e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var r=n.call(e,t||\"default\");if(\"object\"!=typeof r)return r;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(\"string\"===t?String:Number)(e)}(e,\"string\");return\"symbol\"==typeof t?t:t+\"\"}(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}const k=r.playerAgent.provideCustomQuery({video:{speedMenuList:\".bilibili-player-video-btn-speed-menu, .bpx-player-ctrl-playbackrate-menu\",speedMenuItem:\".bilibili-player-video-btn-speed-menu-list, .bpx-player-ctrl-playbackrate-menu-item\",speedNameBtn:\".bilibili-player-video-btn-speed-name, .bpx-player-ctrl-playbackrate-result\",speedContainer:\".bilibili-player-video-btn-speed, .bpx-player-ctrl-playbackrate\",active:\".bilibili-player-active, .bpx-state-active\",show:\".bilibili-player-speed-show, .bpx-state-show\"},bangumi:{speedMenuList:\".squirtle-speed-select-list, .bpx-player-ctrl-playbackrate-menu\",speedMenuItem:\".squirtle-select-item, .bpx-player-ctrl-playbackrate-menu-item\",speedNameBtn:\".squirtle-speed-select-result, .bpx-player-ctrl-playbackrate-result\",speedContainer:\".squirtle-speed-wrap, .bpx-player-ctrl-playbackrate\",active:\".active, .bpx-state-active\",show:\".bilibili-player-speed-show, .bpx-state-show\"}});let V=function(e){return e[e.MIN=0]=\"MIN\",e[e.CURRENT=1]=\"CURRENT\",e[e.MAX=2]=\"MAX\",e}({});const C=(e,t,n)=>{const r=new MutationObserver(n);return r.observe(e,t),r},O=e=>{let[t,n]=e;if(!t)throw new Error(\"speed container element not found!\");if(!n)throw new Error(\"video element not found!\");const r=t.querySelector(k.custom.speedNameBtn.selector),o=t.querySelector(k.custom.speedMenuList.selector);let s,l,c;const p=d(),u=d().pipe((e=>{let t,{subscribe:n,next:r}=e,o=!0;n((e=>{(o||t!==e)&&(o=!1,t=e,r(e))}))}));u.pipe(v(void 0),(e=>{let{subscribe:t,next:n}=e;const r=[];return t((e=>{2===r.length&&r.shift(),r.push(e),2===r.length&&n(r.slice())})),()=>{r.length=0}})).subscribe((e=>{let[t,n]=e;l=t,s=n}));const h=e=>{if(e)switch(e.nodeType){case Node.TEXT_NODE:u.next(E(e.data));break;case Node.ELEMENT_NODE:u.next(E(e.innerHTML));break;default:console.warn(\"The target parameter of updateActiveVideoSpeed must be a Node, and the node type must be one of TEXT_NODE and ELEMENT_NODE\")}},b=()=>{c=lodash([...o.children]).map((e=>lodash.attempt((()=>E(e.textContent))))).reject((e=>lodash.isError(e))).sort((0,a.ascendingSort)()).value()};h(r),b();const m=C(o,{childList:!0,attributes:!0},(e=>{const{attributes:t=[],childList:n=[]}=lodash.groupBy(e,\"type\");n.length&&b(),p.next({attributes:t,childList:n})})),f=C(r,{childList:!0,subtree:!0},(e=>{e.forEach((e=>{const[t]=e.addedNodes;h(t)}))}));return{containerElement:t,videoElement:n,nameBtnElement:r,menuListElement:o,query:e=>(0,i.des)(`./*[(${function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:\"or\";return e.split(\",\").map(x).flat().map((e=>`contains(@class, \"${e}\")`)).join(` ${t} `)}(k.custom.speedMenuItem.selector)}) and normalize-space()=\"${S(e)}\"]`,o),dispose:()=>{m.disconnect(),f.disconnect()},activeVideoSpeed$:u,menuListElementMutations$:p,getActiveVideoSpeed:()=>s,getOldActiveVideoSpeed:()=>l,getAvailableSpeedValues:()=>c}},N=e=>{const{videoElement:t,menuListElement:n}=e,r=p(n,\"click\").pipe((o=e=>{const{innerText:t,innerHTML:n}=e.target,r=t.trim()||n.trim();return lodash.attempt((()=>E(r)))},e=>{let{subscribe:t,next:n}=e;t((e=>{n(o(e))}))}),g((e=>!lodash.isError(e))));var o;const s=d((e=>{let{next:n}=e,r=t;do{r=Object.getPrototypeOf(r)}while(null===r||!Object.prototype.hasOwnProperty.call(r,\"playbackRate\"));const o=Object.getOwnPropertyDescriptor(r,\"playbackRate\");return Object.defineProperty(r,\"playbackRate\",{set(e){o.set.call(this,e),n(e)}}),()=>{Object.defineProperty(r,\"playbackRate\",o)}})),i=r.pipe((e=>{let t,{subscribe:n,next:r}=e,o=!0;n((e=>{(o||t!==e)&&(o=!1,t=e,r(e))}))})),a=s.pipe((e=>{let t,{subscribe:n,next:r}=e,o=!0;n((e=>{(o||t!==e)&&(o=!1,t=e,r(e))}))})),l=d((e=>{let{next:t}=e;const n=m(i,a);return n.subscribe((e=>{let[n,r]=e;n===r&&t(r)})),()=>n.complete()})).pipe((e=>{let t,{subscribe:n,next:r}=e,o=!0;n((e=>{(o||t!==e)&&(o=!1,t=e,r(e))}))}));let c;a.pipe(f(200),v(void 0),(e=>{let{subscribe:t,next:n}=e;const r=[];return t((e=>{2===r.length&&r.shift(),r.push(e),2===r.length&&n(r.slice())})),()=>{r.length=0}})).subscribe((e=>{let[t]=e;c=t}));const u={menuListElementClickSpeed$:r,menuListElementClickSpeedChange$:i,playbackRate$:s,playbackRateChange$:a,videoSpeedChange$:l};return{...e,...u,dispose:()=>{lodash.values(u).forEach((e=>{e.complete()})),e.dispose()},getOldPlaybackRate:()=>c}},[$]=w(\"speed.NoSuchSpeedMenuItemElementError\",(()=>class extends Error{constructor(e){const t=lodash.attempt((()=>S(e))),n=lodash.isError(t)?String(e):String(t);super(`There is no such speed menu item as ${n}`),this.speed=e,A(this,\"formattedSpeed\",void 0),this.formattedSpeed=n}})),T=e=>{const{query:t,videoElement:n,videoSpeedChange$:r,getOldActiveVideoSpeed:o,getAvailableSpeedValues:s,getActiveVideoSpeed:i}=e,a=async function(e){let o=arguments.length>1&&void 0!==arguments[1]?arguments[1]:200;const s=t(e);if(null==s)throw new $(e);s.click();const i=t=>{if((t??n.playbackRate)!==e)throw new Error(`failed to set ${S(e)} video speed.`)},a=[h(r.pipe(f(Math.max(0,o||0))))];o>0&&a.push(new Promise(((e,t)=>setTimeout((()=>setTimeout(t,o)))))),await Promise.all(a).then(i).catch(i)},l=async()=>{await a(1)},c=async(e,t)=>{if(lodash.isNil(e)&&(e=!1),\"boolean\"==typeof e)e||1===n.playbackRate?await a(o()):await l();else{const n=s();switch(t){case V.MIN:await a(n[e]);break;case V.MAX:await a(n[n.length-1+e]);break;case V.CURRENT:default:{const t=n.indexOf(i());if(-1===t)throw new Error(\"Unexpected Error: The available speed values do not include the active speed value, this should be a bug, please report the issue on github!\");await a(n[t+e])}}}},d=async e=>{try{await c(e,V.CURRENT)}catch(e){if(console.warn(e),!(e instanceof $))throw e}};return Object.assign(e,{set:a,force:async e=>{n.playbackRate=e},reset:l,toggle:c,step:d,increase:async()=>{await d(1)},decrease:async()=>{await d(-1)}})},j=()=>w(\"speed.speedContext\"),M=()=>w(\"speed.buildArguments$\",(()=>{return d().pipe((e=e=>e.settings.enabled,t=>{let{subscribe:n,next:r}=t;const o=new Set;return n((t=>{const n=o.size;e(t)?o.add(t):o.delete(t),o.size!==n&&r([...o])})),()=>{o.clear()}}));var e})),L=async function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:lodash.identity;const[t,n]=j();if(t)return t;let r,i;const[a]=w(\"lifeCycleComponentLoaded$\",(()=>p(unsafeWindow,o.LifeCycleEventTypes.ComponentsLoaded))),[l]=M(),[c]=w(\"speed.videoChange$\",(()=>u(s.videoChange).pipe(g((e=>{let{aid:t,cid:n}=e;return t||n}))))),[b]=w(\"speed.speedContext$\",(()=>d((t=>{let{next:n}=t;return m(c,function(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];return d((e=>{let{next:n,complete:r}=e;const o=[...t],s=()=>{const e=o.shift();e||r(),e.subscribe({next:n,complete:()=>{s()}})};s()}))}(function(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];return d((e=>{let{next:n,complete:r}=e;t.forEach((e=>{n(e)})),r()}))}([]),l),a).subscribe((t=>{let[o,s]=t;const[a]=j();a?.dispose(),i?.(\"context update\");const l=new Promise(((e,t)=>{r=e,i=t}));Promise.all([Promise.all([k.custom.speedContainer(),k.query.video.element()]).then(r),l]).then((e=>{let[,t]=e;return t})).then(O).then(N).then(T).then((e=>Object.assign(e,{videoIdObject:o,speedContext$:b,videoChange$:c}))).then(e(s)).then(n).catch((e=>console.error(e)))}))}))));return b.subscribe(n),h(b)},R=coreApis.utils.log,P=coreApis.pluginApis.hook;function I(e,t,n){return(t=function(e){var t=function(e,t){if(\"object\"!=typeof e||!e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var r=n.call(e,t||\"default\");if(\"object\"!=typeof r)return r;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(\"string\"===t?String:Number)(e)}(e,\"string\");return\"symbol\"==typeof t?t:t+\"\"}(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}class D{constructor(e,t){this.entryContext=e,this.enabled$=t,I(this,\"speedContext\",void 0),I(this,\"settings\",void 0),I(this,\"coreApis\",void 0),I(this,\"metadata\",void 0),I(this,\"options\",void 0),I(this,\"getVideoIdObject\",void 0),I(this,\"getAvailableSpeedValues\",void 0),I(this,\"getOldActiveVideoSpeed\",void 0),I(this,\"forceVideoSpeed\",void 0),I(this,\"getVideoSpeed\",void 0),I(this,\"setVideoSpeed\",void 0),I(this,\"resetVideoSpeed\",void 0),I(this,\"toggleVideoSpeed\",void 0),I(this,\"increaseVideoSpeed\",void 0),I(this,\"decreaseVideoSpeed\",void 0),lodash.assign(this,e,{options:e.settings.options}),this.migrate?.(),lodash.assign(this,lodash.mapValues(D.contextMap,(e=>async function(){const t=await L(),n=lodash.get(t,e);return lodash.isFunction(n)?await n(...arguments):n})))}}I(D,\"create\",void 0),I(D,\"contextMap\",{getVideoIdObject:\"videoIdObject\",getAvailableSpeedValues:\"getAvailableSpeedValues\",getOldActiveVideoSpeed:\"getOldActiveVideoSpeed\",getVideoSpeed:\"videoElement.playbackRate\",setVideoSpeed:\"set\",forceVideoSpeed:\"force\",resetVideoSpeed:\"reset\",toggleVideoSpeed:\"toggle\",increaseVideoSpeed:\"increase\",decreaseVideoSpeed:\"decrease\"}),L((e=>t=>{const n=lodash.omit(t,\"dispose\"),r=e.map((e=>e.getSpeedContextMixin(n)));if(r.length>1){const e=lodash.intersection(...r.map(Object.keys));if(e.length)throw new Error(`In the registered speed component, there is an implementation of getSpeedContextMixin that causes the speed context to be mixed in ambiguous.\\nThe repeated key names are ${e.join(\", \")}`)}lodash.assign(n,...r);const o=[];return e.forEach((e=>{const t=lodash(e.settings.options).mapValues(((t,n)=>u(l.addComponentListener,`${e.metadata.name}.${n}`).pipe((e=>{let t,{subscribe:n,next:r}=e,o=!0;n((e=>{(o||t!==e)&&(o=!1,t=e,r(e))}))})))).mapKeys(((e,t)=>`${t}$`)).value();o.push(...lodash.values(t)),e.options=new Proxy(e.settings.options,{get:(e,n,r)=>lodash.isSymbol(n)?Reflect.get(e,n,r):!Reflect.has(e,n)&&n.endsWith(\"$\")?t[n]:Reflect.get(e,n,r)}),e.speedContext=n,e.onSpeedContext(n),e.settings.enabled&&lodash(t).entries().forEach((t=>{let[n,r]=t;r.next(e.settings.options[n.slice(0,-1)])}))})),{...n,dispose:()=>{o.forEach((e=>e.complete())),t.dispose()}}})),D.create=function(e){const t=d().pipe((e=>{let t,{subscribe:n,next:r}=e,o=!0;n((e=>{(o||t!==e)&&(o=!1,t=e,r(e))}))}));return{...e,entry:n=>{const r=lodash.attempt((()=>new this(n,t)));if(r instanceof Error)return(0,R.logError)(r),null;const[o]=M();return t.subscribe((()=>{o.next(r)})),t.next(!0),(0,P.getHook)(`speed.component.${e.name}`).after(r),r},reload:()=>t.next(!0),unload:()=>t.next(!1)}};const q={name:\"speed.keymap\",displayName:\"快捷键扩展 - 视频倍速\",author:{name:\"JLoeve\",link:\"https://github.com/LonelySteve\"},description:\"\\n\\n为操作视频倍速提供快捷键支持：\\n\\n- 提高倍速\\n- 降低倍速\\n- 切换倍速\\n\\n若添加并启用了记忆倍速组件，则还会增加一个快捷键：\\n\\n- 清除倍速记忆\\n  \",setup:e=>{let{addData:t,addHook:r}=e;const o=e=>async t=>{const n=await L();return await e(n),t.showTip(S(n.videoElement.playbackRate),\"mdi-fast-forward\"),!0};t(\"keymap.actions\",(e=>{Object.assign(e,{videoSpeedIncrease:{displayName:\"提高倍速\",run:o((e=>{let{increase:t}=e;return t()}))},videoSpeedDecrease:{displayName:\"降低倍速\",run:o((e=>{let{decrease:t}=e;return t()}))},videoSpeedToggle:{displayName:\"切换倍速\",run:o((e=>{let{toggle:t}=e;t()}))}})})),t(\"keymap.presets\",(e=>{e.videoSpeedIncrease=\"shift > 》 arrowUp\",e.videoSpeedDecrease=\"shift < 《 arrowDown\",e.videoSpeedToggle=\"shift ? ？\"})),r(\"speed.component.rememberVideoSpeed\",{after:e=>{t(\"keymap.actions\",(t=>{t.videoSpeedForget={displayName:\"清除倍速记忆\",run:lodash.debounce(o((async()=>{e.settings.enabled?e.options.individualRemember?(e.forgetSpeed(),await e.resetVideoSpeed(),n.Toast.success(\"已清除当前视频倍速记忆值\",e.metadata.displayName,3e3)):n.Toast.error(\"选项「各视频分别记忆」已禁用，不能清除当前视频倍速记忆值\",e.metadata.displayName,5e3):n.Toast.error(\"组件已禁用，不能清除当前视频倍速记忆值\",e.metadata.displayName,5e3)})),200)}})),t(\"keymap.presets\",(e=>{e.videoSpeedForget=\"shift : ：\"}))}})},commitHash:\"7fecc4bac26748c831b96a3051621e41dd889b2f\",coreVersion:\"2.10.9\"};return t=t.plugin})()));\n//# sourceMappingURL=https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/video/player/speed.js.map",
-      "displayName": "快捷键扩展 - 视频倍速",
-      "name": "speed.keymap",
-      "author": {
-        "name": "JLoeve",
-        "link": "https://github.com/LonelySteve"
-      },
-      "description": "\n\n为操作视频倍速提供快捷键支持：\n\n- 提高倍速\n- 降低倍速\n- 切换倍速\n\n若添加并启用了记忆倍速组件，则还会增加一个快捷键：\n\n- 清除倍速记忆\n  ",
-      "commitHash": "5b8d9acf1192b0722c73cc99094f808a3bad6993",
-      "coreVersion": "2.6.0"
-    },
     "feedsFilter.pluginBlocks.chargeFeeds": {
       "code": "!function(e,t){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define([],t):\"object\"==typeof exports?exports[\"feeds/filter/hide-charge-feeds\"]=t():e[\"feeds/filter/hide-charge-feeds\"]=t()}(globalThis,(()=>(()=>{var e,t,o={52:e=>{function t(e){var t=new Error(\"Cannot find module '\"+e+\"'\");throw t.code=\"MODULE_NOT_FOUND\",t}t.keys=()=>[],t.resolve=t,t.id=52,e.exports=t},759:e=>{\"use strict\";e.exports=\"移除动态里的充电专属动态, 装有 `动态过滤器` 时生效.\\n\"},649:e=>{\"use strict\";e.exports=coreApis.componentApis.feeds.api},847:e=>{\"use strict\";e.exports=coreApis.utils}},r={};function n(e){var t=r[e];if(void 0!==t)return t.exports;var s=r[e]={exports:{}};return o[e](s,s.exports,n),s.exports}t=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__,n.t=function(o,r){if(1&r&&(o=this(o)),8&r)return o;if(\"object\"==typeof o&&o){if(4&r&&o.__esModule)return o;if(16&r&&\"function\"==typeof o.then)return o}var s=Object.create(null);n.r(s);var i={};e=e||[null,t({}),t([]),t(t)];for(var d=2&r&&o;\"object\"==typeof d&&!~e.indexOf(d);d=t(d))Object.getOwnPropertyNames(d).forEach((e=>i[e]=()=>o[e]));return i.default=()=>o,n.d(s,i),s},n.d=(e,t)=>{for(var o in t)n.o(t,o)&&!n.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},n.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),n.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})};var s={};return(()=>{\"use strict\";n.d(s,{plugin:()=>e});const e={name:\"feedsFilter.pluginBlocks.chargeFeeds\",displayName:\"动态过滤器 - 移除充电专属动态\",async setup(){const{getVue2Data:e}=await Promise.resolve().then(n.t.bind(n,847,23)),{forEachFeedsCard:t}=await Promise.resolve().then(n.t.bind(n,649,23));t({added:t=>{const o=e(t.element);3===lodash.get(o,\"data.modules.module_dynamic.major.blocked.blocked_type\",null)&&t.element.classList.add(\"plugin-block\")}})},commitHash:\"7fecc4bac26748c831b96a3051621e41dd889b2f\",coreVersion:\"2.10.9\",description:(()=>{const e=n(52);return{...Object.fromEntries(e.keys().map((t=>[t.match(/index\\.(.+)\\.md$/)[1],e(t)]))),\"zh-CN\":()=>Promise.resolve().then(n.t.bind(n,759,17)).then((e=>e.default))}})()}})(),s=s.plugin})()));\n//# sourceMappingURL=https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/feeds/filter/hide-charge-feeds.js.map",
       "displayName": "动态过滤器 - 移除充电专属动态",
@@ -936,68 +924,6 @@
         }
       }
     },
-    "extendVideoSpeed": {
-      "code": "!function(e,t){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define([],t):\"object\"==typeof exports?exports[\"video/player/extend-speed\"]=t():e[\"video/player/extend-speed\"]=t()}(globalThis,(()=>(()=>{\"use strict\";var e={d:(t,n)=>{for(var s in n)e.o(n,s)&&!e.o(t,s)&&Object.defineProperty(t,s,{enumerable:!0,get:n[s]})},o:(e,t)=>Object.prototype.hasOwnProperty.call(e,t)},t={};e.d(t,{component:()=>Q});const n=coreApis.utils.urls,s=coreApis.settings,i=coreApis.utils.log,o=coreApis.pluginApis.hook,r=e=>\"function\"==typeof e?{next:e}:e,a=e=>function e(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:void 0,i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:void 0,o=!1;const a=[],l=[];let c=!1;const d=()=>{for(;a.length;)a.pop()();l.length=0,c=!0},p=e=>{c||(l.forEach((t=>{t.error?.(e),(0,s.getGeneralSettings)().devMode&&console.error(e)})),d())},u=e=>{c||l.forEach((t=>{try{t.next(e)}catch(e){p(e)}}))},h=()=>{l.forEach((e=>{e.complete?.()})),d()},m=()=>{if(o)return;const e=t?.({next:u,error:p,complete:h});e&&a.push(e),o=!0},b=e=>null==e?null:(l.push(e),()=>{lodash.pull(l,e)}),f=function(){for(var t=arguments.length,n=new Array(t),s=0;s<t;s++)n[s]=arguments[s];return 0===n.length?{subscribe:e=>{const t=b(r(e));return(i?.connect??m)(),t},pipe:f,next:u,error:p,complete:h,...i}:e(n[0],{subscribe:b},i||{connect:m,next:u}).pipe(...n.slice(1))};if(n){const e=t?.({subscribe:e=>n.subscribe({error:p,complete:h,...r(e)}),next:u,error:p,complete:h});e&&a.push(e)}return f()}(e),l=(e,t)=>a((n=>{let{next:s}=n;return e.addEventListener(t,s),()=>e.removeEventListener(t,s)})),c=function(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),s=1;s<t;s++)n[s-1]=arguments[s];return a((t=>{let{next:s}=t;e(...n,s)}))},d=e=>new Promise(((t,n)=>{const s=e.subscribe({next:e=>{t(e),s()},error:()=>{n(),s()},complete:()=>{n(),s()}})})),p=coreApis.componentApis.video.playerAgent,u=coreApis.lifeCycle,h=coreApis.observer,m=coreApis.utils,b=coreApis.utils.sort,f=e=>t=>{let{subscribe:n,next:s,complete:i,error:o}=t;n(lodash.mapValues({next:s,complete:i,error:o},(t=>e(t))))},y=e=>function(){for(var t=arguments.length,n=new Array(t),s=0;s<t;s++)n[s]=arguments[s];Promise.resolve().then((()=>e(...n)))},v=function(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];return a((e=>{let{next:n,error:s,complete:i}=e;return(e=>{const t=new Set;return e((e=>{lodash.castArray(e).forEach((e=>{t.add(e)}))})),()=>{t.forEach((e=>{e()}))}})((e=>{const o=[];let r=0;e(t.map(((e,a)=>e.pipe(f(y)).subscribe({next:e=>{o[a]=e,o.reduce((e=>e+1),0)===t.length&&n(o.slice())},complete:()=>{r++,r===t.length&&i()},error:s})))),e((()=>{o.length=0,r=0}))}))}))},g=e=>t=>{let{subscribe:n,next:s,error:i}=t;n(lodash.debounce((e=>{try{s(e)}catch(e){i(e)}}),e))},x=e=>t=>{let{subscribe:n,next:s}=t;n((t=>{e(t)&&s(t)}))},S=function(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];return e=>{let{next:n,subscribe:s}=e,i=!1;s((e=>{i||t.forEach((e=>n(e))),n(e),i=!0}))}},w=coreApis.pluginApis.data,E=e=>e.split(\",\").map((e=>e.trim().replace(/^\\./,\"\"))).join(\",\"),$=e=>e.split(\",\").join(\" \"),C=(e,t)=>{const n=t=>{(0,w.registerAndGetData)(e,t)[0]=t},s=(0,w.getData)(e);if(s.length)return[s[0],n];if(t){const e=t();return n(e),[e,n]}return[void 0,n]},V=function(e){return arguments.length>1&&void 0!==arguments[1]&&arguments[1]&&1===e?\"倍速\":Math.trunc(e)===e?`${e}.0x`:`${e}x`},M=e=>{if(\"倍速\"===e)return 1;const t=/([0-9]*[.]?[0-9]+)x/.exec(e);if(t)return parseFloat(t[1]);throw new Error(`unknown speed text: ${e}`)};function A(e,t,n){return(t=function(e){var t=function(e,t){if(\"object\"!=typeof e||!e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var s=n.call(e,t||\"default\");if(\"object\"!=typeof s)return s;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(\"string\"===t?String:Number)(e)}(e,\"string\");return\"symbol\"==typeof t?t:t+\"\"}(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}const L=p.playerAgent.provideCustomQuery({video:{speedMenuList:\".bilibili-player-video-btn-speed-menu, .bpx-player-ctrl-playbackrate-menu\",speedMenuItem:\".bilibili-player-video-btn-speed-menu-list, .bpx-player-ctrl-playbackrate-menu-item\",speedNameBtn:\".bilibili-player-video-btn-speed-name, .bpx-player-ctrl-playbackrate-result\",speedContainer:\".bilibili-player-video-btn-speed, .bpx-player-ctrl-playbackrate\",active:\".bilibili-player-active, .bpx-state-active\",show:\".bilibili-player-speed-show, .bpx-state-show\"},bangumi:{speedMenuList:\".squirtle-speed-select-list, .bpx-player-ctrl-playbackrate-menu\",speedMenuItem:\".squirtle-select-item, .bpx-player-ctrl-playbackrate-menu-item\",speedNameBtn:\".squirtle-speed-select-result, .bpx-player-ctrl-playbackrate-result\",speedContainer:\".squirtle-speed-wrap, .bpx-player-ctrl-playbackrate\",active:\".active, .bpx-state-active\",show:\".bilibili-player-speed-show, .bpx-state-show\"}});let k=function(e){return e[e.MIN=0]=\"MIN\",e[e.CURRENT=1]=\"CURRENT\",e[e.MAX=2]=\"MAX\",e}({});const N=(e,t,n)=>{const s=new MutationObserver(n);return s.observe(e,t),s},j=e=>{let[t,n]=e;if(!t)throw new Error(\"speed container element not found!\");if(!n)throw new Error(\"video element not found!\");const s=t.querySelector(L.custom.speedNameBtn.selector),i=t.querySelector(L.custom.speedMenuList.selector);let o,r,l;const c=a(),d=a().pipe((e=>{let t,{subscribe:n,next:s}=e,i=!0;n((e=>{(i||t!==e)&&(i=!1,t=e,s(e))}))}));d.pipe(S(void 0),(e=>{let{subscribe:t,next:n}=e;const s=[];return t((e=>{2===s.length&&s.shift(),s.push(e),2===s.length&&n(s.slice())})),()=>{s.length=0}})).subscribe((e=>{let[t,n]=e;r=t,o=n}));const p=e=>{if(e)switch(e.nodeType){case Node.TEXT_NODE:d.next(M(e.data));break;case Node.ELEMENT_NODE:d.next(M(e.innerHTML));break;default:console.warn(\"The target parameter of updateActiveVideoSpeed must be a Node, and the node type must be one of TEXT_NODE and ELEMENT_NODE\")}},u=()=>{l=lodash([...i.children]).map((e=>lodash.attempt((()=>M(e.textContent))))).reject((e=>lodash.isError(e))).sort((0,b.ascendingSort)()).value()};p(s),u();const h=N(i,{childList:!0,attributes:!0},(e=>{const{attributes:t=[],childList:n=[]}=lodash.groupBy(e,\"type\");n.length&&u(),c.next({attributes:t,childList:n})})),f=N(s,{childList:!0,subtree:!0},(e=>{e.forEach((e=>{const[t]=e.addedNodes;p(t)}))}));return{containerElement:t,videoElement:n,nameBtnElement:s,menuListElement:i,query:e=>(0,m.des)(`./*[(${function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:\"or\";return e.split(\",\").map(E).flat().map((e=>`contains(@class, \"${e}\")`)).join(` ${t} `)}(L.custom.speedMenuItem.selector)}) and normalize-space()=\"${V(e)}\"]`,i),dispose:()=>{h.disconnect(),f.disconnect()},activeVideoSpeed$:d,menuListElementMutations$:c,getActiveVideoSpeed:()=>o,getOldActiveVideoSpeed:()=>r,getAvailableSpeedValues:()=>l}},O=e=>{const{videoElement:t,menuListElement:n}=e,s=l(n,\"click\").pipe((i=e=>{const{innerText:t,innerHTML:n}=e.target,s=t.trim()||n.trim();return lodash.attempt((()=>M(s)))},e=>{let{subscribe:t,next:n}=e;t((e=>{n(i(e))}))}),x((e=>!lodash.isError(e))));var i;const o=a((e=>{let{next:n}=e,s=t;do{s=Object.getPrototypeOf(s)}while(null===s||!Object.prototype.hasOwnProperty.call(s,\"playbackRate\"));const i=Object.getOwnPropertyDescriptor(s,\"playbackRate\");return Object.defineProperty(s,\"playbackRate\",{set(e){i.set.call(this,e),n(e)}}),()=>{Object.defineProperty(s,\"playbackRate\",i)}})),r=s.pipe((e=>{let t,{subscribe:n,next:s}=e,i=!0;n((e=>{(i||t!==e)&&(i=!1,t=e,s(e))}))})),c=o.pipe((e=>{let t,{subscribe:n,next:s}=e,i=!0;n((e=>{(i||t!==e)&&(i=!1,t=e,s(e))}))})),d=a((e=>{let{next:t}=e;const n=v(r,c);return n.subscribe((e=>{let[n,s]=e;n===s&&t(s)})),()=>n.complete()})).pipe((e=>{let t,{subscribe:n,next:s}=e,i=!0;n((e=>{(i||t!==e)&&(i=!1,t=e,s(e))}))}));let p;c.pipe(g(200),S(void 0),(e=>{let{subscribe:t,next:n}=e;const s=[];return t((e=>{2===s.length&&s.shift(),s.push(e),2===s.length&&n(s.slice())})),()=>{s.length=0}})).subscribe((e=>{let[t]=e;p=t}));const u={menuListElementClickSpeed$:s,menuListElementClickSpeedChange$:r,playbackRate$:o,playbackRateChange$:c,videoSpeedChange$:d};return{...e,...u,dispose:()=>{lodash.values(u).forEach((e=>{e.complete()})),e.dispose()},getOldPlaybackRate:()=>p}},[T]=C(\"speed.NoSuchSpeedMenuItemElementError\",(()=>class extends Error{constructor(e){const t=lodash.attempt((()=>V(e))),n=lodash.isError(t)?String(e):String(t);super(`There is no such speed menu item as ${n}`),this.speed=e,A(this,\"formattedSpeed\",void 0),this.formattedSpeed=n}})),I=e=>{const{query:t,videoElement:n,videoSpeedChange$:s,getOldActiveVideoSpeed:i,getAvailableSpeedValues:o,getActiveVideoSpeed:r}=e,a=async function(e){let i=arguments.length>1&&void 0!==arguments[1]?arguments[1]:200;const o=t(e);if(null==o)throw new T(e);o.click();const r=t=>{if((t??n.playbackRate)!==e)throw new Error(`failed to set ${V(e)} video speed.`)},a=[d(s.pipe(g(Math.max(0,i||0))))];i>0&&a.push(new Promise(((e,t)=>setTimeout((()=>setTimeout(t,i)))))),await Promise.all(a).then(r).catch(r)},l=async()=>{await a(1)},c=async(e,t)=>{if(lodash.isNil(e)&&(e=!1),\"boolean\"==typeof e)e||1===n.playbackRate?await a(i()):await l();else{const n=o();switch(t){case k.MIN:await a(n[e]);break;case k.MAX:await a(n[n.length-1+e]);break;case k.CURRENT:default:{const t=n.indexOf(r());if(-1===t)throw new Error(\"Unexpected Error: The available speed values do not include the active speed value, this should be a bug, please report the issue on github!\");await a(n[t+e])}}}},p=async e=>{try{await c(e,k.CURRENT)}catch(e){if(console.warn(e),!(e instanceof T))throw e}};return Object.assign(e,{set:a,force:async e=>{n.playbackRate=e},reset:l,toggle:c,step:p,increase:async()=>{await p(1)},decrease:async()=>{await p(-1)}})},P=()=>C(\"speed.speedContext\"),R=()=>C(\"speed.buildArguments$\",(()=>{return a().pipe((e=e=>e.settings.enabled,t=>{let{subscribe:n,next:s}=t;const i=new Set;return n((t=>{const n=i.size;e(t)?i.add(t):i.delete(t),i.size!==n&&s([...i])})),()=>{i.clear()}}));var e})),q=async function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:lodash.identity;const[t,n]=P();if(t)return t;let s,i;const[o]=C(\"lifeCycleComponentLoaded$\",(()=>l(unsafeWindow,u.LifeCycleEventTypes.ComponentsLoaded))),[r]=R(),[p]=C(\"speed.videoChange$\",(()=>c(h.videoChange).pipe(x((e=>{let{aid:t,cid:n}=e;return t||n}))))),[m]=C(\"speed.speedContext$\",(()=>a((t=>{let{next:n}=t;return v(p,function(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];return a((e=>{let{next:n,complete:s}=e;const i=[...t],o=()=>{const e=i.shift();e||s(),e.subscribe({next:n,complete:()=>{o()}})};o()}))}(function(){for(var e=arguments.length,t=new Array(e),n=0;n<e;n++)t[n]=arguments[n];return a((e=>{let{next:n,complete:s}=e;t.forEach((e=>{n(e)})),s()}))}([]),r),o).subscribe((t=>{let[o,r]=t;const[a]=P();a?.dispose(),i?.(\"context update\");const l=new Promise(((e,t)=>{s=e,i=t}));Promise.all([Promise.all([L.custom.speedContainer(),L.query.video.element()]).then(s),l]).then((e=>{let[,t]=e;return t})).then(j).then(O).then(I).then((e=>Object.assign(e,{videoIdObject:o,speedContext$:m,videoChange$:p}))).then(e(r)).then(n).catch((e=>console.error(e)))}))}))));return m.subscribe(n),d(m)};function U(e,t,n){return(t=function(e){var t=function(e,t){if(\"object\"!=typeof e||!e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var s=n.call(e,t||\"default\");if(\"object\"!=typeof s)return s;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(\"string\"===t?String:Number)(e)}(e,\"string\");return\"symbol\"==typeof t?t:t+\"\"}(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}const B=[.5,.75,1,1.25,1.5,2],z=.0625;class H{constructor(e,t){this.entryContext=e,this.enabled$=t,U(this,\"speedContext\",void 0),U(this,\"settings\",void 0),U(this,\"coreApis\",void 0),U(this,\"metadata\",void 0),U(this,\"options\",void 0),U(this,\"getVideoIdObject\",void 0),U(this,\"getAvailableSpeedValues\",void 0),U(this,\"getOldActiveVideoSpeed\",void 0),U(this,\"forceVideoSpeed\",void 0),U(this,\"getVideoSpeed\",void 0),U(this,\"setVideoSpeed\",void 0),U(this,\"resetVideoSpeed\",void 0),U(this,\"toggleVideoSpeed\",void 0),U(this,\"increaseVideoSpeed\",void 0),U(this,\"decreaseVideoSpeed\",void 0),lodash.assign(this,e,{options:e.settings.options}),this.migrate?.(),lodash.assign(this,lodash.mapValues(H.contextMap,(e=>async function(){const t=await q(),n=lodash.get(t,e);return lodash.isFunction(n)?await n(...arguments):n})))}}U(H,\"create\",void 0),U(H,\"contextMap\",{getVideoIdObject:\"videoIdObject\",getAvailableSpeedValues:\"getAvailableSpeedValues\",getOldActiveVideoSpeed:\"getOldActiveVideoSpeed\",getVideoSpeed:\"videoElement.playbackRate\",setVideoSpeed:\"set\",forceVideoSpeed:\"force\",resetVideoSpeed:\"reset\",toggleVideoSpeed:\"toggle\",increaseVideoSpeed:\"increase\",decreaseVideoSpeed:\"decrease\"}),q((e=>t=>{const n=lodash.omit(t,\"dispose\"),i=e.map((e=>e.getSpeedContextMixin(n)));if(i.length>1){const e=lodash.intersection(...i.map(Object.keys));if(e.length)throw new Error(`In the registered speed component, there is an implementation of getSpeedContextMixin that causes the speed context to be mixed in ambiguous.\\nThe repeated key names are ${e.join(\", \")}`)}lodash.assign(n,...i);const o=[];return e.forEach((e=>{const t=lodash(e.settings.options).mapValues(((t,n)=>c(s.addComponentListener,`${e.metadata.name}.${n}`).pipe((e=>{let t,{subscribe:n,next:s}=e,i=!0;n((e=>{(i||t!==e)&&(i=!1,t=e,s(e))}))})))).mapKeys(((e,t)=>`${t}$`)).value();o.push(...lodash.values(t)),e.options=new Proxy(e.settings.options,{get:(e,n,s)=>lodash.isSymbol(n)?Reflect.get(e,n,s):!Reflect.has(e,n)&&n.endsWith(\"$\")?t[n]:Reflect.get(e,n,s)}),e.speedContext=n,e.onSpeedContext(n),e.settings.enabled&&lodash(t).entries().forEach((t=>{let[n,s]=t;s.next(e.settings.options[n.slice(0,-1)])}))})),{...n,dispose:()=>{o.forEach((e=>e.complete())),t.dispose()}}})),H.create=function(e){const t=a().pipe((e=>{let t,{subscribe:n,next:s}=e,i=!0;n((e=>{(i||t!==e)&&(i=!1,t=e,s(e))}))}));return{...e,entry:n=>{const s=lodash.attempt((()=>new this(n,t)));if(s instanceof Error)return(0,i.logError)(s),null;const[r]=R();return t.subscribe((()=>{r.next(s)})),t.next(!0),(0,o.getHook)(`speed.component.${e.name}`).after(s),s},reload:()=>t.next(!0),unload:()=>t.next(!1)}};const D=coreApis.style,X=coreApis.toast,W=e=>{let t,{style:n,name:s,container:i}=e;const o=()=>t?.remove();return{next:e=>{o();const r=\"function\"==typeof n?n(e):n;r&&(t=(0,D.addStyle)(r,s,i))},complete:o}};function F(e,t,n){return(t=function(e){var t=function(e,t){if(\"object\"!=typeof e||!e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var s=n.call(e,t||\"default\");if(\"object\"!=typeof s)return s;throw new TypeError(\"@@toPrimitive must return a primitive value.\")}return(\"string\"===t?String:Number)(e)}(e,\"string\");return\"symbol\"==typeof t?t:t+\"\"}(t))in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}const _=\"extend-speed-input\",G=\"extend-speed-item\",J=function(e){let t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];const n=document.createElement(\"div\");n.innerHTML=e;const s={},i=n.children.item(0),o=e=>{t&&(e.id=`scoped-element-${Math.random().toString(36).replace(/[^a-z0-9]+/g,\"\")}`);const n=e.getAttribute(\"data-ref\");n&&(s[lodash.camelCase(n)]=e);for(let t=0;t<e.children.length;t++)o(e.children.item(t))};return o(i),{...s,root:i}};class K extends H{static get activeClassName(){return E(L.custom.active.selector)}static get showClassName(){return E(L.custom.show.selector)}static get speedMenuItemClassName(){return E(L.custom.speedMenuItem.selector)}constructor(e,t){super(e,t),F(this,\"elementMap\",[]),F(this,\"inputElement\",void 0),F(this,\"unpatch\",void 0),F(this,\"currentSpeedValue\",void 0),F(this,\"filterNativeSpeed\",(()=>e=>{let{subscribe:t,next:n}=e;t((e=>{B.includes(e)&&n(e)}))})),this.enabled$.subscribe(W({name:\"fix-after-element\",style:e=>e&&\".bpx-player-ctrl-playbackrate-menu:after { display: none; }\"}))}addSpeedValue(e){this.options.extendSpeedList=lodash.sortedUniq(this.options.extendSpeedList.concat(e).sort((0,b.ascendingSort)()))}removeSpeedValue(e){this.options.extendSpeedList=lodash.without(this.options.extendSpeedList,e)}createInputElement(){const{input:e,root:t,icon:n}=J(`\\n      <li class=\"${$(E(L.custom.speedMenuItem.selector))} ${_}\">\\n        <i data-ref=\"icon\" class=\"mdi mdi-playlist-plus\" style=\"font-size: 1.5em\"></i>\\n        <input data-ref=\"input\" type=\"number\" title=\"添加新的倍数值\" max=\"16\" step=\"0.5\" style=\"display: none;\"></input>\\n      </li>\\n    `),s=()=>{const t=this.speedContext.getAvailableSpeedValues().slice(-1)[0]+.5,n=lodash.toString(t>16?null:t);e.value=n,e.min=n};this.options.extendSpeedList$.pipe(f(y)).subscribe(s);const o=(0,D.addStyle)(`\\n      #${e.id} {\\n        font-size: inherit;\\n        color: inherit;\\n        line-height: inherit;\\n        background: transparent;\\n        outline: none;\\n        width: 100%;\\n        border: none;\\n        text-align: center;\\n        cursor: text;\\n      }\\n      /* https://stackoverflow.com/a/4298216 */\\n      /* Chrome */\\n      #${e.id}::-webkit-outer-spin-button,\\n      #${e.id}::-webkit-inner-spin-button {\\n        -webkit-appearance: none;\\n        margin: 0;\\n      }\\n      /* Firefox */\\n      #${e.id}[type=number] {\\n        -moz-appearance:textfield;\\n      }\\n    `),r=lodash.over(l(e,\"keydown\").pipe(g(200)).subscribe((t=>{let{key:n}=t;if(\"Enter\"!==n)return;const s=parseFloat(e.value);try{if(!lodash.isFinite(s))throw new Error(\"无效的倍数值\");if(s<z)throw new Error(\"倍数值太小了\");if(s>16)throw new Error(\"倍数值太大了\");if(this.speedContext.getAvailableSpeedValues().includes(s))throw new Error(\"不能重复添加已有的倍数值\");this.addSpeedValue(s)}catch(t){(0,i.logError)(String(t),5e3),e.focus(),e.select()}})),l(t,\"mouseenter\").subscribe((()=>{e.style.display=\"inline\",n.style.display=\"none\",s(),setTimeout((()=>e.focus()))})),l(t,\"mouseleave\").subscribe((()=>{e.style.display=\"none\",n.style.display=\"inline\"})),(()=>t.remove()),(()=>o.remove()));return{node:t,destroy:r}}createCustomSpeedMenuItemElement(e){const{closeBtn:t,root:n}=J(`\\n      <li class=\"${$(E(L.custom.speedMenuItem.selector))} ${G}\" data-value=\"${e}\">\\n        ${V(e)}\\n        <i data-ref=\"close-btn\" class=\"mdi mdi-close-circle\"></i>\\n      </li>\\n    `),s=(0,D.addStyle)(`\\n      .${G} [data-ref=\"close-btn\"] {\\n        color: inherit;\\n        opacity: 0.5;\\n        display: none;\\n        position: absolute;\\n        right: 4px;\\n      }\\n      :is(${L.custom.speedMenuItem.selector}):not(${L.custom.active.selector}):hover [data-ref=\"close-btn\"] {\\n        display: inline;\\n      }\\n      .${G} [data-ref=\"close-btn\"]:hover {\\n        opacity: 1;\\n        transition: all .3s;\\n      }\\n    `),i=lodash.over(l(t,\"click\").subscribe((()=>{this.removeSpeedValue(e)})),(()=>n.remove()),(()=>s.remove()));return{tag:e,node:n,destroy:i}}migrate(){const{options:e}=this.settings,{options:t}=(0,s.getComponentSettings)(\"rememberVideoSpeed\");t.extendList&&(e.extendSpeedList=Array.from(t.extendList),delete t.extendList,delete t.extend,X.Toast.success(\"从「倍速记忆」组件迁移旧配置成功\",\"【扩展倍速】旧配置迁移完成\",8e3))}getSpeedContextMixin(e){let{menuListElement:t}=e;return{query:e=>(0,m.des)(`./*[(${K.speedMenuItemClassName.split(\",\").map((e=>`contains(@class, \"${e}\")`)).join(\" or \")}) and not(contains(@class, \"${_}\")) and normalize-space()=\"${V(e)}\"]`,t)}}onSpeedContext(e){let{menuListElementClickSpeedChange$:t,playbackRate$:n}=e;this.options.extendSpeedList$.subscribe({next:e=>this.patch(((e,t)=>{let n=0,s=e.length,i=0,o=t.length;for(;n<s&&i<o&&e[n]===t[i];)n++,i++;for(;n<s&&i<o&&e[s-1]===t[o-1];)s--,o--;return[n,s-n,t.slice(i,o)]})(this.elementMap.map((e=>e.tag)),Array.from(e))),complete:()=>{this.unpatch()}}),this.options.maxMenuHeight$.subscribe(W({name:\"extend-video-speed-style\",style:e=>`\\n                  ${L.custom.speedMenuList.selector} {\\n                    display: flex !important; /* 防止3.X样式覆盖 */\\n                    flex-direction: column;\\n                    overflow-y: auto;\\n                    max-height: ${e}px;\\n                    visibility: hidden;\\n                  }\\n                  /* 修复2.X倍速列表显示问题 */\\n                  :is(${L.custom.show.selector}) :is(${L.custom.speedMenuList.selector}){\\n                    visibility: visible;\\n                  }\\n                  /* 修复番剧区的列表显示问题 */\\n                  :is(${L.custom.speedMenuList.selector})[style*=\"block\"] {\\n                    visibility: visible;\\n                  }`})),this.options.hideScrollbar$.subscribe(W({name:\"extend-video-speed-no-scrollbar-style\",style:e=>e&&`\\n                ${L.custom.speedMenuList.selector} {\\n                  scrollbar-width: none !important;\\n                  overscroll-behavior: contain;\\n                }\\n                :is(${L.custom.speedMenuList.selector})::-webkit-scrollbar {\\n                    height: 0 !important;\\n                    width: 0 !important;\\n                }`})),this.options.hideRemoveBtn$.subscribe(W({name:\"extend-video-speed-no-remove-btn-style\",style:e=>e&&`\\n            .${G} [data-ref=\"close-btn\"] {\\n              display: none !important;\\n            }\\n            :is(${L.custom.speedMenuItem.selector}):not(${L.custom.active.selector}):hover [data-ref=\"close-btn\"] {\\n              display: none !important;\\n            }`})),this.options.hideAddBtn$.subscribe(W({name:\"extend-video-speed-no-add-btn-style\",style:e=>e&&`\\n          .${_} {\\n              display: none !important;\\n            }`}));let s=1;n.pipe(x((e=>B.includes(e)))).subscribe((e=>{s=e})),t.subscribe({next:e=>{this.forceVideoSpeedWithUpdateStyle(e),this.currentSpeedValue=e},complete:()=>{this.setVideoSpeed(s),this.forceVideoSpeedWithUpdateStyle(s)}}),this.currentSpeedValue&&requestIdleCallback((()=>{this.setVideoSpeed(this.currentSpeedValue,1e3)}))}async forceVideoSpeedWithUpdateStyle(e){await this.forceVideoSpeed(e),setTimeout((()=>this.forceUpdateStyle(e)))}patch(e){const[t,n,s]=e,{menuListElement:i}=this.speedContext;if(this.inputElement||(this.inputElement=this.createInputElement(),i.prepend(this.inputElement.node)),0===n&&0===s.length)return;const o=s.map((e=>this.createCustomSpeedMenuItemElement(e)));this.elementMap.splice(t,n,...o).forEach((e=>{e.destroy()})),(this.elementMap[t-1]||this.inputElement).node.after(...o.map((e=>e.node)).reverse()),i.querySelectorAll(`:is(${L.custom.speedMenuItem.selector}):not(#${this.inputElement.node.id})`).forEach((e=>{e.style.order=(1e4*(16-M(e.innerHTML))).toString()})),this.unpatch=()=>{this.inputElement.destroy(),this.inputElement=void 0,this.elementMap.forEach((e=>e.destroy())),this.elementMap.length=0}}forceUpdateStyle(e){const{menuListElement:t,containerElement:n,nameBtnElement:s,query:i}=this.speedContext;for(const e of(0,m.dea)(`./*[(${E(K.speedMenuItemClassName).split(\",\").map((e=>`contains(@class, \"${e}\")`)).join(\" or \")}) and (${E(K.activeClassName).split(\",\").map((e=>`contains(@class, \"${e}\")`)).join(\" or \")})]`,t))e.classList.remove(...K.activeClassName.split(\",\"));i(e).classList.add(...K.activeClassName.split(\",\")),n.classList.remove(...K.showClassName.split(\",\")),s.innerText=V(e,!0)}}const Q=K.create({name:\"extendVideoSpeed\",displayName:\"扩展倍速\",author:{name:\"JLoeve\",link:\"https://github.com/LonelySteve\"},description:{\"zh-CN\":\"\\n\\n> 扩展视频播放器的倍速菜单项，可用于突破原有播放倍数的上限或下限.\\n\\n#### 🔧 **选项**\\n\\n- `隐藏滚动条`：如果添加的倍速过多，倍速菜单将出现滚动条，在 Windows 下，若没有安装并启用「细滚动条」组件会显得比较挤，建议开启此选项隐藏滚动条.\\n\\n- `隐藏移除图标`：如果认为倍速右侧的移除倍速图标有些突兀，可以开启此选项隐藏.\\n\\n- `隐藏新增图标`：如果认为顶部的新增倍速图标有些突兀，可以开启此选项隐藏.\\n\\n#### **新增倍速**\\n\\n开启组件后，在默认情况下，播放器的倍速菜单就会新增 2.5x 和 3.0x 两个倍速选项.\\n\\n如果需要添加更多倍速，只需将鼠标指针移到菜单顶部的新增图标上，图标将变成一个输入框，根据需要键入新的倍速值，或通过滚轮增减数值，或直接使用推荐的数值，回车确认即可.\\n\\n新增倍速的范围要求在 0.0625 到 16 之间，数量则不受限制.\\n\\n**不推荐设置超高倍速（>3.0x）**：原生播放器内部没有针对超高倍速进行优化，可能导致音画不同步、播放卡顿、声音嘈杂/消失等一系列问题.\\n\\n#### **删除倍速**\\n\\n将鼠标指针移到**自定义**的倍速菜单项上，其右侧将会显示一个移除图标，单击即可删除相应的倍速.\\n\\n\"},tags:[componentsTags.video],urlInclude:n.playerUrls,options:{maxMenuHeight:{displayName:\"倍速菜单最大高度\",defaultValue:360,hidden:!0,validator:e=>Math.max(parseInt(e),360)||360},hideScrollbar:{displayName:\"隐藏滚动条\",defaultValue:!1},hideRemoveBtn:{displayName:\"隐藏移除图标\",defaultValue:!1},hideAddBtn:{displayName:\"隐藏新增图标\",defaultValue:!1},extendSpeedList:{displayName:\"扩展倍速列表\",defaultValue:[2.5,3],hidden:!0}},commitHash:\"7fecc4bac26748c831b96a3051621e41dd889b2f\",coreVersion:\"2.10.9\"});return t=t.component})()));\n//# sourceMappingURL=https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/extend-speed.js.map",
-      "metadata": {
-        "name": "extendVideoSpeed",
-        "displayName": "扩展倍速",
-        "author": {
-          "name": "JLoeve",
-          "link": "https://github.com/LonelySteve"
-        },
-        "description": {
-          "zh-CN": "\n\n> 扩展视频播放器的倍速菜单项，可用于突破原有播放倍数的上限或下限.\n\n#### 🔧 **选项**\n\n- `隐藏滚动条`：如果添加的倍速过多，倍速菜单将出现滚动条，在 Windows 下，若没有安装并启用「细滚动条」组件会显得比较挤，建议开启此选项隐藏滚动条.\n\n- `隐藏移除图标`：如果认为倍速右侧的移除倍速图标有些突兀，可以开启此选项隐藏.\n\n- `隐藏新增图标`：如果认为顶部的新增倍速图标有些突兀，可以开启此选项隐藏.\n\n#### **新增倍速**\n\n开启组件后，在默认情况下，播放器的倍速菜单就会新增 2.5x 和 3.0x 两个倍速选项.\n\n如果需要添加更多倍速，只需将鼠标指针移到菜单顶部的新增图标上，图标将变成一个输入框，根据需要键入新的倍速值，或通过滚轮增减数值，或直接使用推荐的数值，回车确认即可.\n\n新增倍速的范围要求在 0.0625 到 16 之间，数量则不受限制.\n\n**不推荐设置超高倍速（>3.0x）**：原生播放器内部没有针对超高倍速进行优化，可能导致音画不同步、播放卡顿、声音嘈杂/消失等一系列问题.\n\n#### **删除倍速**\n\n将鼠标指针移到**自定义**的倍速菜单项上，其右侧将会显示一个移除图标，单击即可删除相应的倍速.\n\n"
-        },
-        "tags": [
-          {
-            "name": "video",
-            "displayName": "视频",
-            "color": "#2196F3",
-            "icon": "mdi-play-circle-outline",
-            "order": 1
-          }
-        ],
-        "options": {
-          "maxMenuHeight": {
-            "displayName": "倍速菜单最大高度",
-            "defaultValue": 360,
-            "hidden": true
-          },
-          "hideScrollbar": {
-            "displayName": "隐藏滚动条",
-            "defaultValue": false
-          },
-          "hideRemoveBtn": {
-            "displayName": "隐藏移除图标",
-            "defaultValue": false
-          },
-          "hideAddBtn": {
-            "displayName": "隐藏新增图标",
-            "defaultValue": false
-          },
-          "extendSpeedList": {
-            "displayName": "扩展倍速列表",
-            "defaultValue": [
-              2.5,
-              3
-            ],
-            "hidden": true
-          }
-        },
-        "commitHash": "7fecc4bac26748c831b96a3051621e41dd889b2f",
-        "coreVersion": "2.10.9"
-      },
-      "settings": {
-        "enabled": true,
-        "options": {
-          "maxMenuHeight": 360,
-          "hideScrollbar": false,
-          "extendSpeedList": [],
-          "hideRemoveBtn": false,
-          "hideAddBtn": false
-        }
-      }
-    },
     "removePlayerPopup": {
       "code": "!function(e,o){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=o():\"function\"==typeof define&&define.amd?define([],o):\"object\"==typeof exports?exports[\"video/player/remove-popup\"]=o():e[\"video/player/remove-popup\"]=o()}(globalThis,(()=>(()=>{var e,o,p={484:(e,o,p)=>{var r=p(904),n=p(955)(r);n.push([e.id,\"body.remove-player-popup .bili-danmaku-x-cmd-shrink,\\nbody.remove-player-popup .bili-cmd-shrink {\\n  display: none !important;\\n}\\nbody.remove-player-popup-combo-likes .bili-danmaku-x-guide,\\nbody.remove-player-popup-combo-likes .bili-guide,\\nbody.remove-player-popup-combo-likes .bilibili-player-video-popup-three,\\nbody.remove-player-popup-combo-likes .bilibili-player-video-popup-three-animate,\\nbody.remove-player-popup-combo-likes .bilibili-player-video-popup-follow,\\nbody.remove-player-popup-combo-likes .bilibili-player-video-popup-there-cyc,\\nbody.remove-player-popup-combo-likes .bpx-player-popup-three,\\nbody.remove-player-popup-combo-likes .bpx-player-popup-animate,\\nbody.remove-player-popup-combo-likes .bpx-player-popup-follow,\\nbody.remove-player-popup-combo-likes .bpx-player-popup-cyc {\\n  display: none !important;\\n}\\nbody.remove-player-popup-related-videos .bili-danmaku-x-link,\\nbody.remove-player-popup-related-videos .bili-link,\\nbody.remove-player-popup-related-videos .bilibili-player-video-link,\\nbody.remove-player-popup-related-videos .bilibili-player-link,\\nbody.remove-player-popup-related-videos .bpx-player-link {\\n  display: none !important;\\n}\\nbody.remove-player-popup-votes .bili-danmaku-x-vote,\\nbody.remove-player-popup-votes .bili-vote,\\nbody.remove-player-popup-votes .bilibili-player-video-popup-vote,\\nbody.remove-player-popup-votes .bpx-player-popup-dm-close,\\nbody.remove-player-popup-votes .bpx-player-popup-dm-shrink,\\nbody.remove-player-popup-votes .bpx-player-popup-vote {\\n  display: none !important;\\n}\\nbody.remove-player-popup-rates .bili-danmaku-x-score,\\nbody.remove-player-popup-rates .bili-score,\\nbody.remove-player-popup-rates .bilibili-player-score,\\nbody.remove-player-popup-rates .bpx-player-popup-dm-close,\\nbody.remove-player-popup-rates .bpx-player-score-summary-wrap,\\nbody.remove-player-popup-rates .bpx-player-score,\\nbody.remove-player-popup-rates .bili-qoeFeedback,\\nbody.remove-player-popup-rates .bpx-player-qoeFeedback {\\n  display: none !important;\\n}\\nbody.remove-player-popup-reservations .bili-danmaku-x-reserve,\\nbody.remove-player-popup-reservations .bili-reserve,\\nbody.remove-player-popup-reservations .bpx-player-reserve {\\n  display: none !important;\\n}\\nbody.remove-player-popup-promotions .bili-danmaku-x-cmtime,\\nbody.remove-player-popup-promotions .bili-cmtime,\\nbody.remove-player-popup-promotions .bpx-player-cmtime,\\nbody.remove-player-popup-promotions .bpx-player-skipcard {\\n  display: none !important;\\n}\",\"\",{version:3,sources:[\"webpack://./registry/lib/components/video/player/remove-popup/remove-popup.scss\"],names:[],mappings:\"AAAA;;EAEE,wBAAwB;AAC1B;AACA;;;;;;;;;;EAUE,wBAAwB;AAC1B;AACA;;;;;EAKE,wBAAwB;AAC1B;AACA;;;;;;EAME,wBAAwB;AAC1B;AACA;;;;;;;;EAQE,wBAAwB;AAC1B;AACA;;;EAGE,wBAAwB;AAC1B;AACA;;;;EAIE,wBAAwB;AAC1B\",sourcesContent:[\"body.remove-player-popup .bili-danmaku-x-cmd-shrink,\\nbody.remove-player-popup .bili-cmd-shrink {\\n  display: none !important;\\n}\\nbody.remove-player-popup-combo-likes .bili-danmaku-x-guide,\\nbody.remove-player-popup-combo-likes .bili-guide,\\nbody.remove-player-popup-combo-likes .bilibili-player-video-popup-three,\\nbody.remove-player-popup-combo-likes .bilibili-player-video-popup-three-animate,\\nbody.remove-player-popup-combo-likes .bilibili-player-video-popup-follow,\\nbody.remove-player-popup-combo-likes .bilibili-player-video-popup-there-cyc,\\nbody.remove-player-popup-combo-likes .bpx-player-popup-three,\\nbody.remove-player-popup-combo-likes .bpx-player-popup-animate,\\nbody.remove-player-popup-combo-likes .bpx-player-popup-follow,\\nbody.remove-player-popup-combo-likes .bpx-player-popup-cyc {\\n  display: none !important;\\n}\\nbody.remove-player-popup-related-videos .bili-danmaku-x-link,\\nbody.remove-player-popup-related-videos .bili-link,\\nbody.remove-player-popup-related-videos .bilibili-player-video-link,\\nbody.remove-player-popup-related-videos .bilibili-player-link,\\nbody.remove-player-popup-related-videos .bpx-player-link {\\n  display: none !important;\\n}\\nbody.remove-player-popup-votes .bili-danmaku-x-vote,\\nbody.remove-player-popup-votes .bili-vote,\\nbody.remove-player-popup-votes .bilibili-player-video-popup-vote,\\nbody.remove-player-popup-votes .bpx-player-popup-dm-close,\\nbody.remove-player-popup-votes .bpx-player-popup-dm-shrink,\\nbody.remove-player-popup-votes .bpx-player-popup-vote {\\n  display: none !important;\\n}\\nbody.remove-player-popup-rates .bili-danmaku-x-score,\\nbody.remove-player-popup-rates .bili-score,\\nbody.remove-player-popup-rates .bilibili-player-score,\\nbody.remove-player-popup-rates .bpx-player-popup-dm-close,\\nbody.remove-player-popup-rates .bpx-player-score-summary-wrap,\\nbody.remove-player-popup-rates .bpx-player-score,\\nbody.remove-player-popup-rates .bili-qoeFeedback,\\nbody.remove-player-popup-rates .bpx-player-qoeFeedback {\\n  display: none !important;\\n}\\nbody.remove-player-popup-reservations .bili-danmaku-x-reserve,\\nbody.remove-player-popup-reservations .bili-reserve,\\nbody.remove-player-popup-reservations .bpx-player-reserve {\\n  display: none !important;\\n}\\nbody.remove-player-popup-promotions .bili-danmaku-x-cmtime,\\nbody.remove-player-popup-promotions .bili-cmtime,\\nbody.remove-player-popup-promotions .bpx-player-cmtime,\\nbody.remove-player-popup-promotions .bpx-player-skipcard {\\n  display: none !important;\\n}\"],sourceRoot:\"\"}]),e.exports=n},955:e=>{\"use strict\";\n// eslint-disable-next-line func-names\ne.exports=function(e){var o=[];return o.toString=function(){return this.map((function(o){var p=e(o);return o[2]?\"@media \".concat(o[2],\" {\").concat(p,\"}\"):p})).join(\"\")},\n// eslint-disable-next-line func-names\no.i=function(e,p,r){\"string\"==typeof e&&(\n// eslint-disable-next-line no-param-reassign\ne=[[null,e,\"\"]]);var n={};if(r)for(var a=0;a<this.length;a++){\n// eslint-disable-next-line prefer-destructuring\nvar i=this[a][0];null!=i&&(n[i]=!0)}for(var t=0;t<e.length;t++){var l=[].concat(e[t]);r&&n[l[0]]||(p&&(l[2]?l[2]=\"\".concat(p,\" and \").concat(l[2]):l[2]=p),o.push(l))}},o}},904:e=>{\"use strict\";function o(e,o){return function(e){if(Array.isArray(e))return e}(e)||function(e,o){var p=e&&(\"undefined\"!=typeof Symbol&&e[Symbol.iterator]||e[\"@@iterator\"]);if(null==p)return;var r,n,a=[],i=!0,t=!1;try{for(p=p.call(e);!(i=(r=p.next()).done)&&(a.push(r.value),!o||a.length!==o);i=!0);}catch(e){t=!0,n=e}finally{try{i||null==p.return||p.return()}finally{if(t)throw n}}return a}(e,o)||function(e,o){if(!e)return;if(\"string\"==typeof e)return p(e,o);var r=Object.prototype.toString.call(e).slice(8,-1);\"Object\"===r&&e.constructor&&(r=e.constructor.name);if(\"Map\"===r||\"Set\"===r)return Array.from(e);if(\"Arguments\"===r||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r))return p(e,o)}(e,o)||function(){throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\")}()}function p(e,o){(null==o||o>e.length)&&(o=e.length);for(var p=0,r=new Array(o);p<o;p++)r[p]=e[p];return r}e.exports=function(e){var p=o(e,4),r=p[1],n=p[3];if(!n)return r;if(\"function\"==typeof btoa){\n// eslint-disable-next-line no-undef\nvar a=btoa(unescape(encodeURIComponent(JSON.stringify(n)))),i=\"sourceMappingURL=data:application/json;charset=utf-8;base64,\".concat(a),t=\"/*# \".concat(i,\" */\"),l=n.sources.map((function(e){return\"/*# sourceURL=\".concat(n.sourceRoot||\"\").concat(e,\" */\")}));return[r].concat(l).concat([t]).join(\"\\n\")}return[r].join(\"\\n\")}},442:(e,o,p)=>{var r=p(484);r&&r.__esModule&&(r=r.default),e.exports=\"string\"==typeof r?r:r.toString()},643:e=>{function o(e){var o=new Error(\"Cannot find module '\"+e+\"'\");throw o.code=\"MODULE_NOT_FOUND\",o}o.keys=()=>[],o.resolve=o,o.id=643,e.exports=o},756:e=>{\"use strict\";e.exports=\"删除视频播放器中出现的各种弹窗, 类别可在选项中分别选择. 如果之前点了收起弹窗, 则收起后的小弹窗则会直接删除. (不受类别选择影响)\\n\"}},r={};function n(e){var o=r[e];if(void 0!==o)return o.exports;var a=r[e]={id:e,exports:{}};return p[e](a,a.exports,n),a.exports}o=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__,n.t=function(p,r){if(1&r&&(p=this(p)),8&r)return p;if(\"object\"==typeof p&&p){if(4&r&&p.__esModule)return p;if(16&r&&\"function\"==typeof p.then)return p}var a=Object.create(null);n.r(a);var i={};e=e||[null,o({}),o([]),o(o)];for(var t=2&r&&p;\"object\"==typeof t&&!~e.indexOf(t);t=o(t))Object.getOwnPropertyNames(t).forEach((e=>i[e]=()=>p[e]));return i.default=()=>p,n.d(a,i),a},n.d=(e,o)=>{for(var p in o)n.o(o,p)&&!n.o(e,p)&&Object.defineProperty(e,p,{enumerable:!0,get:o[p]})},n.o=(e,o)=>Object.prototype.hasOwnProperty.call(e,o),n.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})};var a={};return(()=>{\"use strict\";n.d(a,{component:()=>i});const e=coreApis.componentApis.define,o=coreApis.settings,p=coreApis.utils.urls,r=\"removePlayerPopup\",i=(0,e.defineComponentMetadata)({name:r,entry:e=>{let{settings:p,metadata:r}=e;const{options:n}=p,{kebabCase:a}=lodash;(0,o.addComponentListener)(r.name,(e=>{document.body.classList.toggle(a(r.name),e)}),!0),Object.keys(n).forEach((e=>{(0,o.addComponentListener)(`${r.name}.${e}`,(o=>{document.body.classList.toggle(`${a(r.name)}-${a(e)}`,o)}),!0)}))},instantStyles:[{name:r,style:()=>Promise.resolve().then(n.t.bind(n,442,23))}],displayName:\"删除视频弹窗\",tags:[componentsTags.video,componentsTags.style],urlInclude:p.playerUrls,options:{votes:{defaultValue:!1,displayName:\"投票\"},relatedVideos:{defaultValue:!0,displayName:\"关联视频\"},comboLikes:{defaultValue:!0,displayName:\"关注/三连\"},rates:{defaultValue:!0,displayName:\"评分\"},reservations:{defaultValue:!0,displayName:\"预告\"},promotions:{defaultValue:!0,displayName:\"心动\"}},commitHash:\"7fecc4bac26748c831b96a3051621e41dd889b2f\",coreVersion:\"2.10.9\",description:(()=>{const e=n(643);return{...Object.fromEntries(e.keys().map((o=>[o.match(/index\\.(.+)\\.md$/)[1],e(o)]))),\"zh-CN\":()=>Promise.resolve().then(n.t.bind(n,756,17)).then((e=>e.default))}})()})})(),a=a.component})()));\n//# sourceMappingURL=https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/remove-popup.js.map",
       "metadata": {
@@ -1059,31 +985,6 @@
           "reservations": true,
           "promotions": true
         }
-      }
-    },
-    "seekByFrames": {
-      "code": "!function(e,t){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define([],t):\"object\"==typeof exports?exports[\"video/player/seek-by-frames\"]=t():e[\"video/player/seek-by-frames\"]=t()}(globalThis,(()=>(()=>{\"use strict\";var e,t,r={241:e=>{e.exports=coreApis.componentApis.video.playerAgent}},o={};function n(e){var t=o[e];if(void 0!==t)return t.exports;var a=o[e]={exports:{}};return r[e](a,a.exports,n),a.exports}t=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__,n.t=function(r,o){if(1&o&&(r=this(r)),8&o)return r;if(\"object\"==typeof r&&r){if(4&o&&r.__esModule)return r;if(16&o&&\"function\"==typeof r.then)return r}var a=Object.create(null);n.r(a);var s={};e=e||[null,t({}),t([]),t(t)];for(var i=2&o&&r;\"object\"==typeof i&&!~e.indexOf(i);i=t(i))Object.getOwnPropertyNames(i).forEach((e=>s[e]=()=>r[e]));return s.default=()=>r,n.d(a,s),a},n.d=(e,t)=>{for(var r in t)n.o(t,r)&&!n.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},n.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),n.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})};var a={};n.d(a,{component:()=>m});const s=coreApis.componentApis.video.videoControlBar,i=coreApis.observer,c=coreApis.utils,l=coreApis.utils.urls,d=coreApis.pluginApis.data,p=coreApis.componentApis.define,u=\"seek-by-frame-disable\",m=(0,p.defineComponentMetadata)({name:\"seekByFrames\",displayName:\"启用逐帧调整\",tags:[componentsTags.video],description:{\"zh-CN\":\"在播放器的时间右边增加两个按钮, 用于**较精细**调整视频时间. 装有 `快捷键扩展` 时支持键盘快捷键<kbd>Shift</kbd>+<kbd>←</kbd>/<kbd>→</kbd>.\\n\\n> 注: `视频的实际播放帧率`跟`视频本身的帧率`和`显示器的刷新率`有关, 很难计算一个精准的数值, 部分视频仍然会有暂停不到那种一闪而过的图的情况.\"},entry:async()=>{await(0,c.playerReady)();const{playerAgent:e}=await Promise.resolve().then(n.t.bind(n,241,23));(0,d.addData)(\"ui.icons\",(e=>{e[\"seek-left\"]='<?xml version=\"1.0\" encoding=\"utf-8\"?>\\n\\x3c!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --\\x3e\\n<svg version=\"1.1\" id=\"图层_2_1_\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\"\\n\\t y=\"0px\" viewBox=\"0 0 24 24\" style=\"enable-background:new 0 0 24 24;\" xml:space=\"preserve\">\\n<g>\\n\\t<path d=\"M15.5,20.3c-0.4,0-0.7-0.1-1-0.4l-8.3-7.5c-0.3-0.3-0.5-0.7-0.5-1.1c0-0.4,0.2-0.8,0.5-1.1l8.3-7.5\\n\\t\\tc0.6-0.6,1.6-0.5,2.1,0.1c0.6,0.6,0.5,1.6-0.1,2.1l-7.1,6.3l7.1,6.4c0.6,0.6,0.7,1.5,0.1,2.1C16.3,20.2,15.9,20.3,15.5,20.3z\"/>\\n</g>\\n<circle cx=\"16.8\" cy=\"11.3\" r=\"2.4\"/>\\n</svg>\\n',e[\"seek-right\"]='<?xml version=\"1.0\" encoding=\"utf-8\"?>\\n\\x3c!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --\\x3e\\n<svg version=\"1.1\" id=\"图层_2\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\\n\\t viewBox=\"0 0 24 24\" style=\"enable-background:new 0 0 24 24;\" xml:space=\"preserve\">\\n<g>\\n\\t<path d=\"M8.2,20.3c0.4,0,0.7-0.1,1-0.4l8.3-7.5c0.3-0.3,0.5-0.7,0.5-1.1c0-0.4-0.2-0.8-0.5-1.1L9.2,2.7C8.6,2.2,7.7,2.2,7.1,2.9\\n\\t\\tC6.6,3.5,6.6,4.4,7.3,5l7.1,6.3l-7.1,6.4c-0.6,0.6-0.7,1.5-0.1,2.1C7.4,20.2,7.8,20.3,8.2,20.3z\"/>\\n</g>\\n<circle cx=\"7\" cy=\"11.3\" r=\"2.4\"/>\\n</svg>\\n'}));let t=0;(0,i.attributesSubtree)(`${e.query.control.buttons.quality.selector} ul`,(()=>{const r=dq(`${e.query.control.buttons.quality.selector} .bui-select-item-active, ${e.query.control.buttons.quality.selector} .active`),o=r?parseInt(r.getAttribute(\"data-value\")):0,n=(()=>{switch(o){case 116:case 74:return 6e4/1001;default:return 3e4/1001}})();t=1/n}));const r=r=>{e.changeTime(r*t)};(0,s.addControlBarButton)({name:\"seekPrevFrame\",displayName:\"上一帧\",icon:\"seek-left\",order:1,action:()=>{r(-1)}}),(0,s.addControlBarButton)({name:\"seekNextFrame\",displayName:\"下一帧\",icon:\"seek-right\",order:2,action:()=>{r(1)}})},reload:()=>document.body.classList.remove(u),unload:()=>document.body.classList.add(u),urlInclude:l.playerUrls,plugin:{displayName:\"逐帧调整 - 快捷键支持\",setup:()=>{(0,d.addData)(\"keymap.actions\",(e=>{e.previousFrame={displayName:\"上一帧\",run:e=>{const{clickElement:t}=e;return t('.be-video-control-bar-extend [data-name=\"seekPrevFrame\"]',e)}},e.nextFrame={displayName:\"下一帧\",run:e=>{const{clickElement:t}=e;return t('.be-video-control-bar-extend [data-name=\"seekNextFrame\"]',e)}}})),(0,d.addData)(\"keymap.presets\",(e=>{e.previousFrame=\"shift arrowLeft\",e.nextFrame=\"shift arrowRight\"}))}},commitHash:\"7fecc4bac26748c831b96a3051621e41dd889b2f\",coreVersion:\"2.10.9\"});return a=a.component})()));\n//# sourceMappingURL=https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/seek-by-frames.js.map",
-      "metadata": {
-        "name": "seekByFrames",
-        "displayName": "启用逐帧调整",
-        "tags": [
-          {
-            "name": "video",
-            "displayName": "视频",
-            "color": "#2196F3",
-            "icon": "mdi-play-circle-outline",
-            "order": 1
-          }
-        ],
-        "description": {
-          "zh-CN": "在播放器的时间右边增加两个按钮, 用于**较精细**调整视频时间. 装有 `快捷键扩展` 时支持键盘快捷键<kbd>Shift</kbd>+<kbd>←</kbd>/<kbd>→</kbd>.\n\n> 注: `视频的实际播放帧率`跟`视频本身的帧率`和`显示器的刷新率`有关, 很难计算一个精准的数值, 部分视频仍然会有暂停不到那种一闪而过的图的情况."
-        },
-        "commitHash": "7fecc4bac26748c831b96a3051621e41dd889b2f",
-        "coreVersion": "2.10.9"
-      },
-      "settings": {
-        "enabled": true,
-        "options": {}
       }
     },
     "showUploadTime": {
@@ -2133,7 +2034,7 @@
           "notifyStyle": "数字",
           "linkPopupContentAlignStyle": "左侧对齐",
           "searchBarWidth": 15,
-          "lastFavoriteFolder": 88678163,
+          "lastFavoriteFolder": 1592057463,
           "themeLogo": true
         }
       }
@@ -2559,7 +2460,7 @@
     "autoUpdate": {
       "enabled": true,
       "options": {
-        "lastUpdateCheck": 1778896852468,
+        "lastUpdateCheck": 1780014952691,
         "lastInstalledVersion": "2.10.9",
         "localPortOverride": "",
         "minimumDuration": 86400000,
@@ -2567,291 +2468,273 @@
           "components": {
             "feedsFilter": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/filter.js",
-              "lastUpdateCheck": 1778896593308,
+              "lastUpdateCheck": 1780014936107,
               "installTime": 1673491591771,
               "alwaysUpdate": false
             },
             "foldComments": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/fold-comments.js",
-              "lastUpdateCheck": 1778896592247,
+              "lastUpdateCheck": 1780014928314,
               "installTime": 1673491600384,
               "alwaysUpdate": false
             },
             "fullFeedsTitle": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/full-title.js",
-              "lastUpdateCheck": 1778896594375,
+              "lastUpdateCheck": 1780014921857,
               "installTime": 1673491603198,
               "alwaysUpdate": false
             },
             "unfoldFeeds": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/unfold.js",
-              "lastUpdateCheck": 1778896595421,
+              "lastUpdateCheck": 1780014927227,
               "installTime": 1673491607725,
               "alwaysUpdate": false
             },
             "liveHomeMute": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/live/home-mute.js",
-              "lastUpdateCheck": 1778896598631,
+              "lastUpdateCheck": 1780014933845,
               "installTime": 1673491613487,
               "alwaysUpdate": false
             },
             "alwaysShowDuration": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/always-show-duration.js",
-              "lastUpdateCheck": 1778896599682,
+              "lastUpdateCheck": 1780014923096,
               "installTime": 1673491649989,
               "alwaysUpdate": false
             },
             "autoHideSidebar": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/auto-hide-sidebar.js",
-              "lastUpdateCheck": 1778896596467,
+              "lastUpdateCheck": 1780014922498,
               "installTime": 1673491651900,
               "alwaysUpdate": false
             },
             "hideBanner": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/hide/banner.js",
-              "lastUpdateCheck": 1778896597541,
+              "lastUpdateCheck": 1780014922841,
               "installTime": 1673491669425,
               "alwaysUpdate": false
             },
             "hideRecommendedLive": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/hide/video/recommended-live.js",
-              "lastUpdateCheck": 1778896600848,
+              "lastUpdateCheck": 1780014922962,
               "installTime": 1673491670165,
               "alwaysUpdate": false
             },
             "hideVideoTopMask": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/hide/video/top-mask.js",
-              "lastUpdateCheck": 1778896601942,
+              "lastUpdateCheck": 1780014922140,
               "installTime": 1673491671129,
               "alwaysUpdate": false
             },
             "simplifyLiveroom": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/simplify/live.js",
-              "lastUpdateCheck": 1778896610879,
+              "lastUpdateCheck": 1780014934952,
               "installTime": 1673491700994,
               "alwaysUpdate": false
             },
             "removePromotions": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/utils/remove-promotions.js",
-              "lastUpdateCheck": 1778896609728,
+              "lastUpdateCheck": 1780014922391,
               "installTime": 1673491725558,
               "alwaysUpdate": false
             },
             "fullVideoDescription": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/full-description.js",
-              "lastUpdateCheck": 1778896608650,
+              "lastUpdateCheck": 1780014922614,
               "installTime": 1673491734885,
               "alwaysUpdate": false
             },
             "playerControlBackground": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/control-background.js",
-              "lastUpdateCheck": 1778896606424,
+              "lastUpdateCheck": 1780014921957,
               "installTime": 1673491739285,
-              "alwaysUpdate": false
-            },
-            "extendVideoSpeed": {
-              "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/extend-speed.js",
-              "lastUpdateCheck": 1778896607482,
-              "installTime": 1673491749550,
               "alwaysUpdate": false
             },
             "removePlayerPopup": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/remove-popup.js",
-              "lastUpdateCheck": 1778896605338,
+              "lastUpdateCheck": 1780014922012,
               "installTime": 1673491759556,
-              "alwaysUpdate": false
-            },
-            "seekByFrames": {
-              "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/seek-by-frames.js",
-              "lastUpdateCheck": 1778896603075,
-              "installTime": 1673491761362,
               "alwaysUpdate": false
             },
             "showUploadTime": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/show-upload-time.js",
-              "lastUpdateCheck": 1778896604162,
+              "lastUpdateCheck": 1780014923189,
               "installTime": 1673491763718,
               "alwaysUpdate": false
             },
             "skipChargeList": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/skip-charge-list.js",
-              "lastUpdateCheck": 1778896611956,
+              "lastUpdateCheck": 1780014923407,
               "installTime": 1673491765866,
               "alwaysUpdate": false
             },
             "seoRedirect": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/seo-redirect.js",
-              "lastUpdateCheck": 1778896654168,
+              "lastUpdateCheck": 1780014923289,
               "installTime": 1673491767448,
               "alwaysUpdate": false
             },
             "danmakuAirborne": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/danmaku/airborne.js",
-              "lastUpdateCheck": 1778896671446,
+              "lastUpdateCheck": 1780014930514,
               "installTime": 1675916964826,
               "alwaysUpdate": false
             },
             "disableScrollVolume": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/video/player/disable-scroll-volume.js",
-              "lastUpdateCheck": 1778896663305,
+              "lastUpdateCheck": 1780014931667,
               "installTime": 1675916987581,
               "alwaysUpdate": false
             },
             "fullFeedsContent": {
               "url": "https://fastly.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/feeds/full-content.js",
-              "lastUpdateCheck": 1778896622736,
+              "lastUpdateCheck": 1780014939395,
               "installTime": 1686046251368,
               "alwaysUpdate": false
             },
             "imageAutoBackToTop": {
               "url": "https://fastly.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/feeds/image-auto-back-to-top.js",
-              "lastUpdateCheck": 1778896646019,
+              "lastUpdateCheck": 1780014948196,
               "installTime": 1686046276656,
               "alwaysUpdate": false
             },
             "collapseLiveSideBar": {
               "url": "https://fastly.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/live/side-bar.js",
-              "lastUpdateCheck": 1778896637320,
+              "lastUpdateCheck": 1780014938287,
               "installTime": 1686046300653,
               "alwaysUpdate": false
             },
             "disableSpecialDanmaku": {
               "url": "https://fastly.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/style/special-danmaku.js",
-              "lastUpdateCheck": 1778896629616,
+              "lastUpdateCheck": 1780014932750,
               "installTime": 1686046385888,
               "alwaysUpdate": false
             },
             "simplifyComments": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/style/simplify/comments.js",
-              "lastUpdateCheck": 1778896616033,
+              "lastUpdateCheck": 1780014920359,
               "installTime": 1693838513768,
               "alwaysUpdate": false
             },
             "disableCommentsSearchLink": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/utils/comments/disable-search-link.js",
-              "lastUpdateCheck": 1778896613028,
+              "lastUpdateCheck": 1780014920620,
               "installTime": 1693838523275,
               "alwaysUpdate": false
             },
             "hideFeedsCommentPreview": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/feeds/hide-comment-preview.js",
-              "lastUpdateCheck": 1778896680748,
+              "lastUpdateCheck": 1780014920799,
               "installTime": 1693980631760,
               "alwaysUpdate": false
             },
             "ipShow": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/utils/ip-show.js",
-              "lastUpdateCheck": 1778896769077,
+              "lastUpdateCheck": 1780014921332,
               "installTime": 1697985605564,
               "alwaysUpdate": false
             },
             "hide-fullscreen-gift-bar": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/live/hide-gift-fullscreen.js",
-              "lastUpdateCheck": 1778896732875,
+              "lastUpdateCheck": 1780014921279,
               "installTime": 1698396156710,
               "alwaysUpdate": false
             },
             "clear-home": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/style/clear-home.js",
-              "lastUpdateCheck": 1778896750859,
+              "lastUpdateCheck": 1780014921397,
               "installTime": 1698396175825,
               "alwaysUpdate": false
             },
             "subscribeTimeShow": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/utils/subscribe-time-show.js",
-              "lastUpdateCheck": 1778896743756,
+              "lastUpdateCheck": 1780014921568,
               "installTime": 1698396271855,
               "alwaysUpdate": false
             },
             "legacyFeedsImageViewer": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/feeds/legacy-image-viewer.js",
-              "lastUpdateCheck": 1778896759021,
+              "lastUpdateCheck": 1780014921484,
               "installTime": 1718852629514,
               "alwaysUpdate": false
             },
             "autoRemoveWatchlater": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/video/auto-remove-watchlater.js",
-              "lastUpdateCheck": 1778896706150,
+              "lastUpdateCheck": 1780014921743,
               "installTime": 1718852794315,
               "alwaysUpdate": false
             },
             "fixedFeedsSidebars": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/feeds/fixed-sidebars.js",
-              "lastUpdateCheck": 1778896711521,
+              "lastUpdateCheck": 1780014921796,
               "installTime": 1718965778591,
               "alwaysUpdate": false
             },
             "customNavbar": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/style/custom-navbar.js",
-              "lastUpdateCheck": 1778896812840,
+              "lastUpdateCheck": 1780014929429,
               "installTime": 1723015606625,
               "alwaysUpdate": false
             },
             "removeLiveMaskPanel": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/live/remove-mask-panel.js",
-              "lastUpdateCheck": 1778896786353,
+              "lastUpdateCheck": 1780014937229,
               "installTime": 1724068835216,
               "alwaysUpdate": false
             },
             "hideLivePlayerBlur": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/live/hide-player-blur.js",
-              "lastUpdateCheck": 1778896727524,
+              "lastUpdateCheck": 1780014921680,
               "installTime": 1731478905440,
               "alwaysUpdate": false
             },
             "hideHomeCarousel": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/style/hide/home-carousel.js",
-              "lastUpdateCheck": 1778896721417,
+              "lastUpdateCheck": 1780014942757,
               "installTime": 1735550775556,
               "alwaysUpdate": false
             },
             "viewCover": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/utils/view-cover.js",
-              "lastUpdateCheck": 1778896687000,
+              "lastUpdateCheck": 1780014940555,
               "installTime": 1768398418517,
               "alwaysUpdate": false
             },
             "hideVideoShare": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/style/hide/video/share.js",
-              "lastUpdateCheck": 1778896697026,
+              "lastUpdateCheck": 1780014943846,
               "installTime": 1775898993015,
               "alwaysUpdate": false
             },
             "videoCurTime": {
               "url": "https://cdn.jsdelivr.net/gh/FoundTheWOUT/Bilibili-Evolved@master/registry/dist/components/video/player/localtime.js",
-              "lastUpdateCheck": 1778896777234,
+              "lastUpdateCheck": 1780014944968,
               "installTime": 1776072556487,
               "alwaysUpdate": false
             },
             "watchlaterRedirect": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/utils/watchlater-redirect.js",
-              "lastUpdateCheck": 1778896792896,
+              "lastUpdateCheck": 1780014947145,
               "installTime": 1776387526458,
               "alwaysUpdate": false
             },
             "urlParamsClean": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/components/utils/url-params-clean.js",
-              "lastUpdateCheck": 1778896803782,
+              "lastUpdateCheck": 1780014946053,
               "installTime": 1776387586009,
               "alwaysUpdate": false
             }
           },
           "plugins": {
-            "speed.keymap": {
-              "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/video/player/speed.js",
-              "lastUpdateCheck": 1778896852465,
-              "installTime": 1673491780529,
-              "alwaysUpdate": false
-            },
             "feedsFilter.pluginBlocks.chargeFeeds": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/plugins/feeds/filter/hide-charge-feeds.js",
-              "lastUpdateCheck": 1778896848166,
+              "lastUpdateCheck": 1780014952537,
               "installTime": 1706259968009,
               "alwaysUpdate": false
             },
             "feedsFilter.pluginBlocks.goods": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/plugins/feeds/filter/hide-goods.js",
-              "lastUpdateCheck": 1778896844536,
+              "lastUpdateCheck": 1780014952687,
               "installTime": 1718852887878,
               "alwaysUpdate": false
             }
@@ -2864,7 +2747,7 @@
     "notifyNewVersion": {
       "enabled": true,
       "options": {
-        "lastUpdateCheck": 1778896825273,
+        "lastUpdateCheck": 1780014952017,
         "minimumDuration": 86400000
       }
     },
