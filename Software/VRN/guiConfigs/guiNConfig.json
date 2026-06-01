@@ -118,24 +118,29 @@
         "Index": 8
       },
       {
-        "Name": "TodayUp",
-        "Width": -1,
+        "Name": "IpInfo",
+        "Width": 100,
         "Index": 9
       },
       {
-        "Name": "TodayDown",
+        "Name": "TodayUp",
         "Width": -1,
         "Index": 10
       },
       {
-        "Name": "TotalUp",
+        "Name": "TodayDown",
         "Width": -1,
         "Index": 11
       },
       {
-        "Name": "TotalDown",
+        "Name": "TotalUp",
         "Width": -1,
         "Index": 12
+      },
+      {
+        "Name": "TotalDown",
+        "Width": -1,
+        "Index": 13
       }
     ],
     "WindowSizeItem": [

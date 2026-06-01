@@ -1,10 +1,12 @@
 {
   "preferences": {
+    "aria2LogLevel": "notice",
     "autoChangeConflictingPorts": true,
     "autoCheckUpdate": true,
     "autoCheckUpdateInterval": 0,
     "autoDeleteStaleRecords": true,
     "autoHideWindow": false,
+    "autoSelectAllBtFilesFromExtension": false,
     "autoSelectAllFilesFromExtension": false,
     "autoSubmitFromExtension": false,
     "autoSyncTracker": true,
@@ -15,7 +17,7 @@
     "btMaxPeers": 128,
     "btPeerExchangeEnabled": true,
     "btSaveMetadata": true,
-    "btTracker": "udp://zer0day.ch:1337/announce,udp://tracker.publictracker.xyz:6969/announce,udp://tracker.opentrackr.org:1337/announce,udp://open.demonii.com:1337/announce,udp://open.stealth.si:80/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.theoks.net:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.dler.org:6969/announce,udp://tracker.auctor.tv:6969/announce,udp://tracker.004430.xyz:1337/announce,udp://tracker-udp.gbitt.info:80/announce,udp://bittorrent-tracker.e-n-c-r-y-p-t.net:1337/announce,https://tracker.zhuqiy.com:443/announce,https://tracker.yemekyedim.com:443/announce,https://tracker.pmman.tech:443/announce,https://tracker.nekomi.cn:443/announce,https://tracker.gcrenwp.top:443/announce,http://www.torrentsnipe.info:2701/announce,http://www.genesis-sp.org:2710/announce,udp://93.158.213.92:1337/announce,udp://93.158.213.92:6969/announce,udp://185.121.168.96:1337/announce,udp://185.243.218.213:80/announce,udp://44.30.4.4:6969/announce,udp://89.234.156.205:451/announce,udp://209.141.59.16:6969/announce,udp://185.171.202.111:6969/announce,udp://120.78.150.131:6969/announce,udp://43.250.54.126:6969/announce,udp://192.3.130.53:1337/announce,udp://87.106.210.134:6969/announce,udp://34.66.57.33:1337/announce,udp://107.189.2.131:1337/announce,http://113.16.154.16:6969/announce,http://95.217.167.10:6969/announce,http://34.66.57.33:2710/announce,http://140.235.237.23:6969/announce,udp://52.211.139.85:27022/announce,udp://85.121.5.80:6969/announce",
+    "btTracker": "udp://zer0day.ch:1337/announce,udp://tracker.publictracker.xyz:6969/announce,http://tracker.opentrackr.org:1337/announce,udp://open.demonii.com:1337/announce,udp://open.stealth.si:80/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.theoks.net:6969/announce,udp://tracker.t-1.org:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.plx.im:6969/announce,udp://tracker.iperson.xyz:6969/announce,udp://tracker.auctor.tv:6969/announce,udp://tracker.004430.xyz:1337/announce,udp://tracker-udp.gbitt.info:80/announce,udp://torrents.tmtime.dev:6969/announce,udp://retracker01-msk-virt.corbina.net:80/announce,udp://exodus.desync.com:6969/announce,udp://bittorrent-tracker.e-n-c-r-y-p-t.net:1337/announce,https://tracker.zhuqiy.com:443/announce,https://tracker.yemekyedim.com:443/announce,udp://93.158.213.92:6969/announce,http://93.158.213.92:1337/announce,udp://185.121.168.96:1337/announce,udp://185.243.218.213:80/announce,udp://91.216.110.53:451/announce,udp://107.189.7.165:6969/announce,udp://43.250.54.126:6969/announce,udp://54.36.179.216:6969/announce,udp://185.171.202.111:6969/announce,udp://109.201.134.183:80/announce,udp://87.106.210.134:6969/announce,http://34.66.57.33:11450/announce,http://211.75.210.221:80/announce,http://34.66.57.33:6969/announce,http://167.253.78.20:8080/announce,http://95.217.167.10:6969/announce,http://34.66.57.33:80/announce,http://211.75.205.188:6969/announce,http://211.75.210.221:6969/announce,http://140.235.237.23:6969/announce",
     "clearCompletedOnExit": true,
     "clipboard": {
       "btHash": true,
@@ -171,8 +173,8 @@
     "keepAwake": true,
     "keepSeeding": false,
     "keepWindowState": true,
-    "lastCheckUpdateTime": 1780063146274,
-    "lastSyncTrackerTime": 1780056511415,
+    "lastCheckUpdateTime": 1780233928111,
+    "lastSyncTrackerTime": 1780229470720,
     "lightweightMode": true,
     "listenPort": 21301,
     "locale": "zh-CN",
@@ -202,16 +204,10 @@
       "rangeStart": 30000,
       "rpc": true
     },
-    "protocols": {
-      "ed2k": true,
-      "magnet": true,
-      "motrixnext": true,
-      "thunder": true
-    },
     "proxy": {
       "bypass": "",
-      "enable": false,
-      "mode": "auto",
+      "enable": true,
+      "mode": "manual",
       "scope": [
         "download",
         "update-app",
