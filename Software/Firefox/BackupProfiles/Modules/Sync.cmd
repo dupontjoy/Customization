@@ -197,7 +197,7 @@ xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\Everything-1.5a.ini" "%Output
 xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\updateNotepad4.cmd" "%OutputDir%\Customization\Software\TotalCMD\Tools\" /y
 
 :trafficmonitor
-xcopy "%BackupDir%\..\..\Software\TrafficMonitor\config.json" "%OutputDir%\Customization\Software\TrafficMonitor\" /y
+xcopy "%BackupDir%\..\..\Software\TrafficMonitor\config.ini" "%OutputDir%\Customization\Software\TrafficMonitor\" /y
 xcopy "%BackupDir%\..\..\Software\TrafficMonitor\global_cfg.ini" "%OutputDir%\Customization\Software\TrafficMonitor\" /y
 
 :v2rayN£¨VRN£©
