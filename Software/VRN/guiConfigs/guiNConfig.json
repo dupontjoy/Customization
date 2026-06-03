@@ -1,6 +1,6 @@
 {
-  "IndexId": "5219191116531772010",
-  "SubIndexId": "5752818030347987204",
+  "IndexId": "5648647670107586019",
+  "SubIndexId": "5019061518611062502",
   "CoreBasicItem": {
     "LogEnabled": false,
     "Loglevel": "warning",
@@ -119,7 +119,7 @@
       },
       {
         "Name": "IpInfo",
-        "Width": 100,
+        "Width": -1,
         "Index": 9
       },
       {
@@ -203,7 +203,9 @@
     "SpeedPingTestUrl": "https://www.google.com/generate_204",
     "MixedConcurrencyCount": 5,
     "IPAPIUrl": null,
-    "UdpTestTarget": "ntp:pool.ntp.org"
+    "UdpTestTarget": "ntp:pool.ntp.org",
+    "SpeedTestPageSize": null,
+    "SpeedTestDelayInterval": null
   },
   "Mux4RayItem": {
     "Concurrency": 8,
@@ -330,6 +332,10 @@
     },
     {
       "ConfigType": 102,
+      "CoreType": 2
+    },
+    {
+      "ConfigType": 12,
       "CoreType": 2
     }
   ],
