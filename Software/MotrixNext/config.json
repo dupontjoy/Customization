@@ -1,6 +1,7 @@
 {
   "preferences": {
     "aria2LogLevel": "notice",
+    "asyncDns": false,
     "autoChangeConflictingPorts": true,
     "autoCheckUpdate": true,
     "autoCheckUpdateInterval": 0,
@@ -9,7 +10,6 @@
     "autoSelectAllBtFilesFromExtension": false,
     "autoSelectAllFilesFromExtension": false,
     "autoSubmitFromExtension": false,
-    "autoSyncTracker": true,
     "btDhtEnabled": true,
     "btForceEncryption": false,
     "btLoadSavedMetadata": true,
@@ -18,6 +18,8 @@
     "btPeerExchangeEnabled": true,
     "btSaveMetadata": true,
     "btTracker": "udp://zer0day.ch:1337/announce,udp://tracker.publictracker.xyz:6969/announce,udp://tracker.opentrackr.org:1337/announce,udp://open.demonii.com:1337/announce,udp://open.stealth.si:80/announce,udp://udp.tracker.projectk.org:23333/announce,udp://uabits.today:6990/announce,udp://tracker.tryhackx.org:6969/announce,udp://tracker.theoks.net:6969/announce,udp://tracker.t-1.org:6969/announce,udp://tracker.startwork.cv:1337/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.plx.im:6969/announce,udp://tracker.opentorrent.top:6969/announce,udp://tracker.nyaa.vc:6969/announce,udp://tracker.iperson.xyz:6969/announce,udp://tracker.gmi.gd:6969/announce,udp://tracker.fnix.net:6969/announce,udp://tracker.ducks.party:1984/announce,udp://tracker.bluefrog.pw:2710/announce,udp://93.158.213.92:1337/announce,udp://93.158.213.92:6969/announce,udp://185.121.168.96:1337/announce,udp://185.243.218.213:80/announce,udp://23.175.184.30:23333/announce,udp://163.5.63.253:6990/announce,udp://135.125.236.64:6969/announce,udp://107.189.7.165:6969/announce,udp://94.136.190.183:1337/announce,udp://43.250.54.126:6969/announce,udp://54.36.179.216:6969/announce,udp://81.230.84.201:6969/announce,udp://45.137.199.107:6969/announce,udp://120.78.150.131:6969/announce,udp://209.141.59.25:6969/announce,udp://5.255.124.190:6969/announce,udp://37.120.182.83:1984/announce,udp://88.80.22.67:2710/announce,udp://34.66.57.33:1337/announce,udp://185.171.202.111:6969/announce",
+    "btTrackerAutoSync": true,
+    "btTrackerSyncIntervalHours": 24,
     "clearCompletedOnExit": true,
     "clipboard": {
       "btHash": true,
@@ -41,11 +43,15 @@
     "dhtListenPort": 26701,
     "dir": "E:/Download",
     "dockBadgeSpeed": true,
+    "ed2kBootstrapAutoSync": true,
+    "ed2kBootstrapSyncIntervalHours": 24,
     "ed2kListenPort": 4662,
     "ed2kNodeList": "",
+    "ed2kNodesDatUrl": "https://upd.emule-security.org/nodes.dat",
     "ed2kSearchTimeout": 20,
     "ed2kServer": "",
     "ed2kServerList": "",
+    "ed2kServerMetUrl": "https://upd.emule-security.org/server.met",
     "ed2kShareFiles": [],
     "ed2kUdpListenPort": 29150,
     "ed2kUploadSlots": 3,
@@ -172,8 +178,9 @@
     ],
     "keepAwake": true,
     "keepSeeding": false,
+    "keepSharing": false,
     "keepWindowState": true,
-    "lastCheckUpdateTime": 1780451011905,
+    "lastCheckUpdateTime": 1780494785105,
     "lastSyncTrackerTime": 1780474284388,
     "lightweightMode": true,
     "listenPort": 21301,
@@ -206,15 +213,17 @@
     },
     "proxy": {
       "bypass": "",
-      "enable": true,
       "mode": "manual",
+      "password": "",
       "scope": [
         "download",
         "update-app",
         "update-trackers"
       ],
-      "server": "http://127.0.0.1:7897"
+      "server": "http://127.0.0.1:7897",
+      "username": ""
     },
+    "recentUserAgentProfileIds": [],
     "remoteTime": true,
     "resumeAllWhenAppLaunched": true,
     "retryWait": 10,
@@ -223,6 +232,8 @@
     "runMode": "",
     "seedRatio": 2,
     "seedTime": 60,
+    "shareRatio": 2,
+    "shareTime": 60,
     "showProgressBar": true,
     "shutdownWhenComplete": false,
     "silentAutoSubmitFromExtension": true,
@@ -232,6 +243,12 @@
     "speedScheduleFrom": "08:00",
     "speedScheduleTo": "18:00",
     "split": 64,
+    "taskCardMode": "full",
+    "taskManualOrder": {
+      "active": [],
+      "all": [],
+      "stopped": []
+    },
     "taskNotification": true,
     "taskSort": {
       "active": {
@@ -256,6 +273,8 @@
     ],
     "traySpeedometer": false,
     "updateChannel": "stable",
-    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+    "userAgentProfiles": [],
+    "userAgentRules": []
   }
 }
