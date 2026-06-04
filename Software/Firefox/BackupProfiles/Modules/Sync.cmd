@@ -71,6 +71,9 @@ robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-ve
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles.yaml" "%OutputDir%\Customization\Software\CVR\" /y
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\verge.yaml" "%OutputDir%\Customization\Software\CVR\" /y
 
+:fab
+xcopy "%BackupDir%\..\..\Software\fab\Firewall App Blocker@Cing.ini" "%OutputDir%\Customization\Software\fab\" /y
+
 :firefox
 ::備份幾個Firefox文件
 ::先删除旧备份文件夹

@@ -3,7 +3,6 @@
 ::界面颜色大小，Cols为宽，Lines为高
 COLOR 0a
 
-:Profiles
 rem 設置備份路徑以及臨時文件夾
 @echo 定时启动Listary时，清除日志和临時文件
 
