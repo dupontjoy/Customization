@@ -10,8 +10,8 @@
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 07:55:00</StartDateTime>
 		<EndDateTime>2026-03-17 00:00:00</EndDateTime>
-		<NextRunDateTime>2026-03-18 07:55:00</NextRunDateTime>
-		<NextRunTime>2026-03-18 07:55:00</NextRunTime>
+		<NextRunDateTime>2026-06-06 07:55:00</NextRunDateTime>
+		<NextRunTime>2026-06-06 07:55:00</NextRunTime>
 		<LastRunTime>2025-12-05 07:55:12</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -363,8 +363,8 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>1970-12-30 17:55:00</StartDateTime>
 		<EndDateTime>2026-03-17 00:00:00</EndDateTime>
-		<NextRunDateTime>2026-03-17 17:55:00</NextRunDateTime>
-		<NextRunTime>2026-03-17 17:55:00</NextRunTime>
+		<NextRunDateTime>2026-06-06 17:55:00</NextRunDateTime>
+		<NextRunTime>2026-06-06 17:55:00</NextRunTime>
 		<LastRunTime>2025-12-05 17:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -714,10 +714,10 @@ env2=value2</edtAppEnv>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
-		<StartDateTime>1970-12-30 21:25:00</StartDateTime>
-		<EndDateTime>2026-03-17 00:00:00</EndDateTime>
-		<NextRunDateTime>2026-04-11 21:25:00</NextRunDateTime>
-		<NextRunTime>2026-04-11 21:25:00</NextRunTime>
+		<StartDateTime>1970-12-30 20:55:00</StartDateTime>
+		<EndDateTime>2026-06-05 00:00:00</EndDateTime>
+		<NextRunDateTime>2026-06-05 20:55:00</NextRunDateTime>
+		<NextRunTime>2026-06-05 20:55:00</NextRunTime>
 		<LastRunTime>2025-12-05 21:25:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -728,6 +728,7 @@ env2=value2</edtAppEnv>
 			<DTOnce>2025-04-09 15:10:49</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
 			<Name>MAA-换班</Name>
+			<SchHotkey>Shift+P</SchHotkey>
 			<StopHotkey>Ctrl+Alt+P</StopHotkey>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
@@ -749,6 +750,10 @@ env2=value2</edtAppEnv>
 			<chkExecExitFocus>0</chkExecExitFocus>
 			<chkExecExitFullScr>0</chkExecExitFullScr>
 			<chkExecExitPre>1</chkExecExitPre>
+			<chkExecHotkeyType>1</chkExecHotkeyType>
+			<chkExecQuickType>1</chkExecQuickType>
+			<chkExecSchType>1</chkExecSchType>
+			<chkExecSkipTip>0</chkExecSkipTip>
 			<chkHKMouseCorner>0</chkHKMouseCorner>
 			<chkHKMouseCorner1>0</chkHKMouseCorner1>
 			<chkHKMouseCorner2>0</chkHKMouseCorner2>
@@ -778,6 +783,8 @@ env2=value2</edtAppEnv>
 			<chkHotkeyX2>0</chkHotkeyX2>
 			<chkQukPhz>0</chkQukPhz>
 			<chkQukPhzProc>0</chkQukPhzProc>
+			<chkQukPhzProcPartMatch>0</chkQukPhzProcPartMatch>
+			<chkQukPhzProcWildMatch>0</chkQukPhzProcWildMatch>
 			<chkQukPhzTip>1</chkQukPhzTip>
 			<chkRunMiss>0</chkRunMiss>
 			<chkSKPartMatch>0</chkSKPartMatch>
@@ -787,6 +794,8 @@ env2=value2</edtAppEnv>
 			<chkSKWinFore>0</chkSKWinFore>
 			<chkSKWinMouseIn>0</chkSKWinMouseIn>
 			<chkSKWinSub>0</chkSKWinSub>
+			<chkSchHotkey>0</chkSchHotkey>
+			<chkSchHotkeyRelay>0</chkSchHotkeyRelay>
 			<chkSchLimitCount>0</chkSchLimitCount>
 			<chkSelfDelete>0</chkSelfDelete>
 			<chkTimer>1</chkTimer>
@@ -808,6 +817,8 @@ env2=value2</edtAppEnv>
 			<cmbHKType_text>按下时</cmbHKType_text>
 			<cmbHotKeySolo>0</cmbHotKeySolo>
 			<cmbHotkey>0</cmbHotkey>
+			<cmbVarClear>local</cmbVarClear>
+			<cmbVarClear_text>清理局部</cmbVarClear_text>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtEveryDay>1</edtEveryDay>
 			<edtExecExitWaitTime>60</edtExecExitWaitTime>
@@ -1069,9 +1080,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-05-29 14:04:48</EndDateTime>
-		<NextRunDateTime>2126-05-11 20:09:57</NextRunDateTime>
+		<NextRunDateTime>2126-05-13 11:11:56</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-06-04 20:09:57</LastRunTime>
+		<LastRunTime>2026-06-06 11:11:56</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1428,9 +1439,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 09:50:00</StartDateTime>
 		<EndDateTime>2026-05-30 13:05:04</EndDateTime>
-		<NextRunDateTime>2026-06-06 09:50:00</NextRunDateTime>
-		<NextRunTime>2026-06-06 09:50:00</NextRunTime>
-		<LastRunTime>2026-05-23 09:00:00</LastRunTime>
+		<NextRunDateTime>2026-06-13 09:50:00</NextRunDateTime>
+		<NextRunTime>2026-06-13 09:50:00</NextRunTime>
+		<LastRunTime>2026-06-06 09:50:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2326,9 +2337,9 @@ env2=value2</edtAppEnv>
 		<SchType>3</SchType>
 		<StartDateTime>2025-05-28 09:55:00</StartDateTime>
 		<EndDateTime>2026-05-30 22:19:44</EndDateTime>
-		<NextRunDateTime>2026-06-06 09:55:00</NextRunDateTime>
-		<NextRunTime>2026-06-06 09:55:00</NextRunTime>
-		<LastRunTime>2026-05-30 08:55:00</LastRunTime>
+		<NextRunDateTime>2026-06-13 09:55:00</NextRunDateTime>
+		<NextRunTime>2026-06-13 09:55:00</NextRunTime>
+		<LastRunTime>2026-06-06 09:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2541,10 +2552,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>36</SchType>
 		<StartDateTime>2026-01-19 21:00:00</StartDateTime>
-		<EndDateTime>2026-05-26 23:40:48</EndDateTime>
-		<NextRunDateTime>2026-06-04 22:00:00</NextRunDateTime>
-		<NextRunTime>2026-06-04 22:00:00</NextRunTime>
-		<LastRunTime>2026-06-04 16:00:00</LastRunTime>
+		<EndDateTime>2026-06-07 23:21:36</EndDateTime>
+		<NextRunDateTime>2026-06-06 16:00:00</NextRunDateTime>
+		<NextRunTime>2026-06-06 16:00:00</NextRunTime>
+		<LastRunTime>2026-06-05 22:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2691,6 +2702,73 @@ env2=value2</edtAppEnv>
 					<BackClr>-12500671</BackClr>
 					<IsExitRest>0</IsExitRest>
 					<IsPassExitRest>0</IsPassExitRest>
+					<Name>CCleaner清理</Name>
+					<PlayTime>10</PlayTime>
+					<RestAlpha>0</RestAlpha>
+					<RestClr>-1</RestClr>
+					<RestMin>10</RestMin>
+					<RmdClr>-1</RmdClr>
+					<SnapFormat>png</SnapFormat>
+					<SnapSaveDay>10</SnapSaveDay>
+					<SnapSaveMode>optSaveAll</SnapSaveMode>
+					<SnapSaveNum>100</SnapSaveNum>
+					<TitleShow>运行程序</TitleShow>
+					<TypeShow>程序</TypeShow>
+					<chkAppAdmin>0</chkAppAdmin>
+					<chkAppClip>0</chkAppClip>
+					<chkAppEnv>0</chkAppEnv>
+					<chkAppSkip>1</chkAppSkip>
+					<chkAppVar>0</chkAppVar>
+					<chkExecWait>1</chkExecWait>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<chkQukPhz>0</chkQukPhz>
+					<cmbAppShowCmd>1</cmbAppShowCmd>
+					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
+					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
+					<cmbBackType_text>压缩</cmbBackType_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
+					<cmbHotkey>0</cmbHotkey>
+					<edtAppEnv>env1=value1
+env2=value2</edtAppEnv>
+					<edtAppParam>/AUTOSC</edtAppParam>
+					<edtAppPath>D:\Program Files\CingFox\Software\CCleaner\CCleaner.exe</edtAppPath>
+					<edtAppVar>exec</edtAppVar>
+					<edtExecWaitTime>0</edtExecWaitTime>
+					<edtTaskName>CCleaner清理</edtTaskName>
+					<edtTaskSubName>CCleaner清理</edtTaskSubName>
+					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
+					<optPlaySnd>0</optPlaySnd>
+					<optRmdSnd>0</optRmdSnd>
+					<optRptSnd>0</optRptSnd>
+					<tabBtnTask>1</tabBtnTask>
+				</Param>
+				<Name>CCleaner清理</Name>
+				<ID>37</ID>
+				<Stat>1</Stat>
+			</Tasker>
+			<Tasker>
+				<TaskType>ttExec</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<QukPhzStopped>0</QukPhzStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
+				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
+				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>7</Ver>
+				<Param>
+					<BackClr>-12500671</BackClr>
+					<IsExitRest>0</IsExitRest>
+					<IsPassExitRest>0</IsPassExitRest>
 					<Name>Glary设置注册表</Name>
 					<PlayTime>10</PlayTime>
 					<RestAlpha>0</RestAlpha>
@@ -2804,73 +2882,6 @@ env2=value2</edtAppEnv>
 				</Param>
 				<Name>Glary清理</Name>
 				<ID>11</ID>
-				<Stat>1</Stat>
-			</Tasker>
-			<Tasker>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<QukPhzStopped>0</QukPhzStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1970-01-01 08:00:00</StartDateTime>
-				<EndDateTime>1970-01-01 08:00:00</EndDateTime>
-				<NextRunDateTime>1970-01-01 08:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>7</Ver>
-				<Param>
-					<BackClr>-12500671</BackClr>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>CCleaner清理</Name>
-					<PlayTime>10</PlayTime>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<TitleShow>运行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppSkip>1</chkAppSkip>
-					<chkAppVar>0</chkAppVar>
-					<chkExecWait>1</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<chkQukPhz>0</chkQukPhz>
-					<cmbAppShowCmd>1</cmbAppShowCmd>
-					<cmbAppShowCmd_text>默认</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbEcecType>1</cmbEcecType>
-					<cmbEcecType_text>同步</cmbEcecType_text>
-					<cmbHotkey>0</cmbHotkey>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppParam>/AUTOSC</edtAppParam>
-					<edtAppPath>D:\Program Files\CingFox\Software\CCleaner\CCleaner.exe</edtAppPath>
-					<edtAppVar>exec</edtAppVar>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>CCleaner清理</edtTaskName>
-					<edtTaskSubName>CCleaner清理</edtTaskSubName>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>CCleaner清理</Name>
-				<ID>37</ID>
 				<Stat>1</Stat>
 			</Tasker>
 		</Actions>
