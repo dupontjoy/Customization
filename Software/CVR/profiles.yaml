@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RSylbZsV69Jd
+current: RT2I9eXxrIV0
 items:
 - uid: Merge
   type: merge
@@ -48,7 +48,7 @@ items:
     now: ♻️ 自动选择
   - name: 🚀 手动选择
     now: ♻️ 自动选择
-  updated: 1780714799
+  updated: 1780893873
   option:
     with_proxy: false
     self_proxy: false
@@ -70,7 +70,7 @@ items:
     now: 所有节点获取失败
   - name: 🚀 节点选择
     now: 新加坡-16
-  updated: 1780714799
+  updated: 1780893875
   option:
     with_proxy: false
     self_proxy: false
@@ -90,7 +90,7 @@ items:
   selected:
   - name: 🐟 漏网之鱼
     now: ♻️ 自动选择
-  updated: 1780714799
+  updated: 1780893873
   option:
     with_proxy: false
     self_proxy: false
@@ -113,10 +113,10 @@ items:
     now: ♻️ 自动选择
   extra:
     upload: 0
-    download: 3662
+    download: 3381
     total: 102400
     expire: 4102329600
-  updated: 1779187897
+  updated: 1780305982
   option:
     with_proxy: false
     self_proxy: false
@@ -163,15 +163,15 @@ items:
   - name: ♻️ 自动选择
     now: 108.162.198.56
   - name: 🚀 节点选择
-    now: 🔮 负载均衡
+    now: ♻️ 自动选择
   - name: 🐟 漏网之鱼
     now: 🔯 故障转移
   extra:
     upload: 0
-    download: 108
+    download: 6808
     total: 102400
     expire: 4102329600
-  updated: 1779505503
+  updated: 1780405909
   option:
     with_proxy: false
     self_proxy: false
@@ -239,7 +239,7 @@ items:
   file: RkC6ZKw3xEgi.yaml
   desc: ''
   url: https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/quick/1/config.yaml
-  updated: 1780714798
+  updated: 1780893871
   option:
     with_proxy: false
     self_proxy: false
