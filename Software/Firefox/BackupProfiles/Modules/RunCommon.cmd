@@ -63,8 +63,8 @@ start "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
 start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
 start "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
 start "" "%cd%\Ditto\Ditto.exe"
-::start "" "%cd%\PixPin\PixPin.exe"
-start "" "%cd%\Snipaste\Snipaste.exe"
+start "" "%cd%\PixPin\PixPin.exe"
+::start "" "%cd%\Snipaste\Snipaste.exe"
 
 :capslock
 ::需要获取完整路径才行
