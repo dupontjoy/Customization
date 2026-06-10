@@ -1,4 +1,4 @@
-:: 2025.04.10
+:: 2026.06.09
 
 @echo off
 
@@ -20,7 +20,7 @@ set "Curl_Download=curl -C - -LJ --ssl-no-revoke --progress-bar --create-dirs"
 :menu
 call :testGHmirror
 call :updating_uc
-call :updating_flashgot
+call :updating_grabby_flashgot
 :: call :updating_customCSS
 call :updating_runfirefox
 call :end
@@ -81,15 +81,15 @@ del /s /q .\main.zip
 goto :eof
 
 ::=======================================
-:: 子程序：更新FlashGot
+:: 子程序：更新grabby_flashgot
 ::=======================================
-:updating_flashgot
-echo.&echo █ 正在更新FlashGot...
+:updating_grabby_flashgot
+echo.&echo █ 正在更新grabby_flashgot...
 
-set "save_path=..\UserTools\flashgot.exe"
+set "save_path=..\UserTools\grabby_flashgot.exe"
 if not exist "..\UserTools\" md "..\UserTools"
 
-%Curl_Download% -o "%save_path%" "%GH_PROXY%/https://github.com/benzBrake/Firefox-downloadPlus.uc.js/releases/latest/download/flashgot.exe"
+%Curl_Download% -o "%save_path%" "%GH_PROXY%/https://github.com/benzBrake/Firefox-downloadPlus.uc.js/releases/latest/download/grabby_flashgot.exe"
 
 goto :eof
 
