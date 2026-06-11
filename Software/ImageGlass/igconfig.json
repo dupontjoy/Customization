@@ -52,28 +52,28 @@
   "HideToolbarInFullscreen": false,
   "HideGalleryInFullscreen": false,
   "QuickSetupVersion": 9,
-  "FrmMainPositionX": 127,
-  "FrmMainPositionY": 46,
-  "FrmMainWidth": 1064,
-  "FrmMainHeight": 629,
-  "FrmSettingsPositionX": 141,
-  "FrmSettingsPositionY": 30,
-  "FrmSettingsWidth": 1068,
-  "FrmSettingsHeight": 676,
+  "FrmMainPositionX": -7,
+  "FrmMainPositionY": 27,
+  "FrmMainWidth": 1300,
+  "FrmMainHeight": 788,
+  "FrmSettingsPositionX": 200,
+  "FrmSettingsPositionY": 200,
+  "FrmSettingsWidth": 1300,
+  "FrmSettingsHeight": 800,
   "PanSpeed": 20,
   "ZoomSpeed": 0,
   "SlideshowInterval": 5,
   "SlideshowIntervalTo": 5,
   "SlideshowImagesToNotifySound": 0,
-  "ThumbnailSize": 40,
+  "ThumbnailSize": 50,
   "GalleryCacheSizeInMb": 400,
   "GalleryColumns": 3,
   "ImageBoosterCacheCount": 1,
   "MinDimensionToUseWIC": 16000,
   "ImageBoosterCacheMaxDimension": 8000,
   "ImageBoosterCacheMaxFileSizeInMb": 100,
-  "ZoomLockValue": 79.3883,
-  "ToolbarIconHeight": 18,
+  "ZoomLockValue": 71.625,
+  "ToolbarIconHeight": 24,
   "ImageEditQuality": 80,
   "InAppMessageDuration": 2000,
   "EmbeddedThumbnailMinWidth": 0,
@@ -88,17 +88,17 @@
   "AfterEditingAction": "Nothing",
   "WindowBackdrop": "Mica",
   "ColorProfile": "None",
-  "AutoUpdate": "2025-07-03T15:08:01.3763292Z",
-  "LastSeenImagePath": "D:\\Program Files\\CingFox\\Software\\MPV\\doc\\mpbindings.png",
-  "LastOpenedSetting": "gallery",
+  "AutoUpdate": "2026-05-12T04:01:38.4288033Z",
+  "LastSeenImagePath": "E:\\Download\\S43王者梯度总结.png",
+  "LastOpenedSetting": "",
   "DarkTheme": "Kobe",
   "LightTheme": "Kobe-Light",
   "BackgroundColor": "",
-  "SlideshowBackgroundColor": "#F8F8F8FF",
+  "SlideshowBackgroundColor": "#000000FF",
   "Language": "Chinese Simplified.iglang.json",
   "ZoomLevels": [],
   "EditApps": {},
-  "FileFormats": ".3fr;.apng;.ari;.arw;.avif;.b64;.bay;.bmp;.cap;.cr2;.cr3;.crw;.cur;.cut;.dcr;.dcs;.dds;.dib;.dng;.drf;.eip;.emf;.erf;.exif;.exr;.fff;.fits;.flif;.gif;.gifv;.gpr;.hdp;.hdr;.heic;.heif;.ico;.iiq;.jfif;.jp2;.jpe;.jpeg;.jpg;.jxl;.jxr;.k25;.kdc;.mdc;.mef;.mjpeg;.mos;.mrw;.nef;.nrw;.obm;.orf;.pbm;.pcx;.pef;.pgm;.png;.ppm;.psb;.psd;.ptx;.pxn;.qoi;.r3d;.raf;.raw;.rw2;.rwl;.rwz;.sr2;.srf;.srw;.svg;.tga;.tif;.tiff;.viff;.wdp;.webp;.wmf;.wpg;.x3f;.xbm;.xpm;.xv;.hif;",
+  "FileFormats": ".3fr;.apng;.ari;.arw;.avif;.b64;.bay;.bmp;.cap;.cr2;.cr3;.crw;.cur;.cut;.dcr;.dcs;.dds;.dib;.dng;.drf;.eip;.emf;.erf;.exif;.exr;.fff;.fits;.flif;.gif;.gifv;.gpr;.hdp;.hdr;.heic;.heif;.hif;.ico;.iiq;.jfif;.jp2;.jpe;.jpeg;.jpg;.jxl;.jxr;.k25;.kdc;.mdc;.mef;.mjpeg;.mos;.mrw;.nef;.nrw;.obm;.orf;.pbm;.pcx;.pef;.pgm;.png;.ppm;.psb;.psd;.ptx;.pxn;.qoi;.r3d;.raf;.raw;.rw2;.rwl;.rwz;.sr2;.srf;.srw;.svg;.tga;.tif;.tiff;.viff;.wdp;.webp;.wmf;.wpg;.x3f;.xbm;.xpm;.xv;",
   "SingleFrameFormats": ".avif;.heic;.heif;.psd;.jxl;",
   "ImageInfoTags": [
     "Name",
@@ -145,11 +145,7 @@
     "Scroll": "Zoom",
     "ShiftAndScroll": "PanHorizontally"
   },
-  "Layout": {
-    "Gallery": "Bottom;1",
-    "Toolbar": "Top;0",
-    "ToolbarContext": "Bottom;0"
-  },
+  "Layout": {},
   "Tools": [
     {
       "ToolId": "Tool_ExifGlass",
@@ -501,22 +497,5 @@
       "Hotkeys": []
     }
   ],
-  "ToolSettings": {
-    "CropTool": {
-      "InitSelectionType": "Select50Percent",
-      "InitSelectedArea": [
-        "0",
-        "0",
-        "0",
-        "0"
-      ],
-      "CloseToolAfterSaving": "False",
-      "AutoCenterSelection": "True",
-      "AspectRatioValues": [
-        "1",
-        "1"
-      ],
-      "AspectRatio": "Original"
-    }
-  }
+  "ToolSettings": {}
 }
