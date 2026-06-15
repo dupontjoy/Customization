@@ -14,8 +14,7 @@ bilibili.com##.reply-notice
 bilibili.com##.browser-tip > .title
 bilibili.com##.adblock-tips
 bilibili.com##.animated-banner
-bilibili.com##.bpx-player-ctrl-btn.bpx-player-ctrl-wide
-bilibili.com###bsbPortButton
+
 
 ! 解决B端后台播放冻结及进度回退问题。也可安装 Disable Page Visibility API 扩展。（网页会检测浏览器当前页面是否激活状态，不是的情况下会暂停播放）
 bilibili.com##+js(addEventListener-defuser, visibilitychange, , { "delay": 250 })
@@ -107,8 +106,8 @@ hentai.tv###wpd-bubble-count
 ! weibo.com
 weibo.com##.yawf-dialog-outer
 
-! https://hentaihub.xxx
+! hentaihub.xxx
 hentaihub.xxx##.vrav_a_pc
 
-! https://hanime1.me
+! hanime1.me
 hanime1.me##.home-rows-videos-wrapper > a:first-child > div:first-child
