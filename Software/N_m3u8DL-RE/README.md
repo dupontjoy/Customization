@@ -5,7 +5,7 @@
 
 设置了个人常用参数。其余参数自行到 config_*.conf 文件里添加。
 
-需要自行配置ffmpeg.exe，到config_dir.conf里修改路径。
+需要自行配置ffmpeg.exe，到config_common.conf里修改路径。
 
 外置配置方法：https://github.com/nilaoda/N_m3u8DL-RE/issues/183
 

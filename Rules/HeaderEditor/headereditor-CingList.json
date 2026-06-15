@@ -157,6 +157,18 @@
 			"condition": {
 				"regex": "^https?:\\/\\/cdnjs\\.cloudflare\\.com\\/(.*)$"
 			}
+		},
+		{
+			"enable": true,
+			"name": "Youtube WL >> 正常链接",
+			"ruleType": "redirect",
+			"isFunction": false,
+			"to": "https://www.youtube.com/watch?v=$1",
+			"group": "CingList-Redirect",
+			"encoding": "utf-8",
+			"condition": {
+				"regex": "^https?:\\/\\/www\\.youtube\\.com\\/watch\\?v=([^&]+)&list=WL.*$"
+			}
 		}
 	],
 	"sendHeader": [
