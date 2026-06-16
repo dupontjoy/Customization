@@ -2,7 +2,7 @@
   "userStyles": {},
   "userPlugins": {
     "feedsFilter.pluginBlocks.chargeFeeds": {
-      "code": "!function(e,t){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define([],t):\"object\"==typeof exports?exports[\"feeds/filter/hide-charge-feeds\"]=t():e[\"feeds/filter/hide-charge-feeds\"]=t()}(globalThis,(()=>(()=>{var e,t,o={52:e=>{function t(e){var t=new Error(\"Cannot find module '\"+e+\"'\");throw t.code=\"MODULE_NOT_FOUND\",t}t.keys=()=>[],t.resolve=t,t.id=52,e.exports=t},759:e=>{\"use strict\";e.exports=\"移除动态里的充电专属动态, 装有 `动态过滤器` 时生效.\\n\"},649:e=>{\"use strict\";e.exports=coreApis.componentApis.feeds.api},847:e=>{\"use strict\";e.exports=coreApis.utils}},r={};function n(e){var t=r[e];if(void 0!==t)return t.exports;var s=r[e]={exports:{}};return o[e](s,s.exports,n),s.exports}t=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__,n.t=function(o,r){if(1&r&&(o=this(o)),8&r)return o;if(\"object\"==typeof o&&o){if(4&r&&o.__esModule)return o;if(16&r&&\"function\"==typeof o.then)return o}var s=Object.create(null);n.r(s);var i={};e=e||[null,t({}),t([]),t(t)];for(var d=2&r&&o;\"object\"==typeof d&&!~e.indexOf(d);d=t(d))Object.getOwnPropertyNames(d).forEach((e=>i[e]=()=>o[e]));return i.default=()=>o,n.d(s,i),s},n.d=(e,t)=>{for(var o in t)n.o(t,o)&&!n.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},n.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),n.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})};var s={};return(()=>{\"use strict\";n.d(s,{plugin:()=>e});const e={name:\"feedsFilter.pluginBlocks.chargeFeeds\",displayName:\"动态过滤器 - 移除充电专属动态\",async setup(){const{getVue2Data:e}=await Promise.resolve().then(n.t.bind(n,847,23)),{forEachFeedsCard:t}=await Promise.resolve().then(n.t.bind(n,649,23));t({added:t=>{const o=e(t.element);3===lodash.get(o,\"data.modules.module_dynamic.major.blocked.blocked_type\",null)&&t.element.classList.add(\"plugin-block\")}})},commitHash:\"7fecc4bac26748c831b96a3051621e41dd889b2f\",coreVersion:\"2.10.9\",description:(()=>{const e=n(52);return{...Object.fromEntries(e.keys().map((t=>[t.match(/index\\.(.+)\\.md$/)[1],e(t)]))),\"zh-CN\":()=>Promise.resolve().then(n.t.bind(n,759,17)).then((e=>e.default))}})()}})(),s=s.plugin})()));\n//# sourceMappingURL=https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/feeds/filter/hide-charge-feeds.js.map",
+      "code": "!function(e,t){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define([],t):\"object\"==typeof exports?exports[\"feeds/filter/hide-charge-feeds\"]=t():e[\"feeds/filter/hide-charge-feeds\"]=t()}(globalThis,(()=>(()=>{var e,t,o={52:e=>{function t(e){var t=new Error(\"Cannot find module '\"+e+\"'\");throw t.code=\"MODULE_NOT_FOUND\",t}t.keys=()=>[],t.resolve=t,t.id=52,e.exports=t},759:e=>{\"use strict\";e.exports=\"移除动态里的充电专属动态, 装有 `动态过滤器` 时生效.\\n\"},649:e=>{\"use strict\";e.exports=coreApis.componentApis.feeds.api},847:e=>{\"use strict\";e.exports=coreApis.utils}},r={};function n(e){var t=r[e];if(void 0!==t)return t.exports;var d=r[e]={exports:{}};return o[e](d,d.exports,n),d.exports}t=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__,n.t=function(o,r){if(1&r&&(o=this(o)),8&r)return o;if(\"object\"==typeof o&&o){if(4&r&&o.__esModule)return o;if(16&r&&\"function\"==typeof o.then)return o}var d=Object.create(null);n.r(d);var s={};e=e||[null,t({}),t([]),t(t)];for(var a=2&r&&o;\"object\"==typeof a&&!~e.indexOf(a);a=t(a))Object.getOwnPropertyNames(a).forEach((e=>s[e]=()=>o[e]));return s.default=()=>o,n.d(d,s),d},n.d=(e,t)=>{for(var o in t)n.o(t,o)&&!n.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},n.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),n.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})};var d={};return(()=>{\"use strict\";n.d(d,{plugin:()=>e});const e={name:\"feedsFilter.pluginBlocks.chargeFeeds\",displayName:\"动态过滤器 - 移除充电专属动态\",async setup(){const{getVue2Data:e}=await Promise.resolve().then(n.t.bind(n,847,23)),{forEachFeedsCard:t}=await Promise.resolve().then(n.t.bind(n,649,23));t({added:t=>{const o=e(t.element),r=3===lodash.get(o,\"data.modules.module_dynamic.major.blocked.blocked_type\",null),n=\"充电专属\"===lodash.get(o,\"data.modules.module_dynamic.major.archive.badge.text\",null),d=\"MAJOR_TYPE_UPOWER_COMMON\"===lodash.get(o,\"data.modules.module_dynamic.major.type\",null);(r||n||d)&&t.element.classList.add(\"plugin-block\")}})},commitHash:\"bf1f957e8ab1bb19e0a3c53afd2cdfe12cde1833\",coreVersion:\"2.10.10\",description:(()=>{const e=n(52);return{...Object.fromEntries(e.keys().map((t=>[t.match(/index\\.(.+)\\.md$/)[1],e(t)]))),\"zh-CN\":()=>Promise.resolve().then(n.t.bind(n,759,17)).then((e=>e.default))}})()}})(),d=d.plugin})()));\n//# sourceMappingURL=https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/feeds/filter/hide-charge-feeds.js.map",
       "displayName": "动态过滤器 - 移除充电专属动态",
       "name": "feedsFilter.pluginBlocks.chargeFeeds",
       "commitHash": "3981ed7b684650047504298ee004a45233ba7899",
@@ -10,7 +10,7 @@
       "description": {}
     },
     "feedsFilter.pluginBlocks.goods": {
-      "code": "!function(e,t){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define([],t):\"object\"==typeof exports?exports[\"feeds/filter/hide-goods\"]=t():e[\"feeds/filter/hide-goods\"]=t()}(globalThis,(()=>(()=>{var e,t,o={20:e=>{function t(e){var t=new Error(\"Cannot find module '\"+e+\"'\");throw t.code=\"MODULE_NOT_FOUND\",t}t.keys=()=>[],t.resolve=t,t.id=20,e.exports=t},639:e=>{\"use strict\";e.exports=\"移除动态里的商品带货动态 (UP主的推荐 · 来自 XX), 装有 `动态过滤器` 时生效.\\n\"},649:e=>{\"use strict\";e.exports=coreApis.componentApis.feeds.api}},r={};function n(e){var t=r[e];if(void 0!==t)return t.exports;var i=r[e]={exports:{}};return o[e](i,i.exports,n),i.exports}t=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__,n.t=function(o,r){if(1&r&&(o=this(o)),8&r)return o;if(\"object\"==typeof o&&o){if(4&r&&o.__esModule)return o;if(16&r&&\"function\"==typeof o.then)return o}var i=Object.create(null);n.r(i);var s={};e=e||[null,t({}),t([]),t(t)];for(var d=2&r&&o;\"object\"==typeof d&&!~e.indexOf(d);d=t(d))Object.getOwnPropertyNames(d).forEach((e=>s[e]=()=>o[e]));return s.default=()=>o,n.d(i,s),i},n.d=(e,t)=>{for(var o in t)n.o(t,o)&&!n.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},n.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),n.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})};var i={};return(()=>{\"use strict\";n.d(i,{plugin:()=>e});const e={name:\"feedsFilter.pluginBlocks.goods\",displayName:\"动态过滤器 - 移除商品带货动态\",async setup(){const{forEachFeedsCard:e,getVueData:t}=await Promise.resolve().then(n.t.bind(n,649,23));e({added:e=>{const o=t(e.element);\"ADDITIONAL_TYPE_GOODS\"===lodash.get(o,\"data.modules.module_dynamic.additional.type\",null)&&e.element.classList.add(\"plugin-block\")}})},commitHash:\"7fecc4bac26748c831b96a3051621e41dd889b2f\",coreVersion:\"2.10.9\",description:(()=>{const e=n(20);return{...Object.fromEntries(e.keys().map((t=>[t.match(/index\\.(.+)\\.md$/)[1],e(t)]))),\"zh-CN\":()=>Promise.resolve().then(n.t.bind(n,639,17)).then((e=>e.default))}})()}})(),i=i.plugin})()));\n//# sourceMappingURL=https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/feeds/filter/hide-goods.js.map",
+      "code": "!function(e,t){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define([],t):\"object\"==typeof exports?exports[\"feeds/filter/hide-goods\"]=t():e[\"feeds/filter/hide-goods\"]=t()}(globalThis,(()=>(()=>{var e,t,o={20:e=>{function t(e){var t=new Error(\"Cannot find module '\"+e+\"'\");throw t.code=\"MODULE_NOT_FOUND\",t}t.keys=()=>[],t.resolve=t,t.id=20,e.exports=t},639:e=>{\"use strict\";e.exports=\"移除动态里的商品带货动态 (UP主的推荐 · 来自 XX), 装有 `动态过滤器` 时生效.\\n\"},649:e=>{\"use strict\";e.exports=coreApis.componentApis.feeds.api}},r={};function n(e){var t=r[e];if(void 0!==t)return t.exports;var d=r[e]={exports:{}};return o[e](d,d.exports,n),d.exports}t=Object.getPrototypeOf?e=>Object.getPrototypeOf(e):e=>e.__proto__,n.t=function(o,r){if(1&r&&(o=this(o)),8&r)return o;if(\"object\"==typeof o&&o){if(4&r&&o.__esModule)return o;if(16&r&&\"function\"==typeof o.then)return o}var d=Object.create(null);n.r(d);var i={};e=e||[null,t({}),t([]),t(t)];for(var s=2&r&&o;\"object\"==typeof s&&!~e.indexOf(s);s=t(s))Object.getOwnPropertyNames(s).forEach((e=>i[e]=()=>o[e]));return i.default=()=>o,n.d(d,i),d},n.d=(e,t)=>{for(var o in t)n.o(t,o)&&!n.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},n.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),n.r=e=>{\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})};var d={};return(()=>{\"use strict\";n.d(d,{plugin:()=>e});const e={name:\"feedsFilter.pluginBlocks.goods\",displayName:\"动态过滤器 - 移除商品带货动态\",async setup(){const{forEachFeedsCard:e,getVueData:t}=await Promise.resolve().then(n.t.bind(n,649,23));e({added:e=>{const o=t(e.element),r=1===e.type.id||\"DYNAMIC_TYPE_FORWARD\"===lodash.get(o,\"data.type\",null)?\"data.orig.modules.module_dynamic.additional.type\":\"data.modules.module_dynamic.additional.type\";\"ADDITIONAL_TYPE_GOODS\"===lodash.get(o,r,null)&&e.element.classList.add(\"plugin-block\")}})},commitHash:\"bf1f957e8ab1bb19e0a3c53afd2cdfe12cde1833\",coreVersion:\"2.10.10\",description:(()=>{const e=n(20);return{...Object.fromEntries(e.keys().map((t=>[t.match(/index\\.(.+)\\.md$/)[1],e(t)]))),\"zh-CN\":()=>Promise.resolve().then(n.t.bind(n,639,17)).then((e=>e.default))}})()}})(),d=d.plugin})()));\n//# sourceMappingURL=https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/plugins/feeds/filter/hide-goods.js.map",
       "displayName": "动态过滤器 - 移除商品带货动态",
       "name": "feedsFilter.pluginBlocks.goods",
       "commitHash": "f539020624c731a30f1c5b3d77a0b0ed514dfce0",
@@ -96,7 +96,7 @@
               "key": "78a6838e"
             },
             {
-              "pattern": "/开奖|中奖|抽奖|获奖|领奖|奖品|麻烦私|获取方式|领取链接|领取方法|参与方式|精美礼品|VX扫码/",
+              "pattern": "/开奖|中奖|抽奖|随机抽|获奖|领奖|奖品|麻烦私|获取方式|领取链接|领取方法|参与方式|精美礼品|VX扫码/",
               "enabled": true,
               "key": "fe8c702f"
             },
@@ -2686,7 +2686,7 @@
     "autoUpdate": {
       "enabled": true,
       "options": {
-        "lastUpdateCheck": 1780835532006,
+        "lastUpdateCheck": 1781483637481,
         "lastInstalledVersion": "2.10.10",
         "localPortOverride": "",
         "minimumDuration": 86400000,
@@ -2694,25 +2694,25 @@
           "components": {
             "feedsFilter": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/filter.js",
-              "lastUpdateCheck": 1780835530305,
+              "lastUpdateCheck": 1781483635936,
               "installTime": 1673491591771,
               "alwaysUpdate": false
             },
             "foldComments": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/fold-comments.js",
-              "lastUpdateCheck": 1780835530198,
+              "lastUpdateCheck": 1781483635991,
               "installTime": 1673491600384,
               "alwaysUpdate": false
             },
             "fullFeedsTitle": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/full-title.js",
-              "lastUpdateCheck": 1780835530074,
+              "lastUpdateCheck": 1781483635848,
               "installTime": 1673491603198,
               "alwaysUpdate": false
             },
             "unfoldFeeds": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/unfold.js",
-              "lastUpdateCheck": 1780835529684,
+              "lastUpdateCheck": 1781483635753,
               "installTime": 1673491607725,
               "alwaysUpdate": false
             },
@@ -3002,13 +3002,13 @@
           "plugins": {
             "feedsFilter.pluginBlocks.chargeFeeds": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/plugins/feeds/filter/hide-charge-feeds.js",
-              "lastUpdateCheck": 1780835531980,
+              "lastUpdateCheck": 1781483637451,
               "installTime": 1706259968009,
               "alwaysUpdate": false
             },
             "feedsFilter.pluginBlocks.goods": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/plugins/feeds/filter/hide-goods.js",
-              "lastUpdateCheck": 1780835532003,
+              "lastUpdateCheck": 1781483637480,
               "installTime": 1718852887878,
               "alwaysUpdate": false
             }
@@ -3021,7 +3021,7 @@
     "notifyNewVersion": {
       "enabled": true,
       "options": {
-        "lastUpdateCheck": 1780842810666,
+        "lastUpdateCheck": 1781485513516,
         "minimumDuration": 86400000
       }
     },

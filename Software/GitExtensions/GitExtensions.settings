@@ -194,6 +194,22 @@
   </item>
   <item>
     <key>
+      <string>BuildServer..GitHubActionsOwner</string>
+    </key>
+    <value>
+      <string>dupontjoy</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>BuildServer..GitHubActionsRepository</string>
+    </key>
+    <value>
+      <string>Customization</string>
+    </value>
+  </item>
+  <item>
+    <key>
       <string>c2a1c7a4-d519-4bd1-859b-6ce7db9325fb.HTTP proxy</string>
     </key>
     <value>
@@ -269,7 +285,7 @@
       <string>CommitDialog.splitLeft_Distance</string>
     </key>
     <value>
-      <string>263</string>
+      <string>268</string>
     </value>
   </item>
   <item>
@@ -309,7 +325,7 @@
       <string>CommitDialog.splitLeft_Size</string>
     </key>
     <value>
-      <string>599</string>
+      <string>610</string>
     </value>
   </item>
   <item>
@@ -365,7 +381,7 @@
       <string>CommitDialog.splitRight_Distance</string>
     </key>
     <value>
-      <string>409</string>
+      <string>420</string>
     </value>
   </item>
   <item>
@@ -405,7 +421,7 @@
       <string>CommitDialog.splitRight_Size</string>
     </key>
     <value>
-      <string>599</string>
+      <string>610</string>
     </value>
   </item>
   <item>
@@ -933,7 +949,7 @@
       <string>FormBrowse.fileTree.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>229</string>
+      <string>223</string>
     </value>
   </item>
   <item>
@@ -1029,7 +1045,7 @@
       <string>FormBrowse.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>478</string>
+      <string>388</string>
     </value>
   </item>
   <item>
@@ -1269,7 +1285,7 @@
       <string>FormBrowse.revisionDiff.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>229</string>
+      <string>223</string>
     </value>
   </item>
   <item>
@@ -1365,7 +1381,7 @@
       <string>FormBrowse.RevisionsSplitContainer_Distance</string>
     </key>
     <value>
-      <string>535</string>
+      <string>541</string>
     </value>
   </item>
   <item>
@@ -1843,7 +1859,7 @@
       <string>RepoObjectsTree.StashesIndex</string>
     </key>
     <value>
-      <string>4</string>
+      <string>5</string>
     </value>
   </item>
   <item>
@@ -1851,12 +1867,20 @@
       <string>RepoObjectsTree.SubmodulesIndex</string>
     </key>
     <value>
-      <string>3</string>
+      <string>4</string>
     </value>
   </item>
   <item>
     <key>
       <string>RepoObjectsTree.TagsIndex</string>
+    </key>
+    <value>
+      <string>3</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>RepoObjectsTree.WorktreesIndex</string>
     </key>
     <value>
       <string>2</string>

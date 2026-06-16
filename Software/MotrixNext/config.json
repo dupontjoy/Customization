@@ -1,5 +1,6 @@
 {
   "preferences": {
+    "allowRemoteAccess": false,
     "aria2LogLevel": "notice",
     "asyncDns": false,
     "autoChangeConflictingPorts": true,
@@ -17,7 +18,7 @@
     "btMaxPeers": 128,
     "btPeerExchangeEnabled": true,
     "btSaveMetadata": true,
-    "btTracker": "udp://zer0day.ch:1337/announce,udp://tracker.publictracker.xyz:6969/announce,udp://tracker.opentrackr.org:1337/announce,udp://open.demonii.com:1337/announce,udp://open.stealth.si:80/announce,udp://wepzone.net:6969/announce,udp://uabits.today:6990/announce,udp://tracker.wildkat.net:6969/announce,udp://tracker.tryhackx.org:6969/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.theoks.net:6969/announce,udp://tracker.t-1.org:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.opentorrent.top:6969/announce,udp://tracker.flatuslifir.is:6969/announce,udp://tracker.dler.org:6969/announce,udp://tracker.corpscorp.online:80/announce,udp://tracker.bluefrog.pw:2710/announce,udp://tracker.bittor.pw:1337/announce,udp://tracker.auctor.tv:6969/announce,udp://93.158.213.92:1337/announce,udp://93.158.213.92:6969/announce,udp://185.121.168.96:1337/announce,udp://185.243.218.213:80/announce,udp://91.216.110.53:451/announce,udp://44.30.4.4:6969/announce,udp://135.125.236.64:6969/announce,udp://107.189.7.165:6969/announce,udp://94.136.190.183:1337/announce,udp://185.171.202.111:6969/announce,udp://81.230.84.201:6969/announce,udp://209.141.59.25:6969/announce,udp://5.255.124.190:6969/announce,udp://37.120.182.83:1984/announce,udp://34.66.57.33:80/announce,udp://88.80.22.67:2710/announce,udp://34.66.57.33:1337/announce,udp://43.250.54.126:6969/announce,udp://107.189.4.235:1337/announce,udp://192.3.130.53:1337/announce",
+    "btTracker": "udp://zer0day.ch:1337/announce,udp://tracker.publictracker.xyz:6969/announce,udp://tracker.opentrackr.org:1337/announce,udp://open.demonii.com:1337/announce,udp://open.stealth.si:80/announce,udp://udp.tracker.projectk.org:23333/announce,udp://tracker2.dler.org:80/announce,udp://tracker.wildkat.net:6969/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.t-1.org:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.peerfect.org:6969/announce,udp://tracker.opentorrent.top:6969/announce,udp://tracker.gmi.gd:6969/announce,udp://tracker.flatuslifir.is:6969/announce,udp://tracker.ducks.party:1984/announce,udp://tracker.dler.org:6969/announce,udp://tracker.bluefrog.pw:2710/announce,udp://tracker.bittor.pw:1337/announce,udp://tracker.auctor.tv:6969/announce,udp://93.158.213.92:6969/announce,udp://185.121.168.96:1337/announce,udp://185.243.218.213:80/announce,udp://60.249.37.20:80/announce,udp://164.152.110.70:6969/announce,udp://91.216.110.53:451/announce,udp://107.189.7.165:6969/announce,udp://43.250.54.126:6969/announce,udp://5.135.104.146:6969/announce,udp://81.230.84.201:6969/announce,udp://209.141.59.25:6969/announce,udp://37.120.182.83:1984/announce,udp://211.75.210.221:6969/announce,udp://34.66.57.33:1337/announce,udp://192.3.130.53:1337/announce,udp://109.201.134.183:80/announce,udp://185.146.233.150:6969/announce,udp://152.53.194.103:54123/announce,udp://152.249.97.82:6969/announce,udp://2.57.214.218:6969/announce",
     "btTrackerAutoSync": true,
     "btTrackerSyncIntervalHours": 24,
     "clearCompletedOnExit": true,
@@ -179,8 +180,8 @@
     "keepSeeding": false,
     "keepSharing": false,
     "keepWindowState": true,
-    "lastCheckUpdateTime": 1780978417974,
-    "lastSyncTrackerTime": 1780911157546,
+    "lastCheckUpdateTime": 1781577986741,
+    "lastSyncTrackerTime": 1781514623672,
     "lightweightMode": true,
     "listenPort": 21301,
     "locale": "zh-CN",
@@ -212,8 +213,7 @@
     },
     "proxy": {
       "bypass": "",
-      "enable": true,
-      "mode": "direct",
+      "mode": "manual",
       "password": "",
       "scope": [
         "download",
@@ -250,6 +250,7 @@
       "stopped": []
     },
     "taskNotification": true,
+    "taskPageSize": 20,
     "taskSort": {
       "active": {
         "direction": "desc",
