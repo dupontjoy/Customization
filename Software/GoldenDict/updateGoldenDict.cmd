@@ -12,7 +12,7 @@ cls
 pushd "%~dp0"
 
 :: 下载工具配置
-set "Curl_Download=curl -C - -LJ --ssl-no-revoke --progress-bar --create-days"
+set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-days"
 
 :: 版本文件
 set "version_file=versions_goldendict.txt"
