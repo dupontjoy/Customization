@@ -1,16 +1,15 @@
 {
-  "IndexId": "5648647670107586019",
+  "IndexId": "5004163800009970688",
   "SubIndexId": "5019061518611062502",
   "CoreBasicItem": {
     "LogEnabled": false,
     "Loglevel": "warning",
-    "MuxEnabled": false,
-    "DefAllowInsecure": false,
     "DefFingerprint": "chrome",
     "DefUserAgent": null,
     "SendThrough": null,
     "BindInterface": null,
     "EnableFragment": true,
+    "EnableFinalFragment": false,
     "EnableCacheFile4Sbox": true
   },
   "TunModeItem": {
@@ -21,7 +20,8 @@
     "Mtu": 9000,
     "EnableIPv6Address": false,
     "IcmpRouting": null,
-    "EnableLegacyProtect": false
+    "EnableLegacyProtect": false,
+    "RouteExcludeAddress": null
   },
   "KcpItem": {
     "Mtu": 1350,
