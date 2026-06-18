@@ -1,4 +1,4 @@
-::2026.03.12
+::2026.06.18
 ::注意換行符必须是：windows（CR+LF）
 
 Title 安装系统后恢复一些软件的设置
@@ -24,6 +24,9 @@ xcopy "%SettingsDir%\Customization\Software\CVR\verge.yaml" "C:\Users\%USERNAME%
 
 :gitextension
 xcopy "%SettingsDir%\Customization\Software\GitExtensions\.gitconfig" "C:\Users\%USERNAME%\" /y
+
+:licalender
+xcopy "%SettingsDir%\Customization\Software\licalender\liConfig.json" "C:\Users\%USERNAME%\AppData\Roaming\pro.softsoft.li-calendar\" /y
 
 :LXmusicDesktop
 robocopy "%SettingsDir%\Customization\Software\LXmusic\LxDatas" "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" /MIR /ZB /R:3 /W:5

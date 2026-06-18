@@ -1,0 +1,28 @@
+{
+  "frontendWindowEffect": "transparent",
+  "dateFormat": "yyyy/M/d dddd",
+  "macosEffect": "vibrancy",
+  "footerFestivalVisible": true,
+  "calendarFooterVisible": true,
+  "footerYiJiVisible": true,
+  "timeFormat": "HH:mm:ss",
+  "isWindowsEffect": false,
+  "macosTrayBarIcon": "date",
+  "desktopWidgetEnabled": true,
+  "taskbarWidgetEnabled": true,
+  "macosTrayIconWidth": 42,
+  "macosTrayDateIconStyle": "filled",
+  "desktopWindowPosition": {
+    "x": 988,
+    "y": 40
+  },
+  "calendarPinned": false,
+  "theme": "light",
+  "macosTrayIconHeight": 36,
+  "frontendWindowTransparency": 20,
+  "macosTrayTitleTemplate": "",
+  "customTrayClockEnabled": true,
+  "autostart": true,
+  "frontendWindowEffectEnabled": false,
+  "footerCountdownVisible": true
+}

@@ -115,6 +115,9 @@ xcopy "%BackupDir%\..\..\Software\ImageGlass\updateImageGlass.cmd" "%OutputDir%\
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\user.json" "%OutputDir%\Customization\Software\imFile\" /y
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\system.json" "%OutputDir%\Customization\Software\imFile\" /y
 
+:licalender
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\pro.softsoft.li-calendar\liConfig.json" "%OutputDir%\Customization\Software\licalender\" /y
+
 :listary5
 ::Ç‰∑›Listary 5‘O÷√
 xcopy "%BackupDir%\..\..\Software\Listary5\UserData\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
