@@ -56,6 +56,7 @@ robocopy "C:\ProgramData\Anytxt\config" "%OutputDir%\Customization\Software\Anyt
 robocopy "%BackupDir%\..\..\Software\RimeIMEPortable\usr" "%OutputDir%\RimeIMEPortable\usr" /MIR /ZB /R:3 /W:5
 xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\install.bat" "%OutputDir%\RimeIMEPortable\" /y
 xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\uninstall.bat" "%OutputDir%\RimeIMEPortable\" /y
+xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\README.md" "%OutputDir%\RimeIMEPortable\" /y
 xcopy "%BackupDir%\..\..\Software\RimeIMEPortable\readme.txt" "%OutputDir%\RimeIMEPortable\" /y
 
 
