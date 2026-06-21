@@ -1,4 +1,4 @@
-::2026.03.31
+::2026.06.21
 ::注意換行符必须是：windows（CR+LF）
 
 Title 备份文件到托管网站
@@ -104,6 +104,9 @@ xcopy "%BackupDir%\..\..\Software\GlaryUtilities\Data\settings\GlarysoftW32.reg"
 :GoldenDict
 xcopy "%BackupDir%\..\..\..\GoldenDict\portable\config" "%OutputDir%\Customization\Software\GoldenDict\" /y
 xcopy "%BackupDir%\..\..\..\GoldenDict\updateGoldenDict.cmd" "%OutputDir%\Customization\Software\GoldenDict\" /y
+
+:GuoheView
+xcopy "%BackupDir%\..\..\Software\GuoheViewPortable\config.ini" "%OutputDir%\Customization\Software\GuoheView\" /y
 
 :IDMan
 xcopy "%BackupDir%\..\..\..\IDM\!)选项配置.reg" "%OutputDir%\Customization\Software\IDMan\" /y
