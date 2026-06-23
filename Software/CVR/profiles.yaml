@@ -12,96 +12,6 @@ items:
   name: null
   file: Script.js
   updated: 1768609763
-- uid: mSbivow0g7K3
-  type: merge
-  name: null
-  file: mSbivow0g7K3.yaml
-  updated: 1768609861
-- uid: sVDw9jWjaXif
-  type: script
-  name: null
-  file: sVDw9jWjaXif.js
-  updated: 1768609861
-- uid: roOyUC6l3tLV
-  type: rules
-  name: null
-  file: roOyUC6l3tLV.yaml
-  updated: 1768609861
-- uid: pFKtlMMTCxjK
-  type: proxies
-  name: null
-  file: pFKtlMMTCxjK.yaml
-  updated: 1768609861
-- uid: gJM94Az4JbJq
-  type: groups
-  name: null
-  file: gJM94Az4JbJq.yaml
-  updated: 1768609861
-- uid: RwtvUmvfZOzw
-  type: remote
-  name: cfn-163
-  file: RwtvUmvfZOzw.yaml
-  desc: ''
-  url: https://163cfn.232885.xyz/cfn/sub?target=clash
-  selected:
-  - name: 🐟 漏网之鱼
-    now: ♻️ 自动选择
-  - name: 🚀 手动选择
-    now: ♻️ 自动选择
-  updated: 1782182141
-  option:
-    with_proxy: false
-    self_proxy: false
-    update_interval: 60
-    allow_auto_update: true
-    merge: m5FlUYCHmOcV
-    script: sTmWGNwlZBB0
-    rules: rSSoCTvToOXh
-    proxies: pItuzE1EwU0U
-    groups: gGpEGYKXGKtE
-- uid: RsObJcbon9Kg
-  type: remote
-  name: cfn-88
-  file: RsObJcbon9Kg.yaml
-  desc: ''
-  url: https://cfn88.232885.qzz.io/cfn/sub?target=clash
-  selected:
-  - name: ♻️ 自动选择
-    now: 所有节点获取失败
-  - name: 🚀 节点选择
-    now: 新加坡-16
-  updated: 1782181838
-  option:
-    with_proxy: false
-    self_proxy: false
-    update_interval: 60
-    allow_auto_update: true
-    merge: mrNdgHDYEBNF
-    script: sl2VrhXxK9vj
-    rules: rb7wTx0OciPd
-    proxies: pmjuAKoxXXqk
-    groups: gUN8PBck8f1r
-- uid: RwWmv60H3j0A
-  type: remote
-  name: cfn-xqj
-  file: RwWmv60H3j0A.yaml
-  desc: ''
-  url: https://xqjcfn.xuanqj.qzz.io/cfn/sub?target=clash
-  selected:
-  - name: 🐟 漏网之鱼
-    now: ♻️ 自动选择
-  updated: 1782181838
-  option:
-    with_proxy: false
-    self_proxy: false
-    update_interval: 60
-    timeout_seconds: 60
-    allow_auto_update: true
-    merge: mSbivow0g7K3
-    script: sVDw9jWjaXif
-    rules: roOyUC6l3tLV
-    proxies: pFKtlMMTCxjK
-    groups: gJM94Az4JbJq
 - uid: RT2I9eXxrIV0
   type: remote
   name: cml-163
@@ -113,10 +23,10 @@ items:
     now: ♻️ 自动选择
   extra:
     upload: 0
-    download: 1235
+    download: 6186
     total: 102400
     expire: 4102329600
-  updated: 1782182062
+  updated: 1782207649
   option:
     with_proxy: false
     self_proxy: false
@@ -168,10 +78,10 @@ items:
     now: 🔯 故障转移
   extra:
     upload: 0
-    download: 1847
+    download: 9432
     total: 102400
     expire: 4102329600
-  updated: 1782181849
+  updated: 1782204069
   option:
     with_proxy: false
     self_proxy: false
@@ -183,31 +93,6 @@ items:
     proxies: pFkHTiZHcalR
     groups: gJ9TeWSCxhZh
   home: https://cml88.232885.qzz.io/admin
-- uid: m5FlUYCHmOcV
-  type: merge
-  name: null
-  file: m5FlUYCHmOcV.yaml
-  updated: 1773662019
-- uid: sTmWGNwlZBB0
-  type: script
-  name: null
-  file: sTmWGNwlZBB0.js
-  updated: 1773662019
-- uid: rSSoCTvToOXh
-  type: rules
-  name: null
-  file: rSSoCTvToOXh.yaml
-  updated: 1773662019
-- uid: pItuzE1EwU0U
-  type: proxies
-  name: null
-  file: pItuzE1EwU0U.yaml
-  updated: 1773662019
-- uid: gGpEGYKXGKtE
-  type: groups
-  name: null
-  file: gGpEGYKXGKtE.yaml
-  updated: 1773662019
 - uid: m3cUum4y0W8g
   type: merge
   name: null
@@ -241,10 +126,10 @@ items:
   url: https://xrcml.xuanqj.qzz.io/sub?token=beec45239487678bb56c054e62319e34
   extra:
     upload: 0
-    download: 1776
+    download: 11160
     total: 102400
     expire: 4102329600
-  updated: 1782181875
+  updated: 1782207651
   option:
     with_proxy: false
     self_proxy: false
@@ -262,7 +147,7 @@ items:
   file: RkC6ZKw3xEgi.yaml
   desc: ''
   url: https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/quick/1/config.yaml
-  updated: 1782181837
+  updated: 1782207639
   option:
     with_proxy: false
     self_proxy: false
@@ -298,31 +183,6 @@ items:
   name: null
   file: g5j0K6CWYqEI.yaml
   updated: 1774324017
-- uid: mrNdgHDYEBNF
-  type: merge
-  name: null
-  file: mrNdgHDYEBNF.yaml
-  updated: 1777390005
-- uid: sl2VrhXxK9vj
-  type: script
-  name: null
-  file: sl2VrhXxK9vj.js
-  updated: 1777390005
-- uid: rb7wTx0OciPd
-  type: rules
-  name: null
-  file: rb7wTx0OciPd.yaml
-  updated: 1777390005
-- uid: pmjuAKoxXXqk
-  type: proxies
-  name: null
-  file: pmjuAKoxXXqk.yaml
-  updated: 1777390005
-- uid: gUN8PBck8f1r
-  type: groups
-  name: null
-  file: gUN8PBck8f1r.yaml
-  updated: 1777390005
 - uid: mcnMtpyjTBnB
   type: merge
   name: null
