@@ -12,13 +12,15 @@
     "autoSelectAllFilesFromExtension": false,
     "autoSubmitFromExtension": false,
     "btDhtEnabled": true,
+    "btDhtIpv4Enabled": true,
+    "btDhtIpv6Enabled": true,
     "btForceEncryption": false,
     "btLoadSavedMetadata": true,
     "btLocalPeerDiscoveryEnabled": true,
     "btMaxPeers": 128,
     "btPeerExchangeEnabled": true,
     "btSaveMetadata": true,
-    "btTracker": "udp://zer0day.ch:1337/announce,udp://tracker.publictracker.xyz:6969/announce,udp://tracker.opentrackr.org:1337/announce,udp://open.demonii.com:1337/announce,udp://open.stealth.si:80/announce,udp://udp.tracker.projectk.org:23333/announce,udp://uabits.today:6990/announce,udp://tracker.wildkat.net:6969/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.theoks.net:6969/announce,udp://tracker.t-1.org:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.opentorrent.top:6969/announce,udp://tracker.fnix.net:6969/announce,udp://tracker.filemail.com:6969/announce,udp://tracker.ducks.party:1984/announce,udp://tracker.corpscorp.online:80/announce,udp://tracker.bluefrog.pw:2710/announce,udp://tracker.bittor.pw:1337/announce,udp://tracker.auctor.tv:6969/announce,udp://93.158.213.92:1337/announce,udp://93.158.213.92:6969/announce,udp://185.121.168.96:1337/announce,udp://185.243.218.213:80/announce,udp://163.5.63.253:6990/announce,udp://164.152.110.70:6969/announce,udp://91.216.110.53:451/announce,udp://107.189.7.165:6969/announce,udp://43.250.54.126:6969/announce,udp://81.230.84.201:6969/announce,udp://37.120.182.83:1984/announce,udp://34.66.57.33:80/announce,udp://34.66.57.33:1337/announce,udp://192.3.130.53:1337/announce,udp://109.201.134.183:80/announce,udp://185.146.233.150:6969/announce,udp://87.106.210.134:6969/announce,udp://152.53.194.103:54123/announce,udp://152.249.97.82:6969/announce,udp://83.102.180.21:80/announce",
+    "btTracker": "udp://zer0day.ch:1337/announce,udp://tracker.publictracker.xyz:6969/announce,udp://tracker.opentrackr.org:1337/announce,udp://open.demonii.com:1337/announce,udp://open.stealth.si:80/announce,udp://udp.tracker.projectk.org:23333/announce,udp://tracker2.dler.org:80/announce,udp://tracker.wildkat.net:6969/announce,udp://tracker.tryhackx.org:6969/announce,udp://tracker.torrent.eu.org:451/announce,udp://tracker.t-1.org:6969/announce,udp://tracker.qu.ax:6969/announce,udp://tracker.opentorrent.top:6969/announce,udp://tracker.gmi.gd:6969/announce,udp://tracker.flatuslifir.is:6969/announce,udp://tracker.corpscorp.online:80/announce,udp://tracker.bluefrog.pw:2710/announce,udp://tracker.bittor.pw:1337/announce,udp://tracker.auctor.tv:6969/announce,udp://tracker.004430.xyz:1337/announce,udp://93.158.213.92:6969/announce,udp://185.121.168.96:1337/announce,udp://185.243.218.213:80/announce,udp://211.75.205.187:80/announce,udp://164.152.110.70:6969/announce,udp://89.234.156.205:451/announce,udp://107.189.7.165:6969/announce,udp://43.250.54.126:6969/announce,udp://81.230.84.201:6969/announce,udp://209.141.59.25:6969/announce,udp://45.134.88.121:6969/announce,udp://34.66.57.33:80/announce,udp://34.66.57.33:1337/announce,udp://192.3.130.53:1337/announce,udp://109.201.134.183:80/announce,udp://87.106.210.134:6969/announce,udp://152.53.194.103:54123/announce,udp://152.249.97.82:6969/announce,udp://2.57.214.218:6969/announce,udp://83.102.180.21:80/announce",
     "btTrackerAutoSync": true,
     "btTrackerSyncIntervalHours": 24,
     "clearCompletedOnExit": true,
@@ -78,7 +80,9 @@
           "m4v",
           "rmvb"
         ],
-        "label": "file-category-videos"
+        "label": "file-category-videos",
+        "urlPatternMode": "wildcard",
+        "urlPatterns": []
       },
       {
         "builtIn": true,
@@ -94,7 +98,9 @@
           "opus",
           "ape"
         ],
-        "label": "file-category-music"
+        "label": "file-category-music",
+        "urlPatternMode": "wildcard",
+        "urlPatterns": []
       },
       {
         "builtIn": true,
@@ -112,7 +118,9 @@
           "psd",
           "raw"
         ],
-        "label": "file-category-images"
+        "label": "file-category-images",
+        "urlPatternMode": "wildcard",
+        "urlPatterns": []
       },
       {
         "builtIn": true,
@@ -131,7 +139,9 @@
           "md",
           "rtf"
         ],
-        "label": "file-category-documents"
+        "label": "file-category-documents",
+        "urlPatternMode": "wildcard",
+        "urlPatterns": []
       },
       {
         "builtIn": true,
@@ -148,7 +158,9 @@
           "iso",
           "zst"
         ],
-        "label": "file-category-archives"
+        "label": "file-category-archives",
+        "urlPatternMode": "wildcard",
+        "urlPatterns": []
       },
       {
         "builtIn": true,
@@ -163,7 +175,9 @@
           "apk",
           "snap"
         ],
-        "label": "file-category-programs"
+        "label": "file-category-programs",
+        "urlPatternMode": "wildcard",
+        "urlPatterns": []
       }
     ],
     "fileCategoryEnabled": false,
@@ -180,8 +194,8 @@
     "keepSeeding": false,
     "keepSharing": false,
     "keepWindowState": true,
-    "lastCheckUpdateTime": 1781699844872,
-    "lastSyncTrackerTime": 1781699842349,
+    "lastCheckUpdateTime": 1782047804302,
+    "lastSyncTrackerTime": 1782047741489,
     "lightweightMode": true,
     "listenPort": 21301,
     "locale": "zh-CN",

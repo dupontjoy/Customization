@@ -23,6 +23,7 @@ user_pref("sidebar.visibility", "hide-sidebar");//显示侧栏按钮（否）
 user_pref("privacy.userContext.enabled", true);//启用身份标签页
 user_pref("signon.rememberSignons", false);//不保存密码
 user_pref("browser.shell.checkDefaultBrowser", false);//总是检查是否为默认浏览器(否)
+user_pref("browser.startup.windowsLaunchOnLogin.enabled", false);//启动电脑时自动打开 Firefox（否）
 user_pref("browser.search.suggest.enabled", false);//禁用搜索建议
 user_pref("browser.preferences.defaultPerformanceSettings.enabled", false);//使用推荐的性能设置（否），以启用硬件加速
 user_pref("dom.private-attribution.submission.enabled", false);//允许网站进行隐私保护下的广告监测（否）

@@ -1,6 +1,6 @@
 # Profiles Config for Clash Verge
 
-current: RT2I9eXxrIV0
+current: RorWmJByXUnJ
 items:
 - uid: Merge
   type: merge
@@ -48,7 +48,7 @@ items:
     now: ♻️ 自动选择
   - name: 🚀 手动选择
     now: ♻️ 自动选择
-  updated: 1782043553
+  updated: 1782182141
   option:
     with_proxy: false
     self_proxy: false
@@ -70,7 +70,7 @@ items:
     now: 所有节点获取失败
   - name: 🚀 节点选择
     now: 新加坡-16
-  updated: 1782043553
+  updated: 1782181838
   option:
     with_proxy: false
     self_proxy: false
@@ -90,7 +90,7 @@ items:
   selected:
   - name: 🐟 漏网之鱼
     now: ♻️ 自动选择
-  updated: 1781794714
+  updated: 1782181838
   option:
     with_proxy: false
     self_proxy: false
@@ -113,10 +113,10 @@ items:
     now: ♻️ 自动选择
   extra:
     upload: 0
-    download: 5080
+    download: 1235
     total: 102400
     expire: 4102329600
-  updated: 1781345360
+  updated: 1782182062
   option:
     with_proxy: false
     self_proxy: false
@@ -168,10 +168,10 @@ items:
     now: 🔯 故障转移
   extra:
     upload: 0
-    download: 11681
+    download: 1847
     total: 102400
     expire: 4102329600
-  updated: 1781255278
+  updated: 1782181849
   option:
     with_proxy: false
     self_proxy: false
@@ -241,10 +241,10 @@ items:
   url: https://xrcml.xuanqj.qzz.io/sub?token=beec45239487678bb56c054e62319e34
   extra:
     upload: 0
-    download: 3046
+    download: 1776
     total: 102400
     expire: 4102329600
-  updated: 1781750869
+  updated: 1782181875
   option:
     with_proxy: false
     self_proxy: false
@@ -262,7 +262,7 @@ items:
   file: RkC6ZKw3xEgi.yaml
   desc: ''
   url: https://www.gitlabip.xyz/Alvin9999/PAC/refs/heads/master/backup/img/1/2/ipp/quick/1/config.yaml
-  updated: 1782043552
+  updated: 1782181837
   option:
     with_proxy: false
     self_proxy: false

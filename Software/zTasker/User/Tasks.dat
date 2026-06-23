@@ -1080,9 +1080,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-05-29 14:04:48</EndDateTime>
-		<NextRunDateTime>2126-05-28 20:06:15</NextRunDateTime>
+		<NextRunDateTime>2126-05-30 08:49:20</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-06-21 20:06:15</LastRunTime>
+		<LastRunTime>2026-06-23 08:49:20</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1438,7 +1438,7 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 09:50:00</StartDateTime>
-		<EndDateTime>2026-05-30 13:05:04</EndDateTime>
+		<EndDateTime>2026-06-22 02:10:08</EndDateTime>
 		<NextRunDateTime>2026-06-27 09:50:00</NextRunDateTime>
 		<NextRunTime>2026-06-27 09:50:00</NextRunTime>
 		<LastRunTime>2026-06-13 09:50:00</LastRunTime>
@@ -1711,6 +1711,74 @@ env2=value2</edtAppEnv>
 				</Param>
 				<Name>更新LXmusic音源</Name>
 				<ID>70</ID>
+				<Stat>1</Stat>
+			</Tasker>
+			<Tasker>
+				<TaskType>ttExec</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<QukPhzStopped>0</QukPhzStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
+				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
+				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>7</Ver>
+				<Param>
+					<BackClr>-12500671</BackClr>
+					<IsExitRest>0</IsExitRest>
+					<IsPassExitRest>0</IsPassExitRest>
+					<Name>更新LXmusicDesktop</Name>
+					<PlayTime>10</PlayTime>
+					<RestAlpha>0</RestAlpha>
+					<RestClr>-1</RestClr>
+					<RestMin>10</RestMin>
+					<RmdClr>-1</RmdClr>
+					<SnapFormat>png</SnapFormat>
+					<SnapSaveDay>10</SnapSaveDay>
+					<SnapSaveMode>optSaveAll</SnapSaveMode>
+					<SnapSaveNum>100</SnapSaveNum>
+					<TitleShow>运行程序</TitleShow>
+					<TypeShow>程序</TypeShow>
+					<chkAppAdmin>0</chkAppAdmin>
+					<chkAppClip>0</chkAppClip>
+					<chkAppEnv>0</chkAppEnv>
+					<chkAppSkip>1</chkAppSkip>
+					<chkAppVar>0</chkAppVar>
+					<chkExecWait>1</chkExecWait>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<chkQukPhz>0</chkQukPhz>
+					<cmbAppShowCmd>2</cmbAppShowCmd>
+					<cmbAppShowCmd_text>最小化</cmbAppShowCmd_text>
+					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
+					<cmbBackType_text>压缩</cmbBackType_text>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
+					<cmbHotkey>0</cmbHotkey>
+					<edtAppEnv>env1=value1
+env2=value2</edtAppEnv>
+					<edtAppEnv.max>23</edtAppEnv.max>
+					<edtAppEnv.min>0</edtAppEnv.min>
+					<edtAppPath>D:\Program Files\lx-music-desktop\updateLXmusicDesktop.cmd</edtAppPath>
+					<edtAppVar>exec</edtAppVar>
+					<edtExecWaitTime>0</edtExecWaitTime>
+					<edtTaskName>更新LXmusicDesktop</edtTaskName>
+					<edtTaskSubName>更新LXmusicDesktop</edtTaskSubName>
+					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
+					<optPlaySnd>0</optPlaySnd>
+					<optRmdSnd>0</optRmdSnd>
+					<optRptSnd>0</optRptSnd>
+					<tabBtnTask>1</tabBtnTask>
+				</Param>
+				<Name>更新LXmusicDesktop</Name>
+				<ID>44</ID>
 				<Stat>1</Stat>
 			</Tasker>
 			<Tasker>
@@ -2187,75 +2255,7 @@ env2=value2</edtAppEnv>
 				</Param>
 				<Name>更新imageglass</Name>
 				<ID>54</ID>
-				<Stat>1</Stat>
-			</Tasker>
-			<Tasker>
-				<TaskType>ttExec</TaskType>
-				<Stopped>0</Stopped>
-				<HKStopped>0</HKStopped>
-				<QukPhzStopped>0</QukPhzStopped>
-				<HasEndDateTime>0</HasEndDateTime>
-				<SchType>-1</SchType>
-				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
-				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
-				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
-				<NextRunTime></NextRunTime>
-				<LastRunTime></LastRunTime>
-				<Fav>0</Fav>
-				<Ver>7</Ver>
-				<Param>
-					<BackClr>-12500671</BackClr>
-					<IsExitRest>0</IsExitRest>
-					<IsPassExitRest>0</IsPassExitRest>
-					<Name>更新LXmusicDesktop</Name>
-					<PlayTime>10</PlayTime>
-					<RestAlpha>0</RestAlpha>
-					<RestClr>-1</RestClr>
-					<RestMin>10</RestMin>
-					<RmdClr>-1</RmdClr>
-					<SnapFormat>png</SnapFormat>
-					<SnapSaveDay>10</SnapSaveDay>
-					<SnapSaveMode>optSaveAll</SnapSaveMode>
-					<SnapSaveNum>100</SnapSaveNum>
-					<TitleShow>运行程序</TitleShow>
-					<TypeShow>程序</TypeShow>
-					<chkAppAdmin>0</chkAppAdmin>
-					<chkAppClip>0</chkAppClip>
-					<chkAppEnv>0</chkAppEnv>
-					<chkAppSkip>1</chkAppSkip>
-					<chkAppVar>0</chkAppVar>
-					<chkExecWait>1</chkExecWait>
-					<chkHotkey>0</chkHotkey>
-					<chkHotkeyAlt>0</chkHotkeyAlt>
-					<chkHotkeyCtrl>0</chkHotkeyCtrl>
-					<chkHotkeyShift>0</chkHotkeyShift>
-					<chkHotkeyWin>0</chkHotkeyWin>
-					<chkQukPhz>0</chkQukPhz>
-					<cmbAppShowCmd>2</cmbAppShowCmd>
-					<cmbAppShowCmd_text>最小化</cmbAppShowCmd_text>
-					<cmbBackFileRecyleFull_text>直接删除文件</cmbBackFileRecyleFull_text>
-					<cmbBackType_text>压缩</cmbBackType_text>
-					<cmbEcecType>1</cmbEcecType>
-					<cmbEcecType_text>同步</cmbEcecType_text>
-					<cmbHotkey>0</cmbHotkey>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
-					<edtAppEnv.max>23</edtAppEnv.max>
-					<edtAppEnv.min>0</edtAppEnv.min>
-					<edtAppPath>D:\Program Files\lx-music-desktop\updateLXmusicDesktop.cmd</edtAppPath>
-					<edtAppVar>exec</edtAppVar>
-					<edtExecWaitTime>0</edtExecWaitTime>
-					<edtTaskName>更新LXmusicDesktop</edtTaskName>
-					<edtTaskSubName>更新LXmusicDesktop</edtTaskSubName>
-					<lblAppAdmin>除非您当前是管理员用户并且关闭了UAC或者以管理员身份运行本软件，否则任务运行时系统可能会弹出验证</lblAppAdmin>
-					<optPlaySnd>0</optPlaySnd>
-					<optRmdSnd>0</optRmdSnd>
-					<optRptSnd>0</optRptSnd>
-					<tabBtnTask>1</tabBtnTask>
-				</Param>
-				<Name>更新LXmusicDesktop</Name>
-				<ID>44</ID>
-				<Stat>1</Stat>
+				<Stat>0</Stat>
 			</Tasker>
 			<Tasker>
 				<TaskType>ttExec</TaskType>
@@ -2553,9 +2553,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2026-01-19 22:30:00</StartDateTime>
 		<EndDateTime>2026-06-12 22:43:12</EndDateTime>
-		<NextRunDateTime>2026-06-21 22:30:00</NextRunDateTime>
-		<NextRunTime>2026-06-21 22:30:00</NextRunTime>
-		<LastRunTime>2026-06-18 22:30:00</LastRunTime>
+		<NextRunDateTime>2026-06-23 22:30:00</NextRunDateTime>
+		<NextRunTime>2026-06-23 22:30:00</NextRunTime>
+		<LastRunTime>2026-06-22 22:30:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2895,9 +2895,9 @@ env2=value2</edtAppEnv>
 		<SchType>36</SchType>
 		<StartDateTime>2026-06-07 22:30:00</StartDateTime>
 		<EndDateTime>2026-06-14 12:31:32</EndDateTime>
-		<NextRunDateTime>2026-06-21 22:00:00</NextRunDateTime>
-		<NextRunTime>2026-06-21 22:00:00</NextRunTime>
-		<LastRunTime>2026-06-18 22:00:00</LastRunTime>
+		<NextRunDateTime>2026-06-23 18:00:00</NextRunDateTime>
+		<NextRunTime>2026-06-23 18:00:00</NextRunTime>
+		<LastRunTime>2026-06-22 22:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
