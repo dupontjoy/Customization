@@ -68,9 +68,9 @@ xcopy "%BackupDir%\..\..\Software\Capslock+\CapsLock+settings.ini" "%OutputDir%\
 xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%OutputDir%\Customization\Software\CCleaner\" /y
 
 :clashverge（CVR）
-:robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles" "%:::OutputDir%\Customization\Software\CVR\profiles" /MIR /ZB /R:3 /W:5
-:xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles.yaml" "%OutputDir%\Customization\Software\CVR\" /y
-:xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\verge.yaml" "%OutputDir%\Customization\Software\CVR\" /y
+robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles" "%:::OutputDir%\Software\CVR\profiles" /MIR /ZB /R:3 /W:5
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles.yaml" "%OutputDir%\Software\CVR\" /y
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\verge.yaml" "%OutputDir%\Software\CVR\" /y
 
 :fab
 xcopy "%BackupDir%\..\..\Software\fab\Firewall App Blocker@Cing.ini" "%OutputDir%\Customization\Software\fab\" /y
@@ -211,7 +211,7 @@ xcopy "%BackupDir%\..\..\Software\TrafficMonitor\config.ini" "%OutputDir%\Custom
 xcopy "%BackupDir%\..\..\Software\TrafficMonitor\global_cfg.ini" "%OutputDir%\Customization\Software\TrafficMonitor\" /y
 
 :v2rayN（VRN）
-robocopy "%BackupDir%\..\..\Software\v2rayN\guiConfigs" "%OutputDir%\Customization\Software\VRN\guiConfigs" /MIR /ZB /R:3 /W:5
+robocopy "%BackupDir%\..\..\Software\v2rayN\guiConfigs" "%OutputDir%\Software\VRN\guiConfigs" /MIR /ZB /R:3 /W:5
 
 :Win设置
 xcopy "%SoftDir%\Microsoft\NewPC-Tools\SoftSettingsRecover.cmd" "%OutputDir%\Customization\Software\Win系统设置\" /y

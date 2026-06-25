@@ -18,9 +18,9 @@ set "SettingsDir=E:\My Documents\Nutstore\NutStoreSync"
 robocopy "%SettingsDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt\config" /MIR /ZB /R:3 /W:5
 
 :clashverge£¨CVR£©
-robocopy "%SettingsDir%\Customization\Software\CVR\profiles" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles" /MIR /ZB /R:3 /W:5
-xcopy "%SettingsDir%\Customization\Software\CVR\profiles.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SettingsDir%\Customization\Software\CVR\verge.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
+robocopy "%SettingsDir%\Software\CVR\profiles" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles" /MIR /ZB /R:3 /W:5
+xcopy "%SettingsDir%\Software\CVR\profiles.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
+xcopy "%SettingsDir%\Software\CVR\verge.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
 
 :gitextension
 xcopy "%SettingsDir%\Customization\Software\GitExtensions\.gitconfig" "C:\Users\%USERNAME%\" /y
