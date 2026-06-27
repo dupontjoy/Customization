@@ -15,6 +15,7 @@
 // Modified by Alice0775
 //
 // @version       2026/03/01 Bug 2017957 - Add freezeBuiltins option to Cu.Sandbox
+// @version       2026/06/24 add @backgroundmodule support
 // @version       2025/08/30 Fallback to only load mjs with chrome://
 // @version       2025/06/16 Bug 1968479 - Only allow eval (with system principal / in the parent) when an explicit pref is set
 // @version       2025/05/11 fix extended property flag(enumerable)
@@ -306,6 +307,8 @@
                 const sandboxFlag = sandboxMatch === "true";
                 const skipMatch = extractSingleMeta(header, /\/\/ @skip\b(.+)\s*/i);
                 const skipFlag = skipMatch === "true";
+                const backgroundMode = /\/\/ @backgroundmodule\b/i.test(header)
+                    || /\.sys\.mjs$/i.test(aFile.leafName);
                 const url = fph.getURLSpecFromActualFile(aFile);
                 const actor = extractSingleMeta(header, /\/\/ @actor\b(.+)\s*/i);
                 const content = extractSingleMeta(header, /\/\/ @content\b(.+)\s*/i);
@@ -322,6 +325,7 @@
                     async: asyncFlag,
                     sandbox: sandboxFlag,
                     skip: skipFlag,
+                    backgroundMode,
                     exportedModule: exportedModule.trim(),
                     icon,
                     iconURL: icon,
@@ -409,7 +413,7 @@
                     lazy.console.warn(`script "${aFile.leafName}" declared both @actor and @content, using @actor`);
                 }
 
-                s.executionMode = s.isActor ? "custom-actor" : s.isContentScript ? "shared-actor" : "chrome-only";
+                s.executionMode = s.backgroundMode ? "background-module" : s.isActor ? "custom-actor" : s.isContentScript ? "shared-actor" : "chrome-only";
 
                 return s;
 
@@ -581,9 +585,32 @@
                 ? `${script.chromedir}?${this.getLastModifiedTime(script.file)}`
                 : "";
             script.scriptId ||= `${script.dir || "root"}/${script.filename}`;
-            script.executionMode ||= script.isActor ? "custom-actor" : script.isContentScript ? "shared-actor" : "chrome-only";
+            script.backgroundMode ||= /\.sys\.mjs$/i.test(script.filename);
+            script.executionMode ||= script.backgroundMode ? "background-module" : script.isActor ? "custom-actor" : script.isContentScript ? "shared-actor" : "chrome-only";
             script.isContentScript ||= script.executionMode === "shared-actor";
             return script;
+        },
+
+        runBackgroundModule: function (script) {
+            this.ensureScriptMetadata(script);
+            if (script.executionMode !== "background-module" || script.isRunning || script.skip) {
+                return false;
+            }
+            if (!script.moduleURI || !/\.mjs$/i.test(script.filename)) {
+                this.error(`@ ${script.filename}: background module must be an .mjs file`);
+                return false;
+            }
+            try {
+                ChromeUtils.importESModule(script.moduleURI);
+                script.isRunning = true;
+                if (this.INFO) {
+                    this.debug(`[background] imported ${script.filename}`);
+                }
+                return true;
+            } catch (ex) {
+                this.error(`@ ${script.filename}: background module couldn't be imported because:`, ex);
+                return false;
+            }
         },
 
         ensureSharedActorRegistration: function () {
@@ -884,6 +911,10 @@
                         || !!this.dirDisable[script.dir]
                         || !!this.scriptDisable[script.filename])) continue;
                 if (script.skip) continue;
+                if (script.executionMode === "background-module") {
+                    this.runBackgroundModule(script);
+                    continue;
+                }
                 if (script.executionMode === "custom-actor") {
                     this.registerScriptActor(script);
                 }

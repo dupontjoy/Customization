@@ -13,7 +13,7 @@ export class UcSharedActorParent extends JSWindowActorParent {
             case 'UcSharedActor:ChromeBridge': {
                 const windowGlobal = this.manager?.browsingContext?.currentWindowGlobal;
                 const browser = windowGlobal?.rootFrameLoader?.ownerElement;
-                const win = browser?.ownerGlobal;
+                const win = browser?.documentGlobal || browser?.ownerGlobal;
                 if (!win) {
                     return false;
                 }

@@ -12,40 +12,40 @@ const UC = {
 }
 
 try {
+    const getNodeWindow = node =>
+        node?.documentGlobal || node?.relevantGlobal || node?.ownerDocument?.defaultView || null;
+
+    const getBrowserChromeWindow = win =>
+        win?.browsingContext?.embedderWindowGlobal?.browsingContext?.window ||
+        win?.windowRoot?.relevantGlobal ||
+        win;
+
     function UserChrome_js () {
         Services.obs.addObserver(this, 'domwindowopened', false);
     };
 
     UserChrome_js.prototype = {
         observe: function (aSubject, aTopic, aData) {
-            // aSubject.addEventListener('load', this, true);
-            if (aSubject.document.isUncommittedInitialDocument) {
-                //Bug 543435
-                const parent = aSubject.parent;
-                aSubject.addEventListener("DOMContentLoaded", () => {
-                    //Library windowとかSidebrではDOMContentLoadedだと早すぎる
-                    parent.addEventListener("load", this, { once: true, capture: true })
-                }, { once: true })
-            } else {
-                //Library windowとかSidebrではDOMContentLoadedだと早すぎる
-                aSubject.addEventListener('load', this, { once: true, capture: true });
-            }
+            aSubject.addEventListener('load', this, true);
         },
 
-        messageListener: function (msg) {
-            const browser = msg.target;
-            const { addonId } = browser._contentPrincipal;
+        messageListener: {
+            receiveMessage: function (msg) {
+                const browser = msg.target;
+                const { addonId } = browser._contentPrincipal;
 
-            browser.messageManager.removeMessageListener('Extension:ExtensionViewLoaded', this.messageListener);
+                browser.messageManager.removeMessageListener('Extension:BackgroundViewLoaded', this);
 
-            if (browser.ownerGlobal.location.href == 'chrome://extensions/content/dummy.xhtml') {
-                UC.webExts.set(addonId, browser);
-                Services.obs.notifyObservers(null, 'UCJS:WebExtLoaded', addonId);
-            } else {
-                let win = browser.ownerGlobal.windowRoot.ownerGlobal;
-                UC.sidebar.get(addonId)?.set(win, browser) || UC.sidebar.set(addonId, new Map([[win, browser]]));
-                Services.obs.notifyObservers(win, 'UCJS:SidebarLoaded', addonId);
-            }
+                const browserWin = getNodeWindow(browser);
+                if (browserWin.location.href == 'chrome://extensions/content/dummy.xhtml') {
+                    UC.webExts.set(addonId, browser);
+                    Services.obs.notifyObservers(null, 'UCJS:WebExtLoaded', addonId);
+                } else {
+                    let win = getBrowserChromeWindow(browserWin);
+                    UC.sidebar.get(addonId)?.set(win, browser) || UC.sidebar.set(addonId, new Map([[win, browser]]));
+                    Services.obs.notifyObservers(win, 'UCJS:SidebarLoaded', addonId);
+                }
+            },
         },
 
         handleEvent: function (aEvent) {
@@ -61,7 +61,7 @@ try {
                     this.sharedWindowOpened = true;
 
                     Management.on('extension-browser-inserted', function (topic, browser) {
-                        browser.messageManager.addMessageListener('Extension:ExtensionViewLoaded', this.messageListener.bind(this));
+                        browser.messageManager.addMessageListener('Extension:BackgroundViewLoaded', this.messageListener);
                     }.bind(this));
                     return;
                 }
@@ -106,9 +106,4 @@ try {
 
 try {
     pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
-    //Don't enable this! Very dangerous if set to "true".
-    lockPref("security.allow_eval_with_system_principal", false);
-    //Don't enable this! Very dangerous if set to "true".
-    //lockPref("security.allow_unsafe_dangerous_privileged_evil_eval", false);
-
 } catch (e) { }

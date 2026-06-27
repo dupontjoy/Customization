@@ -115,7 +115,8 @@ export const _uc = {
                 if (typeof callback === "function") {
                     const allEvents = !!desc.allEvents;
                     toolbaritem.addEventListener("click", (ev) => {
-                        allEvents || ev.button === 0 && SharedGlobal.widgetCallbacks.get(ev.target.id)(ev, ev.target.ownerGlobal)
+                        const targetWin = ev.target.documentGlobal || ev.target.ownerGlobal || ev.target.ownerDocument?.defaultView;
+                        allEvents || ev.button === 0 && SharedGlobal.widgetCallbacks.get(ev.target.id)(ev, targetWin)
                     })
                 }
                 for (let attr in desc) {

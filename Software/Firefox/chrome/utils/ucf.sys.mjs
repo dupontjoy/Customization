@@ -9,14 +9,13 @@ function initUloadMap (win) {
     handler.unloadMap = new Map();
     win.addEventListener("unload", () => {
         for (const [key, value] of handler.unloadMap) {
-            for (const { func, context } of value) {
-                try {
-                    func.apply(context);
-                } catch (e) {
-                    Cu.reportError(e);
-                }
+            try {
+                value.func?.call(value.context, key);
+            } catch (e) {
+                Cu.reportError(e);
             }
         }
+        handler.unloadMap.clear();
     }, { once: true })
 }
 

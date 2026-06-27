@@ -25,6 +25,7 @@ userChromeJS.downloadPlus.enableSaveAs 下载对话框启用另存为
 userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 */
+// @note            20260622 Places 下载页增加删除失败/失效下载记录按钮，并跟随下载视图工具栏显示
 // @note            20260528 适配新版 grabby_flashgot.exe 命令行：无参数输出 JSON 下载器列表，下载任务从 stdin 读取 JSON
 // @note            20260528 修复首次打开多个窗口时可能并发调用 FlashGot.exe 扫描下载器列表的问题
 // @note            20260409 alerts 支持右下角自绘非全局 toast 提示，Aria2 RPC 添加成功与相关设置提示改为仅当前窗口显示
@@ -180,6 +181,10 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             "aria2 rpc request failed": "提交任务到 Aria2 RPC 失败",
             "aria2 rpc request success": "已添加任务到 Aria2 RPC",
             "aria2 rpc request success detail": "已添加任务到 Aria2 RPC：%s",
+            "remove failed downloads": "删除已失败",
+            "remove failed downloads tooltip": "删除失败的下载记录",
+            "remove unavailable downloads": "删除已失效",
+            "remove unavailable downloads tooltip": "删除文件已被移动或移除的下载记录",
             "log aria2 rpc request": "aria2 RPC 请求",
             "log aria2 rpc response": "aria2 RPC 响应",
             "log aria2 rpc startup retry": "aria2 RPC 不可用，尝试启动进程并重试",
@@ -510,12 +515,217 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 case 'about:downloads':
                 case 'chrome://browser/content/places/places.xhtml':
                     windowUtils.loadSheetUsingURIString("data:text/css;charset=utf-8," + encodeURIComponent(processCSS(placesCSS)), windowUtils.AUTHOR_SHEET);
+                    await this.initPlacesDownloadButtons();
                     break;
                 case 'chrome://mozapps/content/downloads/unknownContentType.xhtml':
                     windowUtils.loadSheetUsingURIString("data:text/css;charset=utf-8," + encodeURIComponent(processCSS(unknownContentCSS)), windowUtils.AGENT_SHEET);
                     await this.initDownloadPopup();
-                    break;
+                break;
             }
+        },
+        initPlacesDownloadButtons: async function () {
+            if (location.href.replace(/\?.*$/, '') !== 'chrome://browser/content/places/places.xhtml') {
+                return;
+            }
+
+            const installButton = () => {
+                const clearDownloadsButton = document.getElementById("clearDownloadsButton");
+                if (!clearDownloadsButton) {
+                    return false;
+                }
+
+                let removeFailedButton = document.getElementById("downloadPlusRemoveFailedDownloadsButton");
+                if (!removeFailedButton) {
+                    removeFailedButton = createEl(document, "toolbarbutton", {
+                        id: "downloadPlusRemoveFailedDownloadsButton",
+                        label: LANG.format("remove failed downloads"),
+                        tooltiptext: LANG.format("remove failed downloads tooltip"),
+                        class: "tabbable",
+                        oncommand: event => {
+                            event.preventDefault();
+                            this.removeFailedDownloads();
+                        }
+                    });
+                    clearDownloadsButton.parentNode.insertBefore(removeFailedButton, clearDownloadsButton.nextSibling);
+                }
+
+                if (!document.getElementById("downloadPlusRemoveUnavailableDownloadsButton")) {
+                    const removeUnavailableButton = createEl(document, "toolbarbutton", {
+                        id: "downloadPlusRemoveUnavailableDownloadsButton",
+                        label: LANG.format("remove unavailable downloads"),
+                        tooltiptext: LANG.format("remove unavailable downloads tooltip"),
+                        class: "tabbable",
+                        oncommand: event => {
+                            event.preventDefault();
+                            this.removeUnavailableDownloads();
+                        }
+                    });
+                    clearDownloadsButton.parentNode.insertBefore(removeUnavailableButton, removeFailedButton.nextSibling);
+                }
+                this.waitForPlacesToolbarVisibilityHook();
+
+                const updateButton = () => this.updateDownloadCleanupButtons();
+                const downloadsListBox = document.getElementById("downloadsListBox");
+                downloadsListBox?.addEventListener("select", updateButton);
+                if (downloadsListBox) {
+                    const observer = new MutationObserver(updateButton);
+                    observer.observe(downloadsListBox, {
+                        childList: true,
+                        subtree: true,
+                        attributes: true,
+                        attributeFilter: ["state"]
+                    });
+                    window.addEventListener("unload", () => observer.disconnect(), { once: true });
+                }
+                setTimeout(updateButton, 0);
+                return true;
+            };
+
+            if (installButton()) {
+                return;
+            }
+
+            let attempts = 0;
+            let intervalId = 0;
+            let observer = null;
+            const stopWaiting = () => {
+                if (intervalId) {
+                    clearInterval(intervalId);
+                    intervalId = 0;
+                }
+                observer?.disconnect();
+                observer = null;
+            };
+            const tryInstall = () => {
+                attempts++;
+                if (installButton() || attempts >= 100) {
+                    stopWaiting();
+                }
+            };
+
+            observer = new MutationObserver(tryInstall);
+            observer.observe(document, { childList: true, subtree: true });
+            intervalId = setInterval(tryInstall, 100);
+            window.addEventListener("unload", stopWaiting, { once: true });
+        },
+        waitForPlacesToolbarVisibilityHook: function () {
+            if (this.hookPlacesToolbarButtonVisibility()) {
+                return;
+            }
+
+            let attempts = 0;
+            const intervalId = setInterval(() => {
+                attempts++;
+                if (this.hookPlacesToolbarButtonVisibility() || attempts >= 100) {
+                    clearInterval(intervalId);
+                }
+            }, 100);
+            window.addEventListener("unload", () => clearInterval(intervalId), { once: true });
+        },
+        hookPlacesToolbarButtonVisibility: function () {
+            const contentArea = window.ContentArea || globalThis.ContentArea;
+            if (!contentArea?._setupView || contentArea._downloadPlusToolbarHooked) {
+                return !!contentArea?._downloadPlusToolbarHooked;
+            }
+
+            const originalSetupView = contentArea._setupView;
+            const downloadPlus = this;
+            contentArea._setupView = function (...args) {
+                const result = originalSetupView.apply(this, args);
+                downloadPlus.syncRemoveFailedDownloadsButtonVisibility();
+                return result;
+            };
+            contentArea._downloadPlusToolbarHooked = true;
+            this.syncRemoveFailedDownloadsButtonVisibility();
+            return true;
+        },
+        syncRemoveFailedDownloadsButtonVisibility: function () {
+            const buttons = [
+                document.getElementById("downloadPlusRemoveFailedDownloadsButton"),
+                document.getElementById("downloadPlusRemoveUnavailableDownloadsButton")
+            ];
+            const clearDownloadsButton = document.getElementById("clearDownloadsButton");
+            if (!clearDownloadsButton) {
+                return;
+            }
+            for (const button of buttons) {
+                if (button) {
+                    button.hidden = clearDownloadsButton.hidden;
+                }
+            }
+        },
+        updateRemoveFailedDownloadsButton: function () {
+            this.updateDownloadCleanupButtons();
+        },
+        updateDownloadCleanupButtons: function () {
+            const failedButton = document.getElementById("downloadPlusRemoveFailedDownloadsButton");
+            const unavailableButton = document.getElementById("downloadPlusRemoveUnavailableDownloadsButton");
+            const elements = Array.from(document.getElementById("downloadsListBox")?.children || []);
+            if (failedButton) {
+                failedButton.disabled = !elements.some(element => this.isFailedDownloadElement(element));
+            }
+            if (unavailableButton) {
+                unavailableButton.disabled = !elements.some(element => this.isUnavailableDownloadCandidateElement(element));
+            }
+        },
+        removeFailedDownloads: function () {
+            const downloadsListBox = document.getElementById("downloadsListBox");
+            if (!downloadsListBox) {
+                return;
+            }
+
+            const failedElements = Array.from(downloadsListBox.children)
+                .filter(element => this.isFailedDownloadElement(element));
+            for (const element of failedElements) {
+                const shell = element._shell;
+                try {
+                    if (shell?.isCommandEnabled?.("cmd_delete")) {
+                        shell.doCommand("cmd_delete");
+                    }
+                } catch (ex) {
+                    Cu.reportError(ex);
+                }
+            }
+            setTimeout(() => this.updateDownloadCleanupButtons(), 0);
+        },
+        removeUnavailableDownloads: async function () {
+            const downloadsListBox = document.getElementById("downloadsListBox");
+            if (!downloadsListBox) {
+                return;
+            }
+
+            const unavailableButton = document.getElementById("downloadPlusRemoveUnavailableDownloadsButton");
+            if (unavailableButton) {
+                unavailableButton.disabled = true;
+            }
+
+            const elements = Array.from(downloadsListBox.children)
+                .filter(element => this.isUnavailableDownloadCandidateElement(element));
+            for (const element of elements) {
+                const shell = element._shell;
+                const download = shell?.download;
+                try {
+                    await download?.refresh?.();
+                    if (this.isUnavailableDownloadElement(element) && shell?.isCommandEnabled?.("cmd_delete")) {
+                        shell.doCommand("cmd_delete");
+                    }
+                } catch (ex) {
+                    Cu.reportError(ex);
+                }
+            }
+            setTimeout(() => this.updateDownloadCleanupButtons(), 0);
+        },
+        isFailedDownloadElement: function (element) {
+            const download = element?._shell?.download;
+            return !!download?.error;
+        },
+        isUnavailableDownloadCandidateElement: function (element) {
+            const download = element?._shell?.download;
+            return !!download?.succeeded && !!download?.target?.path;
+        },
+        isUnavailableDownloadElement: function (element) {
+            const download = element?._shell?.download;
+            return !!download?.succeeded && download?.target?.exists === false;
         },
         initChrome: async function () {
             // Services.prefs.setBoolPref('browser.download.always_ask_before_handling_new_types', true);
@@ -3339,6 +3549,10 @@ menuseparator:not([hidden=true])+#FlashGot-DownloadManagers-Separator,
     display: none !important;
 }
 `, `
+#downloadPlusRemoveFailedDownloadsButton,
+#downloadPlusRemoveUnavailableDownloadsButton {
+    margin-inline-start: 4px;
+}
 #downloadsContextMenu:not([needsgutter]) > .downloadPlus-menuitem > .menu-iconic-left {
     visibility: collapse;
 }

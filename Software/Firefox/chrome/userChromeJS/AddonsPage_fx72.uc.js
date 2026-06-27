@@ -1641,7 +1641,8 @@
             node = doc.createTextNode(attrs);
             attrs = null;
         } else if (tag === "panel-item" && parseInt(APP_VERSION) === 110) {
-            node = new (doc.ownerGlobal.customElements.get("panel-item"));
+            const docWin = doc.documentGlobal || doc.ownerGlobal || doc.defaultView;
+            node = new (docWin.customElements.get("panel-item"));
         } else {
             node = doc.createElement(tag);
         }
