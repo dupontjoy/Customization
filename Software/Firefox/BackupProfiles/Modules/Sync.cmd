@@ -49,6 +49,9 @@ rd /s /q "%BackupDir%\..\..\Software\PixPin\Data"
 :anytxt
 robocopy "C:\ProgramData\Anytxt\config" "%OutputDir%\Customization\Software\Anytxt\config" /MIR /ZB /R:3 /W:5
 
+:Archivarius3000
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\Archivarius 3000\Archivarius3000.cfg" "%OutputDir%\Customization\Software\Archivarius3000\" /y
+
 :cangjie5
 ::复制文件夹時，源文件夹不要带斜杠，目标文件夹带斜杠。末尾写/s /y /i
 ::复制文件時，末尾写/y

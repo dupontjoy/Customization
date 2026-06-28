@@ -17,6 +17,9 @@ set "SettingsDir=E:\My Documents\Nutstore\NutStoreSync"
 :anytxt
 robocopy "%SettingsDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt\config" /MIR /ZB /R:3 /W:5
 
+:Archivarius3000
+xcopy "%SettingsDir%\Customization\Software\Archivarius3000\Archivarius3000.cfg" "C:\Users\%USERNAME%\AppData\Roaming\Archivarius 3000\" /y
+
 :clashverge£¨CVR£©
 robocopy "%SettingsDir%\Software\CVR\profiles" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles" /MIR /ZB /R:3 /W:5
 xcopy "%SettingsDir%\Software\CVR\profiles.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
