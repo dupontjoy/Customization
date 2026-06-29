@@ -38,10 +38,6 @@ robocopy "%SettingsDir%\Customization\Software\LXmusic\LxDatas" "C:\Users\%USERN
 xcopy "%OutputDir%\Customization\Software\MotrixNext\config.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
 xcopy "%OutputDir%\Customization\Software\MotrixNext\system.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
 
-:zlib
-::zlib¿ÉÓÃÓòÃû
-::xcopy "%SettingsDir%\Customization\Software\z-library\config.json" "C:\Users\%USERNAME%\AppData\Roaming\z-library\" /y
-
 :end
 timeout /t 3 /nobreak >nul
 exit

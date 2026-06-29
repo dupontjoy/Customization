@@ -223,10 +223,6 @@ xcopy "%SoftDir%\Microsoft\NewPC-Tools\SoftSettingsRecover.cmd" "%OutputDir%\Cus
 robocopy "%SoftDir%\Microsoft\NewPC-Tools\xyr系统优化\Config" "%OutputDir%\Customization\Software\xyr系统优化\Config" /MIR /ZB /R:3 /W:5
 
 
-:zlib
-::zlib可用域名
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\z-library\config.json" "%OutputDir%\Customization\Software\z-library\" /y
-
 :ztasker
 ::備份ztasker設置
 xcopy "%BackupDir%\..\..\Software\zTasker\User\Config.dat" "%OutputDir%\Customization\Software\zTasker\User\" /y
