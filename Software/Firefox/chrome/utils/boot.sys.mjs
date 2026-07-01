@@ -22,10 +22,45 @@ try {
 
     function UserChrome_js () {
         Services.obs.addObserver(this, 'domwindowopened', false);
+        Services.obs.addObserver(this, 'chrome-document-global-created', false);
     };
 
     UserChrome_js.prototype = {
+        injectWindowGlobals: function (window) {
+            if (!window || window.__ucGlobalsInjected)
+                return;
+
+            initUloadMap(window);
+
+            Cu.exportFunction((key, func, context) => {
+                setUnloadMap(key, func, context);
+            }, window, { defineAs: "setUnloadMap" });
+
+            Cu.exportFunction(() => {
+                return getUnloadMaps();
+            }, window, { defineAs: "getUnloadMaps" });
+
+            ChromeUtils.defineLazyGetter(window, "xPref", () =>
+                ChromeUtils.importESModule("chrome://userchromejs/content/utils/xPref.sys.mjs").xPref
+            );
+
+            window.UC = UC;
+
+            ChromeUtils.defineLazyGetter(window, "_uc", () =>
+                ChromeUtils.importESModule("chrome://userchromejs/content/utils/_uc.sys.mjs")._uc
+            );
+
+            window.__ucGlobalsInjected = true;
+        },
+
         observe: function (aSubject, aTopic, aData) {
+            if (aTopic == 'chrome-document-global-created') {
+                // Some chrome documents execute inline scripts before the window load event.
+                // Inject UC/xPref/_uc here so helper pages like StyloaiX editor can use them immediately.
+                this.injectWindowGlobals(aSubject);
+                return;
+            }
+
             aSubject.addEventListener('load', this, true);
         },
 
@@ -66,25 +101,7 @@ try {
                     return;
                 }
 
-                initUloadMap(window);
-
-                Cu.exportFunction((key, func, context) => {
-                    setUnloadMap(key, func, context);
-                }, window, { defineAs: "setUnloadMap" });
-
-                Cu.exportFunction(() => {
-                    return getUnloadMaps();
-                }, window, { defineAs: "getUnloadMaps" });
-
-                ChromeUtils.defineLazyGetter(window, "xPref", () =>
-                    ChromeUtils.importESModule("chrome://userchromejs/content/utils/xPref.sys.mjs").xPref
-                );
-
-                window.UC = UC;
-
-                ChromeUtils.defineLazyGetter(window, "_uc", () =>
-                    ChromeUtils.importESModule("chrome://userchromejs/content/utils/_uc.sys.mjs")._uc
-                );
+                this.injectWindowGlobals(window);
 
                 if (window._gBrowser) // bug 1443849
                     window.gBrowser = window._gBrowser;

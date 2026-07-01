@@ -337,6 +337,7 @@
                     downloadURL: extractSingleMeta(header, /\/\/ @downloadURL\s+(.+)\s*$/im),
                     optionsURL: extractSingleMeta(header, /\/\/ @optionsURL\s+(.+)\s*$/im),
                     startup: extractSingleMeta(header, /\/\/ @startup\s+(.+)\s*$/im),
+                    shutdown: extractSingleMeta(header, /\/\/ @shutdown\s+(.+)\s*$/im),
                     license: extractSingleMeta(header, /\/\/ @license\s+(.+)\s*$/im),
                     longDescription,
                     fullDescription
@@ -758,6 +759,19 @@
             return false;
         },
 
+        registerScriptShutdown: function (script, win, target) {
+            if (!script.shutdown) {
+                return;
+            }
+            win.addEventListener("unload", () => {
+                try {
+                    Cu.evalInSandbox(`(function(script, win){${script.shutdown}})`, target)(script, win);
+                } catch (ex) {
+                    this.error(script.filename, ex);
+                }
+            }, { once: true });
+        },
+
         //window.userChrome_js.loadOverlay
         shutdown: false,
         overlayWait: 0,
@@ -923,6 +937,7 @@
                     if (script.startup) {
                         Cu.evalInSandbox(`(function(script, win){${script.startup}})`, target)(script, win);
                     }
+                    this.registerScriptShutdown(script, win, target);
                     continue;
                 }
                 if (script.ucjs) { //for UCJS_loader
@@ -932,6 +947,7 @@
                     aScript.src = script.url + "?" + this.getLastModifiedTime(script.file);
                     try {
                         doc.documentElement.appendChild(aScript);
+                        this.registerScriptShutdown(script, win, target);
                     } catch (ex) {
                         this.error(script.filename, ex);
                     }
@@ -969,21 +985,26 @@
                                 if (script.startup) {
                                     Cu.evalInSandbox(`(function(script, win){${script.startup}})`, target)(script, win);
                                 }
+                                this.registerScriptShutdown(script, win, target);
                             } catch (ex) {
                                 this.error(script.filename, ex);
                             }
                         } else {
-                            ChromeUtils.compileScript(script.chromedir + "?" + this.getLastModifiedTime(script.file)).then((r) => {
+                            const asyncScriptURI = script.url + "?" + this.getLastModifiedTime(script.file);
+                            ChromeUtils.compileScript(asyncScriptURI).then((r) => {
                                 if (r) {
                                     r.executeInGlobal(/*global*/ script.onlyonce ? { window: targetWin } : targetWin, { reportExceptions: true });
                                     script.isRunning = true;
+                                    this.registerScriptShutdown(script, win, target);
                                 }
                             }).catch((ex) => {
                                 this.error(`@ ${script.filename}: script couldn't be compiled because:`, ex);
                             })
                         }
                     } else {
-                        this.runModuleScript(script, win, targetWin);
+                        if (this.runModuleScript(script, win, targetWin)) {
+                            this.registerScriptShutdown(script, win, target);
+                        }
                     }
                 }
             }

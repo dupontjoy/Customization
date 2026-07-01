@@ -81,12 +81,12 @@
               "key": "6bfb7bf0"
             },
             {
-              "pattern": "/趁活动.*买|捡漏.*元|仅限|先到先得|只有.*单|抢完涨|优惠|专属(祝福|粉丝|密令)|活动时间有限|小店入口/",
+              "pattern": "/趁活动.*买|捡漏.*元|仅限|先到先得|只有.*单|抢完涨|优惠|专属(祝福|粉丝|密令)|活动时间有限|小店入口|专利/",
               "enabled": true,
               "key": "d9231c9e"
             },
             {
-              "pattern": "/年度报告|年度推荐|分享图片|欢迎点击/",
+              "pattern": "/年度推荐|分享图片|欢迎点击/",
               "enabled": true,
               "key": "cdc6b10e"
             },
@@ -2659,7 +2659,7 @@
     "autoUpdate": {
       "enabled": true,
       "options": {
-        "lastUpdateCheck": 1782306957953,
+        "lastUpdateCheck": 1782826698310,
         "lastInstalledVersion": "2.10.10",
         "localPortOverride": "",
         "minimumDuration": 86400000,
@@ -2667,25 +2667,25 @@
           "components": {
             "feedsFilter": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/filter.js",
-              "lastUpdateCheck": 1782306953804,
+              "lastUpdateCheck": 1782826638944,
               "installTime": 1673491591771,
               "alwaysUpdate": false
             },
             "foldComments": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/fold-comments.js",
-              "lastUpdateCheck": 1782306954252,
+              "lastUpdateCheck": 1782826649064,
               "installTime": 1673491600384,
               "alwaysUpdate": false
             },
             "fullFeedsTitle": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/full-title.js",
-              "lastUpdateCheck": 1782306954381,
+              "lastUpdateCheck": 1782826642500,
               "installTime": 1673491603198,
               "alwaysUpdate": false
             },
             "unfoldFeeds": {
               "url": "https://raw.githubusercontent.com/the1812/Bilibili-Evolved/master/registry/dist/components/feeds/unfold.js",
-              "lastUpdateCheck": 1782306953921,
+              "lastUpdateCheck": 1782826656292,
               "installTime": 1673491607725,
               "alwaysUpdate": false
             },
@@ -2969,13 +2969,13 @@
           "plugins": {
             "feedsFilter.pluginBlocks.chargeFeeds": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/plugins/feeds/filter/hide-charge-feeds.js",
-              "lastUpdateCheck": 1782306957901,
+              "lastUpdateCheck": 1782826696248,
               "installTime": 1706259968009,
               "alwaysUpdate": false
             },
             "feedsFilter.pluginBlocks.goods": {
               "url": "https://cdn.jsdelivr.net/gh/the1812/Bilibili-Evolved@master/registry/dist/plugins/feeds/filter/hide-goods.js",
-              "lastUpdateCheck": 1782306957946,
+              "lastUpdateCheck": 1782826698306,
               "installTime": 1718852887878,
               "alwaysUpdate": false
             }
@@ -2988,7 +2988,7 @@
     "notifyNewVersion": {
       "enabled": true,
       "options": {
-        "lastUpdateCheck": 1782306963016,
+        "lastUpdateCheck": 1782826684922,
         "minimumDuration": 86400000
       }
     },
