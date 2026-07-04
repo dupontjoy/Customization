@@ -82,6 +82,14 @@
   </item>
   <item>
     <key>
+      <string>Appearance.ShowRevisionGridTooltips</string>
+    </key>
+    <value>
+      <string>True</string>
+    </value>
+  </item>
+  <item>
+    <key>
       <string>Appearance.UseGitColoring</string>
     </key>
     <value>
@@ -502,6 +510,14 @@
     </key>
     <value>
       <string>bash</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Detailed.ConsoleEmulatorName</string>
+    </key>
+    <value>
+      <string>conemu</string>
     </value>
   </item>
   <item>
@@ -1045,7 +1061,7 @@
       <string>FormBrowse.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>418</string>
+      <string>394</string>
     </value>
   </item>
   <item>
@@ -1381,7 +1397,7 @@
       <string>FormBrowse.RevisionsSplitContainer_Distance</string>
     </key>
     <value>
-      <string>385</string>
+      <string>409</string>
     </value>
   </item>
   <item>
@@ -1581,7 +1597,7 @@
       <string>LastUpdateCheck</string>
     </key>
     <value>
-      <string>2026/6/25</string>
+      <string>2026/7/03</string>
     </value>
   </item>
   <item>
@@ -2061,6 +2077,7 @@
       &lt;HotkeyCommand CommandCode="3" Name="ToggleOrderRevisionsByDate" KeyData="None" /&gt;
       &lt;HotkeyCommand CommandCode="0" Name="ToggleRevisionGraph" KeyData="None" /&gt;
       &lt;HotkeyCommand CommandCode="6" Name="ToggleShowGitNotes" KeyData="None" /&gt;
+      &lt;HotkeyCommand CommandCode="47" Name="ToggleShowGitNotesColumn" KeyData="None" /&gt;
       &lt;HotkeyCommand CommandCode="8" Name="ToggleHideMergeCommits" KeyData="LButton MButton XButton1 Back Tab Clear Return Enter A D E H I L M Shift Control" /&gt;
       &lt;HotkeyCommand CommandCode="4" Name="ToggleShowRelativeDate" KeyData="None" /&gt;
       &lt;HotkeyCommand CommandCode="26" Name="ToggleShowTags" KeyData="MButton ShiftKey Capital CapsLock D P T Control Alt" /&gt;
@@ -2344,7 +2361,7 @@
       <string>uitheme_v2</string>
     </key>
     <value>
-      <string />
+      <string>light</string>
     </value>
   </item>
   <item>
@@ -2368,7 +2385,7 @@
       <string>UseConsoleEmulatorForCommands</string>
     </key>
     <value>
-      <string>true</string>
+      <string>True</string>
     </value>
   </item>
   <item>

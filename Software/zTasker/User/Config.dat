@@ -60,12 +60,16 @@ chkLockNoHK=0
 cmbLockNoHK=0
 chkTestRunUpdLastTime=0
 chkTaskNextRunWeek=1
-SelfExitTime=2026-07-03 00:30:28
+SelfExitTime=2026-07-04 07:16:56
 chkSkinCustomFrame=0
 chkTaskEnterExec=0
 SysLockTime=2025-11-21 15:38:12
 SysUnLockTime=2025-11-21 15:38:19
 chkRemTaskEditSize=1
+edtOCRAlive=30
+edtBaiduAppID=
+edtBaiduAppKey=
+edtCaiyunToken=3975l6lr5pcbvidl6jl2
 [Hotkey]
 chkHotkey=0
 new_remind=Ctrl+Shift+R
@@ -127,6 +131,23 @@ RecentTask=ttKill|ttOpenPage|ttActionRec
 ColorBK=-12500671
 ColorFont=-1
 ColorAction=0
+[Toolbar]
+btnnew=1
+btndel=1
+btndup=1
+btnprop=1
+btnUp=1
+btnDown=1
+btnImport=1
+btnExport=1
+btnRun=1
+btnTerminate=1
+btnLog=1
+btnSet=1
+btnFilter=1
+btnCommu=1
+btnDonate=1
+btnMenu=1
 [Search]
 Bing=https://www.bing.com/search?q=%s
 Yahoo=https://search.yahoo.com/search?p=%s

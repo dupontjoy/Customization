@@ -74,6 +74,11 @@ xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%OutputDir%\Customizat
 robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles" "%OutputDir%\Software\CVR\profiles" /MIR /ZB /R:3 /W:5
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles.yaml" "%OutputDir%\Software\CVR\" /y
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\verge.yaml" "%OutputDir%\Software\CVR\" /y
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\cache.db" "%OutputDir%\Software\CVR\" /y
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\clash-verge.yaml" "%OutputDir%\Software\CVR\" /y
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\clash-verge-check.yaml" "%OutputDir%\Software\CVR\" /y
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\config.yaml" "%OutputDir%\Software\CVR\" /y
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\dns_config.yaml" "%OutputDir%\Software\CVR\" /y
 
 :fab
 xcopy "%BackupDir%\..\..\Software\fab\Firewall App Blocker@Cing.ini" "%OutputDir%\Customization\Software\fab\" /y
@@ -144,9 +149,7 @@ xcopy "%BackupDir%\..\..\..\LocalSend\updateLocalSend.cmd" "%OutputDir%\Customiz
 
 :LXmusicDesktop
 xcopy "%BackupDir%\..\..\..\lx-music-desktop\updateLXmusicDesktop.cmd" "%OutputDir%\Customization\Software\LXmusic\" /y
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas\config_v2.json" "%OutputDir%\Customization\Software\LXmusic\LxDatas\" /y
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas\lx.data.db" "%OutputDir%\Customization\Software\LXmusic\LxDatas\" /y
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas\user_api.json" "%OutputDir%\Customization\Software\LXmusic\LxDatas\" /y
+robocopy "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" "%OutputDir%\Customization\Software\LXmusic\LxDatas" /MIR /ZB /R:3 /W:5
 
 :MAA
 xcopy "%BackupDir%\..\..\..\MAA\RunMAA.cmd" "%OutputDir%\Customization\Software\MAA\" /y
