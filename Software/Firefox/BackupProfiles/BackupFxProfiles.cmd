@@ -8,7 +8,6 @@
 Title 備份批處理整合版
 ::界面大小，Cols为宽，Lines为高
 COLOR 0a
-MODE con: COLS=90 LINES=25
 cls
 
 cd /d %~dp0

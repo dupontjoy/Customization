@@ -7,11 +7,25 @@ setlocal enabledelayedexpansion
 :: 打包操作
 :Profiles-zip
 
-:: 日期时间处理（修复08:00格式问题）
-set "YY=%date:~0,4%"
+:: 从 %date% 提取日期（根据您的格式调整）
+:: 假设格式为：2026/07/04 或 2026-07-04
+for /f "tokens=1-3 delims=/- " %%a in ("%date%") do (
+    set "YY=%%a"
+    set "MON=%%b"
+    set "DD=%%c"
+)
+
+:: 如果日期格式是 "周六 2026/07/04"，使用这个：
+for /f "tokens=2-4 delims=/- " %%a in ("%date%") do (
+    set "YY=%%a"
+    set "MON=%%b"
+    set "DD=%%c"
+)
+
+:: 计算黄帝历年份
 set /a "YY_HD=YY + 2697"
-set "MON=%date:~5,2%"
-set "DD=%date:~8,2%"
+
+:: 处理时间
 set "t_hh=%time:~0,2%"
 set /a "t_hh=1!t_hh! - 100" 2>nul
 if "!t_hh!"=="-99" set "t_hh=00"
@@ -20,7 +34,7 @@ set "hh=!t_hh!"
 set "mm=%time:~3,2%"
 set "ss=%time:~6,2%"
 
-:: 生成压缩包文件名（强制无空格）
+:: 生成压缩包文件名
 set "Name=FxProfiles_(%YY_HD%)%YY%.%MON%%DD%.%hh%%mm%_%ver%.7z"
 
 :: 压缩操作（路径严格引号包裹）

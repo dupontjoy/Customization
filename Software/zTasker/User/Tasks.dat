@@ -1080,15 +1080,15 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-07-03 08:19:12</EndDateTime>
-		<NextRunDateTime>2126-06-10 07:18:02</NextRunDateTime>
+		<NextRunDateTime>2036-07-01 14:20:36</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-07-04 07:18:02</LastRunTime>
+		<LastRunTime>2026-07-04 14:18:07</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
 			<CountDownHour>0</CountDownHour>
 			<CountDownMin>0</CountDownMin>
-			<CountDownSec>15</CountDownSec>
+			<CountDownSec>10</CountDownSec>
 			<DTOnce>2024-12-26 20:34:03</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
 			<Name>开机运行</Name>
@@ -1437,11 +1437,11 @@ env2=value2</edtAppEnv>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
-		<StartDateTime>2024-12-26 09:50:00</StartDateTime>
-		<EndDateTime>2026-06-22 02:10:08</EndDateTime>
-		<NextRunDateTime>2026-07-04 09:50:00</NextRunDateTime>
-		<NextRunTime>2026-07-04 09:50:00</NextRunTime>
-		<LastRunTime>2026-06-27 09:50:00</LastRunTime>
+		<StartDateTime>2024-12-26 10:00:00</StartDateTime>
+		<EndDateTime>2026-07-04 04:20:16</EndDateTime>
+		<NextRunDateTime>2026-07-11 10:00:00</NextRunDateTime>
+		<NextRunTime>2026-07-11 10:00:00</NextRunTime>
+		<LastRunTime>2026-07-04 09:50:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2335,11 +2335,11 @@ env2=value2</edtAppEnv>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
-		<StartDateTime>2025-05-28 09:55:00</StartDateTime>
-		<EndDateTime>2026-05-30 22:19:44</EndDateTime>
-		<NextRunDateTime>2026-07-04 09:55:00</NextRunDateTime>
-		<NextRunTime>2026-07-04 09:55:00</NextRunTime>
-		<LastRunTime>2026-06-27 09:55:00</LastRunTime>
+		<StartDateTime>2025-05-28 11:00:00</StartDateTime>
+		<EndDateTime>2026-07-05 20:39:28</EndDateTime>
+		<NextRunDateTime>2026-07-11 11:00:00</NextRunDateTime>
+		<NextRunTime>2026-07-11 11:00:00</NextRunTime>
+		<LastRunTime>2026-07-04 09:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
