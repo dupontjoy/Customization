@@ -1080,15 +1080,15 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-07-03 08:19:12</EndDateTime>
-		<NextRunDateTime>2036-07-01 14:20:36</NextRunDateTime>
+		<NextRunDateTime>2036-07-01 20:40:52</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-07-04 14:18:07</LastRunTime>
+		<LastRunTime>2026-07-04 20:34:42</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
 			<CountDownHour>0</CountDownHour>
 			<CountDownMin>0</CountDownMin>
-			<CountDownSec>10</CountDownSec>
+			<CountDownSec>5</CountDownSec>
 			<DTOnce>2024-12-26 20:34:03</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
 			<Name>开机运行</Name>
