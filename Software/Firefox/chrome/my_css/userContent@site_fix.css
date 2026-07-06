@@ -60,11 +60,13 @@
 }
 
 @-moz-document regexp("https://.*(xwnewtv|moontvp).*.(dev|app|shop|xyz)\/play.*"),
-               regexp("https://.*(xw|tvp).*.(dev|app|shop|xyz)\/play.*") {
+               regexp("https://.*(xw|tvp).*.(dev|app|shop|xyz)\/play.*"),
+               regexp("http://localhost:2000\/play.*"),
+               regexp("http://127.0.0.1:2000\/play.*") {
 
 /*播放区 上移和缩小*/
  div.space-y-2:nth-child(2) {
-
+    margin-top: calc(-1 * (6.5vh + 1%)) !important;/*向上移*/
     transform: scale(0.9) !important;
  }
  
@@ -116,7 +118,9 @@ div.top-3,.justify-end {
 }
 
 @-moz-document regexp("https://.*(dcmoontv).*.(dev|app|shop|xyz)\/play.*"),
-               regexp("https://.*(dc).*.(dev|app|shop|xyz)\/play.*") {
+               regexp("https://.*(dc).*.(dev|app|shop|xyz)\/play.*"),
+               regexp("http://localhost:3000\/play.*"),
+               regexp("http://127.0.0.1:3000\/play.*"){
  /*顶部栏 缩小*/
 .hidden {
     margin-top: calc(-1 * (2vh + 0%)) !important;/*向上移*/    
@@ -176,4 +180,31 @@ div.top-3,.justify-end {
     display: none !important;
  }
 
+}
+
+@-moz-document regexp("https://live.bilibili.com/.*"),
+               regexp("https://.*(dcmoontv).*.(dev|app|shop|xyz)\/.*"),
+               regexp("https://.*(dc).*.(dev|app|shop|xyz)\/.*") {
+/* 彻底禁用所有 CSS 动画和过渡，有副作用，只對特定网站启用 */
+*,
+*::before,
+*::after {
+    animation-delay: 0ms !important;
+    animation-direction: normal !important;
+    animation-duration: 0ms !important;
+    animation-fill-mode: none !important;
+    animation-iteration-count: 1 !important;
+    animation-name: none !important;
+    animation-play-state: running !important;
+    animation-timing-function: linear !important;
+
+    transition-delay: 0ms !important;
+    transition-duration: 0ms !important;
+    transition-property: none !important;
+    transition-timing-function: linear !important;
+
+    /* 可选：移除模糊等视觉效果以进一步降负载 */
+    filter: none !important;
+    backdrop-filter: none !important;
+}
 }

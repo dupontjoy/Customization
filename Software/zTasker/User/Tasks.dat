@@ -1079,16 +1079,16 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2026-07-03 08:19:12</EndDateTime>
-		<NextRunDateTime>2036-07-01 20:40:52</NextRunDateTime>
+		<EndDateTime>2026-07-05 16:38:24</EndDateTime>
+		<NextRunDateTime>2126-06-12 11:21:56</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-07-04 20:34:42</LastRunTime>
+		<LastRunTime>2026-07-06 11:21:56</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
 			<CountDownHour>0</CountDownHour>
 			<CountDownMin>0</CountDownMin>
-			<CountDownSec>5</CountDownSec>
+			<CountDownSec>10</CountDownSec>
 			<DTOnce>2024-12-26 20:34:03</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
 			<Name>开机运行</Name>
@@ -2553,9 +2553,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2026-01-19 22:30:00</StartDateTime>
 		<EndDateTime>2026-06-12 22:43:12</EndDateTime>
-		<NextRunDateTime>2026-07-04 22:30:00</NextRunDateTime>
-		<NextRunTime>2026-07-04 22:30:00</NextRunTime>
-		<LastRunTime>2026-07-03 22:30:00</LastRunTime>
+		<NextRunDateTime>2026-07-06 22:30:00</NextRunDateTime>
+		<NextRunTime>2026-07-06 22:30:00</NextRunTime>
+		<LastRunTime>2026-07-05 22:30:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2895,9 +2895,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2026-06-07 22:00:00</StartDateTime>
 		<EndDateTime>2026-06-24 01:03:04</EndDateTime>
-		<NextRunDateTime>2026-07-04 22:00:00</NextRunDateTime>
-		<NextRunTime>2026-07-04 22:00:00</NextRunTime>
-		<LastRunTime>2026-07-03 22:00:00</LastRunTime>
+		<NextRunDateTime>2026-07-06 22:00:00</NextRunDateTime>
+		<NextRunTime>2026-07-06 22:00:00</NextRunTime>
+		<LastRunTime>2026-07-05 22:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>

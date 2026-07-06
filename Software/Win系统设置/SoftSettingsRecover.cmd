@@ -30,6 +30,9 @@ xcopy "%SettingsDir%\Software\CVR\clash-verge-check.yaml" "C:\Users\%USERNAME%\A
 xcopy "%SettingsDir%\Software\CVR\config.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
 xcopy "%SettingsDir%\Software\CVR\dns_config.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
 
+:docker-desktop
+xcopy "%SettingsDir%\Customization\Software\docker-desktop\config.json" "C:\Users\%USERNAME%\.docker\" /y
+
 :gitextension
 xcopy "%SettingsDir%\Customization\Software\GitExtensions\.gitconfig" "C:\Users\%USERNAME%\" /y
 

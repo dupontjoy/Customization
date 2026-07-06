@@ -80,8 +80,8 @@ xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\config.yaml" "%OutputDir%\Software\CVR\" /y
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\dns_config.yaml" "%OutputDir%\Software\CVR\" /y
 
-:fab
-xcopy "%BackupDir%\..\..\Software\fab\Firewall App Blocker@Cing.ini" "%OutputDir%\Customization\Software\fab\" /y
+:docker-desktop
+xcopy "C:\Users\%USERNAME%\.docker\config.json" "%OutputDir%\Customization\Software\docker-desktop\" /y
 
 :firefox
 ::‚ä·ÝŽ×‚€FirefoxÎÄ¼þ
