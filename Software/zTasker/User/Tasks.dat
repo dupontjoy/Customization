@@ -1074,15 +1074,15 @@ env2=value2</edtAppEnv>
 		<ID>859</ID>
 		<TaskType>ttMultiTasker</TaskType>
 		<Stopped>0</Stopped>
-		<HKStopped>1</HKStopped>
+		<HKStopped>0</HKStopped>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-07-05 16:38:24</EndDateTime>
-		<NextRunDateTime>2126-06-12 11:21:56</NextRunDateTime>
+		<NextRunDateTime>2126-06-12 20:55:42</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-07-06 11:21:56</LastRunTime>
+		<LastRunTime>2026-07-06 20:55:42</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1128,7 +1128,7 @@ env2=value2</edtAppEnv>
 			<chkHKMouseEdge2>0</chkHKMouseEdge2>
 			<chkHKMouseEdge3>0</chkHKMouseEdge3>
 			<chkHKMouseEdge4>0</chkHKMouseEdge4>
-			<chkHotkey>0</chkHotkey>
+			<chkHotkey>1</chkHotkey>
 			<chkHotkeyAlt>0</chkHotkeyAlt>
 			<chkHotkeyAltM>0</chkHotkeyAltM>
 			<chkHotkeyCtrl>1</chkHotkeyCtrl>
@@ -2889,15 +2889,15 @@ env2=value2</edtAppEnv>
 		<ID>185-ACDE086STM</ID>
 		<TaskType>ttMultiTasker</TaskType>
 		<Stopped>0</Stopped>
-		<HKStopped>0</HKStopped>
+		<HKStopped>1</HKStopped>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
-		<StartDateTime>2026-06-07 22:00:00</StartDateTime>
-		<EndDateTime>2026-06-24 01:03:04</EndDateTime>
-		<NextRunDateTime>2026-07-06 22:00:00</NextRunDateTime>
-		<NextRunTime>2026-07-06 22:00:00</NextRunTime>
-		<LastRunTime>2026-07-05 22:00:00</LastRunTime>
+		<StartDateTime>2026-06-07 21:00:00</StartDateTime>
+		<EndDateTime>2026-07-06 02:06:08</EndDateTime>
+		<NextRunDateTime>2026-07-07 21:00:00</NextRunDateTime>
+		<NextRunTime>2026-07-07 21:00:00</NextRunTime>
+		<LastRunTime>2026-07-06 22:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2943,7 +2943,7 @@ env2=value2</edtAppEnv>
 			<chkHKMouseEdge2>0</chkHKMouseEdge2>
 			<chkHKMouseEdge3>0</chkHKMouseEdge3>
 			<chkHKMouseEdge4>0</chkHKMouseEdge4>
-			<chkHotkey>1</chkHotkey>
+			<chkHotkey>0</chkHotkey>
 			<chkHotkeyAlt>0</chkHotkeyAlt>
 			<chkHotkeyAltM>0</chkHotkeyAltM>
 			<chkHotkeyCtrl>1</chkHotkeyCtrl>

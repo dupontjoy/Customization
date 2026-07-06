@@ -1,0 +1,5 @@
+/*标签栏修正，防止被Firefox橙色菜单遮挡*/
+#TabsToolbar {
+  transform: translateX(91px) !important;
+  padding-right: 91px !important;  /* 右侧补回同样空间，防止溢出 */
+}

@@ -1,32 +1,20 @@
 {
 	"auths": {},
 	"credsStore": "desktop",
+	"proxies": {
+		"default": {
+			"httpProxy": "http://127.0.0.1:7897",
+			"httpsProxy": "http://127.0.0.1:7897",
+			"noProxy": "localhost,127.0.0.1"
+		}
+	},
 	"currentContext": "desktop-linux",
 	"plugins": {
 		"-x-cli-hints": {
 			"enabled": "true"
-		},
-		"ai": {
-			"hooks": "build,buildx build,run,compose"
-		},
-		"compose": {
-			"hooks": "logs,compose logs,compose attach,compose up"
-		},
-		"debug": {
-			"hooks": "exec"
-		},
-		"scout": {
-			"hooks": "pull,buildx build"
 		}
 	},
 	"features": {
 		"hooks": "true"
-	}, 
-	"proxies": {
-		"default": {
-      "httpProxy": "http://127.0.0.1:7897",
-      "httpsProxy": "http://127.0.0.1:7897",
-      "noProxy": "localhost,127.0.0.1"
-    }
-  }
+	}
 }

@@ -6,8 +6,7 @@
 !-------------------------------------------------------------------------------------!
 
 ! moontv保存播放记录失败提示
-smlunatv.*,dcmoontv.*,sdmoontv.*,xwnewtv.*##.z-\[2000\].right-4.top-4.fixed
-netlify.app,232885.xyz##.z-\[2000\].right-4.top-4.fixed
+127.0.0.1:2000,localhost:3000,netlify.app,232885.xyz##.z-\[2000\].right-4.top-4.fixed
 
 ! Bili
 bilibili.com##.reply-notice
