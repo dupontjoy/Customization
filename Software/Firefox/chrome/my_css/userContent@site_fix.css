@@ -186,7 +186,7 @@ div.top-3,.justify-end {
                regexp("https://.*(dcmoontv).*.(dev|app|shop|xyz)\/.*"),
                regexp("https://.*(dc).*.(dev|app|shop|xyz)\/.*"),
                regexp("http://localhost:3000\/play.*"),
-               regexp("http://127.0.0.1:3000\/play.*"){
+               regexp("http://127.0.0.1:3000\/play.*") {
 /* 彻底禁用所有 CSS 动画和过渡，有副作用，只對特定网站启用 */
 *,
 *::before,
