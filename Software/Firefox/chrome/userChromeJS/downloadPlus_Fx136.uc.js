@@ -25,7 +25,8 @@ userChromeJS.downloadPlus.enableSaveAs 下载对话框启用另存为
 userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 */
-// @note            20260622 Places 下载页增加删除失败/失效下载记录按钮，并跟随下载视图工具栏显示；增加 Neat Download Manager 图标
+// @note            20260710 修复改名后另存为与回车保存可能产生失败记录和完成记录两条下载历史的问题
+// @note            20260622 Places 下载页增加删除失败/失效下载记录按钮，并跟随下载视图工具栏显示
 // @note            20260528 适配新版 grabby_flashgot.exe 命令行：无参数输出 JSON 下载器列表，下载任务从 stdin 读取 JSON
 // @note            20260528 修复首次打开多个窗口时可能并发调用 FlashGot.exe 扫描下载器列表的问题
 // @note            20260409 alerts 支持右下角自绘非全局 toast 提示，Aria2 RPC 添加成功与相关设置提示改为仅当前窗口显示
@@ -55,7 +56,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 // @include         chrome://browser/content/downloads/contentAreaDownloadsView.xhtml
 // @include         chrome://browser/content/downloads/contentAreaDownloadsView.xhtml?SM
 // @include         about:downloads
-// @version         1.0.5
+// @version         1.0.7
 // @compatibility   Firefox 139
 // @icon            data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABd0lEQVQ4T5WTv0/CQBzFXy22Axh+NHXqYJjAYggd2JTYNrK5OTg5GTf/Dv0jHEjUzdnEUHbD1KQaEwYTnAwlhiiIxub0jvCjFCjeeN/3Pn33eschZFWrVZJOpxGPxyFJEjctD2xMCqjZMIzRluu6kGXZ5wkAqIk6kskkNE3zfZAC6JqE+ADUXCqVwPM8E3JcMCAhBO12ewQZKai5UCgglUotbGUIGCZhgOmzhhXreR4sy0K5XB5kpABd18N8vnmtVoNpmmNAPp//F8C27TGgXq+z5judzlKQSCQCVVVZkb6aHxyHCKKIt/MDH+jn2cF334N7coGsVmQzNZdj3sB/sg6zRFeaTETWFHitBj5egNezR2QymfCb2DJBEtkV8OuDEA2bYOOqD1EUZ97awGav1yPvR1HIO38Jvjh8OgTN03tsasXlALdGjOzud7EaA+6uo9iqPEFRlLlvJjCggL3jLtwbIHE5P/qw5Zkl0uF2xYYgCAtfK9X9AmZ+hRG+dHY+AAAAAElFTkSuQmCC
 // @homepageURL     https://github.com/benzBrake/FirefoxCustomize
@@ -1528,8 +1529,14 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             // 回车键触发保存操作
             locationText.addEventListener('keydown', function (event) {
                 if (event.key === 'Enter') {
-                    dialog.onCancel = {};
-                    dialog.dialogElement('unknownContentType').getButton("accept").click();
+                    event.preventDefault();
+                    event.stopPropagation();
+                    event.stopImmediatePropagation();
+
+                    const acceptButton = dialog.dialogElement('unknownContentType').getButton("accept");
+                    if (!acceptButton.disabled) {
+                        acceptButton.click();
+                    }
                 }
             });
 
@@ -1883,7 +1890,6 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 accesskey: 'E',
                 oncommand: function () {
                     self._triggerSaveAsDialog();
-                    close();
                 }
             });
 
@@ -1893,23 +1899,40 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
         /**
          * 触发"另存为"对话框
          */
-        _triggerSaveAsDialog () {
-            const mainWindow = Services.wm.getMostRecentWindow("navigator:browser");
-            const fileName = $("#locationText")?.value?.replace(invalidChars, '_') ||
+        _triggerSaveAsDialog (customFilename) {
+            const fileName = customFilename?.replace(invalidChars, '_') ||
+                $("#locationText")?.value?.replace(invalidChars, '_') ||
                 dialog.mLauncher.suggestedFileName;
 
-            // 感谢 ycls006 / alice0775
-            Cu.evalInSandbox(
-                "(" + mainWindow.internalSave.toString()
-                    .replace("let ", "")
-                    .replace("var fpParams", "fileInfo.fileExt=null;fileInfo.fileName=aDefaultFileName;var fpParams") + ")",
-                mainWindow.DownloadPlus.sb
-            )(
-                dialog.mLauncher.source.asciiSpec, null, null, fileName,
-                null, null, false, null, null, null, null, null, false, null,
-                mainWindow.PrivateBrowsingUtils.isBrowserPrivate(mainWindow.gBrowser.selectedBrowser),
-                Services.scriptSecurityManager.getSystemPrincipal()
+            this._prepareLauncherSaveToDisk();
+            dialog.promptForSaveToFileAsync(
+                dialog.mLauncher,
+                dialog.mContext,
+                fileName,
+                null,
+                true
             );
+            close();
+        },
+
+        /**
+         * 准备复用当前 helper app launcher 保存文件
+         * 避免关闭对话框时原 launcher 被取消并留下失败记录
+         */
+        _prepareLauncherSaveToDisk () {
+            if (dialog.mLauncher.MIMEInfo) {
+                dialog.mLauncher.MIMEInfo.preferredAction = Ci.nsIMIMEInfo.saveToDisk;
+            }
+
+            try {
+                dialog.mLauncher.setWebProgressListener(null);
+            } catch (error) {
+                this._log("setWebProgressListener failed", error);
+            }
+
+            dialog.onCancel = function () {
+                this.onUnload?.();
+            };
         },
 
         /**
@@ -2039,18 +2062,19 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
          * @param {string} customFilename - 自定义文件名
          */
         _handleCustomFilename: async function (customFilename) {
+            const fileName = customFilename.replace(invalidChars, '_');
+
             // 如果使用默认下载目录
             if (isTrue('browser.download.useDownloadDir')) {
-                dialog.onCancel = function () { };
+                this._prepareLauncherSaveToDisk();
                 const downloadDir = await Downloads.getPreferredDownloadsDirectory();
                 const file = await IOUtils.getFile(downloadDir);
-                file.append(customFilename);
+                file.append(fileName);
                 return dialog.mLauncher.saveDestinationAvailable(file);
             }
 
             // 否则显示另存为对话框
-            this._triggerSaveAsDialog();
-            close();
+            this._triggerSaveAsDialog(fileName);
         },
 
         /**
