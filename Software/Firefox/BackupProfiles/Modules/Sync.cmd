@@ -83,6 +83,9 @@ xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge
 :docker-desktop
 xcopy "C:\Users\%USERNAME%\.docker\config.json" "%OutputDir%\Customization\Software\docker-desktop\" /y
 
+:fab
+xcopy "%BackupDir%\..\..\Software\fab\Fab-Rules.ini" "%OutputDir%\Customization\Software\fab\" /y
+
 :firefox
 ::備份幾個Firefox文件
 ::先删除旧备份文件夹
