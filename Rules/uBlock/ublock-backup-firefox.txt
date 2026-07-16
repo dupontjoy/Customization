@@ -1,16 +1,15 @@
 {
-  "timeStamp": 1783398703117,
+  "timeStamp": 1784122528792,
   "version": "1.72.0",
   "userSettings": {
     "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
     "cnameUncloakEnabled": false,
     "contextMenuEnabled": false,
-    "externalLists": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt\nhttps://filters.adtidy.org/extension/ublock/filters/118_optimized.txt\nhttps://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt\nhttps://github.com/uBlockOrigin/uAssets/raw/refs/heads/master/filters/resource-abuse.txt\nhttps://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt\nhttps://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt\nhttps://raw.githubusercontent.com/dupontjoy/Customization/refs/heads/main/Rules/uBlock/ublock-cinglist.txt\nhttps://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt\nhttps://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt",
+    "externalLists": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt\nhttps://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt\nhttps://github.com/uBlockOrigin/uAssets/raw/refs/heads/master/filters/resource-abuse.txt\nhttps://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt\nhttps://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt\nhttps://raw.githubusercontent.com/dupontjoy/Customization/main/Rules/uBlock/ublock-cinglist.txt\nhttps://raw.githubusercontent.com/dupontjoy/Customization/refs/heads/main/Rules/uBlock/ublock-cinglist.txt\nhttps://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt\nhttps://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_mv.txt\nhttps://raw.gitmirror.com/Silentely/AdBlock-Acceleration/main/Xinggsf_rule.txt",
     "firewallPaneMinimized": false,
     "importedLists": [
       "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
-      "https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt",
       "https://github.com/dupontjoy/Customization/raw/refs/heads/main/Rules/uBlock/ublock-cinglist.txt",
       "https://github.com/uBlockOrigin/uAssets/raw/refs/heads/master/filters/resource-abuse.txt",
       "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt",
@@ -40,13 +39,10 @@
     "block-lan",
     "fanboy-cookiemonster",
     "ublock-cookies-easylist",
-    "adguard-cookies",
-    "ublock-cookies-adguard",
     "CHN-0",
     "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/master/rule.txt",
     "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
     "https://raw.githubusercontent.com/dupontjoy/Customization/refs/heads/main/Rules/uBlock/ublock-cinglist.txt",
-    "https://filters.adtidy.org/extension/ublock/filters/118_optimized.txt",
     "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/cryptominers.txt",
     "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
     "https://github.com/uBlockOrigin/uAssets/raw/refs/heads/master/filters/resource-abuse.txt"

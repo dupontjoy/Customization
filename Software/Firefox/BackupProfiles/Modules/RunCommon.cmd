@@ -27,8 +27,8 @@ start "" /D "%listary6_dir%" "%listary6_dir%\UserProfile\Settings\RunListary6.cm
 ::普通啟動，start 会启动一个新窗口并在其中运行命令
 start "" "%cd%\RimeIMEPortable\weasel\WeaselServer.exe"
 start "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
-::start "" "%cd%\WINtp\wInstall.bat"
-start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
+::start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
+start "" "%cd%\BingWallpaperDesktop\BingWallpaperDesktop.exe"
 start "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
 start "" "%cd%\Ditto\Ditto.exe"
 start "" "%cd%\PixPin\PixPin.exe"
