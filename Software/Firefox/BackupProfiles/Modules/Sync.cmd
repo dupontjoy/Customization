@@ -134,18 +134,18 @@ xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\system.json" "%OutputDir%\Cust
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\pro.softsoft.li-calendar\liConfig.json" "%OutputDir%\Customization\Software\licalender\" /y
 
 :listary5
-::備份Listary 5設置
+::備份Listary5設置
 xcopy "%BackupDir%\..\..\Software\Listary5\UserData\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
 xcopy "%BackupDir%\..\..\Software\Listary5\UserData\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
 xcopy "%BackupDir%\..\..\Software\Listary5\UserData\RunListary5.cmd" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
 
 
-:listary6
-::備份Listary 6設置
-xcopy "%BackupDir%\..\..\Software\Listary6\DataFolderRedirection.txt" "%OutputDir%\Customization\Software\Listary\Listary6\" /y
-xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\" /y
-xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\" /y
-xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\RunListary6.cmd" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\" /y
+:listary7
+::備份Listary7設置
+xcopy "%BackupDir%\..\..\Software\Listary7\DataFolderRedirection.txt" "%OutputDir%\Customization\Software\Listary\Listary7\" /y
+xcopy "%BackupDir%\..\..\Software\Listary7\UserProfile\Settings\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary7\UserProfile\Settings\" /y
+xcopy "%BackupDir%\..\..\Software\Listary7\UserProfile\Settings\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary7\UserProfile\Settings\" /y
+xcopy "%BackupDir%\..\..\Software\Listary7\UserProfile\Settings\Runlistary7.cmd" "%OutputDir%\Customization\Software\Listary\Listary7\UserProfile\Settings\" /y
 
 :localsend
 xcopy "%BackupDir%\..\..\..\LocalSend\updateLocalSend.cmd" "%OutputDir%\Customization\Software\LocalSend\" /y

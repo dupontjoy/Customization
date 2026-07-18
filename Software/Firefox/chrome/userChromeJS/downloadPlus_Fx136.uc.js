@@ -193,6 +193,129 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             "log aria2 rpc retry": "重试 aria2 RPC 请求",
             "log aria2 rpc wait timeout": "等待 aria2 RPC 就绪超时",
         },
+        'en-US': {
+            // Buttons and Labels
+            "download plus btn": "DownloadPlus",
+            "download enhance click to switch default download manager": "Download enhancement; click to switch the default download manager.",
+
+            // FlashGot Related
+            "force reload download managers list": "Force reload download managers list",
+            "reload download managers list finish": "The download manager supported by FlashGot have been read. Please select your preferred download tool.",
+            "download through flashgot": "Download using FlashGot",
+            "download by default download manager": "Download by default download manager",
+            "no supported download manager": "No download manager supported by FlashGot was found.",
+            "default download manager": "%s (default) ",
+            "no download managers": "No download manager",
+            "reloading download managers list": "Reloading the list of download managers, please wait!",
+            "set to default download manger": "Set %s as the default download manager",
+
+            // URL Related
+            "unsupported url for external downloader": "This URL type is not supported by external download manager.",
+            "url not supported reason": "This URL is not supported by external download manager: %s",
+            "unsupported reason blob url": "Blob URL (browser memory data)",
+            "unsupported reason data url": "Data URL (Inline data)",
+            "unsupported reason internal page": "Browser internal pages",
+            "unsupported reason local file": "local file",
+            "unsupported reason special protocol": "Special Protocol Link",
+            "unsupported reason xpi file": "XPI extension files (requires browser installation)",
+            "unsupported reason xpinstall": "Extended installation link",
+
+            // File operations
+            "file not found": "File does not exist: %s",
+            "about download plus": "About DownloadPlus",
+
+            // transcoding
+            "original name": "Original file name: ",
+            "encoding convert tooltip": "Click to convert encoding",
+
+            // Copy link
+            "complete link": "Link:",
+            "copy link": "Copy Link",
+            "copied": "Copied",
+            "dobule click to copy link": "Double-click to copy link",
+            "successly copied": "Copy successful",
+
+            // Save button
+            "save and open": "Save and open",
+            "save as": "Save As",
+            "save to": "Save to",
+
+            // Directory Name
+            "desktop": "Desktop",
+            "downloads folder": "Download",
+            "disk %s": "Drive %s",
+
+            // General
+            "app name": "DownloadPlus",
+            "error": "Error",
+
+            // log
+            "log init flashgot integration": "DownloadPlus: Attempting to initialize FlashGot integration",
+            "log initialization completed": "Initialization complete",
+            "log helperappdlg import failed": "Importing HelperAppDlg.sys.mjs failed; an attempt was made to read it from a component instance.",
+            "log helperappdlg read failed": "Failed to read the helperAppLauncherDialog component",
+            "log prompt hook missing": "promptForSaveToFileAsync not found, skiping hook",
+            "log prompt already handled": "promptForSaveToFileAsync has already processed the current launcher; revert to the original logic.",
+            "log cannot build flashgot options": "Unable to construct FlashGot parameters, reverting to the original save process.",
+            "log launcher source missing": "launcher.source does not exist, reverting to the original save process.",
+            "log prompt delegated to flashgot": "Intercepted promptForSaveToFileAsync and forward it to FlashGot.",
+            "log flashgot handled": "FlashGot has successfully taken over, canceling Firefox's original save process.",
+            "log flashgot failed": "FlashGot failed to take over; revert to the original save process.",
+            "log prompt hooked": "Hooked promptForSaveToFileAsync",
+            "log helper context browsingcontext failed": "Failed to retrieve BrowsingContext from helper context",
+            "log browsingcontextid failed": "Failed to retrieve BrowsingContext using browsingContextId",
+            "log init download popup start": "initDownloadPopup start",
+            "log init download popup end": "initDownloadPopup end",
+            "log localstorage filename read failed": "Failed to read filename from localStorage:",
+            "log unsupported url skip flashgot": "The URL does not support external downloaders; FlashGot integration will be skipped.",
+            "log exec called": "exec called",
+            "log async process observer": "Using async processObserver",
+            "log sync execute": "Synchronous execution",
+            "log launch non executable": "Non-executable file, launching directly",
+            "log reload managers called": "reloadSupportedManagers called",
+            "log managers loaded from prefs": "Download manager list loaded from prefs",
+            "log prefs read failed force rescan": "Failed to read prefs, forcing rescan",
+            "log force refresh temp file": "Force refresh, generating temp file",
+            "log flashgot process finished": "FlashGot.exe finished, preparing to read results",
+            "log flashgot process failed": "FlashGot.exe exited abnormally",
+            "log managers raw result": "Raw download manager list result",
+            "log managers parsed": "Parsed download manager list",
+            "log generate dl properties": "Generating .dl.properties content",
+            "log write temp file": "Writing temp file",
+            "toggle aria2 autostart": "Auto-start Aria2 RPC when Firefox starts",
+            "toggle aria2 success alert": "Show notification when Aria2 RPC task succeeds",
+            "aria2 autostart enabled": "Enabled auto-start Aria2 RPC when Firefox starts",
+            "aria2 autostart disabled": "Disabled auto-start Aria2 RPC when Firefox starts",
+            "aria2 success alert enabled": "Enabled Aria2 RPC success notification",
+            "aria2 success alert disabled": "Disabled Aria2 RPC success notification",
+            "aria2 already running": "Aria2 RPC is already running",
+            "aria2 start failed": "Failed to start Aria2 RPC",
+            "log start aria2web": "Attempting to start Aria2 RPC",
+            "log aria2 rpc availability check": "Checking aria2 RPC availability",
+            "log aria2 rpc unavailable fallback": "aria2 RPC unavailable, falling back to process check",
+            "log aria2 process check": "Checking if aria2 process is already running",
+            "log aria2 process match": "Found already running aria2 process",
+            "log aria2 process check failed": "Failed to check aria2 process",
+            "log aria2 startup skipped": "aria2 is already running, skipping startup",
+            "log aria2 start failed": "Failed to start Aria2 RPC",
+            "log aria2 launch args": "aria2c launch arguments",
+            "more menu": "More",
+            "open aria2web": "Open Aria2 RPC web interface",
+            "aria2 rpc unavailable": "Aria2 RPC unavailable",
+            "aria2 rpc request failed": "Failed to submit task to Aria2 RPC",
+            "aria2 rpc request success": "Task added to Aria2 RPC",
+            "aria2 rpc request success detail": "Task added to Aria2 RPC: %s",
+            "remove failed downloads": "Remove Failed",
+            "remove failed downloads tooltip": "Remove failed download records",
+            "remove unavailable downloads": "Remove Unavailable",
+            "remove unavailable downloads tooltip": "Remove download records whose files have been moved or deleted",
+            "log aria2 rpc request": "aria2 RPC request",
+            "log aria2 rpc response": "aria2 RPC response",
+            "log aria2 rpc startup retry": "aria2 RPC unavailable, attempting to start process and retry",
+            "log aria2 rpc wait ready": "Waiting for aria2 RPC to be ready",
+            "log aria2 rpc retry": "Retrying aria2 RPC request",
+            "log aria2 rpc wait timeout": "Waiting for aria2 RPC ready timed out",
+        },
         format (...args) {
             if (!args.length) {
                 throw new Error("format: no arguments");
@@ -2003,14 +2126,13 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                             .get("ProfD", Ci.nsIFile).path
                     );
 
-                    // 确保路径以反斜杠结尾
-                    fullPath = fullPath.endsWith("\\") ? fullPath : fullPath + "\\";
-
                     // 获取文件名
                     const fileName = $("#locationText")?.value?.replace(invalidChars, '_') ||
                         dialog.mLauncher.suggestedFileName;
 
-                    file.initWithPath(fullPath + fileName);
+                    fullPath = PathUtils.join(fullPath,fileName);
+
+                    file.initWithPath(fullPath);
 
                     // 设置 MIME 信息
                     if (dialog.mLauncher.MIMEInfo) {

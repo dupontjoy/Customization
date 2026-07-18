@@ -33,14 +33,10 @@ echo. [下载] flower音源
 %Curl_Download% -o "%cd%\flower.js" %GH_PROXY%/https://github.com/pdone/lx-music-source/raw/refs/heads/main/flower/latest.js
 echo. [下载] grass音源
 %Curl_Download% -o "%cd%\grass.js" %GH_PROXY%/https://github.com/pdone/lx-music-source/raw/refs/heads/main/grass/latest.js
-echo. [下载] huibq音源
-%Curl_Download% -o "%cd%\huibq.js" %GH_PROXY%/https://github.com/pdone/lx-music-source/raw/refs/heads/main/huibq/latest.js
 echo. [下载] ikun音源
 %Curl_Download% -o "%cd%\ikun.js" %GH_PROXY%/https://github.com/pdone/lx-music-source/raw/refs/heads/main/ikun/latest.js
 echo. [下载] lx音源
 %Curl_Download% -o "%cd%\lx.js" %GH_PROXY%/https://github.com/pdone/lx-music-source/raw/refs/heads/main/lx/latest.js
-echo. [下载] juhe音源
-%Curl_Download% -o "%cd%\juhe.js" %GH_PROXY%/https://github.com/pdone/lx-music-source/raw/refs/heads/main/juhe/latest.js
 
 goto :eof
 
