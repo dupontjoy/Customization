@@ -1080,9 +1080,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-07-05 16:38:24</EndDateTime>
-		<NextRunDateTime>2126-06-24 11:19:31</NextRunDateTime>
+		<NextRunDateTime>2126-06-25 10:16:26</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-07-18 11:19:31</LastRunTime>
+		<LastRunTime>2026-07-19 10:16:26</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2553,8 +2553,8 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2026-01-19 22:30:00</StartDateTime>
 		<EndDateTime>2026-07-09 21:26:24</EndDateTime>
-		<NextRunDateTime>2026-07-18 22:30:00</NextRunDateTime>
-		<NextRunTime>2026-07-18 22:30:00</NextRunTime>
+		<NextRunDateTime>2026-07-19 22:30:00</NextRunDateTime>
+		<NextRunTime>2026-07-19 22:30:00</NextRunTime>
 		<LastRunTime>2026-07-17 22:30:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -2888,16 +2888,16 @@ env2=value2</edtAppEnv>
 	<TaskItem>
 		<ID>185-ACDE086STM</ID>
 		<TaskType>ttMultiTasker</TaskType>
-		<Stopped>0</Stopped>
-		<HKStopped>1</HKStopped>
+		<Stopped>1</Stopped>
+		<HKStopped>0</HKStopped>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>2026-06-07 21:00:00</StartDateTime>
-		<EndDateTime>2026-07-06 02:06:08</EndDateTime>
-		<NextRunDateTime>2026-07-18 21:00:00</NextRunDateTime>
-		<NextRunTime>2026-07-18 21:00:00</NextRunTime>
-		<LastRunTime>2026-07-17 21:00:00</LastRunTime>
+		<EndDateTime>2026-07-18 04:12:16</EndDateTime>
+		<NextRunDateTime>2026-07-19 21:00:00</NextRunDateTime>
+		<NextRunTime>2026-07-19 21:00:00</NextRunTime>
+		<LastRunTime>2026-07-18 21:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2943,7 +2943,7 @@ env2=value2</edtAppEnv>
 			<chkHKMouseEdge2>0</chkHKMouseEdge2>
 			<chkHKMouseEdge3>0</chkHKMouseEdge3>
 			<chkHKMouseEdge4>0</chkHKMouseEdge4>
-			<chkHotkey>0</chkHotkey>
+			<chkHotkey>1</chkHotkey>
 			<chkHotkeyAlt>0</chkHotkeyAlt>
 			<chkHotkeyAltM>0</chkHotkeyAltM>
 			<chkHotkeyCtrl>1</chkHotkeyCtrl>
@@ -2995,7 +2995,7 @@ env2=value2</edtAppEnv>
 			<cmbHKType>0</cmbHKType>
 			<cmbHKType_text>按下时</cmbHKType_text>
 			<cmbHotKeySolo>0</cmbHotKeySolo>
-			<cmbHotkey>82</cmbHotkey>
+			<cmbHotkey>72</cmbHotkey>
 			<cmbVarClear>local</cmbVarClear>
 			<cmbVarClear_text>清理局部</cmbVarClear_text>
 			<edtDelayBoot>0</edtDelayBoot>
