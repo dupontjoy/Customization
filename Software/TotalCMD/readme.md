@@ -7,12 +7,11 @@ Total Commander设置文件
 
 | | |
 | :--- | :--- |
-| 回到根目录 | <kbd>Ctrl</kbd> + <kbd>\\</kbd> |
+| 回到根目录 | <kbd>Ctrl</kbd> + <kbd>\</kbd> |
 | 回到上一层 | <kbd>Backspace</kbd> |
 | 切换左右活动窗口 | <kbd>Tab</kbd> |
 | 常用文件夹目录 | <kbd>Ctrl</kbd> + <kbd>D</kbd> |
 | 历史文件夹记录 | <kbd>Alt</kbd> + <kbd>↓</kbd> |
-| 桌面 | <kbd>Ctrl</kbd> + <kbd>Y</kbd> |
 | 打开命令提示符 | <kbd>Ctrl</kbd> + <kbd>G</kbd> |
 | | |
 | 重命名 | <kbd>Shift</kbd> + <kbd>F6</kbd> 或 <kbd>F2</kbd> |
@@ -33,7 +32,7 @@ Total Commander设置文件
 | 复制文件名(含完整路径) | <kbd>Ctrl</kbd> + <kbd>3</kbd> |
 | 复制文件名(含网络路径) | <kbd>Ctrl</kbd> + <kbd>4</kbd> |
 | 显示/隐藏:系统及隐藏文件 | <kbd>Ctrl</kbd> + <kbd>H</kbd> |
-| 锁定/解锁当前标签 | <kbd>Ctrl</kbd> + <kbd>K</kbd> 或 <kbd>Ctrl</kbd> + <kbd>*</kbd> |
+| 锁定/解锁当前标签 | <kbd>Ctrl</kbd> + <kbd>Y</kbd>|
 | 批量重命名 | <kbd>Ctrl</kbd> + <kbd>M</kbd> |
 | | |
 | 压缩 | <kbd>Alt</kbd> + <kbd>F5</kbd> |
