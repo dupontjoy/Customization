@@ -18,10 +18,15 @@ cd ..\..\..\Software
 ::Listary5代
 ::start  "" "%cd%\Listary5\UserData\Runlistary5.cmd"
 
+::Listary6代
+::需要获取完整路径才行
+set "listary6_dir=%cd%\Listary6"
+start "" /D "%listary6_dir%" "%listary6_dir%\UserProfile\Settings\RunListary6.cmd"
+
 ::Listary7代
 ::需要获取完整路径才行
-set "listary7_dir=%cd%\Listary7"
-start "" /D "%listary7_dir%" "%listary7_dir%\UserProfile\Settings\RunListary7.cmd"
+::set "listary7_dir=%cd%\Listary7"
+::start "" /D "%listary7_dir%" "%listary7_dir%\UserProfile\Settings\RunListary7.cmd"
 
 :run
 ::普通啟動，start 会启动一个新窗口并在其中运行命令

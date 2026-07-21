@@ -139,6 +139,13 @@ xcopy "%BackupDir%\..\..\Software\Listary5\UserData\CopyFileName.vbs" "%OutputDi
 xcopy "%BackupDir%\..\..\Software\Listary5\UserData\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
 xcopy "%BackupDir%\..\..\Software\Listary5\UserData\RunListary5.cmd" "%OutputDir%\Customization\Software\Listary\Listary5\" /y
 
+:listary6
+::Ç‰∑›Listary6‘O÷√
+xcopy "%BackupDir%\..\..\Software\Listary6\DataFolderRedirection.txt" "%OutputDir%\Customization\Software\Listary\Listary6\" /y
+xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\CopyFileName.vbs" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\" /y
+xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Preferences.json" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\" /y
+xcopy "%BackupDir%\..\..\Software\Listary6\UserProfile\Settings\Runlistary7.cmd" "%OutputDir%\Customization\Software\Listary\Listary6\UserProfile\Settings\" /y
+
 
 :listary7
 ::Ç‰∑›Listary7‘O÷√
