@@ -4,8 +4,7 @@
 	"proxies": {
 		"default": {
 			"httpProxy": "http://127.0.0.1:7897",
-			"httpsProxy": "http://127.0.0.1:7897",
-			"noProxy": "localhost,127.0.0.1"
+			"httpsProxy": "http://127.0.0.1:7897"
 		}
 	},
 	"currentContext": "desktop-linux",
