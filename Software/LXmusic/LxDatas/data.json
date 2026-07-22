@@ -1,7 +1,9 @@
 {
 	"viewPrevState": {
-		"url": "/setting",
-		"query": {}
+		"url": "/list",
+		"query": {
+			"id": "分享玄清介创建的歌单「业余 - 古风」"
+		}
 	},
 	"listUpdateInfo": {},
 	"listScrollPosition": {
@@ -11,8 +13,8 @@
 	"listPrevSelectId": "分享玄清介创建的歌单「业余 - 古风」",
 	"playInfo": {
 		"time": 0,
-		"maxTime": 201.437415,
-		"listId": "分享玄清介创建的歌单「业余 - 古风」",
+		"maxTime": 263.296916,
+		"listId": "default",
 		"index": 1
 	},
 	"lastStartInfo": "2.12.2"
