@@ -1,19 +1,32 @@
 {
 	"viewPrevState": {
-		"url": "/setting",
-		"query": {}
+		"url": "/list",
+		"query": {
+			"id": "kg_af78e301fccfb9371042e0f53cfd56c5"
+		}
 	},
 	"listUpdateInfo": {},
 	"listScrollPosition": {
 		"default": 0,
-		"分享玄清介创建的歌单「业余 - 古风」": 0
+		"分享玄清介创建的歌单「业余 - 古风」": 0,
+		"分享玄清介创建的歌单「国语 - 新生代": 0,
+		"kg_af78e301fccfb9371042e0f53cfd56c5": 3786
 	},
-	"listPrevSelectId": "分享玄清介创建的歌单「业余 - 古风」",
+	"listPrevSelectId": "kg_af78e301fccfb9371042e0f53cfd56c5",
 	"playInfo": {
 		"time": 0,
-		"maxTime": 263.296916,
-		"listId": "分享玄清介创建的歌单「业余 - 古风」",
-		"index": 13
+		"maxTime": 255.761338,
+		"listId": "kg_af78e301fccfb9371042e0f53cfd56c5",
+		"index": 82
 	},
-	"lastStartInfo": "2.12.2"
+	"lastStartInfo": "2.12.2",
+	"leaderboardSetting": {
+		"source": "kw",
+		"boardId": "kw__16"
+	},
+	"songListSetting": {
+		"source": "kg",
+		"sortId": "6",
+		"tagId": "574"
+	}
 }
