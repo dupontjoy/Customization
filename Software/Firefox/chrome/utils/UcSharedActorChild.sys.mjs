@@ -1,16 +1,75 @@
 'use strict';
 
-function patternToRegExp(pattern) {
-    if (!pattern || pattern === '*') {
-        return /^.*$/i;
+const ALL_URLS_SCHEMES = new Set(['http:', 'https:', 'ftp:', 'file:', 'ws:', 'wss:', 'data:']);
+const WILDCARD_SCHEMES = new Set(['http:', 'https:', 'ws:', 'wss:']);
+const HOST_LOCATOR_SCHEMES = new Set([
+    'http:', 'https:', 'ws:', 'wss:', 'file:', 'ftp:', 'moz-extension:',
+    'chrome:', 'resource:', 'moz:', 'moz-icon:', 'moz-gio:',
+]);
+
+function globMatches(value, pattern) {
+    const escaped = pattern.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*');
+    return new RegExp(`^${escaped}$`, 'i').test(value);
+}
+
+// This follows the MatchPattern forms accepted by registerWindowActor. The
+// shared actor needs the same per-script check after its union registration.
+function matchesPattern(pattern, href) {
+    if (pattern === '<all_urls>') {
+        try {
+            return ALL_URLS_SCHEMES.has(new URL(href).protocol);
+        } catch {
+            return false;
+        }
     }
-    if (pattern.startsWith('/') && pattern.endsWith('/')) {
-        return new RegExp(pattern.slice(1, -1));
+
+    const separator = pattern.indexOf(':');
+    if (separator <= 0) {
+        return false;
     }
-    const escaped = pattern
-        .replace(/[.+?^${}()|[\]\\]/g, '\\$&')
-        .replace(/\*/g, '.*');
-    return new RegExp(`^${escaped}$`, 'i');
+
+    let url;
+    try {
+        url = new URL(href);
+    } catch {
+        return false;
+    }
+
+    const scheme = pattern.slice(0, separator).toLowerCase();
+    const expectedProtocol = `${scheme}:`;
+    if (scheme === '*') {
+        if (!WILDCARD_SCHEMES.has(url.protocol)) {
+            return false;
+        }
+    } else if (url.protocol !== expectedProtocol) {
+        return false;
+    }
+
+    const remainder = pattern.slice(separator + 1);
+    if (scheme !== '*' && !HOST_LOCATOR_SCHEMES.has(expectedProtocol)) {
+        return globMatches(url.href.slice(url.href.indexOf(':') + 1).split('#', 1)[0], remainder);
+    }
+
+    const match = /^\/\/([^/]*)(\/.*)$/.exec(remainder);
+    if (!match) {
+        return false;
+    }
+
+    const [, host, path] = match;
+    const hostname = url.hostname.toLowerCase();
+    const expectedHost = host.toLowerCase();
+    if (expectedHost === '*') {
+        // Any host is valid for the selected scheme.
+    } else if (expectedHost.startsWith('*.')) {
+        const domain = expectedHost.slice(2);
+        if (hostname !== domain && !hostname.endsWith(`.${domain}`)) {
+            return false;
+        }
+    } else if (hostname !== expectedHost) {
+        return false;
+    }
+
+    return globMatches(`${url.pathname}${url.search}`, path);
 }
 
 function resolveModuleExport(moduleNS, exportedModule) {
@@ -29,6 +88,9 @@ export class UcSharedActorChild extends JSWindowActorChild {
         const definitions = await this.getDefinitions();
         for (const definition of definitions) {
             if (!definition?.events?.[event.type]) {
+                continue;
+            }
+            if (definition.allFrames === false && !this.isTopLevelFrame()) {
                 continue;
             }
             if (!this.matchesDefinition(definition, href)) {
@@ -55,7 +117,15 @@ export class UcSharedActorChild extends JSWindowActorChild {
         if (!matches.length) {
             return true;
         }
-        return matches.some(match => patternToRegExp(match).test(href));
+        return matches.some(match => matchesPattern(match, href));
+    }
+
+    isTopLevelFrame() {
+        try {
+            return !this.browsingContext?.parent;
+        } catch {
+            return false;
+        }
     }
 
     async runDefinition(definition, event) {
@@ -129,16 +199,7 @@ export class UcSharedActorChild extends JSWindowActorChild {
             data,
         }), sandbox, { defineAs: 'sendToChrome' });
         this._sandboxes.set(scriptId, sandbox);
-        this.ensureUnloadListener();
         return sandbox;
-    }
-
-    ensureUnloadListener() {
-        if (this._hasUnloadListener || !this.contentWindow) {
-            return;
-        }
-        this._hasUnloadListener = true;
-        this.contentWindow.addEventListener('unload', () => this.destructor(), { once: true });
     }
 
     setUnloadMap(scriptId, key, func, handlerContext) {
@@ -162,7 +223,7 @@ export class UcSharedActorChild extends JSWindowActorChild {
         return value;
     }
 
-    destructor() {
+    didDestroy() {
         for (const unloadMap of this._unloadMaps?.values() || []) {
             for (const [key, value] of unloadMap) {
                 try {
