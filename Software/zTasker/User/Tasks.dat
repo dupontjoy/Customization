@@ -1080,9 +1080,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-07-05 16:38:24</EndDateTime>
-		<NextRunDateTime>2126-07-02 20:29:29</NextRunDateTime>
+		<NextRunDateTime>2126-07-03 19:42:30</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-07-26 20:29:29</LastRunTime>
+		<LastRunTime>2026-07-27 19:42:30</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2553,9 +2553,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2026-01-19 22:30:00</StartDateTime>
 		<EndDateTime>2026-07-09 21:26:24</EndDateTime>
-		<NextRunDateTime>2026-07-26 22:30:00</NextRunDateTime>
-		<NextRunTime>2026-07-26 22:30:00</NextRunTime>
-		<LastRunTime>2026-07-25 22:30:00</LastRunTime>
+		<NextRunDateTime>2026-07-28 22:30:00</NextRunDateTime>
+		<NextRunTime>2026-07-28 22:30:00</NextRunTime>
+		<LastRunTime>2026-07-27 22:30:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2894,9 +2894,9 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>2026-06-07 21:00:00</StartDateTime>
-		<EndDateTime>2026-07-22 08:24:32</EndDateTime>
-		<NextRunDateTime>2026-07-22 21:00:00</NextRunDateTime>
-		<NextRunTime>2026-07-22 21:00:00</NextRunTime>
+		<EndDateTime>2026-07-27 16:49:04</EndDateTime>
+		<NextRunDateTime>2026-07-28 21:00:00</NextRunDateTime>
+		<NextRunTime>2026-07-28 21:00:00</NextRunTime>
 		<LastRunTime>2026-07-18 21:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -2944,7 +2944,7 @@ env2=value2</edtAppEnv>
 			<chkHKMouseEdge3>0</chkHKMouseEdge3>
 			<chkHKMouseEdge4>0</chkHKMouseEdge4>
 			<chkHotkey>1</chkHotkey>
-			<chkHotkeyAlt>0</chkHotkeyAlt>
+			<chkHotkeyAlt>1</chkHotkeyAlt>
 			<chkHotkeyAltM>0</chkHotkeyAltM>
 			<chkHotkeyCtrl>1</chkHotkeyCtrl>
 			<chkHotkeyCtrlM>0</chkHotkeyCtrlM>

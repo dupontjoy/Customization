@@ -11,40 +11,40 @@ cls
 pushd %~dp0
 
 ::設置文件所在位置
-set "SettingsDir=E:\My Documents\Nutstore\NutStoreSync"
+set "SyncDir=E:\My Documents\Nutstore\NutStoreSync"
 
 
 :anytxt
-robocopy "%SettingsDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt\config" /MIR /ZB /R:3 /W:5
+robocopy "%SyncDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt\config" /MIR /ZB /R:3 /W:5
 
 :Archivarius3000
-xcopy "%SettingsDir%\Customization\Software\Archivarius3000\Archivarius3000.cfg" "C:\Users\%USERNAME%\AppData\Roaming\Archivarius 3000\" /y
+xcopy "%SyncDir%\Customization\Software\Archivarius3000\Archivarius3000.cfg" "C:\Users\%USERNAME%\AppData\Roaming\Archivarius 3000\" /y
 
 :clashverge（CVR）
-robocopy "%SettingsDir%\Software\CVR\profiles" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles" /MIR /ZB /R:3 /W:5
-xcopy "%SettingsDir%\Software\CVR\profiles.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SettingsDir%\Software\CVR\verge.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SettingsDir%\Software\CVR\cache.db" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SettingsDir%\Software\CVR\clash-verge.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SettingsDir%\Software\CVR\clash-verge-check.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SettingsDir%\Software\CVR\config.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SettingsDir%\Software\CVR\dns_config.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
+robocopy "%SyncDir%\Software\CVR\profiles" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles" /MIR /ZB /R:3 /W:5
+xcopy "%SyncDir%\Software\CVR\profiles.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
+xcopy "%SyncDir%\Software\CVR\verge.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
+xcopy "%SyncDir%\Software\CVR\cache.db" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
+xcopy "%SyncDir%\Software\CVR\clash-verge.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
+xcopy "%SyncDir%\Software\CVR\clash-verge-check.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
+xcopy "%SyncDir%\Software\CVR\config.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
+xcopy "%SyncDir%\Software\CVR\dns_config.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
 
 :docker-desktop
-xcopy "%SettingsDir%\Customization\Software\docker-desktop\config.json" "C:\Users\%USERNAME%\.docker\" /y
+xcopy "%SyncDir%\Customization\Software\docker-desktop\config.json" "C:\Users\%USERNAME%\.docker\" /y
 
 :gitextension
-xcopy "%SettingsDir%\Customization\Software\GitExtensions\.gitconfig" "C:\Users\%USERNAME%\" /y
+xcopy "%SyncDir%\Customization\Software\GitExtensions\.gitconfig" "C:\Users\%USERNAME%\" /y
 
 :licalender
-xcopy "%SettingsDir%\Customization\Software\licalender\liConfig.json" "C:\Users\%USERNAME%\AppData\Roaming\pro.softsoft.li-calendar\" /y
+xcopy "%SyncDir%\Customization\Software\licalender\liConfig.json" "C:\Users\%USERNAME%\AppData\Roaming\pro.softsoft.li-calendar\" /y
 
 :LXmusicDesktop
-robocopy "%SettingsDir%\Customization\Software\LXmusic\LxDatas" "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" /MIR /ZB /R:3 /W:5
+robocopy "%SyncDir%\Customization\Software\LXmusic\LxDatas" "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" /MIR /ZB /R:3 /W:5
 
 :MotrixNext
-xcopy "%SettingsDir%\Customization\Software\MotrixNext\config.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
-xcopy "%SettingsDir%\Customization\Software\MotrixNext\system.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
+xcopy "%SyncDir%\Customization\Software\MotrixNext\config.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
+xcopy "%SyncDir%\Customization\Software\MotrixNext\system.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
 
 :end
 timeout /t 3 /nobreak >nul
