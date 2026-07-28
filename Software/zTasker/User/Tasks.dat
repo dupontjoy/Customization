@@ -1079,10 +1079,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2026-07-05 16:38:24</EndDateTime>
-		<NextRunDateTime>2126-07-03 19:42:30</NextRunDateTime>
+		<EndDateTime>2026-07-29 09:16:48</EndDateTime>
+		<NextRunDateTime>2126-07-04 10:37:04</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-07-27 19:42:30</LastRunTime>
+		<LastRunTime>2026-07-28 10:37:04</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1129,7 +1129,7 @@ env2=value2</edtAppEnv>
 			<chkHKMouseEdge3>0</chkHKMouseEdge3>
 			<chkHKMouseEdge4>0</chkHKMouseEdge4>
 			<chkHotkey>1</chkHotkey>
-			<chkHotkeyAlt>0</chkHotkeyAlt>
+			<chkHotkeyAlt>1</chkHotkeyAlt>
 			<chkHotkeyAltM>0</chkHotkeyAltM>
 			<chkHotkeyCtrl>1</chkHotkeyCtrl>
 			<chkHotkeyCtrlM>0</chkHotkeyCtrlM>
@@ -1438,7 +1438,7 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 10:00:00</StartDateTime>
-		<EndDateTime>2026-07-04 04:20:16</EndDateTime>
+		<EndDateTime>2026-07-28 08:40:32</EndDateTime>
 		<NextRunDateTime>2026-08-01 10:00:00</NextRunDateTime>
 		<NextRunTime>2026-08-01 10:00:00</NextRunTime>
 		<LastRunTime>2026-07-25 10:00:00</LastRunTime>
@@ -1496,7 +1496,7 @@ env2=value2</edtAppEnv>
 			<chkHKMouseEdge3>0</chkHKMouseEdge3>
 			<chkHKMouseEdge4>0</chkHKMouseEdge4>
 			<chkHotkey>1</chkHotkey>
-			<chkHotkeyAlt>0</chkHotkeyAlt>
+			<chkHotkeyAlt>1</chkHotkeyAlt>
 			<chkHotkeyAltM>0</chkHotkeyAltM>
 			<chkHotkeyCtrl>1</chkHotkeyCtrl>
 			<chkHotkeyCtrlM>0</chkHotkeyCtrlM>
@@ -2552,7 +2552,7 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
 		<StartDateTime>2026-01-19 22:30:00</StartDateTime>
-		<EndDateTime>2026-07-09 21:26:24</EndDateTime>
+		<EndDateTime>2026-07-29 18:52:48</EndDateTime>
 		<NextRunDateTime>2026-07-28 22:30:00</NextRunDateTime>
 		<NextRunTime>2026-07-28 22:30:00</NextRunTime>
 		<LastRunTime>2026-07-27 22:30:00</LastRunTime>
@@ -2602,7 +2602,7 @@ env2=value2</edtAppEnv>
 			<chkHKMouseEdge3>0</chkHKMouseEdge3>
 			<chkHKMouseEdge4>0</chkHKMouseEdge4>
 			<chkHotkey>1</chkHotkey>
-			<chkHotkeyAlt>0</chkHotkeyAlt>
+			<chkHotkeyAlt>1</chkHotkeyAlt>
 			<chkHotkeyAltM>0</chkHotkeyAltM>
 			<chkHotkeyCtrl>1</chkHotkeyCtrl>
 			<chkHotkeyCtrlM>0</chkHotkeyCtrlM>
@@ -2888,7 +2888,7 @@ env2=value2</edtAppEnv>
 	<TaskItem>
 		<ID>185-ACDE086STM</ID>
 		<TaskType>ttMultiTasker</TaskType>
-		<Stopped>1</Stopped>
+		<Stopped>0</Stopped>
 		<HKStopped>0</HKStopped>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
