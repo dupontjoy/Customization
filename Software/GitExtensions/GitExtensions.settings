@@ -37,7 +37,7 @@
       <string>Appearance.RememberDiffDisplayAppearance</string>
     </key>
     <value>
-      <string>False</string>
+      <string>false</string>
     </value>
   </item>
   <item>
@@ -45,7 +45,7 @@
       <string>Appearance.ReverseGitColoring</string>
     </key>
     <value>
-      <string>True</string>
+      <string>true</string>
     </value>
   </item>
   <item>
@@ -53,7 +53,7 @@
       <string>Appearance.RevisionGraph.MergeGraphLanesHavingCommonParent</string>
     </key>
     <value>
-      <string>True</string>
+      <string>true</string>
     </value>
   </item>
   <item>
@@ -61,7 +61,7 @@
       <string>Appearance.RevisionGraph.RenderGraphWithDiagonals</string>
     </key>
     <value>
-      <string>True</string>
+      <string>true</string>
     </value>
   </item>
   <item>
@@ -69,7 +69,7 @@
       <string>Appearance.RevisionGraph.StraightenGraphDiagonals</string>
     </key>
     <value>
-      <string>True</string>
+      <string>true</string>
     </value>
   </item>
   <item>
@@ -77,7 +77,7 @@
       <string>Appearance.ShowFindInCommitFilesGitGrep</string>
     </key>
     <value>
-      <string>False</string>
+      <string>false</string>
     </value>
   </item>
   <item>
@@ -85,7 +85,7 @@
       <string>Appearance.ShowRevisionGridTooltips</string>
     </key>
     <value>
-      <string>True</string>
+      <string>true</string>
     </value>
   </item>
   <item>
@@ -93,7 +93,7 @@
       <string>Appearance.UseGitColoring</string>
     </key>
     <value>
-      <string>True</string>
+      <string>true</string>
     </value>
   </item>
   <item>
@@ -469,7 +469,7 @@
       <string>Confirmations.ConfirmBranchCheckout</string>
     </key>
     <value>
-      <string>False</string>
+      <string>false</string>
     </value>
   </item>
   <item>
@@ -506,6 +506,14 @@
   </item>
   <item>
     <key>
+      <string>Detailed.ConEmuStyle</string>
+    </key>
+    <value>
+      <string>默认</string>
+    </value>
+  </item>
+  <item>
+    <key>
       <string>Detailed.ConEmuTerminal</string>
     </key>
     <value>
@@ -525,7 +533,7 @@
       <string>Detailed.ShowConEmuTab</string>
     </key>
     <value>
-      <string>True</string>
+      <string>true</string>
     </value>
   </item>
   <item>
@@ -533,7 +541,7 @@
       <string>Detailed.ShowGpgInformation</string>
     </key>
     <value>
-      <string>True</string>
+      <string>true</string>
     </value>
   </item>
   <item>
@@ -549,7 +557,7 @@
       <string>Detailed.UseBrowseForFileHistory</string>
     </key>
     <value>
-      <string>True</string>
+      <string>true</string>
     </value>
   </item>
   <item>
@@ -557,7 +565,7 @@
       <string>Detailed.UseDiffViewerForBlame</string>
     </key>
     <value>
-      <string>False</string>
+      <string>false</string>
     </value>
   </item>
   <item>
@@ -965,7 +973,7 @@
       <string>FormBrowse.fileTree.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>229</string>
+      <string>223</string>
     </value>
   </item>
   <item>
@@ -1061,7 +1069,7 @@
       <string>FormBrowse.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>388</string>
+      <string>478</string>
     </value>
   </item>
   <item>
@@ -1301,7 +1309,7 @@
       <string>FormBrowse.revisionDiff.LeftSplitContainer_Distance</string>
     </key>
     <value>
-      <string>229</string>
+      <string>223</string>
     </value>
   </item>
   <item>
@@ -1397,7 +1405,7 @@
       <string>FormBrowse.RevisionsSplitContainer_Distance</string>
     </key>
     <value>
-      <string>343</string>
+      <string>361</string>
     </value>
   </item>
   <item>
@@ -1538,11 +1546,11 @@
   &lt;Repositories&gt;
     &lt;Repository&gt;
       &lt;Anchor&gt;None&lt;/Anchor&gt;
-      &lt;Path&gt;E:\My Documents\GitHub\Customization\&lt;/Path&gt;
+      &lt;Path&gt;E:\My Documents\GitHub\RimeIMEPortable\&lt;/Path&gt;
     &lt;/Repository&gt;
     &lt;Repository&gt;
       &lt;Anchor&gt;None&lt;/Anchor&gt;
-      &lt;Path&gt;E:\My Documents\GitHub\RimeIMEPortable\&lt;/Path&gt;
+      &lt;Path&gt;E:\My Documents\GitHub\Customization\&lt;/Path&gt;
     &lt;/Repository&gt;
   &lt;/Repositories&gt;
 &lt;/RepositoryHistory&gt;</string>
@@ -1771,7 +1779,7 @@
       <string>RecentWorkingDir</string>
     </key>
     <value>
-      <string>E:\My Documents\GitHub\Customization\</string>
+      <string>E:\My Documents\GitHub\RimeIMEPortable\</string>
     </value>
   </item>
   <item>
@@ -2385,7 +2393,7 @@
       <string>UseConsoleEmulatorForCommands</string>
     </key>
     <value>
-      <string>True</string>
+      <string>true</string>
     </value>
   </item>
   <item>

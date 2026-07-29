@@ -21,14 +21,7 @@ robocopy "%SyncDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt
 xcopy "%SyncDir%\Customization\Software\Archivarius3000\Archivarius3000.cfg" "C:\Users\%USERNAME%\AppData\Roaming\Archivarius 3000\" /y
 
 :clashverge£¨CVR£©
-robocopy "%SyncDir%\Software\CVR\profiles" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles" /MIR /ZB /R:3 /W:5
-xcopy "%SyncDir%\Software\CVR\profiles.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SyncDir%\Software\CVR\verge.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SyncDir%\Software\CVR\cache.db" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SyncDir%\Software\CVR\clash-verge.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SyncDir%\Software\CVR\clash-verge-check.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SyncDir%\Software\CVR\config.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
-xcopy "%SyncDir%\Software\CVR\dns_config.yaml" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\" /y
+robocopy "%SyncDir%\Software\CVR\io.github.clash-verge-rev.clash-verge-rev" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev" /MIR /ZB /R:3 /W:5
 
 :docker-desktop
 xcopy "%SyncDir%\Customization\Software\docker-desktop\config.json" "C:\Users\%USERNAME%\.docker\" /y

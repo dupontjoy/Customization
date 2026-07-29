@@ -71,14 +71,7 @@ xcopy "%BackupDir%\..\..\Software\Capslock+\CapsLock+settings.ini" "%SyncDir%\Cu
 xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%SyncDir%\Customization\Software\CCleaner\" /y
 
 :clashverge£¨CVR£©
-robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles" "%SyncDir%\Software\CVR\profiles" /MIR /ZB /R:3 /W:5
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\profiles.yaml" "%SyncDir%\Software\CVR\" /y
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\verge.yaml" "%SyncDir%\Software\CVR\" /y
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\cache.db" "%SyncDir%\Software\CVR\" /y
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\clash-verge.yaml" "%SyncDir%\Software\CVR\" /y
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\clash-verge-check.yaml" "%SyncDir%\Software\CVR\" /y
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\config.yaml" "%SyncDir%\Software\CVR\" /y
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev\dns_config.yaml" "%SyncDir%\Software\CVR\" /y
+robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev" "%SyncDir%\Software\CVR\io.github.clash-verge-rev.clash-verge-rev" /MIR /ZB /R:3 /W:5
 
 :docker-desktop
 xcopy "C:\Users\%USERNAME%\.docker\config.json" "%SyncDir%\Customization\Software\docker-desktop\" /y
