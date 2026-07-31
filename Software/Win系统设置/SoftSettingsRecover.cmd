@@ -21,7 +21,7 @@ robocopy "%SyncDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt
 xcopy "%SyncDir%\Customization\Software\Archivarius3000\Archivarius3000.cfg" "C:\Users\%USERNAME%\AppData\Roaming\Archivarius 3000\" /y
 
 :clashverge£¨CVR£©
-robocopy "%SyncDir%\PrivateSoftware\CVR\io.github.clash-verge-rev.clash-verge-rev" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev" /MIR /ZB /R:3 /W:5
+robocopy "%SyncDir%\PSoftware\CVR\io.github.clash-verge-rev.clash-verge-rev" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev" /MIR /ZB /R:3 /W:5
 
 :docker-desktop
 xcopy "%SyncDir%\Customization\Software\docker-desktop\config.json" "C:\Users\%USERNAME%\.docker\" /y
@@ -33,7 +33,7 @@ xcopy "%SyncDir%\Customization\Software\GitExtensions\.gitconfig" "C:\Users\%USE
 xcopy "%SyncDir%\Customization\Software\licalender\liConfig.json" "C:\Users\%USERNAME%\AppData\Roaming\pro.softsoft.li-calendar\" /y
 
 :LXmusicDesktop
-robocopy "%SyncDir%\PrivateSoftware\LXmusic\LxDatas" "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" /MIR /ZB /R:3 /W:5
+robocopy "%SyncDir%\PSoftware\LXmusic\LxDatas" "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" /MIR /ZB /R:3 /W:5
 
 :MotrixNext
 xcopy "%SyncDir%\Customization\Software\MotrixNext\config.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y

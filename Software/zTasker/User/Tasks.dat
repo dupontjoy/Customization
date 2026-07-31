@@ -1080,9 +1080,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-07-29 09:16:48</EndDateTime>
-		<NextRunDateTime>2126-07-07 21:07:27</NextRunDateTime>
+		<NextRunDateTime>2126-07-08 07:18:35</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-07-31 21:07:27</LastRunTime>
+		<LastRunTime>2026-08-01 07:18:35</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1694,7 +1694,8 @@ env2=value2</edtAppEnv>
 					<cmbEcecType>1</cmbEcecType>
 					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
-					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1
+env2=value2</edtAppEnv>
 					<edtAppEnv.max>23</edtAppEnv.max>
 					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppPath>E:\My Documents\Nutstore\NutStoreSync\Customization\Software\LXSource\updateLXSource.cmd</edtAppPath>
