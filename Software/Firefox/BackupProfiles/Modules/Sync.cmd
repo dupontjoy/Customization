@@ -71,7 +71,7 @@ xcopy "%BackupDir%\..\..\Software\Capslock+\CapsLock+settings.ini" "%SyncDir%\Cu
 xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%SyncDir%\Customization\Software\CCleaner\" /y
 
 :clashverge（CVR）
-robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev" "%SyncDir%\Software\CVR\io.github.clash-verge-rev.clash-verge-rev" /MIR /ZB /R:3 /W:5
+robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev" "%SyncDir%\PrivateSoftware\CVR\io.github.clash-verge-rev.clash-verge-rev" /MIR /ZB /R:3 /W:5
 
 :docker-desktop
 xcopy "C:\Users\%USERNAME%\.docker\config.json" "%SyncDir%\Customization\Software\docker-desktop\" /y
@@ -151,8 +151,8 @@ xcopy "%BackupDir%\..\..\Software\Listary7\UserProfile\Settings\Runlistary7.cmd"
 xcopy "%BackupDir%\..\..\..\LocalSend\updateLocalSend.cmd" "%SyncDir%\Customization\Software\LocalSend\" /y
 
 :LXmusicDesktop
-xcopy "%BackupDir%\..\..\..\lx-music-desktop\updateLXmusicDesktop.cmd" "%SyncDir%\Customization\Software\LXmusic\" /y
-robocopy "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" "%SyncDir%\Customization\Software\LXmusic\LxDatas" /MIR /ZB /R:3 /W:5
+xcopy "%BackupDir%\..\..\..\lx-music-desktop\updateLXmusicDesktop.cmd" "%SyncDir%\PrivateSoftware\LXmusic\" /y
+robocopy "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" "%SyncDir%\PrivateSoftware\LXmusic\LxDatas" /MIR /ZB /R:3 /W:5
 
 :MAA
 xcopy "%BackupDir%\..\..\..\MAA\RunMAA.cmd" "%SyncDir%\Customization\Software\MAA\" /y
@@ -220,7 +220,7 @@ xcopy "%BackupDir%\..\..\Software\TrafficMonitor\config.ini" "%SyncDir%\Customiz
 xcopy "%BackupDir%\..\..\Software\TrafficMonitor\global_cfg.ini" "%SyncDir%\Customization\Software\TrafficMonitor\" /y
 
 :v2rayN（VRN）
-robocopy "%BackupDir%\..\..\Software\v2rayN\guiConfigs" "%SyncDir%\Software\VRN\guiConfigs" /MIR /ZB /R:3 /W:5
+robocopy "%BackupDir%\..\..\Software\v2rayN\guiConfigs" "%SyncDir%\PrivateSoftware\VRN\guiConfigs" /MIR /ZB /R:3 /W:5
 
 :Win设置
 xcopy "%SoftDir%\Microsoft\NewPC-Tools\SoftSettingsRecover.cmd" "%SyncDir%\Customization\Software\Win系统设置\" /y

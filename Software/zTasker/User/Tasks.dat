@@ -1080,9 +1080,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-07-29 09:16:48</EndDateTime>
-		<NextRunDateTime>2126-07-06 15:23:53</NextRunDateTime>
+		<NextRunDateTime>2126-07-07 21:07:27</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-07-30 15:23:53</LastRunTime>
+		<LastRunTime>2026-07-31 21:07:27</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1438,7 +1438,7 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>3</SchType>
 		<StartDateTime>2024-12-26 10:00:00</StartDateTime>
-		<EndDateTime>2026-07-28 08:40:32</EndDateTime>
+		<EndDateTime>2026-07-31 17:21:04</EndDateTime>
 		<NextRunDateTime>2026-08-01 10:00:00</NextRunDateTime>
 		<NextRunTime>2026-08-01 10:00:00</NextRunTime>
 		<LastRunTime>2026-07-25 10:00:00</LastRunTime>
@@ -1694,11 +1694,10 @@ env2=value2</edtAppEnv>
 					<cmbEcecType>1</cmbEcecType>
 					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
-					<edtAppEnv>env1=value1
-env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
 					<edtAppEnv.max>23</edtAppEnv.max>
 					<edtAppEnv.min>0</edtAppEnv.min>
-					<edtAppPath>E:\My Documents\Nutstore\NutStoreSync\Customization\Software\LXmusic\LXsource\updateLXsource.cmd</edtAppPath>
+					<edtAppPath>E:\My Documents\Nutstore\NutStoreSync\Customization\Software\LXSource\updateLXSource.cmd</edtAppPath>
 					<edtAppVar>exec</edtAppVar>
 					<edtExecWaitTime>0</edtExecWaitTime>
 					<edtTaskName>更新LXmusic音源</edtTaskName>
@@ -2553,9 +2552,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
 		<EndDateTime>2026-07-29 18:52:48</EndDateTime>
-		<NextRunDateTime>2026-07-30 22:00:00</NextRunDateTime>
-		<NextRunTime>2026-07-30 22:00:00</NextRunTime>
-		<LastRunTime>2026-07-28 22:30:00</LastRunTime>
+		<NextRunDateTime>2026-08-01 22:00:00</NextRunDateTime>
+		<NextRunTime>2026-08-01 22:00:00</NextRunTime>
+		<LastRunTime>2026-07-31 22:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2895,9 +2894,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2026-06-07 22:00:00</StartDateTime>
 		<EndDateTime>2026-07-31 09:38:08</EndDateTime>
-		<NextRunDateTime>2026-07-30 22:00:00</NextRunDateTime>
-		<NextRunTime>2026-07-30 22:00:00</NextRunTime>
-		<LastRunTime>2026-07-29 21:00:00</LastRunTime>
+		<NextRunDateTime>2026-08-01 22:00:00</NextRunDateTime>
+		<NextRunTime>2026-08-01 22:00:00</NextRunTime>
+		<LastRunTime>2026-07-31 22:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
