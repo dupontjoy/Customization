@@ -1,9 +1,6 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
-      "DirectoryOpus": {
-        "EnableMouseMiddleClick": false
-      },
       "WindowsExplorer": {
         "EnableMouseMiddleClick": false
       },
@@ -15,6 +12,9 @@
         "EnableMouseMiddleClick": false
       },
       "TotalCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "DirectoryOpus": {
         "EnableMouseMiddleClick": false
       },
       "FreeCommander": {
@@ -496,8 +496,8 @@
   "Settings": {
     "General.EnableAnalytics": false,
     "Hotkey.PressShowListaryHotkeyAgainBehavior": "hide",
-    "OpenFolder.Path": "..\\TotalCMD64\\TotalCMD64.exe",
-    "OpenFolder.Param": "/O /T /P=R \"%1\"",
+    "OpenFolder.Path": "..\\TotalCMD64\\TOTALCMD64.EXE",
+    "OpenFolder.Param": "/O /T \"%1\"",
     "Tutorial.ShowMainV3": false,
     "Listary5.SettingsImported": true,
     "Listary5.ProLicense.Name": "Adven Dai",

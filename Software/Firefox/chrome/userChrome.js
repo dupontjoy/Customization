@@ -1,4 +1,4 @@
-/* :::::::: Sub-Script/Overlay Loader v3.0.83mod no bind version ::::::::::::::: */
+/* :::::::: Sub-Script/Overlay Loader v3.0.85mod no bind version ::::::::::::::: */
 
 // automatically includes all files ending in .uc.xul and .uc.js from the profile's chrome folder
 
@@ -14,6 +14,8 @@
 // 4.Support window.userChrome_js.loadOverlay(overlay [,observer]) <--- not work in recent Firefox
 // Modified by Alice0775
 //
+// @version       2026/07/31 Bug 1974213 - load local scripts through chrome:// URLs
+// @note          2026/07/31 Firefox 155: removed file: URLs from local script loading
 // @version       2026/03/01 Bug 2017957 - Add freezeBuiltins option to Cu.Sandbox
 // @version       2026/06/24 add @backgroundmodule support
 // @version       2025/08/30 Fallback to only load mjs with chrome://
@@ -114,7 +116,7 @@
     const FORCESORTSCRIPT = (AppConstants.platform != "win") ? true : false; //強制的にスクリプトをファイル名順でソートするtrue, しない[false]
     const REPLACECACHE = true; //スクリプトの更新日付によりキャッシュを更新する: true , しない:[false]
     //=====================USE_0_63_FOLDER = falseの時===================
-    var UCJS = new Array("UCJSFiles", "userContent", "userMenu"); //UCJS Loader 仕様を適用 (NoScriptでfile:///を許可しておく)
+    var UCJS = new Array("UCJSFiles", "userContent", "userMenu"); //UCJS Loader 仕様を適用
     var arrSubdir = new Array("", "xul", "TabMixPlus", "withTabMixPlus", "SubScript", "UCJSFiles", "userCrome.js.0.8", "userContent", "userMenu", "UserChromeJS");    //スクリプトはこの順番で実行される
     //===================================================================
     const ALWAYSEXECUTE = ['rebuild_userChrome.uc.xul', 'rebuild_userChrome.uc.js']; //常に実行するスクリプト
@@ -126,7 +128,7 @@
     /* USE_0_63_FOLDER true の時
      * chrome直下およびchrome/xxx.uc 内の *.uc.js および *.uc.xul
      * chrome/xxx.xul 内の  *.uc.js , *.uc.xul および *.xul
-     * chrome/xxx.ucjs 内の *.uc.js は 特別に UCJS Loader 仕様を適用(NoScriptでfile:///を許可しておく)
+     * chrome/xxx.ucjs 内の *.uc.js は 特別に UCJS Loader 仕様を適用
      */
 
     /* USE_0.63_FOLDER false の時
@@ -186,7 +188,6 @@
         getScripts: function () {
             const Cc = Components.classes;
             const Ci = Components.interfaces;
-            const fph = Services.io.getProtocolHandler("file").QueryInterface(Ci.nsIFileProtocolHandler);
             const ds = Services.dirsvc;
             var Start = new Date().getTime();
             //getdir
@@ -228,11 +229,17 @@
 
             var findNextRe = /^\/\/ @(include|exclude)[ \t]+(\S+)/gm;
             this.directory = { name: [], UCJS: [], enable: [] };
-            var chromeDirPath = ds.get("UChrm", Ci.nsIFile).path;
-            if (navigator.platform.indexOf("Win") == 0)
-                chromeDirPath = chromeDirPath + "\\";
-            else
-                chromeDirPath = chromeDirPath + "/";
+            const chromeDirPath = ds.get("UChrm", Ci.nsIFile).path;
+            const getChromeURL = aFile => {
+                const relativePath = aFile.path
+                    .slice(chromeDirPath.length)
+                    .replace(/^[\\/]+/, "");
+                const encodedPath = relativePath
+                    .split(/[\\/]/)
+                    .map(encodeURIComponent)
+                    .join("/");
+                return `chrome://userchromejs/content/${encodedPath}`;
+            };
             for (var i = 0, len = this.arrSubdir.length; i < len; i++) {
                 var s = [], o = [];
                 try {
@@ -251,7 +258,7 @@
                             var script = getScriptData(readFile(file, true), file);
                             script.dir = dir;
                             if (/\.(uc|sys)\.mjs$/i.test(script.filename)) {
-                                script.chromedir = file.path.replace(chromeDirPath, "chrome://userchromejs/content/").replace(/\\/g, "/");
+                                script.chromedir = script.url;
                                 script.LastModifiedTime = this.getLastModifiedTime(script.file);
                                 s.push(script);
                             } else if (/\.uc\.js$/i.test(script.filename)) {
@@ -309,7 +316,7 @@
                 const skipFlag = skipMatch === "true";
                 const backgroundMode = /\/\/ @backgroundmodule\b/i.test(header)
                     || /\.sys\.mjs$/i.test(aFile.leafName);
-                const url = fph.getURLSpecFromActualFile(aFile);
+                const url = getChromeURL(aFile);
                 const actor = extractSingleMeta(header, /\/\/ @actor\b(.+)\s*/i);
                 const content = extractSingleMeta(header, /\/\/ @content\b(.+)\s*/i);
                 const exportedModule = extractSingleMeta(header, /\/\/ @export\b(.+)\s*/i);

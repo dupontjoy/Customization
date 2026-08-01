@@ -5,6 +5,10 @@
 'use strict';
 
 const Services = globalThis.Services;
+const OPTIONS_TYPE_DIALOG = 1;
+const OPTIONS_DIALOG_MIN_SIZE = 100;
+const OPTIONS_DIALOG_MAX_SIZE = 10000;
+let resourceSubstitutionSerial = 0;
 
 ChromeUtils.defineESModuleGetters(this, {
   Blocklist: 'resource://gre/modules/Blocklist.sys.mjs',
@@ -12,6 +16,29 @@ ChromeUtils.defineESModuleGetters(this, {
   InstallRDF: 'chrome://userchromejs/content/utils/RDFManifestConverter.sys.mjs',
   ChromeManifest: 'chrome://userchromejs/content/utils/ChromeManifest.sys.mjs',
 });
+
+function isDialogOptionsAddon(addon) {
+  return addon?.__AddonInternal__?.optionsType === OPTIONS_TYPE_DIALOG &&
+    !!addon.optionsURL;
+}
+
+function getOptionsDialogFeatures(addon) {
+  let features = 'chrome,titlebar,toolbar,centerscreen';
+  let startupData = addon?.__AddonInternal__?.startupData;
+  let optionsDialog = startupData?.userChromeJSLoader?.optionsDialog;
+  for (let dimension of ['width', 'height']) {
+    let value = optionsDialog?.[dimension];
+    if (Number.isInteger(value) &&
+      value >= OPTIONS_DIALOG_MIN_SIZE &&
+      value <= OPTIONS_DIALOG_MAX_SIZE) {
+      features += `,${dimension}=${value}`;
+    }
+  }
+  if (optionsDialog?.resizable === true) {
+    features += ',resizable';
+  }
+  return features;
+}
 
 Services.obs.addObserver(doc => {
   if (doc.location.protocol + doc.location.pathname === 'about:addons' ||
@@ -21,7 +48,7 @@ Services.obs.addObserver(doc => {
     win.customElements.get('addon-card').prototype.handleEvent = function (e) {
       if (e.type === 'click' &&
           e.target.getAttribute('action') === 'preferences' &&
-          this.addon.__AddonInternal__.optionsType == 1/*AddonManager.OPTIONS_TYPE_DIALOG*/ && !!this.addon.optionsURL) {
+          isDialogOptionsAddon(this.addon)) {
         var windows = Services.wm.getEnumerator(null);
         while (windows.hasMoreElements()) {
           var win2 = windows.getNext();
@@ -33,7 +60,7 @@ Services.obs.addObserver(doc => {
             return;
           }
         }
-        var features = 'chrome,titlebar,toolbar,centerscreen';
+        var features = getOptionsDialogFeatures(this.addon);
         win.docShell.rootTreeItem.domWindow.openDialog(this.addon.optionsURL, this.addon.id, features);
       } else {
         handleEvent_orig.apply(this, arguments);
@@ -42,7 +69,7 @@ Services.obs.addObserver(doc => {
     let update_orig = win.customElements.get('addon-options').prototype.update;
     win.customElements.get('addon-options').prototype.update = function (card, addon) {
       update_orig.apply(this, arguments);
-      if (addon.__AddonInternal__?.optionsType == 1/*AddonManager.OPTIONS_TYPE_DIALOG*/ && !!addon.optionsURL)
+      if (isDialogOptionsAddon(addon))
         this.querySelector('panel-item[data-l10n-id="preferences-addon-button"]').hidden = false;
     }
   }
@@ -154,6 +181,31 @@ function buildJarURI(aJarfile, aPath) {
   return Services.io.newURI(uri);
 }
 
+function createResourceSubstitution(addonId, rootURI) {
+  const resourceHandler = Services.io
+    .getProtocolHandler('resource')
+    .QueryInterface(Ci.nsIResProtocolHandler);
+  const safeAddonId = addonId
+    .toLowerCase()
+    .replace(/[^a-z0-9-]+/g, '-')
+    .replace(/^-+|-+$/g, '') || 'addon';
+  const substitution = `userchromejs-bootstrap-${safeAddonId}-${++resourceSubstitutionSerial}`;
+  let cleared = false;
+
+  resourceHandler.setSubstitution(substitution, rootURI);
+
+  return {
+    scriptURI: `resource://${substitution}/bootstrap.js`,
+    clear() {
+      if (cleared) {
+        return;
+      }
+      resourceHandler.setSubstitution(substitution, null);
+      cleared = true;
+    },
+  };
+}
+
 var BootstrapLoader = {
   name: 'bootstrap',
   manifestFile: 'install.rdf',
@@ -257,6 +309,49 @@ var BootstrapLoader = {
 
       if (addon.optionsType)
         addon.optionsType = parseInt(addon.optionsType);
+
+      if (hasOwnProperty(manifest, 'optionsResizable')) {
+        if (manifest.optionsResizable !== 'true' && manifest.optionsResizable !== 'false') {
+          throw new Error('Install manifest optionsResizable must be true or false');
+        }
+      }
+      let optionsWidth;
+      if (hasOwnProperty(manifest, 'optionsWidth')) {
+        optionsWidth = Number(manifest.optionsWidth);
+        if (!/^\d+$/.test(manifest.optionsWidth) ||
+          !Number.isSafeInteger(optionsWidth) ||
+          optionsWidth < OPTIONS_DIALOG_MIN_SIZE ||
+          optionsWidth > OPTIONS_DIALOG_MAX_SIZE) {
+          throw new Error(
+            `Install manifest optionsWidth must be an integer from ${OPTIONS_DIALOG_MIN_SIZE} to ${OPTIONS_DIALOG_MAX_SIZE}`
+          );
+        }
+      }
+      let optionsHeight;
+      if (hasOwnProperty(manifest, 'optionsHeight')) {
+        optionsHeight = Number(manifest.optionsHeight);
+        if (!/^\d+$/.test(manifest.optionsHeight) ||
+          !Number.isSafeInteger(optionsHeight) ||
+          optionsHeight < OPTIONS_DIALOG_MIN_SIZE ||
+          optionsHeight > OPTIONS_DIALOG_MAX_SIZE) {
+          throw new Error(
+            `Install manifest optionsHeight must be an integer from ${OPTIONS_DIALOG_MIN_SIZE} to ${OPTIONS_DIALOG_MAX_SIZE}`
+          );
+        }
+      }
+      if (addon.optionsType === OPTIONS_TYPE_DIALOG && addon.optionsURL &&
+        (manifest.optionsResizable === 'true' ||
+          optionsWidth !== undefined || optionsHeight !== undefined)) {
+        addon.startupData = Object.assign({}, addon.startupData, {
+          userChromeJSLoader: {
+            optionsDialog: {
+              ...(manifest.optionsResizable === 'true' && { resizable: true }),
+              ...(optionsWidth !== undefined && { width: optionsWidth }),
+              ...(optionsHeight !== undefined && { height: optionsHeight }),
+            },
+          },
+        });
+      }
     }
 
     addon.defaultLocale = readLocale(manifest, true);
@@ -340,7 +435,11 @@ var BootstrapLoader = {
 
   loadScope(addon) {
     let file = addon.file || addon._sourceBundle;
-    let uri = getURIForResourceInFile(file, 'bootstrap.js').spec;
+    const resourceSubstitution = createResourceSubstitution(
+      addon.id,
+      getURIForResourceInFile(file, '')
+    );
+    let uri = resourceSubstitution.scriptURI;
     let principal = Services.scriptSecurityManager.getSystemPrincipal();
 
     let sandbox = new Cu.Sandbox(principal, {
@@ -358,6 +457,7 @@ var BootstrapLoader = {
 
       Services.scriptloader.loadSubScript(uri, sandbox);
     } catch (e) {
+      resourceSubstitution.clear();
       logger.warn(`Error loading bootstrap.js for ${addon.id}`, e);
     }
 
@@ -382,16 +482,16 @@ var BootstrapLoader = {
     let shutdown = findMethod('shutdown');
 
     /**
-     * Reads content from a jar: URI
+     * Reads content from a package resource URI.
      *
-     * @param {nsIURI} jarURI - The jar: URI to read from
-     * @returns {Promise<string>} The content of the file inside the JAR
+     * @param {nsIURI} uri - The package resource to read
+     * @returns {Promise<string>} The resource content
      */
-    async function readFromJarURI(jarURI) {
+    async function readFromURI(uri) {
       return new Promise((resolve, reject) => {
         try {
           const channel = Services.io.newChannelFromURI(
-            jarURI,
+            uri,
             null,
             Services.scriptSecurityManager.getSystemPrincipal(),
             null,
@@ -470,37 +570,55 @@ var BootstrapLoader = {
       },
 
       async startup(...args) {
-        if (addon.type == 'extension') {
-          logger.debug(`Registering manifest for ${file.path}\n`);
-          const manifestURI = getURIForResourceInFile(file, 'chrome.manifest');
-          let manifestData = await readFromJarURI(manifestURI);
-          let chromeManifest = new ChromeManifest(() => {
-            return manifestData;
-          }, {
-            application: Services.appinfo.ID,
-            appversion: Services.appinfo.version,
-            platformversion: Services.appinfo.platformVersion,
-            os: Services.appinfo.OS,
-            osversion: Services.sysinfo.getProperty('version'),
-            abi: Services.appinfo.XPCOMABI
-          });
-          await chromeManifest.parse()
-          this._clearManifest = createManifestTemporarily(chromeManifest.toString(getURIForResourceInFile(file, '').spec));
+        try {
+          if (addon.type == 'extension') {
+            logger.debug(`Registering manifest for ${file.path}\n`);
+            const manifestURI = getURIForResourceInFile(file, 'chrome.manifest');
+            let manifestData = await readFromURI(manifestURI);
+            let chromeManifest = new ChromeManifest(() => {
+              return manifestData;
+            }, {
+              application: Services.appinfo.ID,
+              appversion: Services.appinfo.version,
+              platformversion: Services.appinfo.platformVersion,
+              os: Services.appinfo.OS,
+              osversion: Services.sysinfo.getProperty('version'),
+              abi: Services.appinfo.XPCOMABI
+            });
+            await chromeManifest.parse()
+            this._clearManifest = createManifestTemporarily(chromeManifest.toString(getURIForResourceInFile(file, '').spec));
+          }
+          return await startup(...args);
+        } catch (error) {
+          if (this._clearManifest) {
+            this._clearManifest();
+            this._clearManifest = null;
+          }
+          resourceSubstitution.clear();
+          throw error;
         }
-        return startup(...args);
       },
 
       shutdown(data, reason) {
-        try {
-          return shutdown(data, reason);
-        } catch (err) {
-          throw err;
-        } finally {
-          if (reason != BOOTSTRAP_REASONS.APP_SHUTDOWN) {
+        const cleanup = () => {
+          if (reason != BOOTSTRAP_REASONS.APP_SHUTDOWN && this._clearManifest) {
             logger.debug(`Removing manifest for ${file.path}\n`);
             this._clearManifest();
             this._clearManifest = null;
           }
+          resourceSubstitution.clear();
+        };
+
+        try {
+          const result = shutdown(data, reason);
+          if (result && typeof result.finally === 'function') {
+            return result.finally(cleanup);
+          }
+          cleanup();
+          return result;
+        } catch (err) {
+          cleanup();
+          throw err;
         }
       },
     };

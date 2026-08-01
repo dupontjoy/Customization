@@ -208,11 +208,9 @@ xcopy "%BackupDir%\..\..\Software\totalcmd64\wcx_ftp.ini" "%SyncDir%\Customizati
 xcopy "%BackupDir%\..\..\Software\totalcmd64\wincmd.ini" "%SyncDir%\Customization\Software\TotalCMD\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\DEFAULT.BAR" "%SyncDir%\Customization\Software\TotalCMD\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\Default.br2" "%SyncDir%\Customization\Software\TotalCMD\" /y
-xcopy "%BackupDir%\..\..\Software\totalcmd64\Default.br144" "%SyncDir%\Customization\Software\TotalCMD\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\user\user.ini" "%SyncDir%\Customization\Software\TotalCMD\user\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\user\TCIgnore.ini" "%SyncDir%\Customization\Software\TotalCMD\user\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\Everything.ini" "%SyncDir%\Customization\Software\TotalCMD\Tools\" /y
-xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\Everything-1.5a.ini" "%SyncDir%\Customization\Software\TotalCMD\Tools\" /y
 xcopy "%BackupDir%\..\..\Software\totalcmd64\Tools\updateNotepad4.cmd" "%SyncDir%\Customization\Software\TotalCMD\Tools\" /y
 
 :trafficmonitor

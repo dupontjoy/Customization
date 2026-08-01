@@ -68,7 +68,8 @@ export class InstallRDF extends Manifest {
     let result = {};
 
     let props = ["id", "version", "type", "updateURL", "optionsURL",
-                 "optionsType", "aboutURL", "iconURL",
+                 "optionsType", "optionsResizable", "optionsWidth", "optionsHeight",
+                 "aboutURL", "iconURL",
                  "bootstrap", "unpack", "strictCompatibility"];
     this._readProps(root, result, props);
 
