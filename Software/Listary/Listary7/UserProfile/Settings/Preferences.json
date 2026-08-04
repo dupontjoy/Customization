@@ -1,6 +1,9 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
+      "DirectoryOpus": {
+        "EnableMouseMiddleClick": false
+      },
       "WindowsExplorer": {
         "EnableMouseMiddleClick": false
       },
@@ -12,9 +15,6 @@
         "EnableMouseMiddleClick": false
       },
       "TotalCommander": {
-        "EnableMouseMiddleClick": false
-      },
-      "DirectoryOpus": {
         "EnableMouseMiddleClick": false
       },
       "FreeCommander": {
@@ -506,9 +506,7 @@
     "LastUpdateTimeV1": "2025-02-15T15:05:31.8558174+08:00",
     "Gety.FirstSeenDate": "2026-07-18T17:51:11.4125403+08:00",
     "Gety.HandoffRecentShownTimes": [
-      "2026-07-25T19:20:14.4866526+08:00",
-      "2026-07-26T10:00:09.4444432+08:00",
-      "2026-07-27T16:46:58.9849595+08:00"
+      "2026-08-03T19:08:56.8744891+08:00"
     ],
     "Gety.HandoffVariant": "b"
   },
