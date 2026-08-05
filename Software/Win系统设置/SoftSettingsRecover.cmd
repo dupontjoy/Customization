@@ -29,6 +29,9 @@ xcopy "%SyncDir%\Customization\Software\docker-desktop\config.json" "C:\Users\%U
 :gitextension
 xcopy "%SyncDir%\Customization\Software\GitExtensions\.gitconfig" "C:\Users\%USERNAME%\" /y
 
+:karing
+robocopy "%SyncDir%\PSoftware\karing\karing" "C:\Users\%USERNAME%\AppData\Roaming\karing\karing" /MIR /ZB /R:3 /W:5
+
 :licalender
 xcopy "%SyncDir%\Customization\Software\licalender\liConfig.json" "C:\Users\%USERNAME%\AppData\Roaming\pro.softsoft.li-calendar\" /y
 

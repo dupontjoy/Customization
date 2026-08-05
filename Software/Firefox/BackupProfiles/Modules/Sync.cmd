@@ -123,6 +123,9 @@ xcopy "%BackupDir%\..\..\Software\ImageGlass\updateImageGlass.cmd" "%SyncDir%\Cu
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\user.json" "%SyncDir%\Customization\Software\imFile\" /y
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\system.json" "%SyncDir%\Customization\Software\imFile\" /y
 
+:karing
+robocopy "C:\Users\%USERNAME%\AppData\Roaming\karing\karing" "%SyncDir%\PSoftware\karing\karing" /MIR /ZB /R:3 /W:5
+
 :licalender
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\pro.softsoft.li-calendar\liConfig.json" "%SyncDir%\Customization\Software\licalender\" /y
 
