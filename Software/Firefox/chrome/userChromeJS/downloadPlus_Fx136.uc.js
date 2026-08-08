@@ -26,6 +26,7 @@ userChromeJS.downloadPlus.enableSaveAs 下载对话框启用另存为
 userChromeJS.downloadPlus.enableSaveTo 下载对话框启用保存到
 userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 */
+// @note            20260801 检测到插件 DownloadIt 后自动停用 FlashGot 集成
 // @note            20260718 增加 JDownloader 集成，支持通过本地接口添加下载任务与自动开始下载
 // @note            20260710 修复改名后另存为与回车保存可能产生失败记录和完成记录两条下载历史的问题
 // @note            20260622 Places 下载页增加删除失败/失效下载记录按钮，并跟随下载视图工具栏显示
@@ -69,6 +70,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
     const Services = globalThis.Services;
     const Downloads = globalThis.Downloads || ChromeUtils.importESModule("resource://gre/modules/Downloads.sys.mjs").Downloads;
     const ctypes = globalThis.ctypes || ChromeUtils.importESModule("resource://gre/modules/ctypes.sys.mjs").ctypes;
+    const DOWNLOADIT_ADDON_ID = "downloadit@downloadit.invalid";
     const invalidChars = /[<>:"/\\|?*]/g;
 
     const LANG = {
@@ -541,6 +543,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
 
     window.DownloadPlus = {
         debug: false,
+        DOWNLOADIT_ENABLED: false,
         // ========================================
         // 配置常量
         // ========================================
@@ -618,7 +621,26 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                 || globalThis;
             return hostWindow.__downloadPlusSharedState || (hostWindow.__downloadPlusSharedState = {});
         },
+        async isDownloadItEnabled () {
+            const sharedState = this._getSharedState();
+            if (!sharedState.downloadItEnabledPromise) {
+                sharedState.downloadItEnabledPromise = (async () => {
+                    try {
+                        const { AddonManager } = ChromeUtils.importESModule(
+                            "resource://gre/modules/AddonManager.sys.mjs"
+                        );
+                        const addon = await AddonManager.getAddonByID(DOWNLOADIT_ADDON_ID);
+                        return addon?.isActive === true;
+                    } catch (ex) {
+                        console.warn("DownloadPlus: failed to detect DownloadIt; keeping FlashGot integration enabled.", ex);
+                        return false;
+                    }
+                })();
+            }
+            return await sharedState.downloadItEnabledPromise;
+        },
         init: async function () {
+            this.DOWNLOADIT_ENABLED = await this.isDownloadItEnabled();
             const documentURI = location.href.replace(/\?.*$/, '');
             switch (documentURI) {
                 case 'chrome://browser/content/browser.xhtml':
@@ -871,7 +893,9 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             this.sb = sb;
 
             this.URLS_FOR_OPEN = [];
-            this._hookPromptForSaveToFileAsync();
+            if (!this.DOWNLOADIT_ENABLED) {
+                this._hookPromptForSaveToFileAsync();
+            }
             const downloadView = {
                 onDownloadChanged: function (dl) {
                     if (isTrue('userChromeJS.downloadPlus.enableSaveAndOpen')) {
@@ -909,7 +933,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
                     this.SAVE_DIRS.push([drive, LANG.format("disk %s", drive.replace(':\\', ""))])
                 });
             }
-            if (isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) {
+            if (!this.DOWNLOADIT_ENABLED && isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) {
                 console.log(LANG.format("log init flashgot integration"));
                 if (!this.FLASHGOT_PATH && !this.ARIA2_PATH && !isTrue(this.PREF_ENABLE_JDOWNLOADER, false)) {
                     if (Services.prefs.getBoolPref(this.PREF_ARIA2_AUTOSTART, false)) {
@@ -962,7 +986,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             this._log(LANG.format("log initialization completed"));
         },
         _hookPromptForSaveToFileAsync () {
-            if (!isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) return;
+            if (this.DOWNLOADIT_ENABLED || !isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) return;
 
             let helperDialogCtor = null;
             try {
@@ -1049,7 +1073,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             if (helperDialog?.mDialog || aForcePrompt) {
                 return false;
             }
-            if (!isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) {
+            if (this.DOWNLOADIT_ENABLED || !isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) {
                 return false;
             }
             if (!this.DEFAULT_MANAGER) {
@@ -1834,7 +1858,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
          * 设置 FlashGot 集成功能
          */
         _setupFlashgotIntegration: async function () {
-            if (!isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) return;
+            if (this.DOWNLOADIT_ENABLED || !isTrue('userChromeJS.downloadPlus.enableFlashgotIntergention')) return;
 
             const browserWindow = Services.wm.getMostRecentWindow("navigator:browser");
             const downloadPlus = browserWindow.DownloadPlus;
@@ -2559,6 +2583,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             }
         },
         reloadSupportedManagers: async function (force = false, alert = false, callback) {
+            if (this.DOWNLOADIT_ENABLED) return;
             this._log(LANG.format("log reload managers called"), { force, alert, current: this.DOWNLOAD_MANAGERS });
             let managers = [];
             try {
@@ -2612,6 +2637,7 @@ userChromeJS.downloadPlus.showAllDrives 下载对话框显示所有驱动器
             }
         },
         downloadByManager: async function (manager, url, options = {}) {
+            if (this.DOWNLOADIT_ENABLED) return false;
             if (!manager) {
                 manager = this.DEFAULT_MANAGER || this.DOWNLOAD_MANAGERS[0] || '';
             }
