@@ -22,9 +22,9 @@
 	autosquash = false
 	updateRefs = false
 [http]
-    proxy = http://127.0.0.1:7897
+    proxy = http://127.0.0.1:3067
 [https]
-    proxy = http://127.0.0.1:7897
+    proxy = http://127.0.0.1:3067
 [http "https://github.com"]
-    proxy = http://127.0.0.1:7897
+    proxy = http://127.0.0.1:3067
     
