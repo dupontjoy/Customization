@@ -47,21 +47,23 @@ if "!res!"=="" (
 ::设置代理
 :set_proxy
 set "px="
+set "format_px="
+
 echo 请选择代理模式：
 echo 1. 使用代理 Karing：127.0.0.1:3067
 echo 2. 使用代理 ClashVergeRev：127.0.0.1:7897
-echo 3. 直连（不使用代理）
-set /p "px=请输入数字选择（1/2/3）： "
+echo [直接回车] 直连（不使用代理）
+set /p "px=请输入数字选择（1/2，直接回车为直连）： "
 
-if "!px!"=="1" (
+if "!px!"=="" (
+    set "format_px="
+    echo 已选择直连模式（默认）
+) else if "!px!"=="1" (
     set "format_px=--proxy http://127.0.0.1:3067"
     echo 已启用代理：3067端口
 ) else if "!px!"=="2" (
     set "format_px=--proxy http://127.0.0.1:7897"
     echo 已启用代理：7897端口
-) else if "!px!"=="3" (
-    set "format_px="
-    echo 已选择直连模式
 ) else (
     echo 无效选择，默认使用直连模式
     set "format_px="
