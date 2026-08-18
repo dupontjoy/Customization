@@ -1,9 +1,6 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
-      "DirectoryOpus": {
-        "EnableMouseMiddleClick": false
-      },
       "WindowsExplorer": {
         "EnableMouseMiddleClick": false
       },
@@ -15,6 +12,9 @@
         "EnableMouseMiddleClick": false
       },
       "TotalCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "DirectoryOpus": {
         "EnableMouseMiddleClick": false
       },
       "FreeCommander": {
@@ -325,14 +325,14 @@
           "Info": null,
           "Item": {
             "Keyword": "tvp",
-            "Url": "https://ntvp.232885.xyz/search?q={query}&type=video",
+            "Url": "https://cftvpxqj.xuanqj.qzz.io/search?q={query}&type=video",
             "Title": "moontvp",
             "Icon": {
               "Path": "{user}\\72f9ec93-ffc8-4421-a1aa-589544216f32.png",
               "TypeName": "Path"
             },
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://ntvp.232885.xyz/search?q={query}&type=video"
+            "SuggestionUrl": "https://cftvpxqj.xuanqj.qzz.io/search?q={query}&type=video"
           }
         }
       ],
@@ -506,9 +506,9 @@
     "LastUpdateTimeV1": "2025-02-15T15:05:31.8558174+08:00",
     "Gety.FirstSeenDate": "2026-07-18T17:51:11.4125403+08:00",
     "Gety.HandoffRecentShownTimes": [
-      "2026-08-07T17:36:01.725937+08:00",
       "2026-08-11T14:22:14.9190749+08:00",
-      "2026-08-12T19:25:57.3058513+08:00"
+      "2026-08-12T19:25:57.3058513+08:00",
+      "2026-08-17T21:55:56.9723028+08:00"
     ],
     "Gety.HandoffVariant": "b"
   },
