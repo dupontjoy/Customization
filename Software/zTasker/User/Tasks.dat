@@ -1080,9 +1080,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-08-05 18:33:36</EndDateTime>
-		<NextRunDateTime>2126-07-25 16:02:44</NextRunDateTime>
+		<NextRunDateTime>2126-07-26 08:08:05</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-08-18 16:02:44</LastRunTime>
+		<LastRunTime>2026-08-19 08:08:05</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2550,12 +2550,12 @@ env2=value2</edtAppEnv>
 		<HKStopped>0</HKStopped>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
-		<SchType>1</SchType>
+		<SchType>2</SchType>
 		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
 		<EndDateTime>2026-08-19 13:45:36</EndDateTime>
-		<NextRunDateTime>2026-08-18 18:00:00</NextRunDateTime>
-		<NextRunTime>2026-08-18 18:00:00</NextRunTime>
-		<LastRunTime>2026-08-17 22:00:00</LastRunTime>
+		<NextRunDateTime>2026-08-19 22:00:00</NextRunDateTime>
+		<NextRunTime>2026-08-19 22:00:00</NextRunTime>
+		<LastRunTime>2026-08-18 22:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2623,8 +2623,6 @@ env2=value2</edtAppEnv>
 			<chkQukPhzProcPartMatch>0</chkQukPhzProcPartMatch>
 			<chkQukPhzProcWildMatch>0</chkQukPhzProcWildMatch>
 			<chkQukPhzTip>1</chkQukPhzTip>
-			<chkResetTimeBootHour>0</chkResetTimeBootHour>
-			<chkResetTimeWakeHour>0</chkResetTimeWakeHour>
 			<chkRunMiss>0</chkRunMiss>
 			<chkSKPartMatch>0</chkSKPartMatch>
 			<chkSKProcActiveWnd>0</chkSKProcActiveWnd>
@@ -2660,7 +2658,7 @@ env2=value2</edtAppEnv>
 			<cmbVarClear_text>清理局部</cmbVarClear_text>
 			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
 			<edtDelayBoot>0</edtDelayBoot>
-			<edtEveryHour>4</edtEveryHour>
+			<edtEveryDay>1</edtEveryDay>
 			<edtExecExitWaitTime>60</edtExecExitWaitTime>
 			<edtExecSec>30</edtExecSec>
 			<edtExecSecHK>5</edtExecSecHK>
@@ -2897,9 +2895,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2026-06-07 22:00:00</StartDateTime>
 		<EndDateTime>2026-07-31 09:38:08</EndDateTime>
-		<NextRunDateTime>2026-08-18 22:00:00</NextRunDateTime>
-		<NextRunTime>2026-08-18 22:00:00</NextRunTime>
-		<LastRunTime>2026-08-17 22:00:00</LastRunTime>
+		<NextRunDateTime>2026-08-19 22:00:00</NextRunDateTime>
+		<NextRunTime>2026-08-19 22:00:00</NextRunTime>
+		<LastRunTime>2026-08-18 22:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
