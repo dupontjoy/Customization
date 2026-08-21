@@ -191,7 +191,7 @@
     "keepAwake": true,
     "keepSharing": false,
     "keepWindowState": false,
-    "lastCheckUpdateTime": 1787271694015,
+    "lastCheckUpdateTime": 1787289987330,
     "lastSyncTrackerTime": 1787221582815,
     "lightweightMode": true,
     "listenPort": 29120,
@@ -231,7 +231,7 @@
         "update-app",
         "update-trackers"
       ],
-      "server": "http://127.0.0.1:3067",
+      "server": "http://127.0.0.1:7897",
       "username": ""
     },
     "recentUserAgentProfileIds": [],
