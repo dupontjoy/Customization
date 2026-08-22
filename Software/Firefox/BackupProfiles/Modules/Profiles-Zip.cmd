@@ -7,20 +7,70 @@ setlocal enabledelayedexpansion
 :: 打包操作
 :Profiles-zip
 
-:: 从 %date% 提取日期（根据您的格式调整）
-:: 假设格式为：2026/07/04 或 2026-07-04
-for /f "tokens=1-3 delims=/- " %%a in ("%date%") do (
-    set "YY=%%a"
-    set "MON=%%b"
-    set "DD=%%c"
+:: 显示原始日期
+echo 原始日期: [%date%]
+
+:: 只提取数字
+set "DATE_NUM=%date%"
+:: 去除所有非数字字符
+set "DATE_NUM=%DATE_NUM: =%"
+set "DATE_NUM=%DATE_NUM:/=%"
+set "DATE_NUM=%DATE_NUM:-=%"
+set "DATE_NUM=%DATE_NUM:周一=%"
+set "DATE_NUM=%DATE_NUM:周二=%"
+set "DATE_NUM=%DATE_NUM:周三=%"
+set "DATE_NUM=%DATE_NUM:周四=%"
+set "DATE_NUM=%DATE_NUM:周五=%"
+set "DATE_NUM=%DATE_NUM:周六=%"
+set "DATE_NUM=%DATE_NUM:周日=%"
+set "DATE_NUM=%DATE_NUM:星期一=%"
+set "DATE_NUM=%DATE_NUM:星期二=%"
+set "DATE_NUM=%DATE_NUM:星期三=%"
+set "DATE_NUM=%DATE_NUM:星期四=%"
+set "DATE_NUM=%DATE_NUM:星期五=%"
+set "DATE_NUM=%DATE_NUM:星期六=%"
+set "DATE_NUM=%DATE_NUM:星期日=%"
+
+echo 数字部分: [!DATE_NUM!]
+
+:: 提取年月日
+if "!DATE_NUM:~4,1!"=="" (
+    :: 2位年份: 260822 -> 2026年08月22日
+    set "YY=20!DATE_NUM:~0,2!"
+    set "MON=!DATE_NUM:~2,2!"
+    set "DD=!DATE_NUM:~4,2!"
+) else (
+    :: 4位年份: 20260822
+    set "YY=!DATE_NUM:~0,4!"
+    set "MON=!DATE_NUM:~4,2!"
+    set "DD=!DATE_NUM:~6,2!"
 )
 
-:: 如果日期格式是 "周六 2026/07/04"，使用这个：
-for /f "tokens=2-4 delims=/- " %%a in ("%date%") do (
-    set "YY=%%a"
-    set "MON=%%b"
-    set "DD=%%c"
+:: 去除可能的前导空格
+set "YY=!YY: =!"
+set "MON=!MON: =!"
+set "DD=!DD: =!"
+
+:: ===== 修正：补零时使用字符串比较，避免八进制问题 =====
+:: 检查月份是否只有1位（如 "8" 而不是 "08"）
+if "!MON:~0,1!"=="0" (
+    :: 已经是两位（如 08），不需要补零
+    rem 保持原样
+) else (
+    :: 检查是否小于10（数字比较，但避免八进制问题）
+    set /a "MON_NUM=MON" 2>nul
+    if !MON_NUM! LSS 10 set "MON=0!MON_NUM!"
 )
+
+:: 同样处理日期
+if "!DD:~0,1!"=="0" (
+    rem 已经是两位，保持原样
+) else (
+    set /a "DD_NUM=DD" 2>nul
+    if !DD_NUM! LSS 10 set "DD=0!DD_NUM!"
+)
+
+echo 解析结果: YY=[!YY!], MON=[!MON!], DD=[!DD!]
 
 :: 计算黄帝历年份
 set /a "YY_HD=YY + 2697"
@@ -34,7 +84,6 @@ set "hh=!t_hh!"
 set "mm=%time:~3,2%"
 set "ss=%time:~6,2%"
 
-:: 生成压缩包文件名
 set "Name=FxProfiles_(%YY_HD%)%YY%.%MON%%DD%.%hh%%mm%_%ver%.7z"
 
 :: 压缩操作（路径严格引号包裹）
