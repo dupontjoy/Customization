@@ -200,7 +200,7 @@ xcopy "%BackupDir%\..\..\..\readest\updateReadest.cmd" "%SyncDir%\Customization\
 xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%SyncDir%\Customization\Software\Snipaste\" /y
 
 :steamcommunity_302
-xcopy "%BackupDir%\..\..\Software\steamcommunity_302\S302.ini" "%SyncDir%\Customization\Software\steamcommunity_302\" /y
+xcopy "%BackupDir%\..\..\Software\steamcommunity_302\S302_rules.ini" "%SyncDir%\Customization\Software\steamcommunity_302\" /y
 
 :stranslate
 robocopy "%BackupDir%\..\..\..\STranslate-win-Portable\current\PortableConfig\Settings" "%SyncDir%\Customization\Software\STranslate\Settings" /MIR /ZB /R:3 /W:5
