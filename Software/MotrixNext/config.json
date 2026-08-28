@@ -15,7 +15,6 @@
     "btEncryption": "preferred",
     "btExternalIp": "",
     "btExternalPort": 0,
-    "btFileSelectionMode": "auto",
     "btFirstLastPieceFirst": false,
     "btLocalPeerDiscoveryEnabled": true,
     "btMaxConnections": 500,
@@ -44,7 +43,7 @@
     },
     "colorScheme": "amber",
     "completedRecordRetentionDays": 1,
-    "configVersion": 6,
+    "configVersion": 7,
     "connectTimeout": 10,
     "continue": true,
     "cookie": "",
@@ -198,13 +197,14 @@
     "keepAwake": true,
     "keepSharing": false,
     "keepWindowState": false,
-    "lastCheckUpdateTime": 1787754707306,
+    "lastCheckUpdateTime": 1787814340486,
     "lastSyncTrackerTime": 1787728075559,
     "lightweightMode": true,
     "listenPort": 29120,
     "locale": "auto",
     "logLevel": "debug",
     "magnetFileSelectionMode": "auto",
+    "magnetFileSelectionPolicy": "prompt",
     "maxConcurrentDownloads": 6,
     "maxDownloadLimit": "",
     "maxOverallDownloadLimit": "0",
@@ -262,22 +262,27 @@
     "taskCardMode": "full",
     "taskListWatermark": true,
     "taskManualOrder": {
-      "active": [],
       "all": [],
-      "stopped": []
+      "completed": [],
+      "failed": [],
+      "progress": []
     },
     "taskNotification": true,
     "taskPageSize": 20,
     "taskSort": {
-      "active": {
-        "direction": "desc",
-        "field": "added-at"
-      },
       "all": {
         "direction": "desc",
         "field": "added-at"
       },
-      "stopped": {
+      "completed": {
+        "direction": "desc",
+        "field": "added-at"
+      },
+      "failed": {
+        "direction": "desc",
+        "field": "added-at"
+      },
+      "progress": {
         "direction": "desc",
         "field": "added-at"
       }
