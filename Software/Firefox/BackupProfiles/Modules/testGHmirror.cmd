@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 :testGHmirror
 :: 测试链接和镜像列表
 set "test_url=Jackchows/Cangjie5/raw/master/largefile.zip"
-set "proxies=gh.jasonzeng.dev, gh.zwy.one, github.boki.moe, cors.isteed.cc, ghproxy.homeboyc.cn"
+set "proxies=gh.jasonzeng.dev, gh.zwy.one, cors.isteed.cc"
 
 :: 初始化最快记录
 set "fastest_proxy="
@@ -90,7 +90,7 @@ if !random_index! equ 1 (
 echo ------------------------
 echo 随机选择的镜像站点是: !selected_proxy! (下载速度 !selected_speed! 字节/秒)
 set "GH_PROXY=https://!selected_proxy!"
-endlocal & set "GH_PROXY=%GH_PROXY%"
+endlocal & set "GH_PROXY=%GH_PROXY%/"
 echo GH_PROXY=%GH_PROXY%
 
 :end

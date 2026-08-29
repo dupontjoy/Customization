@@ -28,11 +28,11 @@ goto :eof
 
 :update_fixed
 echo. [下载] flower音源
-%Curl_Download% -o "%cd%\flower.js" %GH_PROXY%/https://github.com/pdone/lx-music-source/raw/refs/heads/main/flower/latest.js
+%Curl_Download% -o "%cd%\flower.js" %GH_PROXY%https://github.com/pdone/lx-music-source/raw/refs/heads/main/flower/latest.js
 echo. [下载] grass音源
-%Curl_Download% -o "%cd%\grass.js" %GH_PROXY%/https://github.com/pdone/lx-music-source/raw/refs/heads/main/grass/latest.js
+%Curl_Download% -o "%cd%\grass.js" %GH_PROXY%https://github.com/pdone/lx-music-source/raw/refs/heads/main/grass/latest.js
 echo. [下载] lx音源
-%Curl_Download% -o "%cd%\lx.js" %GH_PROXY%/https://github.com/pdone/lx-music-source/raw/refs/heads/main/lx/latest.js
+%Curl_Download% -o "%cd%\lx.js" %GH_PROXY%https://github.com/pdone/lx-music-source/raw/refs/heads/main/lx/latest.js
 
 goto :eof
 

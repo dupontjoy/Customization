@@ -38,10 +38,10 @@ setlocal enabledelayedexpansion
 echo.&echo █ 正在更新UC脚本...
 
 :: 生成下载列表
-:: %GH_PROXY%/https://github.com/benzBrake/Firefox-downloadPlus.uc.js/raw/refs/heads/main/FlashGot.uc.js
+:: %GH_PROXY%https://github.com/benzBrake/Firefox-downloadPlus.uc.js/raw/refs/heads/main/FlashGot.uc.js
 (
-echo %GH_PROXY%/https://github.com/benzBrake/userChrome.js-Loader/archive/refs/heads/main.zip
-echo %GH_PROXY%/https://raw.githubusercontent.com/benzBrake/Firefox-downloadPlus.uc.js/main/downloadPlus_Fx136.uc.js
+echo %GH_PROXY%https://github.com/benzBrake/userChrome.js-Loader/archive/refs/heads/main.zip
+echo %GH_PROXY%https://raw.githubusercontent.com/benzBrake/Firefox-downloadPlus.uc.js/main/downloadPlus_Fx136.uc.js
 echo https://gcore.jsdelivr.net/gh/xinggsf/uc/BookmarkOpt.uc.js
 ) > urls.tmp
 
@@ -89,7 +89,7 @@ echo.&echo █ 正在更新flashgot...
 set "save_path=..\UserTools\flashgot.exe"
 if not exist "..\UserTools\" md "..\UserTools"
 
-%Curl_Download% -o "%save_path%" "%GH_PROXY%/https://github.com/benzBrake/Firefox-downloadPlus.uc.js/releases/latest/download/FlashGot.exe"
+%Curl_Download% -o "%save_path%" "%GH_PROXY%https://github.com/benzBrake/Firefox-downloadPlus.uc.js/releases/latest/download/FlashGot.exe"
 
 goto :eof
 
@@ -116,7 +116,7 @@ if %errorlevel% neq 0 (
 
 :: 读取下载链接并添加镜像代理
 set /p original_url=<download_url.tmp
-set "download_url=%GH_PROXY%/%original_url%"
+set "download_url=%GH_PROXY%%original_url%"
 
 :: 下载文件
 echo [下载] %download_url%
@@ -163,7 +163,7 @@ if %errorlevel% neq 0 (
 
 :: 读取下载链接并添加镜像代理
 set /p original_url=<download_url.tmp
-set "download_url=%GH_PROXY%/%original_url%"
+set "download_url=%GH_PROXY%%original_url%"
 
 :: 下载文件
 echo [下载] %download_url%

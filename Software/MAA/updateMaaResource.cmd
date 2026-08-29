@@ -76,7 +76,7 @@ echo. 本地版本: %old_version2%
 :: 下载新版本
 echo. 
 echo. 发现新版本: %old_version2% to %version2%
-set "download_url=%GH_PROXY%/https://github.com/MaaAssistantArknights/MaaRelease/releases/download/%version2%/MAAComponent-OTA-%old_version2%_%version2%-win-x64.zip"
+set "download_url=%GH_PROXY%https://github.com/MaaAssistantArknights/MaaRelease/releases/download/%version2%/MAAComponent-OTA-%old_version2%_%version2%-win-x64.zip"
 echo. [下载] %download_url%
 
 :: 使用 PowerShell 下载文件
@@ -137,12 +137,12 @@ echo. 本地時间: %local_date%
 
 :: 下载资源
 :: echo.
-:: echo. [下载] %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
-:: %Curl_Download% -O %GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
+:: echo. [下载] %GH_PROXY%https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
+:: %Curl_Download% -O %GH_PROXY%https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip
 
 :: 使用 PowerShell 下载文件
 echo.
-set "download_url=%GH_PROXY%/https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip"
+set "download_url=%GH_PROXY%https://github.com/MaaAssistantArknights/MaaResource/archive/refs/heads/main.zip"
 echo. [下载] %download_url%
 powershell -Command "Invoke-WebRequest -Uri '%download_url%' -OutFile 'MaaResource-main.zip' -ErrorAction Stop"
 if errorlevel 1 (

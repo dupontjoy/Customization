@@ -94,7 +94,7 @@ if %errorlevel% neq 0 (
 
 :: 读取下载链接并添加镜像代理
 set /p original_url=<download_url.tmp
-set "download_url=%GH_PROXY%/%original_url%"
+set "download_url=%GH_PROXY%%original_url%"
 
 :: 下载文件
 echo [下载] %download_url%
