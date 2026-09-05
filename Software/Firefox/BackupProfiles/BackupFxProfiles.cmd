@@ -19,6 +19,7 @@ set "TargetFolder=D:"
 
 
 ::ÔOÖÃProfilesÉÏ‚÷µØÖ·
+set "SoftDir=E:\Cing@Soft\Firefox\Profiles"
 set "TargetFolder1=E:\My Documents\Nutstore\NutStoreSync\Firefox\Profiles"
 
 

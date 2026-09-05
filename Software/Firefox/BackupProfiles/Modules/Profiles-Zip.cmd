@@ -90,24 +90,24 @@ set "Name=FxProfiles_(%YY_HD%)%YY%.%MON%%DD%.%hh%%mm%_%ver%.7z"
 "%zip%" -mx9 -mhc -ms -mmt -mfb=273 -r u "%TargetFolder%\!Name!" "%TempFolder%\Profiles\BackupProfiles" "%TempFolder%\Profiles\FxProfiles" "%TempFolder%\Profiles\Run"
 
 :: 确保目标文件夹存在（修复引号嵌套）
-if not exist "%TargetFolder1%" (
-    echo 创建目标文件夹: "%TargetFolder1%"
-    mkdir "%TargetFolder1%"
+if not exist "%SoftDir%" (
+    echo 创建目标文件夹: "%SoftDir%"
+    mkdir "%SoftDir%"
 )
 
 :: 保留最新2个旧压缩包（增强删除逻辑）
 set "keep=2"
 set "count=0"
-for /f "delims=" %%F in ('dir /b /o-d "%TargetFolder1%\FxProfiles_*.7z" 2^>nul') do (
+for /f "delims=" %%F in ('dir /b /o-d "%SoftDir%\FxProfiles_*.7z" 2^>nul') do (
     set /a count+=1
     if !count! gtr %keep% (
         echo [删除旧文件] "%%F"
-        del /f /q "%TargetFolder1%\%%F" >nul 2>&1
+        del /f /q "%SoftDir%\%%F" >nul 2>&1
     )
 )
 
 :: 移动新压缩包（修复路径拼接）
-move /Y "%TargetFolder%\!Name!" "%TargetFolder1%\!Name!" >nul 2>&1
+move /Y "%TargetFolder%\!Name!" "%SoftDir%\!Name!" >nul 2>&1
 
 :: 清理临时文件夹
 timeout /t 3 /nobreak
@@ -115,6 +115,6 @@ rd /s /q "%TempFolder%"
 :: 用powershell再删除一遍
 powershell -Command "& {Remove-Item -Path '%TempFolder%' -Recurse -Force -ErrorAction SilentlyContinue; New-Item -Path '%TempFolder%' -ItemType Directory -Force | Out-Null}"
 
-@echo 備份完成！保留最近%keep%個版本，新包位置: "%TargetFolder1%\!Name!"
+@echo 備份完成！保留最近%keep%個版本，新包位置: "%SoftDir%\!Name!"
 endlocal
 
