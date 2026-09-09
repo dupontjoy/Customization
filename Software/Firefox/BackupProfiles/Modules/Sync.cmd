@@ -71,7 +71,7 @@ xcopy "%BackupDir%\..\..\Software\Capslock+\CapsLock+settings.ini" "%SyncDir%\Cu
 xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%SyncDir%\Customization\Software\CCleaner\" /y
 
 :clashverge£¨CVR£©
-robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev" "%SyncDir%\PSoftware\CVR\io.github.clash-verge-rev.clash-verge-rev" /MIR /ZB /R:3 /W:5
+::robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev" "%SyncDir%\PSoftware\CVR\io.github.clash-verge-rev.clash-verge-rev" /MIR /ZB /R:3 /W:5
 
 :docker-desktop
 xcopy "C:\Users\%USERNAME%\.docker\config.json" "%SyncDir%\Customization\Software\docker-desktop\" /y
@@ -124,7 +124,7 @@ xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\user.json" "%SyncDir%\Customiz
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\system.json" "%SyncDir%\Customization\Software\imFile\" /y
 
 :karing
-robocopy "C:\Users\%USERNAME%\AppData\Roaming\karing\karing" "%SyncDir%\PSoftware\karing\karing" /MIR /ZB /R:3 /W:5
+::robocopy "C:\Users\%USERNAME%\AppData\Roaming\karing\karing" "%SyncDir%\PSoftware\karing\karing" /MIR /ZB /R:3 /W:5
 
 :licalender
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\pro.softsoft.li-calendar\liConfig.json" "%SyncDir%\Customization\Software\licalender\" /y
