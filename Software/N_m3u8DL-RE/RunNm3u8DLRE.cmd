@@ -59,24 +59,22 @@ if "!key!"=="" (set "custom-hls-key=") else set "custom-hls-key=--custom-hls-key
 :set_proxy
 set "px="
 set "format_px="
-echo 请选择代理模式：
-echo 1. 使用代理 Karing：127.0.0.1:3067
-echo 2. 使用代理 ClashVergeRev：127.0.0.1:7897
-echo [直接回车] 直连（不使用代理）
-set /p "px=请输入数字选择（1/2，直接回车为直连）： "
+echo 输入端口号使用代理：
+echo  - Karing：3067
+echo  - Clash：7897
+echo  - satelite：2080
+echo  - 直连：直接回车
+set /p "px=请输入端口号： "
 
 if "!px!"=="" (
     set "format_px="
     echo 已选择直连模式（默认）
-) else if "!px!"=="1" (
-    set "format_px=--custom-proxy http://127.0.0.1:3067"
-    echo 已启用代理：3067端口
-) else if "!px!"=="2" (
-    set "format_px=--custom-proxy http://127.0.0.1:7897"
-    echo 已启用代理：7897端口
-) else (
-    echo 无效选择，默认使用直连模式
+) else if "!px!"==" " (
     set "format_px="
+    echo 已选择直连模式（空格）
+) else (
+    set "format_px=--custom-proxy http://127.0.0.1:!px!"
+    echo 已启用代理：!px!端口
 )
 
 :set_filename 

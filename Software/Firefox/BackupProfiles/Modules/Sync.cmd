@@ -196,6 +196,11 @@ xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\RunProcessLasso.cmd" "%SyncDir
 :readest
 xcopy "%BackupDir%\..\..\..\readest\updateReadest.cmd" "%SyncDir%\Customization\Software\readest\" /y
 
+:satelite
+robocopy "%BackupDir%\..\..\Software\Satelite-Portable\config" "%SyncDir%\PSoftware\satelite\config" /MIR /ZB /R:3 /W:5
+robocopy "%BackupDir%\..\..\Software\Satelite-Portable\data" "%SyncDir%\PSoftware\satelite\data" /MIR /ZB /R:3 /W:5
+
+
 :Snipaste
 xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%SyncDir%\Customization\Software\Snipaste\" /y
 

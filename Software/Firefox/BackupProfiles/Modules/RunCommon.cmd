@@ -49,7 +49,7 @@ powershell -command "& {$app = Get-Process -Name Foxmail; if ($app) { $app.Close
 
 :weixin
 ::启動微信并点击登录
-start "" "%cd%\..\..\Tencent\Weixin\Weixin.exe"
+::start "" "%cd%\..\..\Tencent\Weixin\Weixin.exe"
 
 REM 等待微信界面加载（时间可根据实际情况调整）
 timeout /t 8 /nobreak >nul

@@ -1,12 +1,12 @@
 /*!
  * @name 独家音源
  * @description 后续更新，请关注微信公众号: 洛雪科技
- * @version 5
+ * @version 6
  * @author w
  */
 
 // ===== 服务端下发配置(自动生成, 请勿修改) =====
-globalThis['SERVER_SCRIPT_CONFIG'] = {"apiUrl":"https:\/\/88.lxmusic.xn--fiqs8s","apiKey":"lxmusic","signSalt":"LxSrv@2026#Sig","fingerprint":"74c52ba24b386a2301983d94596246c2"};
+globalThis['SERVER_SCRIPT_CONFIG'] = {"apiUrl":"https:\/\/88.lxmusic.xn--fiqs8s","apiKey":"lxmusic","signSalt":"LxSrv@2026#Sig","fingerprint":"ffdaccdf66796c1cbe96df07bf682118"};
 // ===== 服务端下发配置结束 =====
 
 
