@@ -13,6 +13,8 @@ pushd %~dp0
 ::設置文件所在位置
 set "SyncDir=E:\My Documents\Nutstore\NutStoreSync"
 
+:any-listen
+robocopy "%SyncDir%\PSoftware\any-listen\AnyListenDatas" "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas" /MIR /ZB /R:3 /W:5
 
 :anytxt
 robocopy "%SyncDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt\config" /MIR /ZB /R:3 /W:5

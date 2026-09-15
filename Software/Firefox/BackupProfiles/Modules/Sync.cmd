@@ -45,6 +45,10 @@ rd /s /q "%BackupDir%\..\..\Software\ImageGlass\ThumbnailsCache"
 ::删除pixpin自动保存的贴图
 rd /s /q "%BackupDir%\..\..\Software\PixPin\Data"
 
+:any-listen
+robocopy "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas\extension" "%SyncDir%\PSoftware\any-listen\AnyListenDatas\extension" /MIR /ZB /R:3 /W:5
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas\extension\anylisten.data.db" "%SyncDir%\PSoftware\any-listen\AnyListenDatas\" /y
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas\extension\config.json" "%SyncDir%\PSoftware\any-listen\AnyListenDatas\" /y
 
 :anytxt
 robocopy "C:\ProgramData\Anytxt\config" "%SyncDir%\Customization\Software\Anytxt\config" /MIR /ZB /R:3 /W:5
@@ -197,9 +201,9 @@ xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\RunProcessLasso.cmd" "%SyncDir
 xcopy "%BackupDir%\..\..\..\readest\updateReadest.cmd" "%SyncDir%\Customization\Software\readest\" /y
 
 :satelite
-robocopy "%BackupDir%\..\..\Software\Satelite-Portable\config" "%SyncDir%\PSoftware\satelite\config" /MIR /ZB /R:3 /W:5
-robocopy "%BackupDir%\..\..\Software\Satelite-Portable\data" "%SyncDir%\PSoftware\satelite\data" /MIR /ZB /R:3 /W:5
-
+::robocopy "%BackupDir%\..\..\Software\Satelite-Portable\config" "%SyncDir%\PSoftware\satelite\config" /MIR /ZB /R:3 /W:5
+::robocopy "%BackupDir%\..\..\Software\Satelite-Portable\data" "%SyncDir%\PSoftware\satelite\data" /MIR /ZB /R:3 /W:5
+xcopy "%BackupDir%\..\..\Software\Satelite-Portable\data\store.json" "%SyncDir%\PSoftware\satelite\data\" /y
 
 :Snipaste
 xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%SyncDir%\Customization\Software\Snipaste\" /y

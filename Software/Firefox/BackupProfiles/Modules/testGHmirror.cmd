@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 :testGHmirror
 :: 测试链接和镜像列表
 set "test_url=Jackchows/Cangjie5/raw/master/largefile.zip"
-set "proxies=gh.jasonzeng.dev, gh.zwy.one, cors.isteed.cc"
+set "proxies=gh.zwy.one, cors.isteed.cc, gh.h233.eu.org, github.boki.moe, hk.gh-proxy.org"
 
 :: 初始化最快记录
 set "fastest_proxy="
