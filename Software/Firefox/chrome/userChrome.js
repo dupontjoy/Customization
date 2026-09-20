@@ -14,9 +14,10 @@
 // 4.Support window.userChrome_js.loadOverlay(overlay [,observer]) <--- not work in recent Firefox
 // Modified by Alice0775
 //
-// @version       2026/08/03 Bug 1872673 - Console.sys.mjs removed the console export
-// @version       2026/07/31 Bug 1974213 - load local scripts through chrome:// URLs
-// @note          2026/07/31 Firefox 155: removed file: URLs from local script loading
+// @version       2026/09/06 fix custom actors in origin-specific webIsolated processes, eave actor remoteTypes unset by default so webIsolated origins are matched
+// @version       2026/08/10 support restartless script reload and unload, align @startup/@shutdown lifecycle with xiaoxiaoflood scripts while keeping Alice prefs
+// @version       2026/08/04 Bug 2047680 - support explicit safeForUntrustedWebProcess actor metadata, Firefox 154: require actor scripts to opt in before loading in web/file processes
+// @version       2026/07/31 Bug 1974213 - load local scripts through chrome:// URLs, Firefox 155: removed file: URLs from local script loading
 // @version       2026/03/01 Bug 2017957 - Add freezeBuiltins option to Cu.Sandbox
 // @version       2026/06/24 add @backgroundmodule support
 // @version       2025/08/30 Fallback to only load mjs with chrome://
@@ -107,10 +108,21 @@
         registerSharedChromeHandler,
         registerSharedScript,
     } = ChromeUtils.importESModule("chrome://userchromejs/content/utils/UcActorRegistry.sys.mjs");
-    // Bug 1872673 removed the shared `console` export from Console.sys.mjs.
-    const { ConsoleAPI } = ChromeUtils.importESModule("resource://gre/modules/Console.sys.mjs");
+    const {
+        clearScriptRunning,
+        forgetWindow,
+        getRunningWindows,
+        getWindowSandbox,
+        hasEverLoaded,
+        isScriptRunning,
+        markEverLoaded,
+        markScriptRunning,
+        markScriptStopped,
+        registerScript: registerRuntimeScript,
+        setWindowSandbox,
+    } = ChromeUtils.importESModule("chrome://userchromejs/content/utils/UcScriptRuntime.sys.mjs");
     const lazy = {}
-    ChromeUtils.defineLazyGetter(lazy, "console", () => new ConsoleAPI({
+    ChromeUtils.defineLazyGetter(lazy, "console", () => console.createInstance({
         prefix: "userChrome.js"
     }));
     // -- config --
@@ -120,7 +132,7 @@
     const REPLACECACHE = true; //スクリプトの更新日付によりキャッシュを更新する: true , しない:[false]
     //=====================USE_0_63_FOLDER = falseの時===================
     var UCJS = new Array("UCJSFiles", "userContent", "userMenu"); //UCJS Loader 仕様を適用
-    var arrSubdir = new Array("", "xul", "TabMixPlus", "withTabMixPlus", "SubScript", "UCJSFiles", "userCrome.js.0.8", "userContent", "userMenu", "userChromeJS");    //スクリプトはこの順番で実行される
+    var arrSubdir = new Array("", "xul", "TabMixPlus", "withTabMixPlus", "SubScript", "UCJSFiles", "userCrome.js.0.8", "userContent", "userMenu", "UserChromeJS");    //スクリプトはこの順番で実行される
     //===================================================================
     const ALWAYSEXECUTE = ['rebuild_userChrome.uc.xul', 'rebuild_userChrome.uc.js']; //常に実行するスクリプト
     var INFO = true;
@@ -174,6 +186,17 @@
         get hackVersion () {
             delete this.hackVersion;
             return this.hackVersion = "0.8";
+            //拡張のバージョン違いを吸収
+            this.baseUrl = /^(chrome:\/\/\S+\/content\/)\S+/i.test(Error().fileName).$1;
+            if (!/^(chrome:\/\/\S+\/content\/)\S+/i.test(Error().fileName)) {
+            } else if (Error().fileName.indexOf("chrome://uc_js/content/uc_js.xul") > -1 ||
+                "chrome://userchrome_js_cache/content/userChrome.js" == Error().fileName) {  //0.8.0+ or 0.7
+                return this.hackVersion = "0.8+";
+            } else if (Error().fileName.indexOf("chrome://browser/content/browser.xul -> ") == 0) {
+                return this.hackVersion = "0.8.1";
+            } else {
+                return this.hackVersion = "0.8mod";
+            }
         },
 
         //スクリプトデータを作成
@@ -209,10 +232,11 @@
             var that = this;
             var mediator = Components.classes["@mozilla.org/appshell/window-mediator;1"]
                 .getService(Components.interfaces.nsIWindowMediator);
+            var mainWindowURL = that.BROWSERCHROME;
             if (mediator.getMostRecentWindow("navigator:browser"))
-                var mainWindowURL = that.BROWSERCHROME;
+                mainWindowURL = that.BROWSERCHROME;
             else if (mediator.getMostRecentWindow("mail:3pane"))
-                var mainWindowURL = "chrome://messenger/content/messenger.xul";
+                mainWindowURL = "chrome://messenger/content/messenger.xul";
 
             this.dirDisable = restoreState(getPref("userChrome.disable.directory", "str", "").split(','));
             this.scriptDisable = restoreState(getPref("userChrome.disable.script", "str", "").split(','));
@@ -232,6 +256,8 @@
                     .join("/");
                 return `chrome://userchromejs/content/${encodedPath}`;
             };
+            this._parseScriptData = getScriptData;
+            this._readScriptFile = readFile;
             for (var i = 0, len = this.arrSubdir.length; i < len; i++) {
                 var s = [], o = [];
                 try {
@@ -252,10 +278,12 @@
                             if (/\.(uc|sys)\.mjs$/i.test(script.filename)) {
                                 script.chromedir = script.url;
                                 script.LastModifiedTime = this.getLastModifiedTime(script.file);
+                                this.ensureScriptMetadata(script);
                                 s.push(script);
                             } else if (/\.uc\.js$/i.test(script.filename)) {
                                 script.ucjs = checkUCJS(script.file.path);
                                 script.LastModifiedTime = this.getLastModifiedTime(script.file);
+                                this.ensureScriptMetadata(script);
                                 s.push(script);
                             } else {
                                 script.xul = '<?xul-overlay href=\"' + script.url + '\"?>\n';
@@ -309,15 +337,28 @@
                 const backgroundMode = /\/\/ @backgroundmodule\b/i.test(header)
                     || /\.sys\.mjs$/i.test(aFile.leafName);
                 const url = getChromeURL(aFile);
+                const relativePath = aFile.path
+                    .slice(chromeDirPath.length)
+                    .replace(/^[\\/]+/, "")
+                    .replace(/\\/g, "/");
                 const actor = extractSingleMeta(header, /\/\/ @actor\b(.+)\s*/i);
                 const content = extractSingleMeta(header, /\/\/ @content\b(.+)\s*/i);
                 const exportedModule = extractSingleMeta(header, /\/\/ @export\b(.+)\s*/i);
                 const notes = extractMultiMeta(header, /\/\/ @note\s+(.+)\s*$/gim);
                 const icon = extractSingleMeta(header, /\/\/ @icon\s+(.+)\s*$/im);
+                const author = extractSingleMeta(header, /\/\/ @author\s+(.+)\s*$/im);
+                const filename = aFile.leafName;
                 const s = {
-                    filename: aFile.leafName,
+                    filename,
                     file: aFile,
                     url,
+                    relativePath,
+                    scriptId: relativePath,
+                    name: extractSingleMeta(header, /\/\/ @name\s+(.+)\s*$/im),
+                    version: extractSingleMeta(header, /\/\/ @version\s+(.+)\s*$/im),
+                    author,
+                    id: extractSingleMeta(header, /\/\/ @id\s+(.+)\s*$/im)
+                        || `${filename.replace(/\.uc\.js$/i, "")}@${author || "userChromeJS"}`,
                     isActor: false,
                     charset,
                     description,
@@ -334,6 +375,8 @@
                     onlyonce: /\/\/ @onlyonce\b/.test(header),
                     homepageURL: extractSingleMeta(header, /\/\/ @homepage(URL)?\s+(.+)\s*$/im, 2),
                     downloadURL: extractSingleMeta(header, /\/\/ @downloadURL\s+(.+)\s*$/im),
+                    updateURL: extractSingleMeta(header, /\/\/ @updateURL\s+(.+)\s*$/im),
+                    reviewURL: extractSingleMeta(header, /\/\/ @reviewURL\s+(.+)\s*$/im),
                     optionsURL: extractSingleMeta(header, /\/\/ @optionsURL\s+(.+)\s*$/im),
                     startup: extractSingleMeta(header, /\/\/ @startup\s+(.+)\s*$/im),
                     shutdown: extractSingleMeta(header, /\/\/ @shutdown\s+(.+)\s*$/im),
@@ -354,6 +397,8 @@
                     if (kindStr) actorParams.kind = kindStr.trim();
                     const includeChromeStr = extractSingleMeta(header, /\/\/ @actor:includeChrome\s+(.+)\s*$/im);
                     if (includeChromeStr) actorParams.includeChrome = includeChromeStr.trim() === 'true';
+                    const remoteTypesStr = extractSingleMeta(header, /\/\/ @actor:remoteTypes?\s+(.+)\s*$/im);
+                    if (remoteTypesStr) actorParams.remoteTypes = splitMetaList(remoteTypesStr);
                     const groupsStr = extractSingleMeta(header, /\/\/ @actor:groups\s+(.+)\s*$/im);
                     if (groupsStr) actorParams.messageManagerGroups = splitMetaList(groupsStr);
 
@@ -368,6 +413,13 @@
 
                     const allFrames = extractSingleMeta(header, /\/\/ @actor:allframes\s+(.+)\s*$/im);
                     if (allFrames) actorParams.allFrames = allFrames === 'true';
+                    const safeForUntrustedWebProcess = extractSingleMeta(
+                        header,
+                        /\/\/ @actor:safeForUntrustedWebProcess\s+(.+)\s*$/im
+                    );
+                    if (/^(?:true|false)$/i.test(safeForUntrustedWebProcess)) {
+                        actorParams.safeForUntrustedWebProcess = safeForUntrustedWebProcess.toLowerCase() === 'true';
+                    }
 
                     // 将结果合并到对象 s 中
                     Object.assign(s, {
@@ -400,6 +452,13 @@
                     if (allFrames) contentParams.allFrames = allFrames === 'true';
                     const contentSandbox = extractSingleMeta(header, /\/\/ @content:sandbox\s+(.+)\s*$/im);
                     if (contentSandbox) contentParams.sandbox = contentSandbox === 'true';
+                    const safeForUntrustedWebProcess = extractSingleMeta(
+                        header,
+                        /\/\/ @content:safeForUntrustedWebProcess\s+(.+)\s*$/im
+                    );
+                    if (/^(?:true|false)$/i.test(safeForUntrustedWebProcess)) {
+                        contentParams.safeForUntrustedWebProcess = safeForUntrustedWebProcess.toLowerCase() === 'true';
+                    }
 
                     Object.assign(s, {
                         isContentScript: true,
@@ -573,6 +632,328 @@
             }
         },
 
+        readFile: function (aFile, metaOnly = false) {
+            if (!this._readScriptFile) {
+                const sourceLoader = this.getScriptWindows()
+                    .map(win => win.userChrome_js)
+                    .find(loader => loader?._readScriptFile);
+                if (sourceLoader) {
+                    this._readScriptFile = sourceLoader._readScriptFile;
+                    this._parseScriptData = sourceLoader._parseScriptData;
+                }
+            }
+            if (!this._readScriptFile) {
+                throw new Error("userChrome.js script parser is not initialized");
+            }
+            return this._readScriptFile(aFile, metaOnly);
+        },
+
+        getScriptData: function (aFile) {
+            if (!this._parseScriptData) {
+                this.readFile(aFile, true);
+            }
+            const script = this._parseScriptData(this.readFile(aFile, true), aFile);
+            const oldScript = this.scripts?.find(item => {
+                try {
+                    return item.file.equals(aFile);
+                } catch (e) {
+                    return item.file?.path === aFile.path;
+                }
+            });
+            const pathParts = script.relativePath.split("/");
+            script.dir = oldScript?.dir || (pathParts.length > 1 ? pathParts[0] : "root");
+            script.ucjs = oldScript?.ucjs ?? this.UCJS.some(name => script.relativePath.includes(name));
+            script.LastModifiedTime = this.getLastModifiedTime(aFile);
+            if (/\.(uc|sys)\.mjs$/i.test(script.filename)) {
+                script.chromedir = script.url;
+            }
+            this.ensureScriptMetadata(script);
+            this.replaceScriptData(script);
+            return script;
+        },
+
+        replaceScriptData: function (script) {
+            const loaders = new Set([this]);
+            for (const win of this.getScriptWindows()) {
+                if (win.userChrome_js) {
+                    loaders.add(win.userChrome_js);
+                }
+            }
+            for (const loader of loaders) {
+                if (!Array.isArray(loader.scripts)) {
+                    continue;
+                }
+                const index = loader.scripts.findIndex(item => item.scriptId === script.scriptId);
+                if (index >= 0) {
+                    loader.scripts[index] = script;
+                } else if (loader === this) {
+                    loader.scripts.push(script);
+                }
+            }
+        },
+
+        getScriptWindows: function () {
+            const result = [];
+            const seen = new Set();
+            const appendWindow = win => {
+                if (!win || win.closed || seen.has(win)) {
+                    return;
+                }
+                try {
+                    if (!/^(?:chrome|about):$/i.test(win.location.protocol)) {
+                        return;
+                    }
+                } catch (e) {
+                    return;
+                }
+                seen.add(win);
+                result.push(win);
+            };
+            const windows = Services.wm.getEnumerator(null);
+            while (windows.hasMoreElements()) {
+                const topWindow = windows.getNext();
+                appendWindow(topWindow);
+                try {
+                    const frames = topWindow.docShell.getAllDocShellsInSubtree(
+                        Ci.nsIDocShellTreeItem.typeAll,
+                        Ci.nsIDocShell.ENUMERATE_FORWARDS
+                    );
+                    for (const frame of frames) {
+                        appendWindow(frame.domWindow);
+                    }
+                } catch (e) { }
+            }
+            return result;
+        },
+
+        refreshDisabledState: function () {
+            const restoreState = prefName => {
+                const state = [];
+                const value = unescape(Services.prefs.getStringPref(prefName, ""));
+                for (const name of value.split(",")) {
+                    if (name) {
+                        state[unescape(name)] = true;
+                    }
+                }
+                return state;
+            };
+            this.dirDisable = restoreState("userChrome.disable.directory");
+            this.scriptDisable = restoreState("userChrome.disable.script");
+            return this.scriptDisable;
+        },
+
+        isScriptEnabled: function (script) {
+            this.refreshDisabledState();
+            return this.ALWAYSEXECUTE.includes(script.filename)
+                || !(this.dirDisable["*"] || this.dirDisable[script.dir] || this.scriptDisable[script.filename]);
+        },
+
+        isLifecycleManaged: function (script) {
+            this.ensureScriptMetadata(script, false);
+            return /\.uc\.js$/i.test(script.filename)
+                && script.executionMode === "chrome-only"
+                && !script.async
+                && !script.ucjs;
+        },
+
+        isHotReloadable: function (script) {
+            return this.isLifecycleManaged(script) && !!script.shutdown;
+        },
+
+        getScriptSandbox: function (win) {
+            let target = getWindowSandbox(win);
+            if (target) {
+                this.sb = target;
+                return target;
+            }
+            target = new Cu.Sandbox(win, {
+                sandboxPrototype: win,
+                sameZoneAs: win,
+                freezeBuiltins: false,
+            });
+            Cu.evalInSandbox(`
+                const { initUloadMap, setUnloadMap, getUnloadMaps } = ChromeUtils.importESModule("chrome://userchromejs/content/utils/ucf.sys.mjs");
+                initUloadMap(window);
+                globalThis.setUnloadMap = (key, func, context) => setUnloadMap(window, key, func, context);
+                globalThis.getUnloadMaps = () => getUnloadMaps(window);
+            `, target);
+            Cu.evalInSandbox(`
+                Function.prototype.toSource = window.Function.prototype.toSource;
+                Object.defineProperty(Function.prototype, "toSource", { enumerable: false });
+                Object.prototype.toSource = window.Object.prototype.toSource;
+                Object.defineProperty(Object.prototype, "toSource", { enumerable: false });
+                Array.prototype.toSource = window.Array.prototype.toSource;
+                Object.defineProperty(Array.prototype, "toSource", { enumerable: false });
+            `, target);
+            win.addEventListener("unload", () => {
+                forgetWindow(win);
+                setTimeout(() => {
+                    try {
+                        Cu.nukeSandbox(target);
+                    } catch (e) { }
+                }, 0);
+            }, { once: true });
+            setWindowSandbox(win, target);
+            this.sb = target;
+            return target;
+        },
+
+        evaluateLifecycle: function (source, script, win, target) {
+            if (!source) {
+                return;
+            }
+            return Cu.evalInSandbox(`(function(script, win){${source}})`, target)(script, win);
+        },
+
+        loadManagedScript: function (script, win, target) {
+            this.ensureScriptMetadata(script);
+            if (!this.isLifecycleManaged(script)) {
+                return false;
+            }
+            if (script.onlyonce && isScriptRunning(script)) {
+                if (getRunningWindows(script).includes(win)) {
+                    return true;
+                }
+                markScriptRunning(script, win);
+                try {
+                    this.evaluateLifecycle(script.startup, script, win, target);
+                } catch (ex) {
+                    this.error(script.filename, ex);
+                }
+                return true;
+            }
+            if (!script.onlyonce && getRunningWindows(script).includes(win)) {
+                return true;
+            }
+
+            const targetWin = script.sandbox ? target : win;
+            try {
+                const scriptURI = `${script.url}?${this.getLastModifiedTime(script.file)}`;
+                if (script.charset) {
+                    Services.scriptloader.loadSubScript(scriptURI, targetWin, script.charset);
+                } else {
+                    Services.scriptloader.loadSubScript(scriptURI, targetWin);
+                }
+            } catch (ex) {
+                this.error(script.filename, ex);
+                return false;
+            }
+
+            markScriptRunning(script, win);
+            if (!script.shutdown) {
+                markEverLoaded(script);
+            }
+            try {
+                this.evaluateLifecycle(script.startup, script, win, target);
+            } catch (ex) {
+                this.error(script.filename, ex);
+            }
+            return true;
+        },
+
+        loadScript: function (script, win = window) {
+            this.ensureScriptMetadata(script);
+            if (!this.isLifecycleManaged(script) || !win || win.closed) {
+                return false;
+            }
+            let href;
+            try {
+                href = win.location.href.replace(/#.*$/, "");
+            } catch (e) {
+                return false;
+            }
+            if (!script.regex.test(href) || !this.isScriptEnabled(script)) {
+                return false;
+            }
+            return this.loadManagedScript(script, win, this.getScriptSandbox(win));
+        },
+
+        unloadScript: function (script) {
+            this.ensureScriptMetadata(script);
+            if (!this.isHotReloadable(script) || !isScriptRunning(script)) {
+                return false;
+            }
+            let runningWindows = getRunningWindows(script);
+            if (script.onlyonce) {
+                runningWindows = runningWindows.slice(0, 1);
+                if (!runningWindows.length) {
+                    runningWindows = this.getScriptWindows().filter(win => {
+                        try {
+                            return script.regex.test(win.location.href.replace(/#.*$/, ""));
+                        } catch (e) {
+                            return false;
+                        }
+                    }).slice(0, 1);
+                }
+            }
+
+            for (const win of runningWindows) {
+                try {
+                    this.evaluateLifecycle(script.shutdown, script, win, this.getScriptSandbox(win));
+                } catch (ex) {
+                    this.error(script.filename, ex);
+                }
+                if (!script.onlyonce) {
+                    markScriptStopped(script, win);
+                }
+            }
+            clearScriptRunning(script);
+            return true;
+        },
+
+        reloadScript: function (script) {
+            if (!this.isHotReloadable(script)) {
+                return null;
+            }
+            if (isScriptRunning(script)) {
+                this.unloadScript(script);
+            }
+            const refreshed = this.getScriptData(script.file);
+            Services.obs.notifyObservers(null, "startupcache-invalidate");
+            if (this.isScriptEnabled(refreshed)) {
+                for (const win of this.getScriptWindows()) {
+                    this.loadScript(refreshed, win);
+                }
+            }
+            return refreshed;
+        },
+
+        setScriptEnabled: function (script, enabled) {
+            if (this.ALWAYSEXECUTE.includes(script.filename)) {
+                return true;
+            }
+            const prefName = "userChrome.disable.script";
+            const names = unescape(Services.prefs.getStringPref(prefName, ""))
+                .split(",")
+                .filter(Boolean)
+                .map(unescape)
+                .filter(name => name !== script.filename);
+            if (!enabled) {
+                names.push(script.filename);
+            }
+            Services.prefs.setStringPref(prefName, escape([...new Set(names)].join(",")));
+            for (const win of this.getScriptWindows()) {
+                win.userChrome_js?.refreshDisabledState();
+            }
+
+            if (!enabled) {
+                if (this.isHotReloadable(script)) {
+                    this.unloadScript(script);
+                }
+                return false;
+            }
+            if (isScriptRunning(script) || hasEverLoaded(script)) {
+                return true;
+            }
+
+            const refreshed = this.getScriptData(script.file);
+            Services.obs.notifyObservers(null, "startupcache-invalidate");
+            for (const win of this.getScriptWindows()) {
+                this.loadScript(refreshed, win);
+            }
+            return true;
+        },
+
         getLastModifiedTime: function (aScriptFile) {
             if (this.REPLACECACHE) {
                 return aScriptFile.lastModifiedTime;
@@ -580,7 +961,7 @@
             return "";
         },
 
-        ensureScriptMetadata: function (script) {
+        ensureScriptMetadata: function (script, registerRuntime = true) {
             script.moduleURI = script.chromedir
                 ? `${script.chromedir}?${this.getLastModifiedTime(script.file)}`
                 : "";
@@ -588,6 +969,10 @@
             script.backgroundMode ||= /\.sys\.mjs$/i.test(script.filename);
             script.executionMode ||= script.backgroundMode ? "background-module" : script.isActor ? "custom-actor" : script.isContentScript ? "shared-actor" : "chrome-only";
             script.isContentScript ||= script.executionMode === "shared-actor";
+            if (registerRuntime && /\.uc\.js$/i.test(script.filename)
+                && script.executionMode === "chrome-only" && !script.async && !script.ucjs) {
+                registerRuntimeScript(script);
+            }
             return script;
         },
 
@@ -630,6 +1015,7 @@
                     events: script.contentParams?.events || { DOMContentLoaded: {} },
                     allFrames: script.contentParams?.allFrames !== false,
                     sandbox: !!script.contentParams?.sandbox,
+                    safeForUntrustedWebProcess: script.contentParams?.safeForUntrustedWebProcess === true,
                 });
             }
             if (!hasSharedScript) {
@@ -758,19 +1144,6 @@
             return false;
         },
 
-        registerScriptShutdown: function (script, win, target) {
-            if (!script.shutdown) {
-                return;
-            }
-            win.addEventListener("unload", () => {
-                try {
-                    Cu.evalInSandbox(`(function(script, win){${script.shutdown}})`, target)(script, win);
-                } catch (ex) {
-                    this.error(script.filename, ex);
-                }
-            }, { once: true });
-        },
-
         //window.userChrome_js.loadOverlay
         shutdown: false,
         overlayWait: 0,
@@ -883,36 +1256,9 @@
                 return "1.6";
             })();
 
-            let target = win = doc.defaultView;
-
-            target = new Cu.Sandbox(win, {
-                sandboxPrototype: win,
-                sameZoneAs: win,
-                freezeBuiltins: false,
-            });
-
-            // 兼容 ucf setUnloadMap
-            Cu.evalInSandbox(`
-                const { initUloadMap, setUnloadMap } = ChromeUtils.importESModule("chrome://userchromejs/content/utils/ucf.sys.mjs")
-                initUloadMap(window);
-                globalThis.setUnloadMap = setUnloadMap;
-            `, target);
-
-            /* toSource() is not available in sandbox */
-            Cu.evalInSandbox(`
-                  Function.prototype.toSource = window.Function.prototype.toSource;
-            Object.defineProperty(Function.prototype, "toSource", {enumerable : false})
-                  Object.prototype.toSource = window.Object.prototype.toSource;
-            Object.defineProperty(Object.prototype, "toSource", {enumerable : false})
-                  Array.prototype.toSource = window.Array.prototype.toSource;
-            Object.defineProperty(Array.prototype, "toSource", {enumerable : false})
-              `, target);
-            win.addEventListener("unload", () => {
-                setTimeout(() => {
-                    Cu.nukeSandbox(target);
-                }, 0);
-            }, { once: true });
-            this.sb = target;
+            let win = doc.defaultView;
+            let target = this.getScriptSandbox(win);
+            this.refreshDisabledState();
             registerChromeWindow(win);
             this.ensureSharedActorRegistration();
 
@@ -932,11 +1278,14 @@
                     this.registerScriptActor(script);
                 }
                 if (!script.regex.test(dochref)) continue;
+                if (this.isLifecycleManaged(script)) {
+                    this.loadManagedScript(script, win, target);
+                    continue;
+                }
                 if (script.onlyonce && script.isRunning) {
                     if (script.startup) {
                         Cu.evalInSandbox(`(function(script, win){${script.startup}})`, target)(script, win);
                     }
-                    this.registerScriptShutdown(script, win, target);
                     continue;
                 }
                 if (script.ucjs) { //for UCJS_loader
@@ -946,7 +1295,6 @@
                     aScript.src = script.url + "?" + this.getLastModifiedTime(script.file);
                     try {
                         doc.documentElement.appendChild(aScript);
-                        this.registerScriptShutdown(script, win, target);
                     } catch (ex) {
                         this.error(script.filename, ex);
                     }
@@ -984,7 +1332,6 @@
                                 if (script.startup) {
                                     Cu.evalInSandbox(`(function(script, win){${script.startup}})`, target)(script, win);
                                 }
-                                this.registerScriptShutdown(script, win, target);
                             } catch (ex) {
                                 this.error(script.filename, ex);
                             }
@@ -994,16 +1341,13 @@
                                 if (r) {
                                     r.executeInGlobal(/*global*/ script.onlyonce ? { window: targetWin } : targetWin, { reportExceptions: true });
                                     script.isRunning = true;
-                                    this.registerScriptShutdown(script, win, target);
                                 }
                             }).catch((ex) => {
                                 this.error(`@ ${script.filename}: script couldn't be compiled because:`, ex);
                             })
                         }
                     } else {
-                        if (this.runModuleScript(script, win, targetWin)) {
-                            this.registerScriptShutdown(script, win, target);
-                        }
+                        this.runModuleScript(script, win, targetWin);
                     }
                 }
             }
@@ -1094,6 +1438,7 @@
     } else {
         if (that.INFO) that.debug("skip getScripts");
     }
+    that.refreshDisabledState();
 
     var href = location.href;
     var doc = document;

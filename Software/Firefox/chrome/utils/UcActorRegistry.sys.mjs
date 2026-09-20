@@ -46,6 +46,7 @@ function registerSharedScript(scriptDef) {
         events: cloneEvents(scriptDef.events),
         allFrames: scriptDef.allFrames !== false,
         sandbox: !!scriptDef.sandbox,
+        safeForUntrustedWebProcess: scriptDef.safeForUntrustedWebProcess === true,
     });
     return true;
 }
@@ -64,9 +65,11 @@ function getSharedActorOptions() {
     const matches = new Set();
     const groups = new Set();
     let allFrames = false;
+    let safeForUntrustedWebProcess = sharedScripts.size > 0;
 
     for (const script of sharedScripts.values()) {
         allFrames ||= script.allFrames !== false;
+        safeForUntrustedWebProcess &&= script.safeForUntrustedWebProcess === true;
         for (const [name, options] of Object.entries(script.events || {})) {
             events[name] = { ...options };
         }
@@ -91,6 +94,7 @@ function getSharedActorOptions() {
             events,
         },
         allFrames,
+        safeForUntrustedWebProcess,
     };
 
     if (matches.size) {

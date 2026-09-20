@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 :testGHmirror
 :: 测试链接和镜像列表
 set "test_url=Jackchows/Cangjie5/raw/master/largefile.zip"
-set "proxies=gh.zwy.one, cors.isteed.cc, gh.h233.eu.org, github.boki.moe, hk.gh-proxy.org"
+set "proxies=gh.232885.xyz, gh.232885.kdns.fr, gh.xuanqj.qzz.io, gh.zwy.one, cors.isteed.cc, github.boki.moe"
 
 :: 初始化最快记录
 set "fastest_proxy="
@@ -16,6 +16,7 @@ set "second_speed_int=0"
 set "third_proxy="
 set "third_speed=0"
 set "third_speed_int=0"
+set "valid_count=0"
 
 :: 将逗号分隔的镜像列表转换为空格分隔
 set "proxies=!proxies:,= !"
@@ -30,51 +31,64 @@ for %%p in (!proxies!) do (
     set /a "count+=1"
     echo [!count!/!total!] 测试镜像站点: %%p
     set "current_speed=0"
-    for /f "tokens=*" %%t in ('curl --max-time 20 -o tempfile -s -w "%%{speed_download}" "https://%%p/%test_url%" 2^>NUL ^|^| echo 0') do (
+    for /f "tokens=*" %%t in ('curl --max-time 20 --connect-timeout 5 -o tempfile -s -w "%%{speed_download}" "https://%%p/%test_url%" 2^>NUL ^|^| echo 0') do (
         set "current_speed=%%t"
     )
     del tempfile 2>nul
-    
-    :: 提取整数部分（只保留小数点前的数字）
+
+    :: 提取整数部分
     for /f "delims=." %%a in ("!current_speed!") do set "current_speed_int=%%a"
     if "!current_speed_int!"=="" set "current_speed_int=0"
-    
+
     echo  下载速度: !current_speed_int! 字节/秒
-    
-    :: 使用整数进行比较
-    if !current_speed_int! gtr !fastest_speed_int! (
-        set "third_speed=!second_speed!"
-        set "third_proxy=!second_proxy!"
-        set "third_speed_int=!second_speed_int!"
-        set "second_speed=!fastest_speed!"
-        set "second_proxy=!fastest_proxy!"
-        set "second_speed_int=!fastest_speed_int!"
-        set "fastest_speed=!current_speed!"
-        set "fastest_proxy=%%p"
-        set "fastest_speed_int=!current_speed_int!"
-    ) else if !current_speed_int! gtr !second_speed_int! (
-        set "third_speed=!second_speed!"
-        set "third_proxy=!second_proxy!"
-        set "third_speed_int=!second_speed_int!"
-        set "second_speed=!current_speed!"
-        set "second_proxy=%%p"
-        set "second_speed_int=!current_speed_int!"
-    ) else if !current_speed_int! gtr !third_speed_int! (
-        set "third_speed=!current_speed!"
-        set "third_proxy=%%p"
-        set "third_speed_int=!current_speed_int!"
+
+    :: 只把速度大于 0 的镜像计入排名
+    if !current_speed_int! gtr 0 (
+        set /a "valid_count+=1"
+        if !current_speed_int! gtr !fastest_speed_int! (
+            set "third_speed=!second_speed!"
+            set "third_proxy=!second_proxy!"
+            set "third_speed_int=!second_speed_int!"
+            set "second_speed=!fastest_speed!"
+            set "second_proxy=!fastest_proxy!"
+            set "second_speed_int=!fastest_speed_int!"
+            set "fastest_speed=!current_speed!"
+            set "fastest_proxy=%%p"
+            set "fastest_speed_int=!current_speed_int!"
+        ) else if !current_speed_int! gtr !second_speed_int! (
+            set "third_speed=!second_speed!"
+            set "third_proxy=!second_proxy!"
+            set "third_speed_int=!second_speed_int!"
+            set "second_speed=!current_speed!"
+            set "second_proxy=%%p"
+            set "second_speed_int=!current_speed_int!"
+        ) else if !current_speed_int! gtr !third_speed_int! (
+            set "third_speed=!current_speed!"
+            set "third_proxy=%%p"
+            set "third_speed_int=!current_speed_int!"
+        )
+    ) else (
+        echo  该镜像不可用，跳过排名
     )
 )
 
-:: 显示前三名
+:: 显示前三名（仅显示有效的）
 echo ------------------------
-echo 最快的三个镜像站点:
-echo 1. !fastest_proxy! (下载速度 !fastest_speed_int! 字节/秒)
-echo 2. !second_proxy! (下载速度 !second_speed_int! 字节/秒)
-echo 3. !third_proxy! (下载速度 !third_speed_int! 字节/秒)
+echo 最快的镜像站点:
+if !valid_count! geq 1 echo 1. !fastest_proxy! (下载速度 !fastest_speed_int! 字节/秒)
+if !valid_count! geq 2 echo 2. !second_proxy! (下载速度 !second_speed_int! 字节/秒)
+if !valid_count! geq 3 echo 3. !third_proxy! (下载速度 !third_speed_int! 字节/秒)
 
-:: 随机选择其中一个
-set /a "random_index=%random% %% 3 + 1"
+:: 没有任何有效镜像时的回退
+if !valid_count! equ 0 (
+    echo ------------------------
+    echo 没有可用的镜像站点，使用原始 GitHub 地址。
+    set "GH_PROXY=https://github.com/"
+    goto :output
+)
+
+:: 随机选择其中一个（基于有效数量）
+set /a "random_index=!random! %% !valid_count! + 1"
 if !random_index! equ 1 (
     set "selected_proxy=!fastest_proxy!"
     set "selected_speed=!fastest_speed_int!"
@@ -89,8 +103,10 @@ if !random_index! equ 1 (
 :: 输出结果
 echo ------------------------
 echo 随机选择的镜像站点是: !selected_proxy! (下载速度 !selected_speed! 字节/秒)
-set "GH_PROXY=https://!selected_proxy!"
-endlocal & set "GH_PROXY=%GH_PROXY%/"
+set "GH_PROXY=https://!selected_proxy!/"
+
+:output
+endlocal & set "GH_PROXY=%GH_PROXY%"
 echo GH_PROXY=%GH_PROXY%
 
 :end

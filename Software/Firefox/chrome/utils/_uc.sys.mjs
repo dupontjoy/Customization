@@ -3,20 +3,91 @@
 
 const { Services } = globalThis;
 const { AppConstants } = ChromeUtils.importESModule('resource://gre/modules/AppConstants.sys.mjs');
+const { everLoaded } = ChromeUtils.importESModule('chrome://userchromejs/content/utils/UcScriptRuntime.sys.mjs');
+let CUI;
 try {
-    const { CustomizableUI: CUI } = ChromeUtils.importESModule('moz-src:///browser/components/customizableui/CustomizableUI.sys.mjs');
+    ({ CustomizableUI: CUI } = ChromeUtils.importESModule('moz-src:///browser/components/customizableui/CustomizableUI.sys.mjs'));
 } catch (ex) {
-    const { CustomizableUI: CUI } = ChromeUtils.importESModule('resource:///modules/CustomizableUI.sys.mjs');
+    ({ CustomizableUI: CUI } = ChromeUtils.importESModule('resource:///modules/CustomizableUI.sys.mjs'));
 }
 const { console } = Cu.getGlobalForObject(Services);
+const duplicateWarnings = new Set();
+
+function getLoader(preferredWindow) {
+    if (preferredWindow?.userChrome_js) {
+        return preferredWindow.userChrome_js;
+    }
+    const windows = Services.wm.getEnumerator(null);
+    while (windows.hasMoreElements()) {
+        const win = windows.getNext();
+        if (win.userChrome_js) {
+            return win.userChrome_js;
+        }
+        try {
+            const frames = win.docShell.getAllDocShellsInSubtree(
+                Ci.nsIDocShellTreeItem.typeAll,
+                Ci.nsIDocShell.ENUMERATE_FORWARDS
+            );
+            const frameWindow = frames.map(frame => frame.domWindow).find(frameWin => frameWin?.userChrome_js);
+            if (frameWindow) {
+                return frameWindow.userChrome_js;
+            }
+        } catch (e) { }
+    }
+    return null;
+}
+
+function exposeScript(script) {
+    if (!Object.getOwnPropertyDescriptor(script, 'isEnabled')) {
+        Object.defineProperty(script, 'isEnabled', {
+            configurable: true,
+            enumerable: true,
+            get() {
+                const loader = getLoader();
+                if (loader?.isScriptEnabled) {
+                    return loader.isScriptEnabled(this);
+                }
+                const disabled = unescape(Services.prefs.getStringPref('userChrome.disable.script', ''))
+                    .split(',')
+                    .filter(Boolean)
+                    .map(unescape);
+                return !disabled.includes(this.filename);
+            },
+        });
+    }
+    return script;
+}
+
 export const _uc = {
     APPNAME: AppConstants.MOZ_APP_NAME,
+    ALWAYSEXECUTE: 'rebuild_userChrome.uc.js',
     BROWSERCHROME: AppConstants.MOZ_APP_NAME == 'thunderbird' ? 'chrome://messenger/content/messenger.xhtml' : 'chrome://browser/content/browser.xhtml',
     BROWSERTYPE: AppConstants.MOZ_APP_NAME == 'thunderbird' ? 'mail:3pane' : 'navigator:browser',
     BROWSERNAME: AppConstants.MOZ_APP_NAME.charAt(0).toUpperCase() + AppConstants.MOZ_APP_NAME.slice(1),
+    PREF_SCRIPTSDISABLED: 'userChrome.disable.script',
     sss: Cc["@mozilla.org/content/style-sheet-service;1"].getService(Ci.nsIStyleSheetService),
     chromedir: Services.dirsvc.get('UChrm', Ci.nsIFile),
     scriptsDir: '',
+    everLoaded,
+
+    get scripts () {
+        const loader = getLoader();
+        const scripts = Object.create(null);
+        for (const script of loader?.scripts || []) {
+            if (!/\.uc\.js$/i.test(script.filename)) {
+                continue;
+            }
+            if (scripts[script.filename]) {
+                if (!duplicateWarnings.has(script.filename)) {
+                    duplicateWarnings.add(script.filename);
+                    console.warn(`duplicate userChrome script filename ignored by _uc compatibility API: ${script.filename}`);
+                }
+                continue;
+            }
+            scripts[script.filename] = exposeScript(script);
+        }
+        return scripts;
+    },
 
     get isFaked () {
         return true;
@@ -24,6 +95,48 @@ export const _uc = {
 
     get isESM () {
         return true;
+    },
+
+    getScripts: function () {
+        const loader = getLoader();
+        if (!loader) {
+            return this.scripts;
+        }
+        loader.getScripts();
+        for (const win of loader.getScriptWindows()) {
+            const targetLoader = win.userChrome_js;
+            if (!targetLoader || targetLoader === loader) {
+                continue;
+            }
+            targetLoader.scripts = loader.scripts;
+            targetLoader.overlays = loader.overlays;
+            targetLoader.directory = loader.directory;
+            targetLoader._parseScriptData = loader._parseScriptData;
+            targetLoader._readScriptFile = loader._readScriptFile;
+            targetLoader.refreshDisabledState();
+        }
+        return this.scripts;
+    },
+
+    getScriptData: function (file) {
+        const loader = getLoader();
+        if (!loader) {
+            throw new Error('userChrome.js loader is not initialized');
+        }
+        return exposeScript(loader.getScriptData(file));
+    },
+
+    readFile: function (file, metaOnly = false) {
+        const loader = getLoader();
+        if (!loader) {
+            throw new Error('userChrome.js loader is not initialized');
+        }
+        return loader.readFile(file, metaOnly);
+    },
+
+    loadScript: function (script, win) {
+        const loader = getLoader(win);
+        return !!loader?.loadScript(script, win);
     },
 
     windows: function (fun, onlyBrowsers = true) {
@@ -115,7 +228,7 @@ export const _uc = {
                 if (typeof callback === "function") {
                     const allEvents = !!desc.allEvents;
                     toolbaritem.addEventListener("click", (ev) => {
-                        const targetWin = ev.target.documentGlobal || ev.target.ownerGlobal || ev.target.ownerDocument?.defaultView;
+                        const targetWin = ev.target.documentGlobal || ev.target.relevantGlobal || ev.target.ownerDocument?.defaultView;
                         allEvents || ev.button === 0 && SharedGlobal.widgetCallbacks.get(ev.target.id)(ev, targetWin)
                     })
                 }

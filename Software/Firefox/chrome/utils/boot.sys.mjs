@@ -33,11 +33,11 @@ try {
             initUloadMap(window);
 
             Cu.exportFunction((key, func, context) => {
-                setUnloadMap(key, func, context);
+                setUnloadMap(window, key, func, context);
             }, window, { defineAs: "setUnloadMap" });
 
             Cu.exportFunction(() => {
-                return getUnloadMaps();
+                return getUnloadMaps(window);
             }, window, { defineAs: "getUnloadMaps" });
 
             ChromeUtils.defineLazyGetter(window, "xPref", () =>
