@@ -12,6 +12,7 @@ pushd %~dp0
 
 ::設置文件所在位置
 set "SyncDir=E:\My Documents\Nutstore\NutStoreSync"
+set "SoftDir=D:\Program Files\CingFox\Software"
 
 :any-listen
 robocopy "%SyncDir%\PSoftware\any-listen\AnyListenDatas" "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas" /MIR /ZB /R:3 /W:5
@@ -43,6 +44,9 @@ robocopy "%SyncDir%\PSoftware\LXmusic\LxDatas" "C:\Users\%USERNAME%\AppData\Roam
 :MotrixNext
 xcopy "%SyncDir%\Customization\Software\MotrixNext\config.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
 xcopy "%SyncDir%\Customization\Software\MotrixNext\system.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
+
+:satelite
+xcopy "%SyncDir%\PSoftware\satelite\data\store.json" "%SoftDir%\Satelite-Portable\data\" /y
 
 :end
 timeout /t 3 /nobreak >nul
