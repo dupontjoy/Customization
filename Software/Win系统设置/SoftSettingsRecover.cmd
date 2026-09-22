@@ -46,6 +46,7 @@ xcopy "%SyncDir%\Customization\Software\MotrixNext\config.json" "C:\Users\%USERN
 xcopy "%SyncDir%\Customization\Software\MotrixNext\system.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
 
 :satelite
+del /s /q "%SoftDir%\Satelite-Portable\data\store.corrupt-*.json"
 xcopy "%SyncDir%\PSoftware\satelite\data\store.json" "%SoftDir%\Satelite-Portable\data\" /y
 
 :end
