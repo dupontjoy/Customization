@@ -21,6 +21,7 @@ set "Curl_Download=curl -LJ --ssl-no-revoke --progress-bar --create-dirs"
 call :testGHmirror
 call :updating_uc
 call :updating_flashgot
+call :updating_uc_loader
 :: call :updating_customCSS
 call :updating_runfirefox
 call :end
@@ -40,7 +41,6 @@ echo.&echo █ 正在更新UC脚本...
 :: 生成下载列表
 :: %GH_PROXY%https://github.com/benzBrake/Firefox-downloadPlus.uc.js/raw/refs/heads/main/FlashGot.uc.js
 (
-echo %GH_PROXY%https://github.com/benzBrake/userChrome.js-Loader/archive/refs/heads/main.zip
 echo %GH_PROXY%https://raw.githubusercontent.com/benzBrake/Firefox-downloadPlus.uc.js/main/downloadPlus_Fx136.uc.js
 echo https://gcore.jsdelivr.net/gh/xinggsf/uc/BookmarkOpt.uc.js
 ) > urls.tmp
@@ -66,18 +66,6 @@ for /f "delims=" %%a in (urls.tmp) do (
 del urls.tmp
 endlocal
 
-:: 解压fx100zip并移动到指定文件夹
-:: x解压，f使用档案名字（这个参数放最后）
-tar -xf .\main.zip
-xcopy "%cd%\userChrome.js-Loader-main\profile\chrome\userChromeJS" "%cd%\..\userChromeJS"  /s /y /i
-xcopy "%cd%\userChrome.js-Loader-main\profile\chrome\utils" "%cd%\..\utils"  /s /y /i
-xcopy "%cd%\userChrome.js-Loader-main\profile\chrome\userChrome.js" "%cd%\..\"  /y
-xcopy "%cd%\userChrome.js-Loader-main\program\defaults" "%cd%\..\..\..\..\Firefox\defaults"  /s /y /i
-xcopy "%cd%\userChrome.js-Loader-main\program\config.js" "%cd%\..\..\..\..\Firefox\" /y
-rd /s /q "%cd%\userChrome.js-Loader-main"
-
-del /s /q .\main.zip
-
 goto :eof
 
 ::=======================================
@@ -90,6 +78,60 @@ set "save_path=..\UserTools\flashgot.exe"
 if not exist "..\UserTools\" md "..\UserTools"
 
 %Curl_Download% -o "%save_path%" "%GH_PROXY%https://github.com/benzBrake/Firefox-downloadPlus.uc.js/releases/latest/download/FlashGot.exe"
+
+goto :eof
+
+::=======================================
+:: 子程序：更新uc_loader
+::=======================================
+:updating_uc_loader
+setlocal enabledelayedexpansion
+echo.&echo █ 正在更新uc_loader...
+
+:: GitHub API 地址和文件名匹配模式
+set "api_url=https://api.github.com/repos/benzBrake/userChrome.js-Loader/releases/latest"
+set "file_pattern=userchromejs-loader-.*\.zip"
+
+:: 使用 PowerShell 解析下载链接
+powershell -Command "$response = Invoke-WebRequest -Uri '%api_url%' -UseBasicParsing | ConvertFrom-Json; $asset = $response.assets | Where-Object { $_.name -match '%file_pattern%' } | Select-Object -First 1; if ($asset) { $asset.browser_download_url } else { exit 1 }" > download_url.tmp
+
+:: 检查是否获取到下载链接
+if %errorlevel% neq 0 (
+    echo 未找到匹配的文件
+    del download_url.tmp 2>nul
+    exit /b 1
+)
+
+:: 读取下载链接并添加镜像代理
+set /p original_url=<download_url.tmp
+set "download_url=%GH_PROXY%%original_url%"
+
+:: 下载文件
+echo [下载] %download_url%
+powershell -Command "$maxRetry=3; $retryCount=0; do { try { Invoke-WebRequest -Uri '%download_url%' -OutFile '%cd%\..\uc_loader_Latest.zip' -TimeoutSec 30; break } catch { $retryCount++; if ($retryCount -ge $maxRetry) { throw }; Start-Sleep -Seconds 5 } } while ($true)"
+
+:: 清理临时文件
+del download_url.tmp 2>nul
+endlocal
+
+pushd %~dp0
+cd ..\
+:: 删除旧文件
+rd /s /q "%cd%\utils"
+
+:: 解压新版uc_loader_Latest文件
+:: x解压，f使用档案名字（这个参数放最后）
+tar -xf .\uc_loader_Latest.zip
+xcopy "%cd%\userChrome.js-Loader\profile\chrome\userChromeJS" "%cd%\userChromeJS"  /s /y /i
+xcopy "%cd%\userChrome.js-Loader\profile\chrome\utils" "%cd%\utils"  /s /y /i
+xcopy "%cd%\userChrome.js-Loader\profile\chrome\userChrome.d.ts" "%cd%\"  /s /y /i
+xcopy "%cd%\userChrome.js-Loader\profile\chrome\userChrome.js" "%cd%\"  /s /y /i
+xcopy "%cd%\userChrome.js-Loader\program\defaults" "%cd%\..\..\..\Firefox\defaults"  /s /y /i
+xcopy "%cd%\userChrome.js-Loader\program\config.js" "%cd%\..\..\..\Firefox\"  /s /y /i
+rd /s /q "%cd%\userChrome.js-Loader"
+
+del /s /q .\uc_loader_Latest.zip
+popd
 
 goto :eof
 

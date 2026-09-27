@@ -12,6 +12,8 @@ try {
 }
 const { console } = Cu.getGlobalForObject(Services);
 const duplicateWarnings = new Set();
+const SharedGlobal = {};
+ChromeUtils.defineLazyGetter(SharedGlobal, 'widgetCallbacks', () => new Map());
 
 function getLoader(preferredWindow) {
     if (preferredWindow?.userChrome_js) {

@@ -246,6 +246,18 @@
             var findNextRe = /^\/\/ @(include|exclude)[ \t]+(\S+)/gm;
             this.directory = { name: [], UCJS: [], enable: [] };
             const chromeDirPath = ds.get("UChrm", Ci.nsIFile).path;
+            //大小写敏感的文件系统上，目录名仅大小写不同也会失配；
+            //枚举 chrome 下的实际子目录，扫描时按不区分大小写解析出真实名
+            var realSubdirs = new Map();
+            try {
+                var chromeEntries = ds.get("UChrm", Ci.nsIFile).directoryEntries
+                    .QueryInterface(Ci.nsISimpleEnumerator);
+                while (chromeEntries.hasMoreElements()) {
+                    var chromeEntry = chromeEntries.getNext().QueryInterface(Ci.nsIFile);
+                    if (chromeEntry.isDirectory())
+                        realSubdirs.set(chromeEntry.leafName.toLowerCase(), chromeEntry.leafName);
+                }
+            } catch (e) { }
             const getChromeURL = aFile => {
                 const relativePath = aFile.path
                     .slice(chromeDirPath.length)
@@ -266,7 +278,9 @@
                     this.directory.UCJS.push(checkUCJS(dir));
 
                     var workDir = ds.get("UChrm", Ci.nsIFile);
-                    workDir.append(this.arrSubdir[i]);
+                    workDir.append(
+                        (this.arrSubdir[i] && realSubdirs.get(this.arrSubdir[i].toLowerCase()))
+                        || this.arrSubdir[i]);
                     var files = workDir.directoryEntries.QueryInterface(Ci.nsISimpleEnumerator);
                     var istream = Cc["@mozilla.org/network/file-input-stream;1"].createInstance(Ci.nsIFileInputStream);
                     while (files.hasMoreElements()) {
@@ -826,6 +840,7 @@
                 return true;
             }
 
+            if (this.INFO) this.debug("loadSubScript: " + script.filename);
             const targetWin = script.sandbox ? target : win;
             try {
                 const scriptURI = `${script.url}?${this.getLastModifiedTime(script.file)}`;
@@ -1454,7 +1469,7 @@
         document.documentElement.getAttribute("chromehidden") != "")
         return;
 
-    if (typeof gBrowser != undefined) {
+    if (typeof gBrowser != "undefined") {
         that.runScripts(doc);
         setTimeout(function (doc) { that.runOverlays(doc); }, 0, doc);
     } else {

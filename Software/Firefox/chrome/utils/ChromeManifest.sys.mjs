@@ -345,7 +345,7 @@ export class ChromeManifest {
       if (!root) return loc;
       if (loc === "/") return root;
       if (isRelative(loc)) {
-        return root.replace(/[\\/]$/, "") + "/" + loc.replace(/^([\\\/])/, "");
+        return root.replace(/[\\/]$/, "") + "/" + loc.replace(/^([\\/])/, "");
       }
       return loc;
     };
