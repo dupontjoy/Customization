@@ -166,10 +166,6 @@ xcopy "%BackupDir%\..\..\..\MAA\RunMAA.cmd" "%SyncDir%\Customization\Software\MA
 xcopy "%BackupDir%\..\..\..\MAA\updateMaaResource.cmd" "%SyncDir%\Customization\Software\MAA\" /y
 xcopy "%BackupDir%\..\..\..\MAA\config\gui.json" "%SyncDir%\Customization\Software\MAA\" /y
 
-:MotrixNext
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\config.json" "%SyncDir%\Customization\Software\MotrixNext\" /y
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\system.json" "%SyncDir%\Customization\Software\MotrixNext\" /y
-
 :MPV
 robocopy "%BackupDir%\..\..\Software\MPV\installer" "%SyncDir%\Customization\Software\MPV\installer" /MIR /ZB /R:3 /W:5
 robocopy "%BackupDir%\..\..\Software\MPV\portable_config" "%SyncDir%\Customization\Software\MPV\portable_config" /MIR /ZB /R:3 /W:5
@@ -197,6 +193,10 @@ xcopy "%BackupDir%\..\..\Software\PixPin\Config\PixPinConfig.json" "%SyncDir%\Cu
 robocopy "%BackupDir%\..\..\Software\ProcessLassoPro\config" "%SyncDir%\Customization\Software\ProcessLasso\config" /MIR /ZB /R:3 /W:5
 xcopy "%BackupDir%\..\..\Software\ProcessLassoPro\RunProcessLasso.cmd" "%SyncDir%\Customization\Software\ProcessLasso\" /y
 
+:Rayburst
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\dev.aninsomniacy.rayburst\config.json" "%SyncDir%\Customization\Software\Rayburst\" /y
+xcopy "C:\Users\%USERNAME%\AppData\Roaming\dev.aninsomniacy.rayburst\system.json" "%SyncDir%\Customization\Software\Rayburst\" /y
+
 :readest
 xcopy "%BackupDir%\..\..\..\readest\updateReadest.cmd" "%SyncDir%\Customization\Software\readest\" /y
 
@@ -207,6 +207,9 @@ xcopy "%BackupDir%\..\..\Software\Satelite-Portable\data\store.json" "%SyncDir%\
 
 :Snipaste
 xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%SyncDir%\Customization\Software\Snipaste\" /y
+
+:SnowShot
+xcopy "%BackupDir%\..\..\Software\SnowShot\portable\config.json" "%SyncDir%\Customization\Software\SnowShot\" /y
 
 :steamcommunity_302
 xcopy "%BackupDir%\..\..\Software\steamcommunity_302\S302_rules.ini" "%SyncDir%\Customization\Software\steamcommunity_302\" /y

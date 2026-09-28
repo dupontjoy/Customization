@@ -41,9 +41,9 @@ xcopy "%SyncDir%\Customization\Software\licalender\liConfig.json" "C:\Users\%USE
 :LXmusicDesktop
 robocopy "%SyncDir%\PSoftware\LXmusic\LxDatas" "C:\Users\%USERNAME%\AppData\Roaming\lx-music-desktop\LxDatas" /MIR /ZB /R:3 /W:5
 
-:MotrixNext
-xcopy "%SyncDir%\Customization\Software\MotrixNext\config.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
-xcopy "%SyncDir%\Customization\Software\MotrixNext\system.json" "C:\Users\%USERNAME%\AppData\Roaming\com.motrix.next\" /y
+:Rayburst
+xcopy "%SyncDir%\Customization\Software\Rayburst\config.json" "C:\Users\%USERNAME%\AppData\Roaming\dev.aninsomniacy.rayburst\" /y
+xcopy "%SyncDir%\Customization\Software\Rayburst\system.json" "C:\Users\%USERNAME%\AppData\Roaming\dev.aninsomniacy.rayburst\" /y
 
 :satelite
 del /s /q "%SoftDir%\Satelite-Portable\data\store.corrupt-*.json"

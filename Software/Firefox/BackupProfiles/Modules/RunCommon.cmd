@@ -31,7 +31,8 @@ start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
 ::start "" "%cd%\BingWallpaperDesktop\BingWallpaperDesktop.exe"
 start "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
 start "" "%cd%\Ditto\Ditto.exe"
-start "" "%cd%\PixPin\PixPin.exe"
+start "" "%cd%\SnowShot\snow_shot.exe"
+::start "" "%cd%\PixPin\PixPin.exe"
 ::start "" "%cd%\Snipaste\Snipaste.exe"
 
 :capslock
