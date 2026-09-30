@@ -106,12 +106,13 @@ div.top-3,.justify-end {
  }
  
  /*左上角返回和右上角显示/隐藏按钮 隐藏*/
-div.top-3,.justify-end {
+div.top-3,.justify-end,div.px-3:nth-child(1) {
     display: none !important;
  }
 
  /*顶部栏 缩小*/
 .hidden {
+    margin-top: calc(-0.1 * (0vh + 1%)) !important;/*向上移*/
     transform: scale(0.8) !important;
  }
 

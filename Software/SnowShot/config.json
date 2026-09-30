@@ -1,6 +1,9 @@
 {
     "api_configuration": {
         "custom_models": [
+        ],
+        "server_url": "",
+        "text_translation": [
         ]
     },
     "capture_history": {
@@ -294,6 +297,8 @@
     },
     "global_shortcuts": {
         "disable_on_focused_fullscreen_window": false,
+        "global_canvas": [
+        ],
         "open_capture_history": [
         ],
         "open_pin_to_screen_management": [
@@ -348,6 +353,7 @@
         ]
     },
     "interface": {
+        "app_font": "",
         "language": "system",
         "main_window_geometry": {
             "height": 679,
@@ -376,6 +382,7 @@
                 [
                     "convert-to-html",
                     "convert-to-markdown",
+                    "latex-recognition",
                     "barcode-recognition",
                     "table-recognition"
                 ],
@@ -412,6 +419,16 @@
                 "portable": "Ctrl+C"
             }
         ],
+        "decrease_opacity": [
+            {
+                "portable": "["
+            }
+        ],
+        "decrease_scale": [
+            {
+                "portable": ","
+            }
+        ],
         "destroy_window": [
             {
                 "portable": "Shift+Esc"
@@ -422,9 +439,29 @@
                 "portable": "Space"
             }
         ],
+        "flip_horizontal": [
+            {
+                "portable": "3"
+            }
+        ],
+        "flip_vertical": [
+            {
+                "portable": "4"
+            }
+        ],
         "hide_to_top": [
             {
                 "portable": "H"
+            }
+        ],
+        "increase_opacity": [
+            {
+                "portable": "]"
+            }
+        ],
+        "increase_scale": [
+            {
+                "portable": "."
             }
         ],
         "move_cursor_down": [
@@ -459,9 +496,24 @@
                 "portable": "Up"
             }
         ],
+        "reset_transform": [
+            {
+                "portable": "0"
+            }
+        ],
         "resize_window": [
             {
                 "portable": "M"
+            }
+        ],
+        "rotate_clockwise": [
+            {
+                "portable": "1"
+            }
+        ],
+        "rotate_counterclockwise": [
+            {
+                "portable": "2"
             }
         ],
         "save_as_file": [
@@ -545,6 +597,7 @@
     "screenshot": {
         "api_mode": "auto",
         "auto_execute_after_text_recognition": "no_action",
+        "auto_recognize_qr_code": true,
         "auto_save_after_copy": false,
         "auto_save_filename_format": "SnowShot_{YYYY-MM-DD_HH-mm-ss}",
         "capture_cursor": false,
@@ -557,17 +610,19 @@
         "image_format": "png",
         "image_quality": 100,
         "image_save_directory": "C:/Users/Cing/Pictures",
-        "last_manual_save_directory": "C:/Users/Cing/Desktop",
+        "last_manual_save_directory": "E:/Cing@Pic",
         "last_manual_save_format": "png",
         "manual_save_filename_format": "SnowShot_{YYYY-MM-DD_HH-mm-ss}",
         "manual_save_format_options": {
         },
         "middle_mouse_button_action": "pin",
         "pdf_page_size": "a4_portrait",
+        "quick_selection_modification": true,
         "restore_original_screen_colors": true,
         "save_as_file_dialog": "system",
         "save_path_shortcuts": [
         ],
+        "scrolling_auto_scroll_interval_ms": 200,
         "selection_resize_mode": "follow_mouse_movement",
         "shutter_sound_notification": true,
         "window_element_api": "uia"
@@ -583,10 +638,10 @@
             "lock_aspect_ratio": false,
             "lock_drag_aspect_ratio": false,
             "rectangle": {
-                "height": 376,
-                "width": 668,
-                "x": 151,
-                "y": 263
+                "height": 600,
+                "width": 648,
+                "x": 356,
+                "y": 127
             },
             "shadow_color": "#FF333333",
             "shadow_width": 0
@@ -758,6 +813,7 @@
                 [
                     "convert-to-html",
                     "convert-to-markdown",
+                    "latex-recognition",
                     "barcode-recognition",
                     "table-recognition"
                 ],
@@ -864,6 +920,7 @@
         "launch_as_administrator": false
     },
     "text_recognition": {
+        "detector_resize_policy": "max",
         "direct_ml_acceleration": true,
         "fill_style": "background_fill",
         "model_hot_start": false,
