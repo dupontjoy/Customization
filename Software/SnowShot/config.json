@@ -14,7 +14,15 @@
         "max_entries": 100,
         "retention_days": 7
     },
+    "cloud_upload": {
+        "configuration": {
+            "configurations": [
+            ],
+            "default_id": ""
+        }
+    },
     "drawing": {
+        "always_show_first_toolbar_group_button": false,
         "arrow_style": {
             "arrow_ratio": 1,
             "arrow_type": 1,
@@ -34,6 +42,8 @@
             "stroke": "#f5222dff",
             "stroke_style": 0,
             "stroke_width": 2
+        },
+        "brush_eraser_style": {
         },
         "draw_templates": [
         ],
@@ -236,6 +246,8 @@
                 "portable": "H"
             }
         ],
+        "line": [
+        ],
         "select": [
             {
                 "portable": "V"
@@ -253,6 +265,8 @@
             {
                 "portable": "1"
             }
+        ],
+        "spotlight": [
         ],
         "text": [
             {
@@ -272,6 +286,42 @@
         "jump_to_translation_page": false,
         "standalone_translation_window": false,
         "translation_page_enabled": false
+    },
+    "floating_toolbar": {
+        "enabled": false,
+        "hide_during_capture": true,
+        "hide_in_fullscreen": true,
+        "layout": {
+            "hidden": [
+                "save-as-file",
+                "convert-to-markdown",
+                "convert-to-html"
+            ],
+            "positions": [
+                [
+                    "screenshot"
+                ],
+                [
+                    "pin-to-screen"
+                ],
+                [
+                    "screenshot-delay"
+                ],
+                [
+                    "latex-recognition",
+                    "barcode-recognition",
+                    "table-recognition",
+                    "text-translation",
+                    "record-screen",
+                    "scrolling-screenshot",
+                    "text-recognition"
+                ]
+            ]
+        },
+        "mode": "icon",
+        "opacity": 50,
+        "placement": {
+        }
     },
     "global_mouse": {
         "screen_recording": {
@@ -345,6 +395,8 @@
         ],
         "screenshot_translation": [
         ],
+        "switch_window_group": [
+        ],
         "toggle_disable_on_focused_fullscreen_window": [
         ],
         "toggle_global_hotkeys": [
@@ -354,6 +406,7 @@
     },
     "interface": {
         "app_font": "",
+        "app_font_size_percentage": 100,
         "language": "system",
         "main_window_geometry": {
             "height": 679,
@@ -363,10 +416,20 @@
             "y": 13
         },
         "sidebar_collapsed": false,
+        "skin_blur_level": 0,
+        "skin_display_mode": "overlay",
+        "skin_mask_opacity": 80,
+        "skin_opacity": 100,
+        "skin_path": "",
+        "skin_position": "center",
         "theme_mode": "system",
         "theme_primary_color": "#1677FFFF",
+        "toolbar_skin_path": "",
+        "toolbar_skin_position": "center",
         "translation_window_size": {
-        }
+        },
+        "tray_menu_skin_path": "",
+        "tray_menu_skin_position": "center"
     },
     "mcp": {
         "enabled": false
@@ -391,6 +454,24 @@
                 ],
                 [
                     "text-translation"
+                ],
+                [
+                    "separator"
+                ],
+                [
+                    "upload-to-cloud",
+                    "print",
+                    "quick-save",
+                    "save-as-file"
+                ],
+                [
+                    "copy"
+                ],
+                [
+                    "confirm-separator"
+                ],
+                [
+                    "confirm"
                 ]
             ]
         },
@@ -398,12 +479,22 @@
         "automatic_text_recognition": true,
         "border_active_color": "#69B1FFFF",
         "border_color": "#DBDBDBFF",
+        "confirm_before_closing_window": false,
+        "confirm_before_destroying_window": true,
         "double_click_action": "thumbnail_mode",
+        "duplicate_content_action": "shake_window",
+        "locked_border_color": "#FAAD14FF",
         "middle_mouse_button_action": "reset_zoom",
         "mouse_wheel_zoom_mode": "mouse_position",
+        "show_window_buttons": true,
         "text_selection_on_recognition_results": "only_when_displayed"
     },
     "pin_to_screen_shortcuts": {
+        "always_on_top": [
+            {
+                "portable": "T"
+            }
+        ],
         "close_window": [
             {
                 "portable": "Esc"
@@ -496,6 +587,11 @@
                 "portable": "Up"
             }
         ],
+        "print": [
+            {
+                "portable": "Ctrl+P"
+            }
+        ],
         "reset_transform": [
             {
                 "portable": "0"
@@ -521,6 +617,11 @@
                 "portable": "Ctrl+S"
             }
         ],
+        "show_border": [
+            {
+                "portable": "B"
+            }
+        ],
         "show_text_recognition_results": [
             {
                 "portable": "Ctrl+D"
@@ -535,6 +636,16 @@
             {
                 "portable": "Ctrl+M"
             }
+        ],
+        "toggle_lock": [
+            {
+                "portable": "L"
+            }
+        ],
+        "upload_to_cloud": [
+            {
+                "portable": "Ctrl+U"
+            }
         ]
     },
     "pinned_history": {
@@ -546,8 +657,49 @@
         "retention_days": 7
     },
     "screen_recording": {
+        "action_tools_layout": {
+            "hidden": [
+            ],
+            "positions": [
+                [
+                    "start-stop"
+                ],
+                [
+                    "pause-resume"
+                ],
+                [
+                    "duration"
+                ],
+                [
+                    "microphone"
+                ],
+                [
+                    "system-audio"
+                ],
+                [
+                    "separator"
+                ],
+                [
+                    "open-folder"
+                ],
+                [
+                    "close"
+                ],
+                [
+                    "trim"
+                ],
+                [
+                    "save"
+                ],
+                [
+                    "copy"
+                ]
+            ]
+        },
         "animated_image_clarity": "720p",
         "animated_image_frame_rate": 10,
+        "api_mode": "dxgi",
+        "auto_exit_after_recording_ends": false,
         "capture_toolbar_in_recording": true,
         "clarity": "1080p",
         "enable_microphone": false,
@@ -559,17 +711,25 @@
         "keyboard_foreground_color": "#FFFFFFFF",
         "keyboard_size": 64,
         "loop_animated_images": true,
+        "microphone_gain_db": 0,
         "mouse_click_color": "#00000000",
         "mouse_highlight_color": "#FFFF0080",
         "mouse_highlight_enabled": false,
         "mouse_trail_color": "#00000000",
         "mouse_trail_duration_ms": 500,
+        "notify_after_export_completes": false,
         "output_format": "mp4",
+        "post_processing_effect": "progress_bar",
+        "post_processing_enabled": false,
+        "progress_bar_color": "#1677FFFF",
         "record_mouse_clicks": false,
+        "separate_audio_tracks": false,
         "show_cursor": true,
         "show_keyboard": false,
         "start_delay_seconds": 0,
+        "system_audio_gain_db": 0,
         "video_filename_format": "SnowShot_Video_{YYYY-MM-DD_HH-mm-ss}",
+        "video_quality": 80,
         "video_save_directory": "C:/Users/Cing/Videos"
     },
     "screen_recording_shortcuts": {
@@ -631,6 +791,7 @@
         "vision_model": ""
     },
     "screenshot_selection": {
+        "aspect_ratio": "free",
         "corner_radius": 0,
         "lock_aspect_ratio": false,
         "previous_selection": {
@@ -734,6 +895,11 @@
                 "portable": ","
             }
         ],
+        "print": [
+            {
+                "portable": "Ctrl+P"
+            }
+        ],
         "qr_code_recognition": [
             {
                 "portable": "Ctrl+Q"
@@ -769,6 +935,11 @@
                 "portable": "R"
             }
         ],
+        "selection_aspect_ratio_snap": [
+            {
+                "portable": "Q"
+            }
+        ],
         "switch_selection_between_window_and_window_sub_element": [
             {
                 "portable": "Tab"
@@ -794,9 +965,24 @@
                 "portable": "Ctrl+P"
             }
         ],
+        "toggle_cursor_visibility": [
+            {
+                "portable": "`"
+            }
+        ],
+        "toggle_guides": [
+            {
+                "portable": "Alt"
+            }
+        ],
         "undo": [
             {
                 "portable": "Ctrl+Z"
+            }
+        ],
+        "upload_to_cloud": [
+            {
+                "portable": "Ctrl+U"
             }
         ],
         "video_recording": [
@@ -833,20 +1019,40 @@
                     "scrolling-screenshot"
                 ],
                 [
+                    "upload-to-cloud",
                     "quick-save",
                     "save-as-file"
+                ],
+                [
+                    "print"
+                ],
+                [
+                    "separator"
+                ],
+                [
+                    "cancel"
+                ],
+                [
+                    "copy"
                 ]
             ]
         },
         "arrow_line_tool": "arrow",
         "highlight_tool": "pen_highlight",
         "last_drawing_tool": "text",
+        "last_eraser_tool": "eraser",
         "last_filter_tool": "pen-filter",
         "last_highlight_tool": "pen-highlight",
         "layout": {
             "hidden": [
             ],
             "positions": [
+                [
+                    "select"
+                ],
+                [
+                    "select-separator"
+                ],
                 [
                     "shape"
                 ],
@@ -891,8 +1097,9 @@
     },
     "screenshot_translation": {
         "layout_processing": "smart_merge",
-        "model": "",
+        "model": "qwen3.8-flash",
         "original_image_translation": true,
+        "secondary_target_language": "en",
         "source_language": "auto",
         "target_language": ""
     },
@@ -905,10 +1112,14 @@
         "cursor_guide_line_color": "#00000000",
         "monitor_center_guide_line_color": "#00000000",
         "selection_border_color": "#4096FFFF",
+        "selection_center_guide_line_color": "#4096FFFF",
         "selection_display_unit": "physical_pixels",
         "selection_mask_color": "#00000080",
+        "selection_toolbar_hidden": false,
         "selection_transition_animation": true,
         "shortcut_hint_opacity": 100,
+        "show_edit_selection_toolbar": true,
+        "show_guides_by_default": false,
         "toolbar_size": "normal"
     },
     "storage": {
@@ -916,17 +1127,22 @@
     },
     "system": {
         "application_priority": "above_normal",
+        "application_qos": "user_interactive",
         "auto_start_at_boot": false,
         "launch_as_administrator": false
     },
     "text_recognition": {
+        "default_formatting": "none",
+        "default_punctuation": "none",
         "detector_resize_policy": "max",
         "direct_ml_acceleration": true,
         "fill_style": "background_fill",
         "model_hot_start": false,
         "model_type": "small",
         "resident_process": false,
-        "save_recognition_result_as_image": true
+        "save_recognition_result_as_image": true,
+        "show_original_image_preview": true,
+        "text_detection_processing": "accuracy_first"
     },
     "tray": {
         "custom_icon": "",

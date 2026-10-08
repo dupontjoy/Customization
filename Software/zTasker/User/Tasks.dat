@@ -1079,10 +1079,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2026-09-09 13:07:12</EndDateTime>
-		<NextRunDateTime>2126-09-14 09:08:04</NextRunDateTime>
+		<EndDateTime>2026-10-09 02:14:24</EndDateTime>
+		<NextRunDateTime>2126-09-14 20:43:23</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-10-08 09:08:04</LastRunTime>
+		<LastRunTime>2026-10-08 20:43:23</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1329,7 +1329,7 @@ env2=value2</edtAppEnv>
 					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
 					<edtTaskName>设置系统音量</edtTaskName>
-					<edtVolSet>40</edtVolSet>
+					<edtVolSet>30</edtVolSet>
 					<edtVolSet.max>100</edtVolSet.max>
 					<edtVolSet.min>1</edtVolSet.min>
 					<optPlaySnd>0</optPlaySnd>
