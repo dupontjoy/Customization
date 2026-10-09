@@ -93,29 +93,31 @@ div.top-3,.justify-end {
 @-moz-document regexp("https://.*(sdmoontv).*.(dev|app|shop|xyz|org|fr|io)\/play.*"),
                regexp("https://.*(sd).*.(dev|app|shop|xyz|org|fr|io)\/play.*") {
 
-/*播放区 上移和缩小*/
-.px-0 {
-    margin-top: calc(-1 * (6vh + 1%)) !important;/*向上移*/
-    transform: scale(0.9) !important;
- }
- 
- /*左上角标题，右上角设置退出和暗色 缩小*/
-.text-xl, .top-2 {
-    margin-top: calc(-1 * (0vh + 1%)) !important;/*向上移*/
-    transform: scale(0.9) !important;
- }
- 
- /*左上角返回和右上角显示/隐藏按钮 隐藏*/
-div.top-3,.justify-end,div.px-3:nth-child(1) {
-    display: none !important;
- }
-
  /*顶部栏 缩小*/
 .hidden {
     margin-top: calc(-0.1 * (0vh + 1%)) !important;/*向上移*/
-    transform: scale(0.8) !important;
+    transform: scale(0.85) !important;
  }
 
+/*播放区 上移和缩小*/
+.lg\:h-\[500px\] {
+    margin-top: calc(-1 * (5vh + 1%)) !important;/*向上移*/
+    transform: scale(0.85) !important;
+ }
+ 
+ /*播放区左上角返回按钮及標题 上移和缩小*/
+ .moontv-play-header {
+    margin-top: calc(-1 * (0vh + 1%)) !important;/*向上移*/
+    margin-left: calc(-2 * (5vh + 1%)) !important;/*向左移*/
+    transform: scale(0.85) !important;
+ }
+ 
+ /*详情区 上移和缩小*/
+ .md\:grid-cols-\[auto_1fr\] {
+    margin-top: calc(-2 * (4vh + 1%)) !important;/*向上移*/
+    transform: scale(0.965) !important;
+ }
+ 
 }
 
 @-moz-document regexp("https://.*(dcmoontv).*.(dev|app|shop|xyz|org|fr|io)\/play.*"),
