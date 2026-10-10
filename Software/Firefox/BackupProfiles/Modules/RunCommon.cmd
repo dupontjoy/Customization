@@ -35,6 +35,8 @@ start "" "%cd%\SnowShot\snow_shot.exe"
 ::start "" "%cd%\PixPin\PixPin.exe"
 ::start "" "%cd%\Snipaste\Snipaste.exe"
 
+start "" "%cd%\ClashVerge\clash-verge.exe"
+
 :capslock
 ::需要获取完整路径才行
 set "capslock_dir=%cd%\Capslock+"

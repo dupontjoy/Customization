@@ -45,6 +45,8 @@
         },
         "brush_eraser_style": {
         },
+        "distance_style": {
+        },
         "draw_templates": [
         ],
         "free_draw_style": {
@@ -222,6 +224,8 @@
                 "portable": "P"
             }
         ],
+        "distance": [
+        ],
         "eraser": [
             {
                 "portable": "8"
@@ -392,6 +396,10 @@
         "screenshot_full_screen": [
         ],
         "screenshot_ocr": [
+        ],
+        "screenshot_quick_save": [
+        ],
+        "screenshot_save": [
         ],
         "screenshot_translation": [
         ],
@@ -782,6 +790,7 @@
         "save_as_file_dialog": "system",
         "save_path_shortcuts": [
         ],
+        "screenshot_sound_notification": false,
         "scrolling_auto_scroll_interval_ms": 200,
         "selection_resize_mode": "follow_mouse_movement",
         "shutter_sound_notification": true,
@@ -799,10 +808,10 @@
             "lock_aspect_ratio": false,
             "lock_drag_aspect_ratio": false,
             "rectangle": {
-                "height": 600,
-                "width": 648,
-                "x": 356,
-                "y": 127
+                "height": 369,
+                "width": 665,
+                "x": 148,
+                "y": 272
             },
             "shadow_color": "#FF333333",
             "shadow_width": 0
@@ -1057,6 +1066,7 @@
                     "shape"
                 ],
                 [
+                    "distance",
                     "line",
                     "arrow"
                 ],
