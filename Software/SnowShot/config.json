@@ -23,6 +23,8 @@
     },
     "drawing": {
         "always_show_first_toolbar_group_button": false,
+        "angle_style": {
+        },
         "arrow_style": {
             "arrow_ratio": 1,
             "arrow_type": 1,
@@ -199,6 +201,10 @@
             "stroke_width": 0,
             "vertical_align": 1
         },
+        "watermark_content": {
+            "template_value": "",
+            "text": ""
+        },
         "watermark_style": {
             "angle": 30,
             "color": "#f5222dff",
@@ -211,6 +217,8 @@
         ]
     },
     "drawing_shortcuts": {
+        "angle": [
+        ],
         "arrow": [
             {
                 "portable": "2"
@@ -353,6 +361,8 @@
         "disable_on_focused_fullscreen_window": false,
         "global_canvas": [
         ],
+        "hide_show_all_windows": [
+        ],
         "open_capture_history": [
         ],
         "open_pin_to_screen_management": [
@@ -492,8 +502,13 @@
         "double_click_action": "thumbnail_mode",
         "duplicate_content_action": "shake_window",
         "locked_border_color": "#FAAD14FF",
+        "locked_shadow_color": "#FAAD14FF",
         "middle_mouse_button_action": "reset_zoom",
         "mouse_wheel_zoom_mode": "mouse_position",
+        "shadow_active_color": "#69B1FFFF",
+        "shadow_color": "#BFBFBFFF",
+        "show_border_by_default": true,
+        "show_shadow_by_default": false,
         "show_window_buttons": true,
         "text_selection_on_recognition_results": "only_when_displayed"
     },
@@ -628,6 +643,11 @@
         "show_border": [
             {
                 "portable": "B"
+            }
+        ],
+        "show_shadow": [
+            {
+                "portable": "Y"
             }
         ],
         "show_text_recognition_results": [
@@ -775,6 +795,13 @@
         "copy_image_file_to_clipboard": true,
         "delay_seconds": 3,
         "double_click_action": "copy",
+        "fill_color_presets": [
+            "#FFFFFF00",
+            "#FFCCC7FF",
+            "#D9F7BEFF",
+            "#BAE0FFFF",
+            "#FFF1B8FF"
+        ],
         "image_format": "png",
         "image_quality": 100,
         "image_save_directory": "C:/Users/Cing/Pictures",
@@ -794,10 +821,20 @@
         "scrolling_auto_scroll_interval_ms": 200,
         "selection_resize_mode": "follow_mouse_movement",
         "shutter_sound_notification": true,
+        "stroke_color_presets": [
+            "#F5222DFF",
+            "#52C41AFF",
+            "#1677FFFF",
+            "#FADB14FF",
+            "#000000FF"
+        ],
         "window_element_api": "uia"
     },
     "screenshot_conversion": {
         "vision_model": ""
+    },
+    "screenshot_latex": {
+        "model": "dedicated"
     },
     "screenshot_selection": {
         "aspect_ratio": "free",
@@ -808,10 +845,10 @@
             "lock_aspect_ratio": false,
             "lock_drag_aspect_ratio": false,
             "rectangle": {
-                "height": 369,
-                "width": 665,
-                "x": 148,
-                "y": 272
+                "height": 358,
+                "width": 845,
+                "x": 262,
+                "y": 235
             },
             "shadow_color": "#FF333333",
             "shadow_width": 0
@@ -1000,6 +1037,9 @@
             }
         ]
     },
+    "screenshot_table": {
+        "model": "dedicated"
+    },
     "screenshot_toolbar": {
         "action_tools_layout": {
             "hidden": [
@@ -1066,6 +1106,7 @@
                     "shape"
                 ],
                 [
+                    "angle",
                     "distance",
                     "line",
                     "arrow"
@@ -1139,7 +1180,8 @@
         "application_priority": "above_normal",
         "application_qos": "user_interactive",
         "auto_start_at_boot": false,
-        "launch_as_administrator": false
+        "launch_as_administrator": false,
+        "memory_optimization_policy": "smart_control"
     },
     "text_recognition": {
         "default_formatting": "none",
