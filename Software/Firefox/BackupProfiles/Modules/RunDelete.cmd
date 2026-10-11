@@ -13,8 +13,8 @@ cd ..\..\..\Software
 
 
 :delete
-::删除D:\Temp文件夹
-rd /s /q "D:\Temp"
+::删除E:\Temp文件夹
+rd /s /q "E:\Temp"
 
 ::删除firefox配置文件夹误生成的cache2文件夹
 rd /s /q "%cd%\..\Profiles\FxProfiles\cache2"

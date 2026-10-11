@@ -14,8 +14,8 @@ cd /d %~dp0
 
 
 ::設置臨時文件夾
-set "TempFolder=D:\Temp"
-set "TargetFolder=D:"
+set "TempFolder=E:\Temp"
+set "TargetFolder=E:"
 
 
 ::設置Profiles上傳地址
