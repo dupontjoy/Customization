@@ -805,7 +805,7 @@
         "image_format": "png",
         "image_quality": 100,
         "image_save_directory": "C:/Users/Cing/Pictures",
-        "last_manual_save_directory": "E:/Cing@Pic",
+        "last_manual_save_directory": "C:/Users/Cing/Desktop",
         "last_manual_save_format": "png",
         "manual_save_filename_format": "SnowShot_{YYYY-MM-DD_HH-mm-ss}",
         "manual_save_format_options": {
@@ -845,10 +845,10 @@
             "lock_aspect_ratio": false,
             "lock_drag_aspect_ratio": false,
             "rectangle": {
-                "height": 358,
-                "width": 845,
-                "x": 262,
-                "y": 235
+                "height": 308,
+                "width": 488,
+                "x": 87,
+                "y": 167
             },
             "shadow_color": "#FF333333",
             "shadow_width": 0

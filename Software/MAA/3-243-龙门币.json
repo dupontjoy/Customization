@@ -1,7 +1,7 @@
 {
   "author": "文件作者",
   "description": "文件描述",
-  "id": 1791687107780045,
+  "id": 1791730717333868,
   "title": "文件标题",
   "planTimes": "3班",
   "plans": [
@@ -171,7 +171,7 @@
           {
             "skip": false,
             "operators": [
-              "斥罪"
+              "遥"
             ],
             "sort": false,
             "autofill": false
@@ -183,6 +183,25 @@
             "operators": [],
             "sort": false,
             "autofill": true
+          }
+        ],
+        "training": [
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "recycle": [
+          {
+            "skip": false,
+            "operators": [
+              "导火索",
+              "艾拉"
+            ],
+            "sort": false,
+            "autofill": false
           }
         ]
       },
@@ -237,9 +256,9 @@
             "skip": false,
             "product": "Battle Record",
             "operators": [
-              "白雪",
-              "食铁兽",
-              "红豆"
+              "断罪者",
+              "霜叶",
+              "酒神"
             ],
             "sort": false,
             "autofill": false
@@ -359,7 +378,7 @@
           {
             "skip": false,
             "operators": [
-              "斥罪"
+              "遥"
             ],
             "sort": false,
             "autofill": false
@@ -371,6 +390,25 @@
             "operators": [],
             "sort": false,
             "autofill": true
+          }
+        ],
+        "training": [
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "recycle": [
+          {
+            "skip": false,
+            "operators": [
+              "导火索",
+              "艾拉"
+            ],
+            "sort": false,
+            "autofill": false
           }
         ]
       },
@@ -547,7 +585,7 @@
           {
             "skip": false,
             "operators": [
-              "遥"
+              "斥罪"
             ],
             "sort": false,
             "autofill": false
@@ -559,6 +597,25 @@
             "operators": [],
             "sort": false,
             "autofill": true
+          }
+        ],
+        "training": [
+          {
+            "skip": false,
+            "operators": [],
+            "sort": false,
+            "autofill": false
+          }
+        ],
+        "recycle": [
+          {
+            "skip": false,
+            "operators": [
+              "旅骨",
+              "望"
+            ],
+            "sort": false,
+            "autofill": false
           }
         ]
       },
@@ -644,6 +701,11 @@
       "position": "B305"
     },
     {
+      "type": "recycle",
+      "level": 3,
+      "position": "B402"
+    },
+    {
       "type": "dormitory",
       "level": 5,
       "position": "B104"
@@ -661,7 +723,15 @@
     {
       "type": "dormitory",
       "level": 5,
-      "position": "B404"
+      "position": "B401"
     }
-  ]
+  ],
+  "metadata": {
+    "extensionVersion": "1.0",
+    "generator": {
+      "id": "yituliu-riic-schedule-v2",
+      "name": "明日方舟一图流-排班表（MAA）",
+      "url": "https://ark.yituliu.cn/tools/scheduleV2"
+    }
+  }
 }
