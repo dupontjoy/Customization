@@ -21,6 +21,13 @@
             "default_id": ""
         }
     },
+    "collage": {
+        "background_color": "#FFFFFFFF",
+        "border_px": 0,
+        "direction": "vertical",
+        "sizing_mode": "uniform",
+        "spacing_px": 0
+    },
     "drawing": {
         "always_show_first_toolbar_group_button": false,
         "angle_style": {
@@ -90,6 +97,8 @@
             "stroke": "#f5222dff",
             "stroke_style": 0,
             "stroke_width": 2
+        },
+        "magnifier_style": {
         },
         "pen_filter_style": {
             "opacity": 1,
@@ -179,6 +188,8 @@
             "stroke_style": 0,
             "stroke_width": 2
         },
+        "speech_bubble_style": {
+        },
         "spotlight_style": {
             "color": "#000000ff",
             "opacity": 0.64
@@ -260,6 +271,13 @@
         ],
         "line": [
         ],
+        "magnifier": [
+        ],
+        "reset_canvas": [
+            {
+                "portable": "Ctrl+Shift+Z"
+            }
+        ],
         "select": [
             {
                 "portable": "V"
@@ -277,6 +295,8 @@
             {
                 "portable": "1"
             }
+        ],
+        "speech_bubble": [
         ],
         "spotlight": [
         ],
@@ -413,6 +433,8 @@
         ],
         "screenshot_translation": [
         ],
+        "stitch_selected_images": [
+        ],
         "switch_window_group": [
         ],
         "toggle_disable_on_focused_fullscreen_window": [
@@ -538,6 +560,8 @@
                 "portable": "["
             }
         ],
+        "decrease_playback_speed": [
+        ],
         "decrease_scale": [
             {
                 "portable": ","
@@ -572,6 +596,8 @@
             {
                 "portable": "]"
             }
+        ],
+        "increase_playback_speed": [
         ],
         "increase_scale": [
             {
@@ -610,10 +636,16 @@
                 "portable": "Up"
             }
         ],
+        "next_frame": [
+        ],
+        "previous_frame": [
+        ],
         "print": [
             {
                 "portable": "Ctrl+P"
             }
+        ],
+        "reset_playback_speed": [
         ],
         "reset_transform": [
             {
@@ -669,6 +701,8 @@
             {
                 "portable": "L"
             }
+        ],
+        "toggle_playback": [
         ],
         "upload_to_cloud": [
             {
@@ -730,6 +764,7 @@
         "auto_exit_after_recording_ends": false,
         "capture_toolbar_in_recording": true,
         "clarity": "1080p",
+        "delete_files_on_recording_close": false,
         "enable_microphone": false,
         "enable_system_audio": true,
         "encoder": "h264_hw",
@@ -786,7 +821,8 @@
         "api_mode": "auto",
         "auto_execute_after_text_recognition": "no_action",
         "auto_recognize_qr_code": true,
-        "auto_save_after_copy": false,
+        "auto_save_after_execution_actions": [
+        ],
         "auto_save_filename_format": "SnowShot_{YYYY-MM-DD_HH-mm-ss}",
         "capture_cursor": false,
         "capture_ui_in_scrolling_screenshot": true,
@@ -840,23 +876,11 @@
         "aspect_ratio": "free",
         "corner_radius": 0,
         "lock_aspect_ratio": false,
-        "previous_selection": {
-            "corner_radius": 0,
-            "lock_aspect_ratio": false,
-            "lock_drag_aspect_ratio": false,
-            "rectangle": {
-                "height": 308,
-                "width": 488,
-                "x": 87,
-                "y": 167
-            },
-            "shadow_color": "#FF333333",
-            "shadow_width": 0
-        },
         "region_type": "rectangle",
         "selection_rect_presets": [
         ],
         "selection_target": "window_sub_element",
+        "shadow_color": "#333333FF",
         "shadow_width": 0,
         "smart_selection": true
     },
@@ -931,6 +955,11 @@
                 "portable": "."
             }
         ],
+        "next_selection_type": [
+            {
+                "portable": "Ctrl+Tab"
+            }
+        ],
         "pin_to_screen": [
             {
                 "portable": "Ctrl+F"
@@ -939,6 +968,11 @@
         "previous_screenshot_history": [
             {
                 "portable": ","
+            }
+        ],
+        "previous_selection_type": [
+            {
+                "portable": "Ctrl+Shift+Tab"
             }
         ],
         "print": [
@@ -974,6 +1008,11 @@
         "scrolling_screenshot": [
             {
                 "portable": "L"
+            }
+        ],
+        "select_next_previously_selected_area": [
+            {
+                "portable": "Shift+R"
             }
         ],
         "select_previously_selected_area": [
@@ -1115,6 +1154,7 @@
                     "free-draw"
                 ],
                 [
+                    "magnifier",
                     "spotlight",
                     "highlighter"
                 ],
@@ -1141,6 +1181,9 @@
                 ],
                 [
                     "redo"
+                ],
+                [
+                    "speech-bubble"
                 ]
             ]
         },
@@ -1174,12 +1217,13 @@
         "toolbar_size": "normal"
     },
     "storage": {
-        "schema_version": 3
+        "schema_version": 4
     },
     "system": {
         "application_priority": "above_normal",
         "application_qos": "user_interactive",
         "auto_start_at_boot": false,
+        "context_menu_mode": "image_files",
         "launch_as_administrator": false,
         "memory_optimization_policy": "smart_control"
     },
@@ -1194,6 +1238,7 @@
         "resident_process": false,
         "save_recognition_result_as_image": true,
         "show_original_image_preview": true,
+        "show_text_highlighting": false,
         "text_detection_processing": "accuracy_first"
     },
     "tray": {

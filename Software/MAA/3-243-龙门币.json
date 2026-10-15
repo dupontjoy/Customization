@@ -1,7 +1,7 @@
 {
   "author": "文件作者",
   "description": "文件描述",
-  "id": 1791730717333868,
+  "id": 1791985768730628,
   "title": "文件标题",
   "planTimes": "3班",
   "plans": [
@@ -213,8 +213,8 @@
       ]
     },
     {
-      "name": "20:00-23:29",
-      "description": "3.5小时",
+      "name": "20:00-22:59",
+      "description": "3小时",
       "Fiammetta": {
         "enable": false,
         "target": "龙舌兰",
@@ -415,13 +415,13 @@
       "period": [
         [
           "20:00",
-          "23:29"
+          "22:59"
         ]
       ]
     },
     {
-      "name": "23:30-11:59",
-      "description": "12.5小时",
+      "name": "23:00-11:59",
+      "description": "13小时",
       "Fiammetta": {
         "enable": true,
         "target": "柏喙",
@@ -621,7 +621,7 @@
       },
       "period": [
         [
-          "23:30",
+          "23:00",
           "23:59"
         ],
         [
@@ -727,7 +727,7 @@
     }
   ],
   "metadata": {
-    "extensionVersion": "1.0",
+    "extensionVersion": "2.0",
     "generator": {
       "id": "yituliu-riic-schedule-v2",
       "name": "明日方舟一图流-排班表（MAA）",

@@ -8,10 +8,10 @@
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
-		<StartDateTime>1970-12-30 07:55:00</StartDateTime>
-		<EndDateTime>2026-03-17 00:00:00</EndDateTime>
-		<NextRunDateTime>2026-06-06 07:55:00</NextRunDateTime>
-		<NextRunTime>2026-06-06 07:55:00</NextRunTime>
+		<StartDateTime>1970-12-30 11:55:00</StartDateTime>
+		<EndDateTime>2026-10-14 00:00:00</EndDateTime>
+		<NextRunDateTime>2026-10-15 11:55:00</NextRunDateTime>
+		<NextRunTime>2026-10-15 11:55:00</NextRunTime>
 		<LastRunTime>2025-12-05 07:55:12</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -22,6 +22,7 @@
 			<DTOnce>2025-04-09 15:10:49</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
 			<Name>MAA-换班</Name>
+			<SchHotkey>Shift+P</SchHotkey>
 			<StopHotkey>Ctrl+Alt+P</StopHotkey>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
@@ -43,6 +44,10 @@
 			<chkExecExitFocus>0</chkExecExitFocus>
 			<chkExecExitFullScr>0</chkExecExitFullScr>
 			<chkExecExitPre>1</chkExecExitPre>
+			<chkExecHotkeyType>1</chkExecHotkeyType>
+			<chkExecQuickType>1</chkExecQuickType>
+			<chkExecSchType>1</chkExecSchType>
+			<chkExecSkipTip>0</chkExecSkipTip>
 			<chkHKMouseCorner>0</chkHKMouseCorner>
 			<chkHKMouseCorner1>0</chkHKMouseCorner1>
 			<chkHKMouseCorner2>0</chkHKMouseCorner2>
@@ -72,6 +77,8 @@
 			<chkHotkeyX2>0</chkHotkeyX2>
 			<chkQukPhz>0</chkQukPhz>
 			<chkQukPhzProc>0</chkQukPhzProc>
+			<chkQukPhzProcPartMatch>0</chkQukPhzProcPartMatch>
+			<chkQukPhzProcWildMatch>0</chkQukPhzProcWildMatch>
 			<chkQukPhzTip>1</chkQukPhzTip>
 			<chkRunMiss>0</chkRunMiss>
 			<chkSKPartMatch>0</chkSKPartMatch>
@@ -81,6 +88,8 @@
 			<chkSKWinFore>0</chkSKWinFore>
 			<chkSKWinMouseIn>0</chkSKWinMouseIn>
 			<chkSKWinSub>0</chkSKWinSub>
+			<chkSchHotkey>0</chkSchHotkey>
+			<chkSchHotkeyRelay>0</chkSchHotkeyRelay>
 			<chkSchLimitCount>0</chkSchLimitCount>
 			<chkSelfDelete>0</chkSelfDelete>
 			<chkTimer>1</chkTimer>
@@ -102,6 +111,8 @@
 			<cmbHKType_text>按下时</cmbHKType_text>
 			<cmbHotKeySolo>0</cmbHotKeySolo>
 			<cmbHotkey>0</cmbHotkey>
+			<cmbVarClear>local</cmbVarClear>
+			<cmbVarClear_text>清理局部</cmbVarClear_text>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtEveryDay>1</edtEveryDay>
 			<edtExecExitWaitTime>60</edtExecExitWaitTime>
@@ -361,10 +372,10 @@ env2=value2</edtAppEnv>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
-		<StartDateTime>1970-12-30 17:55:00</StartDateTime>
-		<EndDateTime>2026-03-17 00:00:00</EndDateTime>
-		<NextRunDateTime>2026-06-06 17:55:00</NextRunDateTime>
-		<NextRunTime>2026-06-06 17:55:00</NextRunTime>
+		<StartDateTime>1970-12-30 19:55:00</StartDateTime>
+		<EndDateTime>2026-10-14 00:00:00</EndDateTime>
+		<NextRunDateTime>2026-10-15 19:55:00</NextRunDateTime>
+		<NextRunTime>2026-10-15 19:55:00</NextRunTime>
 		<LastRunTime>2025-12-05 17:55:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -375,6 +386,7 @@ env2=value2</edtAppEnv>
 			<DTOnce>2025-04-09 15:10:49</DTOnce>
 			<EveryMonthDay>0</EveryMonthDay>
 			<Name>MAA-换班</Name>
+			<SchHotkey>Shift+P</SchHotkey>
 			<StopHotkey>Ctrl+Alt+P</StopHotkey>
 			<TitleShow>弹窗提醒</TitleShow>
 			<TypeShow>提醒</TypeShow>
@@ -396,6 +408,10 @@ env2=value2</edtAppEnv>
 			<chkExecExitFocus>0</chkExecExitFocus>
 			<chkExecExitFullScr>0</chkExecExitFullScr>
 			<chkExecExitPre>1</chkExecExitPre>
+			<chkExecHotkeyType>1</chkExecHotkeyType>
+			<chkExecQuickType>1</chkExecQuickType>
+			<chkExecSchType>1</chkExecSchType>
+			<chkExecSkipTip>0</chkExecSkipTip>
 			<chkHKMouseCorner>0</chkHKMouseCorner>
 			<chkHKMouseCorner1>0</chkHKMouseCorner1>
 			<chkHKMouseCorner2>0</chkHKMouseCorner2>
@@ -425,6 +441,8 @@ env2=value2</edtAppEnv>
 			<chkHotkeyX2>0</chkHotkeyX2>
 			<chkQukPhz>0</chkQukPhz>
 			<chkQukPhzProc>0</chkQukPhzProc>
+			<chkQukPhzProcPartMatch>0</chkQukPhzProcPartMatch>
+			<chkQukPhzProcWildMatch>0</chkQukPhzProcWildMatch>
 			<chkQukPhzTip>1</chkQukPhzTip>
 			<chkRunMiss>0</chkRunMiss>
 			<chkSKPartMatch>0</chkSKPartMatch>
@@ -434,6 +452,8 @@ env2=value2</edtAppEnv>
 			<chkSKWinFore>0</chkSKWinFore>
 			<chkSKWinMouseIn>0</chkSKWinMouseIn>
 			<chkSKWinSub>0</chkSKWinSub>
+			<chkSchHotkey>0</chkSchHotkey>
+			<chkSchHotkeyRelay>0</chkSchHotkeyRelay>
 			<chkSchLimitCount>0</chkSchLimitCount>
 			<chkSelfDelete>0</chkSelfDelete>
 			<chkTimer>1</chkTimer>
@@ -455,6 +475,8 @@ env2=value2</edtAppEnv>
 			<cmbHKType_text>按下时</cmbHKType_text>
 			<cmbHotKeySolo>0</cmbHotKeySolo>
 			<cmbHotkey>0</cmbHotkey>
+			<cmbVarClear>local</cmbVarClear>
+			<cmbVarClear_text>清理局部</cmbVarClear_text>
 			<edtDelayBoot>0</edtDelayBoot>
 			<edtEveryDay>1</edtEveryDay>
 			<edtExecExitWaitTime>60</edtExecExitWaitTime>
@@ -714,10 +736,10 @@ env2=value2</edtAppEnv>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
-		<StartDateTime>1970-12-30 20:55:00</StartDateTime>
-		<EndDateTime>2026-06-05 00:00:00</EndDateTime>
-		<NextRunDateTime>2026-06-05 20:55:00</NextRunDateTime>
-		<NextRunTime>2026-06-05 20:55:00</NextRunTime>
+		<StartDateTime>1970-12-30 22:55:00</StartDateTime>
+		<EndDateTime>2026-10-14 00:00:00</EndDateTime>
+		<NextRunDateTime>2026-10-14 22:55:00</NextRunDateTime>
+		<NextRunTime>2026-10-14 22:55:00</NextRunTime>
 		<LastRunTime>2025-12-05 21:25:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
@@ -1080,9 +1102,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-10-09 02:14:24</EndDateTime>
-		<NextRunDateTime>2126-09-20 10:54:25</NextRunDateTime>
+		<NextRunDateTime>2126-09-21 08:11:14</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-10-14 10:54:25</LastRunTime>
+		<LastRunTime>2026-10-15 08:11:14</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2467,9 +2489,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
 		<EndDateTime>2026-08-19 13:45:36</EndDateTime>
-		<NextRunDateTime>2026-10-14 22:00:00</NextRunDateTime>
-		<NextRunTime>2026-10-14 22:00:00</NextRunTime>
-		<LastRunTime>2026-10-13 22:00:00</LastRunTime>
+		<NextRunDateTime>2026-10-15 22:00:00</NextRunDateTime>
+		<NextRunTime>2026-10-15 22:00:00</NextRunTime>
+		<LastRunTime>2026-10-14 22:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
