@@ -1,23 +1,35 @@
 {
   "AppConfigs": {
     "TypeConfigs": {
-      "DirectoryOpus": {
+      "AutoCAD": {
         "EnableMouseMiddleClick": false
       },
-      "WindowsExplorer": {
+      "Bandizip": {
         "EnableMouseMiddleClick": false
       },
-      "FileDialog": {
-        "EnableMouseMiddleClick": false
-      },
-      "FolderDialog": {},
       "Desktop": {
         "EnableMouseMiddleClick": false
       },
+      "DirectoryOpus": {
+        "EnableMouseMiddleClick": false
+      },
+      "Explzh": {},
+      "FileDialog": {
+        "EnableMouseMiddleClick": false
+      },
+      "FilePilot": {},
+      "Files": {},
+      "FolderDialog": {},
+      "FreeCommander": {
+        "EnableMouseMiddleClick": false
+      },
+      "OneCommander": {},
       "TotalCommander": {
         "EnableMouseMiddleClick": false
       },
-      "FreeCommander": {
+      "WPS.FileDialog": {},
+      "WinRAR.ExtractDialog": {},
+      "WindowsExplorer": {
         "EnableMouseMiddleClick": false
       },
       "XYplorer": {
@@ -25,34 +37,27 @@
       },
       "xplorer2": {
         "EnableMouseMiddleClick": false
-      },
-      "Bandizip": {
-        "EnableMouseMiddleClick": false
-      },
-      "AutoCAD": {
-        "EnableMouseMiddleClick": false
-      },
-      "Explzh": {},
-      "FilePilot": {},
-      "Files": {},
-      "OneCommander": {},
-      "WinRAR.ExtractDialog": {},
-      "WPS.FileDialog": {}
+      }
     },
     "PathConfigs": {}
   },
   "Menus": {
     "Favorites": {
       "Deletions": [],
-      "Moves": [],
       "Insertions": [],
+      "Moves": [],
       "Updates": []
     }
   },
   "DiskSearch": {
+    "FileNamePriority": {
+      "Deletions": [],
+      "Insertions": [],
+      "Moves": [],
+      "Updates": []
+    },
     "FolderPriority": {
       "Deletions": [],
-      "Moves": [],
       "Insertions": [
         {
           "Index": -1,
@@ -102,26 +107,21 @@
           }
         }
       ],
-      "Updates": []
-    },
-    "FileNamePriority": {
-      "Deletions": [],
       "Moves": [],
-      "Insertions": [],
       "Updates": []
     },
     "SearchFilter": {
       "Deletions": [],
-      "Moves": [],
       "Insertions": [],
+      "Moves": [],
       "Updates": []
     }
   },
   "FileSearchWindow": {
     "Columns": {
       "Deletions": [],
-      "Moves": [],
       "Insertions": [],
+      "Moves": [],
       "Updates": [
         {
           "Id": "FileName",
@@ -143,199 +143,199 @@
         }
       ]
     },
-    "WindowWidth": 1000,
-    "WindowHeight": 720,
     "PreviewWidth": 300,
-    "SideBarWidth": 225
+    "SideBarWidth": 225,
+    "WindowHeight": 720,
+    "WindowWidth": 1000
   },
   "Commands": {
     "Items": {
       "Deletions": [],
-      "Moves": [],
       "Insertions": [
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Title": "Everything全盘搜索\"{query}\"",
-            "Path": "Everything.exe",
-            "Parameter": "-search {query}",
-            "WorkingDirectory": "..\\TotalCMD64\\Tools\\",
+            "$customType": "CustomCommand",
             "Id": "64703c90-e15f-4712-85be-9c6c1484d0e3",
             "Keyword": "ev",
-            "$customType": "CustomCommand"
+            "Parameter": "-search {query}",
+            "Path": "Everything.exe",
+            "Title": "Everything全盘搜索\"{query}\"",
+            "WorkingDirectory": "..\\TotalCMD64\\Tools\\"
           }
         },
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Title": "使用mpv播放",
-            "Path": "cmd.exe",
-            "Parameter": "/c \"mpv {query}\"",
-            "WorkingDirectory": "..\\MPV\\",
-            "Silent": true,
+            "$customType": "CustomCommand",
             "Id": "8c7b728d-5828-4c8b-ae7c-b2e04614814e",
             "Keyword": "mpv",
-            "$customType": "CustomCommand"
+            "Parameter": "/c \"mpv {query}\"",
+            "Path": "cmd.exe",
+            "Silent": true,
+            "Title": "使用mpv播放",
+            "WorkingDirectory": "..\\MPV\\"
           }
         },
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Title": "使用GoldenDict搜索",
-            "Path": "GoldenDict.exe",
-            "Parameter": "{query}",
-            "WorkingDirectory": "..\\..\\..\\GoldenDict\\",
+            "$customType": "CustomCommand",
             "Id": "fa15a95d-7366-4eeb-ab02-92073f9a396e",
             "Keyword": "gd",
-            "$customType": "CustomCommand"
+            "Parameter": "{query}",
+            "Path": "GoldenDict.exe",
+            "Title": "使用GoldenDict搜索",
+            "WorkingDirectory": "..\\..\\..\\GoldenDict\\"
           }
         },
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Title": "使用anytxt搜索",
-            "Path": "ATGUI.exe",
-            "Parameter": "/st 1 /s \"{query}\"",
-            "WorkingDirectory": "..\\..\\..\\AnyTXT Searcher\\",
+            "$customType": "CustomCommand",
             "Id": "679ce21e-2e8c-4215-898d-f17c3e19ed01",
             "Keyword": "at",
-            "$customType": "CustomCommand"
+            "Parameter": "/st 1 /s \"{query}\"",
+            "Path": "ATGUI.exe",
+            "Title": "使用anytxt搜索",
+            "WorkingDirectory": "..\\..\\..\\AnyTXT Searcher\\"
           }
         }
       ],
+      "Moves": [],
       "Updates": []
     }
   },
   "WebSearch": {
     "Items": {
       "Deletions": [],
-      "Moves": [],
       "Insertions": [
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Keyword": "db",
-            "Url": "https://www.douban.com/search?q={query}",
-            "Title": "豆瓣",
             "Icon": {
               "Path": "{user}\\43d21b46-9a6e-4fda-8b61-3999a0baea8b.png",
               "TypeName": "Path"
             },
+            "Keyword": "db",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://www.douban.com/search?q={query}"
+            "SuggestionUrl": "https://www.douban.com/search?q={query}",
+            "Title": "豆瓣",
+            "Url": "https://www.douban.com/search?q={query}"
           }
         },
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Keyword": "sg",
-            "Url": "https://www.sogou.com/web?query={query}",
-            "Title": "搜狗",
             "Icon": {
               "Path": "{user}\\107649dc-d39b-4d3e-844a-e190aa484114.png",
               "TypeName": "Path"
             },
+            "Keyword": "sg",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://www.sogou.com/web?query={query}"
+            "SuggestionUrl": "https://www.sogou.com/web?query={query}",
+            "Title": "搜狗",
+            "Url": "https://www.sogou.com/web?query={query}"
           }
         },
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Keyword": "prts",
-            "Url": "https://prts.wiki/index.php?search={query}&profile=advanced&fulltext=1&ns0=1",
-            "Title": "PRTS",
             "Icon": {
               "Path": "{user}\\78ec2357-c391-4b1d-ba90-000a20e1e47a.png",
               "TypeName": "Path"
             },
+            "Keyword": "prts",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://prts.wiki/w/{query}"
+            "SuggestionUrl": "https://prts.wiki/w/{query}",
+            "Title": "PRTS",
+            "Url": "https://prts.wiki/index.php?search={query}&profile=advanced&fulltext=1&ns0=1"
           }
         },
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Keyword": "gh",
-            "Url": "https://github.com/search?q={query}&type=repositories",
-            "Title": "github",
             "Icon": {
               "Path": "{user}\\44c25ec6-1946-4774-8846-aa5ad653a16e.jpg",
               "TypeName": "Path"
             },
+            "Keyword": "gh",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://github.com/search?q={query}&type=repositories"
+            "SuggestionUrl": "https://github.com/search?q={query}&type=repositories",
+            "Title": "github",
+            "Url": "https://github.com/search?q={query}&type=repositories"
           }
         },
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Keyword": "dc",
-            "Url": "https://ndc.232885.xyz/search?q={query}",
-            "Title": "dcmoontv",
             "Icon": {
               "Path": "{user}\\e0295ac9-83b1-47c9-8eb5-cfa5f4cfbcba.png",
               "TypeName": "Path"
             },
+            "Keyword": "dc",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://ndc.232885.xyz/search?q={query}"
+            "SuggestionUrl": "https://ndc.232885.xyz/search?q={query}",
+            "Title": "dcmoontv",
+            "Url": "https://ndc.232885.xyz/search?q={query}"
           }
         },
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Keyword": "sp",
-            "Url": "https://www.startpage.com/sp/search?query={query}&pl=opensearch",
-            "Title": "Startpage",
             "Icon": {
               "Path": "{user}\\875d1360-fb26-4f3e-990f-34ef50b8d997.png",
               "TypeName": "Path"
             },
+            "Keyword": "sp",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://www.startpage.com/sp/search?query={query}&pl=opensearch"
+            "SuggestionUrl": "https://www.startpage.com/sp/search?query={query}&pl=opensearch",
+            "Title": "Startpage",
+            "Url": "https://www.startpage.com/sp/search?query={query}&pl=opensearch"
           }
         },
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Keyword": "xw",
-            "Url": "https://nxw.232885.xyz/search?q={query}",
-            "Title": "xwnewtv",
             "Icon": {
               "Path": "{user}\\f7144083-0f3f-4582-bf3d-d4fb7075c932.png",
               "TypeName": "Path"
             },
+            "Keyword": "xw",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://nxw.232885.xyz/search?q={query}"
+            "SuggestionUrl": "https://nxw.232885.xyz/search?q={query}",
+            "Title": "xwnewtv",
+            "Url": "https://nxw.232885.xyz/search?q={query}"
           }
         },
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Keyword": "tvp",
-            "Url": "https://cftvpxqj.xuanqj.qzz.io/search?q={query}&type=video",
-            "Title": "moontvp",
             "Icon": {
               "Path": "{user}\\72f9ec93-ffc8-4421-a1aa-589544216f32.png",
               "TypeName": "Path"
             },
+            "Keyword": "tvp",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://cftvpxqj.xuanqj.qzz.io/search?q={query}&type=video"
+            "SuggestionUrl": "https://cftvpxqj.xuanqj.qzz.io/search?q={query}&type=video",
+            "Title": "moontvp",
+            "Url": "https://cftvpxqj.xuanqj.qzz.io/search?q={query}&type=video"
           }
         }
       ],
+      "Moves": [],
       "Updates": [
         {
           "Id": "ecb51462-cb27-4b89-ae53-333b4550f489",
@@ -397,26 +397,26 @@
           "Id": "610a486d-0028-4739-8eb6-50f5247c918f",
           "UpdatedProperties": {
             "Keyword": "amz",
-            "Url": "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}",
-            "SuggestionUrl": "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}"
+            "SuggestionUrl": "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}",
+            "Url": "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords={query}"
           }
         },
         {
           "Id": "2db0261a-1114-4c8d-8cc8-62a89aeb1a35",
           "UpdatedProperties": {
             "Keyword": "eb",
-            "Url": "https://www.ebay.com/sch/?_nkw={query}",
-            "Title": "Ebay",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://www.ebay.com/sch/?_nkw={query}"
+            "SuggestionUrl": "https://www.ebay.com/sch/?_nkw={query}",
+            "Title": "Ebay",
+            "Url": "https://www.ebay.com/sch/?_nkw={query}"
           }
         },
         {
           "Id": "455e1dc4-5e38-4b00-85da-d0bf46c68f4f",
           "UpdatedProperties": {
-            "Url": "https://www.imdb.com/find?s=all&q={query}",
             "SuggestionProvider": "Custom",
-            "SuggestionUrl": "https://www.imdb.com/find?s=all&q={query}"
+            "SuggestionUrl": "https://www.imdb.com/find?s=all&q={query}",
+            "Url": "https://www.imdb.com/find?s=all&q={query}"
           }
         },
         {
@@ -435,38 +435,38 @@
       "Deletions": [
         "afc47971-acaa-4731-bd26-0cd85109bee0"
       ],
-      "Moves": [],
       "Insertions": [
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Title": "复制文件名到剪贴板",
-            "Path": "cscript.exe",
-            "Parameter": "//Nologo \"UserProfile\\Settings\\CopyFileName.vbs\" \"{action_path}\"",
-            "RunAsAdmin": true,
-            "Silent": true,
-            "Keyword": "N",
+            "$customType": "CustomCommand",
             "Hotkey": 590,
             "HotkeyScope": 1,
-            "$customType": "CustomCommand"
+            "Keyword": "N",
+            "Parameter": "//Nologo \"UserProfile\\Settings\\CopyFileName.vbs\" \"{action_path}\"",
+            "Path": "cscript.exe",
+            "RunAsAdmin": true,
+            "Silent": true,
+            "Title": "复制文件名到剪贴板"
           }
         },
         {
           "Index": -1,
           "Info": null,
           "Item": {
-            "Title": "在TC中定位到该文件",
-            "Path": "TotalCMD64.exe",
-            "Parameter": "/O /A /S /L=\"{action_path}\"",
-            "WorkingDirectory": "..\\TotalCMD64\\",
-            "Keyword": "T",
+            "$customType": "CustomCommand",
             "Hotkey": 1037,
             "HotkeyScope": 1,
-            "$customType": "CustomCommand"
+            "Keyword": "T",
+            "Parameter": "/O /A /S /L=\"{action_path}\"",
+            "Path": "TotalCMD64.exe",
+            "Title": "在TC中定位到该文件",
+            "WorkingDirectory": "..\\TotalCMD64\\"
           }
         }
       ],
+      "Moves": [],
       "Updates": [
         {
           "Id": "44eca225-98f6-489c-b97a-03163e83ce7e",
@@ -494,30 +494,30 @@
     "EnableAutoUpdate": false
   },
   "Settings": {
-    "General.EnableAnalytics": false,
-    "Hotkey.PressShowListaryHotkeyAgainBehavior": "hide",
-    "OpenFolder.Path": "..\\TotalCMD64\\TOTALCMD64.EXE",
-    "OpenFolder.Param": "/O /T \"%1\"",
     "Tutorial.ShowMainV3": false,
     "Listary5.SettingsImported": true,
     "Listary5.ProLicense.Name": "Adven Dai",
-    "Listary5.ProLicense.Email": "daiqiang7297@163.com",
-    "Listary5.ProLicense.Key": "FP7832JRZS7TVFCHJXN8Z7S7MBZZSRBJDEX6PY3PL239QU53M2R9JHNK2XW4LY6D32CJ3BJDHK2L5APH3LFVFASHVLHFEXEHFX79M6NDNUJCMR8LRCLAN7MPSD6CAGTMCAHYH22CGT8T542RFPAGVY23W349QJV4C4G8XT2893SSUZV9E3CCPRGVY3A7FE3B",
     "LastUpdateTimeV1": "2025-02-15T15:05:31.8558174+08:00",
     "Gety.FirstSeenDate": "2026-07-18T17:51:11.4125403+08:00",
     "Gety.HandoffRecentShownTimes": [
-      "2026-10-08T10:12:45.7105613+08:00",
       "2026-10-10T13:18:52.7305175+08:00",
-      "2026-10-14T12:02:14.449257+08:00"
+      "2026-10-14T12:02:14.449257+08:00",
+      "2026-10-16T12:00:32.0738826+08:00"
     ],
-    "Gety.HandoffVariant": "b"
+    "Gety.HandoffVariant": "b",
+    "General.EnableAnalytics": false,
+    "Hotkey.PressShowListaryHotkeyAgainBehavior": "hide",
+    "Listary5.ProLicense.Email": "daiqiang7297@163.com",
+    "Listary5.ProLicense.Key": "FP7832JRZS7TVFCHJXN8Z7S7MBZZSRBJDEX6PY3PL239QU53M2R9JHNK2XW4LY6D32CJ3BJDHK2L5APH3LFVFASHVLHFEXEHFX79M6NDNUJCMR8LRCLAN7MPSD6CAGTMCAHYH22CGT8T542RFPAGVY23W349QJV4C4G8XT2893SSUZV9E3CCPRGVY3A7FE3B",
+    "OpenFolder.Param": "/O /T \"%1\"",
+    "OpenFolder.Path": "..\\TotalCMD64\\TOTALCMD64.EXE"
   },
   "Recommendations": {
     "RecentFiles": {
       "Sources": {
         "Deletions": [],
-        "Moves": [],
         "Insertions": [],
+        "Moves": [],
         "Updates": []
       }
     }
