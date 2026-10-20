@@ -24,9 +24,25 @@
     "collage": {
         "background_color": "#FFFFFFFF",
         "border_px": 0,
+        "columns": 1,
+        "custom_grid_initialized": false,
         "direction": "vertical",
+        "pdf_custom_height_mm": 297,
+        "pdf_custom_width_mm": 210,
+        "pdf_export_mode": "combined",
+        "pdf_margin_bottom_mm": 10,
+        "pdf_margin_left_mm": 10,
+        "pdf_margin_right_mm": 10,
+        "pdf_margin_top_mm": 10,
+        "pdf_orientation": "portrait",
+        "pdf_paper_size": "a4",
+        "rows": 1,
         "sizing_mode": "uniform",
         "spacing_px": 0
+    },
+    "context_menu_shortcuts": {
+        "edit_with_snow_shot": [
+        ]
     },
     "drawing": {
         "always_show_first_toolbar_group_button": false,
@@ -370,6 +386,8 @@
             "activation_key": "windows",
             "mouse_button": "right_drag"
         },
+        "screenshot_ocr_copy": {
+        },
         "screenshot_quick_save": {
         },
         "screenshot_save": {
@@ -427,11 +445,15 @@
         ],
         "screenshot_ocr": [
         ],
+        "screenshot_ocr_copy": [
+        ],
         "screenshot_quick_save": [
         ],
         "screenshot_save": [
         ],
         "screenshot_translation": [
+        ],
+        "split_selected_images": [
         ],
         "stitch_selected_images": [
         ],
@@ -523,15 +545,23 @@
         "confirm_before_destroying_window": true,
         "double_click_action": "thumbnail_mode",
         "duplicate_content_action": "shake_window",
+        "exit_annotation_mode_before_closing": false,
         "locked_border_color": "#FAAD14FF",
         "locked_shadow_color": "#FAAD14FF",
         "middle_mouse_button_action": "reset_zoom",
+        "mouse_wheel_opacity_step": 5,
         "mouse_wheel_zoom_mode": "mouse_position",
+        "mouse_wheel_zoom_step": 10,
         "shadow_active_color": "#69B1FFFF",
         "shadow_color": "#BFBFBFFF",
         "show_border_by_default": true,
         "show_shadow_by_default": false,
         "show_window_buttons": true,
+        "text_background_color": "system",
+        "text_color": "system",
+        "text_font_family": "",
+        "text_font_size": 16,
+        "text_maximum_width": 1024,
         "text_selection_on_recognition_results": "only_when_displayed"
     },
     "pin_to_screen_shortcuts": {
@@ -762,6 +792,7 @@
         "animated_image_frame_rate": 10,
         "api_mode": "dxgi",
         "auto_exit_after_recording_ends": false,
+        "auto_hide_toolbar": false,
         "capture_toolbar_in_recording": true,
         "clarity": "1080p",
         "delete_files_on_recording_close": false,
@@ -778,6 +809,7 @@
         "mouse_click_color": "#00000000",
         "mouse_highlight_color": "#FFFF0080",
         "mouse_highlight_enabled": false,
+        "mouse_highlight_radius": 41,
         "mouse_trail_color": "#00000000",
         "mouse_trail_duration_ms": 500,
         "notify_after_export_completes": false,
@@ -841,7 +873,7 @@
         "image_format": "png",
         "image_quality": 100,
         "image_save_directory": "C:/Users/Cing/Pictures",
-        "last_manual_save_directory": "E:/Cing@Pic",
+        "last_manual_save_directory": "C:/Users/Cing/Desktop",
         "last_manual_save_format": "png",
         "manual_save_filename_format": "SnowShot_{YYYY-MM-DD_HH-mm-ss}",
         "manual_save_format_options": {
@@ -874,7 +906,10 @@
     },
     "screenshot_selection": {
         "aspect_ratio": "free",
+        "background_opacity_percent": 0,
         "corner_radius": 0,
+        "layout_compaction_enabled": false,
+        "layout_compaction_spacing": 0,
         "lock_aspect_ratio": false,
         "region_type": "rectangle",
         "selection_rect_presets": [
@@ -898,6 +933,11 @@
         "copy_to_clipboard": [
             {
                 "portable": "Ctrl+C"
+            }
+        ],
+        "duplicate_latest_region": [
+            {
+                "portable": "R"
             }
         ],
         "keep_selection_width_and_height_consistent": [
@@ -1190,6 +1230,7 @@
         "table_qr_tool": "table"
     },
     "screenshot_translation": {
+        "language_detection_confidence_threshold": 60,
         "layout_processing": "smart_merge",
         "model": "qwen3.8-flash",
         "original_image_translation": true,
@@ -1210,7 +1251,7 @@
         "selection_display_unit": "physical_pixels",
         "selection_mask_color": "#00000080",
         "selection_toolbar_hidden": false,
-        "selection_transition_animation": true,
+        "selection_transition_animation": 32,
         "shortcut_hint_opacity": 100,
         "show_edit_selection_toolbar": true,
         "show_guides_by_default": false,
@@ -1243,6 +1284,8 @@
     },
     "tray": {
         "custom_icon": "",
+        "dark_custom_icon": "",
+        "dark_icon": "inherit",
         "enabled": true,
         "icon": "default",
         "left_click_action": "screenshot",

@@ -133,13 +133,19 @@
         {
           "Id": "Path",
           "UpdatedProperties": {
-            "Width": 400
+            "Width": 300
+          }
+        },
+        {
+          "Id": "Size",
+          "UpdatedProperties": {
+            "Width": 100
           }
         },
         {
           "Id": "DateModified",
           "UpdatedProperties": {
-            "Width": 200
+            "Width": 160
           }
         }
       ]
@@ -484,7 +490,6 @@
         {
           "Id": "284ecbe8-1ef2-49c9-bd93-f7025519402b",
           "UpdatedProperties": {
-            "Hotkey": 600,
             "HotkeyScope": 1
           }
         }
