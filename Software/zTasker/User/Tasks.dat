@@ -1102,9 +1102,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-10-09 02:14:24</EndDateTime>
-		<NextRunDateTime>2126-09-29 07:18:58</NextRunDateTime>
+		<NextRunDateTime>2126-09-29 21:20:45</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-10-23 07:18:58</LastRunTime>
+		<LastRunTime>2026-10-23 21:20:45</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2824,16 +2824,16 @@ env2=value2</edtAppEnv>
 	<TaskItem>
 		<ID>185-ACDE086STM</ID>
 		<TaskType>ttMultiTasker</TaskType>
-		<Stopped>1</Stopped>
+		<Stopped>0</Stopped>
 		<HKStopped>0</HKStopped>
 		<QukPhzStopped>1</QukPhzStopped>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>2</SchType>
-		<StartDateTime>2026-06-07 22:00:00</StartDateTime>
-		<EndDateTime>2026-07-31 09:38:08</EndDateTime>
-		<NextRunDateTime>2026-09-02 22:00:00</NextRunDateTime>
-		<NextRunTime>2026-09-02 22:00:00</NextRunTime>
-		<LastRunTime>2026-09-01 22:00:00</LastRunTime>
+		<StartDateTime>2026-06-07 21:00:00</StartDateTime>
+		<EndDateTime>2026-10-23 19:16:16</EndDateTime>
+		<NextRunDateTime>2026-10-24 21:00:00</NextRunDateTime>
+		<NextRunTime>2026-10-24 21:00:00</NextRunTime>
+		<LastRunTime>2026-10-23 21:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
