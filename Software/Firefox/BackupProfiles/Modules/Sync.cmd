@@ -178,7 +178,6 @@ rd /s /q "%SyncDir%\Customization\Software\MPV\portable_config\cache"
 rd /s /q "%SyncDir%\Customization\Software\MPV\portable_config\watch_later"
 
 :N_m3u8DL-RE
-xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\N_m3u8DL-RE.exe" "%SyncDir%\Customization\Software\N_m3u8DL-RE\" /y
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\RunNm3u8DLRE.cmd" "%SyncDir%\Customization\Software\N_m3u8DL-RE\" /y
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_ad_keyword.conf" "%SyncDir%\Customization\Software\N_m3u8DL-RE\" /y
 xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\config_common.conf" "%SyncDir%\Customization\Software\N_m3u8DL-RE\" /y

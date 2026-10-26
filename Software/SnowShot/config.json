@@ -70,6 +70,7 @@
         },
         "brush_eraser_style": {
         },
+        "delete_text_after_cursor": true,
         "distance_style": {
         },
         "draw_templates": [
@@ -468,7 +469,7 @@
     },
     "interface": {
         "app_font": "",
-        "app_font_size_percentage": 100,
+        "app_font_size": 14,
         "language": "system",
         "main_window_geometry": {
             "height": 679,
@@ -488,6 +489,8 @@
         "theme_primary_color": "#1677FFFF",
         "toolbar_skin_path": "",
         "toolbar_skin_position": "center",
+        "translation_window_geometry": {
+        },
         "translation_window_size": {
         },
         "tray_menu_skin_path": "",
@@ -791,6 +794,8 @@
         "animated_image_clarity": "720p",
         "animated_image_frame_rate": 10,
         "api_mode": "dxgi",
+        "area_history": [
+        ],
         "auto_exit_after_recording_ends": false,
         "auto_hide_toolbar": false,
         "capture_toolbar_in_recording": true,
@@ -798,6 +803,7 @@
         "delete_files_on_recording_close": false,
         "enable_microphone": false,
         "enable_system_audio": true,
+        "enable_webcam": false,
         "encoder": "h264_hw",
         "encoding_preset": "veryfast",
         "frame_rate": 30,
@@ -818,14 +824,21 @@
         "post_processing_enabled": false,
         "progress_bar_color": "#1677FFFF",
         "record_mouse_clicks": false,
+        "record_mouse_scrolling": false,
         "separate_audio_tracks": false,
         "show_cursor": true,
         "show_keyboard": false,
+        "show_status_prompts": true,
         "start_delay_seconds": 0,
         "system_audio_gain_db": 0,
         "video_filename_format": "SnowShot_Video_{YYYY-MM-DD_HH-mm-ss}",
         "video_quality": 80,
-        "video_save_directory": "C:/Users/Cing/Videos"
+        "video_save_directory": "C:/Users/Cing/Videos",
+        "webcam_offset_bottom": 48,
+        "webcam_offset_left": 48,
+        "webcam_orientation": 0,
+        "webcam_shape": "square",
+        "webcam_size": 150
     },
     "screen_recording_shortcuts": {
         "copy_to_clipboard": [
@@ -841,6 +854,16 @@
         "export": [
             {
                 "portable": "Ctrl+E"
+            }
+        ],
+        "next_recording_area": [
+            {
+                "portable": "Shift+R"
+            }
+        ],
+        "previous_recording_area": [
+            {
+                "portable": "R"
             }
         ],
         "toggle_recording": [
@@ -888,6 +911,7 @@
         "screenshot_sound_notification": false,
         "scrolling_auto_scroll_interval_ms": 200,
         "selection_resize_mode": "follow_mouse_movement",
+        "show_save_result": false,
         "shutter_sound_notification": true,
         "stroke_color_presets": [
             "#F5222DFF",
@@ -907,6 +931,9 @@
     "screenshot_selection": {
         "aspect_ratio": "free",
         "background_opacity_percent": 0,
+        "border_color": "#FFFFFFFF",
+        "border_type": "shadow",
+        "border_width": 0,
         "corner_radius": 0,
         "layout_compaction_enabled": false,
         "layout_compaction_spacing": 0,
@@ -1230,6 +1257,7 @@
         "table_qr_tool": "table"
     },
     "screenshot_translation": {
+        "copy_translation_results_as_image": false,
         "language_detection_confidence_threshold": 60,
         "layout_processing": "smart_merge",
         "model": "qwen3.8-flash",

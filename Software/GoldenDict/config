@@ -38,6 +38,7 @@
    <enableSCToTWConversion>1</enableSCToTWConversion>
    <enableSCToHKConversion>1</enableSCToHKConversion>
    <enableTCToSCConversion>1</enableTCToSCConversion>
+   <enableJapaneseConversion>1</enableJapaneseConversion>
   </chinese>
   <romaji>
    <enable>0</enable>
@@ -84,7 +85,6 @@
  <popupMutedDictionaries>
   <mutedDictionary>9152153f4410f8049b0770420e09c0d5</mutedDictionary>
  </popupMutedDictionaries>
- <dictionariesToReindex/>
  <preferences>
   <interfaceLanguage>zh_CN</interfaceLanguage>
   <interfaceFont>微软雅黑</interfaceFont>
@@ -103,6 +103,7 @@
   <enableTrayIcon>1</enableTrayIcon>
   <startToTray>0</startToTray>
   <closeToTray>0</closeToTray>
+  <showDockIcon>0</showDockIcon>
   <autoStart>0</autoStart>
   <doubleClickTranslates>1</doubleClickTranslates>
   <selectWordBySingleClick>0</selectWordBySingleClick>
@@ -148,6 +149,7 @@
    <text>selected_text</text>
    <word>word</word>
    <sentence>marked_sentence</sentence>
+   <addAudio>1</addAudio>
   </ankiConnectServer>
   <checkForNewReleases>1</checkForNewReleases>
   <disallowContentFromOtherSites>0</disallowContentFromOtherSites>
@@ -188,7 +190,7 @@
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>
  <dictionariesDialogGeometry>AdnQywADAAAAAAD+AAAARQAABEQAAAJ3AAAA/gAAAGQAAAREAAACdwAAAAAAAAAABVYAAAD+AAAAZAAABEQAAAJ3</dictionariesDialogGeometry>
- <timeForNewReleaseCheck>2026-10-19T18:28:19</timeForNewReleaseCheck>
+ <timeForNewReleaseCheck>2026-10-24T12:27:13</timeForNewReleaseCheck>
  <skippedRelease>26.6.2</skippedRelease>
  <showingDictBarNames>0</showingDictBarNames>
  <usingToolbarsIconSize>1</usingToolbarsIconSize>
