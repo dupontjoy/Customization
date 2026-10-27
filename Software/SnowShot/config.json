@@ -68,6 +68,13 @@
             "stroke_style": 0,
             "stroke_width": 2
         },
+        "automatic_selection_excluded_tools": [
+            "free-draw",
+            "pen-filter",
+            "text",
+            "speech-bubble"
+        ],
+        "automatically_select_newly_created_elements": false,
         "brush_eraser_style": {
         },
         "delete_text_after_cursor": true,
