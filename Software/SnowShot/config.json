@@ -485,6 +485,8 @@
             "x": 225,
             "y": 13
         },
+        "pinned_window_management_page_size": 10,
+        "screenshot_history_page_size": 10,
         "sidebar_collapsed": false,
         "skin_blur_level": 0,
         "skin_display_mode": "overlay",
@@ -1309,6 +1311,7 @@
         "detector_resize_policy": "max",
         "direct_ml_acceleration": true,
         "fill_style": "background_fill",
+        "hardware_acceleration": false,
         "model_hot_start": false,
         "model_type": "small",
         "resident_process": false,
@@ -1338,7 +1341,8 @@
             "tray.show-main-window",
             "tray.exit"
         ],
-        "middle_click_action": "screenshot_fixed"
+        "middle_click_action": "screenshot_fixed",
+        "use_system_icon_color": false
     },
     "updates": {
         "mode": "check"
