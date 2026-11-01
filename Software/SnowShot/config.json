@@ -75,6 +75,8 @@
             "speech-bubble"
         ],
         "automatically_select_newly_created_elements": false,
+        "bracket_style": {
+        },
         "brush_eraser_style": {
         },
         "delete_text_after_cursor": true,
@@ -258,6 +260,8 @@
             {
                 "portable": "2"
             }
+        ],
+        "bracket": [
         ],
         "brush": [
             {
@@ -471,6 +475,8 @@
         ],
         "toggle_global_hotkeys": [
         ],
+        "toggle_window_under_cursor_always_on_top": [
+        ],
         "translate_selected_text": [
         ]
     },
@@ -566,6 +572,7 @@
         "mouse_wheel_zoom_step": 10,
         "shadow_active_color": "#69B1FFFF",
         "shadow_color": "#BFBFBFFF",
+        "shake_window_to_hide_others": true,
         "show_border_by_default": true,
         "show_shadow_by_default": false,
         "show_window_buttons": true,
@@ -580,6 +587,16 @@
         "always_on_top": [
             {
                 "portable": "T"
+            }
+        ],
+        "batch_save_as_file": [
+            {
+                "portable": "Ctrl+Alt+S"
+            }
+        ],
+        "batch_select_all": [
+            {
+                "portable": "Ctrl+Alt+A"
             }
         ],
         "close_window": [
@@ -892,6 +909,7 @@
         "capture_ui_in_scrolling_screenshot": true,
         "compression_level": "medium",
         "confirm_before_exiting_via_shortcut": false,
+        "copy_after_pinning_to_screen": false,
         "copy_image_file_to_clipboard": true,
         "delay_seconds": 3,
         "double_click_action": "copy",
@@ -1041,6 +1059,11 @@
                 "portable": "Ctrl+F"
             }
         ],
+        "pin_window_to_screen": [
+            {
+                "portable": "Alt+W"
+            }
+        ],
         "previous_screenshot_history": [
             {
                 "portable": ","
@@ -1171,6 +1194,7 @@
                     "record-screen"
                 ],
                 [
+                    "pin-window-to-screen",
                     "pin-to-screen"
                 ],
                 [
@@ -1260,6 +1284,9 @@
                 ],
                 [
                     "speech-bubble"
+                ],
+                [
+                    "bracket"
                 ]
             ]
         },
@@ -1298,6 +1325,7 @@
         "schema_version": 4
     },
     "system": {
+        "annotation_mode_when_opening_for_editing": true,
         "application_priority": "above_normal",
         "application_qos": "user_interactive",
         "auto_start_at_boot": false,
