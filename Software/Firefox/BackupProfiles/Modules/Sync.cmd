@@ -45,6 +45,9 @@ rd /s /q "%BackupDir%\..\..\Software\ImageGlass\ThumbnailsCache"
 ::删除pixpin自动保存的贴图
 rd /s /q "%BackupDir%\..\..\Software\PixPin\Data"
 
+::清空下载文件夹，但不会删除文件夹本身
+del /s /q /f "C:\Users\%USERNAME%\Downloads\*"
+
 :any-listen
 robocopy "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas\extension" "%SyncDir%\PSoftware\any-listen\AnyListenDatas\extension" /MIR /ZB /R:3 /W:5
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas\extension\anylisten.data.db" "%SyncDir%\PSoftware\any-listen\AnyListenDatas\" /y

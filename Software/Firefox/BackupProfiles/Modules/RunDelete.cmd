@@ -41,8 +41,5 @@ rd /s /q "%cd%\zTasker\User\Temp"
 ::删除FoxmailUpdate文件夹, 有可能导致foxmail无法启动
 rd /s /q "%cd%\..\..\Tencent\Foxmail\FoxmailUpdate"
 
-::清空文件夹，但不会删除文件夹本身
-del /s /q /f "C:\Users\%USERNAME%\Downloads\*"
-
 ::清理WinSxS，存储了Windows操作系统更新和补丁后的备份文件
 Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
