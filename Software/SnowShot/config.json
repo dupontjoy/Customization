@@ -30,12 +30,15 @@
         "pdf_custom_height_mm": 297,
         "pdf_custom_width_mm": 210,
         "pdf_export_mode": "combined",
+        "pdf_image_spacing_mm": 5,
         "pdf_margin_bottom_mm": 10,
         "pdf_margin_left_mm": 10,
         "pdf_margin_right_mm": 10,
         "pdf_margin_top_mm": 10,
         "pdf_orientation": "portrait",
         "pdf_paper_size": "a4",
+        "pdf_stitching_method": "page_based",
+        "pdf_template_type": "two_images",
         "rows": 1,
         "sizing_mode": "uniform",
         "spacing_px": 0
@@ -409,6 +412,7 @@
     },
     "global_shortcuts": {
         "disable_on_focused_fullscreen_window": false,
+        "fullscreen_window_filter": "game_windows",
         "global_canvas": [
         ],
         "hide_show_all_windows": [
@@ -570,6 +574,9 @@
         "mouse_wheel_opacity_step": 5,
         "mouse_wheel_zoom_mode": "mouse_position",
         "mouse_wheel_zoom_step": 10,
+        "quick_annotation_for_selected_text": true,
+        "quick_text_annotation_styles": {
+        },
         "shadow_active_color": "#69B1FFFF",
         "shadow_color": "#BFBFBFFF",
         "shake_window_to_hide_others": true,
@@ -587,6 +594,16 @@
         "always_on_top": [
             {
                 "portable": "T"
+            }
+        ],
+        "batch_copy_files_to_clipboard": [
+            {
+                "portable": "Ctrl+Alt+C"
+            }
+        ],
+        "batch_image_stitching": [
+            {
+                "portable": "Ctrl+Alt+J"
             }
         ],
         "batch_save_as_file": [
@@ -848,9 +865,13 @@
         "output_format": "mp4",
         "post_processing_effect": "progress_bar",
         "post_processing_enabled": false,
+        "preserve_keyboard_shortcuts": true,
         "progress_bar_color": "#1677FFFF",
+        "record_control_keys": true,
+        "record_letters_and_symbols": true,
         "record_mouse_clicks": false,
         "record_mouse_scrolling": false,
+        "record_number_keys": true,
         "separate_audio_tracks": false,
         "show_cursor": true,
         "show_keyboard": false,
@@ -968,10 +989,9 @@
         "region_type": "rectangle",
         "selection_rect_presets": [
         ],
-        "selection_target": "window_sub_element",
         "shadow_color": "#333333FF",
         "shadow_width": 0,
-        "smart_selection": true
+        "smart_selection": "window_sub_element"
     },
     "screenshot_shortcuts": {
         "cancel_screenshot": [
@@ -1296,7 +1316,7 @@
         "copy_translation_results_as_image": false,
         "language_detection_confidence_threshold": 60,
         "layout_processing": "smart_merge",
-        "model": "qwen3.8-flash",
+        "model": "free-translation",
         "original_image_translation": true,
         "secondary_target_language": "en",
         "source_language": "auto",
@@ -1322,7 +1342,7 @@
         "toolbar_size": "normal"
     },
     "storage": {
-        "schema_version": 4
+        "schema_version": 5
     },
     "system": {
         "annotation_mode_when_opening_for_editing": true,
