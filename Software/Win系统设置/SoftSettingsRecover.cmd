@@ -6,6 +6,13 @@ Title 安装系统后恢复一些软件的设置
 color 0a
 cls
 
+:: 检查并请求管理员权限
+net session >nul 2>&1
+if %errorLevel% neq 0 (
+    echo 请求管理员权限...
+    powershell -Command "Start-Process '%~f0' -Verb RunAs"
+    exit /b
+)
 
 ::pushd命令，将当前目录的路径保存下来，并且切换到你指定的新目录路径。
 pushd %~dp0
@@ -51,4 +58,4 @@ xcopy "%SyncDir%\PSoftware\satelite\data\store.json" "%SoftDir%\Satelite-Portabl
 
 :end
 timeout /t 3 /nobreak >nul
-exit
+pause

@@ -133,19 +133,13 @@
         {
           "Id": "Path",
           "UpdatedProperties": {
-            "Width": 300
-          }
-        },
-        {
-          "Id": "Size",
-          "UpdatedProperties": {
-            "Width": 100
+            "Width": 400
           }
         },
         {
           "Id": "DateModified",
           "UpdatedProperties": {
-            "Width": 160
+            "Width": 200
           }
         }
       ]
@@ -508,7 +502,7 @@
     "Gety.HandoffDismissCount": 0,
     "Gety.HandoffSilencedUntil": null,
     "Gety.HandoffRecentShownTimes": [
-      "2026-11-05T09:35:47.9519083+08:00"
+      "2026-11-06T14:48:57.5913595+08:00"
     ],
     "Gety.HandoffVariant": "b",
     "Gety.InlineNoticeShown": false,

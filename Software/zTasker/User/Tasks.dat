@@ -1102,9 +1102,9 @@ env2=value2</edtAppEnv>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
 		<EndDateTime>2026-10-09 02:14:24</EndDateTime>
-		<NextRunDateTime>2126-10-13 10:34:28</NextRunDateTime>
+		<NextRunDateTime>2126-10-13 15:20:27</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-11-06 10:34:28</LastRunTime>
+		<LastRunTime>2026-11-06 15:20:27</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -2312,7 +2312,8 @@ env2=value2</edtAppEnv>
 					<cmbEcecType>1</cmbEcecType>
 					<cmbEcecType_text>同步</cmbEcecType_text>
 					<cmbHotkey>0</cmbHotkey>
-					<edtAppEnv>env1=value1env2=value2</edtAppEnv>
+					<edtAppEnv>env1=value1
+env2=value2</edtAppEnv>
 					<edtAppEnv.max>23</edtAppEnv.max>
 					<edtAppEnv.min>0</edtAppEnv.min>
 					<edtAppPath>D:\Program Files\CingFox\Software\SnowShot\updateSnowShot.cmd</edtAppPath>
