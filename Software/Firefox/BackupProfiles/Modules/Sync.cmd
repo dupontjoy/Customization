@@ -212,6 +212,7 @@ xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%SyncDir%\Customization\
 
 :SnowShot
 xcopy "%BackupDir%\..\..\Software\SnowShot\portable\config.json" "%SyncDir%\Customization\Software\SnowShot\" /y
+xcopy "%BackupDir%\..\..\Software\SnowShot\updateSnowShot.cmd" "%SyncDir%\Customization\Software\SnowShot\" /y
 
 :steamcommunity_302
 xcopy "%BackupDir%\..\..\Software\steamcommunity_302\S302_rules.ini" "%SyncDir%\Customization\Software\steamcommunity_302\" /y
