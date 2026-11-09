@@ -58,4 +58,4 @@ xcopy "%SyncDir%\PSoftware\satelite\data\store.json" "%SoftDir%\Satelite-Portabl
 
 :end
 timeout /t 3 /nobreak >nul
-pause
+exit

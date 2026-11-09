@@ -467,6 +467,8 @@
         ],
         "screenshot_save": [
         ],
+        "screenshot_scrolling": [
+        ],
         "screenshot_translation": [
         ],
         "split_selected_images": [
@@ -519,6 +521,7 @@
         "enabled": false
     },
     "network": {
+        "http_proxy": "",
         "proxy": "none"
     },
     "pin_to_screen": {
@@ -1247,7 +1250,7 @@
         },
         "arrow_line_tool": "arrow",
         "highlight_tool": "pen_highlight",
-        "last_drawing_tool": "shape",
+        "last_drawing_tool": "text",
         "last_eraser_tool": "eraser",
         "last_filter_tool": "pen-filter",
         "last_highlight_tool": "pen-highlight",
