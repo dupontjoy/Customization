@@ -217,12 +217,14 @@
             "stroke_style": 0,
             "stroke_width": 2
         },
+        "shared_tool_color": "",
         "speech_bubble_style": {
         },
         "spotlight_style": {
             "color": "#000000ff",
             "opacity": 0.64
         },
+        "sync_tool_colors": false,
         "text_style": {
             "color": "#f5222dff",
             "corner_radii": {
@@ -358,7 +360,12 @@
             "hidden": [
                 "save-as-file",
                 "convert-to-markdown",
-                "convert-to-html"
+                "convert-to-html",
+                "screenshot-history",
+                "global-canvas",
+                "stitch-selected-images",
+                "split-selected-images",
+                "edit-selected-images"
             ],
             "positions": [
                 [
@@ -412,6 +419,8 @@
     },
     "global_shortcuts": {
         "disable_on_focused_fullscreen_window": false,
+        "edit_selected_images": [
+        ],
         "fullscreen_window_filter": "game_windows",
         "global_canvas": [
         ],
@@ -852,6 +861,7 @@
         "enable_webcam": false,
         "encoder": "h264_hw",
         "encoding_preset": "veryfast",
+        "follow_mouse": false,
         "frame_rate": 30,
         "keyboard_background_color": "#000000CC",
         "keyboard_foreground_color": "#FFFFFFFF",
@@ -944,9 +954,18 @@
             "#BAE0FFFF",
             "#FFF1B8FF"
         ],
+        "hidpi_image_scaling": "disabled",
+        "highlight_color_presets": [
+            "#FF7875FF",
+            "#D3F261FF",
+            "#69B1FFFF",
+            "#FFF566FF",
+            "#B37FEBFF"
+        ],
         "image_format": "png",
         "image_quality": 100,
         "image_save_directory": "C:/Users/Cing/Pictures",
+        "keep_annotations_editable_after_pinning_to_screen": false,
         "last_manual_save_directory": "C:/Users/Cing/Desktop",
         "last_manual_save_format": "png",
         "manual_save_filename_format": "SnowShot_{YYYY-MM-DD_HH-mm-ss}",
