@@ -36,6 +36,7 @@ start "" "%cd%\SnowShot\snow_shot.exe"
 ::start "" "%cd%\Snipaste\Snipaste.exe"
 
 start "" "%cd%\ClashVerge\clash-verge.exe"
+start "" "%cd%\Satelite-Portable\satelite-proxy.exe"
 
 :capslock
 ::需要获取完整路径才行

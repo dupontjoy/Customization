@@ -22,19 +22,19 @@ set "SyncDir=E:\My Documents\Nutstore\NutStoreSync"
 set "SoftDir=D:\Program Files\CingFox\Software"
 
 :any-listen
-robocopy "%SyncDir%\PSoftware\any-listen\AnyListenDatas" "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas" /MIR /ZB /R:3 /W:5
+::robocopy "%SyncDir%\PSoftware\any-listen\AnyListenDatas" "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas" /MIR /ZB /R:3 /W:5
 
 :anytxt
 robocopy "%SyncDir%\Customization\Software\Anytxt\config" "C:\ProgramData\Anytxt\config" /MIR /ZB /R:3 /W:5
 
 :Archivarius3000
-xcopy "%SyncDir%\Customization\Software\Archivarius3000\Archivarius3000.cfg" "C:\Users\%USERNAME%\AppData\Roaming\Archivarius 3000\" /y
+::xcopy "%SyncDir%\Customization\Software\Archivarius3000\Archivarius3000.cfg" "C:\Users\%USERNAME%\AppData\Roaming\Archivarius 3000\" /y
 
 :clashverge£¨CVR£©
 ::robocopy "%SyncDir%\PSoftware\CVR\io.github.clash-verge-rev.clash-verge-rev" "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev" /MIR /ZB /R:3 /W:5
 
 :docker-desktop
-xcopy "%SyncDir%\Customization\Software\docker-desktop\config.json" "C:\Users\%USERNAME%\.docker\" /y
+::xcopy "%SyncDir%\Customization\Software\docker-desktop\config.json" "C:\Users\%USERNAME%\.docker\" /y
 
 :gitextension
 xcopy "%SyncDir%\Customization\Software\GitExtensions\.gitconfig" "C:\Users\%USERNAME%\" /y
