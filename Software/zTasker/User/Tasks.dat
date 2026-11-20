@@ -1101,10 +1101,10 @@ env2=value2</edtAppEnv>
 		<HasEndDateTime>0</HasEndDateTime>
 		<SchType>10</SchType>
 		<StartDateTime>2024-12-26 07:00:00</StartDateTime>
-		<EndDateTime>2026-10-09 02:14:24</EndDateTime>
-		<NextRunDateTime>2126-10-23 14:31:17</NextRunDateTime>
+		<EndDateTime>2026-11-20 04:28:48</EndDateTime>
+		<NextRunDateTime>2036-11-17 22:57:30</NextRunDateTime>
 		<NextRunTime>下次启动后</NextRunTime>
-		<LastRunTime>2026-11-16 14:31:17</LastRunTime>
+		<LastRunTime>2026-11-20 22:55:12</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -1203,6 +1203,8 @@ env2=value2</edtAppEnv>
 			<cmbHKType_text>按下时</cmbHKType_text>
 			<cmbHotKeySolo>0</cmbHotKeySolo>
 			<cmbHotkey>82</cmbHotkey>
+			<cmbSchLimitType>0</cmbSchLimitType>
+			<cmbSchLimitType_text>默认</cmbSchLimitType_text>
 			<cmbVarClear>local</cmbVarClear>
 			<cmbVarClear_text>清理局部</cmbVarClear_text>
 			<edtDayLimitTime>20:34—20:34</edtDayLimitTime>
@@ -1300,13 +1302,106 @@ env2=value2</edtAppEnv>
 				<Stat>1</Stat>
 			</Tasker>
 			<Delay>
-				<Sec>20000</Sec>
+				<Sec>5000</Sec>
 				<Sec2>99000</Sec2>
 				<Random>0</Random>
 				<Name>延迟</Name>
 				<ID>80</ID>
 				<Stat>1</Stat>
 			</Delay>
+			<Tasker>
+				<TaskType>ttMouseClick</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<QukPhzStopped>0</QukPhzStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
+				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
+				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>7</Ver>
+				<Param>
+					<Name>licalender收起</Name>
+					<TitleShow>鼠标点击</TitleShow>
+					<TypeShow>输入</TypeShow>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<chkMouseClickActivateWnd>0</chkMouseClickActivateWnd>
+					<chkMouseClickPart>0</chkMouseClickPart>
+					<chkMouseClickWnd>0</chkMouseClickWnd>
+					<chkQukPhz>0</chkQukPhz>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
+					<cmbHotkey>0</cmbHotkey>
+					<cmbMouseClick>left</cmbMouseClick>
+					<cmbMouseClickPos>0</cmbMouseClickPos>
+					<cmbMouseClickPos_text>指定位置</cmbMouseClickPos_text>
+					<cmbMouseClickType>0</cmbMouseClickType>
+					<cmbMouseClickType_text>经典(显示移动轨迹)</cmbMouseClickType_text>
+					<cmbMouseClick_text>左键</cmbMouseClick_text>
+					<edtMouseClickX>1320</edtMouseClickX>
+					<edtMouseClickY>168</edtMouseClickY>
+					<edtMouseClicklTimes>1</edtMouseClicklTimes>
+					<edtTaskSubName>licalender收起</edtTaskSubName>
+				</Param>
+				<Name>licalender收起</Name>
+				<ID>169</ID>
+				<Stat>1</Stat>
+			</Tasker>
+			<Delay>
+				<Sec>15000</Sec>
+				<Sec2>99000</Sec2>
+				<Random>0</Random>
+				<Name>延迟</Name>
+				<ID>148</ID>
+				<Stat>1</Stat>
+			</Delay>
+			<Tasker>
+				<TaskType>ttWndClose</TaskType>
+				<Stopped>0</Stopped>
+				<HKStopped>0</HKStopped>
+				<QukPhzStopped>0</QukPhzStopped>
+				<HasEndDateTime>0</HasEndDateTime>
+				<SchType>-1</SchType>
+				<StartDateTime>1899-12-30 00:00:00</StartDateTime>
+				<EndDateTime>1899-12-30 00:00:00</EndDateTime>
+				<NextRunDateTime>1899-12-30 00:00:00</NextRunDateTime>
+				<NextRunTime></NextRunTime>
+				<LastRunTime></LastRunTime>
+				<Fav>0</Fav>
+				<Ver>7</Ver>
+				<Param>
+					<Name>foxmail窗口关闭</Name>
+					<TitleShow>关闭窗口</TitleShow>
+					<TypeShow>窗口</TypeShow>
+					<chkHotkey>0</chkHotkey>
+					<chkHotkeyAlt>0</chkHotkeyAlt>
+					<chkHotkeyCtrl>0</chkHotkeyCtrl>
+					<chkHotkeyShift>0</chkHotkeyShift>
+					<chkHotkeyWin>0</chkHotkeyWin>
+					<chkQukPhz>0</chkQukPhz>
+					<chkWinCloseIgnoreSelf>1</chkWinCloseIgnoreSelf>
+					<chkWinClosePart>1</chkWinClosePart>
+					<cmbEcecType>1</cmbEcecType>
+					<cmbEcecType_text>同步</cmbEcecType_text>
+					<cmbHotkey>0</cmbHotkey>
+					<edtTaskSubName>foxmail窗口关闭</edtTaskSubName>
+					<edtWndCloseClass>TFoxMainFrm.UnicodeClass</edtWndCloseClass>
+					<optWinCloseActive>0</optWinCloseActive>
+					<optWinCloseCustom>1</optWinCloseCustom>
+					<optWinCloseMulti>0</optWinCloseMulti>
+					<optWinCloseSingle>1</optWinCloseSingle>
+				</Param>
+				<Name>foxmail窗口关闭</Name>
+				<ID>14</ID>
+				<Stat>1</Stat>
+			</Tasker>
 			<Tasker>
 				<TaskType>ttVolumeSet</TaskType>
 				<Stopped>0</Stopped>
@@ -2559,9 +2654,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2026-06-07 21:00:00</StartDateTime>
 		<EndDateTime>2026-10-23 19:16:16</EndDateTime>
-		<NextRunDateTime>2026-11-16 21:00:00</NextRunDateTime>
-		<NextRunTime>2026-11-16 21:00:00</NextRunTime>
-		<LastRunTime>2026-11-15 21:00:00</LastRunTime>
+		<NextRunDateTime>2026-11-21 21:00:00</NextRunDateTime>
+		<NextRunTime>2026-11-21 21:00:00</NextRunTime>
+		<LastRunTime>2026-11-18 21:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>
@@ -3241,9 +3336,9 @@ env2=value2</edtAppEnv>
 		<SchType>2</SchType>
 		<StartDateTime>2026-01-19 22:00:00</StartDateTime>
 		<EndDateTime>2026-08-19 13:45:36</EndDateTime>
-		<NextRunDateTime>2026-11-16 22:00:00</NextRunDateTime>
-		<NextRunTime>2026-11-16 22:00:00</NextRunTime>
-		<LastRunTime>2026-11-15 22:00:00</LastRunTime>
+		<NextRunDateTime>2026-11-21 22:00:00</NextRunDateTime>
+		<NextRunTime>2026-11-21 22:00:00</NextRunTime>
+		<LastRunTime>2026-11-18 22:00:00</LastRunTime>
 		<Fav>0</Fav>
 		<Ver>7</Ver>
 		<Param>

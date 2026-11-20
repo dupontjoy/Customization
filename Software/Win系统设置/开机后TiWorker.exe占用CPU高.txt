@@ -1,0 +1,11 @@
+1、使用 DISM 修复 Windows 组件存储
+
+如果 SFC 无法修复文件，则 Windows 组件存储可能已损坏。部署映像服务和管理工具可以检查并修复 Windows 映像。
+
+    以管理员权限打开命令提示符。(Command Prompt)
+    请按顺序运行以下命令。
+    等待上一条命令执行完毕后再运行下一条命令。
+
+Dism /Online /Cleanup-Image /CheckHealth
+Dism /Online /Cleanup-Image /ScanHealth
+Dism /Online /Cleanup-Image /RestoreHealth

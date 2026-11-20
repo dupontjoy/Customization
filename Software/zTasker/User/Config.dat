@@ -60,7 +60,7 @@ chkLockNoHK=0
 cmbLockNoHK=0
 chkTestRunUpdLastTime=0
 chkTaskNextRunWeek=1
-SelfExitTime=2026-11-14 21:31:45
+SelfExitTime=2026-11-19 22:32:58
 chkSkinCustomFrame=0
 chkTaskEnterExec=0
 SysLockTime=2026-11-09 01:40:22
@@ -126,7 +126,7 @@ ActionListHeader1=40
 ActionListHeader2=120
 ActionListHeader3=120
 ActionListHeader4=60
-RecentTask=ttKill|ttOpenPage|ttActionRec|ttPsExec|ttExec
+RecentTask=ttKill|ttOpenPage|ttActionRec|ttPsExec|ttExec|ttMouseClick|ttWndClose
 TaskCleared=0
 [Skin]
 ColorBK=-12500671

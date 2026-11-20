@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+; 禁用美式键盘 (00000409)
+; 通过重命名原注册表项，使系统无法加载该键盘布局
+
+[-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00000409]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\00000409_disabled]
+@="美式键盘 (已禁用)"
+"Layout File"="KBDUS.DLL"
+"Layout Text"="美式键盘 (已禁用)"

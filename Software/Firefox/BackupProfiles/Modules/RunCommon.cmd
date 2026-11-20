@@ -28,7 +28,7 @@ start "" /D "%listary7_dir%" "%listary7_dir%\UserProfile\Settings\RunListary7.cm
 start "" "%cd%\RimeIMEPortable\weasel\WeaselServer.exe"
 start "" "%cd%\ProcessLassoPro\RunProcessLasso.cmd"
 start "" "%cd%\..\..\PyBingWallpaper\BingWallpaper.exe"
-::start "" "%cd%\BingWallpaperDesktop\BingWallpaperDesktop.exe"
+start "" "%cd%\..\..\liCalendar\liCalendar.exe"
 start "" "%cd%\TrafficMonitor\TrafficMonitor.exe"
 start "" "%cd%\Ditto\Ditto.exe"
 start "" "%cd%\SnowShot\snow_shot.exe"
@@ -47,7 +47,7 @@ start "" /D "%capslock_dir%" "%capslock_dir%\Capslock+_v3.3.0.exe"
 ::启動Foxmail后，关闭Foxmail的主窗口但不终止进程
 start "" "%cd%\..\..\Tencent\Foxmail\Foxmail.exe"
 REM 等待Foxmail完全启动，可根据需要调整等待时间
-timeout /t 8 /nobreak >nul
+timeout /t 10 /nobreak >nul
 :: 使用PowerShell脚本关闭Foxmail的主窗口但不终止进程
 powershell -command "& {$app = Get-Process -Name Foxmail; if ($app) { $app.CloseMainWindow() | Out-Null } else { Write-Host 'Foxmail is not running.' }}"
 

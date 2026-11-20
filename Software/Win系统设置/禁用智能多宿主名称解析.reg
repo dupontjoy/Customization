@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; 禁用智能多宿主名称解析。智能多宿主名称解析这个功能在Windows 8/10/11系统中默认是开启的，会导致系统向所有网卡（包括虚拟网卡）同时发送DNS查询，可能引起DNS泄露或解析延迟
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient]
+"DisableSmartNameResolution"=dword:00000001
