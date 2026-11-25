@@ -49,15 +49,15 @@ rd /s /q "%BackupDir%\..\..\Software\PixPin\Data"
 del /s /q /f "C:\Users\%USERNAME%\Downloads\*"
 
 :any-listen
-robocopy "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas\extension" "%SyncDir%\PSoftware\any-listen\AnyListenDatas\extension" /MIR /ZB /R:3 /W:5
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas\extension\anylisten.data.db" "%SyncDir%\PSoftware\any-listen\AnyListenDatas\" /y
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas\extension\config.json" "%SyncDir%\PSoftware\any-listen\AnyListenDatas\" /y
+::robocopy "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas\extension" "%SyncDir%\PSoftware\any-listen\AnyListenDatas\extension" /MIR /ZB /R:3 /W:5
+::xcopy "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas\extension\anylisten.data.db" "%SyncDir%\PSoftware\any-listen\AnyListenDatas\" /y
+::xcopy "C:\Users\%USERNAME%\AppData\Roaming\any-listen\AnyListenDatas\extension\config.json" "%SyncDir%\PSoftware\any-listen\AnyListenDatas\" /y
 
 :anytxt
 robocopy "C:\ProgramData\Anytxt\config" "%SyncDir%\Customization\Software\Anytxt\config" /MIR /ZB /R:3 /W:5
 
 :Archivarius3000
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\Archivarius 3000\Archivarius3000.cfg" "%SyncDir%\Customization\Software\Archivarius3000\" /y
+::xcopy "C:\Users\%USERNAME%\AppData\Roaming\Archivarius 3000\Archivarius3000.cfg" "%SyncDir%\Customization\Software\Archivarius3000\" /y
 
 :cangjie5
 ::复制文件夹時，源文件夹不要带斜杠，目标文件夹带斜杠。末尾写/s /y /i
@@ -78,7 +78,7 @@ xcopy "%BackupDir%\..\..\Software\Capslock+\CapsLock+settings.ini" "%SyncDir%\Cu
 xcopy "%BackupDir%\..\..\Software\CCleaner\ccleaner.ini" "%SyncDir%\Customization\Software\CCleaner\" /y
 
 :clashverge（CVR）
-::robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev" "%SyncDir%\PSoftware\CVR\io.github.clash-verge-rev.clash-verge-rev" /MIR /ZB /R:3 /W:5
+robocopy "C:\Users\%USERNAME%\AppData\Roaming\io.github.clash-verge-rev.clash-verge-rev" "%SyncDir%\PSoftware\CVR\io.github.clash-verge-rev.clash-verge-rev" /MIR /ZB /R:3 /W:5
 
 :docker-desktop
 xcopy "C:\Users\%USERNAME%\.docker\config.json" "%SyncDir%\Customization\Software\docker-desktop\" /y
@@ -123,12 +123,12 @@ xcopy "%BackupDir%\..\..\Software\GuoheViewPortable\config.ini" "%SyncDir%\Custo
 xcopy "%BackupDir%\..\..\..\IDM\!)选项配置.reg" "%SyncDir%\Customization\Software\IDMan\" /y
 
 :ImageGlass
-xcopy "%BackupDir%\..\..\Software\ImageGlass\igconfig.json" "%SyncDir%\Customization\Software\ImageGlass\" /y
-xcopy "%BackupDir%\..\..\Software\ImageGlass\updateImageGlass.cmd" "%SyncDir%\Customization\Software\ImageGlass\" /y
+::xcopy "%BackupDir%\..\..\Software\ImageGlass\igconfig.json" "%SyncDir%\Customization\Software\ImageGlass\" /y
+::xcopy "%BackupDir%\..\..\Software\ImageGlass\updateImageGlass.cmd" "%SyncDir%\Customization\Software\ImageGlass\" /y
 
 :imFile
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\user.json" "%SyncDir%\Customization\Software\imFile\" /y
-xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\system.json" "%SyncDir%\Customization\Software\imFile\" /y
+::xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\user.json" "%SyncDir%\Customization\Software\imFile\" /y
+::xcopy "C:\Users\%USERNAME%\AppData\Roaming\imFile\system.json" "%SyncDir%\Customization\Software\imFile\" /y
 
 :karing
 ::robocopy "C:\Users\%USERNAME%\AppData\Roaming\karing\karing" "%SyncDir%\PSoftware\karing\karing" /MIR /ZB /R:3 /W:5
@@ -189,7 +189,7 @@ xcopy "%BackupDir%\..\..\Software\N_m3u8DL-RE\README.md" "%SyncDir%\Customizatio
 
 :Pixpin
 ::備份Pixpin設置
-xcopy "%BackupDir%\..\..\Software\PixPin\Config\PixPinConfig.json" "%SyncDir%\Customization\Software\PixPin\Config\" /y
+::xcopy "%BackupDir%\..\..\Software\PixPin\Config\PixPinConfig.json" "%SyncDir%\Customization\Software\PixPin\Config\" /y
 
 :Processlasso
 robocopy "%BackupDir%\..\..\Software\ProcessLassoPro\config" "%SyncDir%\Customization\Software\ProcessLasso\config" /MIR /ZB /R:3 /W:5
@@ -200,7 +200,7 @@ xcopy "C:\Users\%USERNAME%\AppData\Roaming\dev.aninsomniacy.rayburst\config.json
 xcopy "C:\Users\%USERNAME%\AppData\Roaming\dev.aninsomniacy.rayburst\system.json" "%SyncDir%\Customization\Software\Rayburst\" /y
 
 :readest
-xcopy "%BackupDir%\..\..\..\readest\updateReadest.cmd" "%SyncDir%\Customization\Software\readest\" /y
+::xcopy "%BackupDir%\..\..\..\readest\updateReadest.cmd" "%SyncDir%\Customization\Software\readest\" /y
 
 :satelite
 ::robocopy "%BackupDir%\..\..\Software\Satelite-Portable\config" "%SyncDir%\PSoftware\satelite\config" /MIR /ZB /R:3 /W:5
@@ -208,14 +208,14 @@ xcopy "%BackupDir%\..\..\..\readest\updateReadest.cmd" "%SyncDir%\Customization\
 xcopy "%BackupDir%\..\..\Software\Satelite-Portable\data\store.json" "%SyncDir%\PSoftware\satelite\data\" /y
 
 :Snipaste
-xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%SyncDir%\Customization\Software\Snipaste\" /y
+::xcopy "%BackupDir%\..\..\Software\Snipaste\config.ini" "%SyncDir%\Customization\Software\Snipaste\" /y
 
 :SnowShot
 xcopy "%BackupDir%\..\..\Software\SnowShot\portable\config.json" "%SyncDir%\Customization\Software\SnowShot\" /y
 xcopy "%BackupDir%\..\..\Software\SnowShot\updateSnowShot.cmd" "%SyncDir%\Customization\Software\SnowShot\" /y
 
 :steamcommunity_302
-xcopy "%BackupDir%\..\..\Software\steamcommunity_302\S302_rules.ini" "%SyncDir%\Customization\Software\steamcommunity_302\" /y
+::xcopy "%BackupDir%\..\..\Software\steamcommunity_302\S302_rules.ini" "%SyncDir%\Customization\Software\steamcommunity_302\" /y
 
 :stranslate
 robocopy "%BackupDir%\..\..\..\STranslate-win-Portable\current\PortableConfig\Settings" "%SyncDir%\Customization\Software\STranslate\Settings" /MIR /ZB /R:3 /W:5

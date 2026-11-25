@@ -8,11 +8,11 @@
     },
     "capture_history": {
         "compression_level": "medium",
-        "enabled": true,
         "keep_permanently": false,
         "max_disk_mib": 1024,
         "max_entries": 100,
-        "retention_days": 7
+        "retention_days": 7,
+        "retention_mode": "full"
     },
     "cloud_upload": {
         "configuration": {
@@ -277,6 +277,11 @@
                 "portable": "P"
             }
         ],
+        "cycle_annotation_tool_options": [
+            {
+                "portable": "Tab"
+            }
+        ],
         "distance": [
         ],
         "eraser": [
@@ -348,12 +353,37 @@
             }
         ]
     },
+    "export_tasks": {
+        "pinned_airdrop": [
+        ],
+        "pinned_copy": [
+        ],
+        "pinned_print": [
+        ],
+        "pinned_save": [
+        ],
+        "pinned_upload": [
+        ],
+        "screenshot_airdrop": [
+        ],
+        "screenshot_copy": [
+        ],
+        "screenshot_pin": [
+        ],
+        "screenshot_print": [
+        ],
+        "screenshot_save": [
+        ],
+        "screenshot_upload": [
+        ]
+    },
     "extended_features": {
         "jump_to_translation_page": false,
         "standalone_translation_window": false,
         "translation_page_enabled": false
     },
     "floating_toolbar": {
+        "drop_behavior": "pin_to_screen",
         "enabled": false,
         "hide_during_capture": true,
         "hide_in_fullscreen": true,
@@ -419,8 +449,13 @@
         }
     },
     "global_shortcuts": {
+        "compress_selected_images": [
+        ],
         "disable_on_focused_fullscreen_window": false,
         "edit_selected_images": [
+        ],
+        "fullscreen_disable_scope": [
+            "global_shortcuts"
         ],
         "fullscreen_window_filter": "game_windows",
         "global_canvas": [
@@ -491,6 +526,8 @@
         ],
         "toggle_global_hotkeys": [
         ],
+        "toggle_global_mouse": [
+        ],
         "toggle_window_under_cursor_always_on_top": [
         ],
         "translate_selected_text": [
@@ -544,6 +581,7 @@
                     "convert-to-markdown",
                     "latex-recognition",
                     "barcode-recognition",
+                    "document-recognition",
                     "table-recognition"
                 ],
                 [
@@ -602,6 +640,98 @@
         "text_font_size": 16,
         "text_maximum_width": 1024,
         "text_selection_on_recognition_results": "only_when_displayed"
+    },
+    "pin_to_screen_mouse": {
+        "annotation_mode": {
+        },
+        "close": {
+        },
+        "copy": {
+        },
+        "copy_and_close": {
+        },
+        "copy_text": {
+            "modifiers": [
+                "shift"
+            ],
+            "operation": "right_click"
+        },
+        "destroy": {
+        },
+        "drag_image": {
+            "modifiers": [
+                "ctrl"
+            ],
+            "operation": "left_drag"
+        },
+        "fine_opacity": {
+        },
+        "fine_zoom": {
+            "modifiers": [
+                "alt"
+            ],
+            "operation": "wheel"
+        },
+        "force_move": {
+            "modifiers": [
+                "alt"
+            ],
+            "operation": "left_drag"
+        },
+        "hide_to_top": {
+        },
+        "menu": {
+            "modifiers": [
+            ],
+            "operation": "right_click"
+        },
+        "move_resize": {
+            "modifiers": [
+            ],
+            "operation": "left_drag"
+        },
+        "multi_select": {
+            "modifiers": [
+                "ctrl"
+            ],
+            "operation": "left_click"
+        },
+        "opacity": {
+            "modifiers": [
+                "ctrl"
+            ],
+            "operation": "wheel"
+        },
+        "pan_crop": {
+            "modifiers": [
+                "shift"
+            ],
+            "operation": "left_drag"
+        },
+        "reset_zoom": {
+            "modifiers": [
+            ],
+            "operation": "middle_click"
+        },
+        "save": {
+        },
+        "select_crop": {
+            "modifiers": [
+            ],
+            "operation": "right_drag"
+        },
+        "show_text_recognition_results": {
+        },
+        "thumbnail_mode": {
+            "modifiers": [
+            ],
+            "operation": "left_double_click"
+        },
+        "zoom": {
+            "modifiers": [
+            ],
+            "operation": "wheel"
+        }
     },
     "pin_to_screen_shortcuts": {
         "always_on_top": [
@@ -771,11 +901,6 @@
                 "portable": "Y"
             }
         ],
-        "show_text_recognition_results": [
-            {
-                "portable": "Ctrl+D"
-            }
-        ],
         "thumbnail_mode": [
             {
                 "portable": "R"
@@ -939,14 +1064,11 @@
         "api_mode": "auto",
         "auto_execute_after_text_recognition": "no_action",
         "auto_recognize_qr_code": true,
-        "auto_save_after_execution_actions": [
-        ],
         "auto_save_filename_format": "SnowShot_{YYYY-MM-DD_HH-mm-ss}",
         "capture_cursor": false,
         "capture_ui_in_scrolling_screenshot": true,
         "compression_level": "medium",
         "confirm_before_exiting_via_shortcut": false,
-        "copy_after_pinning_to_screen": false,
         "copy_image_file_to_clipboard": true,
         "delay_seconds": 3,
         "double_click_action": "copy",
@@ -969,7 +1091,7 @@
         "image_quality": 100,
         "image_save_directory": "C:/Users/Cing/Pictures",
         "keep_annotations_editable_after_pinning_to_screen": false,
-        "last_manual_save_directory": "C:/Users/Cing/Desktop",
+        "last_manual_save_directory": "C:/Users/Lenovo/Desktop",
         "last_manual_save_format": "png",
         "manual_save_filename_format": "SnowShot_{YYYY-MM-DD_HH-mm-ss}",
         "manual_save_format_options": {
@@ -981,11 +1103,12 @@
         "save_as_file_dialog": "system",
         "save_path_shortcuts": [
         ],
-        "screenshot_sound_notification": false,
         "scrolling_auto_scroll_interval_ms": 200,
         "selection_resize_mode": "follow_mouse_movement",
         "show_save_result": false,
-        "shutter_sound_notification": true,
+        "shutter_sound_notification": [
+            "direct_capture"
+        ],
         "stroke_color_presets": [
             "#F5222DFF",
             "#52C41AFF",
@@ -999,7 +1122,29 @@
         "vision_model": ""
     },
     "screenshot_latex": {
-        "model": "dedicated"
+        "model": "snow-shot:vision"
+    },
+    "screenshot_mouse": {
+        "cancel": {
+        },
+        "copy": {
+            "modifiers": [
+            ],
+            "operation": "left_double_click"
+        },
+        "ocr": {
+        },
+        "ocr_copy": {
+        },
+        "pin": {
+            "modifiers": [
+            ],
+            "operation": "middle_click"
+        },
+        "quick_save": {
+        },
+        "save": {
+        }
     },
     "screenshot_selection": {
         "aspect_ratio": "free",
@@ -1184,6 +1329,8 @@
                 "portable": "Ctrl+D"
             }
         ],
+        "text_recognition_copy": [
+        ],
         "text_translation": [
             {
                 "portable": "Ctrl+T"
@@ -1221,7 +1368,7 @@
         ]
     },
     "screenshot_table": {
-        "model": "dedicated"
+        "model": "snow-shot:vision"
     },
     "screenshot_toolbar": {
         "action_tools_layout": {
@@ -1233,6 +1380,7 @@
                     "convert-to-markdown",
                     "latex-recognition",
                     "barcode-recognition",
+                    "document-recognition",
                     "table-recognition"
                 ],
                 [
@@ -1348,6 +1496,7 @@
         "target_language": ""
     },
     "screenshot_ui": {
+        "adaptive_guide_colors": true,
         "area_type_hint_enabled": true,
         "color_picker_center_guide_line_color": "#00000000",
         "color_picker_coordinate_mode": "global",
@@ -1367,7 +1516,7 @@
         "toolbar_size": "normal"
     },
     "storage": {
-        "schema_version": 5
+        "schema_version": 10
     },
     "system": {
         "annotation_mode_when_opening_for_editing": true,
@@ -1376,7 +1525,8 @@
         "auto_start_at_boot": false,
         "context_menu_mode": "image_files",
         "launch_as_administrator": false,
-        "memory_optimization_policy": "smart_control"
+        "memory_optimization_policy": "smart_control",
+        "power_qos": "performance"
     },
     "text_recognition": {
         "default_formatting": "none",

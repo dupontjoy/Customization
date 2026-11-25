@@ -16,20 +16,18 @@ cd ..\..\
 ::终止一些进程
 taskkill /f /t /im Listary*
 
-:: 请求管理员权限
-net session >nul 2>&1
-if %errorlevel% neq 0 (
-    powershell -Command "Start-Process '%~f0' -Verb RunAs"
-    exit /b
-)
-::添加必要注册表项
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\listary\shell\open\command" /ve /t REG_SZ /d "%cd%\Listary.exe\" --url-schema=\"%%1\"" /f
+::ListaryService.exe注册为系统服务
+sc create "ListaryServiceV3" binPath= "\"%cd%\ListaryService.exe\"" start= auto
+
+echo 正在启动 ListaryServiceV3 服务...
+sc start "ListaryServiceV3"
 
 ::删除日志和临时文件
 rd /s /q "%cd%\UserProfile\Cache"
 
 ::启动程序
 start "" "%cd%\Listary.exe"
+
 
 :end
 timeout /t 3 /nobreak
